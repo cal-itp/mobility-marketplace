@@ -7,7 +7,7 @@ title: "Transit Store - California Integrated Mobility"
 description: Lorem Ipsum Dolor Sit Amet
 
 baseurl: ""
-url: https://store.dot.ca.gov
+url: https://cal-itp-transit-store.netlify.app
 
 collections:
   categories:
