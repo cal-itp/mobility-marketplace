@@ -1,5 +1,9 @@
 # Transit Store
 
+[`cal-itp-transit-store.netlify.app`](https://cal-itp-transit-store.netlify.app/)
+
+Deployed via: [![Netlify (Status)](https://api.netlify.com/api/v1/badges/339b40a7-0bbb-4059-bea7-5842eb3a987d/deploy-status)](https://app.netlify.com/sites/cal-itp-transit-store/deploys)
+
 ## Development
 
 This is a [Jekyll][jekyll] static site. We include a [Docker Compose][docker-compose] file to help with local testing
