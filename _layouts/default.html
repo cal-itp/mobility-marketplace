@@ -1,0 +1,21 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html data-current="{{ page.section }}" lang="en">
+  {% include head.html %}
+  <body>
+  <div id="app">
+    <a id="skip-to-content" href="#content">Skip to main content.</a>
+
+    {% include header.html %}
+
+    <main role="main">
+    {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </div>
+  </body>
+</html>

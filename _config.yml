@@ -1,0 +1,32 @@
+lsi: false
+safe: true
+
+source: .
+
+title: "Transit Store - California Integrated Mobility"
+description: Lorem Ipsum Dolor Sit Amet
+
+baseurl: ""
+url: https://store.dot.ca.gov
+
+collections:
+  categories:
+    output: true
+  products:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "category"
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

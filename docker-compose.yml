@@ -1,0 +1,14 @@
+version: "3"
+services:
+  site:
+    image: jekyll/jekyll:latest
+    container_name: transit_store
+    command: jekyll serve --force_polling --livereload --config _config.yml,_config.docker.yml
+    environment:
+      - JEKYLL_ENV=docker
+    ports:
+      - 4000:4000
+      - 35729:35729
+    volumes:
+      - .:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
