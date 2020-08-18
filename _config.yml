@@ -30,3 +30,8 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+exclude:
+  - docker-compose.yml
+  - netlify.toml
+  - README.md
