@@ -35,3 +35,4 @@ exclude:
   - docker-compose.yml
   - netlify.toml
   - README.md
+  - submodules
