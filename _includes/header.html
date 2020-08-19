@@ -1,7 +1,8 @@
-<header>
-  <h1>
-    <a href="{{ '/' | relative_url }}" title="{{ site.title | escape }}">
-      {% include svg/logo.svg %}
-    </a>
-  </h1>
+<header class="global-header fixed" role="banner" id="header">
+  <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+  <div class="navbar navbar-dark bg-primary">
+    <div class="branding">
+      <a href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/logo-sm.svg' | relative_url }}" alt="Cal-ITP Transit Store logo" /></a>
+    </div>
+  </div>
 </header>

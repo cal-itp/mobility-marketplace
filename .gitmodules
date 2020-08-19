@@ -1,0 +1,4 @@
+[submodule "submodules/ca-state-template"]
+	path = submodules/ca-state-template
+	url = https://github.com/Office-of-Digital-Innovation/California-State-Template.git
+	branch = master
