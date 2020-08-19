@@ -9,11 +9,14 @@ description: Lorem Ipsum Dolor Sit Amet
 baseurl: ""
 url: https://cal-itp-transit-store.netlify.app
 
+collections_dir: content
 collections:
   categories:
     output: true
+    permalink: /:title
   products:
     output: true
+    permalink: /products/:title
 
 defaults:
   - scope:

@@ -7,7 +7,7 @@ media_folder: "assets/uploads" # Folder where user uploaded files should go
 collections: # A list of collections the CMS should be able to edit
   - name: "categories"
     label: "Category" # Used in the UI, ie.: "New Category"
-    folder: "content/categories" # The path to the folder where the documents are stored
+    folder: "content/_categories" # The path to the folder where the documents are stored
     create: true # Do not allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "category"}
@@ -16,7 +16,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "products" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Product" # Used in the UI, ie.: "New Product"
-    folder: "content/products" # The path to the folder where the documents are stored
+    folder: "content/_products" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{category}}/{{slug}}"
     fields: # The fields each document in this collection have
