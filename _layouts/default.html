@@ -3,19 +3,24 @@ layout: compress
 ---
 
 <!doctype html>
-<html data-current="{{ page.section }}" lang="en">
-  {% include head.html %}
-  <body>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+{% include head.html %}
+<body>
   <div id="app">
-    <a id="skip-to-content" href="#content">Skip to main content.</a>
-
     {% include header.html %}
 
-    <main role="main">
-    {{ content }}
-    </main>
+    <div id="main-content" class="main-content">
+      <main class="main-primary" role="main">
+      {{ content }}
+      </main>
+    </div>
 
     {% include footer.html %}
   </div>
-  </body>
+  <script src="https://california.azureedge.net/cdt/statetemplate/5.5.17/js/cagov.core.js"></script>
+</body>
 </html>
