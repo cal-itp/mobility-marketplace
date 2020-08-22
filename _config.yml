@@ -16,6 +16,12 @@ collections:
   categories:
     output: true
     permalink: /:title
+  posts:
+    output: true
+    permalink: /blog/:categories/:year/:month/:day/:title
+  products:
+    output: true
+    permalink: /products/:title
 
 defaults:
   - scope:
