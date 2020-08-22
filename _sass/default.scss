@@ -1,5 +1,4 @@
 .global-header .navbar .branding {
-
     margin-left: unset;
 
     a {
@@ -12,5 +11,15 @@
         img {
             height: 100%;
         }
+    }
+}
+
+.main-container {
+    padding-bottom: 2rem;
+}
+
+.global-footer {
+    .copyright {
+        padding: 1rem 0 2rem;
     }
 }
