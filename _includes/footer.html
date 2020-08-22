@@ -4,11 +4,9 @@
     <div class="row">
       <div class="three-quarters">
         <ul class="footer-links">
-          <li><a href="#skip-to-content">Back to Top</a></li>
-          <li><a href="#">Conditions of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility</a></li>
-          <li><a href="#">Contact Us</a></li>
+          {% for item in site.data.nav_footer %}
+            <li><a href="{{ item.href }}">{{ item.text }}</a></li>
+          {% endfor %}
         </ul>
       </div>
     </div>
