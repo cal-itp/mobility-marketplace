@@ -118,6 +118,19 @@ collections:
         }
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/_posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
   - name: "actions"
     label: "Calls to Action"
     label_singular: "Call to Action"
