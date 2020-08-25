@@ -35,6 +35,7 @@ defaults:
       layout: "default"
 
 exclude:
+  - bin
   - docker-compose.yml
   - netlify.toml
   - README.md

@@ -1,5 +1,5 @@
 [build]
-  command = "jekyll build"
+  command = "./bin/build"
   publish = "_site"
 
 [build.environment]
