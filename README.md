@@ -34,7 +34,15 @@ We include a `docker-compose` command that runs the official [Netlify build imag
 docker-compose run netlify
 ```
 
+## License
+
+Content (including graphics, images, video, documents, and text) in this repository is licensed under [CC-BY 4.0][content-license].
+
+The source code in this repository used to format and display the content is licensed under [GPL-3.0][code-license].
+
 [docker-compose]: https://docs.docker.com/compose/
 [jekyll]: https://jekyllrb.com
+[code-license]: ./LICENSE
+[content-license]: ./content/LICENSE
 [netlify]: https://www.netlify.com/
 [netlify-build]: https://github.com/netlify/build-image
