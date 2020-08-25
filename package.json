@@ -1,0 +1,18 @@
+{
+  "name": "transit-store",
+  "description": "Tools for building the California Integrated Travel Project Transit Store website",
+  "bin": {
+    "build-search-index": "./bin/build-search-index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cal-itp/transit-store.git"
+  },
+  "author": "California Integrated Travel Project",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/cal-itp/transit-store/issues"
+  },
+  "homepage": "https://github.com/cal-itp/transit-store#readme",
+  "private": true
+}

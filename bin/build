@@ -1,5 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 jekyll build && \
+
+build-search-index && \
 
 echo "Netlify build successful!"

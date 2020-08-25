@@ -32,5 +32,7 @@ exclude:
   - bin
   - docker-compose.yml
   - netlify.toml
+  - node_modules
   - README.md
+  - package*.json
   - submodules
