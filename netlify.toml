@@ -1,5 +1,5 @@
 [build]
-  command = "./bin/build"
+  command = "jekyll build"
   publish = "_site"
 
 [build.environment]
@@ -7,6 +7,9 @@
 
 [[plugins]]
   package = "./admin/plugins/ca-state-fonts"
+
+[[plugins]]
+  package = "./admin/plugins/lunr-index"
 
 # REDIRECT and HEADERS examples.
 # Uncomment to use. Directives in this file will ALWAYS override any identical

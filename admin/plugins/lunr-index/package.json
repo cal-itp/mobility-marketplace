@@ -1,9 +1,7 @@
 {
-  "name": "transit-store",
-  "description": "Tools for building the California Integrated Travel Project Transit Store website",
-  "bin": {
-    "build-search-index": "./bin/build-search-index.js"
-  },
+  "name": "netlify-plugin-lunr-index",
+  "description": "Builds and serializes a Lunr search index from site content",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cal-itp/transit-store.git"
@@ -15,8 +13,7 @@
   },
   "homepage": "https://github.com/cal-itp/transit-store#readme",
   "private": true,
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "lunr": "^2.3.9"
   }
 }

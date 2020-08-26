@@ -15,6 +15,6 @@ services:
   netlify:
     image: netlify/build:xenial
     container_name: transit_store_netlify_build
-    command: /opt/buildhome/repo/bin/build.dev
+    command: /opt/build-bin/build jekyll build
     volumes:
       - .:/opt/buildhome/repo
