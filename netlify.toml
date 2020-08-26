@@ -6,6 +6,9 @@
   JEKYLL_ENV = "production"
 
 [[plugins]]
+  package = "@netlify/plugin-local-install-core"
+
+[[plugins]]
   package = "./admin/plugins/ca-state-fonts"
 
 [[plugins]]
