@@ -4,16 +4,18 @@ layout: data
 ---
 [
     {% assign counter = 0 %}
-    {% for cat in site.categories %}{
-        "id": {{ counter }},
-        "url": "{{ cat.url | absolute_url }}",
-        "title": "{{ cat.title }}",
-        "body": "{{ cat.content | markdownify
-            | replace: '</h1>', ': ' | replace: '</h2>', ': ' | replace: '</h3>', ': '
-            | replace: '</h4>', ': ' | replace: '</h5>', ': ' | replace: '</h6>', ': '
-            | newline_to_br | replace: '<br />', ' ' | strip_html
-            | replace: '.', '. ' | replace: '!', '! ' | replace: '?', '? '
-            | replace: '  ', ' ' | strip }}"
-    }{% if forloop.last %}{% else %}, {% endif %}{% assign counter = counter | plus:1 %}
+    {% for collection in site.collections | where: "output", true %}
+        {% for doc in collection.docs %}{
+            "id": {{ counter }},
+            "url": "{{ doc.url | absolute_url }}",
+            "title": "{{ doc.title }}",
+            "body": "{{ doc.content | markdownify
+                | replace: '</h1>', ': ' | replace: '</h2>', ': ' | replace: '</h3>', ': '
+                | replace: '</h4>', ': ' | replace: '</h5>', ': ' | replace: '</h6>', ': '
+                | newline_to_br | replace: '<br />', ' ' | strip_html
+                | replace: '.', '. ' | replace: '!', '! ' | replace: '?', '? '
+                | replace: '  ', ' ' | strip }}"
+        }{% if forloop.last %}{% else %}, {% endif %}{% assign counter = counter | plus:1 %}
+        {% endfor %}
     {% endfor %}
 ]
