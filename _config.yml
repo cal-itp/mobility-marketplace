@@ -11,6 +11,8 @@ url: https://cal-itp-transit-store.netlify.app
 
 collections_dir: content
 collections:
+  actions:
+    output: false
   categories:
     output: true
     permalink: /:title
