@@ -2,6 +2,8 @@
 
 jekyll build && \
 
-build-search-index && \
+echo "Rebuilding search index" && \
 
-echo "Netlify build successful!"
+cat _site/data/content.json | build-search-index > _site/data/index.json && \
+
+echo "Search index rebuilt"

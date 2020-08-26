@@ -14,5 +14,9 @@
     "url": "https://github.com/cal-itp/transit-store/issues"
   },
   "homepage": "https://github.com/cal-itp/transit-store#readme",
-  "private": true
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "lunr": "^2.3.9"
+  }
 }
