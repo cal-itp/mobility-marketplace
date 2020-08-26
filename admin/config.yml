@@ -14,11 +14,14 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Action text", name: "text", widget: "string"}
       - {label: "Action URL", name: "url", widget: "string"}
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: false
-        editorComponents: ["image"]
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown",
+          required: false,
+          editorComponents: ["image"]
+        }
+      - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
   - name: "categories"
     label: "Categories"
@@ -29,35 +32,22 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "category"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Header graphic", name: "header_graphic", widget: "image"}
-      - label: "Call to Action"
-        name: "action"
-        widget: "relation"
-        collection: "actions"
-        valueField: "title"
-        searchFields: ["title", "text", "body"]
-        displayFields: ["title"]
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        editorComponents: ["image"]
-
-  - name: "products" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Product" # Used in the UI, ie.: "New Product"
-    folder: "content/_products" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{category}}/{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - label: "Category"
-        name: "category"
-        widget: "relation"
-        collection: "category"
-        valueField: "name"
-        searchFields: ["title", "name", "body"]
-        displayFields: ["title"]
+      - {
+          label: "Call to Action",
+          name: "action",
+          widget: "relation",
+          collection: "actions",
+          valueField: "ref_id",
+          searchFields: ["title", "text", "body"],
+          displayFields: ["title"]
+        }
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown",
+          editorComponents: ["image"]
+        }
+      - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
   - name: "navigation"
     label: "Navigation"

@@ -1,6 +1,8 @@
 ---
 layout: category
 title: Payments
-name: payments
+header_graphic: "#"
+action: cqce87u
+ref_id: 19mv2q
 ---
 Payments content here
