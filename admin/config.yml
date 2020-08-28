@@ -31,3 +31,20 @@ collections: # A list of collections the CMS should be able to edit
         valueField: "name"
         searchFields: ["title", "name", "body"]
         displayFields: ["title"]
+
+  - name: "config"
+    label: "Configuration"
+    editor:
+      preview: false
+    files:
+      - label: "Footer navigation"
+        name: "nav_footer"
+        file: "_data/nav_footer.yml"
+        fields:
+          - label: "Navigation items"
+            label_singular: "Navigation item"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: Text, name: text, widget: string}
+              - {label: Url, name: url, widget: string}

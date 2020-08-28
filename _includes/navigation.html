@@ -1,8 +1,10 @@
 {% assign navurl = page.url | remove: 'index.html' %}
-<ul>
-{% for item in include.navigation %}
-  <li>
-    <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
-  </li>
-{% endfor %}
-</ul>
+<nav>
+  <ul {% if include.list_class %} class="{{ include.list_class }} {% endif %}">
+  {% for item in include.navigation.items %}
+    <li>
+      <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</nav>
