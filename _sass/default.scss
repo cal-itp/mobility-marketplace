@@ -1,15 +1,17 @@
-.global-header .navbar .branding {
-    margin-left: unset;
+#header {
+    .branding {
+        a {
+            background-image: none;
+            background-repeat: no-repeat;
+            background-size: unset;
+            background-position: unset;
+            background-origin: unset;
+        }
+    }
 
-    a {
-        background-image: none;
-        background-repeat: no-repeat;
-        background-size: unset;
-        background-position: unset;
-        background-origin: unset;
-
-        img {
-            height: 100%;
+    .search-container {
+        .search-textfield {
+            background-color: #ffffff;
         }
     }
 }
@@ -18,7 +20,7 @@
     padding-bottom: 2rem;
 }
 
-.global-footer {
+#footer {
     .copyright {
         padding: 1rem 0 2rem;
     }

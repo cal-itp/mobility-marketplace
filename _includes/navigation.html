@@ -1,9 +1,10 @@
 {% assign navurl = page.url | remove: 'index.html' %}
-<nav>
-  <ul {% if include.list_class %} class="{{ include.list_class }} {% endif %}">
+
+<nav {% if include.nav_id %} id="{{ include.nav_id }}"{% endif %} {% if include.nav_class %} class="{{ include.nav_class }}"{% endif %} aria-multiselectable="false" role="tablist">
+  <ul {% if include.list_id %} id="{{ include.list_id }}"{% endif %} {% if include.list_class %} class="{{ include.list_class }}"{% endif %}>
   {% for item in include.navigation.items %}
-    <li>
-      <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
+    <li {% if include.item_class %} class="{{ include.item_class }}"{% endif %}>
+      <a {% if include.link_class %} class="{{ include.link_class }}"{% endif %} href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
     </li>
   {% endfor %}
   </ul>
