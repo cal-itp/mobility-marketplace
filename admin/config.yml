@@ -37,6 +37,18 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
+      - label: "Main navigation"
+        name: "nav_main"
+        file: "_data/nav_main.yml"
+        fields:
+          - label: "Navigation items"
+            label_singular: "Navigation item"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: Text, name: text, widget: string}
+              - {label: Url, name: url, widget: string}
+
       - label: "Footer navigation"
         name: "nav_footer"
         file: "_data/nav_footer.yml"

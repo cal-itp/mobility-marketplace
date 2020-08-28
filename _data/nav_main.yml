@@ -1,0 +1,9 @@
+items:
+  - text: Home
+    url: /
+
+  - text: About
+    url: '#'
+
+  - text: Blog
+    url: '#'
