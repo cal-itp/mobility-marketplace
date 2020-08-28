@@ -118,27 +118,47 @@ collections:
         }
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
-  - name: "blog"
-    label: "Blog Posts"
-    label_singular: "Blog Post"
+  - name: "posts"
+    label: "Articles"
+    label_singular: "Article"
     folder: "content/_posts"
     sort: "date:desc"
     create: true
+    editor:
+      preview: false
+    preview_path: "/blog/{{year}}/{{month}}/{{slug}}"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {
+          label: "Publish date",
+          name: "date",
+          widget: "datetime",
+          hint: "Publish date is captured in UTC but displays in Pacific",
+          dateFormat: "LL",
+          timeFormat: false,
+          pickerUtc: true
+        }
       - {label: "Title", name: "title", widget: "string"}
-      - label: "Category"
-        name: "category"
-        widget: "relation"
-        collection: "categories"
-        valueField: "name"
-        searchFields: ["title", "name"]
-        displayFields: ["title"]
-      - {label: "Preview image", name: "preview_image", widget: "image", required: false}
-      - {label: "Excerpt", name: "excerpt", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Summary", name: "description", widget: "string", hint: "Used for card, Social Media, and other summary displays"}
+      - {
+          label: Body,
+          name: body,
+          widget: markdown,
+          buttons: [
+            bold,
+            italic,
+            link,
+            heading-two,
+            heading-three,
+            heading-four,
+            heading-five,
+            heading-six,
+            quote,
+            bulleted-list,
+            numbered-list
+          ],
+          editorComponents: [image]
+        }
 
   - name: "actions"
     label: "Calls to Action"

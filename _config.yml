@@ -9,6 +9,8 @@ description: Lorem Ipsum Dolor Sit Amet
 baseurl: ""
 url: https://cal-itp-transit-store.netlify.app
 
+timezone: America/Los_Angeles
+
 collections_dir: content
 collections:
   actions:
@@ -18,10 +20,7 @@ collections:
     permalink: /:title
   posts:
     output: true
-    permalink: /blog/:categories/:year/:month/:day/:title
-  products:
-    output: true
-    permalink: /products/:title
+    permalink: /blog/:year/:month/:title
 
 defaults:
   - scope:
@@ -29,6 +28,11 @@ defaults:
       type: "categories"
     values:
       layout: "category"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
   - scope:
       path: ""
     values:
