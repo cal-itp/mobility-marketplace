@@ -3,11 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="three-quarters">
-        <ul class="footer-links">
-          {% for item in site.data.nav_footer %}
-            <li><a href="{{ item.href }}">{{ item.text }}</a></li>
-          {% endfor %}
-        </ul>
+        {% include navigation.html navigation=site.data.nav_footer list_class="footer-links" %}
       </div>
     </div>
   </div>

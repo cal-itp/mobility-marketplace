@@ -1,14 +1,15 @@
-- text: Back to Top
-  href: '#skip-to-content'
+items:
+  - text: Back to Top
+    url: '#skip-to-content'
 
-- text: Conditions of Use
-  href: '#'
+  - text: Conditions of Use
+    url: '#'
 
-- text: Privacy Policy
-  href: '#'
+  - text: Privacy Policy
+    url: '#'
 
-- text: Accessibility
-  href: '#'
+  - text: Accessibility
+    url: '#'
 
-- text: Contact Us
-  href: '#'
+  - text: Contact Us
+    url: '#'
