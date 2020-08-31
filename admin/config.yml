@@ -1,10 +1,10 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (master by default)
+  branch: master
 
-media_folder: "assets/uploads" # Folder where user uploaded files should go
+media_folder: "assets/uploads"
 
-collections: # A list of collections the CMS should be able to edit
+collections:
   - name: "actions"
     label: "Calls to Action"
     label_singular: "Call to Action"
@@ -48,6 +48,25 @@ collections: # A list of collections the CMS should be able to edit
           editorComponents: ["image"]
         }
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
+
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: false
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "content/index.md"
+        fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+        - {label: "Permalink", name: "permalink", widget: "hidden", default: "/"}
+        - {
+            label: "Title",
+            name: "title",
+            widget: "string",
+            hint: "E.g. for the browser tab or a social share; will be combined with the site title."
+          }
+        - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "navigation"
     label: "Navigation"
