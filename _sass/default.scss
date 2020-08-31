@@ -16,6 +16,19 @@
     }
 }
 
+.mobile-controls {
+    @extend .section-primary;
+
+    .mobile-control {
+        color: $white;
+    }
+}
+
+.toggle-menu span {
+    background: $white;
+    background-color: $white !important;
+}
+
 .main-container {
     padding-bottom: 2rem;
 }
