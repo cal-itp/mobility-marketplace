@@ -32,8 +32,8 @@ collections: # A list of collections the CMS should be able to edit
         searchFields: ["title", "name", "body"]
         displayFields: ["title"]
 
-  - name: "config"
-    label: "Configuration"
+  - name: "navigation"
+    label: "Navigation"
     editor:
       preview: false
     files:
