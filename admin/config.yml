@@ -60,7 +60,7 @@ collections:
         name: "homepage"
         file: "content/index.md"
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {
               label: "Title",

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 permalink: /
 title: Home
 headline: "Now arriving: Your new home for California transit innovations"

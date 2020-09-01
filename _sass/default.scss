@@ -1,40 +1,40 @@
 #header {
-    .branding {
-        a {
-            background-image: none;
-            background-repeat: no-repeat;
-            background-size: unset;
-            background-position: unset;
-            background-origin: unset;
-        }
+  .branding {
+    a {
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: unset;
+      background-position: unset;
+      background-origin: unset;
     }
+  }
 
-    .search-container {
-        .search-textfield {
-            background-color: #ffffff;
-        }
+  .search-container {
+    .search-textfield {
+      background-color: $white;
     }
+  }
 }
 
 .mobile-controls {
-    @extend .section-primary;
+  @extend .section-primary;
 
-    .mobile-control {
-        color: $white;
-    }
+  .mobile-control {
+    color: $white;
+  }
 }
 
 .toggle-menu span {
-    background: $white;
-    background-color: $white !important;
+  background: $white;
+  background-color: $white !important;
 }
 
 .main-container {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 #footer {
-    .copyright {
-        padding: 1rem 0 2rem;
-    }
+  .copyright {
+    padding: 1rem 0 2rem;
+  }
 }
