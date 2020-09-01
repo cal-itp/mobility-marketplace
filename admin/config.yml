@@ -13,7 +13,17 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Action text", name: "text", widget: "string"}
-      - {label: "Action URL", name: "url", widget: "string"}
+      - {label: "Action URL", name: "href", widget: "string"}
+      - {
+          label: "Open in",
+          name: "target",
+          widget: "select",
+          default: { label: "Same tab", value: "_self" },
+          options: [
+            { label: "Same tab", value: "_self" },
+            { label: "New tab", value: "_blank" }
+          ]
+        }
       - {
           label: "Body",
           name: "body",
