@@ -14,9 +14,6 @@ collections:
   categories:
     output: true
     permalink: /:title
-  products:
-    output: true
-    permalink: /products/:title
 
 defaults:
   - scope:
@@ -24,11 +21,6 @@ defaults:
       type: "categories"
     values:
       layout: "category"
-  - scope:
-      path: ""
-      type: "products"
-    values:
-      layout: "product"
   - scope:
       path: ""
     values:
