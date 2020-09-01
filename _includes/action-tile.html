@@ -1,0 +1,16 @@
+{% assign action = site.actions | find: "ref_id", include.ref_id %}
+
+{% if action %}
+
+<div class="action-tile section section-{{ include.tile_class | default: "default" }}">
+  <div class="content">
+    {{ action.content }}
+  </div>
+  <div class="action">
+    <a class="btn btn-{{ include.tile_class | default: "dark" }}" href="{{ action.href | absolute_url }}" target="{{ action.target }}">
+      {{ action.text }}
+    </a>
+  </div>
+</div>
+
+{% endif %}

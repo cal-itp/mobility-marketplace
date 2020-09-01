@@ -1,0 +1,20 @@
+.action-tiles {
+  @extend .container, .text-center, .m-b-lg, .p-b-lg;
+  border-bottom: solid 1px $gray-lighter;
+
+  .action-tile-group {
+    @extend .row, .justify-content-around;
+
+    .action-tile {
+      @extend .col-5, .py-4;
+    }
+  }
+}
+
+.action-tile {
+  @extend .container;
+
+  .content {
+    @extend .lead, .m-b-md;
+  }
+}
