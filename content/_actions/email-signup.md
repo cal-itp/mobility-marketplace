@@ -4,4 +4,4 @@ text: Subscribe
 url: "#"
 ref_id: cqce87u
 ---
-Email Signup Call to Action
+We're regularly rolling out tips and tools. Sign up to get updates in your inbox
