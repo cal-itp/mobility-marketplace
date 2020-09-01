@@ -1,36 +1,112 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (master by default)
+  branch: master
 
-media_folder: "assets/uploads" # Folder where user uploaded files should go
+media_folder: "assets/uploads"
 
-collections: # A list of collections the CMS should be able to edit
+collections:
+  - name: "actions"
+    label: "Calls to Action"
+    label_singular: "Call to Action"
+    folder: "content/_actions"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Action text", name: "text", widget: "string"}
+      - {label: "Action URL", name: "url", widget: "string"}
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown",
+          minimal: true,
+          required: false,
+          editorComponents: ["image"]
+        }
+      - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
+
   - name: "categories"
-    label: "Category" # Used in the UI, ie.: "New Category"
-    folder: "content/_categories" # The path to the folder where the documents are stored
-    create: true # Do not allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+    label: "Categories"
+    label_singular: "Category"
+    folder: "content/_categories"
+    create: true
+    fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "category"}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "products" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Product" # Used in the UI, ie.: "New Product"
-    folder: "content/_products" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{category}}/{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - label: "Category"
-        name: "category"
-        widget: "relation"
-        collection: "category"
-        valueField: "name"
-        searchFields: ["title", "name", "body"]
-        displayFields: ["title"]
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Summary", name: "description", widget: "string", hint: "For cards and other summary displays"}
+      - {label: "Header graphic", name: "header_graphic", widget: "image"}
+      - {
+          label: "Call to Action",
+          name: "action",
+          widget: "relation",
+          collection: "actions",
+          valueField: "ref_id",
+          searchFields: ["title", "text", "body"],
+          displayFields: ["title"]
+        }
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown",
+          editorComponents: ["image"]
+        }
+      - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
+
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: false
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "content/index.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              hint: "For browser tabs and social shares; combined with the site title."
+            }
+          - {label: "Headline", name: "headline", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown", minimal: true}
+          - {
+              label: "Primary Call to Action",
+              name: "primary_action",
+              widget: "relation",
+              collection: "actions",
+              valueField: "ref_id",
+              searchFields: ["title", "text", "body"],
+              displayFields: ["title"]
+            }
+          - {
+              label: "Secondary Call to Action",
+              name: "secondary_action",
+              widget: "relation",
+              collection: "actions",
+              valueField: "ref_id",
+              searchFields: ["title", "text", "body"],
+              displayFields: ["title"]
+            }
+          - {
+              label: "Features",
+              name: "features",
+              widget: "relation",
+              multiple: true,
+              collection: "categories",
+              valueField: "ref_id",
+              searchFields: ["title", "text", "body"],
+              displayFields: ["title"]
+            }
+          - {
+              label: "Final Call to Action",
+              name: "final_action",
+              widget: "relation",
+              collection: "actions",
+              valueField: "ref_id",
+              searchFields: ["title", "text", "body"],
+              displayFields: ["title"]
+            }
 
   - name: "navigation"
     label: "Navigation"
