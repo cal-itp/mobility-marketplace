@@ -18,6 +18,7 @@ collections:
           label: "Body",
           name: "body",
           widget: "markdown",
+          minimal: true,
           required: false,
           editorComponents: ["image"]
         }
@@ -31,6 +32,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "category"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Summary", name: "description", widget: "string", hint: "For cards and other summary displays"}
       - {label: "Header graphic", name: "header_graphic", widget: "image"}
       - {
           label: "Call to Action",
@@ -58,15 +60,53 @@ collections:
         name: "homepage"
         file: "content/index.md"
         fields:
-        - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
-        - {label: "Permalink", name: "permalink", widget: "hidden", default: "/"}
-        - {
-            label: "Title",
-            name: "title",
-            widget: "string",
-            hint: "E.g. for the browser tab or a social share; will be combined with the site title."
-          }
-        - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              hint: "For browser tabs and social shares; combined with the site title."
+            }
+          - {label: "Headline", name: "headline", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown", minimal: true}
+          - {
+              label: "Primary Call to Action",
+              name: "primary_action",
+              widget: "relation",
+              collection: "actions",
+              valueField: "ref_id",
+              searchFields: ["title", "text", "body"],
+              displayFields: ["title"]
+            }
+          - {
+              label: "Secondary Call to Action",
+              name: "secondary_action",
+              widget: "relation",
+              collection: "actions",
+              valueField: "ref_id",
+              searchFields: ["title", "text", "body"],
+              displayFields: ["title"]
+            }
+          - {
+              label: "Features",
+              name: "features",
+              widget: "relation",
+              multiple: true,
+              collection: "categories",
+              valueField: "ref_id",
+              searchFields: ["title", "text", "body"],
+              displayFields: ["title"]
+            }
+          - {
+              label: "Final Call to Action",
+              name: "final_action",
+              widget: "relation",
+              collection: "actions",
+              valueField: "ref_id",
+              searchFields: ["title", "text", "body"],
+              displayFields: ["title"]
+            }
 
   - name: "navigation"
     label: "Navigation"
