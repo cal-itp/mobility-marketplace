@@ -1,16 +1,23 @@
 .action-tiles {
-  @extend .container, .text-center;
 
   .action-tile-group {
-    @extend .row, .justify-content-around;
+    @extend .row, .mx-0, .justify-content-md-between;
 
     .action-tile {
-      @extend .py-4;
+      @extend .py-4, .px-3, .text-center;
+      @include make-col-ready();
+
       &.double {
-        @extend .col-5;
+        @extend .mb-4, .mb-md-0;
+        @include media-breakpoint-up(md) {
+          @include make-col(5);
+        }
       }
       &.single {
-        @extend .col-8;
+        @extend .card, .mx-md-auto;
+        @include media-breakpoint-up(md) {
+          @include make-col(8);
+        }
       }
 
       .action-title {

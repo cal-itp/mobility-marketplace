@@ -30,7 +30,23 @@
 }
 
 .main-container {
-  padding-bottom: 2rem;
+  padding: $grid-gutter-width;
+
+  @include media-breakpoint-up(md) {
+    > section {
+      margin-bottom: $grid-gutter-width;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-left: $grid-gutter-width * 2;
+    padding-right: $grid-gutter-width * 2;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-left: $grid-gutter-width * 4;
+    padding-right: $grid-gutter-width * 4;
+  }
 }
 
 #footer {

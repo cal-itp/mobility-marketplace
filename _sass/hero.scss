@@ -1,7 +1,3 @@
 .hero {
-  @extend .container, .text-center, .top-lg-rel-20pct, .top-md-rel-10pct, .top-sm-rel-5pct;
-}
-
-.hero-home {
-  @extend .m-b-lg;
+  @extend .text-center, .top-lg-rel-20pct, .top-md-rel-10pct, .top-sm-rel-5pct;
 }
