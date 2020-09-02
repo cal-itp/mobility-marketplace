@@ -1,0 +1,18 @@
+items:
+  - text: Payments
+    url: '#'
+
+  - text: Equity
+    url: '#'
+
+  - text: Validators
+    url: '#'
+
+  - text: Tools
+    url: '#'
+
+  - text: About
+    url: '#'
+
+  - text: Contact
+    url: '#'

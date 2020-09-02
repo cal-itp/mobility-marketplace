@@ -1,9 +1,12 @@
 [build]
-  command = "jekyll build"
+  command = "./bin/build"
   publish = "_site"
 
 [build.environment]
   JEKYLL_ENV = "production"
+
+[[plugins]]
+  package = "./plugins/ca-state-fonts"
 
 # REDIRECT and HEADERS examples.
 # Uncomment to use. Directives in this file will ALWAYS override any identical

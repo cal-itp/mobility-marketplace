@@ -11,4 +11,10 @@ services:
       - 35729:35729
     volumes:
       - .:/srv/jekyll
-      - ./vendor/bundle:/usr/local/bundle
+
+  netlify:
+    image: netlify/build:xenial
+    container_name: transit_store_netlify_build
+    command: /opt/buildhome/repo/bin/build.dev
+    volumes:
+      - .:/opt/buildhome/repo

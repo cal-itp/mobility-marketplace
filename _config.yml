@@ -11,12 +11,11 @@ url: https://cal-itp-transit-store.netlify.app
 
 collections_dir: content
 collections:
+  actions:
+    output: false
   categories:
     output: true
     permalink: /:title
-  products:
-    output: true
-    permalink: /products/:title
 
 defaults:
   - scope:
@@ -26,15 +25,11 @@ defaults:
       layout: "category"
   - scope:
       path: ""
-      type: "products"
-    values:
-      layout: "product"
-  - scope:
-      path: ""
     values:
       layout: "default"
 
 exclude:
+  - bin
   - docker-compose.yml
   - netlify.toml
   - README.md
