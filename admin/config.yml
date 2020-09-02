@@ -138,6 +138,8 @@ collections:
           timeFormat: false,
           pickerUtc: true
         }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widet: "string", required: false}
       - {
           label: "Author",
           name: "author",
@@ -148,7 +150,6 @@ collections:
           displayFields: ["items.*.first_name", "items.*.last_name"],
           valueField: "items.*.ref_id"
         }
-      - {label: "Title", name: "title", widget: "string"}
       - {label: "Summary", name: "description", widget: "string", hint: "Used for card, Social Media, and other summary displays"}
       - {
           label: Body,
@@ -169,6 +170,17 @@ collections:
           ],
           editorComponents: [image]
         }
+      - {
+          label: "Call to Action",
+          name: "action",
+          required: false,
+          widget: "relation",
+          collection: "actions",
+          valueField: "ref_id",
+          searchFields: ["title", "text", "body"],
+          displayFields: ["title"]
+        }
+      - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
   - name: "actions"
     label: "Calls to Action"
