@@ -1,0 +1,24 @@
+<div class="action-tiles">
+  {% if include.primary_action and include.secondary_action %}
+  <div class="action-tile-group">
+    {% include action-tile.html
+        ref_id=include.primary_action
+        tile_class="primary double"
+        show_title=include.show_title %}
+    {% include action-tile.html
+        ref_id=include.secondary_action
+        tile_class="standout double"
+        btn_class="standout"
+        show_title=include.show_title %}
+  </div>
+  {% endif %}
+
+  {% if include.final_action %}
+  <div class="action-tile-group">
+    {% include action-tile.html
+        ref_id=include.final_action
+        tile_class=" single"
+        show_title=include.show_title %}
+  </div>
+  {% endif %}
+</div>

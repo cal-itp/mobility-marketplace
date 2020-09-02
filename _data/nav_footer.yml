@@ -2,14 +2,8 @@ items:
   - text: Back to Top
     url: '#skip-to-content'
 
-  - text: Conditions of Use
+  - text: About
     url: '#'
 
-  - text: Privacy Policy
-    url: '#'
-
-  - text: Accessibility
-    url: '#'
-
-  - text: Contact Us
+  - text: Contact
     url: '#'
