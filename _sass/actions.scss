@@ -6,6 +6,7 @@
     .action-tile {
       @extend .py-4, .px-3, .text-center;
       @include make-col-ready();
+      border-radius: $border-radius-card !important;
 
       &.double {
         @extend .mb-4, .mb-md-0;

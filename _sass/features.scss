@@ -1,4 +1,5 @@
 .feature-card {
+  border-radius: $border-radius-card;
 
   .card-title {
     @extend .font-weight-bolder, .h3, .mt-0;
