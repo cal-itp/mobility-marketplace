@@ -11,6 +11,9 @@ layout: default
     primary_action=page.primary_action
     secondary_action=page.secondary_action %}
 
+{% include feature-cards.html
+    features=page.features %}
+
 {% include action-tiles.html
     final_action=page.final_action
     show_title=true %}
