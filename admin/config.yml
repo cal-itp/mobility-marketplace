@@ -138,6 +138,16 @@ collections:
           timeFormat: false,
           pickerUtc: true
         }
+      - {
+          label: "Author",
+          name: "author",
+          widget: "relation",
+          collection: "metadata",
+          file: "authors",
+          searchFields: ["items.*.first_name", "items.*.last_name"],
+          displayFields: ["items.*.first_name", "items.*.last_name"],
+          valueField: "items.*.ref_id"
+        }
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Summary", name: "description", widget: "string", hint: "Used for card, Social Media, and other summary displays"}
       - {
@@ -188,3 +198,21 @@ collections:
           editorComponents: ["image"]
         }
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
+
+  - name: "metadata"
+    label: "Metadata"
+    editor:
+      preview: false
+    files:
+      - label: "Authors"
+        name: "authors"
+        file: "_data/authors.yml"
+        fields:
+          - label: "Authors"
+            label_singular: "Author"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: First name, name: first_name, widget: string}
+              - {label: Last name, name: last_name, widget: string}
+              - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
