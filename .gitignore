@@ -1,4 +1,5 @@
 .jekyll-metadata
 
 .bundle
+.netlify
 _site
