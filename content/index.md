@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: /
-title: Home
+title: First Stop
 headline: "Now arriving: Your new home for California transit innovations"
 primary_action: knt7omv
 secondary_action: cqce87u
