@@ -53,3 +53,15 @@
     @extend .mt-4;
   }
 }
+
+.youtube {
+  @extend .mx-auto;
+
+  width: 100%;
+  height: 315px;
+
+  @include media-breakpoint-up(md) {
+    width: 560px;
+    height: 315px;
+  }
+}

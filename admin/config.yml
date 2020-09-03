@@ -168,7 +168,7 @@ collections:
             bulleted-list,
             numbered-list
           ],
-          editorComponents: [image]
+          editorComponents: ["image", "youtube"]
         }
       - {
           label: "Call to Action",
