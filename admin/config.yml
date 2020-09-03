@@ -5,61 +5,34 @@ backend:
 media_folder: "assets/uploads"
 
 collections:
-  - name: "actions"
-    label: "Calls to Action"
-    label_singular: "Call to Action"
-    folder: "content/_actions"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Action text", name: "text", widget: "string"}
-      - {label: "Action URL", name: "href", widget: "string"}
-      - {
-          label: "Open in",
-          name: "target",
-          widget: "select",
-          default: { label: "Same tab", value: "_self" },
-          options: [
-            { label: "Same tab", value: "_self" },
-            { label: "New tab", value: "_blank" }
-          ]
-        }
-      - {
-          label: "Body",
-          name: "body",
-          widget: "markdown",
-          minimal: true,
-          required: false,
-          editorComponents: ["image"]
-        }
-      - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
+  - name: "navigation"
+    label: "Navigation"
+    editor:
+      preview: false
+    files:
+      - label: "Main navigation"
+        name: "nav_main"
+        file: "_data/nav_main.yml"
+        fields:
+          - label: "Navigation items"
+            label_singular: "Navigation item"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: Text, name: text, widget: string}
+              - {label: Url, name: url, widget: string}
 
-  - name: "categories"
-    label: "Categories"
-    label_singular: "Category"
-    folder: "content/_categories"
-    create: true
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "category"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Summary", name: "description", widget: "string", hint: "For cards and other summary displays"}
-      - {label: "Header graphic", name: "header_graphic", widget: "image"}
-      - {
-          label: "Call to Action",
-          name: "action",
-          widget: "relation",
-          collection: "actions",
-          valueField: "ref_id",
-          searchFields: ["title", "text", "body"],
-          displayFields: ["title"]
-        }
-      - {
-          label: "Body",
-          name: "body",
-          widget: "markdown",
-          editorComponents: ["image"]
-        }
-      - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
+      - label: "Footer navigation"
+        name: "nav_footer"
+        file: "_data/nav_footer.yml"
+        fields:
+          - label: "Navigation items"
+            label_singular: "Navigation item"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: Text, name: text, widget: string}
+              - {label: Url, name: url, widget: string}
 
   - name: "pages"
     label: "Pages"
@@ -118,31 +91,58 @@ collections:
               displayFields: ["title"]
             }
 
-  - name: "navigation"
-    label: "Navigation"
-    editor:
-      preview: false
-    files:
-      - label: "Main navigation"
-        name: "nav_main"
-        file: "_data/nav_main.yml"
-        fields:
-          - label: "Navigation items"
-            label_singular: "Navigation item"
-            name: "items"
-            widget: "list"
-            fields:
-              - {label: Text, name: text, widget: string}
-              - {label: Url, name: url, widget: string}
+  - name: "categories"
+    label: "Categories"
+    label_singular: "Category"
+    folder: "content/_categories"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "category"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Summary", name: "description", widget: "string", hint: "For cards and other summary displays"}
+      - {label: "Header graphic", name: "header_graphic", widget: "image"}
+      - {
+          label: "Call to Action",
+          name: "action",
+          widget: "relation",
+          collection: "actions",
+          valueField: "ref_id",
+          searchFields: ["title", "text", "body"],
+          displayFields: ["title"]
+        }
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown",
+          editorComponents: ["image"]
+        }
+      - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
-      - label: "Footer navigation"
-        name: "nav_footer"
-        file: "_data/nav_footer.yml"
-        fields:
-          - label: "Navigation items"
-            label_singular: "Navigation item"
-            name: "items"
-            widget: "list"
-            fields:
-              - {label: Text, name: text, widget: string}
-              - {label: Url, name: url, widget: string}
+  - name: "actions"
+    label: "Calls to Action"
+    label_singular: "Call to Action"
+    folder: "content/_actions"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Action text", name: "text", widget: "string"}
+      - {label: "Action URL", name: "href", widget: "string"}
+      - {
+          label: "Open in",
+          name: "target",
+          widget: "select",
+          default: { label: "Same tab", value: "_self" },
+          options: [
+            { label: "Same tab", value: "_self" },
+            { label: "New tab", value: "_blank" }
+          ]
+        }
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown",
+          minimal: true,
+          required: false,
+          editorComponents: ["image"]
+        }
+      - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
