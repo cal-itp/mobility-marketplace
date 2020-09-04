@@ -8,7 +8,11 @@ layout: compress
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 <!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-{% include head.html scripts=page.head_scripts %}
+{% assign list = "," | split: "," %}
+{% assign ps = page.head_scripts | default: list %}
+{% assign ls = layout.head_scripts | default: list %}
+{% assign head_scripts = ps | concat: ls %}
+{% include head.html scripts=head_scripts %}
 <body>
   <div id="app">
     {% include header.html %}
@@ -24,6 +28,9 @@ layout: compress
     {% include footer.html %}
   </div>
 
-  {% include foot-scripts.html scripts=page.foot_scripts %}
+  {% assign ps = page.foot_scripts | default: list %}
+  {% assign ls = layout.foot_scripts | default: list %}
+  {% assign foot_scripts = ps | concat: ls %}
+  {% include foot-scripts.html scripts=foot_scripts %}
 </body>
 </html>
