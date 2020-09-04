@@ -1,11 +1,9 @@
 ---
 layout: default
-head_scripts:
-  - moment
 ---
 <article class="post">
   <header>
-    {% include components/date-badge.html date=date %}
+    {% include components/date-badge.html date=page.date %}
     <h1>{{ page.title }}</h1>
 
     {% if page.subtitle %}
