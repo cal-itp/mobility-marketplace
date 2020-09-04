@@ -2,25 +2,25 @@
 layout: default
 ---
 <section id="hero">
-{% include hero.html
+{% include components/hero.html
     headline=page.headline
     content=content
     wrapper_class="hero-home" %}
 </section>
 
 <section id="main-cta">
-{% include action-tiles.html
+{% include components/action-tiles.html
     primary_action=page.primary_action
     secondary_action=page.secondary_action %}
 </section>
 
 <section id="features">
-{% include feature-cards.html
+{% include components/feature-cards.html
     features=page.features %}
 </section>
 
 <section id="final-cta">
-{% include action-tiles.html
+{% include components/action-tiles.html
     final_action=page.final_action
     show_title=true %}
 </section>

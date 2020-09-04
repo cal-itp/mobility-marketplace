@@ -1,0 +1,55 @@
+.action-tile {
+  @extend .py-4, .px-3, .text-center;
+  border-radius: $border-radius-lg !important;
+
+  .action-title {
+    @extend .m-t-0;
+  }
+
+  .action-content {
+    @extend .lead, .mb-4;
+  }
+}
+
+.action-tiles {
+  .action-tile-group {
+    @extend .row, .mx-0, .justify-content-md-between;
+
+    .action-tile {
+      @include make-col-ready();
+
+      &.double {
+        @extend .mb-4, .mb-md-0;
+        @include media-breakpoint-up(md) {
+          @include make-col(5);
+        }
+      }
+      &.single {
+        @extend .card, .mx-md-auto;
+        @include media-breakpoint-up(md) {
+          @include make-col(8);
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  @extend .text-center, .top-lg-rel-20pct, .top-md-rel-10pct, .top-sm-rel-5pct;
+}
+
+.feature-card {
+  border-radius: $border-radius-lg;
+
+  .card-title {
+    @extend .font-weight-bolder, .h3, .mt-0;
+  }
+
+  .card-title, .card-text {
+    @extend .text-center;
+  }
+
+  .card-text + .card-text {
+    @extend .mt-4;
+  }
+}
