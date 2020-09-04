@@ -4,7 +4,7 @@
   {% capture script_content %}{% include {{ include_target }} %}{% endcapture %}
   {% unless script_content contains "Liquid Exception" %}
     {% comment %} jsonify script object as js variable {% endcomment %}
-    {% include jsonify-const.html id=include.script.name data=include.script %}
+    {% include data/jsonify-js-const.html id=include.script.name data=include.script %}
     {% include {{ include_target }} %}
   {% endunless %}
 {% else %}
