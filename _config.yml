@@ -23,6 +23,7 @@ defaults:
       type: "categories"
     values:
       layout: "category"
+      index: true
   - scope:
       path: ""
     values:
