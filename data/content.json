@@ -3,19 +3,21 @@
 layout: data
 ---
 [
-    {% assign counter = 0 %}
-    {% for collection in site.collections | where: "output", true %}
-        {% for doc in collection.docs %}{
-            "id": {{ counter }},
-            "url": "{{ doc.url | absolute_url }}",
-            "title": "{{ doc.title }}",
-            "body": "{{ doc.content | markdownify
-                | replace: '</h1>', ': ' | replace: '</h2>', ': ' | replace: '</h3>', ': '
-                | replace: '</h4>', ': ' | replace: '</h5>', ': ' | replace: '</h6>', ': '
-                | newline_to_br | replace: '<br />', ' ' | strip_html
-                | replace: '.', '. ' | replace: '!', '! ' | replace: '?', '? '
-                | replace: '  ', ' ' | strip }}"
-        }{% if forloop.last %}{% else %}, {% endif %}{% assign counter = counter | plus:1 %}
-        {% endfor %}
+  {% assign index_collections = site.collections | where: "output", true %}
+  {% for collection in index_collections %}
+    {% assign cid = forloop.index0 %}
+    {% assign fc = forloop.last %}
+    {% for doc in collection.docs %}{
+      "id": "{{ cid }}_{{ forloop.index0 }}",
+      "url": "{{ doc.url | absolute_url }}",
+      "title": "{{ doc.title }}",
+      "body": "{{ doc.content | markdownify
+          | replace: '</h1>', ': ' | replace: '</h2>', ': ' | replace: '</h3>', ': '
+          | replace: '</h4>', ': ' | replace: '</h5>', ': ' | replace: '</h6>', ': '
+          | newline_to_br | replace: '<br />', ' ' | strip_html
+          | replace: '.', '. ' | replace: '!', '! ' | replace: '?', '? '
+          | replace: '  ', ' ' | strip }}"
+    }{% unless fc and forloop.last %},{% endunless %}
     {% endfor %}
+  {% endfor %}
 ]
