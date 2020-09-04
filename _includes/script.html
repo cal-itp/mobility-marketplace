@@ -1,0 +1,17 @@
+{% if include.script.first %}
+  {% comment %} script is an object, include by name property {% endcomment %}
+  {% capture include_target %}scripts/{{ include.script.name }}.html{% endcapture %}
+  {% capture script_content %}{% include {{ include_target }} %}{% endcapture %}
+  {% unless script_content contains "Liquid Exception" %}
+    {% comment %} jsonify script object as js variable {% endcomment %}
+    {% include jsonify-const.html id=include.script.name data=include.script %}
+    {% include {{ include_target }} %}
+  {% endunless %}
+{% else %}
+  {% comment %} script is a string, include as filename {% endcomment %}
+  {% capture include_target %}scripts/{{ include.script }}.html{% endcapture %}
+  {% capture script_content %}{% include {{ include_target }} %}{% endcapture %}
+  {% unless script_content contains "Liquid Exception" %}
+    {% include {{ include_target }} %}
+  {% endunless %}
+{% endif %}

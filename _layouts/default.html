@@ -8,7 +8,7 @@ layout: compress
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 <!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-{% include head.html %}
+{% include head.html scripts=page.head_scripts %}
 <body>
   <div id="app">
     {% include header.html %}
@@ -23,6 +23,7 @@ layout: compress
 
     {% include footer.html %}
   </div>
-  <script src="https://california.azureedge.net/cdt/statetemplate/5.5.17/js/cagov.core.js"></script>
+
+  {% include foot-scripts.html scripts=page.foot_scripts %}
 </body>
 </html>

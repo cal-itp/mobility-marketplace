@@ -1,0 +1,5 @@
+{% if include.scripts %}
+  {% for script in include.scripts %}
+    {% include script.html script=script %}
+  {% endfor %}
+{% endif %}
