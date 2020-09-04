@@ -12,10 +12,10 @@ layout: compress
 {% assign ps = page.head_scripts | default: list %}
 {% assign ls = layout.head_scripts | default: list %}
 {% assign head_scripts = ps | concat: ls %}
-{% include head.html scripts=head_scripts %}
+{% include site/head.html scripts=head_scripts %}
 <body>
   <div id="app">
-    {% include header.html %}
+    {% include site/header.html %}
 
     <div id="main-content" class="main-content">
       <main class="main-primary" role="main">
@@ -25,12 +25,12 @@ layout: compress
       </main>
     </div>
 
-    {% include footer.html %}
+    {% include site/footer.html %}
   </div>
 
   {% assign ps = page.foot_scripts | default: list %}
   {% assign ls = layout.foot_scripts | default: list %}
   {% assign foot_scripts = ps | concat: ls %}
-  {% include foot-scripts.html scripts=foot_scripts %}
+  {% include site/foot-scripts.html scripts=foot_scripts %}
 </body>
 </html>
