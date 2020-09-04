@@ -20,7 +20,7 @@ collections:
     permalink: /:title
   posts:
     output: true
-    permalink: /blog/:year/:month/:title
+    permalink: /articles/:year/:month/:title
 
 defaults:
   - scope:
