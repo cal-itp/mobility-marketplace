@@ -164,11 +164,15 @@ collections:
             heading-four,
             heading-five,
             heading-six,
-            quote,
             bulleted-list,
             numbered-list
           ],
-          editorComponents: ["image", "image-caption", "youtube"]
+          editorComponents: [
+            "image",
+            "image-caption",
+            "pull-quote",
+            "youtube"
+          ]
         }
       - {
           label: "Call to Action",
