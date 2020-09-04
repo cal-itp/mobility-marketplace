@@ -34,6 +34,11 @@
   }
 }
 
+.date-badge {
+  @extend .btn-sm, .btn-standout;
+  border-radius: $border-radius-sm;
+}
+
 .hero {
   @extend .text-center, .top-lg-rel-20pct, .top-md-rel-10pct, .top-sm-rel-5pct;
 }

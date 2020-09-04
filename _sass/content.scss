@@ -31,3 +31,24 @@ figure {
     font-style: italic;
   }
 }
+
+article.post {
+  @extend .mx-auto, .container-md;
+
+  header {
+    p {
+      @extend .mt-0;
+    }
+    p:first-of-type {
+      @extend .h2;
+    }
+  }
+
+  hr {
+    @extend .mt-4;
+  }
+
+  aside {
+    @extend .text-center, .p-3;
+  }
+}

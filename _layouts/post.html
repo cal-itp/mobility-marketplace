@@ -1,5 +1,34 @@
 ---
 layout: default
+head_scripts:
+  - moment
 ---
+<article class="post">
+  <header>
+    {% include components/date-badge.html date=date %}
+    <h1>{{ page.title }}</h1>
 
-<h1>Blog Post</h1>
+    {% if page.subtitle %}
+    <p>{{ page.subtitle }}</p>
+    {% endif %}
+
+    {% if page.author %}
+    {% capture author %}{% include components/author.html ref_id=page.author %}{% endcapture %}
+    <p>by {{ author }}</p>
+    {% endif %}
+  </header>
+
+  <hr />
+
+  {% if page.action %}
+  <aside>
+    {% include components/action-tile.html
+        ref_id=page.action
+        tile_class="primary" %}
+  </aside>
+  {% endif %}
+
+  <main>
+  {{ content }}
+  </main>
+</article>

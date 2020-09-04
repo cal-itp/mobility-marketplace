@@ -1,0 +1,11 @@
+{% if include.date %}
+<span class="date-badge">
+  <!-- <noscript>{{ include.date }}</noscript>
+  <script>
+    (function(script) {
+      $(script).closest(".date-badge").html(moment.utc("{{ include.date }}", "YYYY-MM-dd HH:mm:ss ZZ").tz("America/Los_Angeles").format("LL"))
+    })(document.currentScript)
+  </script> -->
+  {{ include.date }}
+</span>
+{% endif%}
