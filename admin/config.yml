@@ -118,6 +118,74 @@ collections:
         }
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
+  - name: "posts"
+    label: "Articles"
+    label_singular: "Article"
+    folder: "content/_posts"
+    sort: "date:desc"
+    create: true
+    editor:
+      preview: false
+    preview_path: "/blog/{{year}}/{{month}}/{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Publish date",
+          name: "date",
+          widget: "datetime",
+          hint: "Publish date is captured in UTC but displays in Pacific",
+          dateFormat: "LL",
+          timeFormat: false,
+          pickerUtc: true
+        }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widet: "string", required: false}
+      - {
+          label: "Author",
+          name: "author",
+          widget: "relation",
+          collection: "metadata",
+          file: "authors",
+          searchFields: ["items.*.first_name", "items.*.last_name"],
+          displayFields: ["items.*.first_name", "items.*.last_name"],
+          valueField: "items.*.ref_id"
+        }
+      - {label: "Summary", name: "description", widget: "string", hint: "Used for card, Social Media, and other summary displays"}
+      - {
+          label: Body,
+          name: body,
+          widget: markdown,
+          buttons: [
+            bold,
+            italic,
+            link,
+            heading-two,
+            heading-three,
+            heading-four,
+            heading-five,
+            heading-six,
+            bulleted-list,
+            numbered-list
+          ],
+          editorComponents: [
+            "image",
+            "image-caption",
+            "pull-quote",
+            "youtube"
+          ]
+        }
+      - {
+          label: "Call to Action",
+          name: "action",
+          required: false,
+          widget: "relation",
+          collection: "actions",
+          valueField: "ref_id",
+          searchFields: ["title", "text", "body"],
+          displayFields: ["title"]
+        }
+      - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
+
   - name: "actions"
     label: "Calls to Action"
     label_singular: "Call to Action"
@@ -146,3 +214,21 @@ collections:
           editorComponents: ["image"]
         }
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
+
+  - name: "metadata"
+    label: "Metadata"
+    editor:
+      preview: false
+    files:
+      - label: "Authors"
+        name: "authors"
+        file: "_data/authors.yml"
+        fields:
+          - label: "Authors"
+            label_singular: "Author"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: First name, name: first_name, widget: string}
+              - {label: Last name, name: last_name, widget: string}
+              - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}

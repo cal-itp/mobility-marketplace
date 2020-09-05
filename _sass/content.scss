@@ -1,0 +1,54 @@
+
+blockquote {
+  background-color: #d6d6d6;
+  border-width: 0;
+  border-radius: $border-radius-lg;
+  padding: 2rem;
+  font-size: 1.5rem;
+
+  p:before {
+    content: "“";
+  }
+  p:after {
+    content: "”";
+  }
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    @extend .text-body;
+    font-size: 0.8rem;
+    font-weight: 900;
+  }
+}
+
+figure {
+  background: none;
+  border: none;
+
+  figcaption {
+    font-style: italic;
+  }
+}
+
+article.post {
+  @extend .mx-auto, .container-md;
+
+  header {
+    p {
+      @extend .mt-0;
+    }
+    p:first-of-type {
+      @extend .h2;
+    }
+  }
+
+  hr {
+    @extend .mt-4;
+  }
+
+  aside {
+    @extend .text-center, .p-3;
+  }
+}
