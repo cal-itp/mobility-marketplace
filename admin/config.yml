@@ -111,10 +111,25 @@ collections:
           displayFields: ["title"]
         }
       - {
-          label: "Body",
-          name: "body",
-          widget: "markdown",
-          editorComponents: ["image"]
+          label: Body,
+          name: body,
+          widget: markdown,
+          buttons: [
+            bold,
+            italic,
+            link,
+            heading-two,
+            heading-three,
+            heading-four,
+            heading-five,
+            heading-six,
+            bulleted-list,
+            numbered-list
+          ],
+          editorComponents: [
+            "image",
+            "image-caption"
+          ]
         }
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
