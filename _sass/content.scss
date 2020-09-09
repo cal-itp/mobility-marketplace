@@ -56,10 +56,10 @@ article.category {
       min-width: 240px;
     }
   }
-  aside:nth-of-type(1) {
+  .illustration {
     @extend .col-md-5;
   }
-  aside:nth-of-type(2) {
+  .articles {
     @extend .col-12;
   }
 
