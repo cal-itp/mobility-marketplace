@@ -1,6 +1,5 @@
 .action-tile {
-  @extend .py-4, .px-3, .text-center;
-  border-radius: $border-radius-lg !important;
+  @extend .py-4, .px-3, .rounded-lg, .text-center;
 
   .action-title {
     @extend .m-t-0;
@@ -34,9 +33,16 @@
   }
 }
 
+.article-card {
+  @extend .card, .rounded-lg, .p-4;
+
+  .title {
+    @extend .mt-0;
+  }
+}
+
 .date-badge {
-  @extend .btn-sm, .btn-standout;
-  border-radius: $border-radius-sm;
+  @extend .btn, .btn-sm, .btn-standout, .d-inline-block, .mb-2, .rounded-sm;
 }
 
 .hero {
@@ -44,7 +50,7 @@
 }
 
 .feature-card {
-  border-radius: $border-radius-lg;
+  @extend .card, .rounded-lg;
 
   .card-title {
     @extend .font-weight-bolder, .h3, .mt-0;
