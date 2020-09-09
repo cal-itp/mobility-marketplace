@@ -48,6 +48,13 @@ article.category {
 
   main {
     @extend .col-md-7, .align-self-center;
+
+    .action.btn {
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+      min-width: 240px;
+    }
   }
   aside:nth-of-type(1) {
     @extend .col-md-5;

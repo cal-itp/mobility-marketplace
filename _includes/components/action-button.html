@@ -1,0 +1,15 @@
+{% assign action = site.actions | find: "ref_id", include.ref_id %}
+
+{% if action %}
+
+  {% assign btn_class = "action btn btn-primary" %}
+
+  {% if include.btn_class %}
+    {% assign btn_class = "action btn btn-" | append: include.btn_class %}
+  {% endif %}
+
+  <a class="{{ btn_class }}" href="{{ action.href | absolute_url }}" target="{{ action.target }}">
+    {{ action.text }}
+  </a>
+
+{% endif %}
