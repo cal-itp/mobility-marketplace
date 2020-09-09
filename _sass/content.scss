@@ -1,4 +1,3 @@
-
 blockquote {
   background-color: #d6d6d6;
   border-width: 0;
@@ -32,9 +31,37 @@ figure {
   }
 }
 
-article.post {
-  @extend .mx-auto, .container-md;
+h1 {
+  @extend .mt-0;
+}
 
+hr {
+  @extend .my-4, .w-100;
+}
+
+img {
+  max-width: 100%;
+}
+
+article.category {
+  @extend .row;
+
+  main {
+    @extend .col-md-7, .align-self-center;
+  }
+  aside:nth-of-type(1) {
+    @extend .col-md-5;
+  }
+  aside:nth-of-type(2) {
+    @extend .col-12;
+  }
+
+  > * {
+    @extend .mb-4, .px-0;
+  }
+}
+
+article.post {
   header {
     p {
       @extend .mt-0;
@@ -42,10 +69,6 @@ article.post {
     p:first-of-type {
       @extend .h2;
     }
-  }
-
-  hr {
-    @extend .mt-4;
   }
 
   aside {
