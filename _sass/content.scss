@@ -24,6 +24,8 @@ blockquote {
 }
 
 figure {
+  @extend .mb-3;
+
   background: none;
   border: none;
 
@@ -44,42 +46,14 @@ img {
   max-width: 100%;
 }
 
-article.category {
-  @extend .row;
+.youtube {
+  @extend .mx-auto, .mb-3;
 
-  main {
-    @extend .col-md-7, .align-self-center;
+  width: 100%;
+  height: 315px;
 
-    .action.btn {
-      @include media-breakpoint-down(sm) {
-        width: 100%;
-      }
-      min-width: 240px;
-    }
-  }
-  .illustration {
-    @extend .col-md-5;
-  }
-  .articles {
-    @extend .col-12;
-  }
-
-  > * {
-    @extend .mb-4, .px-0;
-  }
-}
-
-article.post {
-  header {
-    p {
-      @extend .mt-0;
-    }
-    p:first-of-type {
-      @extend .h2;
-    }
-  }
-
-  aside {
-    @extend .text-center, .p-3;
+  @include media-breakpoint-up(md) {
+    width: 560px;
+    height: 315px;
   }
 }

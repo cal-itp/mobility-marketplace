@@ -1,0 +1,13 @@
+{% if include.refs and include.refs != [] and include.class and include.class != "" %}
+
+{% assign classes = "card-grid row row-cols-1 row-cols-md-3" | split: "," | push: include.class %}
+
+<div class="{{ classes | join: " " }}">
+  {% for ref_id in include.refs %}
+    <div class="card-wrapper col">
+      {% include components/{{ include.class }}-card.html ref_id=ref_id %}
+    </div>
+  {% endfor %}
+</div>
+
+{% endif %}

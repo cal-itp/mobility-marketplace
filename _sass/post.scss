@@ -1,0 +1,14 @@
+.post {
+  header {
+    p {
+      @extend .mt-0;
+    }
+    p:first-of-type {
+      @extend .h2;
+    }
+  }
+
+  aside {
+    @extend .text-center, .p-3;
+  }
+}

@@ -2,12 +2,12 @@
 
 {% if article %}
 
-<article class="article-card">
-  <header>
+<article class="card article">
+  <div class="card-body">
     {% include components/date-badge.html date=article.date href=article.url stretch=true %}
     <h2 class="card-title">{{ article.title }}</h2>
-  </header>
-  <p class="card-text">{{ article.description }}</p>
+    <p class="card-text">{{ article.description }}</p>
+  </div>
 </article>
 
 {% endif %}

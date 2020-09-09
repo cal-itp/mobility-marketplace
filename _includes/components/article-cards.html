@@ -1,9 +1,0 @@
-{% if include.articles and include.articles != [] %}
-
-<div class="card-deck article-cards">
-  {% for article_id in include.articles %}
-    {% include components/article-card.html ref_id=article_id %}
-  {% endfor %}
-</div>
-
-{% endif %}
