@@ -1,0 +1,12 @@
+{% assign action = site.actions | find: "ref_id", include.ref_id %}
+
+{% if action %}
+
+<div class="card action-tile {{ include.tile_class }}">
+  <h2 class="action-title">{{ action.title }}</h2>
+  <div class="action-content">
+    {{ action.content }}
+  </div>
+</div>
+
+{% endif %}

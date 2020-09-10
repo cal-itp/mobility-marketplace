@@ -18,6 +18,8 @@ layout: default
 
   <aside class="articles">
     {% assign articles = site.posts | where: "category", page.ref_id | map: "ref_id" %}
-    {% include components/card-grid.html refs=articles class="article" %}
+    {% include components/cards/grid.html
+        refs=articles
+        card_type="article" %}
   </aside>
 </article>

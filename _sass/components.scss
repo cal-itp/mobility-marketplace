@@ -4,10 +4,6 @@
   .action-title {
     @extend .m-t-0;
   }
-
-  .action-content {
-    @extend .lead, .mb-4;
-  }
 }
 
 .action-tiles {
@@ -61,14 +57,4 @@
 
 .card.article {
   @extend .p-4;
-}
-
-.card.feature {
-  .card-title, .card-text {
-    @extend .text-center;
-  }
-
-  .card-text + .card-text {
-    @extend .mt-4;
-  }
 }
