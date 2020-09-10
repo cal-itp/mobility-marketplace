@@ -1,18 +1,15 @@
 items:
-  - text: Payments
+  - text: Procure
     url: '#'
 
-  - text: Equity
+  - text: Learn
     url: '#'
 
-  - text: Validators
+  - text: Collaborate
     url: '#'
 
-  - text: Tools
+  - text: Connect
     url: '#'
 
-  - text: About
-    url: '#'
-
-  - text: Contact
+  - text: About Cal-ITP
     url: '#'
