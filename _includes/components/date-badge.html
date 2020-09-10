@@ -1,7 +1,20 @@
 {% if include.date %}
 
-<span class="date-badge">
-  {{ include.date | date: "%B %d, %Y"}}
-</span>
+  {% assign classes = "date-badge," | split: "," %}
+
+  {% if include.href %}
+    {% if include.stretch %}
+      {% assign classes = classes | push: "stretched-link" %}
+    {% endif %}
+  <a class="{{ classes | join: " " }}" href="{{ include.href }}">
+  {% else %}
+  <span class="{{ classes | join: " " }}">
+  {% endif %}
+    {{ include.date | date: "%B %e, %Y"}}
+  {% if include.href %}
+  </a>
+  {% else %}
+  </span>
+  {% endif %}
 
 {% endif%}

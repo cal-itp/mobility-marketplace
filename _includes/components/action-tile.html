@@ -1,16 +1,10 @@
 {% assign action = site.actions | find: "ref_id", include.ref_id %}
 
 {% if action %}
-
   {% assign tile_class = "section" %}
-  {% assign btn_class = "btn btn-primary" %}
 
   {% if include.tile_class %}
     {% assign tile_class = "section section-" | append: include.tile_class %}
-  {% endif %}
-
-  {% if include.btn_class %}
-    {% assign btn_class = "btn btn-" | append: include.btn_class %}
   {% endif %}
 
   <div class="action-tile {{ tile_class }}">
@@ -21,9 +15,7 @@
       {{ action.content }}
     </div>
     <div class="action">
-      <a class="{{ btn_class }}" href="{{ action.href | absolute_url }}" target="{{ action.target }}">
-        {{ action.text }}
-      </a>
+      {% include components/action-button.html btn_class=include.btn_class ref_id=include.ref_id %}
     </div>
   </div>
 

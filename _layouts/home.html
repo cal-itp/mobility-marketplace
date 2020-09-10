@@ -15,8 +15,9 @@ layout: default
 </section>
 
 <section id="features">
-{% include components/feature-cards.html
-    features=page.features %}
+{% include components/card-grid.html
+    refs=page.features
+    class="feature" %}
 </section>
 
 <section id="final-cta">
