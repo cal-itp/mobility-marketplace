@@ -52,7 +52,21 @@ collections:
               hint: "For browser tabs and social shares; combined with the site title."
             }
           - {label: "Headline", name: "headline", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown", minimal: true}
+          - {
+              label: "Body",
+              name: "body",
+              widget: "markdown",
+              minimal: true,
+              buttons: [
+                bold,
+                italic,
+                link,
+                bulleted-list,
+                numbered-list
+              ],
+              editorComponents: []
+            }
+          - {label: "Hero graphic", name: "hero_graphic", widget: "image" }
           - {
               label: "Primary Call to Action",
               name: "primary_action",
