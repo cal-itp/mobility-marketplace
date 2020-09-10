@@ -5,4 +5,4 @@ href: "#"
 target: "_self"
 ref_id: knt7omv
 ---
-Start accepting contactless credit and debit card payments
+EPAY: Find a processor that uses our State MSA’s rates to accept contactless credit, debit and mobile EMV payments for less

@@ -6,7 +6,7 @@
   JEKYLL_ENV = "production"
 
 [[plugins]]
-  package = "./plugins/ca-state-fonts"
+  package = "./admin/plugins/ca-state-fonts"
 
 # REDIRECT and HEADERS examples.
 # Uncomment to use. Directives in this file will ALWAYS override any identical

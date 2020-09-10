@@ -6,7 +6,8 @@
 @import "../submodules/ca-state-template/source/scss/colorscheme/colorscheme-oceanside-import.scss";
 
 @import "site";
+@import "components";
+@import "content";
 
-@import "actions";
-@import "features";
-@import "hero";
+@import "category";
+@import "post";

@@ -2,4 +2,6 @@
 
 .bundle
 .netlify
+.vscode
 _site
+fonts

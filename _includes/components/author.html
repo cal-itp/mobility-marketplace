@@ -1,0 +1,7 @@
+{% assign author = site.data.authors.items | find: "ref_id", include.ref_id %}
+
+{% if author %}
+
+{{ author.first_name }}&nbsp;{{ author.last_name }}
+
+{% endif %}

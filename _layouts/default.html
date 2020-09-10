@@ -8,10 +8,14 @@ layout: compress
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 <!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-{% include head.html %}
+{% assign list = "," | split: "," %}
+{% assign ps = page.head_scripts | default: list %}
+{% assign ls = layout.head_scripts | default: list %}
+{% assign head_scripts = ps | concat: ls %}
+{% include site/head.html scripts=head_scripts %}
 <body>
   <div id="app">
-    {% include header.html %}
+    {% include site/header.html %}
 
     <div id="main-content" class="main-content">
       <main class="main-primary" role="main">
@@ -21,8 +25,12 @@ layout: compress
       </main>
     </div>
 
-    {% include footer.html %}
+    {% include site/footer.html %}
   </div>
-  <script src="https://california.azureedge.net/cdt/statetemplate/5.5.17/js/cagov.core.js"></script>
+
+  {% assign ps = page.foot_scripts | default: list %}
+  {% assign ls = layout.foot_scripts | default: list %}
+  {% assign foot_scripts = ps | concat: ls %}
+  {% include site/foot-scripts.html scripts=foot_scripts %}
 </body>
 </html>
