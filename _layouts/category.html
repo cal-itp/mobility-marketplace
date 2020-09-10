@@ -17,6 +17,7 @@ layout: default
   <hr>
 
   <aside class="articles">
-    <h2>Recent Articles</h2>
+    {% assign articles = site.posts | where: "category", page.ref_id | map: "ref_id" %}
+    {% include components/card-grid.html refs=articles class="article" %}
   </aside>
 </article>
