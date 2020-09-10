@@ -1,10 +1,10 @@
 ---
-date: 2020-09-04T03:55:00.0Z
-title: Payments 101
-subtitle: A single platform to manage the entire order to cash cycle.
+date: 2020-07-15T03:55:00.0Z
+title: Buying Transit Like Coffee
+subtitle: Subtitle.
 author: 4b1tnt3
-category: 1vms90b
-description: A single platform to manage the entire order to cash cycle.
+category: 6nnjoa7
+description: A video walkthrough of how to set up your payment processing so it’s as easy as possible for people to pay and ride.
 action: knt7omv
 ref_id: 2lqscix
 ---
