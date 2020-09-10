@@ -8,7 +8,7 @@
     {% assign btn_class = "action btn btn-" | append: include.btn_class %}
   {% endif %}
 
-  <a class="{{ btn_class }}" href="{{ action.href | absolute_url }}" target="{{ action.target }}">
+  <a class="{{ btn_class }}" href="{{ action.href }}" target="{{ action.target }}">
     {{ action.text }}
   </a>
 
