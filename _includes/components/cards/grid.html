@@ -3,12 +3,14 @@
   {% capture md_cols %}row-cols-md-{{ include.md_cols | default: 3 }}{% endcapture %}
   {% assign classes = "card-grid, row, row-cols-1" | split: "," | push: md_cols | push: include.card_type %}
 
-<div class="{{ classes | join: " " }}">
-  {% for ref_id in include.refs %}
-    <div class="card-wrapper col">
-      {% include components/cards/{{ include.card_type }}.html ref_id=ref_id %}
-    </div>
-  {% endfor %}
+<div class="grid-wrapper container-md">
+  <div class="{{ classes | join: " " }}">
+    {% for ref_id in include.refs %}
+      <div class="card-wrapper col">
+        {% include components/cards/{{ include.card_type }}.html ref_id=ref_id %}
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
 {% endif %}

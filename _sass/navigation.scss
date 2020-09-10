@@ -28,20 +28,3 @@
   background: $white;
   background-color: $white !important;
 }
-
-.main-container {
-  @extend .mx-auto, .container;
-  padding: $grid-gutter-width;
-
-  @include media-breakpoint-up(md) {
-    > section {
-      margin-bottom: $grid-gutter-width;
-    }
-  }
-}
-
-#footer {
-  .copyright {
-    padding: 1rem 0 2rem;
-  }
-}

@@ -1,7 +1,7 @@
-{% assign classes = "hero" | split: "," | push: include.class | compact %}
+{% assign classes = "hero,row" | split: "," | push: include.class | compact %}
 
-<div class="{{ classes | join: " " }}">
-  <div class="row">
+<div class="hero-wrapper container-md">
+  <div class="{{ classes | join: " " }}">
     <div class="col-md-5 order-md-2">
       <img src="{{ include.graphic }}" alt="Hero graphic" />
     </div>

@@ -1,4 +1,4 @@
-.category {
+.category:not(.card) {
   @extend .row;
 
   main {

@@ -1,4 +1,4 @@
-.post {
+.article {
   header {
     p {
       @extend .mt-0;
@@ -11,4 +11,8 @@
   aside {
     @extend .text-center, .p-3;
   }
+}
+
+.card.article {
+  @extend .p-4;
 }
