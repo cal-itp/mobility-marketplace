@@ -10,7 +10,7 @@
   {% else %}
   <span class="{{ classes | join: " " }}">
   {% endif %}
-    {{ include.date | date: "%B %d, %Y"}}
+    {{ include.date | date: "%B %e, %Y"}}
   {% if include.href %}
   </a>
   {% else %}
