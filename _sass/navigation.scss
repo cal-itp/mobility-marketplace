@@ -1,11 +1,7 @@
 #header {
   .branding {
     a {
-      background-image: none;
-      background-repeat: no-repeat;
-      background-size: unset;
-      background-position: unset;
-      background-origin: unset;
+      @include link-reset();
     }
   }
 

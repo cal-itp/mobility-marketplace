@@ -1,0 +1,16 @@
+.card {
+  @extend .border-light, .h-100;
+
+  .card-title {
+    @extend .font-weight-bolder, .h3, .mt-0;
+  }
+}
+
+.card.action-tile {
+  @include link-reset();
+  @extend .p-3;
+
+  .card-body {
+    @extend .p-0;
+  }
+}

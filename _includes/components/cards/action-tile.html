@@ -2,11 +2,13 @@
 
 {% if action %}
 
-<div class="card action-tile {{ include.tile_class }}">
-  <h2 class="action-title">{{ action.title }}</h2>
-  <div class="action-content">
+{% assign classes = "card,action-tile" | split: "," | push: include.tile_class | compact %}
+
+<a class="{{ classes | join: " " }}" href="{{ action.href }}" target="{{ action.target }}">
+  <div class="card-body">
+    <h2 class="card-title">{{ action.title }}</h2>
     {{ action.content }}
   </div>
-</div>
+</a>
 
 {% endif %}

@@ -1,0 +1,9 @@
+.hero {
+  @extend .top-lg-rel-20pct, .top-md-rel-10pct, .top-sm-rel-5pct;
+
+  .row {
+    > * {
+      @extend .align-self-center;
+    }
+  }
+}

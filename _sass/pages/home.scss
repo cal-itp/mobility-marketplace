@@ -13,3 +13,12 @@
 #hero {
   background-color: #ffffff;
 }
+
+#main-cta {
+  .card-wrapper:first-of-type .card {
+    @extend .btn-success;
+  }
+  .card-wrapper:last-of-type .card {
+    @extend .btn-primary;
+  }
+}
