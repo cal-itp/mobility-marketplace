@@ -3,7 +3,7 @@ layout: home
 permalink: /
 title: Home
 headline: "Now arriving: Your new home for California transit innovations"
-hero_graphic: https://lorempixel.com/570/305/abstract
+hero_graphic: https://dummyimage.com/570x305/d1dee3/fff.png&text=+
 primary_action: knt7omv
 secondary_action: cqce87u
 features:
