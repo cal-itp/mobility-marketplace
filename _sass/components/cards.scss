@@ -6,6 +6,12 @@
   }
 }
 
+.card.action {
+  .col.text {
+    @extend .align-self-center;
+  }
+}
+
 .card.action-tile {
   @include link-reset();
   @extend .p-3;

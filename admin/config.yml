@@ -231,7 +231,7 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Action text", name: "text", widget: "string"}
+      - {label: "Action text", name: "text", widget: "string", hint: "Used for action buttons"}
       - {label: "Action URL", name: "href", widget: "string"}
       - {
           label: "Open in",
@@ -248,9 +248,14 @@ collections:
           name: "body",
           widget: "markdown",
           minimal: true,
-          required: false,
-          editorComponents: ["image"]
+          buttons: [
+            bold,
+            italic
+          ],
+          editorComponents: []
         }
+      - {label: "Tile graphic", name: "tile_graphic", widget: "image", required: false, hint: "Used when this action is displayed as a tile."}
+      - {label: "Card graphic", name: "card_graphic", widget: "image", required: false, hint: "Used when this action is displayed as a card."}
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
   - name: "metadata"
