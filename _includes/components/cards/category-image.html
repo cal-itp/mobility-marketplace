@@ -9,9 +9,7 @@
   <div class="card-body">
     <h2 class="card-title">{{ cat.title }}</h2>
     <p class="card-text">{{ cat.description }}</p>
-    <p class="card-text">
-      <a href="{{ cat.url }}" class="btn btn-primary">{{ include.button_text | default: "Read more" }}</a>
-    </p>
+    <a href="{{ cat.url }}" class="btn btn-link">{{ include.button_text | default: "Read more" }} &gt;</a>
   </div>
 </div>
 

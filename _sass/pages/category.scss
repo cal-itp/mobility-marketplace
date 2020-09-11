@@ -22,13 +22,3 @@
     @extend .mb-4;
   }
 }
-
-.card.category.image {
-  .card-title, .card-text {
-    @extend .text-center;
-  }
-
-  .card-text + .card-text {
-    @extend .mt-4;
-  }
-}

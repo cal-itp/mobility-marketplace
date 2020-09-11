@@ -6,18 +6,16 @@
 
 <div class="{{ classes | join: " " }}">
   <div class="row no-gutters">
-    <div class="col graphic">
-      <img src="{{ action.card_graphic }}" alt="Graphic for {{ action.title }}" />
+    <div class="col-md-6 graphic">
+      <img class="card-img" src="{{ action.card_graphic }}" alt="Graphic for {{ action.title }}" />
     </div>
-    <div class="col text">
+    <div class="col-md-6 text">
       <div class="card-body">
         <h2 class="card-title">{{ action.title }}</h2>
         <div class="card-text">
           {{ action.content }}
         </div>
-        <div class="card-text">
-          {% include components/action-button.html ref_id=action.ref_id %}
-        </div>
+        {% include components/action-button.html ref_id=action.ref_id %}
       </div>
     </div>
   </div>

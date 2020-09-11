@@ -1,9 +1,14 @@
 .hero {
   @extend .top-lg-rel-20pct, .top-md-rel-10pct, .top-sm-rel-5pct;
 
-  .row {
-    > * {
-      @extend .align-self-center;
+  > * {
+    @extend .align-self-center;
+  }
+
+  img {
+    @extend .mb-3;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
     }
   }
 }
