@@ -1,26 +1,52 @@
 #header {
-  .branding {
-    a {
-      @include link-reset();
-    }
-  }
+  @extend .pt-3;
+  box-shadow: unset;
 
   .search-container {
     .search-textfield {
       background-color: $white;
     }
+
+    &.active {
+      background: $primary;
+    }
   }
 }
 
-.mobile-controls {
-  @extend .section-primary;
-
-  .mobile-control {
-    color: $white;
-  }
+.mobile-controls, .mobile-control {
+  color: $text-color;
 }
-
 .toggle-menu span {
-  background: $white;
-  background-color: $white !important;
+  background-color: $text-color !important;
+}
+
+@include media-breakpoint-up(md) {
+  #header.compact {
+    #nav-item-search .first-level-link {
+      margin-top: -1.5rem;
+    }
+  }
+}
+
+.main-navigation {
+  .first-level-link {
+    font-weight: bold;
+  }
+
+  #nav-item-search .first-level-link {
+    .ca-gov-icon-search {
+      color: $text-color;
+    }
+
+    @include media-breakpoint-up(md) {
+      min-height: 86px;
+      padding-top: 2rem;
+
+      .ca-gov-icon-search {
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
 }

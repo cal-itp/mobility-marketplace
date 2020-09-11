@@ -7,5 +7,13 @@
       <a {% if include.link_class %} class="{{ include.link_class }}"{% endif %} href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
     </li>
   {% endfor %}
+  {% if include.search_item %}
+    <li class="nav-item d-none d-md-block" id="nav-item-search">
+      <button class="first-level-link" aria-expanded="false">
+        <span class="ca-gov-icon-search" aria-hidden="true"></span>
+        <span class="sr-only">Search</span>
+      </button>
+    </li>
+  {% endif %}
   </ul>
 </nav>
