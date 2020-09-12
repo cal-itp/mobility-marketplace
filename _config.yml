@@ -3,11 +3,11 @@ safe: true
 
 source: .
 
-title: "Transit Store - California Integrated Mobility"
+title: "Transit Stop - California Integrated Mobility"
 description: Lorem Ipsum Dolor Sit Amet
 
 baseurl: ""
-url: https://cal-itp-transit-store.netlify.app
+url: https://cal-itp-transit-stop.netlify.app
 
 timezone: America/Los_Angeles
 
