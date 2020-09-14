@@ -1,0 +1,24 @@
+.main-container {
+  background-color: #F3F3F4;
+}
+
+#hero, #main-cta, #features, #final-cta {
+  @extend .pt-4;
+}
+
+#hero, #final-cta {
+  @extend .pb-4;
+}
+
+#hero {
+  background-color: #ffffff;
+}
+
+#main-cta {
+  .card-wrapper:first-of-type .card {
+    @extend .btn-success;
+  }
+  .card-wrapper:last-of-type .card {
+    @extend .btn-primary;
+  }
+}

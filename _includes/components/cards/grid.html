@@ -1,0 +1,17 @@
+{% if include.refs and include.refs != [] and include.card_type and include.card_type != "" %}
+
+  {% capture md_cols %}row-cols-md-{{ include.md_cols | default: 3 }}{% endcapture %}
+  {% assign grid_type = "card-grid-" | append: include.card_type %}
+  {% assign classes = "card-grid, row, row-cols-1" | split: "," | push: md_cols | push: grid_type %}
+
+<div class="grid-wrapper container-md">
+  <div class="{{ classes | join: " " }}">
+    {% for ref_id in include.refs %}
+      <div class="card-wrapper col">
+        {% include components/cards/{{ include.card_type }}.html ref_id=ref_id %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endif %}

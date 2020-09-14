@@ -3,7 +3,7 @@ layout: category
 title: Open Loop Payments
 permalink: /payments/open-loop
 description: Learn about OLP fare processing and sign up for EPAY
-header_graphic: https://lorempixel.com/570/305/abstract?2
+header_graphic: https://dummyimage.com/570x305/d1dee3/fff.png&text=+
 action: cqce87u
 ref_id: 6nnjoa7
 ---

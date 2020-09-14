@@ -5,23 +5,30 @@ layout: default
 {% include components/hero.html
     headline=page.headline
     content=content
-    wrapper_class="hero-home" %}
+    graphic=page.hero_graphic
+    class="home" %}
 </section>
 
+{% assign actions = page.primary_action | split: "," | push: page.secondary_action %}
+
 <section id="main-cta">
-{% include components/action-tiles.html
-    primary_action=page.primary_action
-    secondary_action=page.secondary_action %}
+{% include components/cards/grid.html
+    refs=actions
+    card_type="action-tile"
+    md_cols=2 %}
 </section>
 
 <section id="features">
-{% include components/card-grid.html
+{% include components/cards/grid.html
     refs=page.features
-    class="feature" %}
+    card_type="category-image" %}
 </section>
 
+{% assign actions = page.final_action | split: "," %}
+
 <section id="final-cta">
-{% include components/action-tiles.html
-    final_action=page.final_action
-    show_title=true %}
+{% include components/cards/grid.html
+    refs=actions
+    card_type="action"
+    md_cols=1 %}
 </section>

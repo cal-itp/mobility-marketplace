@@ -1,17 +1,11 @@
 <header class="global-header fixed" role="banner" id="header">
   <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
 
-  <div class="section-primary">
-    {% include site/branding.html %}
-  </div>
+  {% include site/branding.html %}
 
   {% include site/mobile-controls.html %}
 
-  <div class="navigation-search full-width-nav container">
-    <div id="head-search" class="search-container featured-search">
-      {% include site/search.html %}
-    </div>
-
+  <div class="navigation-search">
     {% include site/navigation.html
           navigation=site.data.nav_main
           nav_id="navigation"
@@ -20,8 +14,11 @@
           list_class="top-level-nav"
           item_class="nav-item"
           link_class="first-level-link"
+          search_item=true
     %}
-  </div>
 
-  <div class="header-decoration"></div>
+    <div id="head-search" class="search-container">
+      {% include site/search.html %}
+    </div>
+  </div>
 </header>

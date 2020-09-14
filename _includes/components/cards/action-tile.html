@@ -1,0 +1,14 @@
+{% assign action = site.actions | find: "ref_id", include.ref_id %}
+
+{% if action %}
+
+{% assign classes = "card,action-tile" | split: "," | push: include.tile_class | compact %}
+
+<a class="{{ classes | join: " " }}" href="{{ action.href }}" target="{{ action.target }}">
+  <div class="card-body">
+    <h2 class="card-title">{{ action.title }}</h2>
+    {{ action.content }}
+  </div>
+</a>
+
+{% endif %}

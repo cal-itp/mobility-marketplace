@@ -5,9 +5,15 @@
 @import "../submodules/ca-state-template/source/scss/cagov.core.scss";
 @import "../submodules/ca-state-template/source/scss/colorscheme/colorscheme-oceanside-import.scss";
 
-@import "site";
-@import "components";
-@import "content";
+@import "mixins";
 
-@import "category";
-@import "post";
+@import "components/cards";
+@import "components/date-badge";
+@import "components/hero";
+
+@import "content";
+@import "navigation";
+
+@import "pages/category";
+@import "pages/home";
+@import "pages/post";
