@@ -17,6 +17,12 @@
   JEKYLL_ENV = "branch-deploy"
 
 [[plugins]]
+  package = "@netlify/plugin-local-install-core"
+
+[[plugins]]
+  package = "./admin/plugins/provider-json"
+
+[[plugins]]
   package = "./admin/plugins/ca-state-fonts"
 
 # REDIRECT and HEADERS examples.
