@@ -7,8 +7,14 @@
 
 # Deploy Preview context: all deploys generated from a pull/merge request will
 # inherit these settings.
-[context.deploy-preview]
-  JEKYLL_ENV = "preview"
+[context.deploy-preview.environment]
+  JEKYLL_ENV = "deploy-preview"
+
+# Branch deploy context:
+# All deploys that are not from a pull/merge request
+# or from the production branch will inherit these settings.
+[context.branch-deploy.environment]
+  JEKYLL_ENV = "branch-deploy"
 
 [[plugins]]
   package = "./admin/plugins/ca-state-fonts"
