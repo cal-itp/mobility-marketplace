@@ -1,0 +1,16 @@
+{% assign cat = site.categories | find: "ref_id", include.ref_id %}
+
+{% if cat %}
+
+{% assign classes = "card, category, image" | split: "," | push: include.class | compact %}
+
+<div class="{{ classes | join: " " }}">
+  <img class="card-img-top" src="{{ cat.header_graphic | absolute_url }}" alt="Graphic illustration for {{ cat.title }}">
+  <div class="card-body">
+    <h2 class="card-title">{{ cat.title }}</h2>
+    <p class="card-text">{{ cat.description }}</p>
+    <a href="{{ cat.url }}" class="btn btn-link">{{ include.button_text | default: "Read more" }} &gt;</a>
+  </div>
+</div>
+
+{% endif %}

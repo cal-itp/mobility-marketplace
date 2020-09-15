@@ -2,7 +2,7 @@ version: "3"
 services:
   site:
     image: jekyll/jekyll:latest
-    container_name: transit_store
+    container_name: transit_stop
     command: jekyll serve --force_polling --livereload --config _config.yml,_config.docker.yml
     environment:
       - JEKYLL_ENV=docker
@@ -14,7 +14,7 @@ services:
 
   netlify:
     image: netlify/build:xenial
-    container_name: transit_store_netlify_build
+    container_name: transit_stop_netlify_build
     command: /opt/buildhome/repo/bin/build.dev
     volumes:
       - .:/opt/buildhome/repo

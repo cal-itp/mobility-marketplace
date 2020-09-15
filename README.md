@@ -1,8 +1,10 @@
-# Transit Store
+# Transit Stop
 
-[`cal-itp-transit-store.netlify.app`](https://cal-itp-transit-store.netlify.app/)
+[`cal-itp-transit-stop.netlify.app`](https://cal-itp-transit-stop.netlify.app/)
 
-Deployed via [Netlify][netlify] [![Netlify Status](https://api.netlify.com/api/v1/badges/0fcfad48-7c0e-43f4-bb85-f7447f7f5fa6/deploy-status)](https://app.netlify.com/sites/cal-itp-transit-store/deploys)
+A one-stop resource for modern, equitable and accessible public transit products and services.
+
+Deployed via [Netlify][netlify] [![Netlify Status](https://api.netlify.com/api/v1/badges/0fcfad48-7c0e-43f4-bb85-f7447f7f5fa6/deploy-status)](https://app.netlify.com/sites/cal-itp-transit-stop/deploys)
 
 ## Development
 

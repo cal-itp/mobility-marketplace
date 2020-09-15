@@ -4,14 +4,14 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cal-itp/transit-store.git"
+    "url": "git+https://github.com/cal-itp/transit-stop.git"
   },
   "author": "California Integrated Travel Project",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/cal-itp/transit-store/issues"
+    "url": "https://github.com/cal-itp/transit-stop/issues"
   },
-  "homepage": "https://github.com/cal-itp/transit-store#readme",
+  "homepage": "https://github.com/cal-itp/transit-stop#readme",
   "private": true,
   "dependencies": {}
 }
