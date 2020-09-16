@@ -6,7 +6,9 @@
 
 <a class="{{ classes | join: " " }}" href="{{ action.href }}" target="{{ action.target }}">
   <div class="card-body">
-    <h2 class="card-title">{{ action.title }}</h2>
+    {% include components/cards/title.html
+        title=action.title
+        heading_level=include.heading_level %}
     {{ action.content }}
   </div>
 </a>

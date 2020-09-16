@@ -8,7 +8,9 @@
   <div class="{{ classes | join: " " }}">
     {% for ref_id in include.refs %}
       <div class="card-wrapper col">
-        {% include components/cards/{{ include.card_type }}.html ref_id=ref_id %}
+        {% include components/cards/{{ include.card_type }}.html
+            ref_id=ref_id
+            heading_level=include.card_heading_level %}
       </div>
     {% endfor %}
   </div>

@@ -23,9 +23,11 @@ layout: default
 </section>
 
 <section id="features">
-{% include components/cards/grid.html
-    refs=page.features
-    card_type="category-image" %}
+  <h2 class="container-md">Section title</h2>
+  {% include components/cards/grid.html
+      refs=page.features
+      card_type="category-image"
+      card_heading_level=3 %}
 </section>
 
 {% assign actions = page.final_action | split: "," %}

@@ -1,0 +1,6 @@
+{% assign hlevel = include.heading_level | default: 2 %}
+{% assign classes = "card-title" | split: "," | push: include.class | compact %}
+
+{% capture heading %}<h{{ hlevel }} class="{{ classes | join: " " }}">{{ include.title }}</h{{ hlevel }}>{% endcapture %}
+
+{{ heading }}
