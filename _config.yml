@@ -11,6 +11,9 @@ url: https://cal-itp-transit-stop.netlify.app
 
 timezone: America/Los_Angeles
 
+analytics:
+  production: UA-176840950-1
+
 collections_dir: content
 collections:
   actions:
