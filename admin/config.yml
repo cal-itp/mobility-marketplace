@@ -86,16 +86,6 @@ collections:
               displayFields: ["title"]
             }
           - {
-              label: "Features",
-              name: "features",
-              widget: "relation",
-              multiple: true,
-              collection: "categories",
-              valueField: "ref_id",
-              searchFields: ["title", "text", "body"],
-              displayFields: ["title"]
-            }
-          - {
               label: "Final Call to Action",
               name: "final_action",
               widget: "relation",
