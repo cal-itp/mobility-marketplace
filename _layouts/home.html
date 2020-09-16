@@ -1,21 +1,22 @@
 ---
 layout: default
 ---
+
 <section id="hero">
-{% include components/hero/image.html
+{% include components/hero.html
     headline=page.headline
     content=content
     graphic=page.hero_graphic
     class="home" %}
 </section>
 
-{% include components/hero/tile.html
-  content=content
-  class="home" %}
-
 {% assign actions = page.primary_action | split: "," | push: page.secondary_action %}
 
 <section id="main-cta">
+  {% include components/mobile-tile.html
+    content=content
+    class="home" %}
+
   {% include components/cards/grid.html
       refs=actions
       card_type="action-tile"

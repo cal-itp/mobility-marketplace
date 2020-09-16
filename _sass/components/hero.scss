@@ -1,4 +1,4 @@
-.hero.image {
+.hero {
   @extend .top-lg-rel-20pct, .top-md-rel-10pct, .top-sm-rel-5pct;
 
   // horizontally center image within column
@@ -46,17 +46,6 @@
   @include media-breakpoint-down(md) {
     .lead {
       display: none;
-    }
-  }
-}
-
-.hero.tile {
-  @extend .d-lg-none;
-  .lead {
-    @extend .mt-4;
-    @include media-breakpoint-down(xs) {
-      padding-left: $grid-gutter-width / 2;
-      padding-right: $grid-gutter-width / 2;
     }
   }
 }
