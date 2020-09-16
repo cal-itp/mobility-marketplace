@@ -1,14 +1,52 @@
-.hero {
+.hero.image {
   @extend .top-lg-rel-20pct, .top-md-rel-10pct, .top-sm-rel-5pct;
 
+  // horizontally center image within column
+  > .image {
+    @extend .d-flex, .justify-content-center;
+  }
+
+  // vertically center both within column
   > * {
     @extend .align-self-center;
   }
 
+  h1 {
+    @extend .mt-4, .mt-md-0, .mb-2;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
   img {
-    @extend .mb-3;
-    @include media-breakpoint-down(sm) {
-      width: 100%;
+    @extend .my-2, .my-sm-4, .my-md-0;
+  }
+
+  @include media-breakpoint-up(sm) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    h1 {
+      font-size: 2.4rem;
+      text-align: unset;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .lead {
+      display: none;
+    }
+  }
+}
+
+.hero.tile {
+  @extend .d-md-none;
+  .lead {
+    @extend .mt-4;
+    @include media-breakpoint-down(xs) {
+      padding-left: $grid-gutter-width / 2;
+      padding-right: $grid-gutter-width / 2;
     }
   }
 }
