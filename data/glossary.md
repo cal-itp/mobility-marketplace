@@ -39,20 +39,16 @@ This list was created in April, 2019, by consultant Trillium Transit under contr
 
 # Glossary
 
-**Demand Response (DR):** A transit mode comprised of passenger cars, vans or small buses operating in response to calls from passengers or their agents to the transit operator, who then dispatches a vehicle to pick up the passengers and transport them to their destinations. 
+|Term   |Definition   |
+|---|---|
+|Demand Response (DR)   |A transit mode comprised of passenger cars, vans or small buses operating in response to calls from passengers or their agents to the transit operator, who then dispatches a vehicle to pick up the passengers and transport them to their destinations.   |
+|Demand Response Taxi (DT)   |A special form of the demand response mode operated through taxicab providers. The mode is always purchased transportation type of service.   |
+|Fare Revenues   |All income received directly from passengers, paid either in cash or through pre-paid tickets, passes, etc. It includes donations from those passengers who donate money on the vehicle. It includes the reduced fares paid by passengers in a user-side subsidy arrangement.   |
+|General Transit Feed Specification (GTFS)   |A common format for public transportation schedules and associated geographic information. GTFS "feeds" let public transit agencies publish their transit data and developers write applications that consume that data in an interoperable way.   |
+|GTFS Realtime   |A feed specification that allows public transportation agencies to provide realtime updates about their fleet to application developers. It is an extension to GTFS (General Transit Feed Specification), an open data format for public transportation schedules and associated geographic information.   |
+|National Transit Database (NTD)   |A reporting system that collects public transportation financial and operating information.   |
+|Unlinked Passenger Trips (UPT)   |The number of passengers who board public transportation vehicles. Passengers are counted each time they board vehicles no matter how many vehicles they use to travel from their origin to their destination.   |
+|Vehicles Operating at Maximum Service (VOMS)   |The number of revenue vehicles operated to meet the annual maximum service requirement. This is the revenue vehicle count during the peak season of the year on the week and day that maximum service is provided.   |
 
-**Demand Response Taxi (DT):** A special form of the demand response mode operated through taxicab providers. The mode is always purchased transportation type of service.
-
-**Fare Revenues:** All income received directly from passengers, paid either in cash or through pre-paid tickets, passes, etc. It includes donations from those passengers who donate money on the vehicle. It includes the reduced fares paid by passengers in a user-side subsidy arrangement. 
-
-**General Transit Feed Specification (GTFS):** A common format for public transportation schedules and associated geographic information. GTFS "feeds" let public transit agencies publish their transit data and developers write applications that consume that data in an interoperable way.
-
-**GTFS Realtime:** A feed specification that allows public transportation agencies to provide realtime updates about their fleet to application developers. It is an extension to GTFS (General Transit Feed Specification), an open data format for public transportation schedules and associated geographic information.
-
-**National Transit Database (NTD):** A reporting system that collects public transportation financial and operating information.
-
-**Unlinked Passenger Trips (UPT):** The number of passengers who board public transportation vehicles. Passengers are counted each time they board vehicles no matter how many vehicles they use to travel from their origin to their destination.
-
-**Vehicles Operating at Maximum Service (VOMS):** The number of revenue vehicles operated to meet the annual maximum service requirement. This is the revenue vehicle count during the peak season of the year; on the week and day that maximum service is provided. 
 
 
