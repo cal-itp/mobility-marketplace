@@ -11,7 +11,9 @@
         {% include components/cards/{{ include.card_type }}.html
             ref_id=ref_id
             heading_level=include.card_heading_level
-            class=include.card_class %}
+            class=include.card_class
+            left_cols=include.card_left_cols
+            right_cols=include.card_right_cols %}
       </div>
     {% endfor %}
   </div>
