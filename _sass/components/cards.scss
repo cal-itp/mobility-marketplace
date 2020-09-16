@@ -1,5 +1,9 @@
 .card {
   @extend .border-light;
+}
+
+.card-wrapper {
+  @extend .mb-3;
 
   .card-title {
     @extend .font-weight-bolder, .h3, .mt-0;
@@ -16,55 +20,51 @@
       left: 1rem;
     }
   }
-}
 
-.card.action {
-  .text, .graphic {
-    @extend .align-self-center;
-  }
+  .action {
+    .text, .graphic {
+      @extend .align-self-center;
+    }
 
-  @extend .pb-4, .pb-lg-0;
+    @extend .pb-4, .pb-lg-0;
 
-  .card-body {
-    @extend .px-lg-4;
-  }
+    .card-body {
+      @extend .px-lg-4;
+    }
 
-  .btn {
-    bottom: 0;
-  }
-
-  @include media-breakpoint-up(lg) {
     .btn {
-      left: 1.5rem;
+      bottom: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      .btn {
+        left: 1.5rem;
+      }
     }
   }
-}
 
-.card.action-tile {
-  @include link-reset();
-  @extend .h-100, .p-3;
+  .action-tile {
+    @include link-reset();
+    @extend .h-100, .p-3;
 
-  .card-body {
-    @extend .p-0;
-  }
-}
-
-.card.article {
-  @extend .p-4;
-}
-
-.card.category.image {
-  @extend .h-100;
-
-  .card-text + .card-text {
-    @extend .mt-4;
+    .card-body {
+      @extend .p-0;
+    }
   }
 
-  .btn-link {
-    @extend .px-0, .font-weight-bold;
+  .article {
+    @extend .p-4;
   }
-}
 
-.card-wrapper {
-  @extend .mb-3;
+  .category.image {
+    @extend .h-100;
+
+    .card-text + .card-text {
+      @extend .mt-4;
+    }
+
+    .btn-link {
+      @extend .px-0, .font-weight-bold;
+    }
+  }
 }

@@ -16,10 +16,11 @@ layout: default
 {% assign actions = page.primary_action | split: "," | push: page.secondary_action %}
 
 <section id="main-cta">
-{% include components/cards/grid.html
-    refs=actions
-    card_type="action-tile"
-    md_cols=2 %}
+  {% include components/cards/grid.html
+      refs=actions
+      card_type="action-tile"
+      card_class="card"
+      md_cols=2 %}
 </section>
 
 <section id="features">
@@ -27,6 +28,7 @@ layout: default
   {% include components/cards/grid.html
       refs=page.features
       card_type="category-image"
+      card_class="card"
       card_heading_level=3 %}
 </section>
 

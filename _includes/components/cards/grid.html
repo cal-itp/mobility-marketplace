@@ -2,7 +2,7 @@
 
   {% capture md_cols %}row-cols-md-{{ include.md_cols | default: 3 }}{% endcapture %}
   {% assign grid_type = "card-grid-" | append: include.card_type %}
-  {% assign classes = "card-grid, row, row-cols-1" | split: "," | push: md_cols | push: grid_type %}
+  {% assign classes = "card-grid,row,row-cols-1" | split: "," | push: md_cols | push: grid_type %}
 
 <div class="grid-wrapper container-md">
   <div class="{{ classes | join: " " }}">
@@ -10,7 +10,8 @@
       <div class="card-wrapper col">
         {% include components/cards/{{ include.card_type }}.html
             ref_id=ref_id
-            heading_level=include.card_heading_level %}
+            heading_level=include.card_heading_level
+            class=include.card_class %}
       </div>
     {% endfor %}
   </div>

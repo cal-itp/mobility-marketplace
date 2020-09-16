@@ -2,7 +2,7 @@
 
 {% if action %}
 
-{% assign classes = "card,action-tile" | split: "," | push: include.tile_class | compact %}
+{% assign classes = "action-tile" | split: "," | push: include.class | compact %}
 
 <a class="{{ classes | join: " " }}" href="{{ action.href }}" target="{{ action.target }}">
   <div class="card-body">

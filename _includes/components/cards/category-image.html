@@ -2,7 +2,7 @@
 
 {% if cat %}
 
-{% assign classes = "card, category, image" | split: "," | push: include.class | compact %}
+{% assign classes = "category,image" | split: "," | push: include.class | compact %}
 
 <div class="{{ classes | join: " " }}">
   <img class="card-img-top" src="{{ cat.header_graphic | absolute_url }}" alt="Graphic illustration for {{ cat.title }}">
