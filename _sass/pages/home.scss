@@ -2,16 +2,20 @@
   background-color: #F3F3F4;
 }
 
-#hero, #main-cta, #features, #final-cta {
-  @extend .pt-4;
+#hero, #main-cta, #final-cta {
+  @extend .pt-4, .pt-lg-5;
+}
+
+#hero, #features, #final-cta {
+  @extend .pb-4, .pb-lg-5;
 }
 
 #hero, #final-cta {
-  @extend .pb-4;
+  background-color: #ffffff;
 }
 
-#hero {
-  background-color: #ffffff;
+#main-cta, #features {
+  @extend .px-sm-4, .px-md-0;
 }
 
 #main-cta {
@@ -20,5 +24,20 @@
   }
   .card-wrapper:last-of-type .card {
     @extend .btn-primary;
+  }
+}
+
+#features {
+  h2 {
+    @extend .font-weight-bold;
+  }
+}
+
+#final-cta {
+  img {
+    max-height: 276px;
+    @include media-breakpoint-up(md) {
+      max-height: 358px;
+    }
   }
 }

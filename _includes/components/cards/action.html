@@ -2,16 +2,26 @@
 
 {% if action %}
 
-{% assign classes = "card,action" | split: "," | push: include.tile_class | compact %}
+{% assign classes = "action" | split: "," | push: include.class | compact %}
+{% assign left = include.left_cols | default: 6 %}
+{% assign right = include.right_cols | default: 6 %}
 
 <div class="{{ classes | join: " " }}">
   <div class="row no-gutters">
-    <div class="col-md-6 graphic">
+    <div class="col-md-{{ left }} graphic">
+      <div class="card-body d-md-none">
+        {% include components/cards/title.html
+            title=action.title
+            heading_level=include.heading_level %}
+      </div>
       <img class="card-img" src="{{ action.card_graphic }}" alt="Graphic for {{ action.title }}" />
     </div>
-    <div class="col-md-6 text">
+    <div class="col-md-{{ right }} text">
       <div class="card-body">
-        <h2 class="card-title">{{ action.title }}</h2>
+        {% include components/cards/title.html
+            title=action.title
+            heading_level=include.heading_level
+            class="d-none d-md-block" %}
         <div class="card-text">
           {{ action.content }}
         </div>

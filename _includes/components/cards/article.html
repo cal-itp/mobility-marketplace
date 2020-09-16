@@ -2,10 +2,14 @@
 
 {% if article %}
 
-<article class="card article">
+{% assign classes = "article" | split: "," | push: include.class | compact %}
+
+<article class="{{ classes | join: " " }}">
   <div class="card-body">
     {% include components/date-badge.html date=article.date href=article.url stretch=true %}
-    <h2 class="card-title">{{ article.title }}</h2>
+    {% include components/cards/title.html
+        title=article.title
+        heading_level=include.heading_level %}
     <p class="card-text">{{ article.description }}</p>
   </div>
 </article>
