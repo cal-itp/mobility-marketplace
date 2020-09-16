@@ -14,10 +14,8 @@
   background-color: #ffffff;
 }
 
-#features {
-  h2 {
-    @extend .font-weight-bold;
-  }
+#main-cta, #features {
+  @extend .px-sm-4, .px-md-0;
 }
 
 #main-cta {
@@ -26,6 +24,12 @@
   }
   .card-wrapper:last-of-type .card {
     @extend .btn-primary;
+  }
+}
+
+#features {
+  h2 {
+    @extend .font-weight-bold;
   }
 }
 

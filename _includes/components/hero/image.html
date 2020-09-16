@@ -1,14 +1,14 @@
 {% assign classes = "hero,row,image" | split: "," | push: include.class | compact %}
 
-<div class="hero-wrapper container-md">
+<div class="hero-wrapper container">
   <div class="{{ classes | join: " " }}">
-    <div class="col-md-7 text">
+    <div class="text">
       <h1 class="font-weight-bold">{{ include.headline }}</h1>
       {% if include.content %}
       <div class="lead">{{ include.content }}</div>
       {% endif %}
     </div>
-    <div class="col-md-5 image">
+    <div class="image">
       <img src="{{ include.graphic }}" alt="Hero graphic" />
     </div>
   </div>

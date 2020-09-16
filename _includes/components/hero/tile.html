@@ -1,6 +1,6 @@
 {% assign classes = "hero,tile" | split: "," | push: include.class | compact %}
 
-<div class="hero-wrapper container-md">
+<div class="hero-wrapper container">
   <div class="{{ classes | join: " " }}">
     <div class="lead">{{ include.content }}</div>
   </div>

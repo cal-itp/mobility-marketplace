@@ -3,37 +3,47 @@
 
   // horizontally center image within column
   > .image {
+    width: 100%;
     @extend .d-flex, .justify-content-center;
+    @include media-breakpoint-up(lg) {
+      @include make-col(5);
+    }
+  }
+
+  > .text {
+    @include media-breakpoint-up(lg) {
+      @include make-col(7);
+    }
   }
 
   // vertically center both within column
-  > * {
-    @extend .align-self-center;
+  > .image, .text {
+    @extend .align-self-md-center;
   }
 
   h1 {
-    @extend .mt-4, .mt-md-0, .mb-2;
+    @extend .mt-4, .mt-lg-0, .mb-2;
     font-size: 1.5rem;
     text-align: center;
   }
 
   img {
-    @extend .my-2, .my-sm-4, .my-md-0;
+    @extend .my-2, .my-md-4, .my-lg-0;
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     h1 {
       font-size: 2rem;
     }
   }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     h1 {
       font-size: 2.4rem;
       text-align: unset;
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     .lead {
       display: none;
     }
@@ -41,7 +51,7 @@
 }
 
 .hero.tile {
-  @extend .d-md-none;
+  @extend .d-lg-none;
   .lead {
     @extend .mt-4;
     @include media-breakpoint-down(xs) {
