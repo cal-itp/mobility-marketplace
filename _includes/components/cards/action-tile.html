@@ -2,12 +2,21 @@
 
 {% if action %}
 
-{% assign classes = "card,action-tile" | split: "," | push: include.tile_class | compact %}
+{% assign classes = "action-tile" | split: "," | push: include.class | compact %}
 
-<a class="{{ classes | join: " " }}" href="{{ action.href }}" target="{{ action.target }}">
-  <div class="card-body">
-    <h2 class="card-title">{{ action.title }}</h2>
-    {{ action.content }}
+<a href="{{ action.href }}" target="{{ action.target }}" class="{{ classes | join: " " }}">
+  <div class="row">
+    <div class="col-md-5 col-lg-4 order-md-2 graphic">
+      <img class="card-img" src="{{ action.tile_graphic }}" />
+    </div>
+    <div class="col-md-7 col-lg-8 order-md-1 text">
+      <div class="card-body">
+        {% include components/cards/title.html
+            title=action.title
+            heading_level=include.heading_level %}
+        {{ action.content }}
+      </div>
+    </div>
   </div>
 </a>
 

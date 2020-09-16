@@ -2,26 +2,35 @@
 layout: default
 ---
 <section id="hero">
-{% include components/hero.html
+{% include components/hero/image.html
     headline=page.headline
     content=content
     graphic=page.hero_graphic
     class="home" %}
 </section>
 
+{% include components/hero/tile.html
+  content=content
+  class="home" %}
+
 {% assign actions = page.primary_action | split: "," | push: page.secondary_action %}
 
 <section id="main-cta">
-{% include components/cards/grid.html
-    refs=actions
-    card_type="action-tile"
-    md_cols=2 %}
+  {% include components/cards/grid.html
+      refs=actions
+      card_type="action-tile"
+      card_class="card"
+      md_cols=1
+      lg_cols=2 %}
 </section>
 
 <section id="features">
-{% include components/cards/grid.html
-    refs=page.features
-    card_type="category-image" %}
+  <h2 class="container">Section title</h2>
+  {% include components/cards/grid.html
+      refs=page.features
+      card_type="category-image"
+      card_class="card"
+      card_heading_level=3 %}
 </section>
 
 {% assign actions = page.final_action | split: "," %}
@@ -30,5 +39,8 @@ layout: default
 {% include components/cards/grid.html
     refs=actions
     card_type="action"
-    md_cols=1 %}
+    md_cols=1
+    lg_cols=1
+    card_left_cols=4
+    card_right_cols=8 %}
 </section>

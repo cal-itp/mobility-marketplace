@@ -1,14 +1,62 @@
-.hero {
+.hero.image {
   @extend .top-lg-rel-20pct, .top-md-rel-10pct, .top-sm-rel-5pct;
 
-  > * {
-    @extend .align-self-center;
+  // horizontally center image within column
+  > .image {
+    width: 100%;
+    @extend .d-flex, .justify-content-center;
+    @include media-breakpoint-up(lg) {
+      @include make-col(5);
+    }
+  }
+
+  > .text {
+    @include media-breakpoint-up(lg) {
+      @include make-col(7);
+    }
+  }
+
+  // vertically center both within column
+  > .image, .text {
+    @extend .align-self-md-center;
+  }
+
+  h1 {
+    @extend .mt-4, .mt-lg-0, .mb-2;
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   img {
-    @extend .mb-3;
-    @include media-breakpoint-down(sm) {
-      width: 100%;
+    @extend .my-2, .my-md-4, .my-lg-0;
+  }
+
+  @include media-breakpoint-up(md) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    h1 {
+      font-size: 2.4rem;
+      text-align: unset;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .lead {
+      display: none;
+    }
+  }
+}
+
+.hero.tile {
+  @extend .d-lg-none;
+  .lead {
+    @extend .mt-4;
+    @include media-breakpoint-down(xs) {
+      padding-left: $grid-gutter-width / 2;
+      padding-right: $grid-gutter-width / 2;
     }
   }
 }
