@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: bg-white
+class: home
 ---
 
 <section id="hero">
@@ -23,15 +24,6 @@ layout: default
       card_class="card"
       md_cols=1
       lg_cols=2 %}
-</section>
-
-<section id="features">
-  <h2 class="container">Section title</h2>
-  {% include components/cards/grid.html
-      refs=page.features
-      card_type="category-image"
-      card_class="card"
-      card_heading_level=3 %}
 </section>
 
 {% assign actions = page.final_action | split: "," %}
