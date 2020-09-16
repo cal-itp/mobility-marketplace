@@ -1,14 +1,24 @@
-{% if include.script.first %}
-  {% comment %} script is an object, include by name property {% endcomment %}
-  {% capture include_target %}scripts/{{ include.script.name }}.html{% endcapture %}
-  {% capture script_content %}{% include {{ include_target }} %}{% endcapture %}
-  {% unless script_content contains "Liquid Exception" %}
-    {% comment %} jsonify script object as js variable {% endcomment %}
-    {% include data/jsonify-js-const.html id=include.script.name data=include.script %}
-    {% include {{ include_target }} %}
-  {% endunless %}
+{% comment %} script is an object, include by name property {% endcomment %}
+{% if include.script.first and include.script.name %}
+  {% comment %} get the extension (if any) from the include {% endcomment %}
+  {% assign include_type = include.script.name | split: "." | last %}
+  {% if include_type == "js" %}
+    {% comment %} Include as the src to a script tag {% endcomment %}
+    {% comment %} get name of the file (without extension) {% endcomment %}
+    {% assign include_file = include.script.name | split: "." | pop | last | split: "/" | last  %}
+    {% include data/jsonify-js-const.html id=include_file data=include.script %}
+    {% include scripts/tag.html src=include.script.name %}
+  {% elsif include_type == "" %}
+    {% capture include_target %}scripts/{{ include.script.name }}.html{% endcapture %}
+    {% capture script_content %}{% include {{ include_target }} %}{% endcapture %}
+    {% unless script_content contains "Liquid Exception" %}
+      {% comment %} jsonify script object as js variable {% endcomment %}
+      {% include data/jsonify-js-const.html id=include.script.name data=include.script %}
+      {% include {{ include_target }} %}
+    {% endunless %}
+  {% endif %}
+{% comment %} script is a string, include as html filename {% endcomment %}
 {% else %}
-  {% comment %} script is a string, include as filename {% endcomment %}
   {% capture include_target %}scripts/{{ include.script }}.html{% endcapture %}
   {% capture script_content %}{% include {{ include_target }} %}{% endcapture %}
   {% unless script_content contains "Liquid Exception" %}
