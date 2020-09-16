@@ -15,21 +15,23 @@ This list was created in April, 2019, by consultant Trillium Transit under contr
 
 # Column Definitions
 
-- provider: Name of service provider (Source: Cal-ITP)
-- ntd_id: National Transit Database ID (Source: NTD)
-- voms_dr: 2018 Vehicles Operating at Maximum Service, Demand Response (Source: NTD)**
-- voms: 2018 Vehicles Operating at Maximum Service (Source: NTD)*
-- upt_dr: 2018 Total Unlinked Passenger Trips, Demand Response (Source: NTD)**	
-- upt: 2018 Total Unlinked Passenger Trips (Source: NTD)*
-- fares_dr: 2018 Total Passenger Fare Revenue, Demand Response (Source: NTD)**
-- fares: 2018 Total Passenger Fare Revenue (Source: NTD)*
-- contact_city: City included in agency's contact address	(Source: Cal-ITP)
-- service_county: County (or counties) with mapped services (Source: Cal-ITP) 	
-- url: URL of agency website (Source: Cal-ITP)
-- gtfs: URL for most recent static General Transit Feed Specification (GTFS) feed (Source: transitfeeds.com)
-- gtfs_rt_service_alerts:	URL for most recent real-time GTFS feed (Source: transitfeeds.com)
-- gtfs_rt_trip_updates: URL for most recent trip-updates component of real-time GTFS feed (Source: transitfeeds.com)
-- gtfs_rt_vehicle_locations: URL for most recent vehicle-locations component of real-time GTFS feed (Source: transitfeeds.com)
+|Column   |Definition   |
+|---|---|
+|provider   |Name of service provider (Source: Cal-ITP)   |
+|ntd_id   |National Transit Database ID (Source: NTD)   |
+|voms_dr   |2018 Vehicles Operating at Maximum Service, Demand Response (Source: NTD)**   |
+|voms   |2018 Vehicles Operating at Maximum Service (Source: NTD)*   |
+|upt_dr   |2018 Total Unlinked Passenger Trips, Demand Response (Source: NTD)**   |
+|upt   |2018 Total Unlinked Passenger Trips (Source: NTD)*   |
+|fares_dr   |2018 Total Passenger Fare Revenue, Demand Response (Source: NTD)**   |
+|fares   |2018 Total Passenger Fare Revenue (Source: NTD)*   |
+|contact_city   |City included in agency's contact address	(Source: Cal-ITP)   |
+|service_county   |County (or counties) with mapped services (Source: Cal-ITP)   |
+|url   |URL of agency website (Source: Cal-ITP)   |
+|gtfs   |URL for most recent static General Transit Feed Specification (GTFS) feed (Source: transitfeeds.com)   |
+|gtfs_rt_service_alerts   |URL for most recent real-time GTFS feed (Source: transitfeeds.com)   |
+|gtfs_rt_trip_updates   |URL for most recent trip-updates component of real-time GTFS feed (Source: transitfeeds.com)   |
+|gtfs_rt_vehicle_locations   |URL for most recent vehicle-locations component of real-time GTFS feed (Source: transitfeeds.com)   |
 
 *Includes NTD mode categories Motorbus (MB), Bus Rapid Transit (RB), Cable Car (CC), Commuter Bus (CB), Commuter Rail (CR), Heavy Rail (HR), Hybrid Rail (YR), Inclined Plane (IP), Jitney (JT), Light Rail (LR), Monorail/Automated  Guideway (MG), Streetcar Rail (SR), Trolleybus (TB), Demand Response (DR) and Demand Response Taxi (DT)
 
