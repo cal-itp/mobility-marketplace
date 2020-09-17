@@ -1,0 +1,7 @@
+.main-primary {
+  padding-top: 1.5rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 3rem;
+  }
+}

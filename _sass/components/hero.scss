@@ -1,6 +1,4 @@
 .hero {
-  @extend .top-lg-rel-20pct, .top-md-rel-10pct, .top-sm-rel-5pct;
-
   // horizontally center image within column
   > .image {
     width: 100%;
@@ -22,7 +20,7 @@
   }
 
   h1 {
-    @extend .mt-4, .mt-lg-0, .mb-2;
+    @extend .my-2, .mt-md-0;
     font-size: 1.5rem;
     text-align: center;
   }
@@ -42,7 +40,6 @@
       text-align: unset;
     }
   }
-
   @include media-breakpoint-down(md) {
     .lead {
       display: none;
