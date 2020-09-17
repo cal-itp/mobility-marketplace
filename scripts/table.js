@@ -34,6 +34,11 @@ $(function() {
     else {
       table.setData(providers);
     }
+
+    table.setSort([
+      {column:"provider", dir:"asc"},
+      {column:"service_county", dir:"asc"}
+    ]);
   }
 
   $.get(data_table.data_file, function(data) {
