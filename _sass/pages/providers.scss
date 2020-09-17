@@ -1,7 +1,12 @@
 .page.providers {
   @extend .container;
 
+  .row {
+    @extend .p-4;
+  }
+
   #map {
+    @extend .mb-4, .mb-md-0;
     width: 100%;
     height: 460px;
 
