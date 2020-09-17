@@ -3,7 +3,6 @@
 }
 
 .form-group {
-
   label {
     @extend .pl-md-3;
   }
@@ -28,4 +27,6 @@
 .form-control {
   @extend .rounded-lg;
   border: solid 2px $black;
+  color: $text-color;
+  font-size: 1.4rem;
 }
