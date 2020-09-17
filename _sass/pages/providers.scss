@@ -1,9 +1,5 @@
 .page.providers {
-  @extend .container;
-
-  .row {
-    @extend .p-4;
-  }
+  @extend .bg-gray-lightest, .p-4;
 
   #map {
     @extend .mb-4, .mb-md-0;
