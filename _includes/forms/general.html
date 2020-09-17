@@ -1,0 +1,47 @@
+{% include forms/indicates-required.html indicator="*" text="Indicates required fields" %}
+
+<form role="form">
+  <div class="form-group">
+    <label for="first_name" class="form-control-label">First Name</label>
+    <input type="text" class="form-control" id="first_name" placeholder="Nyota" />
+  </div>
+  <div class="form-group">
+    <label for="last_name" class="form-control-label">Last Name</label>
+    <input type="text" class="form-control" id="last_name" placeholder="Uhura" />
+  </div>
+  <div class="form-group">
+    <label for="title" class="form-control-label">Title</label>
+    <input type="text" class="form-control" id="title" placeholder="Communications Officer" />
+  </div>
+  <div class="form-group">
+    <label for="organization" class="form-control-label">Organization Name</label>
+    <input type="text" class="form-control" id="organization" placeholder="Elk Grove Transit" />
+  </div>
+  <div class="form-group">
+    <label for="email" class="form-control-label">Email Address {% include forms/indicator.html %}</label>
+    <input type="email" class="form-control" id="email" placeholder="nyota.uhura@elkgrovecity.org" aria-required="true" required />
+  </div>
+  <div class="form-group">
+    <label for="stakeholder_type" class="form-control-label">I am a {% include forms/indicator.html %}</label>
+    <select class="form-control" id="stakeholder_type" aria-required="true" required>
+      <option value="">Select an option</option>
+      <option value="transportation_agency_staff">Transportation agency staff</option>
+      <option value="transportation_agency_ceo">Transportation agency CEO</option>
+      <option value="transportation_agency_board_member">Transportation agency board member</option>
+      <option value="transportation_policy_maker">Transportation policy maker</option>
+      <option value="elected_official_no_transportation_focus">Elected official (no transportation focus)</option>
+      <option value="bus_operator_labor_union_stakeholder">Bus Operator/Labor union stakeholder</option>
+      <option value="equity_community_leader">Equity/Community Leader</option>
+      <option value="public_transportation_advocacy_group">Public transportation advocacy group</option>
+      <option value="economic_development_organization">Economic development organization</option>
+      <option value="consumer_advocate_organization">Consumer advocate organization</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="comments" class="form-control-label">Other comments or queries</label>
+    <textarea class="form-control" id="comments" placeholder="We welcome your feedback" rows=8></textarea>
+  </div>
+  <div class="form-group submit">
+    <input type="submit" class="btn btn-primary" value="Submit" />
+  </div>
+</form>

@@ -1,0 +1,37 @@
+.page.form {
+  @extend .container-fluid, .mx-0;
+
+  .content-section {
+    @extend .d-md-flex, .flex-md-column, .align-items-md-center, .pb-4;
+  }
+
+  .form-section {
+    @extend .d-md-flex, .justify-content-md-center, .py-4;
+    background-color: $gray-lightest;
+
+    .indicates-required {
+      @extend .text-center;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .content-section, .form-section {
+      @include make-row();
+      > * {
+        @include make-col(6);
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .form-section {
+      margin-left: -$grid-gutter-width;
+      margin-right: -$grid-gutter-width;
+      padding-left: $grid-gutter-width;
+      padding-right: $grid-gutter-width;
+    }
+  }
+
+  header {
+    @extend .text-md-center;
+  }
+}
