@@ -10,6 +10,10 @@
     width: 100%;
     height: 460px;
 
+    @include media-breakpoint-up(md) {
+      height: 560px;
+    }
+
     a {
       @include link-reset();
     }
