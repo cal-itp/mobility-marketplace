@@ -1,5 +1,4 @@
 $(function() {
-  let providers = [];
   const target_id = "#" + data_table.target_id;
 
   const numberMutator = (value) => value ? parseInt(value) : null;
@@ -27,14 +26,17 @@ $(function() {
     pagination:"local"
   });
 
-  function refresh(county) {
+  const refresh = (county) => {
     if (county && county !== "") {
-      table.setFilter("service_county", "=", county);
+      // filter where service_county column contains county
+      table.setFilter("service_county", "like", county);
     }
     else {
-      table.setData(providers);
+      // clear programmatic filters
+      table.clearFilter(true);
     }
 
+    // although not intuitive, this sorts by service_county and then provider
     table.setSort([
       {column:"provider", dir:"asc"},
       {column:"service_county", dir:"asc"}
@@ -42,7 +44,7 @@ $(function() {
   }
 
   $.get(data_table.data_file, function(data) {
-    providers = data;
+    table.setData(data);
     refresh();
   });
 });
