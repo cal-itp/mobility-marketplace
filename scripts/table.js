@@ -6,10 +6,13 @@ $(function() {
     reactiveData: true,
     layout: "fitColumns",
     columns: [
-      {title:"Agency", field:"provider"},
+      {title:"Provider", field:"provider"},
       {title:"Service County", field:"service_county"},
+      {title:"City", field:"contact_city"},
+      {title:"NTD ID", field:"ntd_id"},
       {title:"VOMS", field:"voms"},
       {title:"UPT", field:"upt"},
+      {title:"Fares", field:"fares"},
     ],
     height: "560px",
     pagination:"local"
