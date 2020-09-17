@@ -2,3 +2,6 @@
 	path = submodules/ca-state-template
 	url = https://github.com/Office-of-Digital-Innovation/California-State-Template.git
 	branch = master
+[submodule "submodules/tabulator"]
+	path = submodules/tabulator
+	url = https://github.com/olifolkerd/tabulator.git
