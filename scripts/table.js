@@ -43,6 +43,8 @@ $(function() {
     ]);
   }
 
+  document.addEventListener("mapClick", (e) => refresh(e.detail));
+
   $.get(data_table.data_file, function(data) {
     table.setData(data);
     refresh();

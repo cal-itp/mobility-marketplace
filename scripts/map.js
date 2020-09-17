@@ -1,5 +1,10 @@
 mapboxgl.accessToken = data_map.token;
 
+const sendClickEvent = (county) => {
+  const ev = new CustomEvent('mapClick',{ bubbles: true, detail: county });
+  document.dispatchEvent(ev);
+};
+
 var map = new mapboxgl.Map({
   container: data_map.target_id,
   style: "mapbox://styles/calitp-transit-store/ckew28dsq0c3n19qwlrozi3ts",
@@ -83,5 +88,20 @@ map.on("load", function () {
     map.getCanvas().style.cursor = "default";
     currentCounty = null;
     popup.remove();
+  });
+
+  var clickCounty;
+
+  map.on("click", "counties", function (e) {
+    const county = e.features[0].properties.county;
+
+    if (clickCounty !== county) {
+      clickCounty = county;
+    }
+    else {
+      clickCounty = null;
+    }
+
+    sendClickEvent(clickCounty);
   });
 });
