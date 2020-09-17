@@ -3,6 +3,8 @@
 }
 
 .form-group {
+  @extend .mb-4;
+
   label {
     @extend .pl-md-3;
   }

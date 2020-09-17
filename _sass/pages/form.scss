@@ -2,7 +2,7 @@
   @extend .container-fluid, .mx-0;
 
   .content-section {
-    @extend .d-md-flex, .flex-md-column, .align-items-md-center, .pb-4;
+    @extend .d-md-flex, .flex-md-column, .align-items-md-center, .pb-4, .pb-md-5;
   }
 
   .form-section {
