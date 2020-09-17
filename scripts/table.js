@@ -1,5 +1,5 @@
 $(function() {
-  const providers = [];
+  let providers = [];
   const target_id = "#" + data_table.target_id;
 
   let table = new Tabulator(target_id, {
