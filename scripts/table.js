@@ -7,20 +7,40 @@ $(function() {
     reactiveData: true,
     layout: "fitColumns",
     columns: [
-      {title:"Provider", field:"provider", formatter:"textarea", widthGrow:2},
-      {title:"Service County", field:"service_county", formatter:"textarea", widthGrow:3},
-      {title:"City", field:"contact_city", formatter:"textarea", widthGrow:2},
-      {title:"NTD ID", field:"ntd_id"},
-      {title:"VOMS", field:"voms", mutator:numberMutator, formatter:"money", formatterParams:{
-        precision:false
-      }},
-      {title:"UPT", field:"upt", mutator:numberMutator, formatter:"money", formatterParams:{
-        precision:false
-      }},
-      {title:"Fares", field:"fares", mutator:numberMutator, formatter:"money", formatterParams:{
-        precision:false,
-        symbol:"$"
-      }},
+      {
+        title:"Provider",
+        headerTooltip:"Link to transit service provider's website.",
+        field:"url",
+        formatter:"link",
+        formatterParams:{
+          labelField:"provider",
+          target:"_blank",
+        }
+      },
+      {
+        title:"Contact<br />City",
+        headerTooltip:"City included in provider's contact address.",
+        field:"contact_city",
+        formatter:"textarea"
+      },
+      {
+        title:"Service<br />Counties",
+        headerTooltip:"County (or counties) with mapped services.",
+        field:"service_county",
+        formatter:"textarea"
+      },
+      {
+        title:"2018 Unlinked<br />Passenger Trips",
+        headerTooltip:"2018 Unlinked Passenger Trips from the National Transit Database (NTD). Includes NTD mode categories Motorbus (MB), Bus Rapid Transit (RB), Cable Car (CC), Commuter Bus (CB), Commuter Rail (CR), Heavy Rail (HR), Hybrid Rail (YR), Inclined Plane (IP), Jitney (JT), Light Rail (LR), Monorail/Automated  Guideway (MG), Streetcar Rail (SR), Trolleybus (TB), Demand Response (DR) and Demand Response Taxi (DT).",
+        field:"upt",
+        mutator:numberMutator,
+        sorter:"number",
+        hozAlign:"right",
+        formatter:"money",
+        formatterParams:{
+          precision:false
+        },
+      }
     ],
     height: "560px",
     pagination:"local"
@@ -43,7 +63,12 @@ $(function() {
     ]);
   }
 
-  document.addEventListener("mapClick", (e) => refresh(e.detail));
+  const handleClick = (e) => {
+    const data = e.detail;
+    refresh(data);
+  };
+
+  document.addEventListener("mapClick", handleClick);
 
   $.get(data_table.data_file, function(data) {
     table.setData(data);
