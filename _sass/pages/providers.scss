@@ -11,7 +11,7 @@
     }
 
     a {
-      @include link-reset();
+      border: none;
     }
   }
 }

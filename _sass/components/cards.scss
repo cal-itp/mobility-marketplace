@@ -48,7 +48,6 @@
   }
 
   .action-tile {
-    @include link-reset();
     @extend .h-100, .p-4;
 
     .row > * {

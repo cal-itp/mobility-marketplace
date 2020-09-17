@@ -1,10 +1,7 @@
 $(function() {
   const target_id = "#" + data_table.target_id;
 
-  const numberMutator = (value) => value ? parseInt(value) : null;
-
   let table = new Tabulator(target_id, {
-    reactiveData: true,
     layout: "fitColumns",
     columns: [
       {
@@ -33,9 +30,10 @@ $(function() {
         title:"2018 Unlinked<br />Passenger Trips",
         headerTooltip:"2018 Unlinked Passenger Trips from the National Transit Database (NTD). Includes NTD mode categories Motorbus (MB), Bus Rapid Transit (RB), Cable Car (CC), Commuter Bus (CB), Commuter Rail (CR), Heavy Rail (HR), Hybrid Rail (YR), Inclined Plane (IP), Jitney (JT), Light Rail (LR), Monorail/Automated  Guideway (MG), Streetcar Rail (SR), Trolleybus (TB), Demand Response (DR) and Demand Response Taxi (DT).",
         field:"upt",
-        mutator:numberMutator,
         sorter:"number",
-        hozAlign:"right",
+        sorterParams:{
+          alignEmptyValues:"bottom"
+        },
         formatter:"money",
         formatterParams:{
           precision:false

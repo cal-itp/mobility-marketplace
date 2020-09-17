@@ -1,0 +1,15 @@
+.tabulator {
+  font-size: 0.9rem;
+}
+
+.tabulator, .tabulator-header {
+  border-top: none !important;
+}
+
+.tabulator-row {
+  border-bottom-width: 2px;
+
+  &:last-of-type{
+    border-bottom: none;
+  }
+}
