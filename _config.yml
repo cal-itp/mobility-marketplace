@@ -42,6 +42,7 @@ defaults:
       layout: "default"
 
 exclude:
+  - admin/plugins
   - bin
   - docker-compose.yml
   - netlify.toml
