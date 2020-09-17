@@ -12,7 +12,7 @@ const path = require("path");
 
 module.exports = {
   async onPreBuild() {
-    const csvFilePath = path.join(".", "data", "providers.csv");
+    const csvFilePath = path.join(".", "data", "providers", "providers.csv");
     await csv()
       .fromFile(csvFilePath)
       .then((data) => {
