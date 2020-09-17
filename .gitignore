@@ -4,5 +4,5 @@
 .netlify
 .vscode
 _site
-data/providers.json
+data/providers/providers.json
 fonts
