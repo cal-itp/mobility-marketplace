@@ -54,9 +54,11 @@
 
   .custom-control-label {
     font-weight: normal;
+    @extend .px-3;
 
     span {
       @extend .pr-1;
+      font-weight: bold;
     }
   }
 }

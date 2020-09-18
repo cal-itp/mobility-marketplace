@@ -2,11 +2,11 @@
   @extend .container-fluid, .mx-0;
 
   .content-section {
-    @extend .d-md-flex, .flex-md-column, .align-items-md-center, .pb-4, .pb-md-5;
+    @extend .pb-4, .pb-md-5;
   }
 
   .form-section {
-    @extend .d-md-flex, .justify-content-md-center, .py-4;
+    @extend .py-4;
     background-color: $gray-lightest;
 
     .indicates-required {
@@ -14,11 +14,41 @@
     }
   }
 
+  .content-section {
+    > * {
+      @extend .offset-md-2, .offset-xl-3;
+    }
+  }
+  .form-section {
+    > * {
+      @extend .offset-md-3, .offset-xl-4;
+    }
+  }
+
   @include media-breakpoint-up(md) {
     .content-section, .form-section {
       @include make-row();
+    }
+    .content-section {
+      > * {
+        @include make-col(8);
+      }
+    }
+    .form-section {
       > * {
         @include make-col(6);
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    .content-section {
+      > * {
+        @include make-col(6);
+      }
+    }
+    .form-section {
+      > * {
+        @include make-col(4);
       }
     }
   }
