@@ -41,7 +41,7 @@ $(function() {
       }
     ],
     height: "560px",
-    pagination:"local"
+    pagination:false
   });
 
   const refresh = (county) => {
