@@ -5,7 +5,7 @@ $(function() {
     layout: "fitColumns",
     columns: [
       {
-        title:"Provider",
+        title:"Provider Name",
         headerTooltip:"Link to transit service provider's website.",
         field:"url",
         formatter:"link",
@@ -15,19 +15,19 @@ $(function() {
         }
       },
       {
-        title:"Contact City",
+        title:"City HQ",
         headerTooltip:"City included in provider's contact address.",
         field:"contact_city",
         formatter:"textarea"
       },
       {
-        title:"Service Counties",
+        title:"Counties Serviced",
         headerTooltip:"County (or counties) with mapped services.",
         field:"service_county",
         formatter:"textarea"
       },
       {
-        title:"2018 Unlinked Passenger Trips",
+        title:"2018 Passenger Volume",
         headerTooltip:"2018 Unlinked Passenger Trips from the National Transit Database (NTD). Includes NTD mode categories Motorbus (MB), Bus Rapid Transit (RB), Cable Car (CC), Commuter Bus (CB), Commuter Rail (CR), Heavy Rail (HR), Hybrid Rail (YR), Inclined Plane (IP), Jitney (JT), Light Rail (LR), Monorail/Automated  Guideway (MG), Streetcar Rail (SR), Trolleybus (TB), Demand Response (DR) and Demand Response Taxi (DT).",
         field:"upt",
         sorter:"number",

@@ -75,6 +75,8 @@ history: >
   American Public Transportation Association (APTA) database, California Transit
   Association (CTA) members, and the National Transit Database (NTD).
 ---
-Transportation technology is improving rapidly, prompting innovation across both public and private sectors. The greatest benefits from technological advances will require greater interoperability, increased access to technology, and streamlined customer service.
+From commuter buses and light rail to on-demand paratransit, passengers want transportation that’s more technologically enabled, with real-time journey-planning information and tap-enabled fare payment.
 
-To better understand the size and scale of opportunities for integration, the Cal-ITP team has compiled a list of transportation providers across the state of California.
+To better understand the size and scale of opportunities for tech integration in transit, the Cal-ITP team has compiled a list of California’s transportation providers—336 and counting.
+
+Explore all 336 on this interactive map, which offers just a taste of our full dataset—a free CSV download that includes fare revenues, fleet size, vehicle type and more.
