@@ -1,6 +1,7 @@
 ---
 layout: form
-permalink: /signup
+permalink: /subscribe
+image: https://dummyimage.com/570x305/d1dee3/fff.png&text=+
 title: Sign Up for Transit Stop Updates
 headline: Sign Up for Transit Stop Updates
 form: general

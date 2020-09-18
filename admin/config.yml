@@ -41,7 +41,7 @@ collections:
     files:
       - label: "Homepage"
         name: "homepage"
-        file: "content/index.md"
+        file: "content/pages/index.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
@@ -94,6 +94,36 @@ collections:
               searchFields: ["title", "text", "body"],
               displayFields: ["title"]
             }
+
+      - label: "Email Signup"
+        name: "signup"
+        file: "content/pages/signup.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "form"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
+          - {label: "Social image", name: "image", widget: "image", hint: "Shown in social media shares and linking" }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              hint: "For browser tabs and social shares; combined with the site title."
+            }
+          - {label: "Headline", name: "headline", widget: "string"}
+          - {
+              label: "Body",
+              name: "body",
+              widget: "markdown",
+              minimal: true,
+              buttons: [
+                bold,
+                italic,
+                link,
+                bulleted-list,
+                numbered-list
+              ],
+              editorComponents: []
+            }
+          - {label: "Form include", name: "form", widget: "hidden"}
 
   - name: "categories"
     label: "Categories"
