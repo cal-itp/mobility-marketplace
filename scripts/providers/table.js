@@ -59,11 +59,24 @@ $(function() {
       {column:"provider", dir:"asc"},
       {column:"service_county", dir:"asc"}
     ]);
-  }
+  };
+
+  const pill = $("<button />").addClass("btn-county").on("click", () => makePill());
+  const makePill = (data) => {
+    if (data && data.county && data.num_providers) {
+      pill.text(`${data.county} (${data.num_providers})`);
+      $(target_id).parents("aside").prepend(pill);
+    }
+    else {
+      refresh();
+      pill.detach();
+    }
+  };
 
   const handleClick = (e) => {
     const data = e.detail;
-    refresh(data);
+    refresh(data.properties.county);
+    makePill(data.properties);
   };
 
   document.addEventListener("mapClick", handleClick);

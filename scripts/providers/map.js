@@ -1,7 +1,7 @@
 mapboxgl.accessToken = data_map.token;
 
-const sendClickEvent = (county) => {
-  const ev = new CustomEvent('mapClick',{ bubbles: true, detail: county });
+const sendClickEvent = (feature) => {
+  const ev = new CustomEvent('mapClick',{ bubbles: true, detail: feature });
   document.dispatchEvent(ev);
 };
 
@@ -93,7 +93,8 @@ map.on("load", function () {
   var clickCounty;
 
   map.on("click", "counties", function (e) {
-    const county = e.features[0].properties.county;
+    const feature = e.features[0];
+    const county = feature.properties.county;
 
     if (clickCounty !== county) {
       clickCounty = county;
@@ -102,6 +103,6 @@ map.on("load", function () {
       clickCounty = null;
     }
 
-    sendClickEvent(clickCounty);
+    sendClickEvent(feature);
   });
 });
