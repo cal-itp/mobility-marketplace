@@ -10,16 +10,23 @@ const csv = require("csvtojson");
 const fs = require("fs");
 const path = require("path");
 
+const processFile = (csvDataFile) => {
+  csv()
+  .fromFile(csvDataFile)
+  .then((data) => {
+    const jsonDataFile = csvDataFile.replace(".csv", ".json")
+    fs.writeFile(jsonDataFile, JSON.stringify(data), (e) => {
+      console.log(`Error writing ${jsonDataFile}: ${e.message}`);
+    });
+  });
+}
+
+const dataDir = path.join(".", "data", "providers");
+const dataFiles = ["providers.csv", "dictionary.csv"].map((f) => path.join(dataDir, f));
+
 module.exports = {
   async onPreBuild() {
-    const csvFilePath = path.join(".", "data", "providers", "providers.csv");
-    await csv()
-      .fromFile(csvFilePath)
-      .then((data) => {
-        const jsonFilePath = csvFilePath.replace(".csv", ".json");
-        fs.writeFile(jsonFilePath, JSON.stringify(data), (e) => {
-          console.log(`Error writing provider JSON file: ${e.message}`);
-        });
-      });
+    const jobs = dataFiles.map(processFile);
+    await Promise.all(jobs);
   }
 }
