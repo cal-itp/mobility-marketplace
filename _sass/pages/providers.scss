@@ -1,5 +1,26 @@
 .page.providers {
-  @extend .bg-gray-lightest, .p-4;
+  @extend .container-fluid, .px-0;
+
+  .content-section {
+    @include make-row();
+    @extend .pb-4;
+
+    > *{
+      @extend .offset-md-3;
+      @include make-col-ready();
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
+    }
+
+    header h1 {
+      @extend .text-center;
+    }
+  }
+
+  .standout-section {
+    @extend .bg-gray-lightest, .px-4, .py-5;
+  }
 
   #map {
     @extend .mb-4, .mb-md-0;
@@ -12,6 +33,31 @@
 
     a {
       border: none;
+    }
+  }
+
+  #table {
+    .tabulator-headers {
+      .tabulator-col:last-child {
+        @extend .pb-2;
+        .tabulator-col-content {
+          @extend .py-0;
+          .tabulator-col-title-holder {
+            // hack the last multi-line label into position
+            top: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .table.glossary {
+    tbody {
+      tr {
+        td:first-child {
+          width: 25%;
+        }
+      }
     }
   }
 }

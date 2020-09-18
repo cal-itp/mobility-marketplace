@@ -1,0 +1,71 @@
+---
+layout: bg-white
+class: providers
+
+head_scripts:
+  - mapbox
+  - tabulator
+
+foot_scripts:
+  - name: /scripts/map.js
+    target_id: map
+    data_file: /data/providers/counties.geojson
+    token: pk.eyJ1IjoiY2FsaXRwLXRyYW5zaXQtc3RvcmUiLCJhIjoiY2tldzA3dnF5MGlmOTJ4b2p0bWZ6ZnNrcSJ9.AOeqhozE542cmioe-YLi2Q
+
+  - name: /scripts/table.js
+    target_id: table
+    data_file: /data/providers/providers.json
+---
+
+<article class="page providers">
+  <div class="content-section">
+    <header>
+      <h1>{{ page.headline }}</h1>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+  </div>
+  <aside class="standout-section">
+    <div class="row">
+      <div class="col-md-5 d-flex">
+        <div id="map" class="align-self-center"></div>
+      </div>
+      <div class="col-md-7 d-flex">
+        <div id="table" class="align-self-center" style="width: 100%; height: 630px;"></div>
+      </div>
+    </div>
+  </aside>
+  <aside class="content-section">
+    <header>
+      <h2>About the Data</h2>
+    </header>
+    <main>
+
+    </main>
+  </aside>
+  <aside class="content-section">
+    <header>
+      <h2>Column Definitions</h2>
+    </header>
+    <main>
+
+    </main>
+  </aside>
+  <aside class="content-section">
+    <header>
+      <h2>Glossary</h2>
+    </header>
+    <main>
+
+    </main>
+  </aside>
+  <aside class="content-section">
+    <header>
+      <h2>History</h2>
+    </header>
+    <main>
+
+    </main>
+  </aside>
+</div>

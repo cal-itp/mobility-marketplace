@@ -1,9 +1,30 @@
-.tabulator {
+.table, .tabulator {
   font-size: 0.9rem;
 }
 
-.tabulator, .tabulator-header {
-  border-top: none !important;
+.tabulator, .tabulator-header, .table th, .table td {
+  border-top-width: 2px !important;
+}
+
+.tabulator {
+  .tabulator-header {
+    .tabulator-headers {
+      height: 55px;
+      .tabulator-col {
+        height: 55px;
+        .tabulator-col-content {
+          height: 55px;
+          padding: 1rem;
+          .tabulator-col-title {
+            white-space: normal;
+          }
+        }
+        .tabulator-arrow {
+          border-bottom-color: $text-color !important;
+        }
+      }
+    }
+  }
 }
 
 .tabulator-row {
