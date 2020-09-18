@@ -10,36 +10,64 @@
     <input type="text" class="form-control" id="last_name" placeholder="Uhura" />
   </div>
   <div class="form-group">
+    <label for="organization" class="form-control-label">Organization Name</label>
+    <input type="text" class="form-control" id="organization" placeholder="Elk Grove Transit" />
+  </div>
+  <div class="form-group">
     <label for="title" class="form-control-label">Title</label>
     <input type="text" class="form-control" id="title" placeholder="Communications Officer" />
   </div>
   <div class="form-group">
-    <label for="organization" class="form-control-label">Organization Name</label>
-    <input type="text" class="form-control" id="organization" placeholder="Elk Grove Transit" />
+    <label for="role" class="form-control-label">Role {% include forms/indicator.html %}</label>
+    <select class="form-control" id="role" aria-required="true" required>
+      <option value="">Select an option</option>
+      <option value="transportation_provider_staff">Transportation Provider Staff</option>
+      <option value="transportation_provider_ceo">Transportation Provider CEO</option>
+      <option value="technology_vendor">Technology Vendor</option>
+      <option value="other">Other</option>
+    </select>
   </div>
   <div class="form-group">
     <label for="email" class="form-control-label">Email Address {% include forms/indicator.html %}</label>
     <input type="email" class="form-control" id="email" placeholder="nyota.uhura@elkgrovecity.org" aria-required="true" required />
   </div>
   <div class="form-group">
-    <label for="stakeholder_type" class="form-control-label">I am a {% include forms/indicator.html %}</label>
-    <select class="form-control" id="stakeholder_type" aria-required="true" required>
-      <option value="">Select an option</option>
-      <option value="transportation_agency_staff">Transportation agency staff</option>
-      <option value="transportation_agency_ceo">Transportation agency CEO</option>
-      <option value="transportation_agency_board_member">Transportation agency board member</option>
-      <option value="transportation_policy_maker">Transportation policy maker</option>
-      <option value="elected_official_no_transportation_focus">Elected official (no transportation focus)</option>
-      <option value="bus_operator_labor_union_stakeholder">Bus Operator/Labor union stakeholder</option>
-      <option value="equity_community_leader">Equity/Community Leader</option>
-      <option value="public_transportation_advocacy_group">Public transportation advocacy group</option>
-      <option value="economic_development_organization">Economic development organization</option>
-      <option value="consumer_advocate_organization">Consumer advocate organization</option>
-    </select>
+    <div>
+      <label class="form-control-label">Select areas of interest</label>
+    </div>
+    <div class="custom-control">
+      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area1" value="data_standards" >
+      <label class="custom-control-label" for="area1"><span>Data Standards:</span>Improving real-time information (arrival time, service changes...) 
+      </label>
+    </div>
+    <div class="custom-control">
+      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area2" value="contactless_payments" >
+      <label class="custom-control-label" for="area2"><span>Contactless Payments:</span>Tap-to-pay cEMV credit/debit cards, payment-enabled mobile wallets, processing...</label>
+    </div>
+    <div class="custom-control">
+      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area3" value="discounted_fare" >
+      <label class="custom-control-label" for="area3"><span>Discounted-Fare Solutions:</span>Instantly verifiying eligibility (for seniors, youth, veterans, persons with disabilities, low-income riders, employee benefits...)</label>
+    </div>
+    <div class="custom-control">
+      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area4" value="economic_equity" >
+      <label class="custom-control-label" for="area4"><span>Economic Equity:</span>Prioritizing transit access to reach jobs and payment methods if underbanked</label>
+    </div>
+    <div class="custom-control">
+      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area5" value="cooperative_procurement" >
+      <label class="custom-control-label" for="area5"><span>Cooperative Procurement:</span>Leveraging State-negotiated contracts for goods and services, including payment processing</label>
+    </div>
+    <div class="custom-control">
+      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area6" value="cal_itp_collaboration" >
+      <label class="custom-control-label" for="area6"><span>Collaborating with Cal-ITP:</span>Tapping public agencies and private-industry partners on innovative standards-compliant solutions that net cost savings</label>
+    </div>
+    <div class="custom-control">
+      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area7" value="industry_news" >
+      <label class="custom-control-label" for="area7"><span>Industry News:</span>California, U.S. and international trends, including COVID-19 recovery stories revealed by open-source data</label>
+    </div>
   </div>
   <div class="form-group">
     <label for="comments" class="form-control-label">Other comments or queries</label>
-    <textarea class="form-control" id="comments" placeholder="We welcome your feedback" rows=8></textarea>
+    <textarea class="form-control" id="comments" placeholder="We welcome your feedback!" rows=6></textarea>
   </div>
   <div class="form-group submit">
     <input type="submit" class="btn btn-primary" value="Submit" />

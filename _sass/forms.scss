@@ -32,3 +32,31 @@
   color: $text-color;
   font-size: 1.4rem;
 }
+
+.custom-control {
+  @extend .mb-3;
+
+
+  input[type=checkbox] + .custom-control-label:before {
+    @extend .rounded-lg;
+    border: solid 2px $black;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    top: 0.2rem;
+  }
+
+  input[type=checkbox]:checked + .custom-control-label:before {
+    content: "\2714";
+    padding-left: 3px;
+    border-color: transparent;
+  }
+
+  .custom-control-label {
+    font-weight: normal;
+
+    span {
+      @extend .pr-1;
+    }
+  }
+}
