@@ -3,7 +3,7 @@
 
   .content-section {
     @include make-row();
-    @extend .pb-4;
+    @extend .pb-4, .mx-0;
 
     > *{
       @extend .offset-md-3;
@@ -19,7 +19,7 @@
   }
 
   .standout-section {
-    @extend .bg-gray-lightest, .px-4, .py-5;
+    @extend .bg-gray-lightest, .px-4, .py-4, .py-md-5;
   }
 
   #map {
@@ -33,21 +33,6 @@
 
     a {
       border: none;
-    }
-  }
-
-  #table {
-    .tabulator-headers {
-      .tabulator-col:last-child {
-        @extend .pb-2;
-        .tabulator-col-content {
-          @extend .py-0;
-          .tabulator-col-title-holder {
-            // hack the last multi-line label into position
-            top: 0.4rem;
-          }
-        }
-      }
     }
   }
 

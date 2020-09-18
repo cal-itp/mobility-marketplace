@@ -6,27 +6,6 @@
   border-top-width: 2px !important;
 }
 
-.tabulator {
-  .tabulator-header {
-    .tabulator-headers {
-      height: 55px;
-      .tabulator-col {
-        height: 55px;
-        .tabulator-col-content {
-          height: 55px;
-          padding: 1rem;
-          .tabulator-col-title {
-            white-space: normal;
-          }
-        }
-        .tabulator-arrow {
-          border-bottom-color: $text-color !important;
-        }
-      }
-    }
-  }
-}
-
 .tabulator-row {
   border-bottom-width: 2px;
 

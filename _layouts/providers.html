@@ -41,15 +41,7 @@ foot_scripts:
       <h2>About the Data</h2>
     </header>
     <main>
-
-    </main>
-  </aside>
-  <aside class="content-section">
-    <header>
-      <h2>Column Definitions</h2>
-    </header>
-    <main>
-
+      {{ page.about | markdownify }}
     </main>
   </aside>
   <aside class="content-section">
@@ -57,7 +49,22 @@ foot_scripts:
       <h2>Glossary</h2>
     </header>
     <main>
-
+      <table class="table glossary">
+        <thead>
+          <tr>
+            <th scope="col">Term</th>
+            <th scope="col">Definition</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in page.glossary %}
+          <tr>
+            <td>{{ item.term }}</td>
+            <td>{{ item.definition }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </main>
   </aside>
   <aside class="content-section">
@@ -65,7 +72,7 @@ foot_scripts:
       <h2>History</h2>
     </header>
     <main>
-
+      {{ page.history | markdownify }}
     </main>
   </aside>
 </div>

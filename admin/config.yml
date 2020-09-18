@@ -95,6 +95,49 @@ collections:
               displayFields: ["title"]
             }
 
+      - label: "Providers"
+        name: "providers"
+        file: "content/pages/providers.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "providers"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
+          - {label: "Page image", name: "image", widget: "image", hint: "Displayed in social shares and links." }
+          - {
+              label: "About the Data",
+                name: "about",
+                widget: "markdown",
+                minimal: true,
+                buttons: [
+                  bold,
+                  italic,
+                  link,
+                  bulleted-list,
+                  numbered-list
+                ],
+                editorComponents: []
+              }
+            - label: "Glossary"
+              name: "glossary"
+              widget: "list"
+              summary: "{{fields.term}}"
+              fields:
+                - {label: "Term", name: "term", widget: "string"}
+                - {label: "Definition", name: "definition", widget: "text"}
+            - {
+                label: "History",
+                name: "history",
+                widget: "markdown",
+                minimal: true,
+                buttons: [
+                  bold,
+                  italic,
+                  link,
+                  bulleted-list,
+                  numbered-list
+                ],
+                editorComponents: []
+              }
+
       - label: "Subscribe"
         name: "subscribe"
         file: "content/pages/subscribe.md"
