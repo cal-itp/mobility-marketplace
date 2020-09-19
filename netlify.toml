@@ -25,6 +25,9 @@
 [[plugins]]
   package = "./admin/plugins/ca-state-fonts"
 
+[[plugins]]
+  package = "./admin/plugins/data-package"
+
 # REDIRECT and HEADERS examples.
 # Uncomment to use. Directives in this file will ALWAYS override any identical
 # directives present in either _redirects and _headers files, and also any
