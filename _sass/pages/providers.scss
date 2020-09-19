@@ -64,6 +64,12 @@ $map-height-md: 560px;
     }
   }
 
+  .btn-data-package {
+    @extend .btn, .btn-primary, .d-block, .font-weight-bold, .mx-auto, .p-2, .text-uppercase;
+    margin-top: 1.25rem;
+    width: 230px;
+  }
+
   .table.glossary {
     tbody {
       tr {

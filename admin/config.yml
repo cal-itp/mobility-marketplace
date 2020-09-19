@@ -103,40 +103,62 @@ collections:
           - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Page image", name: "image", widget: "image", hint: "Displayed in social shares and links." }
           - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              hint: "For browser tabs and social shares; combined with the site title."
+            }
+          - {label: "Headline", name: "headline", widget: "string"}
+          - {
+              label: "Body",
+              name: "body",
+              widget: "markdown",
+              minimal: true,
+              buttons: [
+                bold,
+                italic,
+                link,
+                bulleted-list,
+                numbered-list
+              ],
+              editorComponents: []
+            }
+          - {
               label: "About the Data",
-                name: "about",
-                widget: "markdown",
-                minimal: true,
-                buttons: [
-                  bold,
-                  italic,
-                  link,
-                  bulleted-list,
-                  numbered-list
-                ],
-                editorComponents: []
-              }
-            - label: "Glossary"
-              name: "glossary"
-              widget: "list"
-              summary: "{{fields.term}}"
-              fields:
-                - {label: "Term", name: "term", widget: "string"}
-                - {label: "Definition", name: "definition", widget: "text"}
-            - {
-                label: "History",
-                name: "history",
-                widget: "markdown",
-                minimal: true,
-                buttons: [
-                  bold,
-                  italic,
-                  link,
-                  bulleted-list,
-                  numbered-list
-                ],
-                editorComponents: []
-              }
+              name: "about",
+              widget: "markdown",
+              minimal: true,
+              buttons: [
+                bold,
+                italic,
+                link,
+                heading-three,
+                heading-four,
+                heading-five,
+                heading-six,
+                bulleted-list,
+                numbered-list
+              ],
+              editorComponents: []
+            }
+          - {
+              label: "History",
+              name: "history",
+              widget: "markdown",
+              minimal: true,
+              buttons: [
+                bold,
+                italic,
+                link,
+                heading-three,
+                heading-four,
+                heading-five,
+                heading-six,
+                bulleted-list,
+                numbered-list
+              ],
+              editorComponents: []
+            }
 
       - label: "Subscribe"
         name: "subscribe"

@@ -34,7 +34,7 @@ foot_scripts:
         <div id="map" class="align-self-center"></div>
       </div>
       <div class="col-md-7 d-flex">
-        <div id="table-data" class="align-self-center" style="width: 100%; height: 630px;"></div>
+        <div id="table-data" class="align-self-center providers" style="width: 100%; height: 630px;"></div>
       </div>
     </div>
   </aside>
@@ -44,6 +44,7 @@ foot_scripts:
     </header>
     <main>
       {{ page.about | markdownify }}
+      <a href="{{ '/data/providers/package.zip' }}" class="btn-data-package">Download Data</a>
     </main>
   </aside>
   <aside class="content-section">
