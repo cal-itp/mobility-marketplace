@@ -231,6 +231,19 @@ collections:
             }
           - {label: "Form include", name: "form", widget: "hidden"}
 
+      - label: "Glossary"
+        name: "glossary"
+        file: "_data/glossary.yml"
+        fields:
+          - label: "Terms"
+            label_singular: "Term"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.term}}"
+            fields:
+              - {label: "Term", name: "term", widget: "string"}
+              - {label: "Definition", name: "definition", widget: "text"}
+
   - name: "categories"
     label: "Categories"
     label_singular: "Category"
