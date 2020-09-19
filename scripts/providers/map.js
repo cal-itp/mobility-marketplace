@@ -98,11 +98,11 @@ map.on("load", function () {
 
     if (clickCounty !== county) {
       clickCounty = county;
+      sendClickEvent(feature);
     }
     else {
       clickCounty = null;
+      sendClickEvent(null);
     }
-
-    sendClickEvent(feature);
   });
 });

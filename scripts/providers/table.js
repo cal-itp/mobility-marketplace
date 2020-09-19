@@ -1,48 +1,79 @@
 $(function() {
+  let table;
   const target_id = "#" + data_table.target_id;
 
-  let table = new Tabulator(target_id, {
-    layout: "fitColumns",
-    columns: [
-      {
-        title:"Provider Name",
-        headerTooltip:"Link to transit service provider's website.",
-        field:"url",
-        formatter:"link",
-        formatterParams:{
-          labelField:"provider",
-          target:"_blank",
-        }
+  const build = (data, dictionary) => {
+    const col = (dict) => Object.assign({}, {
+      title: dict.label,
+      headerTooltip: dict.definition,
+      field: dict.column
+    });
+
+    const textCol = (dict) => Object.assign({}, col(dict), {
+      formatter:"textarea"
+    });
+
+    const numCol = (dict) => Object.assign({}, col(dict), {
+      sorter:"number",
+      sorterParams:{
+        alignEmptyValues:"bottom"
       },
-      {
-        title:"City HQ",
-        headerTooltip:"City included in provider's contact address.",
-        field:"contact_city",
-        formatter:"textarea"
-      },
-      {
-        title:"Counties Serviced",
-        headerTooltip:"County (or counties) with mapped services.",
-        field:"service_county",
-        formatter:"textarea"
-      },
-      {
-        title:"2018 Passenger Volume",
-        headerTooltip:"2018 Unlinked Passenger Trips from the National Transit Database (NTD). Includes NTD mode categories Motorbus (MB), Bus Rapid Transit (RB), Cable Car (CC), Commuter Bus (CB), Commuter Rail (CR), Heavy Rail (HR), Hybrid Rail (YR), Inclined Plane (IP), Jitney (JT), Light Rail (LR), Monorail/Automated  Guideway (MG), Streetcar Rail (SR), Trolleybus (TB), Demand Response (DR) and Demand Response Taxi (DT).",
-        field:"upt",
-        sorter:"number",
-        sorterParams:{
-          alignEmptyValues:"bottom"
-        },
-        formatter:"money",
-        formatterParams:{
-          precision:false
-        },
+      formatter:"money",
+      formatterParams:{
+        precision:false
       }
-    ],
-    height: "560px",
-    pagination:false
-  });
+    });
+
+    const moneyCol = (dict) => Object.assign({}, numCol(dict), {
+      formatterParams:{
+        symbol:"$"
+      }
+    });
+
+    const urlCol = (dict, label, textKey) => Object.assign({}, col(dict), {
+      formatter:"link",
+      title:label || dict.label,
+      formatterParams:{
+        labelField:textKey || dict.column,
+        target:"_blank"
+      }
+    });
+
+    const provider = dictionary.find(dict => dict.column === "provider");
+    const cols = dictionary.map(dict => {
+      switch (dict.type) {
+        case "text":
+          return textCol(dict)
+        case "integer":
+          return numCol(dict)
+        case "money":
+          return moneyCol(dict)
+        case "url":
+          return dict.column === "url" ? urlCol(dict, provider.label, provider.column) : urlCol(dict)
+        default:
+          console.log(`Unknown column type: ${dict}`);
+      }
+    });
+
+    // hide the provider name column (duplicate, we have the link from url)
+    // kept in the table to be used for sorting
+    cols.find(c => c.field === "provider").visible = false;
+
+    // freeze the url column on the left (for scrolling)
+    cols.find(c => c.field === "url").frozen = true;
+
+    // set a width on the main text columns to constrain stretching
+    cols.filter(c => ["service_county", "contact_city"].indexOf(c.field) > -1).forEach(c => c.width = 175);
+
+    // create the tabulator table
+    table = new Tabulator(target_id, {
+      layout: "fitData",
+      data: data,
+      columns: cols,
+      height: "560px",
+      pagination:false
+    });
+  };
 
   const refresh = (county) => {
     if (county && county !== "") {
@@ -61,28 +92,35 @@ $(function() {
     ]);
   };
 
-  const pill = $("<button />").addClass("btn-county").on("click", () => makePill());
+  const pill = $("<button />").addClass("btn-county").attr("aria-label", "Clear").on("click", () => clearPill());
   const makePill = (data) => {
     if (data && data.county && data.num_providers) {
       pill.text(`${data.county} (${data.num_providers})`);
       $(target_id).parents("aside").prepend(pill);
     }
-    else {
-      refresh();
-      pill.detach();
-    }
+  };
+  const clearPill = () => {
+    pill.detach();
+    refresh();
   };
 
   const handleClick = (e) => {
-    const data = e.detail;
-    refresh(data.properties.county);
-    makePill(data.properties);
+    if (e && e.detail) {
+      const data = e.detail;
+      refresh(data.properties.county);
+      makePill(data.properties);
+    }
+    else {
+      clearPill();
+    }
   };
 
   document.addEventListener("mapClick", handleClick);
 
-  $.get(data_table.data_file, function(data) {
-    table.setData(data);
-    refresh();
-  });
+  const dataFiles = [data_table.data_file, data_table.dict_file];
+  const jobs = dataFiles.map((dataFile) => $.get(dataFile, (data) => data));
+
+  Promise.all(jobs)
+    .then(([data, dictionary]) => build(data, dictionary))
+    .then(() => refresh());
 });
