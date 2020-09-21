@@ -9,6 +9,30 @@
     @extend .pl-md-3;
   }
 
+  label.form-check-inline {
+    @extend .mb-3;
+    font-weight: normal;
+    padding-left: 2.4rem !important;
+  
+    .check-icon-checkbox {
+      @extend .rounded-lg;
+      border: solid 2px $black;
+      background-color: $white;
+      font-size: 1rem;
+      top: 1rem;
+      width: 24px;
+      height: 24px;
+    }
+  
+    input[type=checkbox]:checked + .check-icon-checkbox {
+      border-color: $primary;
+    }
+  
+    span {
+      font-weight: 600;
+    }
+  }
+
   .btn {
     text-transform: uppercase;
   }
@@ -31,37 +55,4 @@
   border: solid 2px $black;
   color: $text-color;
   font-size: 1.4rem;
-}
-
-.custom-control {
-  @extend .mb-3;
-
-  input[type=checkbox] + .custom-control-label:before {
-    @extend .rounded-lg;
-    border: solid 2px $black;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    top: 0.2rem;
-  }
-
-  input[type=checkbox]:checked + .custom-control-label:before {
-    content: "\2714";
-    padding-left: 3px;
-    border-color: transparent;
-  }
-
-  .custom-control-label {
-    font-weight: normal;
-    @extend .px-3;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    span {
-      @extend .pr-1;
-      font-weight: bold;
-    }
-  }
 }

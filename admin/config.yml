@@ -134,11 +134,6 @@ collections:
                 label: "Name",
                 name: "name",
                 widget: string
-              },{
-                label: "Value",
-                name: "value",
-                widget: string,
-                hint: "Should be the Name, in all lowercase, with all special characters (space, ampersand, punctuation, etc.) replaced by dash '-'."
               }]
             }
           - {
@@ -155,11 +150,6 @@ collections:
                 label: "Description",
                 name: "description",
                 widget: string
-              },{
-                label: "Value",
-                name: "value",
-                widget: string,
-                hint: "Should be the Name, in all lowercase, with all special characters (space, ampersand, punctuation, etc.) replaced by dash '-'."
               }]
             }
 
