@@ -5,8 +5,6 @@ image: https://dummyimage.com/570x305/d1dee3/fff.png&text=+
 title: Sign Up for Transit Stop Updates
 headline: Sign Up for Transit Stop Updates
 
-form: general
-
 roles:
   - name: Transportation Provider staff
   - name: Transportation Provider CEO
@@ -28,5 +26,16 @@ areas:
     description: Tapping public agencies and private-industry partners on innovative standards-compliant solutions that net cost savings
   - name: Industry News
     description: California, U.S. and international trends, including COVID-19 recovery stories revealed by open-source data
+
+confirmation:
+  message: Thank you! We'll be in touch soon!
+  action: gbeec4s
+
+form: subscribe
+
+foot_scripts:
+  - name: /scripts/forms/subscribe.js
+    form_target: form-subscribe
+    confirm_target: form-confirm
 ---
 Be among the first to learn about emerging products, cost-saving procurement and other standards-compliant solutions from the California Integrated Travel Project (Cal-ITP)—just complete this form, and we’ll email you when we roll out new resources on our Transit Stop site.
