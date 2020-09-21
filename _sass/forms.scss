@@ -36,7 +36,6 @@
 .custom-control {
   @extend .mb-3;
 
-
   input[type=checkbox] + .custom-control-label:before {
     @extend .rounded-lg;
     border: solid 2px $black;
@@ -44,10 +43,6 @@
     width: 24px;
     height: 24px;
     top: 0.2rem;
-
-    &:hover {
-      cursor: pointer;
-    }
   }
 
   input[type=checkbox]:checked + .custom-control-label:before {
@@ -59,6 +54,10 @@
   .custom-control-label {
     font-weight: normal;
     @extend .px-3;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     span {
       @extend .pr-1;
