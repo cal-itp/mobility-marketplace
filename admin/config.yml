@@ -95,9 +95,9 @@ collections:
               displayFields: ["title"]
             }
 
-      - label: "Email Signup"
-        name: "signup"
-        file: "content/pages/signup.md"
+      - label: "Subscribe"
+        name: "subscribe"
+        file: "content/pages/subscribe.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "form"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
