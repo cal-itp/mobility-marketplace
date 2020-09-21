@@ -1,6 +1,6 @@
 {% include forms/indicates-required.html indicator="*" text="Indicates required fields" %}
 
-<form role="form">
+<form role="form" method="POST" name="subscribe" data-netlify="true" netlify-honeypot="_honeypot_">
   <div class="form-group">
     <label for="first_name" class="form-control-label">First Name</label>
     <input type="text" class="form-control" id="first_name" placeholder="Nyota" />
@@ -44,5 +44,9 @@
   </div>
   <div class="form-group submit">
     <input type="submit" class="btn btn-primary" value="Submit" />
+  </div>
+  <div class="d-none">
+    <label for="_honeypot_"><strong>Do not</strong> fill out this field if you are a human</label>
+    <input id="_honeypot_" name="_honeypot_" />
   </div>
 </form>
