@@ -34,6 +34,10 @@ figure {
   }
 }
 
+h1,h2,h3,h4,h5,h6 {
+  @extend .font-weight-bold;
+}
+
 h1 {
   @extend .mt-0;
 }

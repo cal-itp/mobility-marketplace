@@ -8,8 +8,5 @@ items:
   - text: Collaborate
     url: '#'
 
-  - text: Connect
-    url: '#'
-
-  - text: About
-    url: '#'
+  - text: Subscribe
+    url: /subscribe

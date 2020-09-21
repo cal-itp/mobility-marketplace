@@ -41,7 +41,7 @@ collections:
     files:
       - label: "Homepage"
         name: "homepage"
-        file: "content/index.md"
+        file: "content/pages/index.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
@@ -93,6 +93,64 @@ collections:
               valueField: "ref_id",
               searchFields: ["title", "text", "body"],
               displayFields: ["title"]
+            }
+
+      - label: "Subscribe"
+        name: "subscribe"
+        file: "content/pages/subscribe.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "form"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
+          - {label: "Social image", name: "image", widget: "image", hint: "Shown in social media shares and linking" }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              hint: "For browser tabs and social shares; combined with the site title."
+            }
+          - {label: "Headline", name: "headline", widget: "string"}
+          - {
+              label: "Body",
+              name: "body",
+              widget: "markdown",
+              minimal: true,
+              buttons: [
+                bold,
+                italic,
+                link,
+                bulleted-list,
+                numbered-list
+              ],
+              editorComponents: []
+            }
+          - {label: "Form include", name: "form", widget: "hidden"}
+          - {
+              label: "Roles",
+              label_singular: "role",
+              name: "roles",
+              widget: "list",
+              summary: "{{fields.name}}",
+              fields: [{
+                label: "Name",
+                name: "name",
+                widget: string
+              }]
+            }
+          - {
+              label: "Areas of Interest",
+              label_singular: "area",
+              name: "areas",
+              widget: "list",
+              summary: "{{fields.name}}",
+              fields: [{
+                label: "Name",
+                name: "name",
+                widget: string
+              },{
+                label: "Description",
+                name: "description",
+                widget: string
+              }]
             }
 
   - name: "categories"

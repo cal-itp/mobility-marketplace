@@ -1,0 +1,25 @@
+---
+layout: bg-white
+class: form
+---
+
+<article class="page form">
+  <div class="content-section">
+    <header>
+      <h1>{{ page.headline }}</h1>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+  </div>
+
+  <div class="form-section">
+    {% capture include_target %}forms/{{ page.form }}.html{% endcapture %}
+    {% capture form_content %}{% include {{ include_target }} %}{% endcapture %}
+    {% unless form_content contains "Liquid Exception" %}
+    <aside class="form-container">
+      {% include {{ include_target }} %}
+    </aside>
+    {% endunless %}
+  </div>
+</article>
