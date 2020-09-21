@@ -4,6 +4,40 @@ permalink: /subscribe
 image: https://dummyimage.com/570x305/d1dee3/fff.png&text=+
 title: Sign Up for Transit Stop Updates
 headline: Sign Up for Transit Stop Updates
+
 form: general
+
+roles:
+  - name: Transportation Provider staff
+    value: transportation-provider-staff
+  - name: Transportation Provider CEO
+    value: transportation-provider-ceo
+  - name: Technology Vendor
+    value: technology-vendor
+  - name: Other
+    value: other
+
+areas:
+  - name: Data Standards
+    description: Improving real-time information (arrival time, service changes...)
+    value: data-standards
+  - name: Contactless Payments
+    description: Tap-to-pay cEMV credit/debit cards, payment-enabled mobile wallets, processing...
+    value: contactless-payments
+  - name: Discounted-Fare Solutions
+    description: Instantly verifiying eligibility (for seniors, youth, veterans, persons with disabilities, low-income riders, employee benefits...)
+    value: discounted-fare-solutions
+  - name: Economic Equity
+    description: Prioritizing transit access to reach jobs and payment methods if underbanked
+    value: economic-equity
+  - name: Cooperative Procurement
+    description: Leveraging State-negotiated contracts for goods and services, including payment processing
+    value: cooperative-procurement
+  - name: Collaborating with Cal-ITP
+    description: Tapping public agencies and private-industry partners on innovative standards-compliant solutions that net cost savings
+    value: collaborating-with-cal-itp
+  - name: Industry News
+    description: California, U.S. and international trends, including COVID-19 recovery stories revealed by open-source data
+    value: industry-news
 ---
 Be among the first to learn about emerging products, cost-saving procurement and other standards-compliant solutions from the California Integrated Travel Project (Cal-ITP)—just complete this form, and we’ll email you when we roll out new resources on our Transit Stop site.

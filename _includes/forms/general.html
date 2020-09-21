@@ -17,10 +17,9 @@
     <label for="role" class="form-control-label">Role {% include forms/indicator.html %}</label>
     <select class="form-control" id="role" aria-required="true" required>
       <option value="">Select an option</option>
-      <option value="transportation_provider_staff">Transportation Provider Staff</option>
-      <option value="transportation_provider_ceo">Transportation Provider CEO</option>
-      <option value="technology_vendor">Technology Vendor</option>
-      <option value="other">Other</option>
+      {% for role in page.roles %}
+      <option value="{{ role.value }}">{{ role.name }}</option>
+      {% endfor %}
     </select>
   </div>
   <div class="form-group">
@@ -31,35 +30,13 @@
     <div>
       <label class="form-control-label">Select areas of interest</label>
     </div>
+    {% for area in page.areas %}
+    {% capture id %}area{{ forloop.index }}{% endcapture %}
     <div class="custom-control">
-      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area1" value="data_standards" >
-      <label class="custom-control-label" for="area1"><span>Data Standards:</span>Improving real-time information (arrival time, service changes...) 
-      </label>
+      <input type="checkbox" class="custom-control-input" name="interest_areas" id="{{ id }}" value="{{ area.value }}" >
+      <label class="custom-control-label" for="{{ id }}"><span>{{ area.name }}:</span>&nbsp;{{ area.description }}</label>
     </div>
-    <div class="custom-control">
-      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area2" value="contactless_payments" >
-      <label class="custom-control-label" for="area2"><span>Contactless Payments:</span>Tap-to-pay cEMV credit/debit cards, payment-enabled mobile wallets, processing...</label>
-    </div>
-    <div class="custom-control">
-      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area3" value="discounted_fare" >
-      <label class="custom-control-label" for="area3"><span>Discounted-Fare Solutions:</span>Instantly verifiying eligibility (for seniors, youth, veterans, persons with disabilities, low-income riders, employee benefits...)</label>
-    </div>
-    <div class="custom-control">
-      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area4" value="economic_equity" >
-      <label class="custom-control-label" for="area4"><span>Economic Equity:</span>Prioritizing transit access to reach jobs and payment methods if underbanked</label>
-    </div>
-    <div class="custom-control">
-      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area5" value="cooperative_procurement" >
-      <label class="custom-control-label" for="area5"><span>Cooperative Procurement:</span>Leveraging State-negotiated contracts for goods and services, including payment processing</label>
-    </div>
-    <div class="custom-control">
-      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area6" value="cal_itp_collaboration" >
-      <label class="custom-control-label" for="area6"><span>Collaborating with Cal-ITP:</span>Tapping public agencies and private-industry partners on innovative standards-compliant solutions that net cost savings</label>
-    </div>
-    <div class="custom-control">
-      <input type="checkbox" class="custom-control-input" name="interest_areas" id="area7" value="industry_news" >
-      <label class="custom-control-label" for="area7"><span>Industry News:</span>California, U.S. and international trends, including COVID-19 recovery stories revealed by open-source data</label>
-    </div>
+    {% endfor %}
   </div>
   <div class="form-group">
     <label for="comments" class="form-control-label">Other comments or queries</label>

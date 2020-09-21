@@ -44,6 +44,10 @@
     width: 24px;
     height: 24px;
     top: 0.2rem;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   input[type=checkbox]:checked + .custom-control-label:before {
