@@ -1,0 +1,31 @@
+.table,
+.tabulator {
+  font-size: 0.9rem;
+}
+
+.tabulator,
+.tabulator-header,
+.table th,
+.table td {
+  border-top-width: 2px !important;
+}
+
+.tabulator-row .tabulator-frozen,
+.tabulator .tabulator-header .tabulator-col.tabulator-frozen {
+  background-color: #fff;
+}
+
+.tabulator-row {
+  border-bottom-width: 2px;
+  .tabulator-frozen:hover {
+    background-color: $rowHoverBackground;
+  }
+  &:hover .tabulator-frozen {
+    background-color: $rowHoverBackground;
+  }
+}
+
+.tabulator-cell:not(.tabulator-frozen),
+.tabulator-col:not(.tabulator-frozen) {
+  border-right: solid 1px $gray-light;
+}

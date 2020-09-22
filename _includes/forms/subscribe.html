@@ -1,0 +1,61 @@
+{% include forms/indicates-required.html indicator="*" text="Indicates required fields" %}
+
+<form role="form" method="POST" id="form-subscribe" name="subscribe" data-netlify="true" netlify-honeypot="_honeypot_">
+  <div class="form-group">
+    <label for="first_name" class="form-control-label">First Name</label>
+    <input type="text" class="form-control" name="first_name" placeholder="Nyota" />
+  </div>
+  <div class="form-group">
+    <label for="last_name" class="form-control-label">Last Name</label>
+    <input type="text" class="form-control" name="last_name" placeholder="Uhura" />
+  </div>
+  <div class="form-group">
+    <label for="organization" class="form-control-label">Organization Name</label>
+    <input type="text" class="form-control" name="organization" placeholder="Elk Grove Transit" />
+  </div>
+  <div class="form-group">
+    <label for="role" class="form-control-label">Role {% include forms/indicator.html %}</label>
+    <select class="form-control" name="role" aria-required="true" required>
+      <option value="">Select an option</option>
+      {% for role in page.roles %}
+      <option value="{{ role.name }}">{{ role.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="email" class="form-control-label">Email Address {% include forms/indicator.html %}</label>
+    <input type="email" class="form-control" name="email" placeholder="nyota.uhura@elkgrovecity.org" aria-required="true" required />
+  </div>
+  <div class="form-group">
+    <div>
+      <label class="form-control-label">Select areas of interest</label>
+    </div>
+    {% for area in page.areas %}
+    <label class="form-check-inline">
+      <input class="hidden-up pos-abs" type="checkbox" name="interest_areas[]" value="{{ area.name }}">
+      <div class="check-icon-checkbox">
+          <i class="ca-gov-icon-check-mark"></i>
+      </div>
+      <span>{{ area.name }}:</span>&nbsp;{{ area.description }}
+    </label>
+    {% endfor %}
+  </div>
+  <div class="form-group">
+    <label for="comments" class="form-control-label">Other comments or queries</label>
+    <textarea class="form-control" name="comments" placeholder="We welcome your feedback!" rows=6></textarea>
+  </div>
+  <div class="form-group submit">
+    <input type="submit" class="btn btn-primary" value="Submit" />
+  </div>
+  <div class="d-none">
+    <label for="_honeypot_"><strong>Do not</strong> fill out this field if you are a human</label>
+    <input name="_honeypot_" />
+  </div>
+</form>
+
+<div class="form-confirm" id="form-confirm">
+  {{ page.confirmation.message | markdownify }}
+  <div class="form-group submit">
+    {% include components/action-button.html ref_id=page.confirmation.action %}
+  </div>
+</aside>

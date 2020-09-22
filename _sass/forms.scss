@@ -1,0 +1,63 @@
+.indicator {
+  @extend .font-weight-bold, .required-label;
+}
+
+.form-group {
+  @extend .mb-4;
+
+  label {
+    @extend .pl-md-3;
+  }
+
+  label.form-check-inline {
+    @extend .mb-3;
+    font-weight: normal;
+    padding-left: 2.4rem !important;
+  
+    .check-icon-checkbox {
+      @extend .rounded-lg;
+      border: solid 2px $black;
+      background-color: $white;
+      font-size: 1rem;
+      top: 1rem;
+      width: 24px;
+      height: 24px;
+    }
+  
+    input[type=checkbox]:checked + .check-icon-checkbox {
+      border-color: $primary;
+    }
+  
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .btn {
+    text-transform: uppercase;
+  }
+
+  &.submit {
+    @extend .d-flex, .justify-content-center, .mt-4, .mt-md-5;
+
+    input[type=submit], .btn {
+      width: 100%;
+      @include media-breakpoint-up(md) {
+        min-width: 150px;
+        width: 32%;
+      }
+    }
+  }
+}
+
+.form-control {
+  @extend .rounded-lg;
+  border: solid 2px $black;
+  color: $text-color;
+  font-size: 1.4rem;
+}
+
+.form-confirm {
+  @extend .mt-4, .mt-lg-5, .text-center;
+  display: none;
+}

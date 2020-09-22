@@ -5,11 +5,8 @@ items:
   - text: Learn
     url: '#'
 
-  - text: Collaborate
-    url: '#'
+  - text: Provider Map
+    url: /providers
 
-  - text: Connect
-    url: '#'
-
-  - text: About
-    url: '#'
+  - text: Subscribe
+    url: /subscribe

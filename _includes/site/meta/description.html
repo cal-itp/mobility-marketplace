@@ -1,0 +1,4 @@
+{% capture description %}{% if page.description %}{{ page.description | strip_html strip_newlines | truncate: 400 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+
+<meta property="og:description" content="{{ description }}" />
+<meta name="description" content="{{ description }}" />

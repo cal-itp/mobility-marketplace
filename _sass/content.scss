@@ -1,7 +1,15 @@
-blockquote {
-  @extend .rounded-lg;
+a {
+  @include link-reset();
 
-  background-color: #d6d6d6;
+  .main-content article & {
+    font-weight: bold;
+    border-bottom: solid 2px $primary;
+  }
+}
+
+blockquote {
+  @extend .bg-gray-light, .rounded-lg;
+
   border-width: 0;
   padding: 2rem;
   font-size: 1.5rem;
@@ -32,6 +40,10 @@ figure {
   figcaption {
     font-style: italic;
   }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @extend .font-weight-bold;
 }
 
 h1 {
