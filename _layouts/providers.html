@@ -44,7 +44,13 @@ foot_scripts:
     </header>
     <main>
       {{ page.about | markdownify }}
-      <a href="{{ '/data/providers/package.zip' }}" class="btn-data-package">Download Data</a>
+
+      {% assign action = site.actions | find: "ref_id", page.action %}
+      {% if action %}
+      <h3>{{ action.title }}</h3>
+      {{ action.content }}
+      {% include components/action-button.html ref_id=page.action btn_class="primary btn-data-package" %}
+      {% endif %}
     </main>
   </aside>
   <aside class="content-section">

@@ -16,9 +16,7 @@ about: >
   information. If you have comments, additions, or corrections to this dataset,
   please contact _____________________.
 
-  ### Download the Data Package
-
-  The data package includes the full dataset, data dictionary, and glossary as CSV files.
+action: iok8amq
 
 source: >
   This list was created in April, 2019, by consultant Trillium Transit under

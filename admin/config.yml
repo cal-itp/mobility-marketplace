@@ -142,6 +142,16 @@ collections:
               editorComponents: []
             }
           - {
+              label: "Data action",
+              name: "action",
+              hint: "Select a Call to Action item to generate a button in the About section.",
+              widget: "relation",
+              collection: "actions",
+              valueField: "ref_id",
+              searchFields: ["title", "text", "body"],
+              displayFields: ["title"]
+            }
+          - {
               label: "Source",
               name: "source",
               widget: "markdown",
