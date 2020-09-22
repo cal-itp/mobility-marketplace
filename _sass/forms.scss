@@ -58,5 +58,6 @@
 }
 
 .form-confirm {
+  @extend .mt-4, .mt-lg-5, .text-center;
   display: none;
 }
