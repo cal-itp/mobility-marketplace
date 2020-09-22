@@ -142,8 +142,8 @@ collections:
               editorComponents: []
             }
           - {
-              label: "History",
-              name: "history",
+              label: "Source",
+              name: "source",
               widget: "markdown",
               minimal: true,
               buttons: [
