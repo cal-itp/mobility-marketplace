@@ -8,7 +8,7 @@
 
 const path = require("path");
 
-const dataFiles = ["dictionary.csv", "glossary.csv", "providers.csv"];
+const dataFiles = ["dictionary.csv", "glossary.csv", "providers.csv", "readme.txt"];
 
 module.exports = {
   async onPostBuild({ constants: { PUBLISH_DIR }, utils: { run } }) {
