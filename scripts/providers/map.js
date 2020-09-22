@@ -9,16 +9,15 @@ var map = new mapboxgl.Map({
   container: data_map.target_id,
   style: "mapbox://styles/calitp-transit-store/ckew28dsq0c3n19qwlrozi3ts",
   maxBounds: [
-    [-139.786943, 28.668428], // Southwest coordinates
-    [-97.570838, 45.730500] // Northeast coordinates
+    [-129.409591, 31.134156], // Southwest coordinates
+    [-110.131211, 42.900518] // Northeast coordinates
   ],
   bounds: [
-    [-126.020483, 31.084640],
-    [-112.409347, 42.926573]
+    [-125.409591, 31.534156], // Southwest coordinates
+    [-114.131211, 42.509518] // Northeast coordinates
   ],
-  fitBoundsOptions: {
-    padding: 16
-  }
+  dragRotate: false,
+  pitchWithRotate: false
 });
 
 map.on("load", function () {
@@ -37,7 +36,7 @@ map.on("load", function () {
         ["get", "num_providers"],
         1,
         "hsl(208, 36%, 78%)",
-        15,
+        20,
         "hsl(260, 53%, 36%)"
       ]
     }

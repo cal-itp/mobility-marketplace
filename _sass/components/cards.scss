@@ -36,6 +36,10 @@
       @extend .px-lg-4;
     }
 
+    .card-img {
+      width: unset;
+    }
+
     .btn {
       bottom: 0;
     }
