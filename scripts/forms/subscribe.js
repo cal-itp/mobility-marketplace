@@ -7,8 +7,8 @@ $(function() {
     var $form = $(this);
 
     $.post($form.attr("action"), $form.serialize()).then(function() {
-      $form.addClass("d-none");
-      $(confirmId).addClass("d-block");
+      $form.parent().children().addClass("d-none");
+      $(confirmId).removeClass("d-none").addClass("d-block");
     });
   });
 });
