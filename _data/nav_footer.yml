@@ -1,9 +1,7 @@
 items:
   - text: Back to Top
-    url: '#skip-to-content'
-
-  - text: About
-    url: '#'
-
+    url: "#skip-to-content"
   - text: Contact
     url: /subscribe
+  - text: Privacy Policy
+    url: https://dot.ca.gov/privacy-policy
