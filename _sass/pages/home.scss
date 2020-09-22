@@ -7,8 +7,7 @@
 }
 
 #main-cta {
-  background-color: $gray-lightest;
-  @extend .px-sm-4, .px-md-0, .py-4;
+  @extend .bg-gray-lightest, .px-sm-4, .px-md-0, .py-4;
 
   .card-wrapper:first-of-type .card {
     @extend .btn-success;

@@ -1,3 +1,19 @@
+@mixin bg-gray-light() {
+  background-color: $gray-light;
+}
+
+.bg-gray-light {
+  @include bg-gray-light();
+}
+
+@mixin bg-gray-lightest() {
+  background-color: $gray-lightest;
+}
+
+.bg-gray-lightest {
+  @include bg-gray-lightest();
+}
+
 @mixin link-reset() {
   background-image: none !important;
   background-repeat: no-repeat !important;

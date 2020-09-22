@@ -17,7 +17,16 @@
   JEKYLL_ENV = "branch-deploy"
 
 [[plugins]]
+  package = "@netlify/plugin-local-install-core"
+
+[[plugins]]
+  package = "./admin/plugins/provider-json"
+
+[[plugins]]
   package = "./admin/plugins/ca-state-fonts"
+
+[[plugins]]
+  package = "./admin/plugins/data-package"
 
 # REDIRECT and HEADERS examples.
 # Uncomment to use. Directives in this file will ALWAYS override any identical

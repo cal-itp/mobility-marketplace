@@ -95,6 +95,81 @@ collections:
               displayFields: ["title"]
             }
 
+      - label: "Providers"
+        name: "providers"
+        file: "content/pages/providers.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "providers"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
+          - {label: "Page image", name: "image", widget: "image", hint: "Displayed in social shares and links." }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              hint: "For browser tabs and social shares; combined with the site title."
+            }
+          - {label: "Headline", name: "headline", widget: "string"}
+          - {
+              label: "Body",
+              name: "body",
+              widget: "markdown",
+              minimal: true,
+              buttons: [
+                bold,
+                italic,
+                link,
+                bulleted-list,
+                numbered-list
+              ],
+              editorComponents: []
+            }
+          - {
+              label: "About the Data",
+              name: "about",
+              widget: "markdown",
+              minimal: true,
+              buttons: [
+                bold,
+                italic,
+                link,
+                heading-three,
+                heading-four,
+                heading-five,
+                heading-six,
+                bulleted-list,
+                numbered-list
+              ],
+              editorComponents: []
+            }
+          - {
+              label: "Data action",
+              name: "action",
+              hint: "Select a Call to Action item to generate a button in the About section.",
+              widget: "relation",
+              collection: "actions",
+              valueField: "ref_id",
+              searchFields: ["title", "text", "body"],
+              displayFields: ["title"]
+            }
+          - {
+              label: "Source",
+              name: "source",
+              widget: "markdown",
+              minimal: true,
+              buttons: [
+                bold,
+                italic,
+                link,
+                heading-three,
+                heading-four,
+                heading-five,
+                heading-six,
+                bulleted-list,
+                numbered-list
+              ],
+              editorComponents: []
+            }
+
       - label: "Subscribe"
         name: "subscribe"
         file: "content/pages/subscribe.md"
@@ -187,6 +262,19 @@ collections:
               ]
             }
           - {label: "Form include", name: "form", widget: "hidden"}
+
+      - label: "Glossary"
+        name: "glossary"
+        file: "_data/glossary.yml"
+        fields:
+          - label: "Terms"
+            label_singular: "Term"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.term}}"
+            fields:
+              - {label: "Term", name: "term", widget: "string"}
+              - {label: "Definition", name: "definition", widget: "text"}
 
   - name: "categories"
     label: "Categories"
