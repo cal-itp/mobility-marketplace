@@ -77,21 +77,6 @@ $(function () {
   };
 
   const buildDictTable = (dictionary) => {
-    // replace dictionary notes with markers
-    let notes = { "": null };
-
-    // unique notes
-    const notesSet = dictionary
-      .map((dict) => dict.notes)
-      .filter((note) => note !== "")
-      .filter((x, i, a) => a.indexOf(x) == i);
-
-    // generate the replacement markers
-    notesSet.forEach((note, i) => notes[note] = "*".repeat(i + 1));
-
-    // replace
-    dictionary.forEach((dict) => dict.notes = notes[dict.notes]);
-
     // create the dict table (don't keep a reference)
     new Tabulator(`#${data_table.dict_id}`, {
       layout: "fitDataTable",
