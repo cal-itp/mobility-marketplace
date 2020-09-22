@@ -40,7 +40,7 @@
   &.submit {
     @extend .d-flex, .justify-content-center, .mt-4, .mt-md-5;
 
-    input[type=submit] {
+    input[type=submit], .btn {
       width: 100%;
       @include media-breakpoint-up(md) {
         min-width: 150px;
@@ -55,4 +55,9 @@
   border: solid 2px $black;
   color: $text-color;
   font-size: 1.4rem;
+}
+
+.form-confirm {
+  @extend .mt-4, .mt-lg-5, .text-center;
+  display: none;
 }

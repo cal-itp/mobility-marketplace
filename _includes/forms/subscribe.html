@@ -1,6 +1,6 @@
 {% include forms/indicates-required.html indicator="*" text="Indicates required fields" %}
 
-<form role="form" method="POST" name="subscribe" data-netlify="true" netlify-honeypot="_honeypot_">
+<form role="form" method="POST" id="form-subscribe" name="subscribe" data-netlify="true" netlify-honeypot="_honeypot_">
   <div class="form-group">
     <label for="first_name" class="form-control-label">First Name</label>
     <input type="text" class="form-control" name="first_name" placeholder="Nyota" />
@@ -52,3 +52,10 @@
     <input name="_honeypot_" />
   </div>
 </form>
+
+<div class="form-confirm" id="form-confirm">
+  {{ page.confirmation.message | markdownify }}
+  <div class="form-group submit">
+    {% include components/action-button.html ref_id=page.confirmation.action %}
+  </div>
+</aside>
