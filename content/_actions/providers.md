@@ -1,5 +1,5 @@
 ---
-title: The State of Transit in California
+title: The State of Transit
 text: View the map
 href: /providers
 target: _self
