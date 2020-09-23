@@ -1,6 +1,6 @@
 ---
-title: Fare Payments
-text: Get Started with Payments
+title: Get Started with Fare Payments
+text: Get Started
 href: "#"
 target: _self
 tile_graphic: https://dummyimage.com/120/2c5e30/fff.png&text=+
