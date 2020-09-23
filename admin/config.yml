@@ -303,6 +303,8 @@ collections:
     label: "Categories"
     label_singular: "Category"
     description: "Used to create a grouping of other content items, such as Articles."
+    editor:
+      preview: false
     folder: "content/_categories"
     create: true
     fields:
@@ -424,6 +426,8 @@ collections:
     label: "Calls to Action"
     label_singular: "Call to Action"
     description: "Reusable pieces of content that generate buttons and other clickable elements."
+    editor:
+      preview: false
     folder: "content/_actions"
     create: true
     fields:
