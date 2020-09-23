@@ -1,12 +1,9 @@
 items:
-  - text: Procure
-    url: '#'
-
-  - text: Learn
-    url: '#'
-
+  - text: Get Started
+    url: "#"
+  - text: Learn More
+    url: "#"
   - text: Provider Map
     url: /providers
-
   - text: Subscribe
     url: /subscribe
