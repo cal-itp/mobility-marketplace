@@ -8,6 +8,10 @@ logo_url: https://calitp.gov/assets/images/logo-sm.svg
 
 media_folder: "assets/uploads"
 
+publish_mode: editorial_workflow
+
+site_url: https://www.calitp.gov
+
 collections:
   - name: "navigation"
     label: "Navigation"
@@ -64,6 +68,7 @@ collections:
     description: "Landing pages with unique layouts and options."
     editor:
       preview: false
+    preview_path: "{{ slug }}"
     files:
       - label: "Homepage"
         name: "homepage"
