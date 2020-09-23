@@ -19,8 +19,8 @@ collections:
             name: "items"
             widget: "list"
             fields:
-              - {label: Text, name: text, widget: string}
-              - {label: Url, name: url, widget: string}
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Url", name: "url", widget: "string"}
 
       - label: "Footer navigation"
         name: "nav_footer"
@@ -31,8 +31,8 @@ collections:
             name: "items"
             widget: "list"
             fields:
-              - {label: Text, name: text, widget: string}
-              - {label: Url, name: url, widget: string}
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Url", name: "url", widget: "string"}
 
   - name: "pages"
     label: "Pages"
@@ -207,7 +207,7 @@ collections:
               fields: [{
                 label: "Name",
                 name: "name",
-                widget: string
+                widget: "string"
               }]
             }
           - {
@@ -296,9 +296,9 @@ collections:
           displayFields: ["title"]
         }
       - {
-          label: Body,
-          name: body,
-          widget: markdown,
+          label: "Body",
+          name: "body",
+          widget: "markdown",
           buttons: [
             bold,
             italic,
@@ -361,9 +361,9 @@ collections:
         }
       - {label: "Summary", name: "description", widget: "string", hint: "Used for card, Social Media, and other summary displays"}
       - {
-          label: Body,
-          name: body,
-          widget: markdown,
+          label: "Body",
+          name: "body",
+          widget: "markdown",
           buttons: [
             bold,
             italic,
@@ -443,6 +443,6 @@ collections:
             name: "items"
             widget: "list"
             fields:
-              - {label: First name, name: first_name, widget: string}
-              - {label: Last name, name: last_name, widget: string}
+              - {label: "First name", name: "first_name", widget: "string"}
+              - {label: "Last name", name: "last_name", widget: "string"}
               - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
