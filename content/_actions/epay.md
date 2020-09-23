@@ -1,5 +1,5 @@
 ---
-title: Get Started with Fare Payments
+title: Get Started with Payments
 text: Get Started
 href: "#"
 target: _self
