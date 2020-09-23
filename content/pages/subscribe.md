@@ -39,4 +39,4 @@ foot_scripts:
     form_target: form-subscribe
     confirm_target: form-confirm
 ---
-Be among the first to learn about emerging products, cost-saving procurement and other standards-compliant solutions from the California Integrated Travel Project (Cal-ITP): Just complete this form, and we’ll email you when we roll out new resources on our Transit Stop site
+Be among the first to learn about emerging products, cost-saving procurement, and other standards-compliant solutions from the California Integrated Travel Project (Cal-ITP): Just complete this form, and we’ll email you when we roll out new resources on our Transit Stop site
