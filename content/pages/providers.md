@@ -26,4 +26,4 @@ From commuter buses and light rail to on-demand paratransit, passengers want tra
 
 To better understand the size and scale of opportunities for tech integration in transit, the Cal-ITP team has compiled a list of California’s transportation providers.
 
-Explore the more than 300 providers on this interactive map, which offers just a taste of our full dataset—a CSV download that includes fare revenues, fleet size, vehicle type and more.
+Explore the more than 300 providers on this interactive map, which offers just a taste of our full dataset—a CSV download that includes fare revenues, fleet size, vehicle type, and more.
