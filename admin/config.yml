@@ -7,6 +7,7 @@ media_folder: "assets/uploads"
 collections:
   - name: "navigation"
     label: "Navigation"
+    description: "The menus on the site."
     editor:
       preview: false
     files:
@@ -56,6 +57,7 @@ collections:
 
   - name: "pages"
     label: "Pages"
+    description: "Landing pages with unique layouts and options."
     editor:
       preview: false
     files:
@@ -300,6 +302,7 @@ collections:
   - name: "categories"
     label: "Categories"
     label_singular: "Category"
+    description: "Used to create a grouping of other content items, such as Articles."
     folder: "content/_categories"
     create: true
     fields:
@@ -342,6 +345,7 @@ collections:
   - name: "posts"
     label: "Articles"
     label_singular: "Article"
+    description: "Short and long-form content with a publish date and author."
     folder: "content/_posts"
     sort: "date:desc"
     create: true
@@ -419,6 +423,7 @@ collections:
   - name: "actions"
     label: "Calls to Action"
     label_singular: "Call to Action"
+    description: "Reusable pieces of content that generate buttons and other clickable elements."
     folder: "content/_actions"
     create: true
     fields:
@@ -452,6 +457,7 @@ collections:
 
   - name: "metadata"
     label: "Metadata"
+    description: "Supporting content and configuration for the site."
     editor:
       preview: false
     files:
