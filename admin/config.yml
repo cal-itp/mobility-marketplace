@@ -64,7 +64,7 @@ collections:
                 bulleted-list,
                 numbered-list
               ],
-              editorComponents: []
+              editor_components: []
             }
           - {label: "Hero graphic", name: "hero_graphic", widget: "image" }
           - {
@@ -72,27 +72,27 @@ collections:
               name: "primary_action",
               widget: "relation",
               collection: "actions",
-              valueField: "ref_id",
-              searchFields: ["title", "text", "body"],
-              displayFields: ["title"]
+              value_field: "ref_id",
+              search_fields: ["title", "text", "body"],
+              display_fields: ["title"]
             }
           - {
               label: "Secondary Call to Action",
               name: "secondary_action",
               widget: "relation",
               collection: "actions",
-              valueField: "ref_id",
-              searchFields: ["title", "text", "body"],
-              displayFields: ["title"]
+              value_field: "ref_id",
+              search_fields: ["title", "text", "body"],
+              display_fields: ["title"]
             }
           - {
               label: "Final Call to Action",
               name: "final_action",
               widget: "relation",
               collection: "actions",
-              valueField: "ref_id",
-              searchFields: ["title", "text", "body"],
-              displayFields: ["title"]
+              value_field: "ref_id",
+              search_fields: ["title", "text", "body"],
+              display_fields: ["title"]
             }
 
       - label: "Providers"
@@ -121,7 +121,7 @@ collections:
                 bulleted-list,
                 numbered-list
               ],
-              editorComponents: []
+              editor_components: []
             }
           - {
               label: "About the Data",
@@ -139,7 +139,7 @@ collections:
                 bulleted-list,
                 numbered-list
               ],
-              editorComponents: []
+              editor_components: []
             }
           - {
               label: "Data action",
@@ -147,9 +147,9 @@ collections:
               hint: "Select a Call to Action item to generate a button in the About section.",
               widget: "relation",
               collection: "actions",
-              valueField: "ref_id",
-              searchFields: ["title", "text", "body"],
-              displayFields: ["title"]
+              value_field: "ref_id",
+              search_fields: ["title", "text", "body"],
+              display_fields: ["title"]
             }
           - {
               label: "Source",
@@ -167,7 +167,7 @@ collections:
                 bulleted-list,
                 numbered-list
               ],
-              editorComponents: []
+              editor_components: []
             }
 
       - label: "Subscribe"
@@ -196,7 +196,7 @@ collections:
                 bulleted-list,
                 numbered-list
               ],
-              editorComponents: []
+              editor_components: []
             }
           - {
               label: "Roles",
@@ -243,7 +243,7 @@ collections:
                     bulleted-list,
                     numbered-list
                   ],
-                  editorComponents: [
+                  editor_components: [
                     "image",
                     "image-caption",
                     "pull-quote",
@@ -255,9 +255,9 @@ collections:
                   name: "action",
                   widget: "relation",
                   collection: "actions",
-                  valueField: "ref_id",
-                  searchFields: ["title", "text", "body"],
-                  displayFields: ["title"]
+                  value_field: "ref_id",
+                  search_fields: ["title", "text", "body"],
+                  display_fields: ["title"]
                 }
               ]
             }
@@ -291,9 +291,9 @@ collections:
           name: "action",
           widget: "relation",
           collection: "actions",
-          valueField: "ref_id",
-          searchFields: ["title", "text", "body"],
-          displayFields: ["title"]
+          value_field: "ref_id",
+          search_fields: ["title", "text", "body"],
+          display_fields: ["title"]
         }
       - {
           label: "Body",
@@ -311,7 +311,7 @@ collections:
             bulleted-list,
             numbered-list
           ],
-          editorComponents: [
+          editor_components: [
             "image",
             "image-caption"
           ]
@@ -334,9 +334,9 @@ collections:
           name: "date",
           widget: "datetime",
           hint: "Publish date is captured in UTC but displays in Pacific",
-          dateFormat: "LL",
-          timeFormat: false,
-          pickerUtc: true
+          date_format: "LL",
+          time_format: false,
+          picker_utc: true
         }
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widet: "string", required: false}
@@ -346,18 +346,18 @@ collections:
           widget: "relation",
           collection: "metadata",
           file: "authors",
-          searchFields: ["items.*.first_name", "items.*.last_name"],
-          displayFields: ["items.*.first_name", "items.*.last_name"],
-          valueField: "items.*.ref_id"
+          search_fields: ["items.*.first_name", "items.*.last_name"],
+          display_fields: ["items.*.first_name", "items.*.last_name"],
+          value_field: "items.*.ref_id"
         }
       - {
           label: "Category",
           name: "category",
           widget: "relation",
           collection: "categories",
-          valueField: "ref_id",
-          searchFields: ["title", "text", "body"],
-          displayFields: ["title"]
+          value_field: "ref_id",
+          search_fields: ["title", "text", "body"],
+          display_fields: ["title"]
         }
       - {label: "Summary", name: "description", widget: "string", hint: "Used for card, Social Media, and other summary displays"}
       - {
@@ -376,7 +376,7 @@ collections:
             bulleted-list,
             numbered-list
           ],
-          editorComponents: [
+          editor_components: [
             "image",
             "image-caption",
             "pull-quote",
@@ -389,9 +389,9 @@ collections:
           required: false,
           widget: "relation",
           collection: "actions",
-          valueField: "ref_id",
-          searchFields: ["title", "text", "body"],
-          displayFields: ["title"]
+          value_field: "ref_id",
+          search_fields: ["title", "text", "body"],
+          display_fields: ["title"]
         }
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
@@ -423,7 +423,7 @@ collections:
             bold,
             italic
           ],
-          editorComponents: []
+          editor_components: []
         }
       - {label: "Tile graphic", name: "tile_graphic", widget: "image", required: false, hint: "Used when this action is displayed as a tile."}
       - {label: "Card graphic", name: "card_graphic", widget: "image", required: false, hint: "Used when this action is displayed as a card."}
