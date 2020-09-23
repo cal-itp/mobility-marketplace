@@ -1,13 +1,17 @@
 ---
 layout: bg-white
 class: home
+head_scripts:
+  - netlify-identity
+foot_scripts:
+  - name: /admin/login.js
 ---
 
 <section id="hero">
 {% include components/hero.html
     headline=page.headline
     content=content
-    graphic=page.hero_graphic
+    image=page.hero_image
     class="home" %}
 </section>
 

@@ -1,4 +1,4 @@
-{% capture title %}{% if page.title %}{{ page.title | escape }}{% endif %} - {{ site.title | escape}}{% endcapture %}
+{% capture title %}{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.data.meta.title | default: site.title | escape }}{% endcapture %}
 
-<meta property="og:title" content="{{ title }}" />
-<title>{{ title }}</title>
+<meta property="og:title" content="{{ title | strip }}" />
+<title>{{ title | strip }}</title>

@@ -3,7 +3,7 @@ layout: home
 permalink: /
 title: First Stop
 headline: A new home for modern, equitable, and accessible public transit innovations
-hero_graphic: https://dummyimage.com/354x360/d1dee3/fff.png&text=+
+hero_image: https://dummyimage.com/354x360/d1dee3/fff.png&text=+
 primary_action: knt7omv
 secondary_action: cqce87u
 final_action: m79ixx7
