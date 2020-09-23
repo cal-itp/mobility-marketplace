@@ -21,6 +21,16 @@ collections:
             fields:
               - {label: "Text", name: "text", widget: "string"}
               - {label: "Url", name: "url", widget: "string"}
+              - {
+                  label: "Open in",
+                  name: "target",
+                  widget: "select",
+                  default: { label: "Same tab", value: "_self" },
+                  options: [
+                    { label: "Same tab", value: "_self" },
+                    { label: "New tab", value: "_blank" }
+                  ]
+                }
 
       - label: "Footer navigation"
         name: "nav_footer"
@@ -33,6 +43,16 @@ collections:
             fields:
               - {label: "Text", name: "text", widget: "string"}
               - {label: "Url", name: "url", widget: "string"}
+              - {
+                  label: "Open in",
+                  name: "target",
+                  widget: "select",
+                  default: { label: "Same tab", value: "_self" },
+                  options: [
+                    { label: "Same tab", value: "_self" },
+                    { label: "New tab", value: "_blank" }
+                  ]
+                }
 
   - name: "pages"
     label: "Pages"
