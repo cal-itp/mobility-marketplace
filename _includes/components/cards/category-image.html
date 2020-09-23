@@ -5,7 +5,7 @@
 {% assign classes = "category,image" | split: "," | push: include.class | compact %}
 
 <div class="{{ classes | join: " " }}">
-  <img class="card-img-top" src="{{ cat.header_graphic | absolute_url }}" alt="Graphic illustration for {{ cat.title }}">
+  <img class="card-img-top" src="{{ cat.header_image | absolute_url }}" alt="image illustration for {{ cat.title }}">
   <div class="card-body">
     {% include components/cards/title.html
         title=cat.title
