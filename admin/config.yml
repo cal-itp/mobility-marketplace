@@ -473,3 +473,11 @@ collections:
               - {label: "First name", name: "first_name", widget: "string"}
               - {label: "Last name", name: "last_name", widget: "string"}
               - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
+
+      - label: "Site Metadata"
+        name: "meta"
+        file: "_data/meta.yml"
+        fields:
+          - {label: "Title", name: "title", widget: "string", hint: "Visible in the browser tab and in social share links."}
+          - {label: "Description", name: "description", widget: "text", hint: "Visible in social share links for the site homepage and as a default for pages."}
+          - {label: "Social image", name: "image", widget: "image", hint: "Default image for social share links (pages can override)."}
