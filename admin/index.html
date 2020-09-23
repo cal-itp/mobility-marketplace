@@ -5,9 +5,9 @@ layout:
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
+  {% include site/meta/base.html %}
+  <title>Content Manager - {{ site.data.meta.title | default: site.title | strip }}</title>
+  {% include site/favicon.html %}
   {% include scripts/netlify-identity.html %}
 </head>
 <body>

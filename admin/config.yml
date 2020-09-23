@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: master
 
+display_url: https://calitp.gov
+
+logo_url: https://calitp.gov/assets/images/logo-sm.svg
+
 media_folder: "assets/uploads"
 
 collections:
