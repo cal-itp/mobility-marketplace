@@ -20,7 +20,7 @@
   }
 
   h1 {
-    @extend .my-2, .mt-md-0;
+    @extend .mt-md-0;
     font-size: 1.5rem;
     text-align: center;
   }
@@ -41,7 +41,10 @@
     }
   }
   @include media-breakpoint-down(md) {
-    .lead {
+    // hide content on smaller screens
+    // we have another component to display the content elsewhere on smaller screens
+    // see: mobile-tile.scss
+    .content {
       display: none;
     }
   }
