@@ -55,7 +55,13 @@
     @extend .h-100, .p-4;
 
     .row > * {
-      @extend .align-self-center;
+      @extend .align-self-center, .h-100;
+    }
+
+    .row > .text {
+      @include media-breakpoint-up(lg) {
+        min-height: 160px;
+      }
     }
 
     .card-body {
@@ -69,6 +75,9 @@
     img {
       @extend .rounded-circle;
       width: unset;
+      @include media-breakpoint-up(lg) {
+        width: 100%;
+      }
     }
   }
 
