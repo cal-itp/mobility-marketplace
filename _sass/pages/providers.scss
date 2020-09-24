@@ -2,7 +2,7 @@ $map-height-sm: 460px;
 $map-height-md: 560px;
 
 .page.providers {
-  @extend .container-fluid, .px-0;
+  @extend .container-fluid, .pb-4, .px-0;
 
   .content-section {
     @include make-row();
@@ -68,6 +68,16 @@ $map-height-md: 560px;
     @extend .d-block, .font-weight-bold, .mx-auto, .p-2, .text-uppercase;
     margin-top: 1.25rem;
     width: 230px;
+  }
+
+  .tabulator.dictionary {
+    .tabulator-row:last-child {
+      border-bottom: 0;
+    }
+    .tabulator-cell {
+      word-wrap: break-word;
+      white-space: normal;
+    }
   }
 
   .table.glossary {

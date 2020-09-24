@@ -1,3 +1,6 @@
+// Use of !important is to ensure overriding CA State Template values
+// some of which are more difficult than others.
+
 $btn-white-space: nowrap;
 
 $card-border-radius: 12px !important;
@@ -6,12 +9,18 @@ $font-family: "Poppins", sans-serif !important;
 $font-family-sans-serif: $font-family;
 $headings-font-family: "Raleway", sans-serif !important;
 
-$text-color: #323a45;
-$headings-color: $text-color;
 $gray-light: #d1dee3;
 $gray-lightest: #f3f3f4;
 $primary: #046b99;
 $success: #0c8547;
 
+$text-color: #323a45;
+$headings-color: $text-color;
+$code-color: $text-color !important;
+
+// tabulator / table variables
 $backgroundColor: #fff;
-$headerBackgroundColor: transparent;
+$headerBackgroundColor: $backgroundColor;
+$rowBorderColor: #cccccc;
+$rowHoverBackground: #f5f9fb;
+$table-border-color: $rowBorderColor;

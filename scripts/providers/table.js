@@ -70,7 +70,8 @@ $(function () {
       data: data,
       columns: cols,
       height: "560px",
-      pagination: false
+      pagination: false,
+      selectable: false
     });
 
     return [data, dictionary];
@@ -79,21 +80,26 @@ $(function () {
   const buildDictTable = (dictionary) => {
     // create the dict table (don't keep a reference)
     new Tabulator(`#${data_table.dict_id}`, {
-      layout: "fitDataTable",
+      layout: "fitColumns",
       data: dictionary,
       autoColumns: true,
       autoColumnsDefinitions: (definitions) => {
-        // disable sort
-        definitions.forEach((column) => {
-          column.headerSort = false;
-        });
         // remove type column
         definitions = definitions.filter((column) => column.field !== "type");
         // wrap column name in code tag
         definitions.find((column) => column.field === "column").formatter = (cell) => `<code>${cell.getValue()}</code>`;
+        // fix up column widths
+        definitions.find((column) => column.field === "column").width = "20%";
+        definitions.find((column) => column.field === "label").width = "21%";
+        definitions.find((column) => column.field === "definition").width = "40%";
+        definitions.find((column) => column.field === "source").width = "20%";
+        definitions.find((column) => column.field === "notes").minWidth = "400px";
+
         return definitions;
       },
-      pagination: false
+      headerSort: false,
+      pagination: false,
+      selectable: false
     });
 
     return dictionary;
