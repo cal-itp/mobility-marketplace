@@ -1,14 +1,44 @@
 #header {
   @extend .pt-3;
   box-shadow: unset;
+}
 
-  .search-container {
-    .search-textfield {
-      background-color: $white;
+.search-container {
+  .search-textfield {
+    border-color: #ccc;
+  }
+
+  &.active {
+    background: $gray-lightest;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #header.compact {
+    #nav-item-search .first-level-link {
+      margin-top: -1.5rem;
     }
+  }
+}
 
-    &.active {
-      background: $primary;
+.ca-gov-icon-search, .ca-gov-icon-close-mark {
+  color: $text-color !important;
+}
+.ca-gov-icon-close-mark {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+// adjust the top-level search icon
+#nav-item-search .first-level-link {
+  @include media-breakpoint-up(md) {
+    min-height: 86px;
+    padding-top: 2rem;
+
+    .ca-gov-icon-search {
+      display: inline-block;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 }
@@ -20,33 +50,20 @@
   background-color: $text-color !important;
 }
 
-@include media-breakpoint-up(md) {
-  #header.compact {
-    #nav-item-search .first-level-link {
-      margin-top: -1.5rem;
-    }
-  }
-}
-
 .main-navigation {
   .first-level-link {
+    color: $text-color;
+    font-family: $font-family;
     font-weight: bold;
   }
 
-  #nav-item-search .first-level-link {
-    .ca-gov-icon-search {
-      color: $text-color;
-    }
+  .first-level-link[data-current="current page"] {
+    color: $primary;
+  }
+}
 
-    @include media-breakpoint-up(md) {
-      min-height: 86px;
-      padding-top: 2rem;
-
-      .ca-gov-icon-search {
-        display: inline-block;
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-    }
+.global-footer .footer-links {
+  a {
+    color: $white !important;
   }
 }
