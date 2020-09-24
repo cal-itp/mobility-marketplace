@@ -1,6 +1,14 @@
 #header {
   @extend .pt-3;
   box-shadow: unset;
+
+  .branding {
+    .header-organization-banner {
+      img {
+        max-height: 55px;
+      }
+    }
+  }
 }
 
 .search-container {
