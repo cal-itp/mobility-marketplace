@@ -31,11 +31,13 @@
     }
     .content-section {
       > * {
+        @include make-col-ready();
         @include make-col(8);
       }
     }
     .form-section {
       > * {
+        @include make-col-ready();
         @include make-col(6);
       }
     }
@@ -43,11 +45,13 @@
   @include media-breakpoint-up(xl) {
     .content-section {
       > * {
+        @include make-col-ready();
         @include make-col(6);
       }
     }
     .form-section {
       > * {
+        @include make-col-ready();
         @include make-col(4);
       }
     }
