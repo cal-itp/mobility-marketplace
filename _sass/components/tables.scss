@@ -38,3 +38,21 @@
 td a {
   border-bottom: 0 !important;
 }
+
+.tabulator-col .tabulator-col-sorter i {
+  // our select indicator is an arrow pointing down
+  background: no-repeat center escape-svg($custom-select-indicator);
+  background-size: 1rem;
+  height: $custom-select-bg-size;
+  width: $custom-select-bg-size;
+}
+
+.tabulator-col[aria-sort="asc"] .tabulator-col-sorter i {
+  // ensure the select indicator points down
+  transform: scaleY(1);
+}
+
+.tabulator-col[aria-sort="desc"] .tabulator-col-sorter i {
+  // flip the select indicator on the Y-axis, to point up
+  transform: scaleY(-1);
+}

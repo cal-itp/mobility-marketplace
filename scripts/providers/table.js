@@ -69,6 +69,7 @@ $(function () {
       layout: "fitData",
       data: data,
       columns: cols,
+      headerSortElement:"<i></i>",
       height: "560px",
       pagination: false,
       selectable: false

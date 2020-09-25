@@ -54,7 +54,11 @@
   @extend .rounded-lg;
   border: solid 2px $black;
   color: $text-color;
-  font-size: 1.4rem;
+  font-size: $custom-select-bg-size;
+
+  &::placeholder {
+    color: #757575;
+  }
 }
 
 .form-confirm {

@@ -15,7 +15,7 @@
   </div>
   <div class="form-group">
     <label for="role" class="form-control-label">Role {% include forms/indicator.html %}</label>
-    <select class="form-control" name="role" aria-required="true" required>
+    <select class="form-control custom-select" name="role" aria-required="true" required>
       <option value="">Select an option</option>
       {% for role in page.roles %}
       <option value="{{ role.name }}">{{ role.name }}</option>
