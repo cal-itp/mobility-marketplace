@@ -61,6 +61,13 @@ $(function () {
     // freeze the url column on the left (for scrolling)
     cols.find(c => c.field === "url").frozen = true;
 
+    // sort the url column by provider name, not url
+    cols.find(c => c.field === "url").sorter = (a,b,aRow,bRow) => {
+      a = String(aRow.getData().provider);
+      b = String(bRow.getData().provider);
+      return a.localeCompare(b, "en");
+    };
+
     // set a width on the main text columns to constrain stretching
     cols.filter(c => ["service_county", "contact_city"].indexOf(c.field) > -1).forEach(c => c.width = 175);
 
