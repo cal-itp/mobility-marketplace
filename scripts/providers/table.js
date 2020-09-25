@@ -61,6 +61,13 @@ $(function () {
     // freeze the url column on the left (for scrolling)
     cols.find(c => c.field === "url").frozen = true;
 
+    // sort the url column by provider name, not url
+    cols.find(c => c.field === "url").sorter = (a,b,aRow,bRow) => {
+      a = String(aRow.getData().provider);
+      b = String(bRow.getData().provider);
+      return a.localeCompare(b, "en");
+    };
+
     // set a width on the main text columns to constrain stretching
     cols.filter(c => ["service_county", "contact_city"].indexOf(c.field) > -1).forEach(c => c.width = 175);
 
@@ -69,8 +76,10 @@ $(function () {
       layout: "fitData",
       data: data,
       columns: cols,
+      headerSortElement:"<i></i>",
       height: "560px",
-      pagination: false
+      pagination: false,
+      selectable: false
     });
 
     return [data, dictionary];
@@ -79,21 +88,26 @@ $(function () {
   const buildDictTable = (dictionary) => {
     // create the dict table (don't keep a reference)
     new Tabulator(`#${data_table.dict_id}`, {
-      layout: "fitDataTable",
+      layout: "fitColumns",
       data: dictionary,
       autoColumns: true,
       autoColumnsDefinitions: (definitions) => {
-        // disable sort
-        definitions.forEach((column) => {
-          column.headerSort = false;
-        });
         // remove type column
         definitions = definitions.filter((column) => column.field !== "type");
         // wrap column name in code tag
         definitions.find((column) => column.field === "column").formatter = (cell) => `<code>${cell.getValue()}</code>`;
+        // fix up column widths
+        definitions.find((column) => column.field === "column").width = "20%";
+        definitions.find((column) => column.field === "label").width = "21%";
+        definitions.find((column) => column.field === "definition").width = "40%";
+        definitions.find((column) => column.field === "source").width = "20%";
+        definitions.find((column) => column.field === "notes").minWidth = "400px";
+
         return definitions;
       },
-      pagination: false
+      headerSort: false,
+      pagination: false,
+      selectable: false
     });
 
     return dictionary;

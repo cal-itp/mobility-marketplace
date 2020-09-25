@@ -1,0 +1,41 @@
+[
+  {
+    "beforeId" : "place-label",
+    "layers": [
+      {
+        "id": "counties",
+        "type": "fill",
+        "source": "counties",
+        "paint": {
+          "fill-color": [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "get",
+              "num_providers"
+            ],
+            1,
+            "hsl(208, 36%, 78%)",
+            20,
+            "hsl(260, 53%, 36%)"
+          ]
+        }
+      },
+      {
+        "id": "county-lines",
+        "type": "line",
+        "source": "counties",
+        "paint": {
+          "line-color": "#ffffff",
+          "line-width": 1
+        },
+        "layout": {
+          "line-cap": "butt",
+          "line-join": "round"
+        }
+      }
+    ]
+  }
+]
