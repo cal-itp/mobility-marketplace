@@ -2,15 +2,15 @@ backend:
   name: git-gateway
   branch: master
 
-display_url: https://calitp.gov
+display_url: https://cal-itp-transit-stop.netlify.app
 
-logo_url: https://calitp.gov/assets/images/logo-sm.svg
+logo_url: https://cal-itp-transit-stop.netlify.app/assets/images/logo-sm.svg
 
 media_folder: "assets/uploads"
 
 publish_mode: editorial_workflow
 
-site_url: https://www.calitp.gov
+site_url: https://cal-itp-transit-stop.netlify.app
 
 collections:
   - name: "navigation"
