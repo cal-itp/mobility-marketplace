@@ -41,9 +41,8 @@
     @extend .d-flex, .justify-content-center, .mt-4, .mt-md-5;
 
     input[type=submit], .btn {
-      width: 100%;
+      min-width: 150px;
       @include media-breakpoint-up(md) {
-        min-width: 150px;
         width: 32%;
       }
     }
