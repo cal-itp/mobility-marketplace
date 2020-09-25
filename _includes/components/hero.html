@@ -4,9 +4,9 @@
   <div class="{{ classes | join: " " }}">
     <div class="text">
       <h1 class="font-weight-bold">{{ include.headline }}</h1>
-      {% if include.content %}
-      <div class="lead">{{ include.content }}</div>
-      {% endif %}
+      <div class="content">
+        {{ include.content }}
+      </div>
     </div>
     <div class="image">
       <img src="{{ include.image }}" alt="Hero image" />
