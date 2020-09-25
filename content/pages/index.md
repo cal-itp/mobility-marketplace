@@ -1,10 +1,10 @@
 ---
 layout: home
 permalink: /
-image: /assets/uploads/card-providers-map.png
+image: /assets/uploads/homepage_hero.png
 title: First Stop
 headline: A new home for modern, equitable, and accessible public transit innovations
-hero_image: https://dummyimage.com/354x360/d1dee3/fff.png&text=+
+hero_image: /assets/uploads/homepage_hero.png
 primary_action: knt7omv
 secondary_action: cqce87u
 final_action: m79ixx7
