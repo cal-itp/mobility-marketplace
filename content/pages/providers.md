@@ -17,8 +17,8 @@ about: >-
 action: iok8amq
 source: This list was created in April 2019 by consultant Trillium Transit under
   contract to Cal-ITP. It was compiled from a variety of sources, including
-  Trillium contacts, CaliforniaState Controller's State Transit Assistance (STA)
-  summary, American Public Transportation Association (APTA) database,
+  Trillium contacts, California State Controller's State Transit Assistance
+  (STA) summary, American Public Transportation Association (APTA) database,
   California Transit Association members, and the National Transit Database
   (NTD).
 ---
