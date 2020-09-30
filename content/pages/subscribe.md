@@ -22,8 +22,8 @@ areas:
     description: Prioritizing transit access to reach jobs and payment methods if
       underbanked
   - name: Cooperative Procurement
-    description: Leveraging State-negotiated contracts for goods and services,
-      including payment processing
+    description: Leveraging State-negotiated or cooperatively procured contracts for
+      goods and services, including payment processing
   - name: Collaborating with Cal-ITP
     description: Tapping public agencies and private-industry partners on innovative
       standards-compliant solutions that net cost savings
@@ -44,4 +44,4 @@ foot_scripts:
     form_target: form-subscribe
     confirm_target: form-confirm
 ---
-Be among the first to learn about emerging products, cost-saving procurement, and other standards-compliant solutions from the California Integrated Travel Project (Cal-ITP): Just complete this form, and we’ll email you when we roll out new resources on our Transit Stop site
+Be among the first to learn about emerging products, cost-saving procurements, and other standards-compliant solutions from the California Integrated Travel Project (Cal-ITP): Just complete this form, and we’ll email you when we roll out new resources on our Transit Stop site
