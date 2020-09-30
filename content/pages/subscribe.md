@@ -11,25 +11,25 @@ roles:
   - name: Other
 areas:
   - name: Data Standards
-    description: Improving real-time information (arrival time, service changes...)
+    description: Improving real-time information (arrival time, service changes)
   - name: Contactless Payments
     description: Tap-to-pay cEMV credit/debit cards, payment-enabled mobile wallets,
-      processing...
+      processing
   - name: Discounted-Fare Solutions
-    description: Instantly verifiying eligibility (for seniors, youth, veterans,
-      persons with disabilities, low-income riders, employee benefits...)
+    description: Instantly verifying eligibility (for seniors, youth, veterans,
+      persons with disabilities, low-income riders, employee benefits)
   - name: Economic Equity
     description: Prioritizing transit access to reach jobs and payment methods if
       underbanked
   - name: Cooperative Procurement
-    description: Leveraging State-negotiated contracts for goods and services,
-      including payment processing
+    description: Leveraging State-negotiated or cooperatively procured contracts for
+      goods and services, including payment processing
   - name: Collaborating with Cal-ITP
     description: Tapping public agencies and private-industry partners on innovative
       standards-compliant solutions that net cost savings
   - name: Industry News
-    description: California, U.S. and international trends, including COVID-19
-      recovery stories revealed by open-source data
+    description: California, U.S., and international insights, including COVID-19
+      recovery stories revealed from open-source data
 confirmation:
   message: >-
     ![Email confirmation illustration](/assets/uploads/email-confirm.svg "Thank
@@ -44,4 +44,4 @@ foot_scripts:
     form_target: form-subscribe
     confirm_target: form-confirm
 ---
-Be among the first to learn about emerging products, cost-saving procurement, and other standards-compliant solutions from the California Integrated Travel Project (Cal-ITP): Just complete this form, and we’ll email you when we roll out new resources on our Transit Stop site
+Be among the first to learn about emerging products, cost-saving procurements, and other standards-compliant solutions from the California Integrated Travel Project (Cal-ITP): Just complete this form, and we’ll email you when we roll out new resources on our Transit Stop site
