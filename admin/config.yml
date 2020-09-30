@@ -69,7 +69,7 @@ collections:
     description: "Landing pages with unique layouts and options."
     editor:
       preview: false
-    preview_path: "{{ slug }}"
+    preview_path: "{{slug}}"
     files:
       - label: "Homepage"
         name: "homepage"
@@ -84,45 +84,36 @@ collections:
               widget: "string",
               hint: "For browser tabs and social shares; combined with the site title."
             }
-          - {label: "Headline", name: "headline", widget: "string"}
           - {
-              label: "Body",
-              name: "body",
-              widget: "markdown",
-              minimal: true,
-              buttons: [
-                bold,
-                italic,
-                link,
-                bulleted-list,
-                numbered-list
-              ],
-              editor_components: []
-            }
-          - {label: "Hero image", name: "hero_image", widget: "image" }
-          - {
-              label: "Primary Call to Action",
-              name: "primary_action",
-              widget: "relation",
-              collection: "actions",
-              value_field: "ref_id",
-              search_fields: ["title", "text", "body"],
-              display_fields: ["title"]
+              label: "Hero",
+              name: "hero",
+              widget: "object",
+              fields: [
+                {label: "Headline", name: "headline", widget: "string"},
+                {
+                  label: "Text",
+                  name: "text",
+                  widget: "markdown",
+                  minimal: true,
+                  buttons: [
+                    bold,
+                    italic,
+                    link,
+                    bulleted-list,
+                    numbered-list
+                  ],
+                  editor_components: []
+                },
+                {label: "Image", name: "image", widget: "image" }
+              ]
             }
           - {
-              label: "Secondary Call to Action",
-              name: "secondary_action",
+              label: "Action Panels",
+              label_singular: "Action",
+              name: "actions",
               widget: "relation",
               collection: "actions",
-              value_field: "ref_id",
-              search_fields: ["title", "text", "body"],
-              display_fields: ["title"]
-            }
-          - {
-              label: "Final Call to Action",
-              name: "final_action",
-              widget: "relation",
-              collection: "actions",
+              multiple: true,
               value_field: "ref_id",
               search_fields: ["title", "text", "body"],
               display_fields: ["title"]
@@ -465,8 +456,7 @@ collections:
           ],
           editor_components: []
         }
-      - {label: "Tile image", name: "tile_image", widget: "image", required: false, hint: "Used when this action is displayed as a tile."}
-      - {label: "Card image", name: "card_image", widget: "image", required: false, hint: "Used when this action is displayed as a card."}
+      - {label: "Image", name: "image", widget: "image", required: false, hint: "Used when this action is displayed in a panel (e.g. image + text + button)."}
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
   - name: "metadata"

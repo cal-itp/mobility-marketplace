@@ -13,20 +13,20 @@ layout: compress
 {% assign ls = layout.head_scripts | default: list %}
 {% assign head_scripts = ps | concat: ls %}
 {% include site/head.html scripts=head_scripts %}
-<body>
-  <div id="app">
-    {% include site/header.html %}
 
-    <div id="main-content" class="main-content">
-      <main class="main-primary" role="main">
-        <div class="main-container">
-          {{ content }}
-        </div>
-      </main>
-    </div>
+{% assign classes = "" | split: "," | push: layout.class | push: page.class | compact | uniq %}
+<body class="{{ classes | join: " " }}">
+  {% include site/header.html %}
 
-    {% include site/footer.html %}
+  <div id="main-content" class="main-content">
+    <main class="main-primary" role="main">
+      <div class="main-container">
+        {{ content }}
+      </div>
+    </main>
   </div>
+
+  {% include site/footer.html %}
 
   {% assign ps = page.foot_scripts | default: list %}
   {% assign ls = layout.foot_scripts | default: list %}
