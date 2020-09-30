@@ -18,20 +18,9 @@ foot_scripts:
   class="home" %}
 
 <section id="cta">
-  {% include components/cards/grid.html
-      refs=actions
-      card_type="action-tile"
-      card_class="card"
-      md_cols=1
-      lg_cols=2 %}
-</section>
-
-{% assign actions = page.final_action | split: "," %}
-
-<section id="final-cta">
 {% include components/cards/grid.html
-    refs=actions
-    card_type="action"
+    refs=page.actions
+    card_type="action-panel"
     md_cols=1
     lg_cols=1
     card_left_cols=4

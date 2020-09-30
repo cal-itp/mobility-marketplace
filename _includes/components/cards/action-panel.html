@@ -2,7 +2,7 @@
 
 {% if action %}
 
-{% assign classes = "action" | split: "," | push: include.class | compact %}
+{% assign classes = "action-panel" | split: "," | push: include.class | compact %}
 {% assign left = include.left_cols | default: 6 %}
 {% assign right = include.right_cols | default: 6 %}
 
@@ -14,7 +14,7 @@
             title=action.title
             heading_level=include.heading_level %}
       </div>
-      <img class="card-img" src="{{ action.card_image }}" alt="image for {{ action.title }}" />
+      <img class="card-img" src="{{ action.image }}" alt="image for {{ action.title }}" />
     </div>
     <div class="col-md-{{ right }} text">
       <div class="card-body">
@@ -25,7 +25,7 @@
         <div class="card-text">
           {{ action.content }}
         </div>
-        {% include components/action-button.html ref_id=action.ref_id %}
+        {% include components/action-button.html ref_id=action.ref_id btn_class="outline-dark" %}
       </div>
     </div>
   </div>

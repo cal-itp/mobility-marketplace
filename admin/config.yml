@@ -456,8 +456,7 @@ collections:
           ],
           editor_components: []
         }
-      - {label: "Tile image", name: "tile_image", widget: "image", required: false, hint: "Used when this action is displayed as a tile."}
-      - {label: "Card image", name: "card_image", widget: "image", required: false, hint: "Used when this action is displayed as a card."}
+      - {label: "Image", name: "image", widget: "image", required: false, hint: "Used when this action is displayed in a panel (e.g. image + text + button)."}
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
 
   - name: "metadata"
