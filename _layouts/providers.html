@@ -49,7 +49,7 @@ foot_scripts:
       {% if action %}
       <h3>{{ action.title }}</h3>
       {{ action.content }}
-      {% include components/action-button.html ref_id=page.action btn_class="primary btn-data-package" %}
+      {% include components/actions/button.html ref_id=page.action btn_class="primary btn-data-package" %}
       {% endif %}
     </main>
   </aside>

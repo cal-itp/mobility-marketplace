@@ -1,0 +1,7 @@
+{% assign action = site.actions | find: "ref_id", include.ref_id %}
+
+{% if action %}
+
+{{ action.content }}
+
+{% endif %}
