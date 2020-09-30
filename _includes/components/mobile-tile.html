@@ -1,5 +1,0 @@
-{% assign classes = "mobile,tile" | split: "," | push: include.class | compact %}
-
-<div class="{{ classes | join: " " }}">
-  <div class="content">{{ include.content }}</div>
-</div>

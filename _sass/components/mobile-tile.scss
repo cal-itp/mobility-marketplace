@@ -7,4 +7,8 @@
       padding-right: $grid-gutter-width / 2;
     }
   }
+
+  .content:last-of-type {
+    @extend .mt-4;
+  }
 }

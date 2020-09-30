@@ -9,19 +9,15 @@ foot_scripts:
 
 <section id="hero">
 {% include components/hero.html
-    headline=page.headline
-    content=content
-    image=page.hero_image
+    hero=page.hero
     class="home" %}
 </section>
 
-{% assign actions = page.primary_action | split: "," | push: page.secondary_action %}
+{% include components/mobile-hero-tile.html
+  hero=page.hero
+  class="home" %}
 
-<section id="main-cta">
-  {% include components/mobile-tile.html
-    content=content
-    class="home" %}
-
+<section id="cta">
   {% include components/cards/grid.html
       refs=actions
       card_type="action-tile"

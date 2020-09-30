@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: /
-image: /assets/uploads/homepage_hero.png
+image: /assets/uploads/transit-stop-home.svg
 title: First Stop
 hero:
   headline: A new home for modern, equitable, and accessible public transit innovations
@@ -9,7 +9,8 @@ hero:
     providers can procure devices and services, learn about new technology
     vendors, and collaborate with us on transportation solutions that benefit
     all Californians
-  image: /assets/uploads/homepage_hero.png
+  image: /assets/uploads/transit-stop-home.svg
+  action: cqce87u
 actions:
   - knt7omv
   - m79ixx7
