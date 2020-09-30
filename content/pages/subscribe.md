@@ -16,8 +16,8 @@ areas:
     description: Tap-to-pay cEMV credit/debit cards, payment-enabled mobile wallets,
       processing
   - name: Discounted-Fare Solutions
-    description: Instantly verifiying eligibility (for seniors, youth, veterans,
-      persons with disabilities, low-income riders, employee benefits...)
+    description: Instantly verifying eligibility (for seniors, youth, veterans,
+      persons with disabilities, low-income riders, employee benefits)
   - name: Economic Equity
     description: Prioritizing transit access to reach jobs and payment methods if
       underbanked
