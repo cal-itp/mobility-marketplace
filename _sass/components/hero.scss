@@ -44,7 +44,7 @@
   }
 
   .content:last-of-type {
-    @extend .mt-4;
+    @extend .mt-3;
   }
 
   @include media-breakpoint-down(md) {

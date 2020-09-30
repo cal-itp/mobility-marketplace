@@ -9,12 +9,6 @@ hero:
     Welcome to The Transit Stop—Cal-ITP's one-stop resource—where transportation
     providers can find device and service procurements and learn about new
     technology
-
-    <br>
-
-    <br>
-
-    Sign up to get updates in your inbox on our latest releases
   image: /assets/uploads/transit-stop-home.svg
   action: cqce87u
 actions:
