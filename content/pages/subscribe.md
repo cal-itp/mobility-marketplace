@@ -1,7 +1,7 @@
 ---
 layout: form
 permalink: /subscribe
-image: https://dummyimage.com/570x305/d1dee3/fff.png&text=+
+image: /assets/uploads/email-confirm.svg
 title: Sign Up for Transit Stop Updates
 headline: Sign Up for Transit Stop Updates
 roles:
@@ -31,7 +31,12 @@ areas:
     description: California, U.S. and international trends, including COVID-19
       recovery stories revealed by open-source data
 confirmation:
-  message: Thank you! We'll be in touch soon!
+  message: >-
+    ![Email confirmation illustration](/assets/uploads/email-confirm.svg "Thank
+    you!")
+
+
+    Thank you! We'll be in touch soon!
   action: gbeec4s
 form: subscribe
 foot_scripts:
