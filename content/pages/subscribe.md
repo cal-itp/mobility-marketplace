@@ -28,8 +28,8 @@ areas:
     description: Tapping public agencies and private-industry partners on innovative
       standards-compliant solutions that net cost savings
   - name: Industry News
-    description: California, U.S. and international trends, including COVID-19
-      recovery stories revealed by open-source data
+    description: California, U.S., and international insights, including COVID-19
+      recovery stories revealed from open-source data
 confirmation:
   message: >-
     ![Email confirmation illustration](/assets/uploads/email-confirm.svg "Thank
