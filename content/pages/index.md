@@ -12,6 +12,8 @@ hero:
 
     <br>
 
+    <br>
+
     Sign up to get updates in your inbox on our latest releases
   image: /assets/uploads/transit-stop-home.svg
   action: cqce87u
