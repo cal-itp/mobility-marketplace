@@ -1,7 +1,7 @@
 ---
 layout: form
 permalink: /subscribe
-image: https://dummyimage.com/570x305/d1dee3/fff.png&text=+
+image: /assets/uploads/email-confirm.svg
 title: Sign Up for Transit Stop Updates
 headline: Sign Up for Transit Stop Updates
 roles:
