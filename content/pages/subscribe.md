@@ -14,7 +14,7 @@ areas:
     description: Improving real-time information (arrival time, service changes)
   - name: Contactless Payments
     description: Tap-to-pay cEMV credit/debit cards, payment-enabled mobile wallets,
-      processing...
+      processing
   - name: Discounted-Fare Solutions
     description: Instantly verifiying eligibility (for seniors, youth, veterans,
       persons with disabilities, low-income riders, employee benefits...)
