@@ -7,7 +7,7 @@ hero:
   headline: A new home for modern, equitable, and accessible public transit innovations
   text: >-
     Welcome to The Transit Stop—Cal-ITP's one-stop resource—where transportation
-    providers can:
+    providers can
 
 
     • find device and service procurements
