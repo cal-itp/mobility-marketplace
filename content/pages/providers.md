@@ -6,23 +6,24 @@ title: California Transit Providers
 headline: California Transit Providers
 about: >-
   This dataset includes known transportation providers in California, covering
-  both public transit operators and special services that may not fall within
-  standard definitions of transit. Each provider entry includes its headquarters
-  city, counties where active, the associated National Transit Database ID (if
-  available), the website URL, and key attributes from the NTD. It's currently
-  limited to providers who operate their own services. 
+  public transit operators, intercity, and special services that may not fall
+  within standard definitions of transit. Each provider entry includes its
+  headquarters city, counties where active, the associated National Transit
+  Database ID (if available), the website URL, and key attributes from the NTD.
+  It's currently limited to providers who operate their own services. 
 
 
   This list is a living document that will be updated regularly with new service provider information. If you have comments, additions, or corrections to this dataset, we're working on ways for you to share that feedback. Please check back soon.
 action: iok8amq
 source: This list was created in April 2019 by consultant Trillium Transit under
-  contract to Cal-ITP, and it was compiled from a variety of sources, including
-  Trillium contacts, State Controller's State Transit Assistance (STA) summary,
-  American Public Transportation Association (APTA) database, California Transit
-  Association (CTA) members, and the National Transit Database (NTD).
+  contract to Cal-ITP. It was compiled from a variety of sources, including
+  Trillium contacts, CaliforniaState Controller's State Transit Assistance (STA)
+  summary, American Public Transportation Association (APTA) database,
+  California Transit Association members, and the National Transit Database
+  (NTD).
 ---
-From commuter buses and light rail to on-demand paratransit, passengers want transportation that’s more technologically enabled, with real-time journey-planning information and tap-to-pay fareboxes.
+From buses and shuttles to commuter rail and on-demand paratransit, passengers want transportation that’s easy to find and easy to pay for, with real-time information and contactless payment.
 
-To better understand the size and scale of opportunities for tech integration in transit, the Cal-ITP team has compiled a list of California’s transportation providers.
+To better understand the size and scale of opportunities for integration in transportation, the Cal-ITP team compiled a list of California’s transportation providers.
 
 Explore the more than 300 providers on this interactive map, which offers just a taste of our full dataset—a CSV download that includes fare revenues, fleet size, vehicle type, and more.
