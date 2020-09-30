@@ -1,27 +1,18 @@
-#main-cta, #final-cta {
-  @extend .pt-4, .pt-lg-5;
-}
-
-#hero, #final-cta {
-  @extend .pb-4, .pb-lg-5;
-}
-
-#main-cta {
-  @extend .bg-gray-lightest, .px-sm-4, .px-md-0, .py-4;
-
-  .card-wrapper:first-of-type .card {
-    @extend .btn-success;
+.home {
+  #hero {
+    background-color: $blue-lightest;
   }
-  .card-wrapper:last-of-type .card {
-    @extend .btn-primary;
-  }
-}
 
-#final-cta {
-  img {
-    max-height: 276px;
-    @include media-breakpoint-up(md) {
-      max-height: 358px;
+  #hero, #cta {
+    @extend .py-5;
+  }
+
+  #cta {
+    img {
+      max-height: 276px;
+      @include media-breakpoint-up(md) {
+        max-height: 358px;
+      }
     }
   }
 }

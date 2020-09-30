@@ -3,7 +3,7 @@
 }
 
 .card-wrapper {
-  @extend .mb-3;
+  @extend .mb-5;
 
   .card-title {
     @extend .h3, .mt-0;
@@ -14,10 +14,13 @@
       margin-bottom: 2.7rem;
     }
     .btn {
-      text-transform: uppercase;
       position: absolute;
-      bottom: 1rem;
+      bottom: 0;
       left: 1rem;
+
+      @include media-breakpoint-up(lg) {
+        bottom: -2rem;
+      }
     }
   }
 
@@ -29,8 +32,8 @@
     @extend .d-md-flex, .justify-content-md-center, .mb-3, .mb-md-0;
   }
 
-  .action {
-    @extend .pb-4, .pb-lg-0;
+  .action-panel {
+    @extend .py-5;
 
     .card-body {
       @extend .px-lg-4;
@@ -38,10 +41,6 @@
 
     .card-img {
       width: unset;
-    }
-
-    .btn {
-      bottom: 0;
     }
 
     @include media-breakpoint-up(lg) {

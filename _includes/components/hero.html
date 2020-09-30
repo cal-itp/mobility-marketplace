@@ -3,13 +3,18 @@
 <div class="hero-wrapper container">
   <div class="{{ classes | join: " " }}">
     <div class="text">
-      <h1 class="font-weight-bold">{{ include.headline }}</h1>
+      <h1 class="font-weight-bold">{{ include.hero.headline }}</h1>
       <div class="content">
-        {{ include.content }}
+        {{ include.hero.text }}
       </div>
+      {% if include.hero.action %}
+      <div class="content">
+        {% include components/action-button.html ref_id=include.hero.action %}
+      </div>
+      {% endif %}
     </div>
     <div class="image">
-      <img src="{{ include.image }}" alt="Hero image" />
+      <img src="{{ include.hero.image }}" alt="Hero image" />
     </div>
   </div>
 </div>

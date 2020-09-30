@@ -1,0 +1,10 @@
+{% assign classes = "mobile,tile" | split: "," | push: include.class | compact %}
+
+<div class="{{ classes | join: " " }}">
+  <div class="content">{{ include.hero.text }}</div>
+  {% if include.hero.action %}
+  <div class="content">
+    {% include components/action-button.html ref_id=include.hero.action %}
+  </div>
+  {% endif %}
+</div>

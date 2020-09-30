@@ -42,6 +42,11 @@
       text-align: unset;
     }
   }
+
+  .content:last-of-type {
+    @extend .mt-4;
+  }
+
   @include media-breakpoint-down(md) {
     // hide content on smaller screens
     // we have another component to display the content elsewhere on smaller screens
