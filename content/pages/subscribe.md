@@ -11,7 +11,7 @@ roles:
   - name: Other
 areas:
   - name: Data Standards
-    description: Improving real-time information (arrival time, service changes...)
+    description: Improving real-time information (arrival time, service changes)
   - name: Contactless Payments
     description: Tap-to-pay cEMV credit/debit cards, payment-enabled mobile wallets,
       processing...
