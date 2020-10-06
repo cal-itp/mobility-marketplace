@@ -39,7 +39,7 @@ confirmation:
     Thank you! We'll be in touch soon!
   action: gbeec4s
 form: subscribe
-foot_scripts:
+scripts:
   - src: /scripts/forms/subscribe.js
     form_target: form-subscribe
     confirm_target: form-confirm

@@ -9,10 +9,10 @@ layout: compress
 <!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 <!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 {% assign list = "," | split: "," | compact %}
-{% assign ps = page.head_scripts | default: list %}
-{% assign ls = layout.head_scripts | default: list %}
-{% assign head_scripts = ps | concat: ls %}
-{% include site/head.html scripts=head_scripts %}
+{% assign ps = page.scripts | default: list %}
+{% assign ls = layout.scripts | default: list %}
+{% assign scripts = ps | concat: ls %}
+{% include site/head.html scripts=scripts %}
 
 {% assign classes = "" | split: "," | push: layout.class | push: page.class | compact | uniq %}
 <body class="{{ classes | join: " " }}">
@@ -27,10 +27,5 @@ layout: compress
   </div>
 
   {% include site/footer.html %}
-
-  {% assign ps = page.foot_scripts | default: list %}
-  {% assign ls = layout.foot_scripts | default: list %}
-  {% assign foot_scripts = ps | concat: ls %}
-  {% include site/foot-scripts.html scripts=foot_scripts %}
 </body>
 </html>

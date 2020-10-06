@@ -2,16 +2,14 @@
 layout: bg-white
 class: providers
 
-head_scripts:
+scripts:
   - mapbox
-  - tabulator
-
-foot_scripts:
   - src: /scripts/providers/map.js
     target_id: map
     data_file: /data/providers/counties.geojson
     token: pk.eyJ1IjoiY2FsaXRwLXRyYW5zaXQtc3RvcmUiLCJhIjoiY2tldzA3dnF5MGlmOTJ4b2p0bWZ6ZnNrcSJ9.AOeqhozE542cmioe-YLi2Q
 
+  - tabulator
   - src: /scripts/providers/table.js
     data_id: table-data
     dict_id: table-dict
