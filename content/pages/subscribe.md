@@ -40,7 +40,7 @@ confirmation:
   action: gbeec4s
 form: subscribe
 foot_scripts:
-  - name: /scripts/forms/subscribe.js
+  - src: /scripts/forms/subscribe.js
     form_target: form-subscribe
     confirm_target: form-confirm
 ---

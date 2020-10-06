@@ -8,7 +8,7 @@ layout: compress
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 <!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-{% assign list = "," | split: "," %}
+{% assign list = "," | split: "," | compact %}
 {% assign ps = page.head_scripts | default: list %}
 {% assign ls = layout.head_scripts | default: list %}
 {% assign head_scripts = ps | concat: ls %}
