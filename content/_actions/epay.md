@@ -1,6 +1,6 @@
 ---
 title: Begin taking contactless payments
-text: Get Started
+text: Get started
 href: "#"
 target: _self
 image: /assets/uploads/card-payments.svg
