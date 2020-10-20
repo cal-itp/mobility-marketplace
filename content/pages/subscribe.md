@@ -5,24 +5,24 @@ image: /assets/uploads/email-confirm.svg
 title: Sign Up for Transit Stop Updates
 headline: Sign up for Transit Stop updates
 areas:
-  - name: Data Standards
+  - name: Data standards
     description: Improving real-time information (arrival time, service changes)
-  - name: Contactless Payments
+  - name: Contactless payments
     description: Tap-to-pay cEMV credit/debit cards, payment-enabled mobile wallets,
       processing
-  - name: Discounted-Fare Solutions
+  - name: Discounted-fare solutions
     description: Instantly verifying eligibility (for seniors, youth, veterans,
       persons with disabilities, low-income riders, employee benefits)
-  - name: Economic Equity
+  - name: Economic equity
     description: Prioritizing transit access to reach jobs and payment methods if
       underbanked
-  - name: Cooperative Procurement
+  - name: Cooperative procurement
     description: Leveraging State-negotiated or cooperatively procured contracts for
       goods and services, including payment processing
   - name: Collaborating with Cal-ITP
     description: Tapping public agencies and private-industry partners on innovative
       standards-compliant solutions that net cost savings
-  - name: Industry News
+  - name: Industry news
     description: California, U.S., and international insights, including COVID-19
       recovery stories revealed from open-source data
 form: subscribe
