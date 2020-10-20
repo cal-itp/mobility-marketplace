@@ -1,5 +1,5 @@
 ---
-title: Get Started with Payments
+title: Begin taking contactless payments
 text: Get Started
 href: "#"
 target: _self
