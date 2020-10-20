@@ -1,6 +1,6 @@
 ---
-title: Download the Data Package
-text: Download Data
+title: Download the data package
+text: Download data
 href: /data/providers/package.zip
 target: _self
 ref_id: iok8amq
