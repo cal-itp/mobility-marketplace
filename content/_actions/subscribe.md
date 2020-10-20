@@ -1,5 +1,5 @@
 ---
-title: Subscribe for Updates
+title: Subscribe for updates
 text: Subscribe
 href: /subscribe
 target: _self
