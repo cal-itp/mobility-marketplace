@@ -1,5 +1,5 @@
 ---
-title: Get Started with Payments
+title: Add contactless payments to your transit system
 text: Get Started
 href: "#"
 target: _self
