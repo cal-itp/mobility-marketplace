@@ -1,6 +1,6 @@
 ---
-title: Return Home
-text: Return Home
+title: Return home
+text: Return home
 href: /
 target: _self
 ref_id: gbeec4s
