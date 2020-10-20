@@ -1,5 +1,5 @@
 ---
-title: The State of Transit
+title: The state of transit
 text: View the map
 href: /providers
 target: _self
