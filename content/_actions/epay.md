@@ -1,9 +1,9 @@
 ---
-title: Begin taking contactless payments
+title: Begin taking contactless fare payments
 text: Get started
 href: "#"
 target: _self
-image: /assets/uploads/card-payments.svg
+image: /assets/uploads/home-illo-payment-types.png
 ref_id: knt7omv
 ---
-Learn how to access State-negotiated services to accept passengers’ credit/debit cards and mobile wallets while boarding
+Learn how to start accepting passengers’ contactless credit/debit cards and smartphones by utilizing State-negotiated services.
