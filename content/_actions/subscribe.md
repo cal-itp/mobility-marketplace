@@ -1,7 +1,7 @@
 ---
 title: Get In Touch
 text: Get in touch
-href: /subscribe
+href: /reachout
 target: _self
 ref_id: cqce87u
 ---
