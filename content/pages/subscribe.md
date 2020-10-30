@@ -2,7 +2,7 @@
 layout: form
 permalink: /subscribe
 image: /assets/uploads/email-confirm.svg
-title: Sign Up for Transit Stop Updates
+title: Get In Touch
 headline: Sign up for Transit Stop updates
 areas:
   - name: Data standards
