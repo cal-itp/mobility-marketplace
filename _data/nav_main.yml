@@ -1,9 +1,16 @@
 items:
-  - text: Get Started
+  - text: Go contactless
     url: "#"
-  - text: Learn More
+    target: _self
+  - text: Resource library
     url: "#"
-  - text: Provider Map
+    target: _self
+  - text: Provider map
     url: /providers
-  - text: Subscribe
-    url: /subscribe
+    target: _self
+  - target: _self
+    text: About us
+    url: "#"
+  - text: Get in touch
+    url: /reachout
+    target: _self
