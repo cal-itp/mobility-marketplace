@@ -12,5 +12,5 @@ items:
     text: About us
     url: "#"
   - text: Get in touch
-    url: /reachout
+    url: /subscribe
     target: _self
