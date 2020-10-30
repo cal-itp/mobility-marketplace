@@ -5,4 +5,4 @@ href: /getintouch
 target: _self
 ref_id: cqce87u
 ---
-Sign up to get updates in your inbox on our latest releases.
+Sign up to receive more information on how we’re helping to shape seamless mobility access and increase transit ridership across our state.
