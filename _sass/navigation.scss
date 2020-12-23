@@ -11,44 +11,13 @@
   }
 }
 
-.search-container {
-  .search-textfield {
-    border-color: #ccc;
-  }
 
-  &.active {
-    background: $gray-lightest;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  #header.compact {
-    #nav-item-search .first-level-link {
-      margin-top: -1.5rem;
-    }
-  }
-}
-
-.ca-gov-icon-search, .ca-gov-icon-close-mark {
+.ca-gov-icon-close-mark {
   color: $text-color !important;
 }
 .ca-gov-icon-close-mark {
   font-size: 40px;
   font-weight: bold;
-}
-
-// adjust the top-level search icon
-#nav-item-search .first-level-link {
-  @include media-breakpoint-up(md) {
-    min-height: 86px;
-    padding-top: 2rem;
-
-    .ca-gov-icon-search {
-      display: inline-block;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-  }
 }
 
 .mobile-controls, .mobile-control {
