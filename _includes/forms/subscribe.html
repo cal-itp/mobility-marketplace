@@ -10,12 +10,12 @@
     <input type="text" class="form-control" name="last_name" placeholder="Uhura" />
   </div>
   <div class="form-group">
-    <label for="organization" class="form-control-label">Organization Name</label>
-    <input type="text" class="form-control" name="organization" placeholder="Elk Grove Transit" />
+    <label for="agency" class="form-control-label">Agency Name</label>
+    <input type="text" class="form-control" name="agency" placeholder="Elk Grove Transit" />
   </div>
   <div class="form-group">
-    <label for="role" class="form-control-label">Role {% include forms/indicator.html %}</label>
-    <select class="form-control custom-select" name="role" aria-required="true" required>
+    <label for="role" class="form-control-label">Role</label>
+    <select class="form-control custom-select" name="role">
       <option value="">Select an option</option>
       {% for role in page.roles %}
       <option value="{{ role.name }}">{{ role.name }}</option>
@@ -27,18 +27,8 @@
     <input type="email" class="form-control" name="email" placeholder="nyota.uhura@elkgrovecity.org" aria-required="true" required />
   </div>
   <div class="form-group">
-    <div>
-      <label class="form-control-label">Select areas of interest</label>
-    </div>
-    {% for area in page.areas %}
-    <label class="form-check-inline">
-      <input class="hidden-up pos-abs" type="checkbox" name="interest_areas[]" value="{{ area.name }}">
-      <div class="check-icon-checkbox">
-          <i class="ca-gov-icon-check-mark"></i>
-      </div>
-      <span>{{ area.name }}:</span>&nbsp;{{ area.description }}
-    </label>
-    {% endfor %}
+    <label for="phone" class="form-control-label">Phone Number</label>
+    <input type="tel" class="form-control" name="phone-number" placeholder="(415) 555-0199" />
   </div>
   <div class="form-group">
     <label for="comments" class="form-control-label">Other comments or queries</label>
