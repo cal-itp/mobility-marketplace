@@ -1,7 +1,7 @@
 ---
 title: Get Started with Payments
 text: Get Started
-href: "#"
+href: "/get-started"
 target: _self
 image: /assets/uploads/card-payments.svg
 ref_id: knt7omv
