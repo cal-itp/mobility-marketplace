@@ -1,8 +1,4 @@
 .home {
-  #hero {
-    background-color: $blue-lightest;
-  }
-
   #hero, #cta {
     @extend .py-5;
   }
@@ -13,6 +9,34 @@
       @include media-breakpoint-up(md) {
         max-height: 358px;
       }
+    }
+  }
+
+  #what-is {
+    display: grid;
+    background-color: $blue-lightest;
+    grid-template-areas:
+      ". header ."
+      ". paragraph ."
+      ". cta .";
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    padding-block: 4rem;
+    padding-inline: 2rem;
+    @include media-breakpoint-up(md) {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-gap: 1rem;
+    }
+    header {
+      grid-area: header;
+      justify-self: center;
+    }
+    p {
+      grid-area: paragraph;
+    }
+    section {
+      grid-area: cta;
+      justify-self: center;
     }
   }
 }

@@ -1,6 +1,6 @@
 items:
   - text: Get Started
-    url: "#"
+    url: "/get-started"
   - text: Learn More
     url: "#"
   - text: Provider Map
