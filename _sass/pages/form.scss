@@ -7,11 +7,8 @@
 
   .form-section {
     @extend .py-4;
+    padding-block: 4rem !important;
     background-color: #F6F3ED;
-
-    .indicates-required {
-      @extend .text-center;
-    }
   }
 
   .content-section {

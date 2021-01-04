@@ -1,13 +1,21 @@
+<header>
+  <h2>Get in touch</h2>
+</header>
+
+<p>
+  Complete the below form, and someone from the Cal-ITP team will reach out soon to get you started with vendor selection, pricing, and procurement—or just to respond to your comment or question.
+</p>
+
 {% include forms/indicates-required.html indicator="*" text="Indicates required fields" %}
 
 <form role="form" method="POST" id="form-subscribe" name="subscribe" data-netlify="true" netlify-honeypot="_honeypot_">
   <div class="form-group">
-    <label for="first_name" class="form-control-label">First Name</label>
-    <input type="text" class="form-control" name="first_name" placeholder="Nyota" />
+    <label for="first_name" class="form-control-label">First Name {% include forms/indicator.html %}</label>
+    <input type="text" class="form-control" name="first_name" placeholder="Nyota" aria-required="true" required />
   </div>
   <div class="form-group">
-    <label for="last_name" class="form-control-label">Last Name</label>
-    <input type="text" class="form-control" name="last_name" placeholder="Uhura" />
+    <label for="last_name" class="form-control-label">Last Name {% include forms/indicator.html %}</label>
+    <input type="text" class="form-control" name="last_name" placeholder="Uhura" aria-required="true" required />
   </div>
   <div class="form-group">
     <label for="agency" class="form-control-label">Agency Name</label>
