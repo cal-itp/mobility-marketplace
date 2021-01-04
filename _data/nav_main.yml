@@ -1,7 +1,5 @@
 items:
   - text: Get Started
     url: "/get-started"
-  - text: Learn More
-    url: "/subscribe"
   - text: Provider Map
     url: /providers
