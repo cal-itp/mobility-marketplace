@@ -1,7 +1,13 @@
 items:
-  - text: Back to Top
+  - text: Back to top
     url: "#skip-to-content"
-  - text: Contact
-    url: /subscribe
-  - text: Privacy Policy
+    target: _self
+  - text: Privacy policy
     url: https://dot.ca.gov/privacy-policy
+    target: _blank
+  - target: _blank
+    text: Conditions of use
+    url: https://dot.ca.gov/conditions-of-use
+  - target: _blank
+    text: Register to vote
+    url: https://registertovote.ca.gov/

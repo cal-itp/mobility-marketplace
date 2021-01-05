@@ -1,10 +1,10 @@
 ---
 layout: home
 permalink: /
-image: /assets/uploads/transit-stop-home.svg
-title: First Stop
+image: /assets/uploads/home-illo-main.png
+title: Homepage
 hero:
-  headline: A new home for modern, equitable, and accessible public transit innovations
+  headline: A new home for modern and equitable transportation innovations
   text: >-
     Welcome to The Transit Stop—Cal-ITP's one-stop resource—where transportation
     providers can find device and service procurements and learn about new

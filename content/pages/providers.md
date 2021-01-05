@@ -3,7 +3,7 @@ layout: providers
 permalink: /providers
 image: https://dummyimage.com/354x360/d1dee3/fff.png&text=+
 title: California Transit Providers
-headline: California Transit Providers
+headline: California transit providers
 about: >-
   This dataset includes known transportation providers in California, covering
   public transit operators, intercity, and special services that may not fall
@@ -17,13 +17,13 @@ about: >-
 action: iok8amq
 source: This list was created in April 2019 by consultant Trillium Transit under
   contract to Cal-ITP. It was compiled from a variety of sources, including
-  Trillium contacts, CaliforniaState Controller's State Transit Assistance (STA)
-  summary, American Public Transportation Association (APTA) database,
+  Trillium contacts, California State Controller's State Transit Assistance
+  (STA) summary, American Public Transportation Association (APTA) database,
   California Transit Association members, and the National Transit Database
   (NTD).
 ---
-From buses and shuttles to commuter rail and on-demand paratransit, passengers want transportation that’s easy to find and easy to pay for, with real-time information and contactless payment.
+From buses, shuttles, and on-demand paratransit to commuter and intercity rail, passengers want transportation that’s easy to find and easy to pay for, with real-time information and contactless payment.
 
 To better understand the size and scale of opportunities for integration in transportation, the Cal-ITP team compiled a list of California’s transportation providers.
 
-Explore the more than 300 providers on this interactive map, which offers just a taste of our full dataset—a CSV download that includes fare revenues, fleet size, vehicle type, and more.
+Explore the more than 300 providers on this map and table, which links to each operator's website and offers just a taste of our full dataset—a CSV download that includes fare revenues, fleet size, vehicle type, and more.
