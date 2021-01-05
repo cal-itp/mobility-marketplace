@@ -28,6 +28,12 @@
 }
 
 .main-navigation {
+  @include media-breakpoint-up(lg) {
+    justify-content: flex-end;
+    .top-level-nav {
+      width: 45%;
+    }
+  }
   .first-level-link {
     color: $text-color;
     font-family: $font-family;
