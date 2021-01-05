@@ -1,7 +1,7 @@
 ---
-title: Get Started with Payments
-text: Get Started
-href: "/get-started"
+title: Go contactless
+text: Get started
+href: /get-started
 target: _self
 image: /assets/uploads/home-illo-payment-types.png
 ref_id: knt7omv
