@@ -115,6 +115,7 @@ collections:
               collection: "actions",
               multiple: true,
               value_field: "ref_id",
+              search_fields: ["title", "text", "body"],
               display_fields: ["title"]
             }
 
@@ -171,6 +172,7 @@ collections:
               widget: "relation",
               collection: "actions",
               value_field: "ref_id",
+              search_fields: ["title", "text", "body"],
               display_fields: ["title"]
             }
           - {
@@ -278,6 +280,7 @@ collections:
                   widget: "relation",
                   collection: "actions",
                   value_field: "ref_id",
+                  search_fields: ["title", "text", "body"],
                   display_fields: ["title"]
                 }
               ]
