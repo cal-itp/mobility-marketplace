@@ -5,9 +5,9 @@ image: /assets/uploads/email-confirm.svg
 title: Cal-ITP is here to help
 headline: Cal-ITP is here to help
 roles:
-  - name: Transportation Provider staff
-  - name: Transportation Provider CEO
-  - name: Technology Vendor
+  - name: Transportation provider staff
+  - name: Transportation provider CEO
+  - name: Technology vendor
   - name: Other
 confirmation:
   message: >-
