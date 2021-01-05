@@ -9,7 +9,7 @@ hero:
     Welcome to The Transit Stop—Cal-ITP's one-stop resource—where transportation
     providers can find device and service procurements and learn about new
     technology
-  image: /assets/uploads/home-illo-payment-types.png
+  image: /assets/uploads/home-illo-main.png
 actions:
   - knt7omv
   - m79ixx7
