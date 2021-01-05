@@ -1,9 +1,5 @@
 items:
-  - text: Get Started
-    url: "#"
-  - text: Learn More
-    url: "#"
-  - text: Provider Map
+  - text: Go contactless
+    url: "/get-started"
+  - text: Provider map
     url: /providers
-  - text: Subscribe
-    url: /subscribe

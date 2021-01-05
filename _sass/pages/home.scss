@@ -1,8 +1,11 @@
 .home {
   #hero {
-    background-color: $blue-lightest;
+    padding-bottom: 0 !important;
   }
-
+  .mobile.tile.home {
+    padding-top: 0 !important;
+    padding-bottom: 2rem !important;
+  }
   #hero, #cta {
     @extend .py-5;
   }
@@ -13,6 +16,42 @@
       @include media-breakpoint-up(md) {
         max-height: 358px;
       }
+    }
+  }
+
+  #what-is {
+    display: grid;
+    background-color: $blue-lightest;
+    grid-template-areas:
+      ". header ."
+      ". paragraph ."
+      ". cta .";
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    padding-block: 4rem;
+    @include media-breakpoint-up(md) {
+      grid-template-columns: 3vw 10fr 3vw;
+      grid-gap: 1rem;
+    }
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-inline: 2rem;
+    }
+    header {
+      grid-area: header;
+      justify-self: center;
+    }
+    p {
+      grid-area: paragraph;
+    }
+    section {
+      grid-area: cta;
+      justify-self: center;
     }
   }
 }

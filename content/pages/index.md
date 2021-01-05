@@ -10,7 +10,6 @@ hero:
     providers can find device and service procurements and learn about new
     technology
   image: /assets/uploads/transit-stop-home.svg
-  action: cqce87u
 actions:
   - knt7omv
   - m79ixx7

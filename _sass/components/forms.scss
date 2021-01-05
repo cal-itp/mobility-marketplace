@@ -13,7 +13,7 @@
     @extend .mb-3;
     font-weight: normal;
     padding-left: 2.4rem !important;
-  
+
     .check-icon-checkbox {
       @extend .rounded-lg;
       border: solid 2px $black;
@@ -23,18 +23,14 @@
       width: 24px;
       height: 24px;
     }
-  
+
     input[type=checkbox]:checked + .check-icon-checkbox {
       border-color: $primary;
     }
-  
+
     span {
       font-weight: 600;
     }
-  }
-
-  .btn {
-    text-transform: uppercase;
   }
 
   &.submit {
