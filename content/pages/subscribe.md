@@ -2,34 +2,8 @@
 layout: form
 permalink: /subscribe
 image: /assets/uploads/email-confirm.svg
-title: Get In Touch
-headline: Sign up for Transit Stop updates
-areas:
-  - name: Data standards
-    description: Improving real-time information (arrival time, service changes)
-  - name: Contactless payments
-    description: Tap-to-pay cEMV credit/debit cards, payment-enabled mobile wallets,
-      processing
-  - name: Discounted-fare solutions
-    description: Instantly verifying eligibility (for seniors, youth, veterans,
-      persons with disabilities, low-income riders, employee benefits)
-  - name: Economic equity
-    description: Prioritizing transit access to reach jobs and payment methods if
-      underbanked
-  - name: Cooperative procurement
-    description: Leveraging State-negotiated or cooperatively procured contracts for
-      goods and services, including payment processing
-  - name: Collaborating with Cal-ITP
-    description: Tapping public agencies and private-industry partners on innovative
-      standards-compliant solutions that net cost savings
-  - name: Industry news
-    description: California, U.S., and international insights, including COVID-19
-      recovery stories revealed from open-source data
-form: subscribe
-scripts:
-  - src: /scripts/forms/subscribe.js
-    form_target: form-subscribe
-    confirm_target: form-confirm
+title: Cal-ITP is here to help
+headline: Cal-ITP is here to help
 roles:
   - name: Transportation Provider staff
   - name: Transportation Provider CEO
@@ -43,5 +17,27 @@ confirmation:
 
     Thank you! We'll be in touch soon!
   action: gbeec4s
+form: subscribe
+scripts:
+  - src: /scripts/forms/subscribe.js
+    form_target: form-subscribe
+    confirm_target: form-confirm
 ---
-Be among the first to learn about emerging products, cost-saving procurements, and other standards-compliant solutions from the California Integrated Travel Project (Cal-ITP): Just complete this form, and we’ll email you when we roll out new resources on our Transit Stop site
+On behalf of Caltrans, Cal-ITP can connect you with pre-approved vendors and competitive rates to help you modernize your transit sytem. To start the switch to contactless fare collection, you’ll need just three things:
+
+
+### Payment processor
+Back-end service that transmits fares from riders’ bank cards and smart devices to transit providers’ bank accounts.
+
+**Current vendors**: Elavon, Fiserv
+
+### Fare calculation software
+Recognizes riders’ unique payment methods and charges the best fare for each trip, accounting for applicable discounts and distance traveled. It also enables “fare capping,” meaning that riders will no longer be charged for additional trips after reaching the cost of an unlimited pass.
+
+**Current vendors**: Littlepay
+
+
+### Fare validators
+On-board or platform devices equipped with NFC and cEMV technology to read and validate riders’ contactless bank cards and smart devices.
+
+**Current vendors**: *Coming soon—sign up below for updates.*

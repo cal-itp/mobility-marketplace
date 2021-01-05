@@ -1,21 +1,29 @@
+<header>
+  <h2>Get in touch</h2>
+</header>
+
+<p>
+  Complete the below form, and someone from the Cal-ITP team will reach out soon to get you started with vendor selection, pricing, and procurement—or just to respond to your comment or question.
+</p>
+
 {% include forms/indicates-required.html indicator="*" text="Indicates required fields" %}
 
 <form role="form" method="POST" id="form-subscribe" name="subscribe" data-netlify="true" netlify-honeypot="_honeypot_">
   <div class="form-group">
-    <label for="first_name" class="form-control-label">First Name</label>
-    <input type="text" class="form-control" name="first_name" placeholder="Nyota" />
+    <label for="first_name" class="form-control-label">First Name {% include forms/indicator.html %}</label>
+    <input type="text" class="form-control" name="first_name" placeholder="Nyota" aria-required="true" required />
   </div>
   <div class="form-group">
-    <label for="last_name" class="form-control-label">Last Name</label>
-    <input type="text" class="form-control" name="last_name" placeholder="Uhura" />
+    <label for="last_name" class="form-control-label">Last Name {% include forms/indicator.html %}</label>
+    <input type="text" class="form-control" name="last_name" placeholder="Uhura" aria-required="true" required />
   </div>
   <div class="form-group">
-    <label for="organization" class="form-control-label">Organization Name</label>
-    <input type="text" class="form-control" name="organization" placeholder="Elk Grove Transit" />
+    <label for="agency" class="form-control-label">Agency Name</label>
+    <input type="text" class="form-control" name="agency" placeholder="Elk Grove Transit" />
   </div>
   <div class="form-group">
-    <label for="role" class="form-control-label">Role {% include forms/indicator.html %}</label>
-    <select class="form-control custom-select" name="role" aria-required="true" required>
+    <label for="role" class="form-control-label">Role</label>
+    <select class="form-control custom-select" name="role">
       <option value="">Select an option</option>
       {% for role in page.roles %}
       <option value="{{ role.name }}">{{ role.name }}</option>
@@ -27,25 +35,15 @@
     <input type="email" class="form-control" name="email" placeholder="nyota.uhura@elkgrovecity.org" aria-required="true" required />
   </div>
   <div class="form-group">
-    <div>
-      <label class="form-control-label">Select areas of interest</label>
-    </div>
-    {% for area in page.areas %}
-    <label class="form-check-inline">
-      <input class="hidden-up pos-abs" type="checkbox" name="interest_areas[]" value="{{ area.name }}">
-      <div class="check-icon-checkbox">
-          <i class="ca-gov-icon-check-mark"></i>
-      </div>
-      <span>{{ area.name }}:</span>&nbsp;{{ area.description }}
-    </label>
-    {% endfor %}
+    <label for="phone" class="form-control-label">Phone Number</label>
+    <input type="tel" class="form-control" name="phone-number" placeholder="(415) 555-0199" maxlength="11" />
   </div>
   <div class="form-group">
     <label for="comments" class="form-control-label">Other comments or queries</label>
     <textarea class="form-control" name="comments" placeholder="We welcome your feedback!" rows=6></textarea>
   </div>
   <div class="form-group submit">
-    <input type="submit" class="btn btn-primary" value="Submit" />
+    <button type="submit" class="btn btn-action btn-primary btn-data-package">Submit</button>
   </div>
   <div class="d-none">
     <label for="_honeypot_"><strong>Do not</strong> fill out this field if you are a human</label>
