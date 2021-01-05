@@ -12,7 +12,7 @@ hero:
 
 
     Explore this site to find procurement support, secure pre-negotiated rates, and learn how contactless fare collection can help you and your riders.
-  image: /assets/uploads/transit-stop-home.svg
+  image: /assets/uploads/home-illo-payment-types.png
 actions:
   - knt7omv
   - m79ixx7
