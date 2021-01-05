@@ -32,13 +32,13 @@
         border-radius: 6px;
         font-size: 16px;
         margin: 16px auto -24px;
-        z-index: 200;
+        z-index: 2;
         position: relative;
       }
       img {
         width: 100%;
         height: auto;
-        z-index: 100;
+        z-index: 1;
         position: relative;
       }
     }
