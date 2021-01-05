@@ -2,7 +2,7 @@
 layout: providers
 permalink: /providers
 image: https://dummyimage.com/354x360/d1dee3/fff.png&text=+
-title: California Transit Providers
+title: California transit providers
 headline: California transit providers
 about: >-
   This dataset includes known transportation providers in California, covering
