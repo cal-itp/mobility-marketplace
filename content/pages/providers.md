@@ -2,15 +2,15 @@
 layout: providers
 permalink: /providers
 image: https://dummyimage.com/354x360/d1dee3/fff.png&text=+
-title: California Transit Providers
+title: California transit providers
 headline: California transit providers
 about: >-
-  This dataset includes known transportation providers in California, covering
-  public transit operators, intercity, and special services that may not fall
-  within standard definitions of transit. Each provider entry includes its
-  headquarters city, counties where active, the associated National Transit
-  Database ID (if available), the website URL, and key attributes from the NTD.
-  It's currently limited to providers who operate their own services. 
+  This dataset includes known transit providers in California, covering public
+  transit operators, intercity, and special services that may not fall within
+  standard definitions of transit. Each provider entry includes its headquarter
+  city, counties where active, the associated National Transit Database (NTD) ID
+  (if available), the website URL, and key attributes from the NTD. It is
+  currently limited to providers who operate their own services. 
 
 
   This list is a living document that will be updated regularly with new service provider information. If you have comments, additions, or corrections to this dataset, we're working on ways for you to share that feedback. Please check back soon.
