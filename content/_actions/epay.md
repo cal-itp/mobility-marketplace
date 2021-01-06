@@ -1,5 +1,5 @@
 ---
-title: Go contactless
+title: Begin taking contactless fare payments
 text: Get started
 href: /get-started
 target: _self
