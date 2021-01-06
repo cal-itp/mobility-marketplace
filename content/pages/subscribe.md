@@ -1,4 +1,9 @@
 ---
+form: subscribe
+scripts:
+  - src: /scripts/forms/subscribe.js
+    form_target: form-subscribe
+    confirm_target: form-confirm
 layout: form
 permalink: /subscribe
 image: /assets/uploads/email-confirm.svg
@@ -17,11 +22,6 @@ confirmation:
 
     Thank you! We'll be in touch soon!
   action: gbeec4s
-form: subscribe
-scripts:
-  - src: /scripts/forms/subscribe.js
-    form_target: form-subscribe
-    confirm_target: form-confirm
 ---
 On behalf of Caltrans, Cal-ITP can connect you with pre-approved vendors and competitive rates to help you modernize your transit sytem. To start the switch to contactless fare collection, you’ll need just three things:
 
