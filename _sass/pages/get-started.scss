@@ -54,11 +54,11 @@
       align-items: center;
     }
     picture {
+      justify-self: center;
       @include media-breakpoint-up(lg) {
         grid-column-start: 2;
         grid-row-start: 1;
         grid-row-end: -5;
-        justify-self: center;
       }
     }
   }
@@ -66,12 +66,12 @@
     background-color: #F6F3ED;
     padding-block: 4rem;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 50vw;
     grid-template-rows: min-content 1fr;
     grid-gap: 2rem;
+    justify-content: center;
     @include media-breakpoint-up(lg) {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: min-content 1fr;
     }
     header {
       grid-column: 1/-1
