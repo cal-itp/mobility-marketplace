@@ -13,7 +13,7 @@ hero:
     <p>
 
     <p>Explore this site to find procurement support, secure pre-negotiated rates, and learn how contactless fare collection can help you and your riders.</p>
-  image: /assets/uploads/home-illo-payment-types.png
+  image: /assets/uploads/home-illo-main.png
 actions:
   - knt7omv
   - m79ixx7
