@@ -6,10 +6,13 @@ title: Homepage
 hero:
   headline: A new home for modern and equitable transportation innovations
   text: >-
-    Welcome to The Transit Stop—Cal-ITP's one-stop resource—where transportation
-    providers can find device and service procurements and learn about new
-    technology
-  image: /assets/uploads/home-illo-main.png
+    Welcome to the California Mobility Marketplace—a one-stop resource to help
+    California’s transit providers upgrade their fare collection systems to
+    accept contactless payment methods like credit cards and smartphones. 
+
+
+    Explore this site to find procurement support, secure pre-negotiated rates, and learn how contactless fare collection can help you and your riders.
+  image: /assets/uploads/home-illo-payment-types.png
 actions:
   - knt7omv
   - m79ixx7
