@@ -1,6 +1,7 @@
 .get-started .get-started {
   & > * {
-    padding-inline: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   #hero {
     width: 100%;
@@ -43,7 +44,8 @@
     }
   }
   #fast-and-simple {
-    padding-block: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content;
@@ -64,7 +66,8 @@
   }
   #long-term {
     background-color: #F6F3ED;
-    padding-block: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     display: grid;
     grid-template-columns: 50vw;
     grid-template-rows: min-content 1fr;
@@ -84,7 +87,8 @@
     }
   }
   #agencies {
-    padding-block: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: 1fr;
@@ -100,13 +104,15 @@
     }
     section {
       h3, p {
-        padding-inline: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
     }
   }
 
   #call-to-action {
-    padding-block: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     text-align: center;
   }
 }

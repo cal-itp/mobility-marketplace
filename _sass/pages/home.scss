@@ -28,7 +28,8 @@
       ". cta .";
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr min-content;
-    padding-block: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     @include media-breakpoint-up(md) {
       grid-template-columns: 3vw 10fr 3vw;
       grid-gap: 1rem;
@@ -40,7 +41,8 @@
       grid-template-columns: 1fr 2fr 1fr;
     }
     @include media-breakpoint-down(sm) {
-      padding-inline: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
     header {
       grid-area: header;
