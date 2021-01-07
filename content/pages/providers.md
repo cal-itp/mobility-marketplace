@@ -24,6 +24,6 @@ source: This list was created in April 2019 by consultant Trillium Transit under
 ---
 From buses, shuttles, and on-demand paratransit to commuter and intercity rail, passengers want transportation that’s easy to find and easy to pay for, with real-time information and contactless payment.
 
-To better understand the size and scale of opportunities for integration in transportation, the Cal-ITP team compiled a list of California’s transportation providers.
+To better understand the size and scale of opportunities for integration in transportation, the Cal-ITP team compiled a list of California’s transit providers.
 
 Explore the more than 300 providers on this map and table, which links to each operator's website and offers just a taste of our full dataset—a CSV download that includes fare revenues, fleet size, vehicle type, and more.
