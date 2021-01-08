@@ -6,11 +6,11 @@ title: California transit providers
 headline: California transit providers
 about: >-
   This dataset includes known transit providers in California, covering public
-  transit operators, intercity, and special services that may not fall within
-  standard definitions of transit. Each provider entry includes its headquarter
-  city, counties where active, the associated National Transit Database (NTD) ID
-  (if available), the website URL, and key attributes from the NTD. It is
-  currently limited to providers who operate their own services.
+  transit operators, intercity rail, and special services that may not fall
+  within standard definitions of transit. Each provider entry includes its
+  headquarter city, counties where active, the associated National Transit
+  Database (NTD) ID (if available), the website URL, and key attributes from the
+  NTD. It is currently limited to providers who operate their own services.
 
 
   This list is a living document that will be updated regularly with new service provider information. If you have comments, additions, or corrections to this dataset, we're working on ways for you to share that feedback. Please check back soon.
@@ -22,7 +22,7 @@ source: This list was created in April 2019 by consultant Trillium Transit under
   California Transit Association members, and the National Transit Database
   (NTD).
 ---
-From buses, shuttles, and on-demand paratransit to commuter and intercity rail, passengers want transportation that’s easy to find and easy to pay for, with real-time information and contactless payment.
+From buses, shuttles, and on-demand paratransit to commuter and intercity rail, passengers want transportation that’s easy to find and easy to pay for.
 
 To better understand the size and scale of opportunities for integration in transportation, the Cal-ITP team compiled a list of California’s transit providers.
 
