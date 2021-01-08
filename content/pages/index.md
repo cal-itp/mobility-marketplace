@@ -8,7 +8,7 @@ hero:
   text: >-
     <p>Welcome to the California Mobility Marketplace—a one-stop resource to
     help California’s transit providers upgrade their fare collection systems to
-    accept contactless payment methods like debit/credit cards and
+    accept contactless payment methods like credit/debit cards and
     smartphones.</p>
 
     <p>
