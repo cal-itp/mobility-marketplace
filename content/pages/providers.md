@@ -1,7 +1,7 @@
 ---
 layout: providers
 permalink: /providers
-image: https://dummyimage.com/354x360/d1dee3/fff.png&text=+
+image: /assets/uploads/card-providers-map.svg
 title: California transit providers
 headline: California transit providers
 about: >-
