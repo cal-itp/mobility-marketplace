@@ -23,7 +23,7 @@ confirmation:
     Thank you! We'll be in touch soon!
   action: gbeec4s
 ---
-On behalf of Caltrans, Cal-ITP can connect you with pre-approved vendors and competitive rates to help you modernize your transit system. To start the switch to contactless fare collection, you’ll need just three things:
+Cal-ITP can connect you with pre-procured, competitively bid contracts at competitive rates to help you modernize your transit system. To start the switch to contactless fare collection, you’ll need just three things:
 
 ### Payment processor
 
@@ -35,7 +35,7 @@ Back-end service that transmits fares from riders’ bank cards and smart device
 
 Recognizes riders’ unique payment methods and charges the best fare for each trip, accounting for applicable discounts and distance traveled. It also enables “fare capping,” meaning that riders will no longer be charged for additional trips after reaching the cost of an unlimited pass.
 
-**Current vendors**: Littlepay
+**Current vendors**: *Coming soon—sign up below for updates.*
 
 ### Fare validators
 
