@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: /
-image: /assets/uploads/home-illo-main.png
+image: /assets/uploads/mobimart_socialmediaimage.png
 title: Homepage
 hero:
   headline: A new home for modern and equitable transportation innovations
