@@ -1,5 +1,5 @@
 items:
   - text: Go contactless
-    url: "/get-started"
+    url: "/go-contactless"
   - text: Provider map
-    url: /providers
+    url: "/provider-map"

@@ -1,11 +1,11 @@
 ---
-form: subscribe
+form: contact
 scripts:
-  - src: /scripts/forms/subscribe.js
-    form_target: form-subscribe
+  - src: /scripts/forms/contact.js
+    form_target: form-contact
     confirm_target: form-confirm
 layout: form
-permalink: /subscribe
+permalink: /contact
 image: /assets/uploads/email-confirm.svg
 title: Cal-ITP is here to help
 headline: Cal-ITP is here to help

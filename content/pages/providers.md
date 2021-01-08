@@ -1,6 +1,6 @@
 ---
-layout: providers
-permalink: /providers
+layout: provider-map
+permalink: /provider-map
 image: /assets/uploads/card-providers-map.svg
 title: California transit providers
 headline: California transit providers
@@ -10,7 +10,7 @@ about: >-
   standard definitions of transit. Each provider entry includes its headquarter
   city, counties where active, the associated National Transit Database (NTD) ID
   (if available), the website URL, and key attributes from the NTD. It is
-  currently limited to providers who operate their own services. 
+  currently limited to providers who operate their own services.
 
 
   This list is a living document that will be updated regularly with new service provider information. If you have comments, additions, or corrections to this dataset, we're working on ways for you to share that feedback. Please check back soon.

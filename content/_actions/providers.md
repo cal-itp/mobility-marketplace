@@ -1,7 +1,7 @@
 ---
 title: The state of transit
 text: View the map
-href: /providers
+href: /provider-map
 target: _self
 image: /assets/uploads/card-providers-map.svg
 ref_id: m79ixx7

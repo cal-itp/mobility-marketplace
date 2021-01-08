@@ -1,6 +1,6 @@
 $(function() {
-  const formId = `#${data_subscribe.form_target}`;
-  const confirmId = `#${data_subscribe.confirm_target}`;
+  const formId = `#${data_contact.form_target}`;
+  const confirmId = `#${data_contact.confirm_target}`;
 
   $(formId).submit(function(e) {
     e.preventDefault();

@@ -119,11 +119,11 @@ collections:
               display_fields: ["title"]
             }
 
-      - label: "Providers"
-        name: "providers"
-        file: "content/pages/providers.md"
+      - label: "Provider map"
+        name: "provider-map"
+        file: "content/pages/provider-map.md"
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "providers"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "provider-map"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Social image", name: "image", widget: "image", hint: "Displayed in social shares and links." }
           - {
@@ -194,9 +194,9 @@ collections:
               editor_components: []
             }
 
-      - label: "Subscribe"
-        name: "subscribe"
-        file: "content/pages/subscribe.md"
+      - label: "Contact"
+        name: "contact"
+        file: "content/pages/contact.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "form"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}

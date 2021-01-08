@@ -1,7 +1,7 @@
 ---
 title: Begin taking contactless fare payments
 text: Get started
-href: /get-started
+href: /go-contactless
 target: _self
 image: /assets/uploads/home-illo-payment-types.png
 ref_id: knt7omv
