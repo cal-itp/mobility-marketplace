@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
   squash_merges: true
-
+local_backend: true
 display_url: https://cal-itp-transit-stop.netlify.app
 
 logo_url: https://cal-itp-transit-stop.netlify.app/assets/images/logo-sm.svg
@@ -63,7 +63,16 @@ collections:
                     { label: "New tab", value: "_blank" }
                   ]
                 }
-
+  - name: "blanks"
+    label: "Blank"
+    folder: "_posts/blanks"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     description: "Landing pages with unique layouts and options."
@@ -334,7 +343,6 @@ collections:
         }
       - {label: "Image", name: "image", widget: "image", required: false, hint: "Used when this action is displayed in a panel (e.g. image + text + button)."}
       - {label: "Unique ID", name: "ref_id", widget: "shortid", hint: "Automatically generated"}
-
   - name: "metadata"
     label: "Metadata"
     description: "Supporting content and configuration for the site."
@@ -361,3 +369,13 @@ collections:
           - {label: "Title", name: "title", widget: "string", hint: "Visible in the browser tab and in social share links."}
           - {label: "Description", name: "description", widget: "text", hint: "Visible in social share links for the site homepage and as a default for pages."}
           - {label: "Social image", name: "image", widget: "image", hint: "Default image for social share links (pages can override)."}
+  - name: "articles"
+    label: "Article"
+    folder: "_posts/articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
