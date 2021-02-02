@@ -65,7 +65,7 @@ collections:
                 }
   - name: "blanks"
     label: "Blank"
-    folder: "_posts/blanks"
+    folder: "content/blanks"
     create: true
     slug: "{{slug}}"
     fields:
