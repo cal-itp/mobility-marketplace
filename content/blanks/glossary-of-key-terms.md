@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: blank
 title: Glossary of Key Terms
 date: 2021-02-02T17:14:13.057Z
 ---
@@ -81,7 +81,7 @@ date: 2021-02-02T17:14:13.057Z
 **General Transit Feed Specification (GTFS)**: Common format for public transit agencies to publish data about their transit services. Software developers can use this open-source data to build a variety of applications, including trip-planning software for transit riders. GTFS is categorized into two different typologies: 
 
 * *GTFS Static feed*: Schedules, fares, and fixed geographic information stored as a zipped file of .txt files. It is called a “feed” despite being a file that’s downloaded.
-  <a name="gtfs-rt"></a> 
+  <a name="gtfs-rt"></a>
 * *GTFS Realtime (GTFS-RT)*: Vehicle arrival times and positioning, service advisories.
 
 **GTFS extensions**:
