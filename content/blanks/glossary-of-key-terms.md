@@ -81,8 +81,7 @@ date: 2021-02-02T17:14:13.057Z
 **General Transit Feed Specification (GTFS)**: Common format for public transit agencies to publish data about their transit services. Software developers can use this open-source data to build a variety of applications, including trip-planning software for transit riders. GTFS is categorized into two different typologies: 
 
 * *GTFS Static feed*: Schedules, fares, and fixed geographic information stored as a zipped file of .txt files. It is called a “feed” despite being a file that’s downloaded.
-  <span id="gtfs-rt"></span>
-* *GTFS Realtime (GTFS-RT)*: Vehicle arrival times and positioning, service advisories.
+*  <span id="gtfs-rt"></span>*GTFS Realtime (GTFS-RT)*: Vehicle arrival times and positioning, service advisories.
 
 **GTFS extensions**:
 
@@ -96,7 +95,6 @@ date: 2021-02-02T17:14:13.057Z
 
 * Trip updates: A format of [GTFS-RT](#gtfs-rt) that describes upcoming arrivals per stop.
 * Vehicle positions: Format of [GTFS-RT](#gtfs-rt) that describes where vehicles are in real time.
-
   * *OccupancyStatus*: Optional field within the Vehicle Positions GTFS-RT format that describes, categorically, how crowded a specific vehicle is in real time. For example: many seats available, some seats available.
 
 <span id="lpa"></span>**Leveraged Procurement Agreement ([LPA](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Leveraged-Procurement-Agreements))**: Offered by California’s [Department of General Services (DGS)](#dgs) Procurement Division, a law that allows entities—such as state, city, county, district, or other local governmental bodies—to leverage the state's buying power and purchase directly from suppliers through existing contracts and agreements, without further competitive bidding.
