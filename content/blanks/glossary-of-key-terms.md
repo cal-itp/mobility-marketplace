@@ -92,8 +92,10 @@ date: 2021-02-02T17:14:13.057Z
 * *GTFS-Vehicles*: Describes how passengers can interact with their vehicles, including step-free access, bicycle storage, and other accommodations. <br/><br/>
 
 **GTFS formats**:
+
 * Trip updates: A format of [GTFS-RT](#gtfs-rt) that describes upcoming arrivals per stop.
 * Vehicle positions: Format of [GTFS-RT](#gtfs-rt) that describes where vehicles are in real time.
+
   * *OccupancyStatus*: Optional field within the Vehicle Positions GTFS-RT format that describes, categorically, how crowded a specific vehicle is in real time. For example: many seats available, some seats available. <br/><br/>
 
 <span id="lpa"></span>**Leveraged Procurement Agreement ([LPA](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Leveraged-Procurement-Agreements))**: Offered by California’s [Department of General Services (DGS)](#dgs) Procurement Division, a law that allows entities—such as state, city, county, district, or other local governmental bodies—to leverage the state's buying power and purchase directly from suppliers through existing contracts and agreements, without further competitive bidding. <br/><br/>
@@ -144,4 +146,4 @@ date: 2021-02-02T17:14:13.057Z
 
 **Unlinked passenger trips**: The total number of passenger boardings on transit vehicles, regardless of whether a boarding constitutes the start of a trip or a transfer. UPT typically measures overall transit utilization. <br/><br/>
 
-**Vehicles operating at maximum service (VOMS)**: The number of revenue vehicles operated during peak service requirements.
+**Vehicles operating at maximum service (VOMS)**: The number of revenue vehicles operated during peak service requirements.<br/><br/>
