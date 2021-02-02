@@ -80,21 +80,22 @@ date: 2021-02-02T17:14:13.057Z
 
 **General Transit Feed Specification (GTFS)**: Common format for public transit agencies to publish data about their transit services. Software developers can use this open-source data to build a variety of applications, including trip-planning software for transit riders. GTFS is categorized into two different typologies: 
 
-* GTFS Static feed: Schedules, fares, and fixed geographic information stored as a zipped file of .txt files. It is called a “feed” despite being a file that’s downloaded.
-<a name="gtfs-rt"></a>* GTFS Realtime (GTFS-RT): Vehicle arrival times and positioning, service advisories.
+* _GTFS Static feed_: Schedules, fares, and fixed geographic information stored as a zipped file of .txt files. It is called a “feed” despite being a file that’s downloaded.
+<a name="gtfs-rt"></a> 
+* _GTFS Realtime (GTFS-RT)_: Vehicle arrival times and positioning, service advisories.
 
 **GTFS extensions**:
-* GTFS-Fares: Describes transit fare information.
-* GTFS-Flex: Describes demand-responsive transit operations and coverage.
-* GTFS-Pathways: Describes how passengers can move between transit vehicles, specifying stairs, fare gates, and other infrastructure.
-* GTFS-Ride: Proposed GTFS extension for describing ridership data at the trip/stop level.
- * GTFS-Vehicles: Describes how passengers can interact with their vehicles, including step-free access, bicycle storage, and other accommodations.
+* _GTFS-Fares_: Describes transit fare information.
+* _GTFS-Flex_: Describes demand-responsive transit operations and coverage.
+* _GTFS-Pathways_: Describes how passengers can move between transit vehicles, specifying stairs, fare gates, and other infrastructure.
+* _GTFS-Ride_: Proposed GTFS extension for describing ridership data at the trip/stop level.
+ * _GTFS-Vehicles_: Describes how passengers can interact with their vehicles, including step-free access, bicycle storage, and other accommodations.
 
 **GTFS formats**:
 
 * Trip updates: A format of [GTFS-RT](#gtfs-rt) that describes upcoming arrivals per stop.
 * Vehicle positions: Format of [GTFS-RT](#gtfs-rt) that describes where vehicles are in real time.
-  * OccupancyStatus: Optional field within the Vehicle Positions GTFS-RT format that describes, categorically, how crowded a specific vehicle is in real time. For example: many seats available, some seats available.
+  * _OccupancyStatus_: Optional field within the Vehicle Positions GTFS-RT format that describes, categorically, how crowded a specific vehicle is in real time. For example: many seats available, some seats available.
 
 <a name="lpa"></a>**Leveraged Procurement Agreement ([LPA](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Leveraged-Procurement-Agreements))**: Offered by California’s [Department of General Services (DGS)](#dgs) Procurement Division, a law that allows entities—such as state, city, county, district, or other local governmental bodies—to leverage the state's buying power and purchase directly from suppliers through existing contracts and agreements, without further competitive bidding.
 
