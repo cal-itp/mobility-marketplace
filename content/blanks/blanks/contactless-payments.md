@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: blank
 title: THIS IS A TEST PAGE.
 date: 2021-02-01T22:40:20.904Z
 ---
