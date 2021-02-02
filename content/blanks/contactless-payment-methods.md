@@ -3,7 +3,7 @@ layout: blank
 title: Contactless payment methods
 date: 2021-02-02T00:17:43.362Z
 ---
-![]()
+![contactless payment methods](/assets/uploads/payment-types.png "contactless payment methods")
 
 Contactless fare collection allows riders to pay for public transit using the same payment methods they use for other everyday purchases. This page explains the different methods that riders will soon be able to use to tap to pay for transit across California.
 
