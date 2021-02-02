@@ -42,7 +42,7 @@ date: 2021-02-02T17:14:13.057Z
 
 <a name="closed-loop"></a>**Closed-loop payment**: A form of payment, like a local or transit fare card (e.g., Clipper), that is only accepted by one merchant, transit provider, or a small group of providers. This stands in contrast to [open-loop payments], which are accepted by most merchants or providers that accept non-cash payments. 
 
-**Contactless payment system**: Through use of radio-frequency identification (RFID) or [near-field communication (NFC)](#nfc) technology, a fare collection system that allows users to securely complete transactions by tapping a fare validator with a contactless credit, debit, or prepaid card or smart device.
+**Contactless fare collection**: Through use of radio-frequency identification (RFID) or [near-field communication (NFC)](#nfc) technology, a fare collection system that allows users to securely complete transactions by tapping a fare validator with a contactless credit, debit, or prepaid card or smart device.
 
 **Cooperative agreement**: Legal approach of transferring something of value from federal agencies to state and local governments.
 
