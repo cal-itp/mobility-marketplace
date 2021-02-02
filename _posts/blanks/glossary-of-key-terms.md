@@ -21,7 +21,7 @@ date: 2021-02-02T17:14:13.057Z
 
 **California Air Resources Board ([CARB](https://ww2.arb.ca.gov/))**: State agency charged with protecting the public from the harmful effects of air pollution and developing programs and actions to fight climate change. (See CARB’s [Innovative Clean Transit](https://ww2.arb.ca.gov/our-work/programs/innovative-clean-transit) program.)
 
-**California Department of General Service ([DGS](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Statewide-Contracts))**: The State’s “business manager” that handles procurement and acquisition services and negotiates contracts, including Leveraged Procurement Agreements (LPAs) and Master Agreements . 
+<a name="DGS"></a>**California Department of General Service ([DGS](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Statewide-Contracts))**: The State’s “business manager” that handles procurement and acquisition services and negotiates contracts, including [Leveraged Procurement Agreements (LPAs)](#lpa) and [Master Agreements](#master-agreement). 
 
 **California Division of Rail and Mass Transportation ([DRMT](https://dot.ca.gov/programs/rail-and-mass-transportation))**: A division of Caltrans, agency whose mission is to provide measurable improvements to California’s integrated and sustainable public transportation system. DRMT has the following primary functions:
 
@@ -40,7 +40,7 @@ date: 2021-02-02T17:14:13.057Z
 
 **cEMV**: Contactless [EMV].
 
-**Closed-loop payment**: A form of payment, like a local or transit fare card (e.g., Clipper), that is only accepted by one merchant, transit provider, or a small group of providers. This stands in contrast to [open-loop payments], which are accepted by most merchants or providers that accept non-cash payments. 
+<a name="closed-loop"></a>**Closed-loop payment**: A form of payment, like a local or transit fare card (e.g., Clipper), that is only accepted by one merchant, transit provider, or a small group of providers. This stands in contrast to [open-loop payments], which are accepted by most merchants or providers that accept non-cash payments. 
 
 **Contactless payment system**: Through use of radio-frequency identification (RFID) or [near-field communication (NFC)] technology, a fare collection system that allows users to securely complete transactions by tapping a fare validator with a contactless credit, debit, or prepaid card or smart device.
 
@@ -50,19 +50,19 @@ date: 2021-02-02T17:14:13.057Z
 
 **Demand-responsive taxi**: A special form of [DRT] operated through taxicab providers. 
 
-**Demand-responsive transit (DRT)**: A non-fixed-route transportation system that dispatches trips to riders who have made a direct request to the operator for pickup. DR fleets are typically composed of passenger cars, vans, or small buses. 
+<a name="drt"></a>**Demand-responsive transit (DRT)**: A non-fixed-route transportation system that dispatches trips to riders who have made a direct request to the operator for pickup. DR fleets are typically composed of passenger cars, vans, or small buses. 
 
 **Disadvantaged Business Enterprise ([DBE](https://www.transportation.gov/civil-rights/disadvantaged-business-enterprise)) program**: Program administered by the U.S. Department of Transportation designed to level the playing field for individuals from historically socially or economically disadvantaged populations. Specifically, the DBE program requires that 10% of the budgets of federally funded projects are allocated toward businesses owned by women and people of color.
 
-**EMV**: Global standard for contactless payment cards and terminals. EMV stands for Europay, Mastercard, and Visa, the three companies that originated the standard.
+<a name="emv"></a>**EMV**: Global standard for contactless payment cards and terminals. EMV stands for Europay, Mastercard, and Visa, the three companies that originated the standard.
 
 **Encryption**: The process of converting information from a readable format into an indecipherable code such that it may only be viewed by authorized parties.
 
 **EPAY**: The State of California’s [Master Agreement] for procuring a [payment-processing service]. Maintained by the Department of General Service ([DGS]), EPAY XXis openXX to all transit providers for upgrading payment processors for Cal-ITP.
 
-**Fare calculation software**: Back-office software that recognizes riders’ contactless payment methods and calculates the best fare for each trip based on distance traveled, reduced-fare eligibility, and number of trips completed per day/week/month (for [fare capping](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.xfnofkpcylak)).
+**Fare calculation software**: Back-office software that recognizes riders’ contactless payment methods and calculates the best fare for each trip based on distance traveled, reduced-fare eligibility, and number of trips completed per day/week/month (for [fare capping](#fare-capping).
 
-**Fare capping**: A fare policy that allows a rider to pay-as-you-go and limits the maximum amount a rider will pay to the cost of an unlimited-ride pass (daily, weekly, or monthly). Once a rider hits the price of that pass, they will no longer be charged for additional trips during that time period.
+<a name="fare-capping"></a>**Fare capping**: A fare policy that allows a rider to pay-as-you-go and limits the maximum amount a rider will pay to the cost of an unlimited-ride pass (daily, weekly, or monthly). Once a rider hits the price of that pass, they will no longer be charged for additional trips during that time period.
 
 **Fare payment method**: The media riders use to pay their transit fare. Fare payment methods can include cash, regional fare cards, bank cards (credit, debit, or prepaid), or smart devices.
 
@@ -70,7 +70,7 @@ date: 2021-02-02T17:14:13.057Z
 
 **Fare structure**: The full set of possible fares that a transit system charges. Fare structures incorporate the following fare types: Flat, distance- or zone-based, discounted (older adult, student, veteran, etc.), unlimited-ride (daily/weekly/monthly), and other characteristics that impact the fares for individual trips.
 
-**Fare validator**: Located on a transit vehicle or a platform or in a station, the [NFC](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.mn78mwkw703z)-enabled device that reads and validates riders’ contactless payment methods. 
+<a name="fare-validator">**Fare validator**: Located on a transit vehicle or a platform or in a station, the [NFC](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.mn78mwkw703z)-enabled device that reads and validates riders’ contactless payment methods. 
 
 **Federal Transit Administration ([FTA](https://www.transit.dot.gov/))**: Federal agency that provides financial and technical assistance to local public transit systems, oversees safety measures, and helps develop next-generation technology research. The FTA is housed within the U.S. Department of Transportation (USDOT).
 
@@ -81,7 +81,7 @@ date: 2021-02-02T17:14:13.057Z
 **General Transit Feed Specification (GTFS)**: Common format for public transit agencies to publish data about their transit services. Software developers can use this open-source data to build a variety of applications, including trip-planning software for transit riders. GTFS is categorized into two different typologies: 
 
 * GTFS Static feed: Schedules, fares, and fixed geographic information stored as a zipped file of .txt files. It is called a “feed” despite being a file that’s downloaded.
-* GTFS Realtime (GTFS-RT): Vehicle arrival times and positioning, service advisories.
+<a name="gtfs-realtime">* GTFS Realtime (GTFS-RT): Vehicle arrival times and positioning, service advisories.
 
 **GTFS extensions**:
 * GTFS-Fares: Describes transit fare information.
@@ -96,11 +96,11 @@ date: 2021-02-02T17:14:13.057Z
 * Vehicle positions: Format of [GTFS-RT](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.flu1vv42jhgd) that describes where vehicles are in real time.
 * * OccupancyStatus: Optional field within the [vehicle positions](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.9mc7et8wvcth) GTFS-RT format that describes, categorically, how crowded a specific vehicle is in real time. For example: many seats available, some seats available.
 
-**Leveraged Procurement Agreement ([LPA](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Leveraged-Procurement-Agreements))**: Offered by California’s [Department of General Services (DGS)](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.toxqwb2xr7po) Procurement Division, a law that allows entities—such as state, city, county, district, or other local governmental bodies—to leverage the state's buying power and purchase directly from suppliers through existing contracts and agreements, without further competitive bidding.
+<a name="lpa">**Leveraged Procurement Agreement ([LPA](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Leveraged-Procurement-Agreements))**: Offered by California’s [Department of General Services (DGS)](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.toxqwb2xr7po) Procurement Division, a law that allows entities—such as state, city, county, district, or other local governmental bodies—to leverage the state's buying power and purchase directly from suppliers through existing contracts and agreements, without further competitive bidding.
 
 **Local Partnership Program ([LPP](https://catc.ca.gov/programs/sb1/local-partnership-program))**: Created by the Road Repair and Accountability Act of 2017. Its primary objective is to provide funding to counties, cities, districts, and regional transportation agencies in which voters have approved fees or taxes dedicated solely to transportation improvements or that have imposed fees, including uniform developer fees, dedicated solely to transportation improvements.
 
-**Master Agreement**: Contracts that are competitively bid by the Department of General Services and available to any agency that expends public funds. These types of agreements establish a prequalified list of vendors and simplify the purchasing process for the end user.
+<a name="master-agreement">**Master Agreement**: Contracts that are competitively bid by the Department of General Services and available to any agency that expends public funds. These types of agreements establish a prequalified list of vendors and simplify the purchasing process for the end user.
 
 **Mobile ticketing**: Purchasing of transit tickets through a smartphone, typically through a ticketing app run by either a transit provider or a third party. 
 
@@ -114,17 +114,17 @@ date: 2021-02-02T17:14:13.057Z
 
 **National Transit Database ([NTD](https://www.transit.dot.gov/ntd))**: Created by Congress and housed within the Federal Transit Administration (FTA), the NTD is the nation’s primary source for data and statistics for American public transit systems. Any agency receiving FTA grant funding is required to submit data to the NTD, which Congress uses to apportion funding each year.
 
-**Near-field communication (NFC)**: Short-range, wireless technology that enables communication between two NFC-enabled devices when held close to one another. Contactless payment cards, smartphones, point-of-sale terminals, and transit [fare validators](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.b666mf182h1y) are all equipped with NFC chips, enabling users to tap to pay.
+<a name="nfc">**Near-field communication (NFC)**: Short-range, wireless technology that enables communication between two NFC-enabled devices when held close to one another. Contactless payment cards, smartphones, point-of-sale terminals, and transit [fare validators](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.b666mf182h1y) are all equipped with NFC chips, enabling users to tap to pay.
 
-**Open-loop payment**: A form of payment that, like credit and debit cards, is accepted by most merchants or transit providers who accept non-cash payments. This stands in contrast to [closed-loop payments](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.qsw1v8ckfhqy), which, like a local or regional fare card (e.g., Clipper), are only accepted by one provider or small group of providers.
+<a name="open-loop">**Open-loop payment**: A form of payment that, like credit and debit cards, is accepted by most merchants or transit providers who accept non-cash payments. This stands in contrast to [closed-loop payments](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.qsw1v8ckfhqy), which, like a local or regional fare card (e.g., Clipper), are only accepted by one provider or small group of providers.
 
-**Payment processor**: Back-end service that transmits fares from riders’ bank cards and smart devices to a transit provider’s bank account. 
+<a name="payment-processor">**Payment processor**: Back-end service that transmits fares from riders’ bank cards and smart devices to a transit provider’s bank account. 
 
 **Procurement**: The act of purchasing goods or services by a government agency.
 
-**Public transit agency**: Publicly funded entity that plans transit service. Several [transit operators](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.v884h4jhidkb) may provide transit service under one agency.
+<a name="transit-agency">**Public transit agency**: Publicly funded entity that plans transit service. Several [transit operators](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.v884h4jhidkb) may provide transit service under one agency.
 
-**Public transit operator**<a name="public transit operator"></a>: A public or private entity responsible for the day-to-day operations of transit service. Both large agencies and small private companies can be transit operators.
+<a name="transit-operator"></a>**Public transit operator**: A public or private entity responsible for the day-to-day operations of transit service. Both large agencies and small private companies can be transit operators.
 
 **Public transit provider**: Any provider of transit services (includes [transit operators](#public-transit-operator) and [transit agencies](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.o2m6n0uen769)). 
 
