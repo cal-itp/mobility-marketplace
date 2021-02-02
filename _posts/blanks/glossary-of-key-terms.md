@@ -15,13 +15,13 @@ date: 2021-02-02T17:14:13.057Z
 
 **Computer-Aided Dispatch/Automatic Vehicle Location (CAD/AVL)**: Communication system that sends transit vehicle location information to back-office software to assist in scheduling, incident response, and other planning functions.
 
-**[Cal eProcure](https://www.caleprocure.ca.gov/pages/index.aspx) (see also \[DGS])**: Online portal designed to improve the procurement experience in the State of California. This system replaced BidSync, giving businesses access to bidding and contracting resources in one location.<!--StartFragment-->
+**[Cal eProcure](https://www.caleprocure.ca.gov/pages/index.aspx) (see also \[DGS])**: Online portal designed to improve the procurement experience in the State of California. This system replaced BidSync, giving businesses access to bidding and contracting resources in one location.
 
 **California Integrated Travel Project ([Cal-ITP](https://www.calitp.org/))**: Series of initiatives to ensure that public transit in California leverages modern industry standards and specifications for seamless journey planning and fare payment. With funding from the [California Transit and Intercity Rail Capital Program](https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog) (TIRCP), Cal-ITP is a statewide initiative designed to unify all transit in California with a common fare payment system, real-time data standard, and seamless verification of reduced-fare eligibility.
 
 **California Air Resources Board ([CARB](https://ww2.arb.ca.gov/))**: State agency charged with protecting the public from the harmful effects of air pollution and developing programs and actions to fight climate change. (See CARB’s [Innovative Clean Transit](https://ww2.arb.ca.gov/our-work/programs/innovative-clean-transit) program.)
 
-<a name="DGS"></a>**California Department of General Service ([DGS](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Statewide-Contracts))**: The State’s “business manager” that handles procurement and acquisition services and negotiates contracts, including [Leveraged Procurement Agreements (LPAs)](#lpa) and [Master Agreements](#master-agreement). 
+<a name="dgs"></a>**California Department of General Service ([DGS](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Statewide-Contracts))**: The State’s “business manager” that handles procurement and acquisition services and negotiates contracts, including [Leveraged Procurement Agreements (LPAs)](#lpa) and [Master Agreements](#master-agreement). 
 
 **California Division of Rail and Mass Transportation ([DRMT](https://dot.ca.gov/programs/rail-and-mass-transportation))**: A division of Caltrans, agency whose mission is to provide measurable improvements to California’s integrated and sustainable public transportation system. DRMT has the following primary functions:
 
@@ -38,17 +38,17 @@ date: 2021-02-02T17:14:13.057Z
 
 **Capitol Corridor Joint Powers Authority ([CCJPA](https://www.capitolcorridor.org/))**: Partnership among six Northern California transit agencies in an eight-county service area, which shares the administration and management of the Capitol Corridor (a 170-mile intercity rail service to 18 stations in the following counties: Placer, Sacramento, Yolo, Solano, Contra Costa, Alameda, San Francisco, and Santa Clara).
 
-**cEMV**: Contactless [EMV].
+**cEMV**: Contactless [EMV](#emv).
 
 <a name="closed-loop"></a>**Closed-loop payment**: A form of payment, like a local or transit fare card (e.g., Clipper), that is only accepted by one merchant, transit provider, or a small group of providers. This stands in contrast to [open-loop payments], which are accepted by most merchants or providers that accept non-cash payments. 
 
-**Contactless payment system**: Through use of radio-frequency identification (RFID) or [near-field communication (NFC)] technology, a fare collection system that allows users to securely complete transactions by tapping a fare validator with a contactless credit, debit, or prepaid card or smart device.
+**Contactless payment system**: Through use of radio-frequency identification (RFID) or [near-field communication (NFC)](#nfc) technology, a fare collection system that allows users to securely complete transactions by tapping a fare validator with a contactless credit, debit, or prepaid card or smart device.
 
 **Cooperative agreement**: Legal approach of transferring something of value from federal agencies to state and local governments.
 
 **Data validators**: Tools that assess the quality of GTFS data.
 
-**Demand-responsive taxi**: A special form of [DRT] operated through taxicab providers. 
+**Demand-responsive taxi**: A special form of [DRT](#drt) operated through taxicab providers. 
 
 <a name="drt"></a>**Demand-responsive transit (DRT)**: A non-fixed-route transportation system that dispatches trips to riders who have made a direct request to the operator for pickup. DR fleets are typically composed of passenger cars, vans, or small buses. 
 
@@ -58,7 +58,7 @@ date: 2021-02-02T17:14:13.057Z
 
 **Encryption**: The process of converting information from a readable format into an indecipherable code such that it may only be viewed by authorized parties.
 
-**EPAY**: The State of California’s [Master Agreement] for procuring a [payment-processing service]. Maintained by the Department of General Service ([DGS]), EPAY XXis openXX to all transit providers for upgrading payment processors for Cal-ITP.
+**EPAY**: The State of California’s [Master Agreement](#master-agreement) for procuring a [payment-processing service](#payment-processor). Maintained by the Department of General Service ([DGS](#dgs)), EPAY XXis openXX to all transit providers for upgrading payment processors for Cal-ITP.
 
 **Fare calculation software**: Back-office software that recognizes riders’ contactless payment methods and calculates the best fare for each trip based on distance traveled, reduced-fare eligibility, and number of trips completed per day/week/month (for [fare capping](#fare-capping).
 
@@ -70,7 +70,7 @@ date: 2021-02-02T17:14:13.057Z
 
 **Fare structure**: The full set of possible fares that a transit system charges. Fare structures incorporate the following fare types: Flat, distance- or zone-based, discounted (older adult, student, veteran, etc.), unlimited-ride (daily/weekly/monthly), and other characteristics that impact the fares for individual trips.
 
-<a name="fare-validator">**Fare validator**: Located on a transit vehicle or a platform or in a station, the [NFC](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.mn78mwkw703z)-enabled device that reads and validates riders’ contactless payment methods. 
+<a name="fare-validator">**Fare validator**: Located on a transit vehicle or a platform or in a station, the NFC-enabled device that reads and validates riders’ contactless payment methods. 
 
 **Federal Transit Administration ([FTA](https://www.transit.dot.gov/))**: Federal agency that provides financial and technical assistance to local public transit systems, oversees safety measures, and helps develop next-generation technology research. The FTA is housed within the U.S. Department of Transportation (USDOT).
 
@@ -92,7 +92,7 @@ date: 2021-02-02T17:14:13.057Z
 
 **GTFS formats**:
 
-* Trip updates: A format of [GTFS-RT](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.flu1vv42jhgd) that describes upcoming arrivals per stop.
+* Trip updates: A format of [GTFS-RT] that describes upcoming arrivals per stop.
 * Vehicle positions: Format of [GTFS-RT](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.flu1vv42jhgd) that describes where vehicles are in real time.
 * * OccupancyStatus: Optional field within the [vehicle positions](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.9mc7et8wvcth) GTFS-RT format that describes, categorically, how crowded a specific vehicle is in real time. For example: many seats available, some seats available.
 
