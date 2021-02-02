@@ -15,13 +15,13 @@ date: 2021-02-02T17:14:13.057Z
 
 **Computer-Aided Dispatch/Automatic Vehicle Location (CAD/AVL)**: Communication system that sends transit vehicle location information to back-office software to assist in scheduling, incident response, and other planning functions.
 
-**[Cal eProcure](https://www.caleprocure.ca.gov/pages/index.aspx) (see also \[DGS])**: Online portal designed to improve the procurement experience in the State of California. This system replaced BidSync, giving businesses access to bidding and contracting resources in one location.
+**[Cal eProcure](https://www.caleprocure.ca.gov/pages/index.aspx) (see also [DGS](#dgs))**: Online portal designed to improve the procurement experience in the State of California. This system replaced BidSync, giving businesses access to bidding and contracting resources in one location.
 
 **California Integrated Travel Project ([Cal-ITP](https://www.calitp.org/))**: Series of initiatives to ensure that public transit in California leverages modern industry standards and specifications for seamless journey planning and fare payment. With funding from the [California Transit and Intercity Rail Capital Program](https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog) (TIRCP), Cal-ITP is a statewide initiative designed to unify all transit in California with a common fare payment system, real-time data standard, and seamless verification of reduced-fare eligibility.
 
 **California Air Resources Board ([CARB](https://ww2.arb.ca.gov/))**: State agency charged with protecting the public from the harmful effects of air pollution and developing programs and actions to fight climate change. (See CARB’s [Innovative Clean Transit](https://ww2.arb.ca.gov/our-work/programs/innovative-clean-transit) program.)
 
-<a name="dgs"></a>**California Department of General Service ([DGS](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Statewide-Contracts))**: The State’s “business manager” that handles procurement and acquisition services and negotiates contracts, including [Leveraged Procurement Agreements (LPAs)](#lpa) and [Master Agreements](#master-agreement). 
+<a name="dgs"></a>**California Department of General Service ([DGS](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Statewide-Contracts))**: The state’s “business manager” that handles procurement and acquisition services and negotiates contracts, including [Leveraged Procurement Agreements (LPAs)](#lpa) and [Master Agreements](#master-agreement). 
 
 **California Division of Rail and Mass Transportation ([DRMT](https://dot.ca.gov/programs/rail-and-mass-transportation))**: A division of Caltrans, agency whose mission is to provide measurable improvements to California’s integrated and sustainable public transportation system. DRMT has the following primary functions:
 
@@ -70,7 +70,7 @@ date: 2021-02-02T17:14:13.057Z
 
 **Fare structure**: The full set of possible fares that a transit system charges. Fare structures incorporate the following fare types: Flat, distance- or zone-based, discounted (older adult, student, veteran, etc.), unlimited-ride (daily/weekly/monthly), and other characteristics that impact the fares for individual trips.
 
-<a name="fare-validator">**Fare validator**: Located on a transit vehicle or a platform or in a station, the NFC-enabled device that reads and validates riders’ contactless payment methods. 
+<a name="fare-validator"></a>**Fare validator**: Located on a transit vehicle or a platform or in a station, the [NFC](#nfc)-enabled device that reads and validates riders’ contactless payment methods. 
 
 **Federal Transit Administration ([FTA](https://www.transit.dot.gov/))**: Federal agency that provides financial and technical assistance to local public transit systems, oversees safety measures, and helps develop next-generation technology research. The FTA is housed within the U.S. Department of Transportation (USDOT).
 
@@ -81,7 +81,7 @@ date: 2021-02-02T17:14:13.057Z
 **General Transit Feed Specification (GTFS)**: Common format for public transit agencies to publish data about their transit services. Software developers can use this open-source data to build a variety of applications, including trip-planning software for transit riders. GTFS is categorized into two different typologies: 
 
 * GTFS Static feed: Schedules, fares, and fixed geographic information stored as a zipped file of .txt files. It is called a “feed” despite being a file that’s downloaded.
-<a name="gtfs-realtime">* GTFS Realtime (GTFS-RT): Vehicle arrival times and positioning, service advisories.
+<a name="gtfs-realtime"></a>* GTFS Realtime (GTFS-RT): Vehicle arrival times and positioning, service advisories.
 
 **GTFS extensions**:
 * GTFS-Fares: Describes transit fare information.
@@ -93,14 +93,14 @@ date: 2021-02-02T17:14:13.057Z
 **GTFS formats**:
 
 * Trip updates: A format of [GTFS-RT](#gtfs-rt) that describes upcoming arrivals per stop.
-* Vehicle positions: Format of [GTFS-RT](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.flu1vv42jhgd) that describes where vehicles are in real time.
-* * OccupancyStatus: Optional field within the [vehicle positions](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.9mc7et8wvcth) GTFS-RT format that describes, categorically, how crowded a specific vehicle is in real time. For example: many seats available, some seats available.
+* Vehicle positions: Format of [GTFS-RT](#gtfs-rt) that describes where vehicles are in real time.
+  * OccupancyStatus: Optional field within the Vehicle Positions GTFS-RT format that describes, categorically, how crowded a specific vehicle is in real time. For example: many seats available, some seats available.
 
-<a name="lpa">**Leveraged Procurement Agreement ([LPA](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Leveraged-Procurement-Agreements))**: Offered by California’s [Department of General Services (DGS)](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.toxqwb2xr7po) Procurement Division, a law that allows entities—such as state, city, county, district, or other local governmental bodies—to leverage the state's buying power and purchase directly from suppliers through existing contracts and agreements, without further competitive bidding.
+<a name="lpa"></a>**Leveraged Procurement Agreement ([LPA](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Leveraged-Procurement-Agreements))**: Offered by California’s [Department of General Services (DGS)](#dgs) Procurement Division, a law that allows entities—such as state, city, county, district, or other local governmental bodies—to leverage the state's buying power and purchase directly from suppliers through existing contracts and agreements, without further competitive bidding.
 
 **Local Partnership Program ([LPP](https://catc.ca.gov/programs/sb1/local-partnership-program))**: Created by the Road Repair and Accountability Act of 2017. Its primary objective is to provide funding to counties, cities, districts, and regional transportation agencies in which voters have approved fees or taxes dedicated solely to transportation improvements or that have imposed fees, including uniform developer fees, dedicated solely to transportation improvements.
 
-<a name="master-agreement">**Master Agreement**: Contracts that are competitively bid by the Department of General Services and available to any agency that expends public funds. These types of agreements establish a prequalified list of vendors and simplify the purchasing process for the end user.
+<a name="master-agreement"></a>**Master Agreement**: Contracts that are competitively bid by the Department of General Services and available to any agency that expends public funds. These types of agreements establish a prequalified list of vendors and simplify the purchasing process for the end user.
 
 **Mobile ticketing**: Purchasing of transit tickets through a smartphone, typically through a ticketing app run by either a transit provider or a third party. 
 
@@ -114,19 +114,19 @@ date: 2021-02-02T17:14:13.057Z
 
 **National Transit Database ([NTD](https://www.transit.dot.gov/ntd))**: Created by Congress and housed within the Federal Transit Administration (FTA), the NTD is the nation’s primary source for data and statistics for American public transit systems. Any agency receiving FTA grant funding is required to submit data to the NTD, which Congress uses to apportion funding each year.
 
-<a name="nfc">**Near-field communication (NFC)**: Short-range, wireless technology that enables communication between two NFC-enabled devices when held close to one another. Contactless payment cards, smartphones, point-of-sale terminals, and transit [fare validators](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.b666mf182h1y) are all equipped with NFC chips, enabling users to tap to pay.
+<a name="nfc"></a>**Near-field communication (NFC)**: Short-range, wireless technology that enables communication between two NFC-enabled devices when held close to one another. Contactless payment cards, smartphones, point-of-sale terminals, and transit [fare validators](#fare-validator) are all equipped with NFC chips, enabling users to tap to pay.
 
-<a name="open-loop">**Open-loop payment**: A form of payment that, like credit and debit cards, is accepted by most merchants or transit providers who accept non-cash payments. This stands in contrast to [closed-loop payments](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.qsw1v8ckfhqy), which, like a local or regional fare card (e.g., Clipper), are only accepted by one provider or small group of providers.
+<a name="open-loop"></a>**Open-loop payment**: A form of payment that, like credit and debit cards, is accepted by most merchants or transit providers who accept non-cash payments. This stands in contrast to [closed-loop payments](#closed-loop), which, like a local or regional fare card (e.g., Clipper), are only accepted by one provider or small group of providers.
 
-<a name="payment-processor">**Payment processor**: Back-end service that transmits fares from riders’ bank cards and smart devices to a transit provider’s bank account. 
+<a name="payment-processor"></a>**Payment processor**: Back-end service that transmits fares from riders’ bank cards and smart devices to a transit provider’s bank account. 
 
 **Procurement**: The act of purchasing goods or services by a government agency.
 
-<a name="transit-agency">**Public transit agency**: Publicly funded entity that plans transit service. Several [transit operators](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.v884h4jhidkb) may provide transit service under one agency.
+<a name="transit-agency"></a>**Public transit agency**: Publicly funded entity that plans transit service. Several [transit operators](#transit-operator) may provide transit service under one agency.
 
 <a name="transit-operator"></a>**Public transit operator**: A public or private entity responsible for the day-to-day operations of transit service. Both large agencies and small private companies can be transit operators.
 
-**Public transit provider**: Any provider of transit services (includes [transit operators](#public-transit-operator) and [transit agencies](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.o2m6n0uen769)). 
+**Public transit provider**: Any provider of transit services (includes [transit operators](#public-transit-operator) and [transit agencies](#transit-agency)). 
 
 **Real-time data**: Streaming live data that identifies where transit vehicles are. This is a general term and can refer to any format.
 
@@ -144,5 +144,4 @@ date: 2021-02-02T17:14:13.057Z
 
 **Unlinked passenger trips**: The total number of passenger boardings on transit vehicles, regardless of whether a boarding constitutes the start of a trip or a transfer. UPT typically measures overall transit utilization.
 
-**
-Vehicles operating at maximum service (VOMS)**: The number of revenue vehicles operated during peak service requirements.
+**Vehicles operating at maximum service (VOMS)**: The number of revenue vehicles operated during peak service requirements.
