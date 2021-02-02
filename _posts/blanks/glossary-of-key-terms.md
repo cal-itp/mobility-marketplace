@@ -60,7 +60,7 @@ date: 2021-02-02T17:14:13.057Z
 
 **EPAY**: The State of California’s [Master Agreement](#master-agreement) for procuring a [payment-processing service](#payment-processor). Maintained by the Department of General Service ([DGS](#dgs)), EPAY XXis openXX to all transit providers for upgrading payment processors for Cal-ITP.
 
-**Fare calculation software**: Back-office software that recognizes riders’ contactless payment methods and calculates the best fare for each trip based on distance traveled, reduced-fare eligibility, and number of trips completed per day/week/month (for [fare capping](#fare-capping).
+**Fare calculation software**: Back-office software that recognizes riders’ contactless payment methods and calculates the best fare for each trip based on distance traveled, reduced-fare eligibility, and number of trips completed per day/week/month (for [fare capping](#fare-capping)).
 
 <a name="fare-capping"></a>**Fare capping**: A fare policy that allows a rider to pay-as-you-go and limits the maximum amount a rider will pay to the cost of an unlimited-ride pass (daily, weekly, or monthly). Once a rider hits the price of that pass, they will no longer be charged for additional trips during that time period.
 
@@ -92,7 +92,7 @@ date: 2021-02-02T17:14:13.057Z
 
 **GTFS formats**:
 
-* Trip updates: A format of [GTFS-RT] that describes upcoming arrivals per stop.
+* Trip updates: A format of [GTFS-RT](#gtfs-rt) that describes upcoming arrivals per stop.
 * Vehicle positions: Format of [GTFS-RT](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.flu1vv42jhgd) that describes where vehicles are in real time.
 * * OccupancyStatus: Optional field within the [vehicle positions](https://docs.google.com/document/d/1kAZPL-fh56OoDPDS3jtsVggYpFMtbqS2tZ9JE3XTo6k/edit?ts=60106261#bookmark=id.9mc7et8wvcth) GTFS-RT format that describes, categorically, how crowded a specific vehicle is in real time. For example: many seats available, some seats available.
 
