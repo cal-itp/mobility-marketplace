@@ -15,7 +15,7 @@ date: 2021-02-02T17:14:13.057Z
 
 **Computer-Aided Dispatch/Automatic Vehicle Location (CAD/AVL)**: Communication system that sends transit vehicle location information to back-office software to assist in scheduling, incident response, and other planning functions. <br/><br/>
 
-**[Cal eProcure](https://www.caleprocure.ca.gov/pages/index.aspx{:target="_blank"}) (see also [DGS](#dgs))**: Online portal designed to improve the procurement experience in the State of California. This system replaced BidSync, giving businesses access to bidding and contracting resources in one location. <br/><br/>
+**[Cal eProcure](https://www.caleprocure.ca.gov/pages/index.aspx) (see also [DGS](#dgs))**: Online portal designed to improve the procurement experience in the State of California. This system replaced BidSync, giving businesses access to bidding and contracting resources in one location. <br/><br/>
 
 **California Integrated Travel Project ([Cal-ITP](https://www.calitp.org/))**: Series of initiatives to ensure that public transit in California leverages modern industry standards and specifications for seamless journey planning and fare payment. With funding from the [California Transit and Intercity Rail Capital Program](https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog) (TIRCP), Cal-ITP is a statewide initiative designed to unify all transit in California with a common fare payment system, real-time data standard, and seamless verification of reduced-fare eligibility. <br/><br/>
 
