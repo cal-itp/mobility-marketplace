@@ -65,11 +65,11 @@ collections:
                 }
   - name: "blanks"
     label: "Blank"
-    folder: "_posts/blanks"
+    folder: "content/blanks"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blank"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -82,7 +82,7 @@ collections:
     files:
       - label: "Homepage"
         name: "homepage"
-        file: "content/pages/index.md"
+        file: "content/pages/homepage.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
