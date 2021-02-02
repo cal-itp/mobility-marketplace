@@ -82,7 +82,7 @@ collections:
     files:
       - label: "Homepage"
         name: "homepage"
-        file: "content/pages/index.md"
+        file: "content/pages/homepage.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
