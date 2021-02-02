@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: blank
 title: Contactless payment methods
 date: 2021-02-02T00:17:43.362Z
 ---
