@@ -81,7 +81,7 @@ date: 2021-02-02T17:14:13.057Z
 **General Transit Feed Specification (GTFS)**: Common format for public transit agencies to publish data about their transit services. Software developers can use this open-source data to build a variety of applications, including trip-planning software for transit riders. GTFS is categorized into two different typologies: 
 
 * GTFS Static feed: Schedules, fares, and fixed geographic information stored as a zipped file of .txt files. It is called a “feed” despite being a file that’s downloaded.
-<a name="gtfs-realtime"></a>* GTFS Realtime (GTFS-RT): Vehicle arrival times and positioning, service advisories.
+<a name="gtfs-rt"></a>* GTFS Realtime (GTFS-RT): Vehicle arrival times and positioning, service advisories.
 
 **GTFS extensions**:
 * GTFS-Fares: Describes transit fare information.
@@ -126,7 +126,7 @@ date: 2021-02-02T17:14:13.057Z
 
 <a name="transit-operator"></a>**Public transit operator**: A public or private entity responsible for the day-to-day operations of transit service. Both large agencies and small private companies can be transit operators.
 
-**Public transit provider**: Any provider of transit services (includes [transit operators](#public-transit-operator) and [transit agencies](#transit-agency)). 
+**Public transit provider**: Any provider of transit services (includes [transit operators](#transit-operator) and [transit agencies](#transit-agency)). 
 
 **Real-time data**: Streaming live data that identifies where transit vehicles are. This is a general term and can refer to any format.
 
