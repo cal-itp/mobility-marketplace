@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: blank
 title: About Cal-ITP
 date: 2021-02-02T00:07:16.047Z
 ---
