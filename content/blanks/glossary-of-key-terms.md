@@ -15,7 +15,7 @@ date: 2021-02-02T17:14:13.057Z
 
 **Computer-Aided Dispatch/Automatic Vehicle Location (CAD/AVL)**: Communication system that sends transit vehicle location information to back-office software to assist in scheduling, incident response, and other planning functions. <br/><br/>
 
-**[Cal eProcure](https://www.caleprocure.ca.gov/pages/index.aspx{:target="_blank"}) (see also [DGS](#dgs))**: Online portal designed to improve the procurement experience in the State of California. This system replaced BidSync, giving businesses access to bidding and contracting resources in one location. <br/><br/>
+**[Cal eProcure](https://www.caleprocure.ca.gov/pages/index.aspx) (see also [DGS](#dgs))**: Online portal designed to improve the procurement experience in the State of California. This system replaced BidSync, giving businesses access to bidding and contracting resources in one location. <br/><br/>
 
 **California Integrated Travel Project ([Cal-ITP](https://www.calitp.org/))**: Series of initiatives to ensure that public transit in California leverages modern industry standards and specifications for seamless journey planning and fare payment. With funding from the [California Transit and Intercity Rail Capital Program](https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog) (TIRCP), Cal-ITP is a statewide initiative designed to unify all transit in California with a common fare payment system, real-time data standard, and seamless verification of reduced-fare eligibility. <br/><br/>
 
@@ -80,21 +80,23 @@ date: 2021-02-02T17:14:13.057Z
 
 **General Transit Feed Specification (GTFS)**: Common format for public transit agencies to publish data about their transit services. Software developers can use this open-source data to build a variety of applications, including trip-planning software for transit riders. GTFS is categorized into two different typologies:
 
-* *GTFS Static feed*: Schedules, fares, and fixed geographic information stored as a zipped file of .txt files. It is called a “feed” despite being a file that’s downloaded.
+* *GTFS Schedule dataset*: Schedules, fares, and fixed geographic information stored as a zipped file of .txt files.
 * <span id="gtfs-rt"></span>*GTFS Realtime (GTFS-RT)*: Vehicle arrival times and positioning, service advisories. <br/><br/>
 
 **GTFS extensions**:
 
-* *GTFS-Fares*: Describes transit fare information.
+* *GTFS-Fares*: Components of GTFS Schedule which describe transit fare information.
 * *GTFS-Flex*: Describes demand-responsive transit operations and coverage.
-* *GTFS-Pathways*: Describes how passengers can move between transit vehicles, specifying stairs, fare gates, and other infrastructure.
-* *GTFS-Ride*: Proposed GTFS extension for describing ridership data at the trip/stop level.
-* *GTFS-Vehicles*: Describes how passengers can interact with their vehicles, including step-free access, bicycle storage, and other accommodations. <br/><br/>
+* *GTFS-Pathways*: Components of GTFS Schedule and GTFS Realtime which describe how passengers can move between transit vehicles, specifying stairs, fare gates, and other infrastructure.
+* *GTFS-Ride*: Oregon State DOT GTFS extension for describing ridership data at the origin-destination/route/trip/stop level.
+* *GTFS-Vehicles*: Extension to GTFS Schedule which describes vehicle attributes, including how passengers can interact with their vehicles, step-free access, bicycle storage, and other accommodations. <br/><br/>
 
-**GTFS formats**:
-* Trip updates: A format of [GTFS-RT](#gtfs-rt) that describes upcoming arrivals per stop.
-* Vehicle positions: Format of [GTFS-RT](#gtfs-rt) that describes where vehicles are in real time.
-  * *OccupancyStatus*: Optional field within the Vehicle Positions GTFS-RT format that describes, categorically, how crowded a specific vehicle is in real time. For example: many seats available, some seats available. <br/><br/>
+**GTFS Realtime components**:
+
+* *Trip updates*: A component of [GTFS-RT](#gtfs-rt) that describes upcoming arrivals per stop.
+* *Vehicle positions*: A component of [GTFS-RT](#gtfs-rt) that describes where vehicles are in real time.
+  * *OccupancyStatus*: Optional field within the vehicle positions GTFS-RT format that describes, categorically, how crowded a specific vehicle is in real time. For example: many seats available, some seats available.
+* *Alerts*: A component of [GTFS-RT](#gtfs-rt) that describes passenger alerts at various levels.  <br/><br/>
 
 <span id="lpa"></span>**Leveraged Procurement Agreement ([LPA](https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-Accordion-List/Acquisitions/Leveraged-Procurement-Agreements))**: Offered by California’s [Department of General Services (DGS)](#dgs) Procurement Division, a law that allows entities—such as state, city, county, district, or other local governmental bodies—to leverage the state's buying power and purchase directly from suppliers through existing contracts and agreements, without further competitive bidding. <br/><br/>
 
@@ -144,4 +146,4 @@ date: 2021-02-02T17:14:13.057Z
 
 **Unlinked passenger trips**: The total number of passenger boardings on transit vehicles, regardless of whether a boarding constitutes the start of a trip or a transfer. UPT typically measures overall transit utilization. <br/><br/>
 
-**Vehicles operating at maximum service (VOMS)**: The number of revenue vehicles operated during peak service requirements.
+**Vehicles operating at maximum service (VOMS)**: The number of revenue vehicles operated during peak service requirements.<br/><br/>
