@@ -9,7 +9,7 @@ The [California Integrated Travel Project](https://www.calitp.org/) (Cal-ITP) is
 * Seamless verification of eligibility for transit benefits, including discounts for older adults, students, veterans, and people with disabilities
 * Reliable, real-time, and easily accessible information about available transportation options and their prices
 
-Supported by the [California State Transportation Agency](https://calsta.ca.gov/) (CalSTA) and the [California Department of Transportation](https://calsta.ca.gov/) (Caltrans) through a grant from the [California Transit and Intercity Rail Capital Program](https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog) (TIRCP), Cal-ITP was established to help California deliver on statewide goals of: 
+Supported by the [California State Transportation Agency](https://calsta.ca.gov/) (CalSTA) and the [California Department of Transportation](https://dot.ca.gov/) (Caltrans) through a grant from the [California Transit and Intercity Rail Capital Program](https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog) (TIRCP), Cal-ITP was established to help California deliver on statewide goals of: 
 
 * Improving the customer experience
 * Increasing transit ridership
