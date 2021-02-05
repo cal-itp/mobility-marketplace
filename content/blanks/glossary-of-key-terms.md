@@ -85,11 +85,11 @@ date: 2021-02-02T17:14:13.057Z
 
 **GTFS extensions**:
 
-* *GTFS-Fares*: Components of GTFS Schedule which describe transit fare information.
+* *GTFS-Fares*: Components of GTFS Schedule which describe transit fare information. The version under consideration for adoption in 2021 is “GTFS-Fares v2”.
 * *GTFS-Flex*: Describes demand-responsive transit operations and coverage.
-* *GTFS-Pathways*: Components of GTFS Schedule and GTFS Realtime which describe how passengers can move between transit vehicles, specifying stairs, fare gates, and other infrastructure.
-* *GTFS-Ride*: Oregon State DOT GTFS extension for describing ridership data at the origin-destination/route/trip/stop level.
-* *GTFS-Vehicles*: Extension to GTFS Schedule which describes vehicle attributes, including how passengers can interact with their vehicles, step-free access, bicycle storage, and other accommodations. <br/><br/>
+* *GTFS-Pathways*: Components of GTFS Schedule that describe how passengers can move between transit vehicles through stairs, fare gates, and other infrastructure.
+* *GTFS-Ride*: A GTFS extension proposed by Oregon DOT and Oregon State University for describing ridership data at the origin-destination/route/trip/stop level.
+* *GTFS-Vehicles*: Extension to GTFS Schedule that describes vehicle attributes, including how passengers can interact with their vehicles, step-free access, bicycle storage, and other accommodations. <br/><br/>
 
 **GTFS Realtime components**:
 
