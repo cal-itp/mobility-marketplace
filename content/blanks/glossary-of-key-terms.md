@@ -78,10 +78,10 @@ date: 2021-02-02T17:14:13.057Z
 
 **[FTA State of Good Repair (SGR) Grants](https://www.transit.dot.gov/funding/grants/state-good-repair-grants-5337)**: Federal program that provides capital assistance for maintenance, replacement, and rehabilitation projects of high-intensity fixed guideway and bus systems to help transit agencies maintain assets in a state of good repair. Additionally, SGR grants are eligible for developing and implementing Transit Asset Management plans. (Source: Federal Transit Administration) <br/><br/>
 
-**General Transit Feed Specification (GTFS)**: Common format for public transit agencies to publish data about their transit services. Software developers can use this open-source data to build a variety of applications, including trip-planning software for transit riders. GTFS is categorized into two different typologies:
+**General Transit Feed Specification (GTFS)**: Common format for public transit providers to publish data about their transit services. Transit providers can describe their operations in this open standard so that third parties can build a variety of applications, including trip planning software, for transit riders. GTFS is categorized into two different typologies:
 
 * *GTFS Schedule dataset*: Schedules, fares, and fixed geographic information stored as a zipped file of .txt files.
-* <span id="gtfs-rt"></span>*GTFS Realtime (GTFS-RT)*: Vehicle arrival times and positioning, service advisories. <br/><br/>
+* <span id="gtfs-rt"></span>*GTFS Realtime (GTFS-RT)*: Vehicle positioning, stop-based arrival times, service advisories. <br/><br/>
 
 **GTFS extensions**:
 
