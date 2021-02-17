@@ -74,7 +74,7 @@ date: 2021-02-17T19:26:37.766Z
 
 <span id="fare-validator"></span>**Fare validator**: Located on a transit vehicle or platform or in a station or fare gate, the [NFC](#nfc)-enabled device that reads and validates riders’ contactless payment methods. In retail establishments, a validator is known as a Point of Sale (POS) terminal.  <br/><br/>
 
-**Federal Transit Administration ([FTA](https://www.transit.dot.gov/))**: Federal agency that provides financial and technical assistance to local public transit systems, oversees safety measures, and helps develop next-generation technology research. The FTA is housed within the U.S. Department of Transportation (USDOT).
+**Federal Transit Administration ([FTA](https://www.transit.dot.gov/))**: Federal agency that provides financial and technical assistance to local public transit systems, oversees safety measures, and helps develop next-generation technology research. The FTA is housed within the U.S. Department of Transportation (USDOT). <br/><br/>
 
 **[FTA Formula Grants for Rural Areas](https://www.transit.dot.gov/rural-formula-grants-5311)**: Federal program that provides capital, planning, and operating assistance to states to support public transportation in rural areas with populations of less than 50,000, where many residents often rely on public transit to reach their destinations. The program also provides funding for state and national training and technical assistance through the [National Rural Transportation Assistance Program](https://www.nationalrtap.org/home). (Source: Federal Transit Administration) <br/><br/>
 
@@ -83,9 +83,9 @@ date: 2021-02-17T19:26:37.766Z
 **General Transit Feed Specification (GTFS)**: Common format for public transit providers to publish data about their transit services. Transit providers publish their schedules, base price, and certain geospatial data in this open standard so that third parties and mapping applications native to mobile phones can build a variety of applications, including trip planning software, for transit riders. GTFS is categorized into two different typologies:
 
 * *GTFS Schedule dataset*: Schedules, fares, and fixed geographic information stored as a zipped file of .txt files.
-* <span id="gtfs-rt"></span>*GTFS Realtime (GTFS-RT)*: Vehicle positioning, stop-based arrival times, service advisories. <br/><br/>
+* <span id="gtfs-rt"></span>*GTFS Realtime (GTFS-RT)*: Vehicle positioning, stop-based arrival times, service advisories. <br/>
 
-GTFS is referred to as an “extensible” format.  This means that GTFS was intended to accommodate future growth, for example through new functions, or through modifications of existing functionality. This leads to:
+GTFS is referred to as an “extensible” format.  This means that GTFS was intended to accommodate future growth, for example through new functions, or through modifications of existing functionality. This leads to:<br/>
 
 **GTFS extensions under development**:
 
@@ -93,7 +93,7 @@ GTFS is referred to as an “extensible” format.  This means that GTFS was int
 * *GTFS-Flex*: Describes demand-responsive transit operations and coverage.
 * *GTFS-Pathways*: Components of GTFS Schedule that describe how passengers can move between transit vehicles through stairs, fare gates, and other infrastructure.
 * *GTFS-Ride*: A GTFS extension proposed by Oregon DOT and Oregon State University for describing ridership data at the origin-destination/route/trip/stop level.
-* *GTFS-Vehicles*: Extension to GTFS Schedule, which describes vehicle attributes including how passengers can interact with their vehicles, step-free access, bicycle storage, and other accommodations. <br/><br/>
+* *GTFS-Vehicles*: Extension to GTFS Schedule, which describes vehicle attributes including how passengers can interact with their vehicles, step-free access, bicycle storage, and other accommodations. <br/>
 
 **GTFS Realtime components**:
 * *Trip updates*: A component of [GTFS-RT](#gtfs-rt) that describes upcoming arrivals per stop.
