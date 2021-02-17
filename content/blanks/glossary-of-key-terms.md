@@ -66,7 +66,7 @@ date: 2021-02-17T19:26:37.766Z
 
 <span id="fare-capping"></span>**Fare capping**: A type of fare policy that allows a rider to pay-as-you-go and limits the maximum amount a rider will pay to the cost set by the transit provider—say, of an unlimited-ride pass (daily, weekly, or monthly). Once a rider hits the price of that maximum, they will no longer be charged for additional trips during that time period. <br/><br/>
 
-**Fare payment method**: The media riders use to pay their transit fare. Fare payment methods can include cash, tokens, transit fare cards, bank cards (credit, debit, or prepaid), or smart devices.
+**Fare payment method**: The media riders use to pay their transit fare. Fare payment methods can include cash, tokens, transit fare cards, bank cards (credit, debit, or prepaid), or smart devices.<br/><br/>
 
 **Fare revenue**: Income received directly from passengers, or indirectly from companies or institutions purchasing transit for their employees, for transportation services, paid either in cash, bank card, or prepaid tickets, passes, etc. <br/><br/>
 
