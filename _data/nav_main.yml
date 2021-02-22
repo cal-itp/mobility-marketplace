@@ -8,3 +8,6 @@ items:
   - target: _self
     text: Glossary
     url: https://www.camobilitymarketplace.org/content/blanks/glossary-of-key-terms
+  - target: _self
+    text: Contact us
+    url: https://www.camobilitymarketplace.org/contact
