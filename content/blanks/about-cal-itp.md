@@ -1,24 +1,28 @@
 ---
 layout: blank
-title: About Cal-ITP
+title: About us
 date: 2021-02-02T00:07:16.047Z
 ---
-The [California Integrated Travel Project](https://www.calitp.org/) (Cal-ITP) is a series of initiatives to ensure that public transit in California leverages modern industry standards for seamless journey planning and fare payment. Cal-ITP is dedicated to making travel simpler and more cost-effective for both transit providers and riders through three main program areas:
+Welcome to the California Mobility Marketplace!
 
-* Access to contactless fare collection systems 
-* Seamless verification of eligibility for transit benefits, including discounts for older adults, students, veterans, and people with disabilities
-* Reliable, real-time, and easily accessible information about available transportation options and their prices
+Managed by [Cal-ITP](http://www.calitp.org), this website seeks to make the transition to contactless fare collection and GTFS Realtime compliance as easy and cost-effective as possible through a new and innovative approach. 
 
-Supported by the [California State Transportation Agency](https://calsta.ca.gov/) (CalSTA) and the [California Department of Transportation](https://dot.ca.gov/) (Caltrans) through a grant from the [California Transit and Intercity Rail Capital Program](https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog) (TIRCP), Cal-ITP was established to help California deliver on statewide goals of: 
+The California Mobility Marketplace gathers and presents links to a suite of pre-negotiated, code-compliant products and services that providers need in order to offer both contactless fare collection and GTFS Realtime, whether operating buses, commuter trains, or light rail. 
+
+This means that all the procurement work has already been done for you. Vendors have responded and been awarded contracts through a competitively bid process—so transit providers don’t have to handle procurement on their own. 
+
+The Mobility Marketplace serves as Cal-ITP’s online catalogue, where transit providers can browse these technologies and build a customized fare collection system that suits their needs. Visit our [procurement page](https://www.camobilitymarketplace.org/contact) to start exploring goods and services  that have already been approved. Don’t yet see what you’re looking for? Cal-ITP continues to search for  code-compliant goods and services that meet the needs of the industry, so be sure to check back often for newly available products and services. You can also [sign up for our mailing list](https://www.camobilitymarketplace.org/contact).
+
+Want to do business with Cal-ITP and California transit providers? Vendors who are interested in having their products and/or services on the Mobility Marketplace are encouraged to submit an inquiry using our [Contact form](https://www.camobilitymarketplace.org/contact).
+
+## About Cal-ITP
+
+Supported by the [California State Transportation Agency](https://calsta.ca.gov/) (CalSTA) and the [California Department of Transportation](https://calsta.ca.gov/) (Caltrans) through a grant from the [California Transit and Intercity Rail Capital Program](https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog) (TIRCP), Cal-ITP was established to help California deliver on statewide goals of:
 
 * Improving the customer experience
 * Increasing transit ridership
 * Lowering costs for transit providers and riders
-* Reducing greenhouse gas emissions to reach environmental targets
-* Promoting equitable access to transportation across the state’s transit providers
+* Reducing greenhouse gas emissions 
+* Promoting equitable access to transportation
 
-In operating as a statewide program, Cal-ITP can help California tackle carbon emissions across the state by coordinating transit initiatives across jurisdictions. Cal-ITP supports the state’s longer-term climate, equity, and economic development goals—as delineated in California Executive Order [N-79-20](https://www.gov.ca.gov/wp-content/uploads/2020/09/9.23.20-EO-N-79-20-text.pdf)—by ensuring that transit remains a core tenet of mobility. And by working collectively across geographical boundaries, localities can leverage California’s buying power to save on procurement.
-
-This initiative is critical now more than ever. As COVID-19 hit the United States, many transit providers saw ridership decrease. But many who depend on transit do not have the privilege to work from home—including many essential workers. Reliable transit access and contactless payments are critical components to ensuring that transit forms a key part of the COVID-19 crisis response and recovery.
-
-Reliable transit access and contactless payments are critical components to ensuring that transit is a part of the COVID crisis response and recovery. Cal-ITP can help bring riders back to transit through modern conveniences that make riding transit easier, while contactless fare collection will speed boarding, keeping both transit vehicle operators and riders safe.
+Through the California Mobility Marketplace, Cal-ITP is helping transit providers across the state modernize their fare collection and trip planning systems to meet these goals.
