@@ -17,7 +17,7 @@ Want to do business with Cal-ITP and California transit providers? Vendors who a
 
 ## About Cal-ITP
 
-Supported by the [California State Transportation Agency](https://calsta.ca.gov/) (CalSTA) and the [California Department of Transportation](https://dot.ca.gov/) (Caltrans) through a grant from the [California Transit and Intercity Rail Capital Program](https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog) (TIRCP), Cal-ITP was established to help California deliver on statewide goals of:
+Supported by the <a href="https://calsta.ca.gov/" target="_blank">California State Transportation Agency</a> and the <a href="https://dot.ca.gov/" target="_blank">California Department of Transportation</a> through a grant from the <a href="https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog/" target="_blank">California Transit and Intercity Rail Capital Program</a>, Cal-ITP was established to help California deliver on statewide goals of:
 
 * Improving the customer experience
 * Increasing transit ridership
