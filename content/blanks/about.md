@@ -1,6 +1,6 @@
 ---
 layout: blank
-title: About
+title: About us
 date: 2021-03-01T20:27:28.361Z
 ---
 Welcome to the California Mobility Marketplace!
