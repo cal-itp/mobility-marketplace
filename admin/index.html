@@ -1,18 +1,12 @@
----
-layout:
----
-
 <!doctype html>
 <html>
 <head>
-  {% include site/meta/base.html %}
-  <title>Content Manager - {{ site.data.meta.title | default: site.title | strip }}</title>
-  {% include site/favicon.html %}
-  {% include scripts/netlify-identity.html %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
 </head>
 <body>
+  <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  <script type="module" src="/admin/editor/index.js"></script>
-  <script type="module" src="/admin/widgets/index.js"></script>
 </body>
 </html>

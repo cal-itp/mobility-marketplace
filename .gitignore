@@ -1,8 +1,7 @@
-.jekyll-metadata
-
-.bundle
-.netlify
-.vscode
-_site
-data/providers/*.json
-fonts
+/node_modules/
+/_site/
+/.jekyll-cache/
+/.jekyll-metadata/
+/vendor/
+/.netlify/
+/data/providers/*.json

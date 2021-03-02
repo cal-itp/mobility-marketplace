@@ -1,9 +1,0 @@
----
-layout: default
----
-
-{% assign classes = "bg-white" | split: "," | push: layout.class | compact %}
-
-<div class="{{ classes | join: " " }}">
-{{ content }}
-</div>
