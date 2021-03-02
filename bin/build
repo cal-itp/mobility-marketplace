@@ -1,5 +1,0 @@
-#!/bin/bash
-
-jekyll build && \
-
-echo "Netlify build successful!"
