@@ -22,16 +22,19 @@ title: California Mobility Marketplace
 description: >-
   A resource to help transit providers upgrade their fare collection systems to accept contactless payment methods like credit/debit cards and smartphones.
 baseurl: "/" # the subpath of your site, e.g. /blog
-domain: boothproject.us
-url: "https://www.boothproject.us" # the base hostname & protocol for your site, e.g. http://example.com
+domain: cal-itp-transit-stop.netlify.app
+url: "https://cal-itp-transit-stop.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics_id: "UA-176840950-1"
-fonts: "Poppins:400,700|Raleway:700"
+fonts: "Poppins:wght@400;700&family=Raleway:wght@700"
 theme_color: "#ffffff"
 theme_color_background: "#ffffff"
 authors:
+  - name: Kegan Maher
+    role: Programmer
+    contact: kegan@compiler.la
   - name: Kurtis Rainbolt-Greene
     role: Programmer
-    contact: kurtis@rainbolt-greene.online
+    contact: kurtis@compiler.la
 collections:
   pages:
     output: true
