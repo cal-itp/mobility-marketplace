@@ -2,25 +2,25 @@ backend:
   name: git-gateway
   branch: master
   squash_merges: true
-media_folder: "uploads"
+media_folder: "uploads/"
 publish_mode: editorial_workflow
 collections:
-  - name: "articles" # Used in routes, e.g., /admin/collections/articles
-    label: "Articles" # Used in the UI
-    folder: "_posts/articles" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "articles"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages" # Used in routes, e.g., /admin/collections/pages
     label: "Pages" # Used in the UI
-    folder: "_posts/pages" # The path to the folder where the documents are stored
+    folder: "_pages/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "pages"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "posts" # Used in routes, e.g., /admin/collections/posts
+    label: "Posts" # Used in the UI
+    folder: "_posts/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "posts"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}

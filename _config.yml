@@ -57,7 +57,8 @@ exclude:
   - CONDUCT.md
   - LICENSE.txt
   - admin/plugins
-  - _data
+  - _data/
+  - submodules/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
