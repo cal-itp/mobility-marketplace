@@ -21,7 +21,7 @@
 title: California Mobility Marketplace
 description: >-
   A resource to help transit providers upgrade their fare collection systems to accept contactless payment methods like credit/debit cards and smartphones.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 domain: cal-itp-transit-stop.netlify.app
 url: "https://cal-itp-transit-stop.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics_id: "UA-176840950-1"
