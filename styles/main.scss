@@ -14254,6 +14254,7 @@ table.gsc-search-box td {
   padding: 0;
   -webkit-transition: 0.3s;
   transition: all 0.3s;
+  justify-content: flex-end;
 }
 
 .top-level-nav .nav-item {
@@ -32077,15 +32078,6 @@ figure figcaption {
 
 .toggle-menu span {
   background-color: #323a45 !important;
-}
-
-@media (min-width: 992px) {
-  .main-navigation {
-    justify-content: flex-end;
-  }
-  .main-navigation .top-level-nav {
-    width: 45%;
-  }
 }
 
 .main-navigation .first-level-link {
