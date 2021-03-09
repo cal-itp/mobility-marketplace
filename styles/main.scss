@@ -32493,8 +32493,9 @@ figure figcaption {
 
 main.pages .main-content, main.articles .main-content {
   padding-top: 120px;
-  padding-left: 25vw;
-  padding-right: 25vw;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 99vh;
 }
 
