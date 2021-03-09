@@ -2,6 +2,7 @@
 layout: articles
 date: 2020-08-09T03:55:00.0Z
 title: Payments 101
+description: A single platform to manage the entire order to cash cycle.
 ---
 ## This is an H2 Heading
 

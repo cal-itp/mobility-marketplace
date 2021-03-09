@@ -5,3 +5,5 @@
 /vendor/
 /.netlify/
 /data/providers/*.json
+/.bundle/
+/.vscode/

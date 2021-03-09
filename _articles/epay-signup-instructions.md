@@ -2,6 +2,7 @@
 layout: articles
 date: 2020-08-21T03:55:00.0Z
 title: EPAY Signup Instructions
+description: A simple guide to how to sign up with EPAY.
 ---
 ## This is an H2 Heading
 

@@ -2,6 +2,7 @@
 layout: articles
 date: 2020-07-15T03:55:00.0Z
 title: Buying Transit Like Coffee
+description: A video walkthrough of how to set up your payment processing so it’s as easy as possible for people to pay and ride.
 ---
 ## This is an H2 Heading
 

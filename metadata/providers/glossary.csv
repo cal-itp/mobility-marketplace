@@ -1,7 +1,0 @@
----
-layout:
----
-{%- comment -%} The strange formatting here produces correctly formatted CSV file {%- endcomment -%}
-term,definition{% capture csv %}{% for item in site.data.glossary.items %}
-{{ item.term }},{{ item.definition | strip_newlines | replace: '"','""' | prepend: '"' | append: '"' }}{% endfor %}{%- endcapture -%}
-{{ csv }}
