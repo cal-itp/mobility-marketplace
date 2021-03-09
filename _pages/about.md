@@ -4,7 +4,7 @@ title: About us
 ---
 Welcome to the California Mobility Marketplace! 
 
-Managed by <a href="http://www.calitp.org/" target="_blank">Cal-ITP</a>, this website seeks to make the transition to contactless fare collection and GTFS Realtime compliance as easy and cost-effective as possible through a new and innovative approach. 
+Managed and by <a href="http://www.calitp.org/" target="_blank">Cal-ITP</a>, this website seeks to make the transition to contactless fare collection and GTFS Realtime compliance as easy and cost-effective as possible through a new and innovative approach. 
 
 The California Mobility Marketplace gathers and presents links to a suite of pre-negotiated, code-compliant products and services that providers need in order to offer both contactless fare collection and GTFS Realtime, whether operating buses, commuter trains, or light rail. 
 
