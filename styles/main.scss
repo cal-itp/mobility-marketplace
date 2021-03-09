@@ -32491,9 +32491,9 @@ figure figcaption {
   text-align: center;
 }
 
-main.pages, main.posts {
+main.pages > section, main.articles > section{
   padding-top: 120px;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 25vw;
+  padding-right: 25vw;
   min-height: 99vh;
 }

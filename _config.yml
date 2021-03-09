@@ -39,6 +39,9 @@ collections:
   pages:
     output: true
     permalink: /:title
+  articles:
+    output: true
+    permalink: /:collection/:name
 
 # Build settings
 # plugins:
@@ -59,6 +62,8 @@ exclude:
   - admin/plugins
   - _data/
   - submodules/
+  - bin/
+  - admin/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

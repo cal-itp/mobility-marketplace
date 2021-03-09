@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: articles
 date: 2020-08-21T03:55:00.0Z
 title: EPAY Signup Instructions
 ---

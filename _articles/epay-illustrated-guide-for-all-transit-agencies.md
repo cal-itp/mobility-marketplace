@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: articles
 date: 2020-06-02T03:55:00.0Z
 title: EPAY Illustrated Guide for All Transit Agencies
 ---

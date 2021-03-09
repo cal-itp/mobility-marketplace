@@ -1,7 +1,7 @@
 ---
-layout: posts
-date: 2020-08-09T03:55:00.0Z
-title: Payments 101
+layout: articles
+date: 2020-07-15T03:55:00.0Z
+title: Buying Transit Like Coffee
 ---
 ## This is an H2 Heading
 
