@@ -1,5 +1,5 @@
 #!/bin/bash
 
-jekyll build && \
+bundle exec jekyll build && \
 
 echo "Netlify build successful!"
