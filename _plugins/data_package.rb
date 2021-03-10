@@ -8,7 +8,7 @@ Jekyll::Hooks.register :site, :post_write do |_site|
       # Two arguments:
       # - The name of the file as it will appear in the archive
       # - The original file, including the path to find it
-      path.add(path.split(File::SEPARATOR).last, filename)
+      zipfile.add(path.split(File::SEPARATOR).last, path)
     end
   end
 end
