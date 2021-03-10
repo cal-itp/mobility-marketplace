@@ -57,6 +57,7 @@ collections:
 #
 exclude:
   - docs
+  - README.md
   - CONDUCT.md
   - LICENSE.txt
   - docker-compose.yml
