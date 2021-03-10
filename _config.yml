@@ -60,6 +60,7 @@ exclude:
   - README.md
   - CONDUCT.md
   - LICENSE.txt
+  - .editorconfig
   - docker-compose.yml
   - admin/plugins
   - _data/
