@@ -117,7 +117,7 @@ GTFS is referred to as an “extensible” format.  This means that GTFS was int
 
 **Multimodal**: Referring to a network or a specific trip that incorporates more than one mode of transportation. <br/><br/>
 
-**National Transit Database (<a href="https://www.transit.dot.gov/ntd" target="_blank">NTD</a>) **: Created by Congress and housed within the Federal Transit Administration (FTA), the NTD is the nation’s primary source for data and statistics for American public transit systems. Any agency receiving FTA grant funding is required to submit data to the NTD, which Congress uses to apportion funding each year. <br/><br/>
+**National Transit Database (<a href="https://www.transit.dot.gov/ntd" target="_blank">NTD</a>)**: Created by Congress and housed within the Federal Transit Administration (FTA), the NTD is the nation’s primary source for data and statistics for American public transit systems. Any agency receiving FTA grant funding is required to submit data to the NTD, which Congress uses to apportion funding each year. <br/><br/>
 
 <span id="nfc"></span>**Near-field communication (NFC)**: Short-range, wireless technology that enables communication between two NFC-enabled devices when held close to one another. Contactless payment cards, smartphones, point-of-sale terminals, and transit [fare validators](#fare-validator) are all equipped with NFC chips, enabling users to tap to pay. <br/><br/>
 
