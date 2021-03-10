@@ -135,15 +135,15 @@ GTFS is referred to as an “extensible” format.  This means that GTFS was int
 
 **Real-time data**: Streaming live data that identifies where transit vehicles are. This is a general term and can refer to any format. <br/><br/>
 
-**Small Business/Disabled Veteran Business Enterprises ([SB/DVBE](https://caleprocure.ca.gov/pages/sbdvbe-index.aspx))**: Administered by California’s Office of Small Business and DVBE Services (OSDS), a certification program that qualifies small businesses and those owned by disabled veterans to meet participation goals in state-funded contracts. <br/><br/>
+**Small Business/Disabled Veteran Business Enterprises (<a href="https://caleprocure.ca.gov/pages/sbdvbe-index.aspx" target="_blank">SB/DVBE</a>)**: Administered by California’s Office of Small Business and DVBE Services (OSDS), a certification program that qualifies small businesses and those owned by disabled veterans to meet participation goals in state-funded contracts. <br/><br/>
 
 **Stable URL**: A URL that is constant and does not change. <br/><br/>
 
-**State Transportation Improvement Program ([STIP](https://dot.ca.gov/programs/local-assistance/fed-and-state-programs/state-transportation-improvement-program))**: Multi-year capital improvement program of transportation projects on and off the State Highway System, funded with revenues from the Transportation Investment Fund and other funding sources. <br/><br/>
+**State Transportation Improvement Program (<a href="https://dot.ca.gov/programs/local-assistance/fed-and-state-programs/state-transportation-improvement-program" target="_blank">STIP</a>)**: Multi-year capital improvement program of transportation projects on and off the State Highway System, funded with revenues from the Transportation Investment Fund and other funding sources. <br/><br/>
 
-**[Title VI](https://www.hhs.gov/civil-rights/for-individuals/special-topics/needy-families/civil-rights-requirements/index.html)**: The section of the Civil Rights Act of 1964 that prohibits discrimination on the basis of race, color, or national origin in any program or activity that receives federal funds or other federal financial assistance. <br/><br/>
+**<a href="https://www.hhs.gov/civil-rights/for-individuals/special-topics/needy-families/civil-rights-requirements/index.html" target="_blank">Title VI</a>**: The section of the Civil Rights Act of 1964 that prohibits discrimination on the basis of race, color, or national origin in any program or activity that receives federal funds or other federal financial assistance. <br/><br/>
 
-**Transit and Intercity Rail Capital Program ([TIRCP](https://dot.ca.gov/programs/rail-and-mass-transportation/transit-and-intercity-rail-capital-program))**: Provides grants from the Greenhouse Gas Reduction Fund (GGRF) to fund transformative capital improvements that will modernize California’s intercity, commuter, and urban rail systems and bus and ferry transit systems to significantly reduce emissions of greenhouse gases, vehicle miles traveled, and congestion. <br/><br/>
+**Transit and Intercity Rail Capital Program (<a href="https://dot.ca.gov/programs/rail-and-mass-transportation/transit-and-intercity-rail-capital-program" target="_blank">TIRCP</a>)**: Provides grants from the Greenhouse Gas Reduction Fund (GGRF) to fund transformative capital improvements that will modernize California’s intercity, commuter, and urban rail systems and bus and ferry transit systems to significantly reduce emissions of greenhouse gases, vehicle miles traveled, and congestion. <br/><br/>
 
 **Transit fare card**: Closed-loop reloadable fare payment cards, like Clipper in the San Francisco Bay Area and TAP in Los Angeles.<br/><br/>
 
