@@ -322,7 +322,7 @@ South El Monte Senior Transportation,,,,,,,,South El Monte,Los Angeles,http://ww
 Newport Beach Friends of Oasis Senior Center,,,,,,,,Newport Beach,Orange,https://www.newportbeachca.gov/government/departments/recreation-senior-services/senior-services-oasis-senior-center/transportation-service,,,,
 UC San Diego Campus Shuttles,,,,,,,,La Jolla,San Diego,http://transportation.ucsd.edu/shuttles/index.html,,,,
 Santa Monica College Academy/Madison Transit Shuttle,,,,,,,,Santa Monica,Los Angeles,http://smc.edu/StudentServices/transportation/Pages/Shuttles.aspx,,,,
-Corona Cruiser,90052,15,15,58089,129972,162529,132810,Corona,Riverside,http://www.CoronaTransit.com/,http://data.trilliumtransit.com/gtfs/corona-ca-us/corona-ca-us.zip,,,
+Corona Cruiser,90052,15,15,58089,129972,162529,132810,Corona,Riverside,http://www.coronaca.gov/Transit,http://data.trilliumtransit.com/gtfs/corona-ca-us/corona-ca-us.zip,,,
 Commerce Municipal Bus Lines,90043,14,14,9086,500498,0,0,Commerce,Los Angeles,http://ci.commerce.ca.us/index.aspx?NID=90,http://data.trilliumtransit.com/gtfs/cmbl-ca-us/cmbl-ca-us.zip,,,
 Catalina Safari Shuttle Bus,,,,,,,,Catalina,Los Angeles,https://www.visitcatalinaisland.com/things-to-do/two-harbors/outdoor-activities/safari-bus/,,,,
 Lawndale Beat,90280,0,2,0,63003,0,21601,Lawndale,Los Angeles,http://www.lawndalecity.org/html/depthtml/csd/beat.htm,http://data.trilliumtransit.com/gtfs/cityoflawndale-ca-us/cityoflawndale-ca-us.zip,,,
