@@ -2,6 +2,9 @@ name: Provider data refresh pipeline
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - provider-data-action
   schedule:
     - cron: "0 */2 * * *"
 
