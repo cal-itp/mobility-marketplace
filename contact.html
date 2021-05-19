@@ -2,159 +2,144 @@
 layout: default
 class_name: form
 ---
-<script>const data_contact = { "src": "/scripts/forms/contact.js", "form_target": "form-contact", "confirm_target": "form-confirm" };</script>
+<script>const data_contact = {
+  "src": "/scripts/forms/contact.js",
+  "form_target": "form-contact",
+  "confirm_target": "form-confirm"
+};</script>
 <script defer src="/scripts/forms/contact.js"></script>
 
-<div class="bg-white form">
+<div class="bg-white">
   <article class="page form">
     <div class="content-section">
       <header>
-        <h1>Cal-ITP is here to help</h1>
+        <h1>Get in touch</h1>
       </header>
       <main>
-        <p>Cal-ITP can connect you with pre-procured, competitively bid contracts at competitive rates to help
-          you modernize your transit system. To start the switch to contactless fare collection, you’ll need
-          just three things:</p>
-
-        <h3 id="payment-processor">Payment processor</h3>
-
-        <p>Back-end service that transmits fares from riders’ bank cards and smart devices to transit providers’
-          bank accounts.</p>
-
-        <p>
-          <strong>Current vendors</strong>: 
-          <a href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-10-99-02" target="_blank">Elavon</a>,
-          <a href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-10-99-01" target="_blank">Fiserv</a>
-        </p>
-
-        <p>Questions? Contact Cal-ITP using the form below.</p>
-
-        <h3 id="fare-calculation-software">Fare calculation software</h3>
-
-        <p>Recognizes riders’ unique payment methods and charges the best fare for each trip, accounting for
-          applicable discounts and distance traveled. It also enables “fare capping,” meaning that riders will
-          no longer be charged for additional trips after reaching the cost of an unlimited pass.</p>
-
-        <p><strong>Current vendors</strong>: View the <a href="https://caleprocure.ca.gov/event/77601/0000019394" target="_blank">draft RFP</a></p>
-
-        <h3 id="fare-validators">Fare validators</h3>
-
-        <p>On-board or platform devices equipped with NFC and cEMV technology to read and validate riders’
-          contactless bank cards and smart devices.</p>
-
-        <p><strong>Current vendors</strong>: View the <a href="https://caleprocure.ca.gov/event/77601/0000019394" target="_blank">draft RFP</a></p>
-
-      </main>
-    </div>
-
-    <div class="form-section">
-
-
-
-      <aside class="form-container">
-        <header>
-          <h2>Get in touch</h2>
-        </header>
-
         <p>
           Complete the below form, and someone from the Cal-ITP team will reach out soon to get you started with
           vendor selection, pricing, and procurement—or just to respond to your comment or question.
         </p>
 
-
-
+        <p>
+          You can also <a href="#">sign up for our mailing list</a> for updates on newly available products and services.
+        </p>
 
         <p class="indicates-required">
           <em><span class="indicator">*</span> Indicates required fields</em>
         </p>
 
-        <form role="form" method="POST" id="form-contact" name="contact" data-netlify="true"
-          netlify-honeypot="_honeypot_">
+        <form data-netlify="true" id="form-contact" method="POST" name="contact" netlify-honeypot="_honeypot_">
           <div class="form-group">
-            <label for="first_name" class="form-control-label">First name
-
-              <span class="required-label">*</span></label>
-            <input type="text" class="form-control" name="first_name" placeholder="Nyota" aria-required="true"
-              required />
+            <label class="form-control-label" for="first_name">
+              First name
+              <span class="required-label">*</span>
+            </label>
+            <input
+              required
+              aria-required="true"
+              class="form-control"
+              id="first_name"
+              name="first_name"
+              placeholder="Nyota"
+              type="text"
+            />
           </div>
           <div class="form-group">
-            <label for="last_name" class="form-control-label">Last name
-
-              <span class="required-label">*</span></label>
-            <input type="text" class="form-control" name="last_name" placeholder="Uhura" aria-required="true"
-              required />
+            <label class="form-control-label" for="last_name">
+              Last name
+              <span class="required-label">*</span>
+            </label>
+            <input
+              required
+              aria-required="true"
+              class="form-control"
+              id="last_name"
+              name="last_name"
+              placeholder="Uhura"
+              type="text"
+            />
           </div>
           <div class="form-group">
-            <label for="agency" class="form-control-label">Agency name</label>
-            <input type="text" class="form-control" name="agency" placeholder="Elk Grove Transit" />
+            <label class="form-control-label" for="agency">Agency name</label>
+            <input
+              class="form-control"
+              id="agency"
+              name="agency"
+              placeholder="Elk Grove Transit"
+              type="text"
+            />
           </div>
           <div class="form-group">
-            <label for="role" class="form-control-label">Role</label>
-            <select class="form-control custom-select" name="role">
+            <label class="form-control-label" for="role">Role</label>
+            <select class="form-control custom-select" id="role" name="role">
               <option value="">Select an option</option>
-
               <option value="Transit provider staff">Transit provider staff</option>
-
               <option value="Transit provider CEO">Transit provider CEO</option>
-
               <option value="Technology vendor">Technology vendor</option>
-
               <option value="Other">Other</option>
-
             </select>
           </div>
           <div class="form-group">
-            <label for="email" class="form-control-label">Email address
-
-              <span class="required-label">*</span></label>
-            <input type="email" class="form-control" name="email" placeholder="nyota.uhura@elkgrovecity.org"
-              aria-required="true" required />
+            <label class="form-control-label" for="email">
+              Email address
+              <span class="required-label">*</span>
+            </label>
+            <input
+              aria-required="true"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="nyota.uhura@elkgrovecity.org"
+              required type="email"
+            />
           </div>
           <div class="form-group">
-            <label for="phone" class="form-control-label">Phone number</label>
-            <input id="phone-number" type="tel" class="form-control" name="phone-number"
-              placeholder="4155550199" />
+            <label class="form-control-label" for="phone-number">Phone number</label>
+            <input
+              class="form-control"
+              id="phone-number"
+              name="phone-number"
+              placeholder="4155550199"
+              type="tel"
+            />
           </div>
           <div class="form-group">
-            <label for="comments" class="form-control-label">Other comments or queries</label>
-            <textarea class="form-control" name="comments" placeholder="We welcome your feedback!"
-              rows=6></textarea>
+            <label class="form-control-label" for="comments">Other comments or queries</label>
+            <textarea
+              class="form-control"
+              id="comments"
+              name="comments"
+              placeholder="We welcome your feedback!"
+              rows=6
+            ></textarea>
           </div>
           <div class="form-group submit">
-            <button type="submit" class="btn btn-action btn-primary btn-data-package">Submit</button>
+            <button class="btn btn-action btn-primary btn-data-package" type="submit">Submit</button>
           </div>
           <div class="d-none">
             <label for="_honeypot_"><strong>Do not</strong> fill out this field if you are a human</label>
-            <input name="_honeypot_" />
+            <input id="_honeypot_" name="_honeypot_"/>
           </div>
         </form>
 
         <div class="form-confirm" id="form-confirm">
-          <p><img src="/uploads/email-confirm.svg" alt="Email confirmation illustration"
-              title="Thank you!" /></p>
+          <p>
+            <img alt="Email confirmation illustration"
+                 src="/uploads/email-confirm.svg"
+                 title="Thank you!"
+            />
+          </p>
 
           <p>Thank you! We’ll be in touch soon!</p>
 
           <div class="form-group submit">
-
-
-
-
-
-
-
-
-
             <a class="btn btn-action btn-primary" href="/" target="_self">
               Return home
             </a>
-
-
           </div>
-      </aside>
-
-      </aside>
-
+        </div>
+      </main>
     </div>
   </article>
 </div>
