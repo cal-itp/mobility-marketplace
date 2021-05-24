@@ -69,7 +69,8 @@ $(function () {
     };
 
     // set a width on the main text columns to constrain stretching
-    cols.filter(c => ["service_county", "contact_city"].indexOf(c.field) > -1).forEach(c => c.width = 175);
+    cols.filter(c => ["service_county", "contact_city", "interconnected_providers"].indexOf(c.field) > -1)
+        .forEach(c => c.width = 175);
 
     // create the tabulator data table
     table = new Tabulator(`#${data_table.data_id}`, {
