@@ -1,0 +1,16 @@
+// mm == mobi-mart
+$mm-dark-tan: rgb(246, 243, 237);
+
+.bg-dark-tan {
+  background-color: $mm-dark-tan;
+}
+
+.px-10vw {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.py-4rem {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
