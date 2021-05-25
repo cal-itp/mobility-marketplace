@@ -1,0 +1,14 @@
+.mobile.tile {
+  @extend .container, .d-lg-none, .pt-4, .pb-2;
+
+  .content {
+    @include media-breakpoint-down(xs) {
+      padding-left: $grid-gutter-width / 2;
+      padding-right: $grid-gutter-width / 2;
+    }
+  }
+
+  .content:last-of-type {
+    @extend .mt-4;
+  }
+}

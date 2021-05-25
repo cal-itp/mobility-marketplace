@@ -1,0 +1,92 @@
+$map-height-sm: 460px;
+$map-height-md: 560px;
+
+.page.provider-map {
+  @extend .container-fluid, .pb-4, .px-0;
+
+  .content-section {
+    @include make-row();
+    @extend .pb-4, .mx-0;
+
+    > *{
+      @extend .offset-md-3;
+      @include make-col-ready();
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
+    }
+
+    header h1 {
+      @extend .text-center;
+    }
+  }
+
+  .standout-section {
+    @extend .bg-gray-lightest, .px-4, .py-4, .py-md-5;
+    position: relative;
+
+    *[class^="col-"]:first-of-type {
+      @extend .mb-5, .mb-md-0;
+    }
+  }
+
+  .btn-county {
+    @extend .btn, .btn-sm, .btn-standout, .rounded-50, .px-3, .py-1;
+    min-width: 135px;
+
+    &:after {
+      padding-left: 1rem;
+      font-family: "CaGov" !important;
+      content: "\51";
+      vertical-align: bottom;
+    }
+
+    position: absolute;
+    top: calc(#{$map-height-sm} + #{$grid-gutter-width * 2});
+
+    @include media-breakpoint-up(md) {
+      top: 0.5rem;
+      left: calc((5/12 * 100%) + #{$grid-gutter-width / 2});
+    }
+  }
+
+  #map {
+    @extend .mb-4, .mb-md-0;
+    width: 100%;
+    height: $map-height-sm;
+
+    @include media-breakpoint-up(md) {
+      height: $map-height-md;
+    }
+
+    a {
+      border: none;
+    }
+  }
+
+  .btn-data-package {
+    @extend .d-block, .font-weight-bold, .mx-auto, .p-2;
+    margin-top: 1.25rem;
+    width: 230px;
+  }
+
+  .tabulator.dictionary {
+    .tabulator-row:last-child {
+      border-bottom: 0;
+    }
+    .tabulator-cell {
+      word-wrap: break-word;
+      white-space: normal;
+    }
+  }
+
+  .table.glossary {
+    tbody {
+      tr {
+        td:first-child {
+          width: 25%;
+        }
+      }
+    }
+  }
+}

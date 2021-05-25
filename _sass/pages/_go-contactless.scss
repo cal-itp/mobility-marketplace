@@ -1,0 +1,127 @@
+.go-contactless .go-contactless {
+  & > * {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  #hero {
+    width: 100%;
+    padding: 0px 16px;
+    background: rgb(250,245,238);
+    background: linear-gradient(90deg, rgba(250,245,238,1) 0%, rgba(250,245,238,1) 37%, rgba(235,248,252,1) 37%, rgba(235,248,252,1) 100%);
+    & > section {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 782px;
+      text-align: center;
+      margin-bottom: 16px;
+      background-color: #EBF8FC;
+      background-image: url(https://res.cloudinary.com/carvin/image/upload/v1608688798/calitp/mm-hero-curve.svg);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: -12px bottom;
+      header {
+        padding-top: 120px;
+      }
+      section button {
+        background: #323A45;
+        color: white;
+        border: none;
+        height: 46px;
+        padding: 0 24px;
+        font-weight: bold;
+        border-radius: 6px;
+        font-size: 16px;
+        margin: 16px auto -24px;
+        z-index: 2;
+        position: relative;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        position: relative;
+      }
+    }
+  }
+  #fast-and-simple {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content;
+    grid-gap: 2rem;
+    img {
+      width: 100%;
+    }
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+    }
+    picture {
+      justify-self: center;
+      @include media-breakpoint-up(lg) {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: -5;
+      }
+    }
+  }
+  #long-term {
+    background-color: #F6F3ED;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: min-content 1fr;
+    grid-gap: 2rem;
+    justify-content: center;
+    @include media-breakpoint-up(md) {
+      grid-template-columns: 50vw;
+    }
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    header {
+      grid-column: 1/-1
+    }
+    section {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+  #agencies {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 80vw;
+    grid-template-rows: min-content 1fr 1fr;
+    @include media-breakpoint-up(md) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content 1fr;
+    }
+    img {
+      width: 100%;
+    }
+    header {
+      @include media-breakpoint-up(md) {
+        grid-column: 1/-1
+      }
+    }
+    section {
+      h3, p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  #call-to-action {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+}

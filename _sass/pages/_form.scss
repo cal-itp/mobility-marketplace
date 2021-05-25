@@ -1,0 +1,69 @@
+.page.form {
+  @extend .container-fluid, .mx-0;
+
+  .content-section {
+    @extend .pb-4, .pb-md-5;
+  }
+
+  .form-section {
+    @extend .py-4;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+    background-color: #F6F3ED;
+  }
+
+  .content-section {
+    > * {
+      @extend .offset-md-2, .offset-xl-3;
+    }
+  }
+  .form-section {
+    > * {
+      @extend .offset-md-3, .offset-xl-4;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .content-section, .form-section {
+      @include make-row();
+    }
+    .content-section {
+      > * {
+        @include make-col-ready();
+        @include make-col(8);
+      }
+    }
+    .form-section {
+      > * {
+        @include make-col-ready();
+        @include make-col(6);
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    .content-section {
+      > * {
+        @include make-col-ready();
+        @include make-col(6);
+      }
+    }
+    .form-section {
+      > * {
+        @include make-col-ready();
+        @include make-col(4);
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .form-section {
+      margin-left: -$grid-gutter-width;
+      margin-right: -$grid-gutter-width;
+      padding-left: $grid-gutter-width;
+      padding-right: $grid-gutter-width;
+    }
+  }
+
+  header {
+    @extend .text-md-center;
+  }
+}

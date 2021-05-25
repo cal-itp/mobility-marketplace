@@ -1,0 +1,98 @@
+.card {
+  @extend .border-light;
+}
+
+.card-wrapper {
+  @extend .mb-5;
+
+  .card-title {
+    @extend .h3, .mt-0;
+  }
+
+  .card-body {
+    .card-text {
+      margin-bottom: 2.7rem;
+    }
+    .btn {
+      position: absolute;
+      bottom: 0;
+      left: 1rem;
+
+      @include media-breakpoint-up(lg) {
+        bottom: -2rem;
+      }
+    }
+  }
+
+  .text, .graphic {
+    @extend .align-self-center;
+  }
+
+  .graphic {
+    @extend .d-md-flex, .justify-content-md-center, .mb-3, .mb-md-0;
+  }
+
+  .action-panel {
+    @extend .py-5;
+
+    .card-body {
+      @extend .px-lg-4;
+    }
+
+    .card-img {
+      width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      .btn {
+        left: 1.5rem;
+      }
+    }
+  }
+
+  .action-tile {
+    @extend .h-100, .p-4;
+
+    .row > * {
+      @extend .align-self-center, .h-100;
+    }
+
+    .row > .text {
+      @include media-breakpoint-up(lg) {
+        min-height: 160px;
+      }
+    }
+
+    .card-body {
+      @extend .p-0;
+
+      .card-title {
+        color: $white;
+      }
+    }
+
+    img {
+      @extend .rounded-circle;
+      width: unset;
+      @include media-breakpoint-up(lg) {
+        width: 100%;
+      }
+    }
+  }
+
+  .article {
+    @extend .p-4;
+  }
+
+  .category.image {
+    @extend .h-100;
+
+    .card-text + .card-text {
+      @extend .mt-4;
+    }
+
+    .btn-link {
+      @extend .px-0, .font-weight-bold;
+    }
+  }
+}
