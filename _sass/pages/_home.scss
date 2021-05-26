@@ -1,64 +1,33 @@
-.home {
-  img {
-    width: 100%;
-    // height: 100%;
-  }
-  #hero {
-    padding-bottom: 0 !important;
-  }
-  .mobile.tile.home {
-    padding-top: 0 !important;
-    padding-bottom: 2rem !important;
-  }
-  #hero, #cta {
-    @extend .py-5;
+.home-hero-title {
+  font-size: 1.5rem;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
   }
 
-  #cta {
-    img {
-      // max-height: 276px;
-      @include media-breakpoint-up(md) {
-        // max-height: 358px;
-        width: 100%;
-      }
-    }
+  @include media-breakpoint-up(lg) {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+}
+
+.home-what-is {
+  padding: 4rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
-  #what-is {
-    display: grid;
-    background-color: $blue-lightest;
-    grid-template-areas:
-      ". header ."
-      ". paragraph ."
-      ". cta .";
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content 1fr min-content;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    @include media-breakpoint-up(md) {
-      grid-template-columns: 3vw 10fr 3vw;
-      grid-gap: 1rem;
-    }
-    @include media-breakpoint-up(lg) {
-      grid-template-columns: 1fr 3fr 1fr;
-    }
-    @include media-breakpoint-up(xl) {
-      grid-template-columns: 1fr 2fr 1fr;
-    }
-    @include media-breakpoint-down(sm) {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-    header {
-      grid-area: header;
-      justify-self: center;
-    }
-    p {
-      grid-area: paragraph;
-    }
-    section {
-      grid-area: cta;
-      justify-self: center;
-    }
+  @include media-breakpoint-up(xl) {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
+.home-cta-image {
+  @include media-breakpoint-up(lg) {
+    max-width: 400px;
   }
 }

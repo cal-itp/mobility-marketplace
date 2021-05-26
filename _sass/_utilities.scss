@@ -1,6 +1,10 @@
 // mm == mobi-mart
 $mm-dark-tan: rgb(246, 243, 237);
 
+.bg-blue-lightest {
+  background-color: $blue-lightest;
+}
+
 .bg-dark-tan {
   background-color: $mm-dark-tan;
 }
