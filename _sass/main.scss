@@ -9,7 +9,6 @@
 
 @import "mixins";
 
-@import "components/buttons";
 @import "components/cards";
 @import "components/date-badge";
 @import "components/imaged-section";
@@ -25,4 +24,5 @@
 @import "pages/provider-map";
 @import "pages/go-contactless";
 
+@import "bs-overrides";
 @import "utilities";
