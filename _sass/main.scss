@@ -8,21 +8,17 @@
 @import "../submodules/tabulator/src/scss/bootstrap/tabulator_bootstrap4.scss";
 
 @import "mixins";
+@import "base";
 
-@import "components/cards";
-@import "components/date-badge";
+@import "overrides/buttons";
+@import "overrides/forms";
+@import "overrides/tables";
+
 @import "components/imaged-section";
-@import "components/forms";
-@import "components/hero";
-@import "components/mobile-tile";
-@import "components/tables";
-
-@import "content";
-@import "navigation";
+@import "components/navigation";
 
 @import "pages/home";
 @import "pages/provider-map";
 @import "pages/go-contactless";
 
-@import "bs-overrides";
 @import "utilities";

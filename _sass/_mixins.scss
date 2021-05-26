@@ -2,16 +2,8 @@
   background-color: $gray-light;
 }
 
-.bg-gray-light {
-  @include bg-gray-light();
-}
-
 @mixin bg-gray-lightest() {
   background-color: $gray-lightest;
-}
-
-.bg-gray-lightest {
-  @include bg-gray-lightest();
 }
 
 @mixin link-reset() {

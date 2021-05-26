@@ -9,6 +9,14 @@ $mm-dark-tan: rgb(246, 243, 237);
   background-color: $mm-dark-tan;
 }
 
+.bg-gray-light {
+  @include bg-gray-light();
+}
+
+.bg-gray-lightest {
+  @include bg-gray-lightest();
+}
+
 .px-10vw {
   padding-left: 10vw;
   padding-right: 10vw;
