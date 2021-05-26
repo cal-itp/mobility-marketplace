@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: skinny
 title: Glossary of Key Terms
 ---
 **Americans with Disabilities Act (ADA)**: 1990 federal legislation that prohibits discrimination based on disability status. Title II requires providers of fixed-route transit to offer paratransit services for people with disabilities.  <br/><br/>

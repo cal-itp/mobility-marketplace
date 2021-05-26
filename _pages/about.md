@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: skinny
 title: About us
 ---
 Welcome to the California Mobility Marketplace!
