@@ -1,16 +1,14 @@
 ---
 layout: default
-title-align: left
+title-align: center
 ---
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2">
-      <article>
-        <h1 class="border-bottom text-md-{{ page.title-align }}">{{ page.title }}</h1>
+<div class="container container--skinny">
+  <article>
+    <h1 class="border-bottom pb-3 text-md-{{ page.title-align | default: layout.title-align }}">
+      {{ page.title }}
+    </h1>
 
-        {{ content }}
-      </article>
-    </div>
-  </div>
+    {{ content }}
+  </article>
 </div>
