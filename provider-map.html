@@ -4,108 +4,130 @@ class_name: provider-map
 ---
 <script>const data_mapbox = "mapbox";</script>
 <script defer src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet"/>
 <style>
   .mapboxgl-popup {
     max-width: 400px;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   }
 </style>
-<script>const data_map = {"src":"/scripts/providers/map.js","target_id":"map","data_file":"/metadata/providers/counties.geojson","token":"pk.eyJ1IjoiY2FsaXRwLXRyYW5zaXQtc3RvcmUiLCJhIjoiY2tldzA3dnF5MGlmOTJ4b2p0bWZ6ZnNrcSJ9.AOeqhozE542cmioe-YLi2Q"};</script>
+<script>const data_map = {
+  "src": "/scripts/providers/map.js",
+  "target_id": "map",
+  "data_file": "/metadata/providers/counties.geojson",
+  "token": "pk.eyJ1IjoiY2FsaXRwLXRyYW5zaXQtc3RvcmUiLCJhIjoiY2tldzA3dnF5MGlmOTJ4b2p0bWZ6ZnNrcSJ9.AOeqhozE542cmioe-YLi2Q"
+};</script>
 <script defer src="/scripts/providers/map.js"></script>
 <script>const data_tabulator = "tabulator";</script>
 <script defer src="https://unpkg.com/tabulator-tables@4.8.1/dist/js/tabulator.min.js"></script>
-<script>const data_table = {"src":"/scripts/providers/table.js","data_id":"table-data","dict_id":"table-dict","data_file":"/metadata/providers/providers.json","dict_file":"/metadata/providers/dictionary.json"};</script>
+<script>const data_table = {
+  "src": "/scripts/providers/table.js",
+  "data_id": "table-data",
+  "dict_id": "table-dict",
+  "data_file": "/metadata/providers/providers.json",
+  "dict_file": "/metadata/providers/dictionary.json"
+};</script>
 <script defer src="/scripts/providers/table.js"></script>
 
+<div class="container container--skinny">
+  <header>
+    <h1 class="page-header">California transit providers</h1>
+  </header>
 
-<div class="bg-white provider-map">
-  <article class="page provider-map">
-    <div class="content-section">
-      <header>
-        <h1>California transit providers</h1>
-      </header>
-      <main>
-        <p>From buses, shuttles, and on-demand paratransit to commuter and intercity rail, passengers want
-          transportation that’s easy to find and easy to pay for.</p>
+  <div>
+    <p>
+      From buses, shuttles, and on-demand paratransit to commuter and intercity rail, passengers want transportation
+      that’s easy to find and easy to pay for.
+    </p>
 
-        <p>To better understand the size and scale of opportunities for integration in transportation, the
-          Cal-ITP team compiled a list of California’s transit providers.</p>
+    <p>
+      To better understand the size and scale of opportunities for integration in transportation, the Cal-ITP team
+      compiled a list of California’s transit providers.
+    </p>
 
-        <p>Explore the more than 300 providers on this map and table, which links to each operator’s website and
-          offers just a taste of our full dataset—a CSV download that includes fare revenues, fleet size,
-          vehicle type, and more.</p>
+    <p>
+      Explore the more than 300 providers on this map and table, which links to each operator’s website and offers just
+      a taste of our full dataset—a CSV download that includes fare revenues, fleet size, vehicle type, and more.
+    </p>
+  </div>
+</div>
 
-      </main>
+<div class="container-fluid bg-gray-lightest p-4 py-md-5">
+  <div class="row">
+    <div class="col-md-5 d-flex align-items-center">
+      <div class="provider-california-map" id="map"></div>
     </div>
-    <aside class="standout-section">
-      <div class="row">
-        <div class="col-md-5 d-flex">
-          <div id="map" class="align-self-center"></div>
-        </div>
-        <div class="col-md-7 d-flex">
-          <div id="table-data" class="align-self-center providers" style="width: 100%; height: 630px;"></div>
-        </div>
-      </div>
-    </aside>
-    <aside class="content-section">
-      <header>
-        <h2>About the data</h2>
-      </header>
-      <main>
-        <p>This dataset includes known transit providers in California, covering public transit operators,
-          intercity rail, and special services that may not fall within standard definitions of transit. Each
-          provider entry includes its headquarter city, counties where active, the associated National Transit
-          Database (NTD) ID (if available), the website URL, and key attributes from the NTD. It is currently
-          limited to providers who operate their own services.</p>
+    <div class="col-md-7 provider-agency-table-container">
+      <div
+        class="provider-agency-filters"
+        id="filter-pills"
+      ></div>
+      <div
+        class="provider-agency-table"
+        id="table-data"
+      ></div>
+    </div>
+  </div>
+</div>
 
-        <p>This list is a living document that will be updated regularly with new service provider information.
-          If you have comments, additions, or corrections to this dataset, we’re working on ways for you to
-          share that feedback. Please check back soon.</p>
+<div class="container container--skinny">
+  <article>
+    <header>
+      <h2>About the data</h2>
+    </header>
+    <div>
+      <p>
+        This dataset includes known transit providers in California, covering public transit operators, intercity rail,
+        and special services that may not fall within standard definitions of transit. Each provider entry includes its
+        headquarter city, counties where active, the associated National Transit Database (NTD) ID (if available), the
+        website URL, and key attributes from the NTD. It is currently limited to providers who operate their own
+        services.
+      </p>
 
+      <p>
+        This list is a living document that will be updated regularly with new service provider information. If you have
+        comments, additions, or corrections to this dataset, we’re working on ways for you to share that feedback.
+        Please check back soon.
+      </p>
 
+      <h3>Download the data package</h3>
+      <p>The data package includes the full dataset, data dictionary, and glossary as CSV files.</p>
 
-
-        <h3>Download the data package</h3>
-        <p>The data package includes the full dataset, data dictionary, and glossary as CSV files.</p>
-
-
-
-
-
-
-
-
-
-
-        <a class="btn btn-primary btn-data-package" href="/metadata/providers/package.zip"
-          target="_self">
+      <div class="mt-4 text-center">
+        <a
+          class="btn btn-primary provider-data-download-button"
+          href="/metadata/providers/package.zip"
+          target="_self"
+        >
           Download data
         </a>
+      </div>
+    </div>
+  </article>
 
+  <article>
+    <header>
+      <h2>Data dictionary</h2>
+    </header>
+    <div>
+      <div
+        class="provider-data-dictionary"
+        id="table-dict"
+      ></div>
+    </div>
+  </article>
 
-
-      </main>
-    </aside>
-    <aside class="content-section">
-      <header>
-        <h2>Data dictionary</h2>
-      </header>
-      <main>
-        <div id="table-dict" class="align-self-center dictionary" style="width: 100%; height: 100%;"></div>
-      </main>
-    </aside>
-    <aside class="content-section">
-      <header>
-        <h2>Source</h2>
-      </header>
-      <main>
-        <p>This list was created in April 2019 by consultant Trillium Transit under contract to Cal-ITP. It was
-          compiled from a variety of sources, including Trillium contacts, California State Controller’s State
-          Transit Assistance (STA) summary, American Public Transportation Association (APTA) database,
-          California Transit Association members, and the National Transit Database (NTD).</p>
-
-      </main>
-    </aside>
-  </div>
+  <article>
+    <header>
+      <h2>Source</h2>
+    </header>
+    <div>
+      <p>
+        This list was created in April 2019 by consultant Trillium Transit under contract to Cal-ITP. It was compiled
+        from a variety of sources, including Trillium contacts, California State Controller’s State Transit Assistance
+        (STA) summary, American Public Transportation Association (APTA) database, California Transit Association
+        members, and the National Transit Database (NTD).
+      </p>
+    </div>
+  </article>
 </div>
