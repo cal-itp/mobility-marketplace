@@ -60,11 +60,14 @@
 .imaged-section__image {
   display: flex;
   grid-area: Image;
-  justify-content: center;
   margin-bottom: 2rem;
   margin-top: 1rem;
 
   @include media-breakpoint-up(lg) {
     margin: 0;
+  }
+
+  img {
+    align-self: center; // prevent vertical stretching of images
   }
 }
