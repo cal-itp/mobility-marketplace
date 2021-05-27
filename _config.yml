@@ -43,7 +43,18 @@ collections:
   articles:
     output: true
     permalink: /:collection/:name
-
+navigation:
+  header:
+    - name: Go contactless
+      url: /go-contactless
+    - name: View contracts
+      url: /contracts
+    - name: Provider map
+      url: /provider-map
+    - name: About
+      url: /about
+    - name: Contact us
+      url: /contact
 # Build settings
 # plugins:
 #   - jekyll-feed

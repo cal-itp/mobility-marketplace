@@ -1,0 +1,61 @@
+<header class="mobi-mart-header global-header fixed" role="banner" id="header">
+  <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+
+  <div class="branding">
+    <div class="header-organization-banner">
+      <a href="/">
+        <img
+          class="d-lg-none mobi-mart-logo"
+          src="/uploads/logo-sm.svg"
+          alt="California Integrated Travel Project (Cal-ITP)"
+        />
+        <img
+          class="d-none d-lg-inline mobi-mart-logo"
+          src="/uploads/logo-lg.svg"
+          alt="California Integrated Travel Project (Cal-ITP)"
+        />
+      </a>
+    </div>
+  </div>
+
+  <div class="mobile-controls">
+    <div class="mobile-control-group main-nav-icons">
+      <button
+        id="nav-icon3"
+        class="mobile-control toggle-menu"
+        aria-expanded="false"
+        aria-controls="navigation"
+        data-toggle="collapse"
+        data-target="#navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <nav
+      id="navigation"
+      class="main-navigation singlelevel auto-highlight no-icons nav"
+    >
+      <ul id="nav_list" class="top-level-nav">
+        {% for menu_item in site.navigation.header %}
+          {% assign current_page = page.url | replace: '.html', '' %}
+          <li class="nav-item">
+            <a
+              href="{{ menu_item.url }}"
+              class="first-level-link"
+              {% if menu_item.url == current_page %}aria-current="page"{% endif %}
+            >
+              {{ menu_item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
