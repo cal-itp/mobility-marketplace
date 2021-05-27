@@ -43,18 +43,11 @@
       class="main-navigation singlelevel auto-highlight no-icons nav"
     >
       <ul id="nav_list" class="top-level-nav">
-        {% for menu_item in site.navigation.header %}
-          {% assign current_page = page.url | replace: '.html', '' %}
-          <li class="nav-item">
-            <a
-              href="{{ menu_item.url }}"
-              class="first-level-link"
-              {% if menu_item.url == current_page %}aria-current="page"{% endif %}
-            >
-              {{ menu_item.name }}
-            </a>
-          </li>
-        {% endfor %}
+        {% include link-repeater.html
+             menu_items=site.navigation.header
+             list_class="nav-item"
+             anchor_class="first-level-link"
+        %}
       </ul>
     </nav>
   </div>
