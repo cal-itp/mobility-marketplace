@@ -1,0 +1,13 @@
+.mobi-mart-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .mobi-mart-header {}
+
+  .mobi-mart-content {
+    flex: 1;
+  }
+
+  .mobi-mart-footer {}
+}
