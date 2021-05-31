@@ -1,18 +1,53 @@
+.contact-submission-success {
+  display: none;
+  margin-top: map-get($spacers, 4);
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: map-get($spacers, 5);
+  }
+}
+
+.contact-submit {
+  margin-bottom: 0;
+  margin-top: map-get($spacers, 4);
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    margin-top: map-get($spacers, 5);
+  }
+
+  input[type=submit],
+  .btn {
+    min-width: 150px;
+
+    @include media-breakpoint-up(md) {
+      width: 32%;
+    }
+  }
+}
+
+//
+// Overrides
+//
+
 .form-group {
-  @extend .mb-4;
+  margin-bottom: map-get($spacers, 4);
 
   label {
-    @extend .pl-md-3;
+    @include media-breakpoint-up(md) {
+      padding-left: map-get($spacers, 3);
+    }
   }
 
   label.form-check-inline {
-    @extend .mb-3;
     font-weight: normal;
+    margin-bottom: map-get($spacers, 3);
     padding-left: 2.4rem !important;
 
     .check-icon-checkbox {
-      @extend .rounded-lg;
       border: solid 2px $black;
+      border-radius: $border-radius-lg;
       background-color: $white;
       font-size: 1rem;
       top: 1rem;
@@ -28,31 +63,15 @@
       font-weight: 600;
     }
   }
-
-  &.submit {
-    @extend .d-flex, .justify-content-center, .mt-4, .mt-md-5;
-
-    input[type=submit], .btn {
-      min-width: 150px;
-      @include media-breakpoint-up(md) {
-        width: 32%;
-      }
-    }
-  }
 }
 
 .form-control {
-  @extend .rounded-lg;
   border: solid 2px $black;
+  border-radius: $border-radius-lg;
   color: $text-color;
   font-size: $custom-select-bg-size;
 
   &::placeholder {
     color: #757575;
   }
-}
-
-.form-confirm {
-  @extend .mt-4, .mt-lg-5, .text-center;
-  display: none;
 }
