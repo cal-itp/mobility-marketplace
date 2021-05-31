@@ -36,7 +36,12 @@
 <body class="mobi-mart-container {{ page.class_name }} {{ page.collection }}">
   {% include site-header.html %}
 
-  <div id="main-content" class="mobi-mart-content">
+  {% comment %}
+    Purposes of these attributes:
+      - #main-content for a11y skipping
+      - .main-content a magic class that's used by cagov.core.js for adding the "Back to Top" side button
+  {% endcomment %}
+  <div id="main-content" class="mobi-mart-content main-content">
     <main class="main-primary">
       {{content}}
     </main>
