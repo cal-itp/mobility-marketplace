@@ -1,0 +1,7 @@
+.text-scope {
+  // Style all anchors except for those styled as buttons
+  a:not(.btn) {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
