@@ -3,60 +3,62 @@ body {
 }
 
 blockquote {
-  @extend .bg-gray-light, .rounded-lg;
-
+  background-color: $gray-light;
+  border-radius: $border-radius-lg;
   border-width: 0;
   padding: 2rem;
   font-size: 1.5rem;
 
-  p:before {
-    content: "“";
-  }
-  p:after {
-    content: "”";
-  }
   p {
     margin-bottom: 0.5rem;
+
+    &::before,
+    &::after {
+      content: "”";
+    }
   }
 
   footer {
-    @extend .text-body;
+    color: $text-color;
     font-size: 0.8rem;
     font-weight: 900;
   }
 }
 
 figure {
-  @extend .mb-3;
-
   background: none;
   border: none;
+  margin-bottom: map-get($spacers, 3);
 
   figcaption {
     font-style: italic;
   }
 }
 
-h1,h2,h3,h4,h5,h6 {
-  @extend .font-weight-bold;
+h1, h2, h3,
+h4, h5, h6 {
+  font-weight: bold;
 }
 
 h1 {
-  @extend .mt-0;
+  margin-top: 0;
 }
 
 hr {
-  @extend .my-4, .w-100;
+  margin-bottom: map-get($spacers, 4);
+  margin-top: map-get($spacers, 4);
+  width: 100%;
 }
 
 .youtube {
-  @extend .mx-auto, .mb-3;
-
-  width: 100%;
   height: 315px;
+  margin-bottom: map-get($spacers, 3);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 
   @include media-breakpoint-up(md) {
-    width: 560px;
     height: 315px;
+    width: 560px;
   }
 }
