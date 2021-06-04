@@ -1,0 +1,5 @@
+.main-content a {
+  &:not(.btn) {
+    font-weight: bold;
+  }
+}

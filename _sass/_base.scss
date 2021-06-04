@@ -2,15 +2,6 @@ body {
   font-size: 1rem;
 }
 
-a {
-  @include link-reset();
-
-  .main-content article & {
-    font-weight: bold;
-    border-bottom: solid 2px $primary;
-  }
-}
-
 blockquote {
   @extend .bg-gray-light, .rounded-lg;
 
