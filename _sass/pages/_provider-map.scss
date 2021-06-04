@@ -12,6 +12,10 @@ $map-height-md: 560px;
   @include media-breakpoint-up(md) {
     height: $map-height-md;
   }
+
+  .mapboxgl-ctrl-bottom-left {
+    display: none;
+  }
 }
 
 .provider-agency-table-container {
