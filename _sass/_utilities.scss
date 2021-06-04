@@ -10,11 +10,11 @@ $mm-dark-tan: rgb(246, 243, 237);
 }
 
 .bg-gray-light {
-  @include bg-gray-light();
+  background-color: $gray-light;
 }
 
 .bg-gray-lightest {
-  @include bg-gray-lightest();
+  background-color: $gray-lightest;
 }
 
 // Extend Bootstrap's container class by just setting some known widths for our
