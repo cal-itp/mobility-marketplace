@@ -1,146 +1,140 @@
 ---
-layout: default
-class_name: form
+layout: skinny
+title: Get in touch
 ---
-<script>const data_contact = {
-  "src": "/scripts/forms/contact.js",
-  "form_target": "form-contact",
-  "confirm_target": "form-confirm"
-};</script>
+
+<script>
+  const data_contact = {
+    "src": "/scripts/forms/contact.js",
+    "form_target": "form-contact",
+    "confirm_target": "form-confirm"
+  };
+</script>
 <script defer src="/scripts/forms/contact.js"></script>
 
-<div class="bg-white">
-  <article class="page form">
-    <div class="content-section">
-      <header>
-        <h1>Get in touch</h1>
-      </header>
-      <main>
-        <p>
-          Complete the below form, and someone from the Cal-ITP team will reach out soon to get you started with
-          vendor selection, pricing, and procurement—or just to respond to your comment or question.
-        </p>
+<p>
+  Complete the below form, and someone from the Cal-ITP team will reach out soon to get you started with
+  vendor selection, pricing, and procurement—or just to respond to your comment or question.
+</p>
 
-        <p>
-          You can also <a href="{{ site.mailing_list }}">sign up for our mailing list</a>
-          for updates on newly available products and services.
-        </p>
+<p>
+  You can also <a href="{{ site.mailing_list }}">sign up for our mailing list</a>
+  for updates on newly available products and services.
+</p>
 
-        <p class="indicates-required">
-          <em><span class="indicator">*</span> Indicates required fields</em>
-        </p>
+<p class="indicates-required">
+  <em><span class="required-label">*</span> Indicates required fields</em>
+</p>
 
-        <form data-netlify="true" id="form-contact" method="POST" name="contact" netlify-honeypot="_honeypot_">
-          <div class="form-group">
-            <label class="form-control-label" for="first_name">
-              First name
-              <span class="required-label">*</span>
-            </label>
-            <input
-              required
-              aria-required="true"
-              class="form-control"
-              id="first_name"
-              name="first_name"
-              placeholder="Nyota"
-              type="text"
-            />
-          </div>
-          <div class="form-group">
-            <label class="form-control-label" for="last_name">
-              Last name
-              <span class="required-label">*</span>
-            </label>
-            <input
-              required
-              aria-required="true"
-              class="form-control"
-              id="last_name"
-              name="last_name"
-              placeholder="Uhura"
-              type="text"
-            />
-          </div>
-          <div class="form-group">
-            <label class="form-control-label" for="agency">Agency name</label>
-            <input
-              class="form-control"
-              id="agency"
-              name="agency"
-              placeholder="Elk Grove Transit"
-              type="text"
-            />
-          </div>
-          <div class="form-group">
-            <label class="form-control-label" for="role">Role</label>
-            <select class="form-control custom-select" id="role" name="role">
-              <option value="">Select an option</option>
-              <option value="Transit provider staff">Transit provider staff</option>
-              <option value="Transit provider CEO">Transit provider CEO</option>
-              <option value="Technology vendor">Technology vendor</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-control-label" for="email">
-              Email address
-              <span class="required-label">*</span>
-            </label>
-            <input
-              aria-required="true"
-              class="form-control"
-              id="email"
-              name="email"
-              placeholder="nyota.uhura@elkgrovecity.org"
-              required type="email"
-            />
-          </div>
-          <div class="form-group">
-            <label class="form-control-label" for="phone-number">Phone number</label>
-            <input
-              class="form-control"
-              id="phone-number"
-              name="phone-number"
-              placeholder="4155550199"
-              type="tel"
-            />
-          </div>
-          <div class="form-group">
-            <label class="form-control-label" for="comments">Other comments or queries</label>
-            <textarea
-              class="form-control"
-              id="comments"
-              name="comments"
-              placeholder="We welcome your feedback!"
-              rows=6
-            ></textarea>
-          </div>
-          <div class="form-group submit">
-            <button class="btn btn-action btn-primary btn-data-package" type="submit">Submit</button>
-          </div>
-          <div class="d-none">
-            <label for="_honeypot_"><strong>Do not</strong> fill out this field if you are a human</label>
-            <input id="_honeypot_" name="_honeypot_"/>
-          </div>
-        </form>
+<form data-netlify="true" id="form-contact" method="POST" name="contact" netlify-honeypot="_honeypot_">
+  <div class="form-group">
+    <label class="form-control-label" for="first_name">
+      First name
+      <span class="required-label">*</span>
+    </label>
+    <input
+      required
+      aria-required="true"
+      class="form-control"
+      id="first_name"
+      name="first_name"
+      placeholder="Nyota"
+      type="text"
+    />
+  </div>
+  <div class="form-group">
+    <label class="form-control-label" for="last_name">
+      Last name
+      <span class="required-label">*</span>
+    </label>
+    <input
+      required
+      aria-required="true"
+      class="form-control"
+      id="last_name"
+      name="last_name"
+      placeholder="Uhura"
+      type="text"
+    />
+  </div>
+  <div class="form-group">
+    <label class="form-control-label" for="agency">Agency name</label>
+    <input
+      class="form-control"
+      id="agency"
+      name="agency"
+      placeholder="Elk Grove Transit"
+      type="text"
+    />
+  </div>
+  <div class="form-group">
+    <label class="form-control-label" for="role">Role</label>
+    <select class="form-control custom-select" id="role" name="role">
+      <option value="">Select an option</option>
+      <option value="Transit provider staff">Transit provider staff</option>
+      <option value="Transit provider CEO">Transit provider CEO</option>
+      <option value="Technology vendor">Technology vendor</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="form-control-label" for="email">
+      Email address
+      <span class="required-label">*</span>
+    </label>
+    <input
+      aria-required="true"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="nyota.uhura@elkgrovecity.org"
+      required type="email"
+    />
+  </div>
+  <div class="form-group">
+    <label class="form-control-label" for="phone-number">Phone number</label>
+    <input
+      class="form-control"
+      id="phone-number"
+      name="phone-number"
+      placeholder="4155550199"
+      type="tel"
+    />
+  </div>
+  <div class="form-group">
+    <label class="form-control-label" for="comments">Other comments or queries</label>
+    <textarea
+      class="form-control"
+      id="comments"
+      name="comments"
+      placeholder="We welcome your feedback!"
+      rows=6
+    ></textarea>
+  </div>
+  <div class="contact-submit">
+    <button class="btn btn-primary btn-data-package" type="submit">Submit</button>
+  </div>
+  <div class="d-none">
+    <label for="_honeypot_"><strong>Do not</strong> fill out this field if you are a human</label>
+    <input id="_honeypot_" name="_honeypot_"/>
+  </div>
+</form>
 
-        <div class="form-confirm" id="form-confirm">
-          <p>
-            <img alt="Email confirmation illustration"
-                 src="/uploads/email-confirm.svg"
-                 title="Thank you!"
-            />
-          </p>
+<div class="contact-submission-success" id="form-confirm">
+  <p>
+    <img
+      alt="Email confirmation illustration"
+      class="img-fluid"
+      src="/uploads/email-confirm.svg"
+      title="Thank you!"
+    />
+  </p>
 
-          <p>Thank you! We’ll be in touch soon!</p>
+  <p>Thank you! We’ll be in touch soon!</p>
 
-          <div class="form-group submit">
-            <a class="btn btn-action btn-primary" href="/" target="_self">
-              Return home
-            </a>
-          </div>
-        </div>
-      </main>
-    </div>
-  </article>
+  <div>
+    <a class="btn btn-primary" href="/" target="_self">
+      Return home
+    </a>
+  </div>
 </div>

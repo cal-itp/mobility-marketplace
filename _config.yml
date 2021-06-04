@@ -43,7 +43,32 @@ collections:
   articles:
     output: true
     permalink: /:collection/:name
-
+navigation:
+  header:
+    - name: Go contactless
+      url: /go-contactless
+    - name: View contracts
+      url: /contracts
+    - name: Provider map
+      url: /provider-map
+    - name: About
+      url: /about
+    - name: Contact us
+      url: /contact
+  footer:
+    - name: Back to top
+      url: "#main-content"
+    - name: Glossary
+      url: /glossary-of-key-terms
+    - name: Privacy policy
+      url: https://dot.ca.gov/privacy-policy
+      target: _blank
+    - name: Conditions of use
+      url: https://dot.ca.gov/conditions-of-use
+      target: _blank
+    - name: Register to vote
+      url: https://registertovote.ca.gov/
+      target: _blank
 # Build settings
 # plugins:
 #   - jekyll-feed

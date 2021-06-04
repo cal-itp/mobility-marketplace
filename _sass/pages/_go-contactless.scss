@@ -1,0 +1,71 @@
+// gc == go-contactless (our prefix for this Sass file)
+$gc-tan: rgb(250, 245, 238);
+$gc-blue: rgb(235, 248, 252);
+
+.go-contactless-section {
+  padding: 4rem 10vw;
+}
+
+.go-contactless-hero {
+  background: $gc-tan;
+  background: linear-gradient(
+      90deg,
+      $gc-tan 0,
+      $gc-tan 37%,
+      $gc-blue 37%,
+      $gc-blue 100%
+  );
+}
+
+.go-contactless-hero__inner {
+  background-image: url(https://res.cloudinary.com/carvin/image/upload/v1608688798/calitp/mm-hero-curve.svg);
+  background-position: -12px bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  margin: 0 auto;
+  max-width: 782px;
+  padding-top: 50px;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 120px;
+  }
+}
+
+.go-contactless-benefit-card-container {
+  display: grid;
+  grid-gap: 2rem;
+  justify-content: center;
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.go-contactless-benefit-card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.go-contactless-agency-container {
+  display: grid;
+  grid-gap: 2rem;
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.go-contactless-agency {
+  h3, p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}

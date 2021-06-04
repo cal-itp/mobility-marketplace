@@ -1,0 +1,42 @@
+// mm == mobi-mart
+$mm-dark-tan: rgb(246, 243, 237);
+
+.bg-blue-lightest {
+  background-color: $blue-lightest;
+}
+
+.bg-dark-tan {
+  background-color: $mm-dark-tan;
+}
+
+.bg-gray-light {
+  background-color: $gray-light;
+}
+
+.bg-gray-lightest {
+  background-color: $gray-lightest;
+}
+
+// Extend Bootstrap's container class by just setting some known widths for our
+// "skinny" page container.
+.container--skinny {
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: 2/3 * 100%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 50%;
+  }
+}
+
+.px-10vw {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.py-4rem {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}

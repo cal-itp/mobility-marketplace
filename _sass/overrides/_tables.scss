@@ -1,0 +1,58 @@
+.table,
+.tabulator {
+  font-size: 0.9rem;
+  border: solid 1px $rowBorderColor;
+}
+
+.tabulator .tabulator-header,
+.tabulator .tabulator-header .tabulator-frozen.tabulator-frozen-left,
+.tabulator .tabulator-row .tabulator-frozen.tabulator-frozen-left {
+  border-width: 1px;
+}
+
+.tabulator .tabulator-header,
+.table thead th {
+  border-top: 0;
+}
+
+.tabulator .tabulator-header,
+.tabulator .tabulator-header:hover,
+.tabulator-row .tabulator-frozen,
+.tabulator .tabulator-header .tabulator-col.tabulator-frozen {
+  background-color: #fff;
+}
+
+.tabulator .tabulator-header .tabulator-col.tabulator-sortable:hover {
+  background-color: $rowHoverBackground;
+}
+
+.tabulator-cell:not(.tabulator-frozen),
+.tabulator-col:not(.tabulator-frozen),
+.table thead th,
+.table tbody td {
+  border-right: solid 1px $rowBorderColor;
+}
+
+.table thead th,
+.tabulator-cell > a,
+td a {
+  border-bottom: 0 !important;
+}
+
+.tabulator-col .tabulator-col-sorter i {
+  // our select indicator is an arrow pointing down
+  background: no-repeat center escape-svg($custom-select-indicator);
+  background-size: 1rem;
+  height: $custom-select-bg-size;
+  width: $custom-select-bg-size;
+}
+
+.tabulator-col[aria-sort="asc"] .tabulator-col-sorter i {
+  // ensure the select indicator points down
+  transform: scaleY(1);
+}
+
+.tabulator-col[aria-sort="desc"] .tabulator-col-sorter i {
+  // flip the select indicator on the Y-axis, to point up
+  transform: scaleY(-1);
+}

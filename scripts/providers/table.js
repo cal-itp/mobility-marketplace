@@ -131,30 +131,41 @@ $(function () {
     ]);
   };
 
-  const pill = $("<button />").addClass("btn-county").attr("aria-label", "Clear").on("click", () => clearPill());
-  const makePill = (data) => {
-    if (data && data.county && data.num_providers) {
-      pill.text(`${data.county} (${data.num_providers})`);
-      $(`#${data_table.data_id}`).parents("aside").prepend(pill);
-    }
-  };
-  const clearPill = () => {
-    pill.detach();
+  const $filterSection = $("#filter-pills");
+  const $pill = $(`
+    <div class="pill">
+      <span class="sr-only">Filtered by:</span>
+      <span class="county"></span>
+      (<span class="count"></span>)
+  
+      <button class="pill__close">
+        <span class="sr-only">Clear filter</span>
+      </button>
+    </div>
+  `);
+  const clearCountyFilter = () => {
+    $pill.detach();
     refresh();
   };
 
-  const handleClick = (e) => {
+  $pill.find('.pill__close').on('click', clearCountyFilter);
+
+  const handleCountyClick = (e) => {
     if (e && e.detail) {
       const data = e.detail;
       refresh(data.properties.county);
-      makePill(data.properties);
+
+      $pill.find('.county').text(data.properties.county);
+      $pill.find('.count').text(data.properties.num_providers);
+
+      $filterSection.prepend($pill);
     }
     else {
-      clearPill();
+      clearCountyFilter();
     }
   };
 
-  document.addEventListener("mapClick", handleClick);
+  document.addEventListener("mapClick", handleCountyClick);
 
   const dataFiles = [data_table.data_file, data_table.dict_file];
   const jobs = dataFiles.map((dataFile) => $.get(dataFile, (data) => data));
