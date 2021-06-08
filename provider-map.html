@@ -3,11 +3,9 @@ layout: default
 class_name: provider-map
 gtags_script: |
   function handleDownloadClick() {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Downloads',
-      eventAction: 'download',
-      eventLabel: 'Provider Data Package',
+    gtag('event', 'download', {
+      event_category: 'downloads',
+      event_label: 'Provider Data Package',
     });
   }
 ---
