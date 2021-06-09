@@ -1,0 +1,20 @@
+.contactless-technology {
+  background-color: $blue-lightest;
+  border-radius: $border-radius-lg;
+  display: flex;
+  margin-bottom: map-get($spacers, 4);
+  padding: map-get($spacers, 4);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contactless-technology__icon {
+  margin-right: map-get($spacers, 4);
+}
+
+.contactless-technology__header {
+  margin: 0;
+  margin-bottom: map-get($spacers, 2);
+}

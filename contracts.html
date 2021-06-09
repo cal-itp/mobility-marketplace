@@ -1,45 +1,85 @@
 ---
 layout: skinny
-title: Contracts
+title: Contactless fare collection
 show_newsletter: true
+
+new_technology:
+  - icon: payment-processor.svg
+    icon-alt: Dollar sign wrapped with arrows in a circular shape
+    title: Payment Processor
+    url: "#"
+    button: View contracts
+    content: >
+      Back-end service that transmits fares from riders' bank cards and smart devices to transit providers' bank accounts.
+
+  - icon: fare-calculation.svg
+    icon-alt: Mathematical symbols
+    title: Fare calculation software
+    url: "#"
+    button: View contracts
+    content: >
+      Recognizes riders' unique payment methods and charges the best fare for each trip, accounting for applicable
+      discounts and distance traveled. It also enables "fare capping," meaning that riders will no longer be charged for
+      additional trips after reaching the cost of an unlimited pass.
+
+  - icon: fare-validator.svg
+    icon-alt: A fare validation device
+    title: Fare validators
+    url: false
+    button: Coming Summer 2021
+    content: >
+      On-board or platform devices equipped with NFC and cEMV technology to read and validate riders’ contactless bank
+      cards and smart devices.
 ---
 
 <p>
-  To add contactless fare collection, transit providers will need to procure up to three new technologies:
+  On behalf of Caltrans, Cal-ITP can connect you with pre-approved contracts and competitive rates to help you modernize
+  your transit system. We recommend creating an action plan for becoming GTFS-compliant before going contactless.
 </p>
 
-<h2 id="payment-processor" class="h3">Payment processor</h2>
-
-<p>
-  Back-end service that transmits fares from riders' bank cards and smart devices to transit providers' bank
-  accounts.
+<p class="my-4">
+  <a
+    href="https://dot.ca.gov/programs/rail-and-mass-transportation/gtfs/assessment-process-documentation"
+    class="btn btn-outline-primary"
+  >
+    Learn how to become GTFS-compliant
+  </a>
 </p>
 
-<p>
-  <strong>Current vendors</strong>:
-  <a href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-10-99-02" target="_blank">Elavon</a>,
-  <a href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-10-99-01" target="_blank">Fiserv</a>
+<p class="mb-4">
+  To add contactless fare collection, you will need to procure up to three new technologies:
 </p>
 
-<p>
-  Questions? Contact Cal-ITP using <a href="/contact">our contact form</a>.
+{% for technology in page.new_technology %}
+  <article class="contactless-technology">
+    <div class="contactless-technology__icon">
+      <img src="/uploads/{{ technology.icon }}" alt="{{ technology.icon-alt }}" />
+    </div>
+    <div class="contactless-technology__content">
+      <h2 class="contactless-technology__header h3">{{ technology.title }}</h2>
+
+      <div class="mb-4">
+        {{ technology.content | markdownify }}
+      </div>
+
+      {% if technology.url %}
+        <a class="btn btn-primary px-5" href="{{ technology.url }}">
+      {% else %}
+        <p class="text-red"><em><strong>
+      {% endif %}
+
+      {{ technology.button }}
+
+      {% if technology.url %}
+        </a>
+      {% else %}
+        </strong></em></p>
+      {% endif %}
+    </div>
+  </article>
+{% endfor %}
+
+<!-- @TODO: Replace with link to all contracts -->
+<p class="text-right my-5">
+  <a href="#">View all contracts</a>
 </p>
-
-<h2 id="fare-calculation-software" class="h3">Fare calculation software</h2>
-
-<p>
-  Recognizes riders' unique payment methods and charges the best fare for each trip, accounting for applicable
-  discounts and distance traveled. It also enables "fare capping," meaning that riders will no longer be charged
-  for additional trips after reaching the cost of an unlimited pass.
-</p>
-
-<p><strong>Current vendors</strong>: View the <a href="https://caleprocure.ca.gov/event/77601/0000019394" target="_blank">draft RFP</a></p>
-
-<h2 id="fare-validators" class="h3">Fare validators</h2>
-
-<p>
-  On-board or platform devices equipped with NFC and cEMV technology to read and validate riders'
-  contactless bank cards and smart devices.
-</p>
-
-<p><strong>Current vendors</strong>: View the <a href="https://caleprocure.ca.gov/event/77601/0000019394" target="_blank">draft RFP</a></p>

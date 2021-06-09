@@ -17,6 +17,10 @@ $mm-dark-tan: rgb(246, 243, 237);
   background-color: $gray-lightest;
 }
 
+.text-red {
+  color: red;
+}
+
 // Extend Bootstrap's container class by just setting some known widths for our
 // "skinny" page container.
 .container--skinny {
