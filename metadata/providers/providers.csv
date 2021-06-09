@@ -1,4 +1,4 @@
-provider,ntd_id,voms_dr,voms,upt_dr,upt,fare_revenue_dr,fare_revenue,fare_type,payment_accepted,contact_city,service_county,interconnected_providers,url,fare_url,gtfs,gtfs_rt_service_alerts,gtfs_rt_trip_updates,gtfs_rt_vehicle_locations
+provider,ntd_id,voms_dr,voms,upt_dr,upt,fare_revenue_dr,fare_revenue,fare_type,payments_accepted,contact_city,service_county,interconnected_providers,url,fare_url,gtfs,gtfs_rt_service_alerts,gtfs_rt_trip_updates,gtfs_rt_vehicle_locations
 City of Fontana,,,,,,,,,,Fontana,San Bernardino,,https://www.fontana.org/,,,,,
 AC Transit,90014,794,2382,770782,52019068,2917515,66134484,,"cash, card, benefit",Oakland,"Alameda, Contra Costa",,http://www.actransit.org/,,https://api.actransit.org/transit/gtfs/current?token=2512B81107A09D2DC44895CDDC650D42,,,
 Pasadena Transit,99424,31,31,80378,1542871,50870,742820,Flat,"cash, card",Pasadena,Los Angeles,Low-Income Fare is Easy,https://www.cityofpasadena.net/pasadena-transit/,https://www.cityofpasadena.net/pasadena-transit/fares/,http://rt.pasadenatransit.net/rtt/public/utility/gtfs.aspx,,https://transitfeeds.com/p/pasadena-transit/1054,
