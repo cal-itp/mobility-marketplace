@@ -1,0 +1,65 @@
+---
+layout: default
+title: Pre-approved Contracts
+show_newsletter: true
+---
+
+<div class="container container--skinny">
+  <article class="mb-5">
+    <h1 class="page-header">Pre-approved Contracts</h1>
+    <p class="mb-0">
+      On behalf of Caltrans, Cal-ITP can connect you with pre-approved contracts and competitive rates to help you modernize
+      your transit system. Click the contract number below to view all procurement documentation.
+    </p>
+  </article>
+</div>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Contract</th>
+        <th>Category</th>
+        <th>Product</th>
+        <th>Vendor</th>
+        <th>User Instructions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for contract in site.data.contracts %}
+        <tr>
+          <td>
+            <a
+              href="{{ contract.contract_url }}"
+              referrerpolicy="no-referrer"
+              target="_blank"
+            >
+              {{ contract.contract }}
+            </a>
+          </td>
+          <td>
+            {{ contract.category }}
+          </td>
+          <td>
+            {{ contract.product }}
+          </td>
+          <td>
+            {{ contract.vendor }}
+          </td>
+          <td>
+            {% if contract.user_instructions %}
+              <a
+                href="{{ contract.user_instructions}}"
+                aria-label="User instructions for using {{ contract.vendor }} as a vendor"
+                referrerpolicy="no-referrer"
+                target="_blank"
+              >
+                Instructions
+              </a>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
