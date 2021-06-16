@@ -10,3 +10,17 @@
   category: Contactless
   product: Payment Processor
   user_instructions: ~
+
+# TODO: Remove these dummy contracts that are useful only for testing
+- contract: 5-10-99-05
+  contract_url: "#"
+  vendor: Vendor Name
+  category: Contactless
+  product: Fare calculations
+  user_instructions: ~
+- contract: 5-10-99-06
+  contract_url: "#"
+  vendor: Vendor Name
+  category: Contactless
+  product: Fare calculations
+  user_instructions: ~
