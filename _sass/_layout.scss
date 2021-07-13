@@ -7,6 +7,9 @@
 
   .mobi-mart-content {
     flex: 1;
+
+    // Magic number to get 110px spacing between bottom of nav text and first element of the page.
+    margin-top: 50px;
   }
 
   .mobi-mart-footer {}
