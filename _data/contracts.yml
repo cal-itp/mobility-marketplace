@@ -1,26 +1,20 @@
-- contract: 5-10-99-01
-  contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-10-99-01
-  vendor: Fiserv
-  category: Contactless
-  product: Payment Processor
-  user_instructions: ~
-- contract: 5-10-99-02
-  contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-10-99-02
-  vendor: Elavon
-  category: Contactless
-  product: Payment Processor
-  user_instructions: ~
+footnotes:
+  1: Available to California agencies only.
 
-# TODO: Remove these dummy contracts that are useful only for testing
-- contract: 5-10-99-05
-  contract_url: "#"
-  vendor: Vendor Name
-  category: Contactless
-  product: Fare calculations
-  user_instructions: ~
-- contract: 5-10-99-06
-  contract_url: "#"
-  vendor: Vendor Name
-  category: Contactless
-  product: Fare calculations
-  user_instructions: ~
+entries:
+  - contract: 5-10-99-01
+    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-10-99-01
+    vendor: Fiserv
+    category: Contactless
+    product: Payment Processor
+    user_instructions: ~
+    footnotes:
+      - 1
+  - contract: 5-10-99-02
+    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-10-99-02
+    vendor: Elavon
+    category: Contactless
+    product: Payment Processor
+    user_instructions: ~
+    footnotes:
+      - 1

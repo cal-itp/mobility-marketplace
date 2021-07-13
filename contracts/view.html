@@ -19,7 +19,7 @@ show_newsletter: true
 </div>
 
 <div class="container">
-  <div
+  <section
     id="pre-approved-contracts"
     class="filterable-table-container"
     data-role="smart-table"
@@ -32,12 +32,12 @@ show_newsletter: true
           <th tabulator-formatter="html">Contract</th>
           <th>Category</th>
           <th>Product</th>
-          <th>Vendor</th>
-          <th tabulator-formatter="html">User Instructions</th>
+          <th tabulator-formatter="html">Vendor</th>
+          {% comment %}<th tabulator-formatter="html">User Instructions</th>{% endcomment %}
         </tr>
       </thead>
       <tbody>
-        {% for contract in site.data.contracts %}
+        {% for contract in site.data.contracts.entries %}
           <tr>
             <td>
               <a
@@ -56,7 +56,19 @@ show_newsletter: true
             </td>
             <td>
               {{ contract.vendor }}
+              {% for footnote in contract.footnotes %}
+                <sup>
+                  <a
+                    id="fn-{{ footnote }}-ref"
+                    href="#fn-{{ footnote }}"
+                    class="no-default-style footnote-link"
+                  >
+                    {{ footnote }}
+                  </a>
+                </sup>
+              {% endfor %}
             </td>
+            {% comment %}
             <td>
               {% if contract.user_instructions %}
                 <a
@@ -69,9 +81,19 @@ show_newsletter: true
                 </a>
               {% endif %}
             </td>
+            {% endcomment %}
           </tr>
         {% endfor %}
       </tbody>
     </table>
-  </div>
+    <footer>
+      <ol class="footnote-listing">
+        {% for footnote in site.data.contracts.footnotes %}
+          <li id="fn-{{ footnote[0] }}">
+            {{ footnote[1] }}
+          </li>
+        {% endfor %}
+      </ol>
+    </footer>
+  </section>
 </div>
