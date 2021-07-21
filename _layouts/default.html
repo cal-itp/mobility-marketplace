@@ -33,7 +33,7 @@
   <meta name="theme-color" content="{{site.theme_color}}">
 </head>
 
-<body class="mobi-mart-container {{ page.class_name }} {{ page.collection }}">
+<body class="mobi-mart-container {{ layout.class_name | default: page.class_name }} {{ page.collection }}">
   {% include site-header.html %}
 
   {% comment %}
