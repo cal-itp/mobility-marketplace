@@ -17,6 +17,10 @@ $mm-dark-tan: rgb(246, 243, 237);
   background-color: $gray-lightest;
 }
 
+.text-red {
+  color: red;
+}
+
 // Extend Bootstrap's container class by just setting some known widths for our
 // "skinny" page container.
 .container--skinny {
@@ -31,6 +35,16 @@ $mm-dark-tan: rgb(246, 243, 237);
   }
 }
 
+// Custom + reusable spacing classes
+
+.mb-60px {
+  margin-bottom: 30px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 60px;
+  }
+}
+
 .px-10vw {
   padding-left: 10vw;
   padding-right: 10vw;
@@ -39,4 +53,8 @@ $mm-dark-tan: rgb(246, 243, 237);
 .py-4rem {
   padding-bottom: 4rem;
   padding-top: 4rem;
+}
+
+.no-word-break {
+  white-space: nowrap;
 }
