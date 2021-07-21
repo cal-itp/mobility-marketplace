@@ -14,13 +14,19 @@ class_name: no-banner
 <script defer src="/scripts/forms/contact.js"></script>
 
 <p>
-  Complete the below form, and someone from the Cal-ITP team will reach out soon to get you started with
-  vendor selection, pricing, and procurement—or just to respond to your comment or question.
+  Have a question or comment? Please fill out the form below.
 </p>
 
 <p>
-  You can also <a href="{{ site.mailing_list }}">sign up for our mailing list</a>
-  for updates on newly available products and services.
+  Transit providers, please tell us how we can best assist you. Someone from the Cal-ITP team will then reach out to get you started with vendor selection, pricing, and procurement—or just to respond to your comment or question.
+</p>
+
+<p>
+  Vendors, please tell us about your company’s products and/or services.
+</p>
+
+<p class="mb-60px">
+  We welcome all site visitors to also <a href="{{ site.mailing_list }}">sign up for our mailing list</a> for important updates and to learn when new contracts become available.
 </p>
 
 <p class="indicates-required">
@@ -103,12 +109,17 @@ class_name: no-banner
     />
   </div>
   <div class="form-group">
-    <label class="form-control-label" for="comments">Other comments or queries</label>
+    <label class="form-control-label" for="comments">
+      Comments or queries
+      <span class="required-label">*</span>
+    </label>
     <textarea
+      required
+      aria-required="true"
       class="form-control"
       id="comments"
       name="comments"
-      placeholder="We welcome your feedback!"
+      placeholder="We welcome your questions, comments, or feedback!"
       rows=6
     ></textarea>
   </div>
