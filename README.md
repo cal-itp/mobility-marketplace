@@ -24,7 +24,10 @@ To run the site locally with `docker-compose`:
 docker-compose up [-d] site
 ```
 
-The site is running at http://localhost:4000. Auto rebuild/reload is also be active and watching the site files for changes.
+The site is running at <http://localhost:4000>. Auto rebuild/reload will be active and will watch the site files for changes. The optional `-d` flag will run the Jekyll container as a background process, freeing up your Terminal.
+
+[docker-compose]: https://docs.docker.com/compose/
+[jekyll]: https://jekyllrb.com
 
 ## Building for Production
 
