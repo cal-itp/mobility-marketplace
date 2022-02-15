@@ -16,7 +16,7 @@ title: Resources
       <p>{{resource.explainer}}</p>
       <ul>
         {% for link in resource.links %}
-          <li><a href={{ link }}>Link</a></li>
+          <li><a href={{ link }}>{{ link }}</a></li>
         {% endfor %}
       </ul>
   {% endfor %}
