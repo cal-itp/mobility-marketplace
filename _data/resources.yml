@@ -1,15 +1,17 @@
-- thing: Thingssss
 - name: Getting Started
+  explainer: "Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence"
   links:
     - https://resources.calitp.org
     - https://resources.calitp.org
 
 - name: Section Two
+  explainer: "Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence"
   links:
     - https://resources.calitp.org
     - https://resources.calitp.org
 
 - name: Section Three
+  explainer: "Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence"
   links:
     - https://resources.calitp.org
     - https://resources.calitp.org

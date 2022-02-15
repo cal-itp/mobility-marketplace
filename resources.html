@@ -1,11 +1,13 @@
 ---
 layout: skinny
 show_newsletter: true
+title: Resources
 ---
 
 <section>
   {% for resource in site.data.resources %}
     <h2>{{ resource.name }}</h2>
+      <p>{{resource.explainer}}</p>
       <ul>
         {% for link in resource.links %}
           <li><a href={{ link }}>Link</a></li>
