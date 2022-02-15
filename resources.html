@@ -1,0 +1,15 @@
+---
+layout: skinny
+show_newsletter: true
+---
+
+<section>
+  {% for resource in site.data.resources %}
+    <h2>{{ resource.name }}</h2>
+      <ul>
+        {% for link in resource.links %}
+          <li><a href={{ link }}>Link</a></li>
+        {% endfor %}
+      </ul>
+  {% endfor %}
+</section>
