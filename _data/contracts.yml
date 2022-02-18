@@ -47,3 +47,25 @@ entries:
     product: Transit Processor
     user_instructions: ~
     footnotes: ~
+
+  - contract: 5-21-70-28-01
+    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-01
+    vendor: INIT
+    category: Contactless Payment
+    product: Payment Acceptance Devices
+    user_instructions: ~
+    footnotes: ~
+  - contract: 5-21-70-28-02
+    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-02
+    vendor: Kuba
+    category: Contactless Payment
+    product: Payment Acceptance Devices
+    user_instructions: ~
+    footnotes: ~
+  - contract: 5-21-70-28-03
+    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-03
+    vendor: SC Soft
+    category: Contactless Payment
+    product: Payment Acceptance Devices
+    user_instructions: ~
+    footnotes: ~
