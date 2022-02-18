@@ -4,7 +4,7 @@ footnotes:
 entries:
   - contract: 5-10-99-01
     contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-10-99-01
-    vendor: Fiserv
+    vendor: First Data Merchant Services
     category: Contactless
     product: Payment Processor
     user_instructions: ~
