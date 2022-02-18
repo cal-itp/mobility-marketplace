@@ -51,8 +51,6 @@ navigation:
       url: /contracts
     - name: Provider map
       url: /provider-map
-    - name: Resources
-      url: /resources
     - name: About
       url: /about
     - name: Contact us
