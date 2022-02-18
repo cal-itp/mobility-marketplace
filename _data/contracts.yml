@@ -18,3 +18,32 @@ entries:
     user_instructions: ~
     footnotes:
       - 1
+
+  - contract: 5-21-70-28-01
+    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-01
+    vendor: INIT
+    category: Contactless Payment
+    product: Transit Processor
+    user_instructions: ~
+    footnotes: ~
+  - contract: 5-21-70-28-04
+    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-04
+    vendor: Bytemark
+    category: Contactless Payment
+    product: Transit Processor
+    user_instructions: ~
+    footnotes: ~
+  - contract: 5-21-70-28-05
+    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-05
+    vendor: Enghouse
+    category: Contactless Payment
+    product: Transit Processor
+    user_instructions: ~
+    footnotes: ~
+  - contract: 5-21-70-28-06
+    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-06
+    vendor: Littlepay
+    category: Contactless Payment
+    product: Transit Processor
+    user_instructions: ~
+    footnotes: ~
