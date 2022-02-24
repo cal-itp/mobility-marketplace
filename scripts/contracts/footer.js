@@ -4,9 +4,9 @@
   It integrates with `smart-table.js` to be called when data is filtered.
 */
 const updateFooter = filters => {
-  const productFilters = filters.filter(f => f.field === 'product' && f.type === 'like');
+  const productFilters = filters.filter(f => f.field === "product" && f.type === "like");
   
-  const footnotes = $('ol.footnote-listing').children('li');
+  const footnotes = $("ol.footnote-listing").children("li");
   footnotes.each((i, elem) => {
     const _dataAttr = $(elem).attr("data-products");
     
