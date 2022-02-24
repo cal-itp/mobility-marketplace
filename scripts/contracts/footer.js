@@ -6,7 +6,7 @@
 const updateFooter = filters => {
   const productFilters = filters.filter(f => f.field === 'product' && f.type === 'like');
   
-  const footnotes = $('footer').children('ol').children('li');
+  const footnotes = $('ol.footnote-listing').children('li');
   footnotes.each((i, elem) => {
     const _dataAttr = $(elem).attr("data-products");
     
