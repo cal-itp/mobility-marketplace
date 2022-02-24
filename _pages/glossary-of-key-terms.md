@@ -16,7 +16,7 @@ title: Glossary of Key Terms
 **Computer-Aided Dispatch/Automatic Vehicle Location (CAD/AVL)**: Communication system that sends transit vehicle location information to back-office software to assist in scheduling, incident response, and other planning functions. <br/><br/>
 
 **<a href="https://www.caleprocure.ca.gov/pages/index.aspx" target="_blank">Cal eProcure</a> (see also [DGS](#dgs))**: 
-Online portal designed to improve the procurement experience in the State of California. eProcure is where those wishing to research pre-procured contracts negotiated by the State of California can go, and where those with the authority to purchase (state agencies and sometimes local ones) can do so. This system replaced BidSync, giving businesses access to bidding and contracting resources in one location. <br/><br/>
+Online portal designed to improve the procurement experience in the State of California. eProcure is where those wishing to search for and view available contracts can do so. <br/><br/>
 
 **California Integrated Travel Project (<a href="http://www.calitp.org/" target="_blank">Cal-ITP</a>)**: Series of initiatives to ensure that public transit in California leverages modern industry standards and specifications for seamless journey planning and fare payment. With funding from the California Transit and Intercity Rail Capital Program (<a href="https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog" target="_blank">TIRCP</a>), Cal-ITP is a statewide initiative designed to unify transit in California with a common fare payment system, real-time data standard, and seamless verification of reduced-fare eligibility. <br/><br/>
 
@@ -105,7 +105,7 @@ GTFS is referred to as an “extensible” format.  This means that GTFS was int
 
 **Local Partnership Program (<a href="https://catc.ca.gov/programs/sb1/local-partnership-program" target="_blank">LPP</a>)**: Created by the Road Repair and Accountability Act of 2017. Its primary objective is to provide funding to counties, cities, districts, and regional transportation agencies in which voters have approved fees or taxes dedicated solely to transportation improvements or that have imposed fees, including uniform developer fees, dedicated solely to transportation improvements. <br/><br/>
 
-<span id="master-agreement"></span>**Master Agreement**: Contracts that are competitively bid by the Department of General Services and available to any agency that expends public funds. These types of agreements establish a prequalified list of vendors and simplify the purchasing process for the end user. <br/><br/>
+<span id="master-agreement"></span>**Master Service Agreements**: Contracts established by the Department of General Services and available to any eligible agency that expends public funds. These types of agreements simplify the purchasing process for the end user. <br/><br/>
 
 **Mobile ticketing**: Purchase of transit products through a smartphone, typically through a ticketing app run by either a transit provider or a third party.  <br/><br/>
 
