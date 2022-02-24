@@ -110,7 +110,8 @@ class_name: no-banner
           {% endfor %}
 
           <li id="fn-{{ footnote[0] }}" data-products="{{ products | join: "," }}">
-            {{ footnote[1] }}
+            <span class="footnote-number">{{ footnote[0] }}.</span>
+            <span>{{ footnote[1] }}</span>
           </li>
         {% endfor %}
       </ol>
