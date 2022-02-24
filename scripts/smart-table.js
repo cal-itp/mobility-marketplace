@@ -21,6 +21,10 @@
      id of `pre-approved-contracts` it'd look for a URL query parameter of
      `pre-approved-contracts-filter-product`.
  */
+const smartTableCallbacks = {
+  dataFiltered: []
+};
+
 $(function () {
   function getRandomString() {
     return Math.random().toString(36).substring(7);
@@ -92,6 +96,8 @@ $(function () {
           pillContainer.prepend($pill[0]);
           pillFilters.add(cellValue);
         }
+
+        smartTableCallbacks.dataFiltered.forEach(cb => cb(filters));
       },
       cellClick: function(e, cell) {
         const colDefinition = cell.getColumn().getDefinition();
