@@ -7,6 +7,7 @@ class_name: no-banner
 
 <script defer src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
 <script defer src="/scripts/smart-table.js"></script>
+<script defer src="/scripts/contracts/footer.js"></script>
 
 <div class="container container--skinny">
   <article class="mb-5">
@@ -92,8 +93,25 @@ class_name: no-banner
     <footer>
       <ol class="footnote-listing">
         {% for footnote in site.data.contracts.footnotes %}
-          <li id="fn-{{ footnote[0] }}">
-            {{ footnote[1] }}
+          {% assign products = "" | split: "" %}
+          {% assign footnote_id_str = footnote[0] | append: "" %}
+          
+          {% comment%}
+          Build up product data-attribute string for each footnote 
+          {% endcomment %}
+          {% for entry in site.data.contracts.entries %}
+            {% assign entry_footnotes = entry.footnotes | join: "," | split: "," %}
+            {% if entry_footnotes contains footnote_id_str %}
+              {% unless products contains entry.product %}
+                {% assign p = entry.product | join: "," | split: "," %}
+                {% assign products = products | concat: p %}
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
+
+          <li id="fn-{{ footnote[0] }}" data-products="{{ products | join: "," }}">
+            <span class="footnote-number">{{ footnote[0] }}.</span>
+            <span>{{ footnote[1] }}</span>
           </li>
         {% endfor %}
       </ol>
