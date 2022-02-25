@@ -4,15 +4,13 @@ title: About us
 ---
 Welcome to the California Mobility Marketplace!
 
-Managed by <a href="http://www.calitp.org/" target="_blank">Cal-ITP</a>, this website seeks to make the transition to contactless fare collection and GTFS Realtime compliance as easy and cost-effective as possible through a new and innovative approach.
+Managed by <a href="http://www.calitp.org/" target="_blank">Cal-ITP</a>, this website seeks to make the transition to contactless fare collection and GTFS Realtime compliance as easy and cost-effective as possible.
 
-The California Mobility Marketplace gathers and presents links to a suite of pre-negotiated, code-compliant products and services that transit providers need in order to offer both contactless fare collection and GTFS Realtime, whether operating buses, commuter trains, or light rail.
+The California Mobility Marketplace gathers and presents links to a suite of standardized products and services that transit providers need in order to offer both contactless fare collection and GTFS Realtime, whether operating buses, commuter trains, or light rail.
 
-This means that all the procurement work has already been done for transit providers. Vendors have responded and been awarded contracts through a competitively bid process—so transit providers don’t have to handle procurement on their own.
+The Mobility Marketplace serves as Cal-ITP’s online catalog, where transit providers can browse available goods and services and build a customized transit technology system that suits their needs. Visit our [contracts page](/contracts) to start exploring.
 
-The Mobility Marketplace serves as Cal-ITP’s online catalog, where transit providers can browse these technologies and build a customized transit technology system that suits their needs. Visit our [procurement page](/contracts) to start exploring goods and services that have already been approved.
-
-Don’t yet see what you’re looking for? Cal-ITP continues to search for code-compliant goods and services that meet the needs of the industry, so be sure to check back often for newly available products and services. You can also [sign up for our mailing list]({{ site.mailing_list }}) for important updates.
+Don’t yet see what you’re looking for? Cal-ITP continues to search for standardized goods and services that meet the needs of the industry, so be sure to check back often for newly available products and services. You can also [sign up for our mailing list]({{ site.mailing_list }}) for important updates.
 
 Want to do business with Cal-ITP and California transit providers? Vendors who are interested in having their products and/or services on the Mobility Marketplace are encouraged to submit an inquiry using our [contact form](/contact).
 
