@@ -8,6 +8,18 @@ Deployed via [Netlify][netlify] [![Netlify Status](https://api.netlify.com/api/v
 
 ## Development
 
+### Cloning the repository
+
+You can run the usual `git clone` command to check out this project, but notice that this repo contains [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). To ensure you have all the files in those submodules, you can pass `--recuse-submodules` when cloning:
+```
+git clone --recurse-submodules https://github.com/cal-itp/mobility-marketplace.git
+```
+or if you've already cloned the project, you can run:
+```
+git submodule update --init
+```
+### Running a local instance
+
 This is a [Jekyll][jekyll] static site. We include a [Docker Compose][docker-compose] file to help with local testing
 and development.
 
