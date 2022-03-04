@@ -2,13 +2,6 @@
 layout: default
 title: Provider Map
 class_name: provider-map no-banner
-gtags_script: |
-  function handleDownloadClick() {
-    gtag('event', 'download', {
-      event_category: 'downloads',
-      event_label: 'Provider Data Package',
-    });
-  }
 ---
 <script>const data_mapbox = "mapbox";</script>
 <script defer src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
@@ -65,7 +58,7 @@ gtags_script: |
       <a
         class="btn btn-primary provider-data-download-button"
         href="/metadata/providers/package.zip"
-        onclick="handleDownloadClick()"
+        onclick="handleDownloadClick('Provider Data Package')"
         target="_self"
       >
         Download data
