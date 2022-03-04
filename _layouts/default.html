@@ -67,7 +67,12 @@
 
     gtag('config', '{{site.google_analytics_id}}');
 
-    {{ page.gtags_script }}
+    function handleDownloadClick(event_label) {
+      gtag('event', 'download', {
+        event_category: 'downloads',
+        event_label: event_label,
+      });
+    }
   </script>
 </body>
 </html>
