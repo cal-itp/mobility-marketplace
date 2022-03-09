@@ -24,7 +24,7 @@ form:
 </p>
 
 <p class="indicates-required">
-  <em><span class="required-label">*</span> Indicates required fields</em>
+  <em>{% include forms/required-label.html %} Indicates required fields</em>
 </p>
 
 {% assign honeypot = "_hp_" %}
@@ -32,7 +32,7 @@ form:
   <div class="form-group">
     <label class="form-control-label" for="first_name">
       First name
-      <span class="required-label">*</span>
+      {% include forms/required-label.html %}
     </label>
     <input
       required
@@ -47,7 +47,7 @@ form:
   <div class="form-group">
     <label class="form-control-label" for="last_name">
       Last name
-      <span class="required-label">*</span>
+      {% include forms/required-label.html %}
     </label>
     <input
       required
@@ -82,7 +82,7 @@ form:
   <div class="form-group">
     <label class="form-control-label" for="email">
       Email address
-      <span class="required-label">*</span>
+      {% include forms/required-label.html %}
     </label>
     <input
       aria-required="true"
@@ -106,7 +106,7 @@ form:
   <div class="form-group">
     <label class="form-control-label" for="comments">
       Comments or queries
-      <span class="required-label">*</span>
+      {% include forms/required-label.html %}
     </label>
     <textarea
       required
