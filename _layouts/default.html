@@ -74,5 +74,17 @@
       });
     }
   </script>
+
+  {% assign page_form = page.form %}
+  {% if page_form %}
+  {% assign script_src = page_form.src | default: "/scripts/forms.js" %}
+  <script>
+    const form_data = {
+      "form_target": "{{ page_form.form_target }}",
+      "confirm_target": "{{ page_form.confirm_target }}"
+    };
+  </script>
+  <script defer src="{{ script_src }}"></script>
+  {% endif %}
 </body>
 </html>
