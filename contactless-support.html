@@ -83,8 +83,20 @@ modes:
     <p>To achieve accurate and robust transit information sharing, Caltrans supports the globally recognized General Transit Feed Specification (GTFS) standard to describe trip-planning information, as well as GTFS Realtime, and with these guidelines establishes consistent expectations for quality (accuracy, completeness, availability, and stability) of this data: <a href="https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines" target="_blank">https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines</a></p>
     <p>With universal, standardized, high-quality trip-planning information in real time, California's transit riders, providers, and administrators can more effectively understand the transportation network—and riders can find transit on trip-planning maps and apps like Google Maps, Apple Maps, Transit.app, and so on.</p>
     <p>In this section, we ask Transit Providers—both in California and elsewhere in the U.S.—to tell us about their GTFS feed, which can be consumed by Payment Acceptance Devices to provide data to help you spot ridership trends.</p>
+
     {% include forms/input.html name="gtfs_schedule_url" label="URL for your GTFS Schedule (aka Static) Feed" %}
+
     {% include forms/textarea.html name="gtfs_realtime_urls" rows="1" label="URLs for your GTFS Realtime (aka GTFS-RT) Feed" description="Three possible feeds may exist: Trip Updates, Vehicle Positions, Alerts. Please include as many URLs as you're aware of." %}
+
+    <div class="form-group">
+    {% include forms/label.html name="modes" label="CA agencies only​: Have you received a GTFS data assessment from Caltrans in the last year?" %}
+    <select class="form-control" id="gtfs_assessment" name="gtfs_assessment">
+      <option></option>
+      <option>Yes</option>
+      <option>No</option>
+      <option>Not sure</option>
+    </select>
+    </div>
   </section>
 
   <section>
