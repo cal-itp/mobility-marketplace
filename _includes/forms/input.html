@@ -1,0 +1,22 @@
+{% assign name = include.name | default: "input" %}
+{% assign type = include.type | default: "text" %}
+{% assign label = include.label | default: {{ name }} %}
+{% assign placeholder = include.placeholder %}
+{% assign required = include.required %}
+
+<div class="form-group">
+  <label class="form-control-label" for="{{ name }}">
+    {{ label }}
+    {% if required %}
+      {% include forms/required-label.html %}
+    {% endif %}
+  </label>
+  <input
+    class="form-control"
+    id="{{ name }}"
+    name="{{ name }}"
+    type="{{ type }}"
+    {% if placeholder %} placeholder="{{ placeholder }}" {% endif %}
+    {% if required %} required aria-required="true" {% endif %}
+  />
+</div>

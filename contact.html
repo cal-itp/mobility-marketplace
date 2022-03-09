@@ -29,46 +29,10 @@ form:
 
 {% assign honeypot = "_hp_" %}
 <form data-netlify="true" id="form-contact" method="POST" name="contact" netlify-honeypot="{{ honeypot }}">
-  <div class="form-group">
-    <label class="form-control-label" for="first_name">
-      First name
-      {% include forms/required-label.html %}
-    </label>
-    <input
-      required
-      aria-required="true"
-      class="form-control"
-      id="first_name"
-      name="first_name"
-      placeholder="Nyota"
-      type="text"
-    />
-  </div>
-  <div class="form-group">
-    <label class="form-control-label" for="last_name">
-      Last name
-      {% include forms/required-label.html %}
-    </label>
-    <input
-      required
-      aria-required="true"
-      class="form-control"
-      id="last_name"
-      name="last_name"
-      placeholder="Uhura"
-      type="text"
-    />
-  </div>
-  <div class="form-group">
-    <label class="form-control-label" for="agency">Agency name</label>
-    <input
-      class="form-control"
-      id="agency"
-      name="agency"
-      placeholder="Elk Grove Transit"
-      type="text"
-    />
-  </div>
+  {% include forms/input.html name="first_name" label="First name" placeholder="Nyota" required="true" %}
+  {% include forms/input.html name="last_name" label="Last name" placeholder="Uhura" required="true" %}
+  {% include forms/input.html name="agency" label="Agency name" placeholder="Elk Grove Transit" %}
+
   <div class="form-group">
     <label class="form-control-label" for="role">Role</label>
     <select class="form-control custom-select" id="role" name="role">
@@ -79,30 +43,10 @@ form:
       <option value="Other">Other</option>
     </select>
   </div>
-  <div class="form-group">
-    <label class="form-control-label" for="email">
-      Email address
-      {% include forms/required-label.html %}
-    </label>
-    <input
-      aria-required="true"
-      class="form-control"
-      id="email"
-      name="email"
-      placeholder="nyota.uhura@elkgrovecity.org"
-      required type="email"
-    />
-  </div>
-  <div class="form-group">
-    <label class="form-control-label" for="phone-number">Phone number</label>
-    <input
-      class="form-control"
-      id="phone-number"
-      name="phone-number"
-      placeholder="4155550199"
-      type="tel"
-    />
-  </div>
+
+  {% include forms/input.html name="email" type="email" label="Email address" placeholder="nyota.uhura@elkgrovecity.org" required="true" %}
+  {% include forms/input.html name="phone-number" type="tel" label="Phone number" placeholder="4155550199" %}
+
   <div class="form-group">
     <label class="form-control-label" for="comments">
       Comments or queries
@@ -118,9 +62,11 @@ form:
       rows=6
     ></textarea>
   </div>
+
   <div class="contact-submit">
     <button class="btn btn-primary btn-data-package" type="submit">Submit</button>
   </div>
+
   {% include forms/netlify-honeypot.html name=honeypot %}
 </form>
 
