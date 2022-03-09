@@ -1,0 +1,20 @@
+{% assign name = include.name | default: "input" %}
+{% assign label = include.label | default: {{ name }} %}
+{% assign rows = include.rows | default: 2 %}
+{% assign placeholder = include.placeholder %}
+{% assign required = include.required %}
+
+<div class="form-group">
+  {% if required %}
+    {% include forms/label.html name=name label=label required="true" %}
+  {% else %}
+    {% include forms/label.html name=name label=label %}
+  {% endif %}
+  <textarea
+    class="form-control"
+    id="{{ name }}"
+    name="{{ name }}"
+    rows="{{ rows }}"
+    {% if placeholder %} placeholder="{{ placeholder }}" {% endif %}
+    {% if required %} required aria-required="true" {% endif %}></textarea>
+</div>

@@ -47,21 +47,7 @@ form:
   {% include forms/input.html name="email" type="email" label="Email address" placeholder="nyota.uhura@elkgrovecity.org" required="true" %}
   {% include forms/input.html name="phone-number" type="tel" label="Phone number" placeholder="4155550199" %}
 
-  <div class="form-group">
-    <label class="form-control-label" for="comments">
-      Comments or queries
-      {% include forms/required-label.html %}
-    </label>
-    <textarea
-      required
-      aria-required="true"
-      class="form-control"
-      id="comments"
-      name="comments"
-      placeholder="We welcome your questions, comments, or feedback!"
-      rows=6
-    ></textarea>
-  </div>
+  {% include forms/textarea.html name="comments" label="Comments or queries" rows="6" placeholder="We welcome your questions, comments, or feedback!" required="true" %}
 
   <div class="contact-submit">
     <button class="btn btn-primary btn-data-package" type="submit">Submit</button>
