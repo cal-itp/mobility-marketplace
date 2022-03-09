@@ -51,9 +51,7 @@ form:
 
   {% include forms/textarea.html name="comments" label="Comments or queries" rows="6" placeholder="We welcome your questions, comments, or feedback!" required="true" %}
 
-  <div class="contact-submit">
-    <button class="btn btn-primary btn-data-package" type="submit">Submit</button>
-  </div>
+  {% include forms/submit.html %}
 
   {% include forms/netlify-honeypot.html name=honeypot %}
 </form>
