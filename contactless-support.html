@@ -45,12 +45,12 @@ form:
 <form data-netlify="true" netlify-honeypot="{{ honeypot }}" id="{{ page.form.form_target }}" method="POST" name="{{ name }}">
   <section>
     <h3>Section 1 of 4: Transit Provider Information</h3>
-    {% include forms/input.html name="agency" label="Transit Provider / Agency Name" required="true" %}
+    {% include forms/input.html name="agency" label="Transit Provider / Agency Name" placeholder="Elk Grove Transit" required="true" %}
     {% include forms/input.html name="agency_state" label="State that Agency is Based in" placeholder="California" required="true" %}
     {% include forms/input.html name="first_name" label="Contact First name" placeholder="Nyota" required="true" %}
     {% include forms/input.html name="last_name" label="Contact Last name" placeholder="Uhura" required="true" %}
     {% include forms/input.html name="email" type="email" label="Contact Email address" placeholder="nyota.uhura@elkgrovecity.org" required="true" %}
-    {% include forms/textarea.html name="agency_address" label="Agency Mailing address" required="true" %}
+    {% include forms/textarea.html name="agency_address" rows="1" label="Agency Mailing address" placeholder="1234 Main Street, Elk Grove, CA 98765" required="true" %}
     {% include forms/input.html name="phone" type="phone" label="Contact Phone number" placeholder="4155550199" required="true" %}
   </section>
 
