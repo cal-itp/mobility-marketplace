@@ -5,12 +5,11 @@
 {% assign required = include.required %}
 
 <div class="form-group">
-  <label class="form-control-label" for="{{ name }}">
-    {{ label }}
-    {% if required %}
-      {% include forms/required-label.html %}
-    {% endif %}
-  </label>
+  {% if required %}
+    {% include forms/label.html name=name label=label required="true" %}
+  {% else %}
+    {% include forms/label.html name=name label=label %}
+  {% endif %}
   <input
     class="form-control"
     id="{{ name }}"
