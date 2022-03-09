@@ -1,0 +1,70 @@
+---
+layout: skinny
+title: "Contactless Payments on Public Transportation: Interest Form for Cal-ITP Support"
+class_name: no-banner
+form:
+  form_target: form-contactless-support
+  confirm_target: form-confirm
+---
+
+<p>
+  Thank you for your interest in the California Integrated Travel Project (Cal-ITP; <a href="https://www.calitp.org"
+    target="_blank">www.calitp.org</a>), an initiative of the California State Transportation Agency (CalSTA) and
+  California Department of Transportation (Caltrans) to enable easy and accessible travel planning and payments.
+</p>
+
+<p>
+  Whether you represent a public Transit Provider based in California or elsewhere in the U.S., Cal-ITP can provide
+  materials and support to help you navigate modernizing your fleet to accept open-loop EMV fare payments from riders'
+  contactless credit/debit cards and mobile wallets.
+</p>
+
+<p>
+  To help us better assist you, we ask that you complete this form indicating your interest in contactless payment
+  systems and the State of California's Master Service Agreements (MSAs), established by the CA Department of General
+  Services (DGS) for Payment Acceptance Devices (PADs, aka fare validators) and Transit Processor Services (fare
+  calculation software).
+</p>
+
+<p>
+  With this information, we can determine how best to support you with developing a project scope, engaging with
+  vendors, and implementing your new fare payment system.
+</p>
+
+<p>
+  If you have any questions as you complete this form, please either leave them in the Comments / Queries box at the end
+  of this form or reach out to us directly: <a href="mailto:hello@calitp.org" target="_blank">hello@calitp.org</a>
+</p>
+
+<p class="indicates-required">
+  <em><span class="required-label">*</span> Indicates required fields</em>
+</p>
+
+{% assign honeypot = "_hp_" %}
+{% assign name = page.form.form_target | replace_first: 'form-', '' %}
+<form data-netlify="true" netlify-honeypot="{{ honeypot }}" id="{{ page.form.form_target }}" method="POST" name="{{ name }}">
+  <section>
+    <h3>Section 1 of 4: Transit Provider Information</h3>
+  </section>
+
+  <section>
+    <h3>Section 2 of 4: Fleet Information</h3>
+  </section>
+
+  <section>
+    <h3>Section 3 of 4: GTFS data</h3>
+    <p>To achieve accurate and robust transit information sharing, Caltrans supports the globally recognized General Transit Feed Specification (GTFS) standard to describe trip-planning information, as well as GTFS Realtime, and with these guidelines establishes consistent expectations for quality (accuracy, completeness, availability, and stability) of this data: <a href="https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines" target="_blank">https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines</a></p>
+    <p>With universal, standardized, high-quality trip-planning information in real time, California's transit riders, providers, and administrators can more effectively understand the transportation network—and riders can find transit on trip-planning maps and apps like Google Maps, Apple Maps, Transit.app, and so on.</p>
+    <p>In this section, we ask Transit Providers—both in California and elsewhere in the U.S.—to tell us about their GTFS feed, which can be consumed by Payment Acceptance Devices to provide data to help you spot ridership trends.</p>
+  </section>
+
+  <section>
+    <h3>Section 4 of 4: Timeline</h3>
+  </section>
+
+  {% include forms/submit.html %}
+
+  {% include forms/netlify-honeypot.html name=honeypot %}
+</form>
+
+{% include forms/confirm.html id=page.forms.confirm_target message="Thank you for completing our intake form! A member of the Cal-ITP team will connect with you shortly. If Cal-ITP can be of any other assistance, please don't hesitate to reach out to us: hello@calitp.org" %}
