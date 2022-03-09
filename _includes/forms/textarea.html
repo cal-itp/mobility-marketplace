@@ -1,15 +1,12 @@
 {% assign name = include.name | default: "input" %}
 {% assign label = include.label | default: {{ name }} %}
+{% assign description = include.description %}
 {% assign rows = include.rows | default: 2 %}
 {% assign placeholder = include.placeholder %}
 {% assign required = include.required %}
 
 <div class="form-group">
-  {% if required %}
-    {% include forms/label.html name=name label=label required="true" %}
-  {% else %}
-    {% include forms/label.html name=name label=label %}
-  {% endif %}
+  {% include forms/label.html name=name label=label description=description required=required %}
   <textarea
     class="form-control"
     id="{{ name }}"

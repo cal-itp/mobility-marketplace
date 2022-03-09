@@ -1,10 +1,15 @@
 {% assign name = include.name | default: "input" %}
 {% assign label = include.label | default: {{ name }} %}
+{% assign description = include.description %}
 {% assign required = include.required %}
 
 <label class="form-control-label" for="{{ name }}">
   {{ label }}
   {% if required %}
     {% include forms/required-label.html %}
+  {% endif %}
+  {% if description %}
+  <br />
+  <small>{{ description }}</small>
   {% endif %}
 </label>
