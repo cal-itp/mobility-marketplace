@@ -28,7 +28,9 @@ form:
 </p>
 
 {% assign honeypot = "_hp_" %}
-<form data-netlify="true" id="form-contact" method="POST" name="contact" netlify-honeypot="{{ honeypot }}">
+{% assign id = page.form.form_target %}
+{% assign name = id | replace_first: 'form-', '' %}
+<form data-netlify="true" netlify-honeypot="{{ honeypot }}" id="{{ id }}" name="{{ name }}" method="POST">
   {% include forms/input.html name="first_name" label="First name" placeholder="Nyota" required="true" %}
   {% include forms/input.html name="last_name" label="Last name" placeholder="Uhura" required="true" %}
   {% include forms/input.html name="agency" label="Agency name" placeholder="Elk Grove Transit" %}
