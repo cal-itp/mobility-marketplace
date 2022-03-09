@@ -27,7 +27,8 @@ form:
   <em><span class="required-label">*</span> Indicates required fields</em>
 </p>
 
-<form data-netlify="true" id="form-contact" method="POST" name="contact" netlify-honeypot="_honeypot_">
+{% assign honeypot = "_hp_" %}
+<form data-netlify="true" id="form-contact" method="POST" name="contact" netlify-honeypot="{{ honeypot }}">
   <div class="form-group">
     <label class="form-control-label" for="first_name">
       First name
@@ -120,10 +121,7 @@ form:
   <div class="contact-submit">
     <button class="btn btn-primary btn-data-package" type="submit">Submit</button>
   </div>
-  <div class="d-none">
-    <label for="_honeypot_"><strong>Do not</strong> fill out this field if you are a human</label>
-    <input id="_honeypot_" name="_honeypot_"/>
-  </div>
+  {% include forms/netlify-honeypot.html name=honeypot %}
 </form>
 
 <div class="contact-submission-success" id="form-confirm">
