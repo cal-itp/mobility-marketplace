@@ -5,6 +5,14 @@ class_name: no-banner
 form:
   form_target: form-contactless-support
   confirm_target: form-confirm
+modes:
+  - Bus
+  - Commuter Coach
+  - Dial-A-Ride / Paratransit
+  - Light Rail
+  - Commuter Rail
+  - Bikeshare
+  - Other
 ---
 
 <p>
@@ -56,6 +64,16 @@ form:
 
   <section>
     <h3>Section 2 of 4: Fleet Information</h3>
+
+    <div class="form-group">
+      {% include forms/label.html name="modes" label="Modes that your agency provides service on" description="Please select as many as apply." required="true" %}
+      <select multiple class="form-control" id="modes" name="modes" required aria-required="true">
+        {% for mode in page.modes %}
+        <option>{{ mode }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
     {% include forms/textarea.html name="fleet_description" label="Number + Type of Vehicles" description="For example, 50 40-foot diesel-electric hybrid buses, 30 60-foot electric trolleybuses, 100 light rail vehicles, 50 dial-a-ride shuttles, etc." required="true" %}
     {% include forms/textarea.html name="fleet_pads" label="PADs / Fare Validators: Number per Vehicle?" description="If this varies by vehicle type, please note each vehicle type + # of PADs/Validators desired per vehicle. If you're considering on-platform boarding, please share that here too." required="true" %}
   </section>
