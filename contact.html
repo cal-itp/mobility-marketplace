@@ -56,21 +56,4 @@ form:
   {% include forms/netlify-honeypot.html name=honeypot %}
 </form>
 
-<div class="contact-submission-success" id="form-confirm">
-  <p>
-    <img
-      alt="Email confirmation illustration"
-      class="img-fluid"
-      src="/uploads/email-confirm.svg"
-      title="Thank you!"
-    />
-  </p>
-
-  <p>Thank you! We’ll be in touch soon!</p>
-
-  <div>
-    <a class="btn btn-primary" href="/" target="_self">
-      Return home
-    </a>
-  </div>
-</div>
+{% include forms/confirm.html id=page.forms.confirm_target message="Thank you! We’ll be in touch soon!" %}
