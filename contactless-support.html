@@ -71,6 +71,8 @@ form:
 
   <section>
     <h3>Section 4 of 4: Timeline</h3>
+    {% include forms/input.html name="timeline" label="What is your desired Timeline for Purchasing and Installing a contactless fare payment system?" required="true" %}
+    {% include forms/textarea.html name="comments" label="Comments or queries" rows="4" description="Have additional questions about contactless debit/credit card fare payments, GTFS, or other topics that you'd like Cal-ITP's help with? Let us know below." %}
   </section>
 
   {% include forms/submit.html %}
