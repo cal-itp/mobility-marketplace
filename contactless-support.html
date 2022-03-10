@@ -67,7 +67,7 @@ modes:
 
     <div class="form-group">
       {% include forms/label.html name="modes" label="Modes that your agency provides service on" description="Please select as many as apply." required="true" %}
-      <select multiple class="form-control" id="modes" name="modes" required aria-required="true">
+      <select multiple class="form-control" id="modes" name="modes[]" required aria-required="true">
         {% for mode in page.modes %}
         <option>{{ mode }}</option>
         {% endfor %}
