@@ -66,7 +66,7 @@ modes:
     <h3>Section 2 of 4: Fleet Information</h3>
 
     <div class="form-group">
-      {% include forms/label.html name="modes" label="Modes that your agency provides service on" description="Please select as many as apply." required="true" %}
+      {% include forms/label.html name="modes" label="Modes that your agency provides service on" description="Please select as many as apply; use Control/Command + click the mode type to select/deselect." required="true" %}
       <select multiple class="form-control" id="modes" name="modes[]" required aria-required="true">
         {% for mode in page.modes %}
         <option>{{ mode }}</option>
