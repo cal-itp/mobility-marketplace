@@ -50,7 +50,7 @@ modes:
 {% assign name = page.form.form_target | replace_first: 'form-', '' %}
 <form data-netlify="true" netlify-honeypot="{{ honeypot }}" id="{{ page.form.form_target }}" method="POST" name="{{ name }}">
   <section>
-    <h3>Section 1 of 4: Transit Provider Information</h3>
+    <h2 class="h3">Section 1 of 4: Transit Provider Information</h2>
     {% include forms/input.html name="agency" label="Transit Provider / Agency Name" placeholder="Elk Grove Transit" required="true" %}
     {% include forms/input.html name="agency_state" label="State that Agency is Based in" placeholder="California" required="true" %}
     {% include forms/input.html name="first_name" label="Contact First name" placeholder="Nyota" required="true" %}
@@ -61,7 +61,7 @@ modes:
   </section>
 
   <section>
-    <h3>Section 2 of 4: Fleet Information</h3>
+    <h2 class="h3">Section 2 of 4: Fleet Information</h2>
 
     <div class="form-group">
       {% include forms/label.html name="modes" label="Modes that your agency provides service on" description="Please select as many as apply; use Control/Command + click the mode type to select/deselect." required="true" %}
@@ -77,7 +77,7 @@ modes:
   </section>
 
   <section>
-    <h3>Section 3 of 4: GTFS data</h3>
+    <h2 class="h3">Section 3 of 4: GTFS data</h2>
     <p>To achieve accurate and robust transit information sharing, Caltrans supports the globally recognized General Transit Feed Specification (GTFS) standard to describe trip-planning information, as well as GTFS Realtime, and with <a href="https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines" target="_blank">these guidelines</a> establishes consistent expectations for quality (accuracy, completeness, availability, and stability) of this data.</p>
     <p>With universal, standardized, high-quality trip-planning information in real time, California's transit riders, providers, and administrators can more effectively understand the transportation network—and riders can find transit on trip-planning maps and apps like Google Maps, Apple Maps, Transit.app, and so on.</p>
     <p>In this section, we ask Transit Providers—both in California and elsewhere in the U.S.—to tell us about their GTFS feed, which can be consumed by Payment Acceptance Devices to provide data to help you spot ridership trends.</p>
@@ -98,7 +98,7 @@ modes:
   </section>
 
   <section>
-    <h3>Section 4 of 4: Timeline</h3>
+    <h2 class="h3">Section 4 of 4: Timeline</h2>
     {% include forms/input.html name="timeline" label="What is your desired Timeline for Purchasing and Installing a contactless fare payment system?" required="true" %}
     {% include forms/textarea.html name="comments" label="Comments or queries" rows="4" description="Have additional questions about contactless debit/credit card fare payments, GTFS, or other topics that you'd like Cal-ITP's help with? Let us know below." %}
   </section>
