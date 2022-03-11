@@ -2,16 +2,10 @@
 layout: skinny
 title: Get in touch
 class_name: no-banner
+form:
+  form_target: form-contact
+  confirm_target: form-confirm
 ---
-
-<script>
-  const data_contact = {
-    "src": "/scripts/forms/contact.js",
-    "form_target": "form-contact",
-    "confirm_target": "form-confirm"
-  };
-</script>
-<script defer src="/scripts/forms/contact.js"></script>
 
 <p>
   Have a question or comment? Please fill out the form below.
@@ -29,51 +23,16 @@ class_name: no-banner
   We welcome all site visitors to also <a href="{{ site.mailing_list }}">sign up for our mailing list</a> for important updates and to learn when new contracts become available.
 </p>
 
-<p class="indicates-required">
-  <em><span class="required-label">*</span> Indicates required fields</em>
-</p>
+{% include forms/indicates-required.html %}
 
-<form data-netlify="true" id="form-contact" method="POST" name="contact" netlify-honeypot="_honeypot_">
-  <div class="form-group">
-    <label class="form-control-label" for="first_name">
-      First name
-      <span class="required-label">*</span>
-    </label>
-    <input
-      required
-      aria-required="true"
-      class="form-control"
-      id="first_name"
-      name="first_name"
-      placeholder="Nyota"
-      type="text"
-    />
-  </div>
-  <div class="form-group">
-    <label class="form-control-label" for="last_name">
-      Last name
-      <span class="required-label">*</span>
-    </label>
-    <input
-      required
-      aria-required="true"
-      class="form-control"
-      id="last_name"
-      name="last_name"
-      placeholder="Uhura"
-      type="text"
-    />
-  </div>
-  <div class="form-group">
-    <label class="form-control-label" for="agency">Agency name</label>
-    <input
-      class="form-control"
-      id="agency"
-      name="agency"
-      placeholder="Elk Grove Transit"
-      type="text"
-    />
-  </div>
+{% assign honeypot = "_hp_" %}
+{% assign id = page.form.form_target %}
+{% assign name = id | replace_first: 'form-', '' %}
+<form data-netlify="true" netlify-honeypot="{{ honeypot }}" id="{{ id }}" name="{{ name }}" method="POST">
+  {% include forms/input.html name="first_name" label="First name" placeholder="Nyota" required="true" %}
+  {% include forms/input.html name="last_name" label="Last name" placeholder="Uhura" required="true" %}
+  {% include forms/input.html name="agency" label="Agency name" placeholder="Elk Grove Transit" %}
+
   <div class="form-group">
     <label class="form-control-label" for="role">Role</label>
     <select class="form-control custom-select" id="role" name="role">
@@ -84,69 +43,15 @@ class_name: no-banner
       <option value="Other">Other</option>
     </select>
   </div>
-  <div class="form-group">
-    <label class="form-control-label" for="email">
-      Email address
-      <span class="required-label">*</span>
-    </label>
-    <input
-      aria-required="true"
-      class="form-control"
-      id="email"
-      name="email"
-      placeholder="nyota.uhura@elkgrovecity.org"
-      required type="email"
-    />
-  </div>
-  <div class="form-group">
-    <label class="form-control-label" for="phone-number">Phone number</label>
-    <input
-      class="form-control"
-      id="phone-number"
-      name="phone-number"
-      placeholder="4155550199"
-      type="tel"
-    />
-  </div>
-  <div class="form-group">
-    <label class="form-control-label" for="comments">
-      Comments or queries
-      <span class="required-label">*</span>
-    </label>
-    <textarea
-      required
-      aria-required="true"
-      class="form-control"
-      id="comments"
-      name="comments"
-      placeholder="We welcome your questions, comments, or feedback!"
-      rows=6
-    ></textarea>
-  </div>
-  <div class="contact-submit">
-    <button class="btn btn-primary btn-data-package" type="submit">Submit</button>
-  </div>
-  <div class="d-none">
-    <label for="_honeypot_"><strong>Do not</strong> fill out this field if you are a human</label>
-    <input id="_honeypot_" name="_honeypot_"/>
-  </div>
+
+  {% include forms/input.html name="email" type="email" label="Email address" placeholder="nyota.uhura@elkgrovecity.org" required="true" %}
+  {% include forms/input.html name="phone-number" type="tel" label="Phone number" placeholder="4155550199" %}
+
+  {% include forms/textarea.html name="comments" label="Comments or queries" rows="6" placeholder="We welcome your questions, comments, or feedback!" required="true" %}
+
+  {% include forms/submit.html %}
+
+  {% include forms/netlify-honeypot.html name=honeypot %}
 </form>
 
-<div class="contact-submission-success" id="form-confirm">
-  <p>
-    <img
-      alt="Email confirmation illustration"
-      class="img-fluid"
-      src="/uploads/email-confirm.svg"
-      title="Thank you!"
-    />
-  </p>
-
-  <p>Thank you! We’ll be in touch soon!</p>
-
-  <div>
-    <a class="btn btn-primary" href="/" target="_self">
-      Return home
-    </a>
-  </div>
-</div>
+{% include forms/confirm.html id=page.forms.confirm_target message="Thank you! We’ll be in touch soon!" %}

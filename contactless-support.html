@@ -1,0 +1,111 @@
+---
+layout: skinny
+title: "Contactless Payments on Public Transportation: Interest Form for Cal-ITP Support"
+class_name: no-banner
+form:
+  form_target: form-contactless-support
+  confirm_target: form-confirm
+modes:
+  - Bus
+  - Commuter Coach
+  - Dial-A-Ride / Paratransit
+  - Light Rail
+  - Commuter Rail
+  - Bikeshare
+  - Other
+---
+
+<p>
+  Thank you for your interest in the California Integrated Travel Project (Cal-ITP; <a href="https://www.calitp.org"
+    target="_blank">www.calitp.org</a>), an initiative of the California State Transportation Agency (CalSTA) and
+  California Department of Transportation (Caltrans) to enable easy and accessible travel planning and payments.
+</p>
+
+<p>
+  Whether you represent a public Transit Provider based in California or elsewhere in the U.S., Cal-ITP can provide
+  materials and support to help you navigate modernizing your fleet to accept open-loop EMV fare payments from riders'
+  contactless credit/debit cards and mobile wallets.
+</p>
+
+<p>
+  To help us better assist you, we ask that you complete this form indicating your interest in contactless payment
+  systems and the State of California's Master Service Agreements (MSAs), established by the CA Department of General
+  Services (DGS) for Payment Acceptance Devices (PADs, aka fare validators) and Transit Processor Services (fare
+  calculation software).
+</p>
+
+<p>
+  With this information, we can determine how best to support you with developing a project scope, engaging with
+  vendors, and implementing your new fare payment system.
+</p>
+
+<p>
+  If you have any questions as you complete this form, please either leave them in the Comments / Queries box at the end
+  of this form or reach out to us directly: <a href="mailto:hello@calitp.org" target="_blank">hello@calitp.org</a>
+</p>
+
+{% include forms/indicates-required.html %}
+
+{% assign honeypot = "_hp_" %}
+{% assign name = page.form.form_target | replace_first: 'form-', '' %}
+<form data-netlify="true" netlify-honeypot="{{ honeypot }}" id="{{ page.form.form_target }}" method="POST" name="{{ name }}">
+  <section>
+    <h2 class="h3">Section 1 of 4: Transit Provider Information</h2>
+    {% include forms/input.html name="agency" label="Transit Provider / Agency Name" placeholder="Elk Grove Transit" required="true" %}
+    {% include forms/input.html name="agency_state" label="State that Agency is Based in" placeholder="California" required="true" %}
+    {% include forms/input.html name="first_name" label="Contact First name" placeholder="Nyota" required="true" %}
+    {% include forms/input.html name="last_name" label="Contact Last name" placeholder="Uhura" required="true" %}
+    {% include forms/input.html name="email" type="email" label="Contact Email address" placeholder="nyota.uhura@elkgrovecity.org" required="true" %}
+    {% include forms/textarea.html name="agency_address" rows="1" label="Agency Mailing address" placeholder="1234 Main Street, Elk Grove, CA 98765" required="true" %}
+    {% include forms/input.html name="phone" type="tel" label="Contact Phone number" placeholder="4155550199" required="true" %}
+  </section>
+
+  <section>
+    <h2 class="h3">Section 2 of 4: Fleet Information</h2>
+
+    <div class="form-group">
+      {% include forms/label.html name="modes" label="Modes that your agency provides service on" description="Please select as many as apply; use Control/Command + click the mode type to select/deselect." required="true" %}
+      <select multiple class="form-control" id="modes" name="modes[]" required aria-required="true">
+        {% for mode in page.modes %}
+        <option>{{ mode }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    {% include forms/textarea.html name="fleet_description" label="Number + Type of Vehicles" description="For example, 50 40-foot diesel-electric hybrid buses, 30 60-foot electric trolleybuses, 100 light rail vehicles, 50 dial-a-ride shuttles, etc." required="true" %}
+    {% include forms/textarea.html name="fleet_pads" label="PADs / Fare Validators: Number per Vehicle?" description="If this varies by vehicle type, please note each vehicle type + # of PADs/Validators desired per vehicle. If you're considering on-platform boarding, please share that here too." required="true" %}
+  </section>
+
+  <section>
+    <h2 class="h3">Section 3 of 4: GTFS data</h2>
+    <p>To achieve accurate and robust transit information sharing, Caltrans supports the globally recognized General Transit Feed Specification (GTFS) standard to describe trip-planning information, as well as GTFS Realtime, and with <a href="https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines" target="_blank">these guidelines</a> establishes consistent expectations for quality (accuracy, completeness, availability, and stability) of this data.</p>
+    <p>With universal, standardized, high-quality trip-planning information in real time, California's transit riders, providers, and administrators can more effectively understand the transportation network—and riders can find transit on trip-planning maps and apps like Google Maps, Apple Maps, Transit.app, and so on.</p>
+    <p>In this section, we ask Transit Providers—both in California and elsewhere in the U.S.—to tell us about their GTFS feed, which can be consumed by Payment Acceptance Devices to provide data to help you spot ridership trends.</p>
+
+    {% include forms/input.html name="gtfs_schedule_url" label="URL for your GTFS Schedule (aka Static) Feed" %}
+
+    {% include forms/textarea.html name="gtfs_realtime_urls" rows="1" label="URLs for your GTFS Realtime (aka GTFS-RT) Feed" description="Three possible feeds may exist: Trip Updates, Vehicle Positions, Alerts. Please include as many URLs as you're aware of." %}
+
+    <div class="form-group">
+    {% include forms/label.html name="modes" label="CA agencies only​: Have you received a GTFS data assessment from Caltrans in the last year?" %}
+    <select class="form-control" id="gtfs_assessment" name="gtfs_assessment">
+      <option></option>
+      <option>Yes</option>
+      <option>No</option>
+      <option>Not sure</option>
+    </select>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="h3">Section 4 of 4: Timeline</h2>
+    {% include forms/input.html name="timeline" label="What is your desired Timeline for Purchasing and Installing a contactless fare payment system?" required="true" %}
+    {% include forms/textarea.html name="comments" label="Comments or queries" rows="4" description="Have additional questions about contactless debit/credit card fare payments, GTFS, or other topics that you'd like Cal-ITP's help with? Let us know below." %}
+  </section>
+
+  {% include forms/submit.html %}
+
+  {% include forms/netlify-honeypot.html name=honeypot %}
+</form>
+
+{% include forms/confirm.html id=page.forms.confirm_target message="Thank you for completing our intake form! A member of the Cal-ITP team will connect with you shortly. If Cal-ITP can be of any other assistance, please don't hesitate to reach out to us: hello@calitp.org" %}

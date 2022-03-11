@@ -1,6 +1,7 @@
-document
-  .querySelector("#phone-number")
-  .addEventListener("keypress", function (e) {
+const phoneNumber = document.querySelector("input[type='tel']");
+
+if (phoneNumber) {
+  phoneNumber.addEventListener("keypress", function (e) {
     var allowedChars = '0123456789';
     function contains(stringValue, charValue) {
         return stringValue.indexOf(charValue) > -1;
@@ -8,11 +9,12 @@ document
     var invalidKey = e.key.length === 1 && !contains(allowedChars, e.key)
             || e.key === '.' && contains(e.target.value, '.');
     invalidKey && e.preventDefault();
-});
+  });
+}
 
 $(function() {
-  const formId = `#${data_contact.form_target}`;
-  const confirmId = `#${data_contact.confirm_target}`;
+  const formId = `#${form_data.form_target}`;
+  const confirmId = `#${form_data.confirm_target}`;
 
   $(formId).submit(function(e) {
     e.preventDefault();
