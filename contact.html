@@ -23,9 +23,7 @@ form:
   We welcome all site visitors to also <a href="{{ site.mailing_list }}">sign up for our mailing list</a> for important updates and to learn when new contracts become available.
 </p>
 
-<p class="indicates-required">
-  <em>{% include forms/required-label.html %} Indicates required fields</em>
-</p>
+{% include forms/indicates-required.html %}
 
 {% assign honeypot = "_hp_" %}
 {% assign id = page.form.form_target %}

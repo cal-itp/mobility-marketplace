@@ -44,9 +44,7 @@ modes:
   of this form or reach out to us directly: <a href="mailto:hello@calitp.org" target="_blank">hello@calitp.org</a>
 </p>
 
-<p class="indicates-required">
-  <em>{% include forms/required-label.html %} Indicates required fields</em>
-</p>
+{% include forms/indicates-required.html %}
 
 {% assign honeypot = "_hp_" %}
 {% assign name = page.form.form_target | replace_first: 'form-', '' %}
