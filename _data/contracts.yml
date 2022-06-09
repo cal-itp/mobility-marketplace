@@ -10,8 +10,8 @@ entries:
     user_instructions: ~
     footnotes:
       - 1
-  - contract: 5-10-99-02
-    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-10-99-02
+  - contract: 5-22-70-22-01
+    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-22-70-22-01
     vendor: Elavon
     category: Contactless Payment
     product: Payment Processor
