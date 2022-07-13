@@ -1,0 +1,16 @@
+# Add secret GH_PROJECT (the Project's ID) and allow org-wide secret GH_PROJECTS_TOKEN to the repo
+
+name: Add Issues to Project
+
+on:
+  issues:
+    types: [opened, transferred]
+
+jobs:
+  add-to-project-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@main
+        with:
+          project-url: https://github.com/orgs/cal-itp/projects/${{ secrets.GH_PROJECT }}
+          github-token: ${{ secrets.GH_PROJECTS_TOKEN }}
