@@ -137,7 +137,7 @@ $(function () {
       <span class="sr-only">Filtered by:</span>
       <span class="county"></span>
       (<span class="count"></span>)
-  
+
       <button class="pill__close">
         <span class="sr-only">Clear filter</span>
       </button>
