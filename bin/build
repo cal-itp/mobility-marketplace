@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Netlify uses this file to build the site
+
 bundle exec jekyll build && \
 
 echo "Netlify build successful!"
