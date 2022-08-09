@@ -1,0 +1,11 @@
+services:
+  site:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    command: sleep infinity
+    ports:
+      - "4000"
+      - "35729:35729"
+    volumes:
+      - ..:/srv/jekyll

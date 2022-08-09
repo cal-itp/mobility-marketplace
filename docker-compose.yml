@@ -1,9 +1,0 @@
-services:
-  site:
-    image: jekyll/jekyll:4
-    command: "jekyll serve --force_polling --livereload"
-    ports:
-      - "4000:4000" # Jekyll's normal http port
-      - "35729:35729" # The development LiveReload port
-    volumes:
-      - ".:/srv/jekyll"
