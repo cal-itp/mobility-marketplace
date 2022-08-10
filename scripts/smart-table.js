@@ -36,7 +36,7 @@ $(function () {
     <div class="pill" data-column-name="${colName}">
       <span class="sr-only">Filtered by:</span>
       <span class="body">${body}</span>
-  
+
       <button class="pill__close">
         <span class="sr-only">Clear filter</span>
       </button>

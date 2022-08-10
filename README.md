@@ -11,45 +11,36 @@ Deployed via [Netlify][netlify] [![Netlify Status](https://api.netlify.com/api/v
 ### Cloning the repository
 
 You can run the usual `git clone` command to check out this project, but notice that this repo contains [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). To ensure you have all the files in those submodules, you can pass `--recuse-submodules` when cloning:
+
 ```
 git clone --recurse-submodules https://github.com/cal-itp/mobility-marketplace.git
 ```
+
 or if you've already cloned the project, you can run:
+
 ```
 git submodule update --init
 ```
+
 ### Running a local instance
 
-This is a [Jekyll][jekyll] static site. We include a [Docker Compose][docker-compose] file to help with local testing
+This is a [Jekyll][jekyll] static site. We include a [Devcontainer][devcontainer] configuration to help with local testing
 and development.
 
-To run the site locally with `jekyll`:
+1. Open the repository directory in VS Code
+1. `Ctrl/Cmd+Shift+P` to bring up the Command Palette
+1. Enter `Remote-Containers` to filter the command list
+1. Enter or select `Rebuild and Reopen in Container` to start from scratch
+1. Enter or select `Reopen in Container` to reopen the last devcontainer used
 
-```bash
-bundle install
-jekyll serve --force_polling --livereload
-```
+Once inside the devcontainer, you have the manually start the site:
 
-To run the site locally with `docker-compose`:
+1. `Ctrl/Cmd+Shift+P` to bring up the Command Palette
+1. Enter `Tasks: Run Task`
+1. Enter or select `Jekyll: Build Dev`
 
-```bash
-docker-compose up [-d] site
-```
-
-The site is running at <http://localhost:4000>. Auto rebuild/reload will be active and will watch the site files for changes. The optional `-d` flag will run the Jekyll container as a background process, freeing up your Terminal.
-
-[docker-compose]: https://docs.docker.com/compose/
-[jekyll]: https://jekyllrb.com
-
-## Building for Production
-
-While [Netlify][netlify] is responsible for the production site builds, you may want to replicate this process locally for development and testing.
-
-We include a `docker-compose` command that runs the official [Netlify build image][netlify-build] against the local repository contents, with our production build script(s).
-
-```bash
-docker-compose run netlify
-```
+The site is running on <http://127.0.0.1>; check the VS Code _Ports_ tab for the exact port. Auto rebuild/reload will be active
+and will watch the site files for changes.
 
 ## License
 
@@ -57,7 +48,7 @@ Content (including graphics, images, video, documents, and text) in this reposit
 
 The source code in this repository used to format and display the content is licensed under [GPL-3.0][code-license].
 
-[docker-compose]: https://docs.docker.com/compose/
+[devcontainer]: https://code.visualstudio.com/docs/remote/remote-overview
 [jekyll]: https://jekyllrb.com
 [code-license]: ./LICENSE
 [content-license]: ./content/LICENSE

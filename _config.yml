@@ -1,23 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: California Mobility Marketplace
 description: >-
   A resource to help transit providers upgrade their fare collection systems to accept contactless payment methods like credit/debit cards and smartphones.
@@ -29,20 +9,10 @@ fonts: "family=Poppins:wght@400;700&family=Raleway:wght@700"
 theme_color: "#ffffff"
 theme_color_background: "#ffffff"
 mailing_list: https://lp.constantcontactpages.com/su/eLbtFoE/calitp?source_id=a41b99cd-7f28-4be8-a286-f9e75fc7bbce&source_type=em&c=
-authors:
-  - name: Kegan Maher
-    role: Programmer
-    contact: kegan@compiler.la
-  - name: Kurtis Rainbolt-Greene
-    role: Programmer
-    contact: kurtis@compiler.la
 collections:
   pages:
     output: true
     permalink: /:title
-  articles:
-    output: true
-    permalink: /:collection/:name
 navigation:
   header:
     - name: Go contactless
@@ -69,9 +39,6 @@ navigation:
     - name: Register to vote
       url: https://registertovote.ca.gov/
       target: _blank
-# Build settings
-# plugins:
-#   - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -82,23 +49,9 @@ navigation:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - docs
-  - README.md
-  - CONDUCT.md
-  - LICENSE.txt
-  - .editorconfig
-  - docker-compose.yml
-  - admin/plugins
   - _data/
+  - .devcontainer/
+  - .vscode/
   - submodules/
-  - bin/
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - LICENSE
+  - README.md
