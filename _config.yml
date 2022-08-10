@@ -52,7 +52,6 @@ exclude:
   - _data/
   - .devcontainer/
   - .vscode/
-  - bin/
   - submodules/
   - LICENSE
   - README.md
