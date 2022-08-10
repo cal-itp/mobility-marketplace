@@ -2,7 +2,7 @@
   "name": "cal-itp/mobility-marketplace",
   "dockerComposeFile": "compose.yml",
   "service": "site",
-  "workspaceFolder": "/srv/jekyll",
+  "workspaceFolder": "/usr/src/mobimart",
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash",
