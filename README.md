@@ -39,7 +39,7 @@ Once inside the devcontainer, you have the manually start the site:
 1. Enter `Tasks: Run Task`
 1. Enter or select `Jekyll: Build Dev`
 
-The site is running on <http://localhost>; check the VS Code _Ports_ tab for the exact port. Auto rebuild/reload will be active
+The site is running on <http://127.0.0.1>; check the VS Code _Ports_ tab for the exact port. Auto rebuild/reload will be active
 and will watch the site files for changes.
 
 ## License
