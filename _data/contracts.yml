@@ -2,14 +2,6 @@ footnotes:
   1: Available to California agencies only.
 
 entries:
-  - contract: 5-10-99-01
-    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-10-99-01
-    vendor: First Data Merchant Services
-    category: Contactless Payment
-    product: Payment Processor
-    user_instructions: ~
-    footnotes:
-      - 1
   - contract: 5-22-70-22-01
     contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-22-70-22-01
     vendor: Elavon
