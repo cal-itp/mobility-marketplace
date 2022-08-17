@@ -36,6 +36,17 @@ $(function () {
     });
   });
 
+  $("form").on("submit", function (e) {
+    // track form submissions
+    const $target = $(e.target);
+    track(events.submittedForm, {
+      form: $target.attr("name"),
+      path: path(),
+    });
+    // ensure event bubbles up
+    return true;
+  });
+
   // track an event for every page load
   track(events.viewedPage, {
     path: path(),
