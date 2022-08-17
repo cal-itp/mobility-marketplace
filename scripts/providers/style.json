@@ -12,10 +12,7 @@
     "mapbox:groups": {},
     "mapbox:uiParadigm": "layers"
   },
-  "center": [
-    -117.44483135018857,
-    36.80494585927792
-  ],
+  "center": [-117.44483135018857, 36.80494585927792],
   "zoom": 4.74989240150267,
   "bearing": 0,
   "pitch": 0,
@@ -41,27 +38,14 @@
       "type": "symbol",
       "source": "composite",
       "source-layer": "centers-itp-bg513o",
-      "filter": [
-        "<",
-        [
-          "get",
-          "population"
-        ],
-        539301
-      ],
+      "filter": ["<", ["get", "population"], 539301],
       "layout": {
         "text-size": 12,
-        "text-font": [
-          "DIN Pro Bold",
-          "Arial Unicode MS Regular"
-        ],
+        "text-font": ["DIN Pro Bold", "Arial Unicode MS Regular"],
         "text-padding": 4,
         "symbol-sort-key": [
           "step",
-          [
-            "get",
-            "filterrank"
-          ],
+          ["get", "filterrank"],
           0,
           1,
           1,
@@ -92,10 +76,7 @@
           14,
           14
         ],
-        "text-field": [
-          "get",
-          "county"
-        ]
+        "text-field": ["get", "county"]
       },
       "paint": {
         "text-halo-width": 1.5,
@@ -109,31 +90,15 @@
       "type": "symbol",
       "source": "composite",
       "source-layer": "centers-itp-bg513o",
-      "filter": [
-        ">=",
-        [
-          "get",
-          "population"
-        ],
-        539301
-      ],
+      "filter": [">=", ["get", "population"], 539301],
       "layout": {
-        "text-field": [
-          "get",
-          "county"
-        ],
+        "text-field": ["get", "county"],
         "text-size": 15,
-        "text-font": [
-          "DIN Pro Bold",
-          "Arial Unicode MS Regular"
-        ],
+        "text-font": ["DIN Pro Bold", "Arial Unicode MS Regular"],
         "text-padding": 4,
         "symbol-sort-key": [
           "step",
-          [
-            "get",
-            "filterrank"
-          ],
+          ["get", "filterrank"],
           0,
           1,
           1,

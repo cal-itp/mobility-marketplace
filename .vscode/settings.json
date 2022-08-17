@@ -6,6 +6,12 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }

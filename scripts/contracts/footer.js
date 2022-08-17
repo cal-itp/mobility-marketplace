@@ -3,16 +3,20 @@
 
   It integrates with `smart-table.js` to be called when data is filtered.
 */
-const updateFooter = filters => {
-  const productFilters = filters.filter(f => f.field === "product" && f.type === "like");
+const updateFooter = (filters) => {
+  const productFilters = filters.filter(
+    (f) => f.field === "product" && f.type === "like"
+  );
 
   const footnotes = $("ol.footnote-listing").children("li");
   footnotes.each((i, elem) => {
     const _dataAttr = $(elem).attr("data-products");
 
     const footnoteProducts = _dataAttr ? _dataAttr.split(",") : [];
-    const selectedProducts = new Set(productFilters.map(f => f.value));
-    const intersection = new Set(footnoteProducts.filter(p => selectedProducts.has(p)));
+    const selectedProducts = new Set(productFilters.map((f) => f.value));
+    const intersection = new Set(
+      footnoteProducts.filter((p) => selectedProducts.has(p))
+    );
 
     const footnoteHasProducts = footnoteProducts.length !== 0;
     const footnoteMatchesFilters = intersection.size !== 0;

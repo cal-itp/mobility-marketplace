@@ -22,7 +22,7 @@
      `pre-approved-contracts-filter-product`.
  */
 const smartTableCallbacks = {
-  dataFiltered: []
+  dataFiltered: [],
 };
 
 $(function () {
@@ -44,27 +44,36 @@ $(function () {
   `;
 
   smartTables.forEach((tableContainer) => {
-    let tableID = tableContainer.getAttribute('id');
+    let tableID = tableContainer.getAttribute("id");
     if (!tableID) {
       tableID = getRandomString();
-      tableContainer.setAttribute('id', tableID);
+      tableContainer.setAttribute("id", tableID);
 
-      console.warn(`Smart Table does not have ID, automatically assigning #${tableID}`);
+      console.warn(
+        `Smart Table does not have ID, automatically assigning #${tableID}`
+      );
     }
 
-    const filterableCols = tableContainer.getAttribute('data-filterable-cols').replace(/[ ]+/g, '').split(',');
-    const pillContainer = tableContainer.querySelector('.filterable-table__pills');
-    const table = tableContainer.querySelector('table');
+    const filterableCols = tableContainer
+      .getAttribute("data-filterable-cols")
+      .replace(/[ ]+/g, "")
+      .split(",");
+    const pillContainer = tableContainer.querySelector(
+      ".filterable-table__pills"
+    );
+    const table = tableContainer.querySelector("table");
 
     if (filterableCols.length > 0 && pillContainer === null) {
-      console.warn(`Smart Table with ID of #${tableID} supports filtering but has no Pill Container.`);
+      console.warn(
+        `Smart Table with ID of #${tableID} supports filtering but has no Pill Container.`
+      );
       console.warn(tableContainer);
     }
 
     const pillFilters = new Set();
     new Tabulator(table, {
-      layout: 'fitColumns',
-      tableBuilt: function() {
+      layout: "fitColumns",
+      tableBuilt: function () {
         const columns = this.getColumnDefinitions();
 
         for (const column of columns) {
@@ -72,7 +81,7 @@ $(function () {
           const urlQuery = `${tableID}-filter-${field}`;
 
           if (urlParams.has(urlQuery)) {
-            this.addFilter(field, 'like', urlParams.get(urlQuery));
+            this.addFilter(field, "like", urlParams.get(urlQuery));
           }
         }
       },
@@ -86,22 +95,22 @@ $(function () {
           }
 
           const $pill = $(buildPill(cellValue, colName));
-          $pill.find('.pill__close').on('click', () => {
+          $pill.find(".pill__close").on("click", () => {
             pillContainer.removeChild($pill[0]);
             pillFilters.delete(cellValue);
 
-            this.removeFilter(colName, 'like', cellValue);
+            this.removeFilter(colName, "like", cellValue);
           });
 
           pillContainer.prepend($pill[0]);
           pillFilters.add(cellValue);
         }
 
-        smartTableCallbacks.dataFiltered.forEach(cb => cb(filters));
+        smartTableCallbacks.dataFiltered.forEach((cb) => cb(filters));
       },
-      cellClick: function(e, cell) {
+      cellClick: function (e, cell) {
         const colDefinition = cell.getColumn().getDefinition();
-        const colName = colDefinition['field'];
+        const colName = colDefinition["field"];
 
         if (pillContainer === null || filterableCols.indexOf(colName) < 0) {
           return;
@@ -109,11 +118,11 @@ $(function () {
 
         /** @type {Array<{field: string, type: string, value: any}>} */
         const filters = this.getFilters();
-        const filterExists = filters.some(filter => filter.field === colName);
+        const filterExists = filters.some((filter) => filter.field === colName);
         const cellValue = cell.getValue().trim();
 
         if (!filterExists) {
-          this.addFilter(colName, 'like', cellValue);
+          this.addFilter(colName, "like", cellValue);
         }
       },
     });
