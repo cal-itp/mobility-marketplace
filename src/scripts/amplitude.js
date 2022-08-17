@@ -47,6 +47,14 @@ $(function () {
     return true;
   });
 
+  $(".return-top").on("click", function (e) {
+    // track clicks on the Return to Top shortcut button
+    track(events.returnedToTop, {
+      path: path(),
+      position: window.scrollY,
+    });
+  });
+
   // track an event for every page load
   track(events.viewedPage, {
     path: path(),
