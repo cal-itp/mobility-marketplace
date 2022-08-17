@@ -35,4 +35,9 @@ $(function () {
       text: $target.text().trim(),
     });
   });
+
+  // track an event for every page load
+  track(events.viewedPage, {
+    path: path(),
+  });
 });
