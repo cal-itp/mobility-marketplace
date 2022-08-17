@@ -1,18 +1,29 @@
-title: California Mobility Marketplace
-description: >-
-  A resource to help transit providers upgrade their fare collection systems to accept contactless payment methods like credit/debit cards and smartphones.
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: www.camobilitymarketplace.org
-url: "https://www.camobilitymarketplace.org/" # the base hostname & protocol for your site, e.g. http://example.com
-google_analytics_id: "UA-176840950-1"
-fonts: "family=Poppins:wght@400;700&family=Raleway:wght@700"
-theme_color: "#ffffff"
-theme_color_background: "#ffffff"
-mailing_list: https://lp.constantcontactpages.com/su/eLbtFoE/calitp?source_id=a41b99cd-7f28-4be8-a286-f9e75fc7bbce&source_type=em&c=
 collections:
   pages:
     output: true
     permalink: /:title
+description: >-
+  A resource to help transit providers upgrade their fare collection systems to accept contactless payment methods like credit/debit cards and smartphones.
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - _data/
+  - .devcontainer/
+  - .vscode/
+  - submodules/
+  - LICENSE
+  - README.md
+fonts: "family=Poppins:wght@400;700&family=Raleway:wght@700"
+google_analytics_id: "UA-176840950-1"
+mailing_list: https://lp.constantcontactpages.com/su/eLbtFoE/calitp?source_id=a41b99cd-7f28-4be8-a286-f9e75fc7bbce&source_type=em&c=
 navigation:
   header:
     - name: Go contactless
@@ -39,19 +50,7 @@ navigation:
     - name: Register to vote
       url: https://registertovote.ca.gov/
       target: _blank
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-exclude:
-  - _data/
-  - .devcontainer/
-  - .vscode/
-  - submodules/
-  - LICENSE
-  - README.md
+title: California Mobility Marketplace
+theme_color: "#ffffff"
+theme_color_background: "#ffffff"
+url: "https://www.camobilitymarketplace.org/" # the base hostname & protocol for your site, e.g. http://example.com
