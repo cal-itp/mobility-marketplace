@@ -1,8 +1,8 @@
-/node_modules/
-/_site/
-/.jekyll-cache/
-/.jekyll-metadata/
-/vendor/
-/.netlify/
-/data/providers/*.json
-/.bundle/
+_site/
+.bundle/
+.jekyll-cache/
+.jekyll-metadata/
+.netlify/
+data/providers/*.json
+node_modules/
+vendor/

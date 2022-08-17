@@ -1,6 +1,6 @@
 [
   {
-    "beforeId" : "place-label",
+    "beforeId": "place-label",
     "layers": [
       {
         "id": "counties",
@@ -9,13 +9,8 @@
         "paint": {
           "fill-color": [
             "interpolate",
-            [
-              "linear"
-            ],
-            [
-              "get",
-              "num_providers"
-            ],
+            ["linear"],
+            ["get", "num_providers"],
             1,
             "hsl(208, 36%, 78%)",
             20,
