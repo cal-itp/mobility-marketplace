@@ -24,4 +24,15 @@ $(function () {
       console.warn("Couldn't get Amplitude client for event: [", event, "] with props: ", props);
     }
   }
+
+  $("a").on("click", function (e) {
+    // track clicks on links
+    const $target = $(e.target);
+    track(events.clickedLink, {
+      href: $target.attr("href").replace(/\/$/, ""),
+      path: path(),
+      target: $target.attr("target"),
+      text: $target.text().trim(),
+    });
+  });
 });
