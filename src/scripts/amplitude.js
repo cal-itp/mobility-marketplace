@@ -32,8 +32,12 @@ $(function () {
   $("a").on("click", function (e) {
     // track clicks on links
     const $target = $(e.target);
+    // check if this link is inside a .nav-item parent (i.e. it is a main menu link)
+    const nav = $target.parent(".nav-item").length > 0;
+
     track(events.clickedLink, {
       href: removeSlash($target.attr("href")),
+      nav: nav,
       path: path(),
       target: $target.attr("target"),
       text: $target.text().trim(),
