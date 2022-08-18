@@ -25,13 +25,23 @@
   // see https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver#example
   const targetNode = document.querySelector(".ctct-inline-form");
   const callback = (mutations, observer) => {
-    // add a name property for use in Amplitude events
-    $("form", targetNode).attr("name", "newsletter");
+    // the Constant Contact form is eating the submit event, which isn't bubbling to our amplitude.js handler
+    // instead react to the submit button, and send the event from here
+    $("button[type=submit]", targetNode).on("click", function (e) {
+      analytics.track(analytics.events.submittedForm, {
+        form: "newsletter",
+      });
+    });
     observer.disconnect();
   };
 
   const observer = new MutationObserver(callback);
   observer.observe(targetNode, { childList: true });
 </script>
-<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<script
+  id="signupScript"
+  src="https://static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js"
+  async
+  defer
+></script>
 <!-- End Constant Contact Active Forms -->
