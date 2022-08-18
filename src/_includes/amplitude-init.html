@@ -29,6 +29,6 @@
   amplitude.getInstance().init("2415da59d21d20fcd68026b5f96a21ab");
   {% endif %}
 
-  var identify = new amplitude.Identify().setOnce("landing_page", window.location.href.replace(window.location.origin, ""));
+  var identify = new amplitude.Identify().setOnce("landing_page", window.location.href.replace(window.location.origin, "").replace(/\/$/, "") || "/");
   amplitude.getInstance().identify(identify);
 </script>
