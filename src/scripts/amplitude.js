@@ -1,10 +1,14 @@
 $(function () {
+  window.analytics = window.analytics || {};
+
   const events = {
     clickedLink: "clicked link",
     returnedToTop: "returned to top",
     submittedForm: "submitted form",
     viewedPage: "viewed page",
   };
+
+  window.analytics.events = events;
 
   function removeSlash(input) {
     return input.replace(/\/$/, "") || "/";
@@ -32,6 +36,8 @@ $(function () {
       console.warn("Couldn't get Amplitude client for event: [", event, "] with props: ", props);
     }
   }
+
+  window.analytics.track = track;
 
   $("a").on("click", function (e) {
     // track clicks on links
