@@ -16,6 +16,22 @@
 </section>
 
 <!-- Begin Constant Contact Active Forms -->
-<script> var _ctct_m = "e240cb4001c90b8b1e2829cb8b017263"; </script>
+<script>
+  var _ctct_m = "e240cb4001c90b8b1e2829cb8b017263";
+
+  // watch the above form container for changes to its child list
+  // as soon as Constant Contact injects the inner form, add a name attribute
+
+  // see https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver#example
+  const targetNode = document.querySelector(".ctct-inline-form");
+  const callback = (mutations, observer) => {
+    // add a name property for use in Amplitude events
+    $("form", targetNode).attr("name", "newsletter");
+    observer.disconnect();
+  };
+
+  const observer = new MutationObserver(callback);
+  observer.observe(targetNode, { childList: true });
+</script>
 <script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
 <!-- End Constant Contact Active Forms -->
