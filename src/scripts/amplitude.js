@@ -6,12 +6,16 @@ $(function () {
     viewedPage: "viewed page",
   };
 
+  function removeSlash(input) {
+    return input.replace(/\/$/, "") || "/";
+  }
+
   function path() {
     // get the full path, including #hash and ?querystring, without the protocol/domain
     // and remove trailing slash (except for the homepage)
     // URL: https://www.camobilitymarketplace.org/contracts/view?contracts-filter-product=Transit%20Processor
     // returns: /contracts/view?contracts-filter-product=Transit%20Processor
-    return window.location.href.replace(window.location.origin, "").replace(/\/$/, "") || "/";
+    return removeSlash(window.location.href.replace(window.location.origin, ""));
   }
 
   function track(event, props = {}) {
@@ -29,7 +33,7 @@ $(function () {
     // track clicks on links
     const $target = $(e.target);
     track(events.clickedLink, {
-      href: $target.attr("href").replace(/\/$/, ""),
+      href: removeSlash($target.attr("href")),
       path: path(),
       target: $target.attr("target"),
       text: $target.text().trim(),
