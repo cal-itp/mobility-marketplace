@@ -22,6 +22,10 @@ $(function () {
     // track an event with Amplitude
     const client = amplitude ? amplitude.getInstance() : null;
 
+    if (!props.hasOwnProperty("path")) {
+      props["path"] = path();
+    }
+
     if (client) {
       client.logEvent(event, props);
     } else {
@@ -38,7 +42,6 @@ $(function () {
     track(events.clickedLink, {
       href: removeSlash($target.attr("href")),
       nav: nav,
-      path: path(),
       target: $target.attr("target"),
       text: $target.text().trim(),
     });
@@ -49,7 +52,6 @@ $(function () {
     const $target = $(e.target);
     track(events.submittedForm, {
       form: $target.attr("name"),
-      path: path(),
     });
     // ensure event bubbles up
     return true;
@@ -58,13 +60,10 @@ $(function () {
   $(".return-top").on("click", function (e) {
     // track clicks on the Return to Top shortcut button
     track(events.returnedToTop, {
-      path: path(),
       position: window.scrollY,
     });
   });
 
   // track an event for every page load
-  track(events.viewedPage, {
-    path: path(),
-  });
+  track(events.viewedPage);
 });
