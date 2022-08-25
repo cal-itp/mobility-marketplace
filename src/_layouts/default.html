@@ -79,7 +79,11 @@
       };
     </script>
     <script defer src="{{ script_src }}"></script>
-    {% endif %} {% include amplitude-init.html %}
+    {% endif %}
+
+    <script type="text/javascript" id="hs-script-loader" async defer src="https://js-na1.hs-scripts.com/5519226.js"></script>
+
+    {% include amplitude-init.html %}
     <script defer src="/scripts/amplitude.js"></script>
   </body>
 </html>
