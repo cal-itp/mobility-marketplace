@@ -61,3 +61,12 @@ entries:
     product: Payment Acceptance Devices
     user_instructions: ~
     footnotes: ~
+
+  - contract: View Data Plans
+    contract_url: https://cdt.ca.gov/services/calnet-calitp/
+    vendor: Verizon, AT&T, T-Mobile
+    category: Connectivity
+    product: Data Plans
+    user_instructions: ~
+    footnotes:
+      - 1
