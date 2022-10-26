@@ -38,9 +38,11 @@ Once inside the devcontainer, you have the manually start the site:
 1. `Ctrl/Cmd+Shift+P` to bring up the Command Palette
 1. Enter `Tasks: Run Task`
 1. Enter or select `Jekyll: Build Dev`
+1. Open the app on `http://127.0.0.1:4000/`\*
 
-The site is running on <http://127.0.0.1>; check the VS Code _Ports_ tab for the exact port. Auto rebuild/reload will be active
-and will watch the site files for changes.
+Auto rebuild/reload will be active and will watch the site files for changes.
+
+\* Try using <kbd>cmd</kbd> and clicking on the server address from the Terminal
 
 ## License
 
