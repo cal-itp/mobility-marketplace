@@ -62,7 +62,7 @@ entries:
     user_instructions: ~
     footnotes: ~
 
-  - contract: View Data Plans
+  - contract: CalNet
     contract_url: https://cdt.ca.gov/services/calnet-calitp/
     vendor: Verizon, AT&T, T-Mobile
     category: Connectivity
