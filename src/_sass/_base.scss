@@ -35,13 +35,29 @@ figure {
   }
 }
 
-h1, h2, h3,
-h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
 }
 
 h1 {
   margin-top: 0;
+}
+
+h2 {
+  font-size: calc(32rem / 16);
+}
+
+h3 {
+  font-size: calc(24rem / 16);
+}
+
+h4 {
+  font-size: calc(16rem / 16);
 }
 
 hr {
