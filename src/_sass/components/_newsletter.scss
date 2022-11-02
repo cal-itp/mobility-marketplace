@@ -1,4 +1,35 @@
 .newsletter-container {
-  // Magic number. Design spec asks for 115px padding but Constant Contact adds 24px padding.
-  padding: 91px 0;
+  padding-bottom: 118px;
+
+  div.ctct-form-embed div.ctct-form-defaults h2.ctct-form-header {
+    font-family: $headings-font-family;
+  }
+
+  .ctct-inline-form,
+  .ctct-form-defaults,
+  .ctct-form-custom,
+  .ctct-form-header,
+  div.ctct-form-embed div.ctct-form-defaults p.ctct-form-text,
+  div.ctct-form-embed div.ctct-form-defaults p.ctct-gdpr-text,
+  div.ctct-form-embed form.ctct-form-custom input.ctct-form-element,
+  .ctct-form-field,
+  .ctct-form-button {
+    font-family: $font-family-sans-serif;
+  }
+
+  .ctct-form-button {
+    font-weight: 700;
+  }
+
+  div.ctct-form-embed form.ctct-form-custom input.ctct-form-element {
+    font-size: 24px;
+    line-height: 125%;
+    box-shadow: none;
+    border: 2px solid #a6a9ae;
+    height: auto;
+  }
+
+  div.ctct-form-embed div.ctct-form-defaults p.ctct-gdpr-text {
+    color: #6b7178;
+  }
 }
