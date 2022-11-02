@@ -1,7 +1,6 @@
 <section class="mobi-mart-footer">
-  {% if include.show_newsletter %}
-    {% include newsletter-sign-up.html %}
-  {% endif %}
+  {% if include.show_newsletter %} {% include newsletter-sign-up.html newsletter_background=include.newsletter_background %} {%
+  endif %}
 
   <footer id="footer" class="global-footer">
     <div class="container">

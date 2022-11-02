@@ -70,8 +70,10 @@ $gc-blue: rgb(235, 248, 252);
   }
 }
 
-.ctct-form-embed.form_0 .ctct-form-defaults {
-  background-color: white !important;
+.bg-white {
+  .ctct-form-embed.form_0 .ctct-form-defaults {
+    background-color: white !important;
+  }
 }
 
 .contactless-cta-image {
