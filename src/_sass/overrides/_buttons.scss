@@ -1,3 +1,11 @@
 .btn {
   font-weight: bold;
 }
+
+.btn-outline-primary {
+  background-color: transparent !important;
+
+  &:hover {
+    color: $primary !important;
+  }
+}
