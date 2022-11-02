@@ -32,4 +32,10 @@
   div.ctct-form-embed div.ctct-form-defaults p.ctct-gdpr-text {
     color: #6b7178;
   }
+
+  &.bg-white {
+    .ctct-form-embed.form_0 .ctct-form-defaults {
+      background-color: white !important;
+    }
+  }
 }
