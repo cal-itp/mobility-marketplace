@@ -8,13 +8,7 @@ $gc-blue: rgb(235, 248, 252);
 
 .go-contactless-hero {
   background: $gc-tan;
-  background: linear-gradient(
-      90deg,
-      $gc-tan 0,
-      $gc-tan 37%,
-      $gc-blue 37%,
-      $gc-blue 100%
-  );
+  background: linear-gradient(90deg, $gc-tan 0, $gc-tan 37%, $gc-blue 37%, $gc-blue 100%);
 }
 
 .go-contactless-hero__inner {
@@ -50,7 +44,6 @@ $gc-blue: rgb(235, 248, 252);
   overflow: hidden;
 }
 
-
 .go-contactless-benefit-card {
   background-color: #fff;
   padding: 1rem;
@@ -66,12 +59,65 @@ $gc-blue: rgb(235, 248, 252);
 }
 
 .go-contactless-agency {
-  h3, p {
+  h3,
+  p {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
   img {
     width: 100%;
+  }
+}
+
+.ctct-form-embed.form_0 .ctct-form-defaults {
+  background-color: white !important;
+}
+
+.contactless-cta-image {
+  width: 424px;
+}
+
+ol.timeline {
+  list-style-type: none;
+  margin-left: 0;
+  h3,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    padding-bottom: 8px;
+  }
+  li {
+    counter-increment: customlistcounter;
+  }
+  li:before {
+    content: counter(customlistcounter) " ";
+    font-weight: 600;
+    float: left;
+    width: 48px;
+    color: #046b99;
+    border: 4px solid #046b99;
+    border-radius: 50%;
+    height: 48px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box;
+    background: #f6f3ed;
+  }
+  &:first-child {
+    counter-reset: customlistcounter;
+  }
+  .timeline-item {
+    margin-left: 24px;
+    padding-left: 36px;
+    border-left: 4px solid #046b99;
+    padding-bottom: 50px;
+  }
+  li:last-of-type .timeline-item {
+    border-left: 4px solid transparent;
+    padding-bottom: 0;
   }
 }
