@@ -1,5 +1,6 @@
 body {
   font-size: 1rem;
+  font-family: $font-family-sans-serif;
 }
 
 blockquote {
@@ -42,6 +43,7 @@ h4,
 h5,
 h6 {
   font-weight: bold;
+  font-family: $headings-font-family;
 }
 
 h1 {
