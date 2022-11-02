@@ -97,15 +97,15 @@ ol.timeline {
     font-weight: 600;
     float: left;
     width: 48px;
-    color: #046b99;
-    border: 4px solid #046b99;
+    color: $primary;
+    border: 4px solid $primary;
     border-radius: 50%;
     height: 48px;
     font-size: 24px;
     text-align: center;
     line-height: 40px;
     box-sizing: border-box;
-    background: #f6f3ed;
+    background: $gc-tan;
   }
   &:first-child {
     counter-reset: customlistcounter;
@@ -113,7 +113,7 @@ ol.timeline {
   .timeline-item {
     margin-left: 24px;
     padding-left: 36px;
-    border-left: 4px solid #046b99;
+    border-left: 4px solid $primary;
     padding-bottom: 50px;
   }
   li:last-of-type .timeline-item {
