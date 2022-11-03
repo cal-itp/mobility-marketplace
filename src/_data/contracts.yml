@@ -62,7 +62,7 @@ entries:
     user_instructions: ~
     footnotes: ~
 
-  - contract: View Data Plans
+  - contract: CalNet
     contract_url: https://cdt.ca.gov/services/calnet-calitp/
     vendor: Verizon, AT&T, T-Mobile
     category: Connectivity
@@ -70,3 +70,11 @@ entries:
     user_instructions: ~
     footnotes:
       - 1
+
+  - contract: NASPO
+    contract_url: /assets/Cal-ITP.MobilityMarketplace.DataPlans.NASPO.FirstNet.pdf
+    vendor: FirstNet
+    category: Connectivity
+    product: Data Plans
+    user_instructions: ~
+    footnotes: ~
