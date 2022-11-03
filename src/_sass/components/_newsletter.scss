@@ -5,6 +5,18 @@
     font-family: $headings-font-family;
   }
 
+  div.ctct-form-embed form.ctct-form-custom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #gdpr_text {
+    padding-top: 2rem;
+    order: 8;
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+
   .ctct-inline-form,
   .ctct-form-defaults,
   .ctct-form-custom,
@@ -15,10 +27,25 @@
   .ctct-form-field,
   .ctct-form-button {
     font-family: $font-family-sans-serif;
+    border-radius: calc(5rem / 16);
   }
 
-  .ctct-form-button {
+  div.ctct-form-embed form.ctct-form-custom div.ctct-form-field,
+  #email_address_field_0 {
+    margin-bottom: 12.55px;
+  }
+
+  .ctct-form-button,
+  div.ctct-form-embed form.ctct-form-custom button.ctct-form-button {
     font-weight: 700;
+    background-color: $primary;
+    border-color: $primary;
+    padding: 11px;
+    &:hover {
+      color: #fff;
+      background-color: #035376;
+      border-color: #035376;
+    }
   }
 
   div.ctct-form-embed form.ctct-form-custom input.ctct-form-element {
