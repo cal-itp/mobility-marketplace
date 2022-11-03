@@ -14,7 +14,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: #035376;
-    border-color: #035376;
+    color: $hover-color;
+    border-color: $hover-color;
   }
 }

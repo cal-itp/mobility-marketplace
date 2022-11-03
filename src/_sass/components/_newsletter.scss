@@ -1,10 +1,10 @@
 .newsletter-container {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: calc(80rem / 16);
+  padding-bottom: calc(80rem / 16);
 
   @include media-breakpoint-up(md) {
-    padding-top: 104px;
-    padding-bottom: 118px;
+    padding-top: calc(104rem / 16);
+    padding-bottom: calc(118rem / 16);
   }
 
   .ctct-form-embed.form_0 .ctct-form-defaults {
@@ -23,8 +23,8 @@
   #gdpr_text {
     padding-top: 2rem;
     order: 8;
-    font-size: 12px;
-    line-height: 16.8px;
+    font-size: calc(12rem / 16);
+    line-height: calc(16.8rem / 16);
   }
 
   .ctct-inline-form,
@@ -42,7 +42,7 @@
 
   div.ctct-form-embed form.ctct-form-custom div.ctct-form-field,
   #email_address_field_0 {
-    margin-bottom: 12.55px;
+    margin-bottom: calc(12.55rem / 16);
   }
 
   .ctct-form-button,
@@ -50,19 +50,19 @@
     font-weight: 700;
     background-color: $primary;
     border-color: $primary;
-    padding: 11px;
+    padding: calc(11rem / 16);
     &:hover {
       color: #fff;
-      background-color: #035376;
-      border-color: #035376;
+      background-color: $hover-color;
+      border-color: $hover-color;
     }
   }
 
   div.ctct-form-embed form.ctct-form-custom input.ctct-form-element {
-    font-size: 24px;
+    font-size: calc(24rem / 16);
     line-height: 125%;
     box-shadow: none;
-    border: 2px solid #a6a9ae;
+    border: calc(2rem / 16) solid #a6a9ae;
     height: auto;
   }
 
