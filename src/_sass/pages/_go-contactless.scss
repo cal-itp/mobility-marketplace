@@ -117,3 +117,22 @@ ol.timeline {
     padding-bottom: 0;
   }
 }
+
+.go-contactless-timeline-container {
+  .procurement-image {
+    order: 3;
+  }
+  .procurement-timeline {
+    order: 1;
+  }
+  .procurement-button {
+    order: 2;
+  }
+  @include media-breakpoint-up(md) {
+    .procurement-image,
+    .procurement-button,
+    .procurement-timeline {
+      order: initial;
+    }
+  }
+}
