@@ -1,5 +1,9 @@
 .btn {
   font-weight: bold;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: initial;
+  }
 }
 
 .btn-outline-primary {
