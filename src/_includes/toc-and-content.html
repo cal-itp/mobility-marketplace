@@ -18,7 +18,9 @@
     <h2>{{ item.title }}</h2>
     {% for entry in item.subsection_items %}
     <h3 id="{{ entry.url }}">{{ entry.title }}</h3>
-    {% for paragraph in entry.paragraphs %}
+    {% for paragraph in entry.paragraphs %} {% if paragraph.title %}
+    <h4>{{ paragraph.title }}</h4>
+    {% endif %}
     <p>{{ paragraph.text }}</p>
     {% endfor %} {% endfor %} {% endfor %}
   </div>
