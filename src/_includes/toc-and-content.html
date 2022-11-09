@@ -3,22 +3,22 @@
     <div class="toc-container">
       <h4>Table of Contents</h4>
 
-      {% for item in site.data.contactless.toc.toc %}
+      {% for item in include.toc_data %}
       <h4>{{ item.title }}</h4>
       <ul>
-        {% for entry in item.subsection_items %}
-        <li><a href="#{{ entry.url }}">{{ entry.title }}</a></li>
+        {% for subsection_item in item.subsection_items %}
+        <li><a href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a></li>
         {% endfor %}
       </ul>
       {% endfor %}
     </div>
   </div>
   <div class="col-md-9">
-    {% for item in site.data.contactless.toc.toc %}
+    {% for item in include.toc_data %}
     <h2>{{ item.title }}</h2>
-    {% for entry in item.subsection_items %}
-    <h3 id="{{ entry.url }}">{{ entry.title }}</h3>
-    {% for paragraph in entry.paragraphs %} {% if paragraph.title %}
+    {% for subsection_item in item.subsection_items %}
+    <h3 id="{{ subsection_item.url }}">{{ subsection_item.title }}</h3>
+    {% for paragraph in subsection_item.paragraphs %} {% if paragraph.title %}
     <h4>{{ paragraph.title }}</h4>
     {% endif %}
     <p>{{ paragraph.text }}</p>
