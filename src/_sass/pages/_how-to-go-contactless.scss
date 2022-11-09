@@ -1,14 +1,13 @@
-.main-primary {
+.how-to-go-contactless .main-primary {
   height: calc(100vh - 112px);
-  background: pink;
   overflow: scroll;
 }
 
 .fixed + div :target:before {
   display: block;
   content: "";
-  height: 35px !important; // Beta 5.0 addition (gives more space on top of targer)
-  margin: -35px 0 0 !important; // Beta 5.0 addition
+  height: 1px !important; // Beta 5.0 addition (gives more space on top of target)
+  margin: -1px 0 0 !important; // Beta 5.0 addition
 }
 
 .go-contactless--how-to {
