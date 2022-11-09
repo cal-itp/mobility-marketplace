@@ -2,20 +2,48 @@ toc:
   - title: Prepare
     subsection_items:
       - title: Getting started
-        url: "#getting-started"
+        url: "getting-started"
       - title: What to know about MSAs
-        url: "#what-to-know-about-msas"
+        url: "what-to-know-about-msas"
+        paragraphs:
+          - text: The California Department of General Services (DGS), in collaboration with Cal-ITP, conducted an RFP that established 6 Master Service Agreements (MSAs) that allow Transit Providers to purchase directly without further competitive bidding.
+          - text: The MSAs allow any local government entities that operate public transportation services (“Transit Providers”) to purchase goods and services off the MSAs. Out-of-state Transit Providers—including but not limited to members of the Oregon Cooperative Procurement Program (ORCPP) and the Washington State Purchasing Cooperative (WSPC)—can also participate. Each Transit Provider should determine whether use of the MSAs is consistent with its procurement policies and regulations. California’s MSAs are generally known as State Purchasing Schedules in other states.
+          - text: Projects resulting from these MSAs may be funded through grants from the Federal Transit Administration (FTA), and/or the State of California, California Department of Transportation (Caltrans), and other sources of local and state public funding. Check with your funding agencies.
+      - title: GTFS Compliance
+        url: "gtfs-compliance"
+        paragraphs:
+          - text: We recommend creating an action plan for becoming GTFS-ready before going contactless, as the vendors you select can help you use this data for reporting purposes plus help your customers see your real-time vehicle location and fare information on journey-planning smartphone maps and apps.
+      - title: Connectivity
+        url: "connectivity"
+        paragraphs:
+          - text: You’ll need to ensure internet connectivity on your fleet to power contactless fare collection. You can view details on Data Plans here. Your transit agency may be eligible to upgrade your data plan and save on your monthly connectivity costs.
+      - title: How much will this cost?
+        url: "how-much-will-this-cost"
+        paragraphs:
+          - text: When you’re ready to start creating cost estimates for purchasing contactless payment hardware and software services, this Excel Workbook will help transit agency staff to a) compare vendor prices and develop ballpark estimates for budgeting purposes (and board presentations), and b) make scoping and vendor decisions during the vendor engagement phase.
   - title: Procure
     subsection_items:
       - title: Assess vendors
-        url: "#assess-vendors"
+        url: "assess-vendors"
+        paragraphs:
+          - text: You can review available contracts here.
       - title: Draft scope of work
-        url: "#draft-scope-of-work"
+        url: "draft-scope-of-work"
+        paragraphs:
+          - text: After you’ve read through the Contactless Payments MSA Information Packet and Contactless Payments Introduction, move onto this MSA SOW Template and Guidance (PDF).
+          - text: This PDF provides detailed guidance for transit agency staff on how to complete a User Agreement Scope of Work as required to participate in the Master Service Agreements (MSAs) for Payment Acceptance Devices (PADs) and Transit Processor Services. Completing it will assist your agency with key scoping decisions as you work toward purchasing hardware and software services.
+
       - title: What contracts do I sign with selected vendors?
-        url: "#what-contracts-do-i-sign-with-vendors"
+        url: "what-contracts-do-i-sign-with-vendors"
+        paragraphs:
+          - text: After you’ve finalized the details of your project with the vendor "contractors" you’ve selected, you’ll complete the California Department of General Services (DGS) standard agreement 213 with each vendor's contact information, sign it as the "contracting agency," and send a copy to DGS. (Note that you'll need Adobe Acrobat or Reader to complete this PDF form.)
   - title: Implement
     subsection_items:
       - title: Get ready to launch
-        url: "#get-ready-to-launch"
+        url: "get-ready-to-launch"
+        paragraphs:
+          - text: Cal-ITP can work with you to develop a launch plan for your agency, including communications and outreach materials for riders.
       - title: Maintenance and support
-        url: "#maintenance-and-support"
+        url: "maintenance-and-support"
+        paragraphs:
+          - text: Cal-ITP is here to help! You can contact us for assistance or send an email to hello@calitp.org.
