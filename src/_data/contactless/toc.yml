@@ -1,0 +1,21 @@
+toc:
+  - title: Prepare
+    subsection_items:
+      - title: Getting started
+        url: "#getting-started"
+      - title: What to know about MSAs
+        url: "#what-to-know-about-msas"
+  - title: Procure
+    subsection_items:
+      - title: Assess vendors
+        url: "#assess-vendors"
+      - title: Draft scope of work
+        url: "#draft-scope-of-work"
+      - title: What contracts do I sign with selected vendors?
+        url: "#what-contracts-do-i-sign-with-vendors"
+  - title: Implement
+    subsection_items:
+      - title: Get ready to launch
+        url: "#get-ready-to-launch"
+      - title: Maintenance and support
+        url: "#maintenance-and-support"

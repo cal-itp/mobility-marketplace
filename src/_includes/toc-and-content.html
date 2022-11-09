@@ -2,19 +2,15 @@
   <div class="toc col-md-3">
     <div class="toc-container">
       <h4>Table of Contents</h4>
-      <h4>Prepare</h4>
-      <h5><a href="#getting-started">Getting started</a></h5>
-      <h5><a href="#what-to-know-about-msas">What to know about MSAs</a></h5>
-      <h5><a href="#gtfs-compliance">GTFS Compliance</a></h5>
-      <h5><a href="#connectivity">Connectivity</a></h5>
-      <h5><a href="#how-much-will-it-cost">How much will it cost?</a></h5>
-      <h4>Procure</h4>
-      <h5><a href="#assess-vendors">Assess vendors</a></h5>
-      <h5><a href="#draft-scope-of-work">Draft scope of work</a></h5>
-      <h5><a href="#what-contracts-do-i-sign-with-selected-vendors">What contracts do I sign with selected vendors?</a></h5>
-      <h4>Implement</h4>
-      <h5><a href="#get-ready-to-launch">Get ready to launch</a></h5>
-      <h5><a href="#maintenance-and-support">Maintenance and support</a></h5>
+
+      {% for item in site.data.contactless.toc.toc %}
+      <h3>{{ item.title }}</h3>
+      <ol>
+        {% for entry in item.subsection_items %}
+        <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+        {% endfor %}
+      </ol>
+      {% endfor %}
     </div>
   </div>
   <div class="col-md-9">
