@@ -3,13 +3,16 @@
   flex-direction: column;
   min-height: 100vh;
 
-  .mobi-mart-header {}
+  .mobi-mart-header {
+  }
 
   .mobi-mart-content {
     flex: 1;
   }
 
-  .mobi-mart-footer {}
+  .mobi-mart-footer {
+    margin-top: 4rem;
+  }
 
   &.no-banner {
     .mobi-mart-content {
