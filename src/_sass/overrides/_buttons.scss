@@ -3,6 +3,7 @@
   font-weight: bold;
   padding: 0.4375rem 0.75rem; // Button height of 40px
   width: 100%;
+  border-width: 2px;
   @include media-breakpoint-up(md) {
     width: initial;
   }
