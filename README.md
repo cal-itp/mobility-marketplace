@@ -44,6 +44,8 @@ Auto rebuild/reload will be active and will watch the site files for changes.
 
 \* Try using <kbd>cmd</kbd> and clicking on the server address from the Terminal
 
+Note: If the above steps are not working, use [VS Code version 1.72](https://code.visualstudio.com/updates/v1_72)
+
 ## License
 
 Content (including graphics, images, video, documents, and text) in this repository is licensed under [CC-BY 4.0][content-license].

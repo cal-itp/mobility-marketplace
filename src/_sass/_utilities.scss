@@ -25,6 +25,7 @@ $mm-dark-tan: rgb(246, 243, 237);
 // "skinny" page container.
 .container--skinny {
   width: 100%;
+  margin-bottom: 4rem;
 
   @include media-breakpoint-up(md) {
     width: 2/3 * 100%;

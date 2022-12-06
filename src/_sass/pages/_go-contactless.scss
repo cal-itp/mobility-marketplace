@@ -8,13 +8,7 @@ $gc-blue: rgb(235, 248, 252);
 
 .go-contactless-hero {
   background: $gc-tan;
-  background: linear-gradient(
-      90deg,
-      $gc-tan 0,
-      $gc-tan 37%,
-      $gc-blue 37%,
-      $gc-blue 100%
-  );
+  background: linear-gradient(90deg, $gc-tan 0, $gc-tan 37%, $gc-blue 37%, $gc-blue 100%);
 }
 
 .go-contactless-hero__inner {
@@ -50,7 +44,6 @@ $gc-blue: rgb(235, 248, 252);
   overflow: hidden;
 }
 
-
 .go-contactless-benefit-card {
   background-color: #fff;
   padding: 1rem;
@@ -66,12 +59,80 @@ $gc-blue: rgb(235, 248, 252);
 }
 
 .go-contactless-agency {
-  h3, p {
+  h3,
+  p {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
   img {
     width: 100%;
+  }
+}
+
+.contactless-cta-image {
+  width: 424px;
+}
+
+ol.timeline {
+  list-style-type: none;
+  margin-left: 0;
+  h3,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    padding-bottom: calc(8rem / 16);
+  }
+  li {
+    counter-increment: customlistcounter;
+  }
+  li:before {
+    content: counter(customlistcounter) " ";
+    font-weight: 600;
+    float: left;
+    width: calc(48rem / 16);
+    color: $primary;
+    border: calc(4rem / 16) solid $primary;
+    border-radius: 50%;
+    height: calc(48rem / 16);
+    font-size: calc(24rem / 16);
+    text-align: center;
+    line-height: calc(40rem / 16);
+    box-sizing: border-box;
+    background: $gc-tan;
+  }
+  &:first-child {
+    counter-reset: customlistcounter;
+  }
+  .timeline-item {
+    margin-left: calc(24rem / 16);
+    padding-left: calc(36rem / 16);
+    border-left: 4px solid $primary;
+    padding-bottom: calc(50rem / 16);
+  }
+  li:last-of-type .timeline-item {
+    border-left: calc(4rem / 16) solid transparent;
+    padding-bottom: 0;
+  }
+}
+
+.go-contactless-timeline-container {
+  .procurement-image {
+    order: 3;
+  }
+  .procurement-timeline {
+    order: 1;
+  }
+  .procurement-button {
+    order: 2;
+  }
+  @include media-breakpoint-up(md) {
+    .procurement-image,
+    .procurement-button,
+    .procurement-timeline {
+      order: initial;
+    }
   }
 }
