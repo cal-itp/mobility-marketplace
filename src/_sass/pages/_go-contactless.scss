@@ -54,7 +54,7 @@ $gc-blue: rgb(235, 248, 252);
   grid-gap: 2rem;
 
   @include media-breakpoint-up(md) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
