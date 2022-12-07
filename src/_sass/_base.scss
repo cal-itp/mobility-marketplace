@@ -40,10 +40,23 @@ h1,
 h2,
 h3,
 h4,
+.h4,
 h5,
 h6 {
   font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
   font-family: $headings-font-family;
+}
+
+h4,
+.h4,
+h5,
+h6 {
+  font-family: $font-family-sans-serif;
 }
 
 h1 {
@@ -58,8 +71,15 @@ h3 {
   font-size: calc(24rem / 16);
 }
 
-h4 {
+h4,
+.h4 {
   font-size: calc(16rem / 16);
+}
+
+.subtext {
+  color: $primary;
+  font-size: calc(14rem / 16);
+  font-weight: 500;
 }
 
 hr {
