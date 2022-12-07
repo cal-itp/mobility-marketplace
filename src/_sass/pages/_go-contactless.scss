@@ -52,6 +52,7 @@ $gc-blue: rgb(235, 248, 252);
 .go-contactless-agency-container {
   display: grid;
   grid-gap: 2rem;
+  padding: calc(32rem / 16) 0;
 
   @include media-breakpoint-up(md) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
