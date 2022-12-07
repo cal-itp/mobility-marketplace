@@ -1,0 +1,22 @@
+.main-primary {
+  height: calc(100vh - 112px);
+  background: pink;
+  overflow: scroll;
+}
+
+.fixed + div :target:before {
+  display: block;
+  content: "";
+  height: 35px !important; // Beta 5.0 addition (gives more space on top of targer)
+  margin: -35px 0 0 !important; // Beta 5.0 addition
+}
+
+.go-contactless--how-to {
+  .toc {
+    .toc-container {
+      position: sticky;
+      position: -webkit-sticky;
+      top: -1px;
+    }
+  }
+}

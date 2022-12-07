@@ -1,11 +1,19 @@
 .mobi-mart-header {
   box-shadow: unset;
-  padding-bottom: map-get($spacers, 3);
-  padding-top: map-get($spacers, 3);
+  padding-bottom: 13px;
+  padding-top: 13px;
 }
 
 .mobi-mart-logo {
   max-height: 55px;
+}
+
+.fixed + .main-content {
+  padding-top: 112px !important; // Padding for fixed header
+}
+
+.fixed .main-content {
+  padding-top: 112px !important; // Padding for fixed header
 }
 
 //
