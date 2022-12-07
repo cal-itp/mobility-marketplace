@@ -59,6 +59,14 @@ $gc-blue: rgb(235, 248, 252);
 }
 
 .go-contactless-agency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 199px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 0;
+
   h3,
   p {
     padding-left: 1rem;
@@ -66,7 +74,9 @@ $gc-blue: rgb(235, 248, 252);
   }
 
   img {
-    width: 100%;
+    width: auto;
+    max-width: 200px;
+    max-height: 140px;
   }
 }
 
