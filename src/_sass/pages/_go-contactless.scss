@@ -71,6 +71,7 @@ $gc-blue: rgb(235, 248, 252);
   border: 1px solid #dee2e6;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
   border-radius: 0;
+  padding: 0 20px;
 
   h3,
   p {
@@ -80,8 +81,9 @@ $gc-blue: rgb(235, 248, 252);
 
   img {
     width: auto;
-    max-width: 200px;
+    max-width: 180px;
     max-height: 140px;
+    overflow: auto;
   }
 }
 
