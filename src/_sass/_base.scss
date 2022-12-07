@@ -76,6 +76,12 @@ h4,
   font-size: calc(16rem / 16);
 }
 
+.italics {
+  color: #136c97;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 hr {
   margin-bottom: map-get($spacers, 4);
   margin-top: map-get($spacers, 4);
