@@ -16,6 +16,29 @@
       position: sticky;
       position: -webkit-sticky;
       top: -1px;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none !important;
+        border: none;
+        font-weight: 500;
+      }
+    }
+  }
+  .content-container {
+    h2:first-child {
+      margin-top: calc(8rem / 16);
+    }
+    h2 {
+      margin-top: calc(56rem / 16);
+      margin-bottom: calc(48rem / 16);
+    }
+    h3 {
+      margin-top: calc(56rem / 16);
+      margin-bottom: calc(24rem / 16);
     }
   }
 }
