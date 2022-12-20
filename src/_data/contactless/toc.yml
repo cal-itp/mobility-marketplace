@@ -6,9 +6,9 @@ toc:
         paragraphs:
           - title: How do I get started?
           - text: Cal-ITP will provide the resource materials and technical support you need to navigate modernizing your fleet to accept contactless payments. To help us better assist you, we ask that you complete an <a href="https://www.camobilitymarketplace.org/contactless-support">interest form</a> to request Cal-ITP support. With this information, we can determine how best to support you with developing a project scope, getting buy-in from internal stakeholders, engaging with vendors, and implementing your new fare payments system.
-          - text: After you complete the form, we welcome you to browse the <a href="https://resources.calitp.org/mobility-marketplace/Contactless-Payments-MSA-Information-Packet.pdf" alt="Contactless Payments MSA Information Packet (PDF)">Contactless Payments MSA Information Packet (PDF)</a> to understand the overall process and your next steps.
+          - text: After you complete the form, we welcome you to browse the <a target="_blank" href="https://resources.calitp.org/mobility-marketplace/Contactless-Payments-MSA-Information-Packet.pdf" alt="Contactless Payments MSA Information Packet (PDF)">Contactless Payments MSA Information Packet (PDF)</a> to understand the overall process and your next steps.
           - title: What else do I need to know about contactless payments?
-          - text: If you’d like to learn more about contactless payments or need an informational presentation to share with your staff or board of directors, please review this <a href="https://resources.calitp.org/mobility-marketplace/Contactless-Payments-Introduction.pdf" alt="Contactless Payments Introduction (PDF)">Contactless Payments Introduction (PDF)</a>.
+          - text: If you’d like to learn more about contactless payments or need an informational presentation to share with your staff or board of directors, please review this <a target="_blank" href="https://resources.calitp.org/mobility-marketplace/Contactless-Payments-Introduction.pdf" alt="Contactless Payments Introduction (PDF)">Contactless Payments Introduction (PDF)</a>.
       - title: What to know about MSAs?
         url: "what-to-know-about-msas"
         paragraphs:
@@ -19,7 +19,7 @@ toc:
       - title: GTFS Compliance
         url: "gtfs-compliance"
         paragraphs:
-          - text: <a href="https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines" alt="California Minimum General Transit Feed Specification (GTFS) Guidelines">General Transit Feed Specification (GTFS)</a> is the global standard for providing up-to-date transit information. We recommend creating an action plan for becoming GTFS-ready before going contactless, as the contactless payment hardware and software services vendors you select can help you use this data for reporting purposes plus help your customers see your real-time vehicle location and fare information on journey-planning smartphone maps and apps.
+          - text: <a target="_blank" href="https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines" alt="California Minimum General Transit Feed Specification (GTFS) Guidelines">General Transit Feed Specification (GTFS)</a> is the global standard for providing up-to-date transit information. We recommend creating an action plan for becoming GTFS-ready before going contactless, as the contactless payment hardware and software services vendors you select can help you use this data for reporting purposes plus help your customers see your real-time vehicle location and fare information on journey-planning smartphone maps and apps.
       - title: Connectivity
         url: "connectivity"
         paragraphs:
@@ -27,7 +27,7 @@ toc:
       - title: How much will this cost?
         url: "how-much-will-this-cost"
         paragraphs:
-          - text: When you’re ready to start creating cost estimates for purchasing contactless payment hardware and software services, this <a href="https://resources.calitp.org/mobility-marketplace/MSA-Cost-Estimation-Tool.xlsx">MSA Cost Estimation Tool (an Excel Workbook)</a> will help transit agency staff to a) compare MSA-awarded vendors’ maximum prices and develop ballpark estimates for budgeting purposes (and board presentations), and b) make scoping decisions as you prepare to email vendors during the vendor engagement phase.
+          - text: When you’re ready to start creating cost estimates for purchasing contactless payment hardware and software services, this <a target="_blank" href="https://resources.calitp.org/mobility-marketplace/MSA-Cost-Estimation-Tool.xlsx">MSA Cost Estimation Tool (an Excel Workbook)</a> will help transit agency staff to a) compare MSA-awarded vendors’ maximum prices and develop ballpark estimates for budgeting purposes (and board presentations), and b) make scoping decisions as you prepare to email vendors during the vendor engagement phase.
   - title: Purchase
     subsection_items:
       - title: Assess vendors
@@ -37,7 +37,7 @@ toc:
       - title: Draft a Scope of Work (SOW)
         url: "draft-a-scope-of-work-sow"
         paragraphs:
-          - text: After you’ve read through the Contactless Payments MSA Information Packet and Contactless Payments Introduction, move on to this <a href="https://resources.calitp.org/mobility-marketplace/MSA-SOW-Template-and-Guidance.pdf">MSA SOW Template and Guidance (PDF)</a>.
+          - text: After you’ve read through the Contactless Payments MSA Information Packet and Contactless Payments Introduction, move on to this <a target="_blank" href="https://resources.calitp.org/mobility-marketplace/MSA-SOW-Template-and-Guidance.pdf">MSA SOW Template and Guidance (PDF)</a>.
           - text: This PDF provides detailed guidance for transit agency staff on how to complete a User Agreement Scope of Work (SOW) as required to participate in the MSAs for Payment Acceptance Devices (PADs) and Transit Processor Services. Completing an SOW will assist your agency with key scoping decisions as you work toward purchasing hardware and software services.
           - text: Cal-ITP can assist California transit agencies in drafting and/or reviewing their SOW, making sure it includes your desired operating objectives, intended operating environment, and any desired value-added services. Just send the SOW to hello@calitp.org when it’s ready if you haven’t already connected with Cal-ITP.
 
@@ -45,7 +45,7 @@ toc:
         url: "send-the-sow-to-vendors"
         paragraphs:
           - text: When your SOW is ready to send to hardware and software services vendors, you can find their contact information in the MSA User Instructions document (which is linked from each vendor’s contract number). We recommend sending the SOW to all MSA-awarded hardware and software services vendors.
-          - text: You can use <a href="http://resources.calitp.org/mobility-marketplace/MSA_VendorContact_EmailTemplate.docx">this email template</a> when sending out your SOW. Be sure to CC hello@calitp.org. Unless otherwise specified by the transit agency, each vendor will respond within five business days of receiving the SOW.
+          - text: You can use <a target="_blank" href="http://resources.calitp.org/mobility-marketplace/MSA_VendorContact_EmailTemplate.docx">this email template</a> when sending out your SOW. Be sure to CC hello@calitp.org. Unless otherwise specified by the transit agency, each vendor will respond within five business days of receiving the SOW.
       - title: Review vendor proposals
         url: "review-vendor-proposals"
         paragraphs:
@@ -53,7 +53,7 @@ toc:
       - title: What contract do I sign with the selected vendors?
         url: "what-contract-do-I-sign-with-selected-vendors"
         paragraphs:
-          - text: After you’ve finalized the details of your project with the vendor "contractors" you’ve selected, you’ll execute a User Agreement contract and sign it as the “contracting agency.” The User Agreement contract can be the Standard Agreement (<a href="https://www.documents.dgs.ca.gov/dgs/fmc/pdf/std213.pdf">STD 213</a>; note that you'll need Adobe Acrobat or Reader to complete this PDF form) from the California Department of General Services (DGS) or an equivalent contract form, such as this <a href="http://resources.calitp.org/mobility-marketplace/User-Agreement-Contract-Form_MSA%205-21-70-28.docx" alt="User Agreement Contract Form MSA 5-21-70-28">Sample User Agreement (DOCX)</a>, which can be used by transit providers across the U.S. The User Agreement will incorporate by reference the terms of the MSA and contain the Scope of Work and Payment Provisions.
+          - text: After you’ve finalized the details of your project with the vendor "contractors" you’ve selected, you’ll execute a User Agreement contract and sign it as the “contracting agency.” The User Agreement contract can be the Standard Agreement (<a target="_blank" href="https://www.documents.dgs.ca.gov/dgs/fmc/pdf/std213.pdf">STD 213</a>; note that you'll need Adobe Acrobat or Reader to complete this PDF form) from the California Department of General Services (DGS) or an equivalent contract form, such as this <atarget="_blank" href="http://resources.calitp.org/mobility-marketplace/User-Agreement-Contract-Form_MSA%205-21-70-28.docx" alt="User Agreement Contract Form MSA 5-21-70-28">Sample User Agreement (DOCX)</a>, which can be used by transit providers across the U.S. The User Agreement will incorporate by reference the terms of the MSA and contain the Scope of Work and Payment Provisions.
   - title: Implement
     subsection_items:
       - title: Get ready to launch
