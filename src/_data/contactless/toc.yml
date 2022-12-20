@@ -39,13 +39,13 @@ toc:
         paragraphs:
           - text: After you’ve read through the Contactless Payments MSA Information Packet and Contactless Payments Introduction, move on to this <a target="_blank" href="https://resources.calitp.org/mobility-marketplace/MSA-SOW-Template-and-Guidance.pdf">MSA SOW Template and Guidance (PDF)</a>.
           - text: This PDF provides detailed guidance for transit agency staff on how to complete a User Agreement Scope of Work (SOW) as required to participate in the MSAs for Payment Acceptance Devices (PADs) and Transit Processor Services. Completing an SOW will assist your agency with key scoping decisions as you work toward purchasing hardware and software services.
-          - text: Cal-ITP can assist California transit agencies in drafting and/or reviewing their SOW, making sure it includes your desired operating objectives, intended operating environment, and any desired value-added services. Just send the SOW to hello@calitp.org when it’s ready if you haven’t already connected with Cal-ITP.
+          - text: Cal-ITP can assist California transit agencies in drafting and/or reviewing their SOW, making sure it includes your desired operating objectives, intended operating environment, and any desired value-added services. Just send the SOW to <a href="mailto:hello@calitp.org">hello@calitp.org</a> when it’s ready if you haven’t already connected with Cal-ITP.
 
       - title: Send the SOW to vendors
         url: "send-the-sow-to-vendors"
         paragraphs:
           - text: When your SOW is ready to send to hardware and software services vendors, you can find their contact information in the MSA User Instructions document (which is linked from each vendor’s contract number). We recommend sending the SOW to all MSA-awarded hardware and software services vendors.
-          - text: You can use <a target="_blank" href="http://resources.calitp.org/mobility-marketplace/MSA_VendorContact_EmailTemplate.docx">this email template</a> when sending out your SOW. Be sure to CC hello@calitp.org. Unless otherwise specified by the transit agency, each vendor will respond within five business days of receiving the SOW.
+          - text: You can use <a target="_blank" href="http://resources.calitp.org/mobility-marketplace/MSA_VendorContact_EmailTemplate.docx">this email template</a> when sending out your SOW. Be sure to CC <a href="mailto:hello@calitp.org">hello@calitp.org</a>. Unless otherwise specified by the transit agency, each vendor will respond within five business days of receiving the SOW.
       - title: Review vendor proposals
         url: "review-vendor-proposals"
         paragraphs:
@@ -63,4 +63,4 @@ toc:
       - title: Maintenance and support
         url: "maintenance-and-support"
         paragraphs:
-          - text: Cal-ITP is here to help! You can <a href="/contact">contact us</a> for assistance or send an email to hello@calitp.org.
+          - text: Cal-ITP is here to help! You can <a href="/contact">contact us</a> for assistance or send an email to <a href="mailto:hello@calitp.org">hello@calitp.org</a>.
