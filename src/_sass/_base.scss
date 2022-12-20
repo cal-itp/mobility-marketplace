@@ -41,8 +41,7 @@ h2,
 h3,
 h4,
 .h4,
-h5,
-h6 {
+h5 {
   font-weight: bold;
 }
 
@@ -54,8 +53,7 @@ h3 {
 
 h4,
 .h4,
-h5,
-h6 {
+h5 {
   font-size: calc(16rem / 16);
   font-family: $font-family;
 }
