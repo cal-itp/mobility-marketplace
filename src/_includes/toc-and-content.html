@@ -1,9 +1,8 @@
 <div class="row">
   <div class="toc col-md-3">
     <div class="toc-container">
-      <details open>
-        <summary><h4 class="d-inline">Table of Contents</h4></summary>
-
+      <div class="d-xs-none d-sm-none d-md-block d-lg-block">
+        <h4>Table of Contents</h4>
         {% for item in include.toc_data %}
         <h4>{{ item.title }}</h4>
         <ul>
@@ -14,7 +13,38 @@
           {% endfor %}
         </ul>
         {% endfor %}
-      </details>
+      </div>
+      <div class="d-none d-sm-block d-md-none">
+        <div class="mobile-control-group main-nav-icons">
+          <button
+            id="nav-icon3"
+            class="mobile-control toggle-menu"
+            aria-expanded="false"
+            aria-controls="navigation"
+            data-toggle="collapse"
+            data-target="#navigation-two"
+          >
+            <h4>Table of Contents</h4>
+          </button>
+        </div>
+      </div>
+
+      <div class="d-none d-sm-block d-md-none">
+        <nav id="navigation-two" class="main-navigation singlelevel auto-highlight no-icons nav">
+          <ul id="nav_list" class="top-level-nav">
+            {% for item in include.toc_data %}
+            <h4>{{ item.title }}</h4>
+            <ul>
+              {% for subsection_item in item.subsection_items %}
+              <li>
+                <h5><a href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a></h5>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
   <div class="col-md-9 content-container">
