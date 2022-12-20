@@ -1,18 +1,20 @@
 <div class="row">
   <div class="toc col-md-3">
     <div class="toc-container">
-      <h4>Table of Contents</h4>
+      <details open>
+        <summary><h4 class="d-inline">Table of Contents</h4></summary>
 
-      {% for item in include.toc_data %}
-      <h4>{{ item.title }}</h4>
-      <ul>
-        {% for subsection_item in item.subsection_items %}
-        <li>
-          <h5><a href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a></h5>
-        </li>
+        {% for item in include.toc_data %}
+        <h4>{{ item.title }}</h4>
+        <ul>
+          {% for subsection_item in item.subsection_items %}
+          <li>
+            <h5><a href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a></h5>
+          </li>
+          {% endfor %}
+        </ul>
         {% endfor %}
-      </ul>
-      {% endfor %}
+      </details>
     </div>
   </div>
   <div class="col-md-9 content-container">

@@ -42,3 +42,48 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .toc {
+    padding: 0;
+    .toc-container {
+      details {
+        h4,
+        h5,
+        ul {
+          padding-left: 16px;
+        }
+        summary {
+          height: 64px;
+          line-height: 64px;
+          border-top: 1px solid #d7d7d7;
+          border-bottom: 1px solid #d7d7d7;
+          padding-left: 16px;
+        }
+      }
+    }
+  }
+  .go-contactless--how-to.go-contactless-section {
+    padding: 0;
+    .row {
+      margin: 0;
+    }
+    .content-container {
+      padding: 4rem 10vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .toc {
+    .toc-container {
+      details {
+        summary {
+          display: block;
+          pointer-events: none;
+          cursor: default;
+        }
+      }
+    }
+  }
+}
