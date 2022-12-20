@@ -63,4 +63,4 @@ toc:
       - title: Maintenance and support
         url: "maintenance-and-support"
         paragraphs:
-          - text: Cal-ITP is here to help! You can contact us for assistance or send an email to hello@calitp.org.
+          - text: Cal-ITP is here to help! You can <a href="/contact">contact us</a> for assistance or send an email to hello@calitp.org.
