@@ -74,7 +74,15 @@ h4,
 .h4,
 h5 {
   font-size: calc(16rem / 16);
-  font-weight: 400;
+}
+
+h4,
+.h4 {
+  font-weight: 700;
+}
+
+h5 {
+  font-weight: 500;
 }
 
 .subtext {
