@@ -14,6 +14,7 @@ $(window).scroll(function () {
       $(".global-header").addClass("fixed");
     } else {
       $("#mobile-toc-nav").removeClass("fixed");
+      $(".global-header").removeClass("fixed");
     }
   }
 });
