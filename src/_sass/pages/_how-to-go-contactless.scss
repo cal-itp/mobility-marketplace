@@ -88,6 +88,18 @@
           position: initial;
           transition: none;
           transform: none;
+          &::after {
+            position: absolute;
+            font-family: "CaGov" !important;
+            content: "\33";
+            right: 20px;
+            transition: transform 0.2s ease-in-out;
+            top: 0;
+            font-size: 32px;
+          }
+        }
+        .toggle-menu[aria-expanded="true"]::after {
+          transform: rotate(180deg);
         }
       }
     }
