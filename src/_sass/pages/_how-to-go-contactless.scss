@@ -28,7 +28,7 @@
   }
 }
 
-@media only screen and (min-width: 767px) {
+@include media-breakpoint-up(md) {
   .how-to-go-contactless .main-primary {
     height: calc(100vh - 112px);
     overflow: scroll;
@@ -54,7 +54,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@include media-breakpoint-down(sm) {
   .how-to-go-contactless {
     .fixed + div :target::before {
       display: block;
