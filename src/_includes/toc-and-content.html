@@ -7,8 +7,8 @@
         <h3>{{ item.title }}</h3>
         <ul>
           {% for subsection_item in item.subsection_items %}
-          <li>
-            <h5><a href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a></h5>
+          <li class="h5">
+            <a href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a>
           </li>
           {% endfor %}
         </ul>
@@ -33,8 +33,8 @@
             <h3>{{ item.title }}</h3>
             <ul>
               {% for subsection_item in item.subsection_items %}
-              <li>
-                <h5><a class="mobile-nav-link" href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a></h5>
+              <li class="h5">
+                <a class="mobile-nav-link" href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a>
               </li>
               {% endfor %}
             </ul>
