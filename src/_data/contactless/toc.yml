@@ -5,7 +5,7 @@ toc:
         url: "getting-started"
         paragraphs:
           - title: How do I get started?
-          - text: Cal-ITP will provide the resource materials and technical support you need to navigate modernizing your fleet to accept contactless payments. To help us better assist you, we ask that you complete an <a href="https://www.camobilitymarketplace.org/contactless-support">interest form</a> to request Cal-ITP support. With this information, we can determine how best to support you with developing a project scope, getting buy-in from internal stakeholders, engaging with vendors, and implementing your new fare payments system.
+          - text: Cal-ITP will provide the resource materials and technical support you need to navigate modernizing your fleet to accept contactless payments. To help us better assist you, we ask that you complete an <a href="/contactless-support">interest form</a> to request Cal-ITP support. With this information, we can determine how best to support you with developing a project scope, getting buy-in from internal stakeholders, engaging with vendors, and implementing your new fare payments system.
           - text: After you complete the form, we welcome you to browse the <a target="_blank" href="https://resources.calitp.org/mobility-marketplace/Contactless-Payments-MSA-Information-Packet.pdf" alt="Contactless Payments MSA Information Packet (PDF)">Contactless Payments MSA Information Packet (PDF)</a> to understand the overall process and your next steps.
           - title: What else do I need to know about contactless payments?
           - text: If you’d like to learn more about contactless payments or need an informational presentation to share with your staff or board of directors, please review this <a target="_blank" href="https://resources.calitp.org/mobility-marketplace/Contactless-Payments-Introduction.pdf" alt="Contactless Payments Introduction (PDF)">Contactless Payments Introduction (PDF)</a>.
@@ -23,7 +23,7 @@ toc:
       - title: Connectivity
         url: "connectivity"
         paragraphs:
-          - text: You’ll need to ensure internet connectivity on your fleet to properly enable contactless fare collection. You can view details on Data Plans <a alt="Data Plans" href="https://www.camobilitymarketplace.org/contracts/view?contracts-filter-product=Data%20Plans">here</a>. Your transit agency may be eligible to upgrade your cellular data plan and save on your monthly connectivity costs.
+          - text: You’ll need to ensure internet connectivity on your fleet to properly enable contactless fare collection. You can view details on Data Plans <a alt="Data Plans" href="/contracts/view?contracts-filter-product=Data%20Plans">here</a>. Your transit agency may be eligible to upgrade your cellular data plan and save on your monthly connectivity costs.
       - title: How much will this cost?
         url: "how-much-will-this-cost"
         paragraphs:
@@ -33,7 +33,7 @@ toc:
       - title: Assess vendors
         url: "assess-vendors"
         paragraphs:
-          - text: You can review available MSAs <a href="https://www.camobilitymarketplace.org/contracts/">here</a>. Click through to each contract number for complete terms and conditions and to read MSA User Instructions.
+          - text: You can review available MSAs <a href="/contracts/">here</a>. Click through to each contract number for complete terms and conditions and to read MSA User Instructions.
       - title: Draft a Scope of Work (SOW)
         url: "draft-a-scope-of-work-sow"
         paragraphs:
