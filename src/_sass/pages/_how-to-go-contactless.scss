@@ -34,6 +34,15 @@
     overflow: scroll;
   }
 
+  .how-to-go-contactless {
+    .fixed + div :target::before {
+      display: block;
+      content: "";
+      height: 1px !important;
+      margin: -1px 0 0 !important;
+    }
+  }
+
   .go-contactless--how-to {
     .toc {
       .toc-container {
@@ -46,11 +55,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .fixed + div :target::before {
-    display: block;
-    content: "";
-    height: 170px !important;
-    margin: -170px 0 0 !important;
+  .how-to-go-contactless {
+    .fixed + div :target::before {
+      display: block;
+      content: "";
+      height: 170px !important;
+      margin: -170px 0 0 !important;
+    }
   }
 
   .toc {
