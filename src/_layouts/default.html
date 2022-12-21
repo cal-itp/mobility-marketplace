@@ -88,12 +88,20 @@
 
     <script>
       $(window).scroll(function () {
-        if ($(window).scrollTop() > 984) {
-          $("#mobile-toc-nav").addClass("fixed");
-          $(".global-header").addClass("fixed");
-        } else {
-          $("#mobile-toc-nav").removeClass("fixed");
-          $(".global-header").addClass("fixed");
+        if ($("body").hasClass("how-to-go-contactless")) {
+          if ($(window).scrollTop() > 984) {
+            $("#mobile-toc-nav").addClass("fixed");
+            $(".global-header").addClass("fixed");
+            const navLinks = document.querySelectorAll(".mobile-nav-link");
+            navLinks.forEach((link) => {
+              link.addEventListener("click", () => {
+                $("#mobile-toc-nav-button").click();
+              });
+            });
+          } else {
+            $("#mobile-toc-nav").removeClass("fixed");
+            $(".global-header").addClass("fixed");
+          }
         }
       });
     </script>

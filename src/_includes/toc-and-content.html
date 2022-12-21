@@ -17,7 +17,7 @@
       <div id="mobile-toc-nav" class="d-block d-sm-block d-md-none d-lg-none">
         <div class="mobile-control-group main-nav-icons toc-and-content-mobile-nav">
           <button
-            id="nav-icon3"
+            id="mobile-toc-nav-button"
             class="mobile-control toggle-menu"
             aria-expanded="false"
             aria-controls="navigation"
@@ -34,7 +34,7 @@
             <ul>
               {% for subsection_item in item.subsection_items %}
               <li>
-                <h5><a href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a></h5>
+                <h5><a class="mobile-nav-link" href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a></h5>
               </li>
               {% endfor %}
             </ul>
