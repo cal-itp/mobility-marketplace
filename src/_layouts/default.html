@@ -85,5 +85,17 @@
 
     {% include amplitude-init.html %}
     <script defer src="/scripts/amplitude.js"></script>
+
+    <script>
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 984) {
+          $("#mobile-toc-nav").addClass("fixed");
+          $(".global-header").addClass("fixed");
+        } else {
+          $("#mobile-toc-nav").removeClass("fixed");
+          $(".global-header").addClass("fixed");
+        }
+      });
+    </script>
   </body>
 </html>

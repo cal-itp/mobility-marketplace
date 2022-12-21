@@ -1,21 +1,6 @@
-.how-to-go-contactless .main-primary {
-  height: calc(100vh - 112px);
-  overflow: scroll;
-}
-
-.fixed + div :target:before {
-  display: block;
-  content: "";
-  height: 1px !important; // Beta 5.0 addition (gives more space on top of target)
-  margin: -1px 0 0 !important; // Beta 5.0 addition
-}
-
 .go-contactless--how-to {
   .toc {
     .toc-container {
-      position: sticky;
-      position: -webkit-sticky;
-      top: -1px;
       ul {
         list-style: none;
         margin: 0;
@@ -43,22 +28,66 @@
   }
 }
 
+@media only screen and (min-width: 767px) {
+  .how-to-go-contactless .main-primary {
+    height: calc(100vh - 112px);
+    overflow: scroll;
+  }
+
+  .go-contactless--how-to {
+    .toc {
+      .toc-container {
+        position: sticky;
+        position: -webkit-sticky;
+        top: -1px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .fixed + div :target::before {
+    display: block;
+    content: "";
+    height: 170px !important;
+    margin: -170px 0 0 !important;
+  }
+
   .toc {
     padding: 0;
     .toc-container {
-      details {
-        h4,
-        h5,
-        ul {
-          padding-left: 16px;
+      .main-navigation {
+        border-bottom: 1px solid #d7d7d7;
+      }
+      .main-nav-icons {
+        height: 64px;
+      }
+      #nav_list {
+        padding-left: 16px;
+      }
+      #mobile-toc-nav {
+        &.fixed {
+          position: fixed;
+          top: 106px;
+          background: white;
+          width: 100%;
         }
-        summary {
+      }
+      .toc-and-content-mobile-nav {
+        .toggle-menu {
+          width: 100%;
+          background: white;
+          border-top: 1px solid #d7d7d7;
+          border-left: none;
+          border-right: none;
+          border-bottom: 1px solid #d7d7d7;
+          text-align: left;
           height: 64px;
           line-height: 64px;
-          border-top: 1px solid #d7d7d7;
-          border-bottom: 1px solid #d7d7d7;
           padding-left: 16px;
+          position: initial;
+          transition: none;
+          transform: none;
         }
       }
     }
@@ -69,21 +98,8 @@
       margin: 0;
     }
     .content-container {
-      padding: 4rem 10vw;
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .toc {
-    .toc-container {
-      details {
-        summary {
-          display: block;
-          pointer-events: none;
-          cursor: default;
-        }
-      }
+      padding: 1.4rem 16px;
+      position: inherit;
     }
   }
 }
