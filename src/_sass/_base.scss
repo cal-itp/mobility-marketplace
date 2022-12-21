@@ -1,3 +1,7 @@
+html {
+  overflow-y: unset !important;
+}
+
 body {
   font-size: 1rem;
   font-family: $font-family-sans-serif;
