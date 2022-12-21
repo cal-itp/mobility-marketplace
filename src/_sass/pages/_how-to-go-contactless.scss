@@ -36,6 +36,7 @@
 
   .how-to-go-contactless {
     .fixed + div :target::before {
+      // see: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
       display: block;
       content: "";
       height: 1px !important;
@@ -57,8 +58,9 @@
 @include media-breakpoint-down(sm) {
   .how-to-go-contactless {
     .fixed + div :target::before {
-      display: block;
-      content: "";
+      // this ensures clicking an anchor tag takes you to the right spot
+      display: block; // without this code, the fixed header blocks the anchor tag from showing up
+      content: ""; // see: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
       height: 170px !important;
       margin: -170px 0 0 !important;
     }
