@@ -48,7 +48,7 @@
     {% for item in include.toc_data %}
     <h2>{{ item.title }}</h2>
     {% for subsection_item in item.subsection_items %}
-    <h3 class="jumptarget" id="{{ subsection_item.url }}">{{ subsection_item.title }}</h3>
+    <h3 id="{{ subsection_item.url }}">{{ subsection_item.title }}</h3>
     {% for paragraph in subsection_item.paragraphs %} {% if paragraph.title %}
     <h4>{{ paragraph.title }}</h4>
     {% endif %}
