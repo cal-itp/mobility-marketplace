@@ -31,7 +31,7 @@
 @include media-breakpoint-up(md) {
   .how-to-go-contactless .main-primary {
     height: calc(100vh - 112px);
-    overflow: scroll;
+    overflow-y: scroll;
   }
 
   .how-to-go-contactless {
