@@ -86,23 +86,6 @@
     {% include amplitude-init.html %}
     <script defer src="/scripts/amplitude.js"></script>
 
-    <script>
-      $(window).scroll(function () {
-        if ($("body").hasClass("how-to-go-contactless")) {
-          if ($(window).scrollTop() > 984) {
-            $("#mobile-toc-nav").addClass("fixed");
-            $(".global-header").addClass("fixed");
-            const navLinks = document.querySelectorAll(".mobile-nav-link");
-            navLinks.forEach((link) => {
-              link.addEventListener("click", () => {
-                $("#mobile-toc-nav-button").click();
-              });
-            });
-          } else {
-            $("#mobile-toc-nav").removeClass("fixed");
-          }
-        }
-      });
-    </script>
+    <script defer src="/scripts/toc.js"></script>
   </body>
 </html>
