@@ -45,7 +45,7 @@ toc:
         url: "send-the-sow-to-vendors"
         paragraphs:
           - text: When your SOW is ready to send to hardware and software services vendors, you can find their contact information in the MSA User Instructions document (which is linked from each vendor’s contract number). We recommend sending the SOW to all MSA-awarded hardware and software services vendors.
-          - text: You can use <a target="_blank" href="http://resources.calitp.org/mobility-marketplace/MSA_VendorContact_EmailTemplate.docx">this email template</a> when sending out your SOW. Be sure to CC <a href="mailto:hello@calitp.org">hello@calitp.org</a>. Unless otherwise specified by the transit agency, each vendor will respond within five business days of receiving the SOW.
+          - text: You can use <a target="_blank" href="https://resources.calitp.org/mobility-marketplace/MSA_VendorContact_EmailTemplate.docx">this email template</a> when sending out your SOW. Be sure to CC <a href="mailto:hello@calitp.org">hello@calitp.org</a>. Unless otherwise specified by the transit agency, each vendor will respond within five business days of receiving the SOW.
       - title: Review vendor proposals
         url: "review-vendor-proposals"
         paragraphs:
@@ -53,7 +53,7 @@ toc:
       - title: What contract do I sign with the selected vendors?
         url: "what-contract-do-I-sign-with-selected-vendors"
         paragraphs:
-          - text: After you’ve finalized the details of your project with the vendor “contractors” you’ve selected, you’ll execute a User Agreement contract and sign it as the “contracting agency.” The User Agreement contract can be the Standard Agreement (<a target="_blank" href="https://www.documents.dgs.ca.gov/dgs/fmc/pdf/std213.pdf">STD 213</a>; note that you’ll need Adobe Acrobat or Reader to complete this PDF form) from the California Department of General Services (DGS) or an equivalent contract form, such as this <a target="_blank" href="http://resources.calitp.org/mobility-marketplace/User-Agreement-Contract-Form_MSA%205-21-70-28.docx" alt="User Agreement Contract Form MSA 5-21-70-28">Sample User Agreement</a>, which can be used by transit providers across the U.S. The User Agreement will incorporate by reference the terms of the MSA and contain the Scope of Work and Payment Provisions.
+          - text: After you’ve finalized the details of your project with the vendor “contractors” you’ve selected, you’ll execute a User Agreement contract and sign it as the “contracting agency.” The User Agreement contract can be the Standard Agreement (<a target="_blank" href="https://www.documents.dgs.ca.gov/dgs/fmc/pdf/std213.pdf">STD 213</a>; note that you’ll need Adobe Acrobat or Reader to complete this PDF form) from the California Department of General Services (DGS) or an equivalent contract form, such as this <a target="_blank" href="https://resources.calitp.org/mobility-marketplace/User-Agreement-Contract-Form_MSA%205-21-70-28.docx" alt="User Agreement Contract Form MSA 5-21-70-28">Sample User Agreement</a>, which can be used by transit providers across the U.S. The User Agreement will incorporate by reference the terms of the MSA and contain the Scope of Work and Payment Provisions.
   - title: Implement
     subsection_items:
       - title: Get ready to launch
