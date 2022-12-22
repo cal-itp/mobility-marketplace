@@ -30,7 +30,7 @@
         <nav id="navigation-two" class="main-navigation singlelevel auto-highlight no-icons nav collapse">
           <div id="nav_list" class="top-level-nav">
             {% for item in include.toc_data %}
-            <h3>{{ item.title }}</h3>
+            <h3 class="h4">{{ item.title }}</h3>
             <ul>
               {% for subsection_item in item.subsection_items %}
               <li class="h5">
