@@ -4,7 +4,7 @@ title: About us
 ---
 Welcome to the California Mobility Marketplace!
 
-Managed by <a href="http://www.calitp.org/" target="_blank">Cal-ITP</a>, this website seeks to make the transition to contactless fare collection and GTFS Realtime compliance as easy and cost-effective as possible.
+Managed by <a href="https://www.calitp.org/" target="_blank">Cal-ITP</a>, this website seeks to make the transition to contactless fare collection and GTFS Realtime compliance as easy and cost-effective as possible.
 
 The California Mobility Marketplace gathers and presents links to a suite of standardized products and services that transit providers need in order to offer both contactless fare collection and GTFS Realtime, whether operating buses, commuter trains, or light rail.
 
@@ -16,8 +16,8 @@ Want to do business with Cal-ITP and California transit providers? Vendors who a
 
 ## About Cal-ITP
 
-Supported by the <a href="http://www.calsta.ca.gov/" target="_blank">California State Transportation Agency</a> and the
-<a href="http://dot.ca.gov/" target="_blank">California Department of Transportation</a> through a grant from the
+Supported by the <a href="https://www.calsta.ca.gov/" target="_blank">California State Transportation Agency</a> and the
+<a href="https://dot.ca.gov/" target="_blank">California Department of Transportation</a> through a grant from the
 <a href="https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog/" target="_blank">California Transit and Intercity Rail Capital Program</a>, Cal-ITP was established to help California deliver on statewide goals of:
 
 * Improving the customer experience
