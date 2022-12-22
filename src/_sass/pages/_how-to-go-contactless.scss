@@ -1,0 +1,130 @@
+.go-contactless--how-to {
+  .toc {
+    .toc-container {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none !important;
+        border: none;
+        font-weight: 500;
+      }
+    }
+  }
+  .content-container {
+    h2:first-child {
+      margin-top: calc(8rem / 16);
+    }
+    h2 {
+      margin-top: calc(56rem / 16);
+      margin-bottom: calc(48rem / 16);
+    }
+    h3 {
+      margin-top: calc(56rem / 16);
+      margin-bottom: calc(24rem / 16);
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .how-to-go-contactless .main-primary {
+    height: calc(100vh - 112px);
+    overflow-y: scroll;
+  }
+
+  .how-to-go-contactless {
+    .fixed + div :target::before {
+      // see: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
+      display: block;
+      content: "";
+      height: 1px !important;
+      margin: -1px 0 0 !important;
+    }
+  }
+
+  .go-contactless--how-to {
+    .toc {
+      .toc-container {
+        position: sticky;
+        position: -webkit-sticky;
+        top: -1px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .how-to-go-contactless {
+    .fixed + div :target::before {
+      // this ensures clicking an anchor tag takes you to the right spot
+      display: block; // without this code, the fixed header blocks the anchor tag from showing up
+      content: ""; // see: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
+      height: 170px !important;
+      margin: -170px 0 0 !important;
+    }
+  }
+
+  .toc {
+    padding: 0;
+    .toc-container {
+      .main-navigation {
+        border-bottom: 1px solid #d7d7d7;
+      }
+      .main-nav-icons {
+        height: 64px;
+      }
+      #nav_list {
+        padding-left: 16px;
+      }
+      #mobile-toc-nav {
+        &.fixed {
+          position: fixed;
+          top: 106px;
+          background: white;
+          width: 100%;
+        }
+      }
+      .toc-and-content-mobile-nav {
+        .toggle-menu {
+          width: 100%;
+          background: white;
+          border-top: 1px solid #d7d7d7;
+          border-left: none;
+          border-right: none;
+          border-bottom: 1px solid #d7d7d7;
+          text-align: left;
+          height: 64px;
+          line-height: 64px;
+          padding-left: 16px;
+          position: initial;
+          transition: none;
+          transform: none;
+          &::after {
+            position: absolute;
+            font-family: "CaGov" !important;
+            content: "\33";
+            right: 20px;
+            transition: transform 0.2s ease-in-out;
+            top: 0;
+            font-size: 32px;
+          }
+        }
+        .toggle-menu[aria-expanded="true"]::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  .go-contactless--how-to.go-contactless-section {
+    padding: 0;
+    .row {
+      margin: 0;
+    }
+    .content-container {
+      padding: 1.4rem 16px;
+      position: inherit;
+    }
+  }
+}

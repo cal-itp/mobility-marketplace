@@ -1,3 +1,7 @@
+html {
+  overflow-y: unset !important;
+}
+
 body {
   font-size: 1rem;
   font-family: $font-family-sans-serif;
@@ -41,8 +45,7 @@ h2,
 h3,
 h4,
 .h4,
-h5,
-h6 {
+h5 {
   font-weight: bold;
 }
 
@@ -55,8 +58,9 @@ h3 {
 h4,
 .h4,
 h5,
-h6 {
-  font-family: $font-family-sans-serif;
+.h5 {
+  font-size: calc(16rem / 16);
+  font-family: $font-family;
 }
 
 h1 {
@@ -72,8 +76,20 @@ h3 {
 }
 
 h4,
-.h4 {
+.h4,
+h5,
+.h5 {
   font-size: calc(16rem / 16);
+}
+
+h4,
+.h4 {
+  font-weight: 700;
+}
+
+h5,
+.h5 {
+  font-weight: 500;
 }
 
 .subtext {

@@ -59,3 +59,9 @@ $mm-dark-tan: rgb(246, 243, 237);
 .no-word-break {
   white-space: nowrap;
 }
+
+.no-footer {
+  #footer {
+    display: none;
+  }
+}

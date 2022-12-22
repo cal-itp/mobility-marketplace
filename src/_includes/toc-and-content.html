@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="toc col-md-3">
+    <div class="toc-container">
+      <div class="d-none d-sm-none d-md-block d-lg-block">
+        <h2 class="h4">Table of Contents</h2>
+        {% for item in include.toc_data %}
+        <h3 class="h4">{{ item.title }}</h3>
+        <ul>
+          {% for subsection_item in item.subsection_items %}
+          <li class="h5">
+            <a href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
+      <div id="mobile-toc-nav" class="d-block d-sm-block d-md-none d-lg-none">
+        <div class="mobile-control-group main-nav-icons toc-and-content-mobile-nav">
+          <button
+            id="mobile-toc-nav-button"
+            class="mobile-control toggle-menu"
+            aria-expanded="false"
+            aria-controls="navigation"
+            data-toggle="collapse"
+            data-target="#navigation-two"
+          >
+            <h2 class="h4">Table of Contents</h2>
+          </button>
+        </div>
+        <nav id="navigation-two" class="main-navigation singlelevel auto-highlight no-icons nav collapse">
+          <div id="nav_list" class="top-level-nav">
+            {% for item in include.toc_data %}
+            <h3 class="h4">{{ item.title }}</h3>
+            <ul>
+              {% for subsection_item in item.subsection_items %}
+              <li class="h5">
+                <a class="mobile-nav-link" href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endfor %}
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9 content-container">
+    {% for item in include.toc_data %}
+    <h2>{{ item.title }}</h2>
+    {% for subsection_item in item.subsection_items %}
+    <h3 id="{{ subsection_item.url }}">{{ subsection_item.title }}</h3>
+    {% for paragraph in subsection_item.paragraphs %} {% if paragraph.title %}
+    <h4>{{ paragraph.title }}</h4>
+    {% endif %}
+    <p>{{ paragraph.text }}</p>
+    {% endfor %} {% endfor %} {% endfor %}
+  </div>
+</div>
