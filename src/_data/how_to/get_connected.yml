@@ -1,0 +1,46 @@
+toc:
+  - title: Getting started
+    subsection_items:
+      - title: What is connectivity?
+        url: "what-is-connectivity"
+        paragraphs:
+          - text: From accepting mobile wallets for fare payments to giving the live location of a bus, transit is using more technology to improve the rider experience. Cellular data is the power behind this new technology. Types of devices may include&#58;
+          - text: <ul><li>Router</li><li>CAD/AVL</li><li>Camera feeds</li><li>Passenger WiFi</li></ul>
+          - text: As transit continues to modernize, more devices can be expected to leverage cellular data and connectivity.
+      - title: How do data plans work?
+        url: "how-do-data-plans-work"
+        paragraphs:
+          - text: Your technology can be connected through multiple SIMs (one per device) or a single SIM (one in a router).
+          - text: <u>Multiple SIMs</u>
+          - text: Each device could be powered by a SIM that connects to the network. These SIMs would have smaller data plans.
+          - text: PLACEHOLDER IMAGE
+          - text: <u>Single SIM</u>
+          - text: A single router could provide connectivity to multiple devices. The router’s SIM would need a larger data plan.
+          - text: PLACEHOLDER IMAGE
+      - title: How do I get started?
+        url: "how-do-I-get-started"
+        paragraphs:
+          - text: Cal-ITP will provide the materials and support you need to implement data plans on your fleet. To help us better assist you, we ask that you complete our contact form for Cal-ITP support. With this information, we can determine how best to support you with finding the right data plan for your needs, getting buy-in from internal stakeholders, and engaging with vendors.
+          - text: After you complete the form, we welcome you to browse this guide to understand the process and your next steps.
+          - text: Complete the form button
+  - title: Choosing a data plan
+    subsection_items:
+      - title: Choosing how much data
+        url: "choosing-how-much-data"
+        paragraphs:
+          - text: How much data you use depends on how many devices are on each vehicle. Typical usage for GTFS software and two fare payment validators is 3 GB/month.
+          - text: PLACEHOLDER TABLE
+      - title: Choosing a carrier
+        url: "choosing-a-carrier"
+        paragraphs:
+          - text: We currently have contracts with&#58;
+          - text: <ul><li>AT&T</li><li>FirstNet</li><li>T-Mobile</li><li>Verizon</li></ul>
+          - text: Carriers provide different coverage depending on location, so it is important to evaluate which best covers your service area. You can use <a href="https://fcc.maps.arcgis.com/apps/webappviewer/index.html?id=6c1b2e73d9d749cdb7bc88a0d1bdd25b" target="_blank">FCC data</a> to evaluate Verizon, T-Mobile, and AT&T coverage. You can review <a href="https://www.firstnet.com/coverage.html" target="_blank">FirstNet coverage on their website</a>.
+      - title: Data plan pricing
+        url: "data-plan-pricing"
+        paragraphs:
+          - text: All four major carriers offer data-only plans that agencies can leverage. You can access data plans in the commercial marketplace or at discounted rates on CalNet or on NASPO.
+          - text: TABLE PLACEHOLDER
+          - text: In California, transit providers can access the FirstNet plan for their fleets. <strong>And Tier 2 prices are now available to all California agencies!</strong>
+          - text: Interested in tapping these rates? Contact us to get started today! Our team is happy to answer questions and guide you through the process.
+          - text: BUTTON PLACEHOLDER
