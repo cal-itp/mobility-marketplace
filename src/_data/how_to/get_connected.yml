@@ -29,7 +29,7 @@ toc:
         url: "choosing-how-much-data"
         paragraphs:
           - text: How much data you use depends on how many devices are on each vehicle. Typical usage for GTFS software and two fare payment validators is 3 GB/month.
-          - text: <table class="table table-striped table-bordered border-primary"><tr><td scope="col" class="table-primary">1 GB</td><td><li>GTFS-RT <em>or</em> 1 fare payment validator</li></td></tr><tr><td scope="col" class="table-primary">2 GB</td><td><li>GTFS-RT</li><li>2 fare payment validators</li></td></tr><tr><td scope="col" class="table-primary">Unlimited</td><td><li>GTFS-RT</li><li>2 fare payment validators</li><li>Cameras</li><li>CAD/AVL</li>/td></tr></table>
+          - text: <table class="table table-striped table-bordered border-primary table-responsive"><tr><td scope="col" class="table-primary">1 GB</td><td><li>GTFS-RT <em>or</em> 1 fare payment validator</li></td></tr><tr><td scope="col" class="table-primary">2 GB</td><td><li>GTFS-RT</li><li>2 fare payment validators</li></td></tr><tr><td scope="col" class="table-primary">Unlimited</td><td><li>GTFS-RT</li><li>2 fare payment validators</li><li>Cameras</li><li>CAD/AVL</li>/td></tr></table>
       - title: Choosing a carrier
         url: "choosing-a-carrier"
         paragraphs:
