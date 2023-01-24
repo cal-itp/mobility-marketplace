@@ -80,9 +80,14 @@ $mm-dark-tan: rgb(246, 243, 237);
 }
 
 .table-blue {
-  background-color: #214f74 !important;
+  background-color: #225173 !important;
 }
 
 .border-blue {
-  border: 1px solid #214f74 !important;
+  border-color: #225173 !important;
+}
+
+.text-normal {
+  font-style: normal;
+  font-weight: 100;
 }
