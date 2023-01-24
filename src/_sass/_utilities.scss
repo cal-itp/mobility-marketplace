@@ -21,6 +21,19 @@ $mm-dark-tan: rgb(246, 243, 237);
   color: red;
 }
 
+.bg-dark-blue {
+  background-color: $dark-blue;
+}
+
+.btn.btn-dark-blue-inverted {
+  background-color: #ffffff;
+  color: $dark-blue;
+  &:hover {
+    background-color: $gray-1;
+    color: $dark-blue;
+  }
+}
+
 // Extend Bootstrap's container class by just setting some known widths for our
 // "skinny" page container.
 .container--skinny {
