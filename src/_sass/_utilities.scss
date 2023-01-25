@@ -102,3 +102,8 @@ $mm-dark-tan: rgb(246, 243, 237);
     width: 75% !important;
   }
 }
+
+.table-caption-bottom {
+  caption-side: bottom;
+  color: $text-color;
+}
