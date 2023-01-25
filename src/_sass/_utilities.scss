@@ -96,3 +96,9 @@ $mm-dark-tan: rgb(246, 243, 237);
   position: sticky;
   left: 0;
 }
+
+.md-w-75 {
+  @include media-breakpoint-up(md) {
+    width: 75% !important;
+  }
+}
