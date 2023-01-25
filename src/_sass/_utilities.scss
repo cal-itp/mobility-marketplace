@@ -95,6 +95,7 @@ $mm-dark-tan: rgb(246, 243, 237);
 .table-sticky-column {
   position: sticky;
   left: 0;
+  z-index: 0;
 }
 
 .md-w-75 {
