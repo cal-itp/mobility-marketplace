@@ -1,37 +1,23 @@
-.mobi-mart-header {
-  box-shadow: unset;
-  padding-bottom: 13px;
-  padding-top: 13px;
-}
-
 .mobi-mart-logo {
   max-height: 55px;
 }
 
-.fixed + .main-content {
+.fixed-top + .main-content {
   padding-top: 112px !important; // Padding for fixed header
 }
 
-.fixed .main-content {
+.fixed-top .main-content {
   padding-top: 112px !important; // Padding for fixed header
-}
-
-//
-// Overrides
-//
-
-.toggle-menu span {
-  background-color: $text-color !important;
 }
 
 .main-navigation {
-  .first-level-link {
+  .nav-link {
     color: $text-color;
     font-family: $font-family;
     font-weight: bold;
   }
 
-  .first-level-link[aria-current="page"] {
+  .nav-link[aria-current="page"] {
     background-color: $blue-lightest;
     color: $primary;
   }
