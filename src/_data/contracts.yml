@@ -72,7 +72,7 @@ entries:
       - 1
 
   - contract: NASPO
-    contract_url: /assets/Cal-ITP.MobilityMarketplace.DataPlans.NASPO.FirstNet.pdf
+    contract_url: /how-to/get-connected/
     vendor: FirstNet
     category: Connectivity
     product: Data Plans
