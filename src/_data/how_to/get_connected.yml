@@ -11,10 +11,10 @@ toc:
         url: "how-do-data-plans-work"
         paragraphs:
           - text: Your technology can be connected through multiple SIMs (one per device) or a single SIM (one in a router).
-          - text: <u>Multiple SIMs</u>
+          - text: <h4 class="underline">Multiple SIMs</h4>
           - text: Each device could be powered by a SIM that connects to the network. These SIMs would have smaller data plans.
           - text: <div class="d-flex justify-content-center"><img class="md-w-75 w-100 my-5" src="/uploads/devices-connect-to-network.png" alt="Devices connect to network."></div>
-          - text: <u>Single SIM</u>
+          - text: <h4 class="underline">Single SIM</h4>
           - text: A single router could provide connectivity to multiple devices. The router’s SIM would need a larger data plan.
           - text: <div class="d-flex justify-content-center"><img class="md-w-75 w-100 my-5" src="/uploads/devices-connect-to-network.png" alt="Router connects to network. Devices connect to router."></div>
       - title: How do I get started?
