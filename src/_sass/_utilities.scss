@@ -78,3 +78,33 @@ $mm-dark-tan: rgb(246, 243, 237);
     display: none;
   }
 }
+
+.table-dark-blue {
+  background-color: $dark-blue !important;
+}
+
+.border-dark-blue {
+  border-color: $dark-blue !important;
+}
+
+.text-normal {
+  font-style: normal;
+  font-weight: 100;
+}
+
+.table-sticky-column {
+  position: sticky;
+  left: 0;
+  z-index: 0;
+}
+
+.md-w-75 {
+  @include media-breakpoint-up(md) {
+    width: 75% !important;
+  }
+}
+
+.table-caption-bottom {
+  caption-side: bottom;
+  color: $text-color;
+}

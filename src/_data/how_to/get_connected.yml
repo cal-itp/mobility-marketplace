@@ -1,0 +1,46 @@
+toc:
+  - title: Getting started
+    subsection_items:
+      - title: What is connectivity?
+        url: "what-is-connectivity"
+        paragraphs:
+          - text: From accepting mobile wallets for fare payments to giving the live location of a bus, transit is using more technology to improve the rider experience. Cellular data is the power behind this new technology. Types of devices may include&#58;
+          - text: <ul><li>Router</li><li>CAD/AVL</li><li>Camera feeds</li><li>Passenger WiFi</li></ul>
+          - text: As transit continues to modernize, more devices can be expected to leverage cellular data and connectivity.
+      - title: How do data plans work?
+        url: "how-do-data-plans-work"
+        paragraphs:
+          - text: Your technology can be connected through multiple SIMs (one per device) or a single SIM (one in a router).
+          - text: <h4 class="underline">Multiple SIMs</h4>
+          - text: Each device could be powered by a SIM that connects to the network. These SIMs would have smaller data plans.
+          - text: <div class="d-flex justify-content-center"><img class="md-w-75 w-100 my-5" src="/uploads/devices-connect-to-network.png" alt="Devices connect to network."></div>
+          - text: <h4 class="underline">Single SIM</h4>
+          - text: A single router could provide connectivity to multiple devices. The router’s SIM would need a larger data plan.
+          - text: <div class="d-flex justify-content-center"><img class="md-w-75 w-100 my-5" src="/uploads/devices-connect-to-network.png" alt="Router connects to network. Devices connect to router."></div>
+      - title: How do I get started?
+        url: "how-do-I-get-started"
+        paragraphs:
+          - text: Cal-ITP will provide the materials and support you need to implement data plans on your fleet. To help us better assist you, we ask that you complete our contact form for Cal-ITP support. With this information, we can determine how best to support you with finding the right data plan for your needs, getting buy-in from internal stakeholders, and engaging with vendors.
+          - text: After you complete the form, we welcome you to browse this guide to understand the process and your next steps.
+          - text: <a href="/contactless-support" class="mb-4 mt-3 btn btn-outline-primary">Complete the form</a>
+  - title: Choosing a data plan
+    subsection_items:
+      - title: Choosing how much data
+        url: "choosing-how-much-data"
+        paragraphs:
+          - text: How much data you use depends on how many devices are on each vehicle. Typical usage for GTFS software and two fare payment validators is 3 GB/month.
+          - text: <table class="table table-striped"><tr><th scope="col" class="align-middle table-dark-blue border-dark-blue text-white table-bordered">1 GB</th><td class="border-dark-blue table-bordered"><li class="mx-4">GTFS-RT <em>or</em> 1 fare payment validator</li></td></tr><tr><th scope="col" class="align-middle table-dark-blue border-dark-blue text-white table-bordered">2 GB</th><td class="border-dark-blue table-bordered"><li class="mx-4">GTFS-RT</li><li class="mx-4">2 fare payment validators</li></td></tr><tr><th scope="col" class="align-middle table-dark-blue border-dark-blue text-white table-bordered">Unlimited</th><td class="border-dark-blue table-bordered"><li class="mx-4">GTFS-RT</li><li class="mx-4">2 fare payment validators</li><li class="mx-4">Cameras</li><li class="mx-4">CAD/AVL</li></td></tr></table>
+      - title: Choosing a carrier
+        url: "choosing-a-carrier"
+        paragraphs:
+          - text: We currently have contracts with&#58;
+          - text: <ul><li>AT&T</li><li>FirstNet</li><li>T-Mobile</li><li>Verizon</li></ul>
+          - text: Carriers provide different coverage depending on location, so it is important to evaluate which best covers your service area. You can use <a href="https://fcc.maps.arcgis.com/apps/webappviewer/index.html?id=6c1b2e73d9d749cdb7bc88a0d1bdd25b" target="_blank">FCC data</a> to evaluate Verizon, T-Mobile, and AT&T coverage. You can review <a href="https://www.firstnet.com/coverage.html" target="_blank">FirstNet coverage on their website</a>.
+      - title: Data plan pricing
+        url: "data-plan-pricing"
+        paragraphs:
+          - text: All four major carriers offer data-only plans that agencies can leverage. You can access data plans in the commercial marketplace or at discounted rates on CalNet or on NASPO.
+          - text: <table class="table table-striped table-responsive border-0"><caption class="table-caption-bottom pt-1">Note&#58; Prices shown are the lowest available between CalNet and NASPO for that size plan</caption><thead> <tr class="table-dark-blue border-dark-blue"> <th class="table-sticky-column text-white table-dark-blue border-dark-blue align-middle" scope="col">Carrier</th> <th class="text-white table-dark-blue border-dark-blue align-top" scope="col" colspan="3"> FirstNet<br /><span class="text-normal">(NASPO)</span> </th> <th class="text-white table-dark-blue border-dark-blue" scope="col"> AT&T<br /><span class="text-normal">(CalNet + NASPO)</span> </th> <th class="text-white table-dark-blue border-dark-blue" scope="col"> T-Mobile<br /><span class="text-normal">(CalNet + NASPO)</span> </th> <th class="text-white table-dark-blue border-dark-blue" scope="col"> Verizon<br /> <span class="text-normal">(CalNet + NASPO)</span> </th> </tr> </thead> <tbody> <tr> <th class="table-dark-blue border-dark-blue table-sticky-column text-white table-bordered border-top-0" scope="row">Tiers</th> <td class="border-dark-blue border-bottom-0 border-top-0 border-left-0 border-right-0"><em>< 3,000 SIMs</em></td> <td class="border-dark-blue border-bottom-0 border-top-0 border-left-0 border-right-0"><em>3k - 9,999 SIMs</em></td> <td class="border-dark-blue border-bottom-0 border-top-0 border-left-0"><em>>9,999 SIMs<</em></td> <td class="border-dark-blue border-bottom-0 border-top-0">-</td> <td class="border-dark-blue border-bottom-0 border-top-0">-</td> <td class="border-dark-blue border-bottom-0 border-top-0">-</td> </tr> <tr> <th class="table-dark-blue border-dark-blue table-sticky-column text-white table-bordered" scope="row">1 GB</th> <td class="border-dark-blue border-left-0 border-right-0">$10.00</td> <td class="border-dark-blue border-left-0 border-right-0">$7.50</td> <td class="border-dark-blue table-bordered border-left-0 border-right-0">$4.99</td> <td class="border-dark-blue table-bordered">$20.00</td> <td class="border-dark-blue table-bordered">$8.00</td> <td class="border-dark-blue table-bordered">$15.00</td> </tr> <tr> <th class="table-dark-blue border-dark-blue table-sticky-column text-white table-bordered" scope="row">2 GB</th> <td class="border-dark-blue border-left-0 border-right-0">N/A</td> <td class="border-dark-blue border-left-0 border-right-0">N/A</td> <td class="border-dark-blue table-bordered border-left-0 border-right-0">N/A</td> <td class="border-dark-blue table-bordered">$23.00</td> <td class="border-dark-blue table-bordered">$10.00</td> <td class="border-dark-blue table-bordered">$20.00</td> </tr> <tr> <th class="table-dark-blue border-dark-blue table-sticky-column text-white table-bordered" scope="row">3 GB</th> <td class="border-dark-blue border-left-0 border-right-0">$25.00</td> <td class="border-dark-blue border-left-0 border-right-0">$20.00</td> <td class="border-dark-blue table-bordered border-left-0 border-right-0">$14.99</td> <td class="border-dark-blue table-bordered">$30.00</td> <td class="border-dark-blue table-bordered">N/A</td> <td class="border-dark-blue table-bordered">N/A</td> </tr> <tr> <th class="table-dark-blue border-dark-blue table-sticky-column text-white table-bordered" scope="row">5 GB</th> <td class="border-dark-blue border-left-0 border-right-0">N/A</td> <td class="border-dark-blue border-left-0 border-right-0">N/A</td> <td class="border-dark-blue table-bordered border-left-0 border-right-0">N/A</td> <td class="border-dark-blue table-bordered">$28.00</td> <td class="border-dark-blue table-bordered">$21.21</td> <td class="border-dark-blue table-bordered">$25.00</td> </tr> <tr> <th class="table-dark-blue border-dark-blue table-sticky-column text-white table-bordered" scope="row">Unlimited</th> <td class="border-dark-blue table-bordered border-left-0 border-right-0">$34.00</td> <td class="border-dark-blue table-bordered border-left-0 border-right-0">$34.00</td> <td class="border-dark-blue table-bordered border-left-0 border-right-0">$29.99</td> <td class="border-dark-blue table-bordered">$50.00</td> <td class="border-dark-blue table-bordered">N/A</td> <td class="border-dark-blue table-bordered">$34.99</td> </tr> </tbody></table>
+          - text: In California, transit providers can access the FirstNet plan for their fleets. <strong>And Tier 2 prices are now available to all California agencies!</strong>
+          - text: Interested in tapping these rates? Contact us to get started today! Our team is happy to answer questions and guide you through the process.
+          - text: <a class="mt-5 btn btn-action btn-primary btn-data-package" href="/contact">Get in touch</a>

@@ -23,10 +23,10 @@ navigation:
   header:
     - name: Go contactless
       url: /go-contactless
+    - name: Get connected
+      url: /how-to/get-connected
     - name: View contracts
       url: /contracts
-    - name: Provider map
-      url: /provider-map
     - name: About
       url: /about
     - name: Contact us
@@ -36,6 +36,8 @@ navigation:
       url: "#main-content"
     - name: Glossary
       url: /glossary-of-key-terms
+    - name: Provider map
+      url: /provider-map
     - name: Privacy policy
       url: https://dot.ca.gov/privacy-policy
       target: _blank
