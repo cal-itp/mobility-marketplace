@@ -9,4 +9,4 @@
   from = "/assets/Cal-ITP.MobilityMarketplace.DataPlans.NASPO.FirstNet.pdf"
   to = "/how-to/get-connected"
   status = 301
-  force = false
+  force = true # COMMENT: ensure that we always redirect
