@@ -4,3 +4,9 @@
 
 [context.production]
     environment = { JEKYLL_ENV = "production" }
+
+[[redirects]]
+  from = "/assets/Cal-ITP.MobilityMarketplace.DataPlans.NASPO.FirstNet.pdf"
+  to = "/how-to/get-connected"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
