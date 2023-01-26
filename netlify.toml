@@ -6,9 +6,7 @@
     environment = { JEKYLL_ENV = "production" }
 
 [[redirects]]
-  from = "//assets/Cal-ITP.MobilityMarketplace.DataPlans.NASPO.FirstNet.pdf"
+  from = "/assets/Cal-ITP.MobilityMarketplace.DataPlans.NASPO.FirstNet.pdf"
   to = "/how-to/get-connected"
   status = 301
   force = false
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
