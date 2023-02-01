@@ -1,5 +1,9 @@
 <header role="banner" id="header">
-  <nav class="navbar navbar-expand-lg fixed-top bg-white main-navigation" aria-label="Navigation">
+  <nav
+    class="navbar navbar-expand-lg fixed-top bg-white main-navigation"
+    aria-label="Navigation"
+    style="height: 112px; max-width: 1280px; margin: 0 auto"
+  >
     <div class="container">
       <a class="navbar-brand" href="/">
         <img class="d-lg-none mobi-mart-logo" src="/uploads/logo-sm.svg" alt="California Integrated Travel Project (Cal-ITP)" />
@@ -7,6 +11,7 @@
           class="d-none d-lg-inline mobi-mart-logo"
           src="/uploads/logo-lg.svg"
           alt="California Integrated Travel Project (Cal-ITP)"
+          style="max-width: 300px"
         />
       </a>
       <button
@@ -21,17 +26,20 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="navbar-collapse collapse" id="navbarsExample07" style="">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="navbar-collapse collapse" id="navbarsExample07">
+        <ul class="navbar-nav nav-pills nav-fill w-100">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+            <a class="nav-link dropdown-toggle fw-bold text-body" href="#" data-bs-toggle="dropdown" aria-expanded="false"
+              >Products</a
+            >
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/how-to/go-contactless">Contactless payments</a></li>
-              <li><a class="dropdown-item" href="/how-to/get-connected">Data plans</a></li>
+              <li><a class="dropdown-item fw-bold text-body" href="/how-to/go-contactless">Contactless payments</a></li>
+              <li><a class="dropdown-item fw-bold text-body" href="/how-to/get-connected">Data plans</a></li>
             </ul>
           </li>
 
-          {% include link-repeater.html menu_items=site.navigation.header list_class="nav-item" anchor_class="nav-link" %}
+          {% include link-repeater.html menu_items=site.navigation.header list_class="nav-item" anchor_class="nav-link fw-bold
+          text-body" %}
         </ul>
       </div>
     </div>

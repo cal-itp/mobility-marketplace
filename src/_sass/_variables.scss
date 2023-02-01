@@ -1,42 +1,46 @@
-// Use of !important is to ensure overriding CA State Template values
-// some of which are more difficult than others.
+// Variables
 
-$btn-white-space: nowrap;
-
-$card-border-radius: 12px !important;
-
-$font-family: "Poppins", sans-serif !important;
-$font-family-sans-serif: $font-family;
 $headings-font-family: "Raleway", sans-serif !important;
-
-$font-size-base: 1rem;
-
-$blue-lightest: #f5f9fb;
-$gray-light: #d1dee3;
-$gray-lightest: #f3f3f4;
-$primary: #046b99;
-$success: #0c8547;
-$hover-color: #035376;
-
-// New colors from 2023 / Figma
-
-$dark-blue: #225173;
-
-$gray-1: #eeeeee;
-
 $text-color: #323a45;
 $headings-color: $text-color;
 $code-color: $text-color !important;
 
-// tabulator / table variables
+// Colors
+
+$blue-lightest: #f5f9fb;
+$gray-light: #d1dee3;
+$gray-lightest: #f3f3f4;
+$hover-color: #035376;
+
+// New colors from 2023 / Figma
+
+$primary: #046b99;
+$dark-blue: #225173;
+$gray-1: #eeeeee;
+
+// Tabulator overrides
+
 $backgroundColor: #fff;
 $headerBackgroundColor: $backgroundColor;
 $rowBorderColor: #cccccc;
 $rowHoverBackground: $blue-lightest;
 $table-border-color: $rowBorderColor;
 
-// down arrow icon used in selects and table sorts
+// Down arrow icon used in selects and table sorts
+
 $custom-select-bg-size: 1.4rem;
 $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.3022 0.351562L5.96631 4.6875L1.63037 0.351562C1.48975 0.210938 1.31006 0.140625 1.09131 0.140625C0.888184 0.140625 0.716309 0.210938 0.575684 0.351562C0.419434 0.492188 0.341309 0.671875 0.341309 0.890625C0.341309 1.09375 0.419434 1.26562 0.575684 1.40625L5.42725 6.28125C5.50537 6.34375 5.59131 6.39844 5.68506 6.44531C5.77881 6.47656 5.87256 6.49219 5.96631 6.49219C6.06006 6.49219 6.15381 6.47656 6.24756 6.44531C6.34131 6.39844 6.42725 6.34375 6.50537 6.28125L11.3569 1.40625C11.5132 1.26562 11.5913 1.09375 11.5913 0.890625C11.5913 0.671875 11.5132 0.492188 11.3569 0.351562C11.2163 0.210938 11.0366 0.140625 10.8179 0.140625C10.6147 0.140625 10.4429 0.210938 10.3022 0.351562Z" fill="#{$text-color}"/></svg>');
 
-$btn-border-width: 2px;
+// Bootstrap CSS Variable Overrides
+
+:root {
+  --bs-primary: #{$primary};
+  --bs-body-color: #323a45;
+  --bs-link-color: #{$primary};
+  --bs-body-font-family: "Poppins", sans-serif;
+}
+
+.btn-primary {
+  --bs-btn-bg: #{$primary};
+  --bs-btn-border-color: #{$primary};
+}
