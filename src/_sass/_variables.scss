@@ -53,3 +53,9 @@ $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" vie
   --bs-btn-color: #{$primary};
   --bs-btn-border-color: #{$primary};
 }
+
+.dropdown-menu {
+  --bs-dropdown-border-radius: 0;
+  --bs-dropdown-link-hover-bg: #f7f8fa;
+  --bs-dropdown-link-active-bg: #{$gray-1};
+}

@@ -11,4 +11,8 @@
     background-color: $blue-lightest;
     color: $primary;
   }
+
+  .dropdown .dropdown-menu.dropdown-menu-end {
+    right: 25% !important;
+  }
 }
