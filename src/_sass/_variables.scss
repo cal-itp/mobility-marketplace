@@ -38,9 +38,18 @@ $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" vie
   --bs-body-color: #323a45;
   --bs-link-color: #{$primary};
   --bs-body-font-family: "Poppins", sans-serif;
+  --bs-link-hover-color: $dark-blue;
 }
 
 .btn-primary {
   --bs-btn-bg: #{$primary};
+  --bs-btn-border-color: #{$primary};
+  --bs-btn-hover-bg: #{$dark-blue};
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-border-color: #{$dark-blue};
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #{$primary};
   --bs-btn-border-color: #{$primary};
 }
