@@ -1,8 +1,16 @@
 <div class="row" id="toc-and-content">
-  <div class="toc col-md-3">
-    <div class="toc-container">
-      <div class="d-none d-sm-none d-md-block d-lg-block">
-        <h2 class="h4">Table of Contents</h2>
+  <div class="toc col-md-3 sticky-sm-top">
+    <div class="toc-container bg-white">
+      <h2 class="h4 d-none d-md-block d-lg-block">Table of Contents</h2>
+      <button
+        class="toggle-menu rounded-0 btn btn-secondary dropdown-toggle d-sm-block d-xs-block d-md-none d-lg-none"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Table of Contents
+      </button>
+      <div class="d-sm-none d-xs-none d-md-block d-lg-block">
         {% for item in include.toc_data %}
         <h3 class="h4">{{ item.title }}</h3>
         <ul>
@@ -14,33 +22,16 @@
         </ul>
         {% endfor %}
       </div>
-      <div id="mobile-toc-nav" class="d-block d-sm-block d-md-none d-lg-none">
-        <div class="mobile-control-group main-nav-icons toc-and-content-mobile-nav">
-          <button
-            id="mobile-toc-nav-button"
-            class="mobile-control toggle-menu"
-            aria-expanded="false"
-            aria-controls="navigation"
-            data-toggle="collapse"
-            data-target="#navigation-two"
-          >
-            <h2 class="h4">Table of Contents</h2>
-          </button>
-        </div>
-        <nav id="navigation-two" class="main-navigation singlelevel auto-highlight no-icons nav collapse">
-          <div id="nav_list" class="top-level-nav">
-            {% for item in include.toc_data %}
-            <h3 class="h4">{{ item.title }}</h3>
-            <ul>
-              {% for subsection_item in item.subsection_items %}
-              <li class="h5">
-                <a class="mobile-nav-link" href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-            {% endfor %}
-          </div>
-        </nav>
+      <div class="d-sm-block d-xs-block d-md-none d-lg-none">
+        <ul class="dropdown-menu w-100">
+          {% for item in include.toc_data %}
+          <li><span class="h4 dropdown-item-text">{{ item.title }}</span></li>
+          {% for subsection_item in item.subsection_items %}
+          <li class="h5">
+            <a class="dropdown-item" href="#{{ subsection_item.url }}">{{ subsection_item.title }}</a>
+          </li>
+          {% endfor %} {% endfor %}
+        </ul>
       </div>
     </div>
   </div>

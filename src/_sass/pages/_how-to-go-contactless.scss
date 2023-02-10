@@ -35,7 +35,7 @@
   }
 
   .how-to-go-contactless {
-    .fixed + div :target::before {
+    div :target::before {
       // see: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
       display: block;
       content: "";
@@ -55,65 +55,40 @@
   }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
   .how-to-go-contactless {
-    .fixed + div :target::before {
+    div :target::before {
       // this ensures clicking an anchor tag takes you to the right spot
       display: block; // without this code, the fixed header blocks the anchor tag from showing up
       content: ""; // see: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
-      height: 170px !important;
-      margin: -170px 0 0 !important;
+      height: 68px !important;
+      margin: -68px 0 0 !important;
     }
   }
 
   .toc {
     padding: 0;
     .toc-container {
-      .main-navigation {
+      .toggle-menu {
+        width: 100%;
+        background: white;
+        color: $primary;
+        border-top: 1px solid #d7d7d7;
+        border-left: none;
+        border-right: none;
         border-bottom: 1px solid #d7d7d7;
-      }
-      .main-nav-icons {
+        text-align: left;
         height: 64px;
-      }
-      #nav_list {
         padding-left: 16px;
-      }
-      #mobile-toc-nav {
-        &.fixed {
-          position: fixed;
-          top: 106px;
-          background: white;
-          width: 100%;
-          z-index: 100;
+        &.show {
+          border-bottom: 1px solid white;
         }
       }
-      .toc-and-content-mobile-nav {
-        .toggle-menu {
-          width: 100%;
-          background: white;
-          border-top: 1px solid #d7d7d7;
-          border-left: none;
-          border-right: none;
-          border-bottom: 1px solid #d7d7d7;
-          text-align: left;
-          height: 64px;
-          line-height: 64px;
-          padding-left: 16px;
-          position: initial;
-          transition: none;
-          transform: none;
-          &::after {
-            position: absolute;
-            font-family: "CaGov" !important;
-            content: "\33";
-            right: 20px;
-            transition: transform 0.2s ease-in-out;
-            top: 0;
-            font-size: 32px;
-          }
-        }
-        .toggle-menu[aria-expanded="true"]::after {
-          transform: rotate(180deg);
+      ul {
+        top: -3px !important;
+        border-top-color: white;
+        .h5 a {
+          color: $primary;
         }
       }
     }
