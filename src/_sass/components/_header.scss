@@ -1,9 +1,7 @@
 @include media-breakpoint-up(md) {
-  #header {
-    height: 112px;
-  }
-
   .navbar.main-navigation {
+    height: 112px;
+    padding: 0;
     .navbar-collapse {
       margin: 0;
       padding: 0;
@@ -31,12 +29,10 @@
   }
 }
 
-#header + .main-content {
-  padding-top: 0;
-}
-
 .main-navigation {
   padding-bottom: 0;
+  max-width: 1280px;
+  margin: 0 auto;
   .navbar-brand {
     padding: 14.5px 0;
   }
