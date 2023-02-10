@@ -13,10 +13,6 @@
         padding: 31.4px 0 31.4px 0;
         margin: 0;
       }
-      .nav-link[aria-current="page"] {
-        background-color: $blue-lightest;
-        color: $primary !important;
-      }
     }
     .dropdown .dropdown-menu.dropdown-menu-end {
       right: 25% !important;
@@ -24,6 +20,9 @@
       .dropdown-item {
         border-bottom: 0;
         padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+        &[aria-current="page"] {
+          background-color: $blue-lightest;
+        }
       }
     }
   }
@@ -49,6 +48,10 @@
       margin-right: 2px;
       margin-left: 2px;
       border-radius: 0;
+      &[aria-current="page"] {
+        background-color: $blue-lightest;
+        color: $primary !important;
+      }
     }
   }
   .dropdown-menu.show {
@@ -58,6 +61,9 @@
     .dropdown-item {
       border-bottom: 1px solid #e1f2f7;
       padding: 20px 0 20px 15px;
+      &[aria-current="page"] {
+        background-color: $blue-lightest;
+      }
     }
   }
 }
