@@ -1,5 +1,5 @@
 <div class="row" id="toc-and-content">
-  <div class="toc col-md-3 sticky-sm-top">
+  <div class="toc col-md-3">
     <div class="toc-container bg-white">
       <h2 class="h4 d-none d-md-block d-lg-block">Table of Contents</h2>
       <button
@@ -10,7 +10,7 @@
       >
         Table of Contents
       </button>
-      <div class="d-sm-none d-xs-none d-md-block d-lg-block">
+      <div class="d-none d-md-block d-lg-block">
         {% for item in include.toc_data %}
         <h3 class="h4">{{ item.title }}</h3>
         <ul>
@@ -22,7 +22,7 @@
         </ul>
         {% endfor %}
       </div>
-      <div class="d-sm-block d-xs-block d-md-none d-lg-none">
+      <div class="d-block d-md-none d-lg-none">
         <ul class="dropdown-menu w-100">
           {% for item in include.toc_data %}
           <li><span class="h4 dropdown-item-text">{{ item.title }}</span></li>
