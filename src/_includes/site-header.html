@@ -29,8 +29,7 @@
               >Products</a
             >
             <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item text-body" href="/how-to/go-contactless">Contactless payments</a></li>
-              <li><a class="dropdown-item text-body" href="/how-to/get-connected">Data plans</a></li>
+              {% include link-repeater.html menu_items=site.navigation.products anchor_class="dropdown-item text-body" %}
             </ul>
           </li>
 

@@ -22,11 +22,16 @@ mailing_list: https://lp.constantcontactpages.com/su/eLbtFoE/calitp?source_id=a4
 navigation:
   header:
     - name: View contracts
-      url: /contracts
+      url: /contracts/
     - name: About
       url: /about
     - name: Contact us
       url: /contact
+  products:
+    - name: Contactless payments
+      url: /how-to/go-contactless
+    - name: Data plans
+      url: /how-to/get-connected
   footer:
     - name: Back to top
       url: "#main-content"
