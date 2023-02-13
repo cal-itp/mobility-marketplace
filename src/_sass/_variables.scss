@@ -47,6 +47,8 @@ $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" vie
   --bs-btn-hover-bg: #{$dark-blue};
   --bs-btn-hover-color: #ffffff;
   --bs-btn-hover-border-color: #{$dark-blue};
+  --bs-btn-active-bg: #{$dark-blue};
+  --bs-btn-active-border-color: #{$dark-blue};
 }
 
 .btn-outline-primary {
