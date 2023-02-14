@@ -45,6 +45,6 @@
     <h4>{{ paragraph.title }}</h4>
     {% endif %}
     <p>{{ paragraph.text }}</p>
-    {% endfor %} {% endfor %} {% endfor %}
+    {% if paragraph.html %} {% include {{paragraph.html}} %}{% endif %} {% endfor %} {% endfor %} {% endfor %}
   </div>
 </div>
