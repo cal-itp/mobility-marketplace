@@ -21,7 +21,7 @@ google_analytics_id: "UA-176840950-1"
 mailing_list: https://lp.constantcontactpages.com/su/eLbtFoE/calitp?source_id=a41b99cd-7f28-4be8-a286-f9e75fc7bbce&source_type=em&c=
 navigation:
   header:
-    - name: View contracts
+    - name: Contracts
       url: /contracts/
     - name: About
       url: /about
@@ -29,7 +29,7 @@ navigation:
       url: /contact
   products:
     - name: Contactless payments
-      url: /how-to/go-contactless
+      url: /go-contactless
     - name: Data plans
       url: /how-to/get-connected
   footer:
