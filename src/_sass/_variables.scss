@@ -4,51 +4,6 @@ $headings-font-family: "Raleway", sans-serif !important;
 $text-color: #323a45;
 $headings-color: $text-color;
 $code-color: $text-color !important;
-$border-radius-lg: 0.3rem;
-$border-width: 1px;
-$gray-300: #dee2e6;
-$border-color: $gray-300;
-
-// Spacing
-//
-// Control the default styling of most Bootstrap elements by modifying these
-// variables. Mostly focused on spacing.
-// You can add more entries to the $spacers map, should you need more variation.
-
-$spacer: 1rem !default;
-$spacers: () !default;
-$spacers: map-merge(
-  (
-    0: 0,
-    1: (
-      $spacer * 0.25,
-    ),
-    2: (
-      $spacer * 0.5,
-    ),
-    3: $spacer,
-    4: (
-      $spacer * 1.5,
-    ),
-    5: (
-      $spacer * 3,
-    ),
-  ),
-  $spacers
-);
-
-// Grid breakpoints
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-) !default;
 
 // Colors
 
@@ -56,8 +11,6 @@ $blue-lightest: #f5f9fb;
 $gray-light: #d1dee3;
 $gray-lightest: #f3f3f4;
 $hover-color: #035376;
-$black: #000;
-$white: #fff;
 
 // New colors from 2023 / Figma
 
