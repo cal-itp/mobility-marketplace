@@ -44,6 +44,19 @@ Auto rebuild/reload will be active and will watch the site files for changes.
 
 \* Try using <kbd>cmd</kbd> and clicking on the server address from the Terminal
 
+## Documents
+
+This site uses Google Cloud to manage static files, like the PDFs on the How To pages.
+
+Requirements: User must be authorized on Google Cloud to access the resources-calitp-org bucket.
+
+1. Go to https://cloud.google.com/
+1. Click `Console`
+1. Click `Cloud Storage`
+1. Click `resources.calitp.org`
+1. Click mobility-marketplace
+1. Click button for action needed: Upload Files, Delete or Edit on a particular file
+
 ## License
 
 Content (including graphics, images, video, documents, and text) in this repository is licensed under [CC-BY 4.0][content-license].
