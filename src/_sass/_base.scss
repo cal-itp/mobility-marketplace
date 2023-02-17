@@ -10,6 +10,10 @@
   border: 0;
 }
 
+a:focus {
+  outline: solid 2px #2ea3f2;
+}
+
 blockquote {
   background-color: $gray-light;
   border-radius: $border-radius-lg;
