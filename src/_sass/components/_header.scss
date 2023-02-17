@@ -8,10 +8,19 @@
     }
     .nav-fill .nav-item {
       text-align: center;
+      &:hover {
+        background-color: $blue-lightest;
+        .nav-link {
+          color: $primary !important;
+        }
+      }
       .nav-link {
         border-bottom: 0;
         padding: 31.4px 0 31.4px 0;
         margin: 0;
+        &:focus {
+          outline: solid 2px #2ea3f2;
+        }
       }
     }
     .dropdown .dropdown-menu.dropdown-menu-end {
