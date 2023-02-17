@@ -2,6 +2,9 @@
   .navbar.main-navigation {
     height: 112px;
     padding: 0;
+    .navbar-brand {
+      margin-left: -20px;
+    }
     .navbar-collapse {
       margin: 0;
       padding: 0;
@@ -18,9 +21,6 @@
         border-bottom: 0;
         padding: 31.4px 0 31.4px 0;
         margin: 0;
-        &:focus {
-          outline: solid 2px #2ea3f2;
-        }
       }
     }
     .dropdown .dropdown-menu.dropdown-menu-end {
@@ -34,6 +34,11 @@
           background-color: $blue-lightest;
         }
       }
+    }
+  }
+  #footer .nav:first-child {
+    .nav-link {
+      padding-left: 0;
     }
   }
 }
