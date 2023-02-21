@@ -1,3 +1,7 @@
+.required-label {
+  color: #d24532;
+}
+
 .form-submission-success {
   display: none;
   margin-top: map-get($spacers, 4);
@@ -17,7 +21,7 @@
     margin-top: map-get($spacers, 5);
   }
 
-  input[type=submit],
+  input[type="submit"],
   .btn {
     min-width: 150px;
 
@@ -35,6 +39,8 @@
   margin-bottom: map-get($spacers, 4);
 
   label {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
     @include media-breakpoint-up(md) {
       padding-left: map-get($spacers, 3);
     }
@@ -55,7 +61,7 @@
       height: 24px;
     }
 
-    input[type=checkbox]:checked + .check-icon-checkbox {
+    input[type="checkbox"]:checked + .check-icon-checkbox {
       border-color: $primary;
     }
 

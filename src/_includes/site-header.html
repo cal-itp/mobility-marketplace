@@ -1,54 +1,43 @@
-<header class="mobi-mart-header global-header fixed" role="banner" id="header">
+<header class="sticky-md-top bg-white" role="banner" id="header">
   <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
-
-  <div class="branding">
-    <div class="header-organization-banner">
-      <a href="/">
-        <img
-          class="d-lg-none mobi-mart-logo"
-          src="/uploads/logo-sm.svg"
-          alt="California Integrated Travel Project (Cal-ITP)"
-        />
+  <nav class="navbar navbar-expand-lg main-navigation" aria-label="Navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img class="d-lg-none mobi-mart-logo" src="/uploads/logo-sm.svg" alt="California Integrated Travel Project (Cal-ITP)" />
         <img
           class="d-none d-lg-inline mobi-mart-logo"
           src="/uploads/logo-lg.svg"
           alt="California Integrated Travel Project (Cal-ITP)"
+          style="max-width: 300px"
         />
       </a>
-    </div>
-  </div>
-
-  <div class="mobile-controls">
-    <div class="mobile-control-group main-nav-icons">
       <button
-        id="nav-icon3"
-        class="mobile-control toggle-menu"
+        class="navbar-toggler collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#siteHeaderNav"
+        aria-controls="siteHeaderNav"
         aria-expanded="false"
-        aria-controls="navigation"
-        data-toggle="collapse"
-        data-target="#navigation"
+        aria-label="Toggle navigation"
       >
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="sr-only">Menu</span>
+        <span class="navbar-toggler-icon"></span>
       </button>
-    </div>
-  </div>
 
-  <div>
-    <nav
-      id="navigation"
-      class="main-navigation singlelevel auto-highlight no-icons nav"
-    >
-      <ul id="nav_list" class="top-level-nav">
-        {% include link-repeater.html
-             menu_items=site.navigation.header
-             list_class="nav-item"
-             anchor_class="first-level-link"
-        %}
-      </ul>
-    </nav>
-  </div>
+      <div class="navbar-collapse collapse" id="siteHeaderNav">
+        <ul class="navbar-nav nav-pills nav-fill w-100">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bold text-body" href="#" data-bs-toggle="dropdown" aria-expanded="false"
+              >Products</a
+            >
+            <ul class="dropdown-menu dropdown-menu-end">
+              {% include link-repeater.html menu_items=site.navigation.products anchor_class="dropdown-item text-body" %}
+            </ul>
+          </li>
+
+          {% include link-repeater.html menu_items=site.navigation.header list_class="nav-item" anchor_class="nav-link fw-bold
+          text-body" %}
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>

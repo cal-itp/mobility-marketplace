@@ -1,8 +1,7 @@
 @charset "utf-8";
 
-@import "../../submodules/ca-state-template/source/scss/cagov.core.scss";
-@import "../../submodules/ca-state-template/source/scss/colorscheme/colorscheme-oceanside-import.scss";
 @import "variables";
+@import "breakpoints";
 
 @import "../../submodules/tabulator/src/scss/bootstrap/tabulator_bootstrap4.scss";
 
@@ -15,13 +14,13 @@
 @import "overrides/tables";
 
 @import "components/filterable-table";
-@import "components/footer";
 @import "components/footnotes";
 @import "components/header";
 @import "components/imaged-section";
 @import "components/newsletter";
 @import "components/page-header";
 @import "components/pill";
+@import "components/toc-and-content";
 
 @import "pages/contracts";
 @import "pages/home";

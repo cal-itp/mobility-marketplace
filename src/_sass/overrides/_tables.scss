@@ -56,3 +56,20 @@ td a {
   // flip the select indicator on the Y-axis, to point up
   transform: scaleY(-1);
 }
+
+.table.tabulator .tabulator-table .tabulator-row {
+  padding: 0;
+}
+
+.table.tabulator .tabulator-headers .tabulator-header .tabulator-col {
+  height: 44px !important;
+  padding: 0.8rem 12px;
+}
+
+.tabulator .tabulator-header .tabulator-col {
+  height: 45px !important;
+}
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content {
+  padding: 0.325rem !important;
+}

@@ -21,16 +21,17 @@ google_analytics_id: "G-6M5TSH3VCY"
 mailing_list: https://lp.constantcontactpages.com/su/eLbtFoE/calitp?source_id=a41b99cd-7f28-4be8-a286-f9e75fc7bbce&source_type=em&c=
 navigation:
   header:
-    - name: Go contactless
-      url: /go-contactless
-    - name: Get connected
-      url: /how-to/get-connected
-    - name: View contracts
-      url: /contracts
+    - name: Contracts
+      url: /contracts/
     - name: About
       url: /about
     - name: Contact us
       url: /contact
+  products:
+    - name: Contactless payments
+      url: /go-contactless
+    - name: Data plans
+      url: /how-to/get-connected
   footer:
     - name: Back to top
       url: "#main-content"

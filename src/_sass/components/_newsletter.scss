@@ -35,7 +35,7 @@
   div.ctct-form-embed form.ctct-form-custom input.ctct-form-element,
   .ctct-form-field,
   .ctct-form-button {
-    font-family: $font-family-sans-serif;
+    font-family: var(--bs-body-font-family);
     border-radius: calc(5rem / 16);
   }
 
