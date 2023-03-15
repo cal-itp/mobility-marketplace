@@ -27,8 +27,54 @@ layout: default
 </div>
 
 <div class="container container--skinny">
-  <div class="nav flex-column nav-pills" id="contact-form-tab" role="tablist" aria-orientation="vertical">
+  <div class="nav flex-column mb-4" id="contact-form-tab" role="tablist" aria-orientation="vertical">
     <fieldset>
+      <legend class="">I am a:</legend>
+      <div class="form-check">
+        <input
+          class="form-check-input active"
+          id="transit-agency-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#transit-agency"
+          role="tab"
+          type="radio"
+          name="contact-form"
+          aria-controls="transit-agency"
+          aria-selected="true"
+          checked
+        />
+        <label class="form-check-label" for="transit-agency-tab"> Transit Agency</label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          id="vendor-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#vendor"
+          role="tab"
+          type="radio"
+          name="contact-form"
+          aria-controls="vendor"
+          aria-selected="false"
+        />
+        <label class="form-check-label" for="vendor-tab">Vendor</label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          id="other-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#other"
+          role="tab"
+          type="radio"
+          name="contact-form"
+          aria-controls="other"
+          aria-selected="false"
+        />
+        <label class="form-check-label" for="other-tab">Other</label>
+      </div>
+    </fieldset>
+    <!-- <fieldset>
       <legend class="">I am a:</legend>
       <button
         class="nav-link active"
@@ -66,7 +112,7 @@ layout: default
       >
         Other
       </button>
-    </fieldset>
+    </fieldset> -->
   </div>
   <div class="tab-content" id="contact-form-tabContent">
     <div class="tab-pane fade show active" id="transit-agency" role="tabpanel" aria-labelledby="transit-agency-tab" tabindex="0">
