@@ -113,6 +113,12 @@
           padding-left: 0.4rem;
           cursor: pointer;
         }
+        .hs-form-checkbox-display {
+          .hs-input {
+            width: 24px;
+            height: 24px;
+          }
+        }
         .hs-form-radio-display {
           .hs-input {
             width: 24px;
