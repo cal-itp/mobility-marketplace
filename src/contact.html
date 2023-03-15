@@ -1,57 +1,56 @@
 ---
-layout: skinny
-title: Get in touch
-class_name: no-banner
-form:
-  form_target: form-contact
-  confirm_target: form-confirm
+layout: default
 ---
 
-<p>
-  Have a question or comment? Please fill out the form below.
-</p>
+<div class="bg-blue-lightest">
+  <div class="container">
+    <div class="row" style="padding: 64px 0; margin-bottom: 48px">
+      <div class="offset-1 col-6">
+        <h1 class="home-hero-title">Get in touch<br /><span style="color: #60656b">We’d love to hear from you</span></h1>
+        <p>
+          Thank you for your interest in Cal-ITP! Whether you represent a public Transit Provider based in California or elsewhere
+          in the U.S., Cal-ITP can provide materials and support to help you navigate the process to modernize your fleet. If
+          you’re a vendor, we’d love to hear about your company’s products and/or services.
+        </p>
 
-<p>
-  Transit providers, please tell us how we can best assist you. Someone from the Cal-ITP team will then reach out to get you started with vendor selection, pricing, and procurement—or just to respond to your comment or question.
-</p>
-
-<p>
-  Vendors, please tell us about your company’s products and/or services.
-</p>
-
-<p class="mb-60px">
-  We welcome all site visitors to also <a href="{{ site.mailing_list }}">sign up for our mailing list</a> for important updates and to learn when new contracts become available.
-</p>
-
-{% include forms/indicates-required.html %}
-
-{% assign honeypot = "_hp_" %}
-{% assign id = page.form.form_target %}
-{% assign name = id | replace_first: 'form-', '' %}
-<form data-netlify="true" netlify-honeypot="{{ honeypot }}" id="{{ id }}" name="{{ name }}" method="POST">
-  {% include forms/input.html name="first_name" label="First name" placeholder="Nyota" required="true" %}
-  {% include forms/input.html name="last_name" label="Last name" placeholder="Uhura" required="true" %}
-  {% include forms/input.html name="agency" label="Agency name" placeholder="Elk Grove Transit" %}
-
-  <div class="form-group">
-    <label class="form-control-label" for="role">Role</label>
-    <select class="form-control custom-select" id="role" name="role">
-      <option value="">Select an option</option>
-      <option value="Transit provider staff">Transit provider staff</option>
-      <option value="Transit provider CEO">Transit provider CEO</option>
-      <option value="Technology vendor">Technology vendor</option>
-      <option value="Other">Other</option>
-    </select>
+        <p>
+          Once you’ve completed the form below, someone from the Cal-ITP team will reach out to assist you or respond to your
+          comment or question. You can also reach out to us directly at:
+          <a href="mailto:hello@calitp.org" target="_blank">hello@calitp.org</a>
+        </p>
+      </div>
+      <div class="offset-1 col-4">
+        <img alt="A bus stop and a contact letter" class="img-fluid" src="/uploads/contact-calitp.svg" />
+      </div>
+    </div>
   </div>
+</div>
 
-  {% include forms/input.html name="email" type="email" label="Email address" placeholder="nyota.uhura@elkgrovecity.org" required="true" %}
-  {% include forms/input.html name="phone-number" type="tel" label="Phone number" placeholder="4155550199" %}
+<div class="container container--skinny">
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+      region: "na1",
+      portalId: "5519226",
+      formId: "467e7cdc-0b55-4f0d-b36f-3f6b1f3d19ab",
+    });
+  </script>
+</div>
 
-  {% include forms/textarea.html name="comments" label="Comments or queries" rows="6" placeholder="We welcome your questions, comments, or feedback!" required="true" %}
+<!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "5519226",
+    formId: "de22d690-184f-404d-b787-6f33e993b399",
+  });
+</script>
 
-  {% include forms/submit.html %}
-
-  {% include forms/netlify-honeypot.html name=honeypot %}
-</form>
-
-{% include forms/confirm.html id=page.forms.confirm_target message="Thank you! We’ll be in touch soon!" %}
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "5519226",
+    formId: "10ed070e-42c4-4451-b547-a6268123cc80",
+  });
+</script> -->
