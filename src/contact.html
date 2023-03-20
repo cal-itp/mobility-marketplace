@@ -1,57 +1,94 @@
 ---
-layout: skinny
-title: Get in touch
-class_name: no-banner
-form:
-  form_target: form-contact
-  confirm_target: form-confirm
+layout: default
 ---
 
-<p>
-  Have a question or comment? Please fill out the form below.
-</p>
+<div class="bg-blue-lightest">
+  <div class="container">
+    <div class="row py-5 my-3 d-flex flex-row-reverse">
+      <div class="col-lg-5">
+        <img
+          alt="A bus stop and a contact letter"
+          class="img-fluid d-block my-0 mx-auto mb-5 mb-lg-0"
+          src="/uploads/contact-calitp.svg"
+        />
+      </div>
+      <div class="offset-lg-1 col-lg-6">
+        <h1>Get in touch<br /><span class="text-gray">We’d love to hear from you</span></h1>
+        <p>
+          Thank you for your interest in Cal-ITP! Whether you represent a public Transit Provider based in California or elsewhere
+          in the U.S., Cal-ITP can provide materials and support to help you navigate the process to modernize your fleet. If
+          you’re a vendor, we’d love to hear about your company’s products and/or services.
+        </p>
 
-<p>
-  Transit providers, please tell us how we can best assist you. Someone from the Cal-ITP team will then reach out to get you started with vendor selection, pricing, and procurement—or just to respond to your comment or question.
-</p>
-
-<p>
-  Vendors, please tell us about your company’s products and/or services.
-</p>
-
-<p class="mb-60px">
-  We welcome all site visitors to also <a href="{{ site.mailing_list }}">sign up for our mailing list</a> for important updates and to learn when new contracts become available.
-</p>
-
-{% include forms/indicates-required.html %}
-
-{% assign honeypot = "_hp_" %}
-{% assign id = page.form.form_target %}
-{% assign name = id | replace_first: 'form-', '' %}
-<form data-netlify="true" netlify-honeypot="{{ honeypot }}" id="{{ id }}" name="{{ name }}" method="POST">
-  {% include forms/input.html name="first_name" label="First name" placeholder="Nyota" required="true" %}
-  {% include forms/input.html name="last_name" label="Last name" placeholder="Uhura" required="true" %}
-  {% include forms/input.html name="agency" label="Agency name" placeholder="Elk Grove Transit" %}
-
-  <div class="form-group">
-    <label class="form-control-label" for="role">Role</label>
-    <select class="form-control custom-select" id="role" name="role">
-      <option value="">Select an option</option>
-      <option value="Transit provider staff">Transit provider staff</option>
-      <option value="Transit provider CEO">Transit provider CEO</option>
-      <option value="Technology vendor">Technology vendor</option>
-      <option value="Other">Other</option>
-    </select>
+        <p>
+          Once you’ve completed the form below, someone from the Cal-ITP team will reach out to assist you or respond to your
+          comment or question. You can also reach out to us directly at:
+          <a href="mailto:hello@calitp.org" target="_blank">hello@calitp.org</a>
+        </p>
+      </div>
+    </div>
   </div>
+</div>
 
-  {% include forms/input.html name="email" type="email" label="Email address" placeholder="nyota.uhura@elkgrovecity.org" required="true" %}
-  {% include forms/input.html name="phone-number" type="tel" label="Phone number" placeholder="4155550199" %}
-
-  {% include forms/textarea.html name="comments" label="Comments or queries" rows="6" placeholder="We welcome your questions, comments, or feedback!" required="true" %}
-
-  {% include forms/submit.html %}
-
-  {% include forms/netlify-honeypot.html name=honeypot %}
-</form>
-
-{% include forms/confirm.html id=page.forms.confirm_target message="Thank you! We’ll be in touch soon!" %}
+<div class="container container--skinny">
+  <div class="nav flex-column mt-5 pt-3 mb-4" id="contact-form-tab" role="tablist" aria-orientation="vertical">
+    <fieldset>
+      <legend><span>I am a</span><span class="required-label">*</span></legend>
+      <div class="form-check">
+        <input
+          class="form-check-input active"
+          id="transit-agency-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#transit-agency"
+          role="tab"
+          type="radio"
+          name="contact-form"
+          aria-controls="transit-agency"
+          aria-selected="true"
+          checked
+        />
+        <label class="form-check-label" for="transit-agency-tab"> Transit Agency</label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          id="vendor-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#vendor"
+          role="tab"
+          type="radio"
+          name="contact-form"
+          aria-controls="vendor"
+          aria-selected="false"
+        />
+        <label class="form-check-label" for="vendor-tab">Vendor</label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          id="other-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#other"
+          role="tab"
+          type="radio"
+          name="contact-form"
+          aria-controls="other"
+          aria-selected="false"
+        />
+        <label class="form-check-label" for="other-tab">Other</label>
+      </div>
+    </fieldset>
+  </div>
+  <div class="tab-content" id="contact-form-tabContent">
+    <div class="tab-pane fade show active" id="transit-agency" role="tabpanel" aria-labelledby="transit-agency-tab" tabindex="0">
+      <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+      {% include forms/hubspot-form.html formId="467e7cdc-0b55-4f0d-b36f-3f6b1f3d19ab" %}
+    </div>
+    <div class="tab-pane fade" id="vendor" role="tabpanel" aria-labelledby="vendor-tab" tabindex="0">
+      {% include forms/hubspot-form.html formId="de22d690-184f-404d-b787-6f33e993b399" %}
+    </div>
+    <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab" tabindex="0">
+      {% include forms/hubspot-form.html formId="10ed070e-42c4-4451-b547-a6268123cc80" %}
+    </div>
+  </div>
+</div>
