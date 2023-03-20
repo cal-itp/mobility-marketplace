@@ -1,14 +1,8 @@
-{% assign id = include.id | default: "form-confirm" %}
-{% assign message = include.message %}
+{% assign id = include.id | default: "form-confirm" %} {% assign message = include.message %}
 
 <div class="form-submission-success" id="{{ id }}">
   <p>
-    <img
-      alt="Form submission confirmation illustration"
-      class="img-fluid"
-      src="/uploads/email-confirm.svg"
-      title="Thank you!"
-    />
+    <img alt="Form submission confirmation illustration" class="img-fluid" src="/uploads/email-confirm.svg" title="Thank you!" />
   </p>
 
   <p>{{ message }}</p>
