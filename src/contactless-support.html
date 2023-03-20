@@ -54,9 +54,8 @@ modes:
     placeholder="California" required="true" %} {% include forms/input.html name="first_name" label="Contact First name"
     placeholder="Nyota" required="true" %} {% include forms/input.html name="last_name" label="Contact Last name"
     placeholder="Uhura" required="true" %} {% include forms/input.html name="email" type="email" label="Contact Email address"
-    placeholder="nyota.uhura@elkgrovecity.org" required="true" %} {% include forms/textarea.html name="agency_address" rows="1"
-    label="Agency Mailing address" placeholder="1234 Main Street, Elk Grove, CA 98765" required="true" %} {% include
-    forms/input.html name="phone" type="tel" label="Contact Phone number" placeholder="4155550199" required="true" %}
+    placeholder="nyota.uhura@elkgrovecity.org" required="true" %} {% include forms/input.html name="phone" type="tel"
+    label="Contact Phone number" placeholder="4155550199" required="true" %}
   </section>
 
   <section>
@@ -71,12 +70,6 @@ modes:
         {% endfor %}
       </select>
     </div>
-
-    {% include forms/textarea.html name="fleet_description" label="Number + Type of Vehicles" description="For example, 50 40-foot
-    diesel-electric hybrid buses, 30 60-foot electric trolleybuses, 100 light rail vehicles, 50 dial-a-ride shuttles, etc."
-    required="true" %} {% include forms/textarea.html name="fleet_pads" label="PADs / Fare Validators: Number per Vehicle?"
-    description="If this varies by vehicle type, please note each vehicle type + # of PADs/Validators desired per vehicle. If
-    you're considering on-platform boarding, please share that here too." required="true" %}
   </section>
 
   <section>
@@ -99,10 +92,7 @@ modes:
       which can be consumed by Payment Acceptance Devices to provide data to help you spot ridership trends.
     </p>
 
-    {% include forms/input.html name="gtfs_schedule_url" label="URL for your GTFS Schedule (aka Static) Feed" %} {% include
-    forms/textarea.html name="gtfs_realtime_urls" rows="1" label="URLs for your GTFS Realtime (aka GTFS-RT) Feed"
-    description="Three possible feeds may exist: Trip Updates, Vehicle Positions, Alerts. Please include as many URLs as you're
-    aware of." %}
+    {% include forms/input.html name="gtfs_schedule_url" label="URL for your GTFS Schedule (aka Static) Feed" %}
 
     <div class="form-group">
       {% include forms/label.html name="modes" label="CA agencies only​: Have you received a GTFS data assessment from Caltrans in
@@ -119,8 +109,6 @@ modes:
   <section>
     <h2 class="h3">Section 4 of 4: Timeline</h2>
     {% include forms/input.html name="timeline" label="What is your desired Timeline for Purchasing and Installing a contactless
-    fare payment system?" required="true" %} {% include forms/textarea.html name="comments" label="Comments or queries" rows="4"
-    description="Have additional questions about contactless debit/credit card fare payments, GTFS, or other topics that you'd
-    like Cal-ITP's help with? Let us know below." %}
+    fare payment system?" required="true" %}
   </section>
 </form>
