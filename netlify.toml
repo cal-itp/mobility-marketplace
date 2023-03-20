@@ -10,3 +10,9 @@
   to = "/how-to/get-connected"
   status = 301
   force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "/contactless-support"
+  to = "/contact"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
