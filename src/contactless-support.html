@@ -62,8 +62,6 @@ modes:
     <h2 class="h3">Section 2 of 4: Fleet Information</h2>
 
     <div class="form-group">
-      {% include forms/label.html name="modes" label="Modes that your agency provides service on" description="Please select as
-      many as apply; use Control/Command + click the mode type to select/deselect." required="true" %}
       <select multiple class="form-control" id="modes" name="modes[]" required aria-required="true">
         {% for mode in page.modes %}
         <option>{{ mode }}</option>
@@ -95,8 +93,6 @@ modes:
     {% include forms/input.html name="gtfs_schedule_url" label="URL for your GTFS Schedule (aka Static) Feed" %}
 
     <div class="form-group">
-      {% include forms/label.html name="modes" label="CA agencies only​: Have you received a GTFS data assessment from Caltrans in
-      the last year?" %}
       <select class="form-control" id="gtfs_assessment" name="gtfs_assessment">
         <option></option>
         <option>Yes</option>
