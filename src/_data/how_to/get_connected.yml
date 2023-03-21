@@ -22,7 +22,7 @@ toc:
         paragraphs:
           - text: Cal-ITP will provide the materials and support you need to implement data plans on your fleet. To help us better assist you, we ask that you complete our contact form for Cal-ITP support. With this information, we can determine how best to support you with finding the right data plan for your needs, getting buy-in from internal stakeholders, and engaging with vendors.
           - text: After you complete the form, we welcome you to browse this guide to understand the process and your next steps.
-          - text: <a href="/contactless-support" class="mb-4 mt-3 btn btn-outline-primary">Complete the form</a>
+          - text: <a href="/contact" class="mb-4 mt-3 btn btn-outline-primary">Complete the form</a>
   - title: Choosing a data plan
     subsection_items:
       - title: Choosing how much data
