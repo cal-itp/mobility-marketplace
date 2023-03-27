@@ -31,9 +31,10 @@
         list-style: none;
       }
       &.hs-error-msgs {
-        padding-left: 0;
+        display: none;
         .hs-error-msg {
           font-weight: 400;
+          display: none;
         }
       }
       &.multi-container {
