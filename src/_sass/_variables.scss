@@ -15,6 +15,7 @@ $hover-color: #035376;
 // New colors from 2023 / Figma
 
 $primary: #046b99;
+$primary-black: #323a45;
 $dark-blue: #225173;
 
 $gray-1: #eeeeee;
@@ -40,10 +41,10 @@ $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" vie
 
 :root {
   --bs-primary: #{$primary};
-  --bs-body-color: #323a45;
+  --bs-body-color: #{$primary-black};
   --bs-link-color: #{$primary};
   --bs-body-font-family: "Poppins", sans-serif;
-  --bs-link-hover-color: $dark-blue;
+  --bs-link-hover-color: #{$dark-blue};
 }
 
 .btn-primary {

@@ -43,13 +43,14 @@
         .hs-form-checkbox-display span {
           font-weight: 400;
           font-size: calc(24rem / 16);
-          padding-left: 0.4rem;
+          padding-left: 0.5rem;
           cursor: pointer;
         }
         .hs-form-checkbox-display {
           .hs-input {
             width: calc(24rem / 16);
             height: calc(24rem / 16);
+            border-radius: calc(4rem / 16);
           }
         }
         .hs-form-radio-display {
@@ -62,14 +63,14 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            border: 1px solid $gray-3;
+            border: 2px solid $gray-3;
             appearance: none;
             print-color-adjust: exact;
             vertical-align: -3px;
           }
           .hs-input:checked {
-            background-color: var(--bs-primary);
-            border-color: var(--bs-primary);
+            background-color: var(--bs-body-color);
+            border-color: var(--bs-body-color);
           }
           .hs-input:focus {
             outline: 0;
@@ -136,15 +137,16 @@
   }
   .form-check-label {
     font-size: calc(24rem / 16);
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     cursor: pointer;
   }
   .form-check-input {
     width: calc(24rem / 16);
     height: calc(24rem / 16);
+    border: 2px solid $gray-3;
     &:checked {
-      background-color: var(--bs-primary);
-      border-color: var(--bs-primary);
+      background-color: var(--bs-body-color);
+      border-color: var(--bs-body-color);
       background-image: none;
     }
   }
