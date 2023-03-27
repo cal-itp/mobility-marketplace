@@ -72,10 +72,6 @@
             background-color: var(--bs-body-color);
             border-color: var(--bs-body-color);
           }
-          .hs-input:focus {
-            outline: 0;
-            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-          }
         }
       }
     }
@@ -87,13 +83,17 @@
         font-size: 1.4rem;
         font-weight: 400;
         line-height: 1.5;
-        color: var(--bs-text-color);
+        color: var(--bs-body-color);
         border: solid 2px $gray-3;
         border-radius: 0.3rem;
         background-color: #fff;
         background-clip: padding-box;
         appearance: none;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      .hs-input:focus,
+      .hs-input:focus-visible {
+        outline: 4px solid $focus;
       }
     }
   }
@@ -125,6 +125,10 @@
       @include media-breakpoint-up(md) {
         width: 32%;
       }
+      &:focus,
+      &:focus-visible {
+        outline: 4px solid $focus;
+      }
     }
   }
 }
@@ -148,6 +152,10 @@
       background-color: var(--bs-body-color);
       border-color: var(--bs-body-color);
       background-image: none;
+    }
+    &:focus,
+    &:focus-visible {
+      outline: 4px solid $focus;
     }
   }
 }
