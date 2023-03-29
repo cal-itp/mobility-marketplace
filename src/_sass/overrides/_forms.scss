@@ -42,18 +42,32 @@
         .hs-form-radio-display span,
         .hs-form-checkbox-display span {
           font-weight: 400;
-          font-size: calc(24rem / 16);
           padding-left: 0.5rem;
           cursor: pointer;
+          font-size: calc(20rem / 16);
+          @include media-breakpoint-up(md) {
+            font-size: calc(24rem / 16);
+          }
         }
         .hs-form-checkbox-display {
+          display: flex;
+          @include media-breakpoint-up(sm) {
+            align-items: center;
+          }
           .hs-input {
             width: calc(24rem / 16);
             height: calc(24rem / 16);
             border-radius: calc(4rem / 16);
+            flex-shrink: 0;
+            &:checked {
+              background-color: var(--bs-body-color);
+              border-color: var(--bs-body-color);
+            }
           }
         }
         .hs-form-radio-display {
+          display: flex;
+          align-items: center;
           .hs-input {
             width: calc(24rem / 16);
             height: calc(24rem / 16);
@@ -80,7 +94,10 @@
         display: block;
         width: 100%;
         padding: 0.375rem 0.75rem;
-        font-size: 1.4rem;
+        font-size: calc(20rem / 16);
+        @include media-breakpoint-up(md) {
+          font-size: calc(24rem / 16);
+        }
         font-weight: 400;
         line-height: 1.5;
         color: var(--bs-body-color);
@@ -133,6 +150,7 @@
   }
 }
 
+// I am a radio button tabs
 #contact-form-tab {
   legend {
     font-size: 1rem;
@@ -140,14 +158,21 @@
     margin-bottom: 0.625rem;
   }
   .form-check-label {
-    font-size: calc(24rem / 16);
     margin-left: 0.5rem;
     cursor: pointer;
+    font-size: calc(20rem / 16);
+    @include media-breakpoint-up(md) {
+      font-size: calc(24rem / 16);
+    }
   }
   .form-check-input {
     width: calc(24rem / 16);
     height: calc(24rem / 16);
     border: 2px solid $gray-3;
+    font-size: calc(20rem / 16);
+    @include media-breakpoint-up(md) {
+      font-size: calc(24rem / 16);
+    }
     &:checked {
       background-color: var(--bs-body-color);
       border-color: var(--bs-body-color);

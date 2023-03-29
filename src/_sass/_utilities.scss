@@ -17,17 +17,34 @@ $mm-dark-tan: rgb(246, 243, 237);
   background-color: $gray-lightest;
 }
 
-.text-red {
-  color: red;
-}
-
 .bg-dark-blue {
   background-color: $dark-blue;
+}
+
+// Text
+
+.text-red {
+  color: red;
 }
 
 .text-gray-4 {
   color: $gray-4;
 }
+
+.fs-xs-5 {
+  font-size: calc(20rem / 16);
+
+  @include media-breakpoint-down(md) {
+    font-size: calc(24rem / 16);
+  }
+}
+
+.text-normal {
+  font-style: normal;
+  font-weight: 100;
+}
+
+// Buttons
 
 .btn.btn-dark-blue-inverted {
   background-color: #ffffff;
@@ -83,6 +100,8 @@ $mm-dark-tan: rgb(246, 243, 237);
   }
 }
 
+// Tables
+
 .table-dark-blue {
   background-color: $dark-blue !important;
   box-shadow: none !important;
@@ -90,11 +109,6 @@ $mm-dark-tan: rgb(246, 243, 237);
 
 .border-dark-blue {
   border-color: $dark-blue !important;
-}
-
-.text-normal {
-  font-style: normal;
-  font-weight: 100;
 }
 
 .table-sticky-column {
