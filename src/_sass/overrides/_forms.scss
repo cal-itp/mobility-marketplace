@@ -86,6 +86,17 @@
       }
     }
   }
+  .hs_error_rollup {
+    .hs-error-msgs {
+      padding-left: 0.4rem;
+      li {
+        list-style-type: "\002a";
+        color: $warning;
+        font-family: var(--bs-body-font-family);
+        font-weight: 700;
+      }
+    }
+  }
   .actions {
     text-align: center;
     .hs-button.primary.large {
