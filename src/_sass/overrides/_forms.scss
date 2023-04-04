@@ -160,7 +160,6 @@
   .form-check-label {
     margin-left: 0.5rem;
     cursor: pointer;
-    font-size: calc(20rem / 16);
     @include media-breakpoint-up(md) {
       font-size: calc(24rem / 16);
     }
@@ -169,10 +168,6 @@
     width: calc(24rem / 16);
     height: calc(24rem / 16);
     border: 2px solid $gray-3;
-    font-size: calc(20rem / 16);
-    @include media-breakpoint-up(md) {
-      font-size: calc(24rem / 16);
-    }
     &:checked {
       background-color: var(--bs-body-color);
       border-color: var(--bs-body-color);
