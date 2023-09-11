@@ -65,7 +65,7 @@ toc:
       - title: Can FirstNet be used for any device and use case?
         url: "firstnet-devices-use-case"
         paragraphs:
-          - text: FirstNet only works for operations facing use cases, given it is a first responder network. This means it cannot be used for passenger Wifi. Additionally, devices are required to have an additional security certification to operate on the federal network. This certification is common but not universal and should be confirmed before purchase.
+          - text: FirstNet only works for operations-facing use cases, given it is a first responder network. This means it cannot be used for passenger Wifi. Additionally, devices are required to have an additional security certification to operate on the federal network. This certification is common but not universal and should be confirmed before purchase.
           - text: A FirstNet representative can verify eligibility for your specific use cases and also confirm network compatibility with your devices. You can contact them at <a href="mailto:rc628k@att.com">rc628k@att.com</a> and <a href="mailto:bp1401@att.com">bp1401@att.com</a>.
       - title: My agency is interested in purchasing a FirstNet data plan. How long will a purchase take?
         url: "how-long-will-a-purchase-take"
