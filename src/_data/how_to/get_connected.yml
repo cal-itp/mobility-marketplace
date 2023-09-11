@@ -5,7 +5,7 @@ toc:
         url: "what-is-connectivity"
         paragraphs:
           - text: From accepting mobile wallets for fare payments to giving the live location of a bus, transit is using more technology to improve the rider experience. Cellular data is the power behind this new technology. Types of devices may include&#58;
-          - text: <ul><li>Router</li><li>(Computer-Aided Dispatch / Automatic Vehicle Location)</li><li>Camera feeds</li><li>Passenger WiFi</li></ul>
+          - text: <ul><li>Router</li><li>CAD/AVL (Computer-Aided Dispatch / Automatic Vehicle Location)</li><li>Camera feeds</li><li>Passenger WiFi</li></ul>
           - text: As transit continues to modernize, more devices can be expected to leverage cellular data and connectivity.
       - title: How do data plans work?
         url: "how-do-data-plans-work"
