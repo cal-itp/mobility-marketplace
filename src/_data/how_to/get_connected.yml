@@ -21,7 +21,7 @@ toc:
         url: "how-do-I-get-started"
         paragraphs:
           - text: We welcome you to browse this guide to understand the process and your next steps. Data plans can be found on our <a href="/contracts/view?contracts-filter-product=Data Plans">contracts</a> page. If you are interested in purchasing the FirstNet data plans, self-serve instructions can be found <a href="https://docs.google.com/document/d/1f9mvRPx1Zd2lDJgkIiDQjtVF3uxidFYTOHmRAdxLX88/edit" target="_blank">here</a>.
-          - text: Should you have additional questions or like support in implementing data plans for your fleet, we ask that you complete our contact form for Cal-ITP support.
+          - text: Should you have additional questions or want support in implementing data plans for your fleet, we ask that you complete our contact form for Cal-ITP support.
           - text: <a href="/contact" class="mb-4 mt-3 btn btn-outline-primary">Contact us</a>
   - title: Choosing a data plan
     subsection_items:
