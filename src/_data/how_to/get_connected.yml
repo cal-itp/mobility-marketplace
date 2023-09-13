@@ -5,7 +5,7 @@ toc:
         url: "what-is-connectivity"
         paragraphs:
           - text: From accepting mobile wallets for fare payments to giving the live location of a bus, transit is using more technology to improve the rider experience. Cellular data is the power behind this new technology. Types of devices may include&#58;
-          - text: <ul><li>Router</li><li>CAD/AVL</li><li>Camera feeds</li><li>Passenger WiFi</li></ul>
+          - text: <ul><li>Router</li><li>CAD/AVL (Computer-Aided Dispatch / Automatic Vehicle Location)</li><li>Camera feeds</li><li>Passenger WiFi</li></ul>
           - text: As transit continues to modernize, more devices can be expected to leverage cellular data and connectivity.
       - title: How do data plans work?
         url: "how-do-data-plans-work"
@@ -20,9 +20,9 @@ toc:
       - title: How do I get started?
         url: "how-do-I-get-started"
         paragraphs:
-          - text: Cal-ITP will provide the materials and support you need to implement data plans on your fleet. To help us better assist you, we ask that you complete our contact form for Cal-ITP support. With this information, we can determine how best to support you with finding the right data plan for your needs, getting buy-in from internal stakeholders, and engaging with vendors.
-          - text: After you complete the form, we welcome you to browse this guide to understand the process and your next steps.
-          - text: <a href="/contact" class="mb-4 mt-3 btn btn-outline-primary">Complete the form</a>
+          - text: We welcome you to browse this guide to understand the process and your next steps. Data plans can be found on our <a href="/contracts/view?contracts-filter-product=Data Plans">contracts</a> page. If you are interested in purchasing the FirstNet data plans, self-serve instructions can be found <a href="https://docs.google.com/document/d/1f9mvRPx1Zd2lDJgkIiDQjtVF3uxidFYTOHmRAdxLX88/edit" target="_blank">here</a>.
+          - text: Should you have additional questions or want support in implementing data plans for your fleet, we ask that you complete our contact form for Cal-ITP support.
+          - text: <a href="/contact" class="mb-4 mt-3 btn btn-outline-primary">Contact us</a>
   - title: Choosing a data plan
     subsection_items:
       - title: Choosing how much data
@@ -36,11 +36,45 @@ toc:
           - text: We currently have contracts with&#58;
           - text: <ul><li>AT&T</li><li>FirstNet</li><li>T-Mobile</li><li>Verizon</li></ul>
           - text: Carriers provide different coverage depending on location, so it is important to evaluate which best covers your service area. You can use <a href="https://fcc.maps.arcgis.com/apps/webappviewer/index.html?id=6c1b2e73d9d749cdb7bc88a0d1bdd25b" target="_blank">FCC data</a> to evaluate Verizon, T-Mobile, and AT&T coverage. You can review <a href="https://www.firstnet.com/coverage.html" target="_blank">FirstNet coverage on their website</a>.
+      - title: Switching plans / Changing carriers
+        url: "switching-plans-changing-carriers"
+        paragraphs:
+          - text: If you already have a data plan, you can switch by either immediately canceling your current contract or by not renewing upon contract expiration.
+          - text: If your contract is month-to-month, you can simply switch once your new contract is in place. This process tends to be easier and more seamless.
+          - text: If your contract is on a fixed time period, you can switch when the old one expires. You will need to sync the start of the new contract with the expiration of the old one to reduce the risk of service lapse.
       - title: Data plan pricing
         url: "data-plan-pricing"
         paragraphs:
           - text: All four major carriers offer data-only plans that agencies can leverage. You can access data plans in the commercial marketplace or at discounted rates on CalNet or on NASPO.
           - html: "/how_to/get_connected_pricing_table.html"
-          - text: In California, transit providers can access the FirstNet plan for their fleets. <strong>And Tier 2 prices are now available to all California agencies!</strong>
+          - text: In California, transit providers can access the FirstNet plan for their fleets. <strong>And Tier II prices are now available to all California agencies!</strong>
           - text: Interested in tapping these rates? Contact us to get started today! Our team is happy to answer questions and guide you through the process.
           - text: <a class="mt-5 btn btn-action btn-primary btn-data-package" href="/contact">Get in touch</a>
+  - title: New data plan options
+    subsection_items:
+      - title: What is FirstNet? How is it different from other broadband or emergency responder networks?
+        url: "what-is-firstnet"
+        paragraphs:
+          - text: The FirstNet network was created and is sustained through a contract with the Federal Government. It is designed to offer a dedicated network for approved first responders. In California, transit providers are considered first responders and can access the FirstNet network.
+          - text: FirstNet is different from other cellular networks in that it provides priority for first responders automatically. This limits the potential for you to lose critical service capabilities during demanding times. In comparison to local emergency responder networks, FirstNet provides broadband voice, data, and video capabilities whereas typical emergency responder networks provide voice services.
+      - title: Why do the FirstNet plans have tiers? What do these tiers mean?
+        url: "firstnet-tiers"
+        paragraphs:
+          - text: Cal-ITP worked with FirstNet to create data plans tailored for transit agencies at a competitive price. The tiers incentivize more collective purchases and were designed by FirstNet to enable discounted rates in a way that works for their business case.
+          - text: The FirstNet tier prices are based on bulk volume purchased on that contract vehicle, (i.e., total number purchased by all agencies combined, not the number of SIMs purchased by an individual agency). Tier II pricing is guaranteed through March 2024. When the Tier III threshold is reached, all agencies will see their plans further discounted.
+      - title: Can FirstNet be used for any device and use case?
+        url: "firstnet-devices-use-case"
+        paragraphs:
+          - text: FirstNet only works for operations-facing use cases, given it is a first responder network. This means it cannot be used for passenger WiFi. Additionally, devices are required to have an additional security certification to operate on the federal network. This certification is common but not universal and should be confirmed before purchase.
+          - text: A FirstNet representative can verify eligibility for your specific use cases and also confirm network compatibility with your devices. You can contact them at <a href="mailto:rc628k@att.com">rc628k@att.com</a> and <a href="mailto:bp1401@att.com">bp1401@att.com</a>.
+      - title: My agency is interested in purchasing a FirstNet data plan. How long will a purchase take?
+        url: "how-long-will-a-purchase-take"
+        paragraphs:
+          - text: The <a href="https://drive.google.com/file/d/1STiB4FsIZPTR97use5s9kdZAtWwdjE4l/view" target="_blank">purchase timeline</a> is anticipated to take anywhere from 10 to 14 weeks, assuming that the start date begins with the Official Notice of Receipt and concludes with SIM delivery.
+          - text: The installation timeline will vary based on if the agency or subcontractor will be responsible for installing the SIMs.
+      - title: Where can I access the non-FirstNet data plan rates in the table above?
+        url: "where-can-i-access-non-firstnet"
+        paragraphs:
+          - text: Data plan rates for AT&T, T-Mobile, and Verizon can be found on either CalNet or on NASPO.
+          - text: CalNet supports a dedicated page with self-service instructions to access these rate plans, which can be found <a href="https://cdt.ca.gov/services/calnet-calitp/" target="_blank">here</a>.
+          - NASPO rate plans can be found by searching <a target="_blank" href="https://www.naspovaluepoint.org/">this website</a> for each carrier’s contract.

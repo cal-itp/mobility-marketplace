@@ -72,7 +72,7 @@ entries:
       - 1
 
   - contract: NASPO
-    contract_url: /how-to/get-connected/
+    contract_url: https://drive.google.com/file/d/1K86hjp8eWK4tV7B2Eg-pVzqlQQAO6YBa/view
     vendor: FirstNet
     category: Connectivity
     product: Data Plans
