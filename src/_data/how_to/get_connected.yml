@@ -25,25 +25,25 @@ toc:
           - text: <a href="/contact" class="mb-4 mt-3 btn btn-outline-primary">Contact us</a>
   - title: Choosing a data plan
     subsection_items:
-      - title: Choosing how much data
-        url: "choosing-how-much-data"
+      - title: How much data do I need?
+        url: "how-much-data-do-I-need"
         paragraphs:
           - text: How much data you use depends on how many devices are on each vehicle. Typical usage for GTFS software and two fare payment validators is 3 GB/month.
           - html: "/how_to/get_connected_plan_table.html"
-      - title: Choosing a carrier
-        url: "choosing-a-carrier"
+      - title: What carriers are available to purchase data plans from?
+        url: "what-carriers-are-available-to-purchase-data-plans-from"
         paragraphs:
           - text: We currently have contracts with&#58;
           - text: <ul><li>AT&T</li><li>FirstNet</li><li>T-Mobile</li><li>Verizon</li></ul>
           - text: Carriers provide different coverage depending on location, so it is important to evaluate which best covers your service area. You can use <a href="https://fcc.maps.arcgis.com/apps/webappviewer/index.html?id=6c1b2e73d9d749cdb7bc88a0d1bdd25b" target="_blank">FCC data</a> to evaluate Verizon, T-Mobile, and AT&T coverage. You can review <a href="https://www.firstnet.com/coverage.html" target="_blank">FirstNet coverage on their website</a>.
-      - title: Switching plans / Changing carriers
-        url: "switching-plans-changing-carriers"
+      - title: What if I need to change carriers?
+        url: "what-if-I-need-to-change-carriers"
         paragraphs:
           - text: If you already have a data plan, you can switch by either immediately canceling your current contract or by not renewing upon contract expiration.
           - text: If your contract is month-to-month, you can simply switch once your new contract is in place. This process tends to be easier and more seamless.
           - text: If your contract is on a fixed time period, you can switch when the old one expires. You will need to sync the start of the new contract with the expiration of the old one to reduce the risk of service lapse.
-      - title: Data plan pricing
-        url: "data-plan-pricing"
+      - title: What are the data plan prices?
+        url: "what-are-the-data-plan-prices"
         paragraphs:
           - text: All four major carriers offer data-only plans that agencies can leverage. You can access data plans in the commercial marketplace or at discounted rates on CalNet or on NASPO.
           - html: "/how_to/get_connected_pricing_table.html"
