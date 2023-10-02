@@ -149,6 +149,10 @@ hr {
 .alert-light {
   --bs-alert-color: rgba(4, 72, 105, 1);
   --bs-alert-bg: rgba(213, 238, 245, 0.4);
+
+  a {
+    color: rgba(4, 72, 105, 1);
+  }
 }
 
 .fs-7 {
