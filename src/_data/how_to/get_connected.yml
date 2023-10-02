@@ -36,12 +36,6 @@ toc:
           - text: We currently have contracts with&#58;
           - text: <ul><li>AT&T</li><li>FirstNet</li><li>T-Mobile</li><li>Verizon</li></ul>
           - text: Carriers provide different coverage depending on location, so it is important to evaluate which best covers your service area. You can use <a href="https://fcc.maps.arcgis.com/apps/webappviewer/index.html?id=6c1b2e73d9d749cdb7bc88a0d1bdd25b" target="_blank">FCC data</a> to evaluate Verizon, T-Mobile, and AT&T coverage. You can review <a href="https://www.firstnet.com/coverage.html" target="_blank">FirstNet coverage on their website</a>.
-      - title: What if I need to change carriers?
-        url: "what-if-I-need-to-change-carriers"
-        paragraphs:
-          - text: If you already have a data plan, you can switch by either immediately canceling your current contract or by not renewing upon contract expiration.
-          - text: If your contract is month-to-month, you can simply switch once your new contract is in place. This process tends to be easier and more seamless.
-          - text: If your contract is on a fixed time period, you can switch when the old one expires. You will need to sync the start of the new contract with the expiration of the old one to reduce the risk of service lapse.
       - title: What are the data plan prices?
         url: "what-are-the-data-plan-prices"
         paragraphs:
@@ -50,6 +44,12 @@ toc:
           - text: In California, transit providers can access the FirstNet plan for their fleets. <strong>And Tier II prices are now available to all California agencies!</strong>
           - text: Interested in tapping these rates? Contact us to get started today! Our team is happy to answer questions and guide you through the process.
           - text: <a class="mt-5 btn btn-action btn-primary btn-data-package" href="/contact">Get in touch</a>
+      - title: What if I need to change carriers?
+        url: "what-if-I-need-to-change-carriers"
+        paragraphs:
+          - text: If you already have a data plan, you can switch by either immediately canceling your current contract or by not renewing upon contract expiration.
+          - text: If your contract is month-to-month, you can simply switch once your new contract is in place. This process tends to be easier and more seamless.
+          - text: If your contract is on a fixed time period, you can switch when the old one expires. You will need to sync the start of the new contract with the expiration of the old one to reduce the risk of service lapse.
   - title: New data plan options
     subsection_items:
       - title: What is FirstNet? How is it different from other broadband or emergency responder networks?
