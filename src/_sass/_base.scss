@@ -145,3 +145,16 @@ hr {
     width: 560px;
   }
 }
+
+.alert-light {
+  --bs-alert-color: rgba(4, 72, 105, 1);
+  --bs-alert-bg: rgba(213, 238, 245, 0.4);
+
+  a {
+    color: var(--bs-alert-color);
+  }
+}
+
+.fs-7 {
+  font-size: calc(14rem / 16);
+}
