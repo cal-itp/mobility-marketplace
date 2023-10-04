@@ -119,3 +119,21 @@
     }
   }
 }
+
+.table-of-contents {
+  & > li > a {
+    color: #000;
+    font-family: var(--bs-body-font-family) !important;
+    font-weight: 700;
+  }
+
+  li {
+    margin: 1.25rem 0;
+  }
+
+  ul {
+    a {
+      font-weight: 500 !important;
+    }
+  }
+}
