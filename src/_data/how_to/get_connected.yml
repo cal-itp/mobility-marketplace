@@ -41,9 +41,16 @@ toc:
         paragraphs:
           - text: All four major carriers offer data-only plans that agencies can leverage. You can access data plans in the commercial marketplace or at discounted rates on CalNet or on NASPO.
           - html: "/how_to/get_connected_pricing_table.html"
-          - text: In California, transit providers can access the FirstNet plan for their fleets. <strong>And Tier II prices are now available to all California agencies!</strong>
+          - text: In California, transit providers can access the FirstNet plan for their fleets.
           - text: Interested in tapping these rates? Contact us to get started today! Our team is happy to answer questions and guide you through the process.
           - text: <a class="mt-5 btn btn-action btn-primary btn-data-package" href="/contact">Get in touch</a>
+      - title: Where can I access the data plan rates?
+        url: "where-can-i-access-non-firstnet"
+        paragraphs:
+          - text: Data plan rates for AT&T, T-Mobile, and Verizon can be found on either CalNet or on NASPO.
+          - text: FirstNet data plan rates are available through the self-service instructions on the <a href="https://resources.calitp.org/mobility-marketplace/FirstNet-Self-Service-Instructions.pdf" target="_blank">Data Plan Procurement Self-Service Instructions</a>.
+          - text: CalNet supports a dedicated page with self-service instructions to access these rate plans, which can be found <a href="https://cdt.ca.gov/services/calnet-calitp/" target="_blank">here</a>.
+          - NASPO rate plans can be found by searching <a target="_blank" href="https://www.naspovaluepoint.org/">this website</a> for each carrier’s contract.
       - title: What if I need to change carriers?
         url: "what-if-I-need-to-change-carriers"
         paragraphs:
@@ -52,30 +59,14 @@ toc:
           - text: If your contract is on a fixed time period, you can switch when the old one expires. You will need to sync the start of the new contract with the expiration of the old one to reduce the risk of service lapse.
   - title: New data plan options
     subsection_items:
-      - title: What is FirstNet? How is it different from other broadband or emergency responder networks?
-        url: "what-is-firstnet"
-        paragraphs:
-          - text: The FirstNet network was created and is sustained through a contract with the Federal Government. It is designed to offer a dedicated network for approved first responders. In California, transit providers are considered first responders and can access the FirstNet network.
-          - text: FirstNet is different from other cellular networks in that it provides priority for first responders automatically. This limits the potential for you to lose critical service capabilities during demanding times. In comparison to local emergency responder networks, FirstNet provides broadband voice, data, and video capabilities whereas typical emergency responder networks provide voice services.
       - title: Why do the FirstNet plans have tiers? What do these tiers mean?
         url: "firstnet-tiers"
         paragraphs:
-          - text: Cal-ITP worked with FirstNet to create data plans tailored for transit agencies at a competitive price. The tiers incentivize more collective purchases and were designed by FirstNet to enable discounted rates in a way that works for their business case.
+          - text: FirstNet created data plans tailored for transit agencies at a competitive price. The tiers incentivize more collective purchases and were designed to enable discounted rates in a way that works for their business case.
           - text: The FirstNet tier prices are based on bulk volume purchased on that contract vehicle, (i.e., total number purchased by all agencies combined, not the number of SIMs purchased by an individual agency). Tier II pricing is guaranteed through March 2024. When the Tier III threshold is reached, all agencies will see their plans further discounted.
       - title: Can FirstNet be used for any device and use case?
         url: "firstnet-devices-use-case"
         paragraphs:
-          - text: FirstNet only works for operations-facing use cases, given it is a first responder network. This means it cannot be used for passenger WiFi. Additionally, devices are required to have an additional security certification to operate on the federal network. This certification is common but not universal and should be confirmed before purchase.
+          - text: FirstNet only works for operations-facing use cases, given it is a first responder network. This means it cannot be used for passenger WiFi. Additionally, devices are required to have an additional security certification to operate on the federal network. This certification is common but not universal. For agencies purchasing hardware devices off of MobiMart, the table below summarizes what networks each device is certified to operate on.
           - text: A FirstNet representative can verify eligibility for your specific use cases and also confirm network compatibility with your devices. You can contact them at <a href="mailto:rc628k@att.com">rc628k@att.com</a> and <a href="mailto:bp1401@att.com">bp1401@att.com</a>.
-      - title: My agency is interested in purchasing a FirstNet data plan. How long will a purchase take?
-        url: "how-long-will-a-purchase-take"
-        paragraphs:
-          - text: The <a href="https://drive.google.com/file/d/1STiB4FsIZPTR97use5s9kdZAtWwdjE4l/view" target="_blank">purchase timeline</a> is anticipated to take anywhere from 10 to 14 weeks, assuming that the start date begins with the Official Notice of Receipt and concludes with SIM delivery.
-          - text: The installation timeline will vary based on if the agency or subcontractor will be responsible for installing the SIMs.
-          - text: More information and the self-service instructions are available on the <a href="https://resources.calitp.org/mobility-marketplace/FirstNet-Self-Service-Instructions.pdf" target="_blank">Data Plan Procurement Self-Service Instructions</a>.
-      - title: Where can I access the non-FirstNet data plan rates in the table above?
-        url: "where-can-i-access-non-firstnet"
-        paragraphs:
-          - text: Data plan rates for AT&T, T-Mobile, and Verizon can be found on either CalNet or on NASPO.
-          - text: CalNet supports a dedicated page with self-service instructions to access these rate plans, which can be found <a href="https://cdt.ca.gov/services/calnet-calitp/" target="_blank">here</a>.
-          - NASPO rate plans can be found by searching <a target="_blank" href="https://www.naspovaluepoint.org/">this website</a> for each carrier’s contract.
+          - text: If your device is not eligible for FirstNet, you may still be able to get the same rates on the commercial AT&T network. Please contact the FirstNet representatives above to learn more.
