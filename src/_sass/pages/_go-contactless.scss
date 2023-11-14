@@ -38,7 +38,7 @@ $gc-blue: rgb(235, 248, 252);
 }
 
 .go-contactless-benefit-card,
-.go-contactless-agency {
+.agency {
   border-radius: 6px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -49,7 +49,7 @@ $gc-blue: rgb(235, 248, 252);
   padding: 1rem;
 }
 
-.go-contactless-agency-container {
+.agency-container {
   display: grid;
   grid-gap: 2rem;
   padding: calc(32rem / 16) 0;
@@ -63,7 +63,7 @@ $gc-blue: rgb(235, 248, 252);
   }
 }
 
-.go-contactless-agency {
+.agency {
   display: flex;
   justify-content: center;
   align-items: center;
