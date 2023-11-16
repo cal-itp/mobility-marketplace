@@ -25,9 +25,3 @@
     padding-right: 25%;
   }
 }
-
-.home-cta-image {
-  @include media-breakpoint-up(lg) {
-    max-width: 400px;
-  }
-}
