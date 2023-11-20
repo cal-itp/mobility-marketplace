@@ -59,6 +59,7 @@
 
 .imaged-section__image {
   display: flex;
+  justify-content: space-around;
   grid-area: Image;
   margin-bottom: 2rem;
   margin-top: 1rem;
