@@ -2,7 +2,8 @@
 $gc-tan: rgb(250, 245, 238);
 $gc-blue: rgb(235, 248, 252);
 
-.go-contactless-section {
+.go-contactless-section,
+.feature-section {
   padding: 4rem 10vw;
 }
 
@@ -27,7 +28,8 @@ $gc-blue: rgb(235, 248, 252);
   }
 }
 
-.go-contactless-benefit-card-container {
+.go-contactless-benefit-card-container,
+.focus-box-container {
   display: grid;
   grid-gap: 2rem;
   justify-content: center;
@@ -38,14 +40,16 @@ $gc-blue: rgb(235, 248, 252);
 }
 
 .go-contactless-benefit-card,
-.agency {
+.agency,
+.focus-box {
   border-radius: 6px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   background-color: #fff;
 }
 
-.go-contactless-benefit-card {
+.go-contactless-benefit-card,
+.focus-box {
   padding: 1.5rem;
 }
 
