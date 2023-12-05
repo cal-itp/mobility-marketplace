@@ -74,4 +74,20 @@
       background-color: white !important;
     }
   }
+
+  div.ctct-form-embed form.ctct-form-custom .ctct-form-field .ctct-form-label.ctct-form-required::before {
+    display: none !important;
+  }
+
+  div.ctct-form-embed form.ctct-form-custom .ctct-form-field .ctct-form-label.ctct-form-required::after {
+    content: "\2217";
+    position: absolute;
+    top: -4px;
+    right: -10px;
+    color: #f5463b;
+  }
+
+  div.ctct-form-embed form.ctct-form-custom .ctct-form-field .ctct-form-label.ctct-form-required {
+    display: inline;
+  }
 }
