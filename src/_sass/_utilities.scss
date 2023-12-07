@@ -21,6 +21,10 @@ $mm-dark-tan: rgb(246, 243, 237);
   background-color: $dark-blue;
 }
 
+.bg-blue-lightest {
+  background-color: $blue-lightest;
+}
+
 // Text
 
 .text-red {
@@ -40,6 +44,11 @@ $mm-dark-tan: rgb(246, 243, 237);
 .text-normal {
   font-style: normal;
   font-weight: 100;
+}
+
+.fs-0 {
+  font-size: 0.75rem;
+  letter-spacing: 0.3px;
 }
 
 // Buttons
