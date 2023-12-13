@@ -1,0 +1,81 @@
+name: Provider Map Operations
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  fetch_warehouse:
+    name: Fetch Warehouse Data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - id: auth
+        name: Authenticate with Google
+        uses: google-github-actions/auth@v1
+        with:
+            credentials_json: '${{ secrets.GCP_SA_KEY }}'
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+
+      - name: Download providers from warehouse
+        run: |
+          bq query \
+              --quiet \
+              --headless \
+              --format=csv \
+              --use_legacy_sql=false \
+              "SELECT * FROM \`mart_transit_database.dim_mobility_mart_providers\`" \
+          > src/metadata/providers.csv
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - shell: python
+        run: |
+          import json
+          import pandas as pd
+
+          df = pd.read_csv('src/metadata/providers.csv')
+
+          # Drop the null values for TAs that don't have counties served
+          df = df[df['counties_served'].notnull()]
+
+          # Do a group by for the counties served
+          county_counts = df['counties_served'].str.split(';') \
+            .explode('counties_served') \
+            .value_counts()
+
+          geojson_file = 'src/metadata/counties.geojson'
+          geojson = json.load(open(geojson_file))
+
+          # Add the county counts to the geojson
+          for feature in geojson['features']:
+            county_name = feature['properties']['county']
+
+            if county_name in county_counts:
+              feature['properties']['num_providers'] = county_counts[county_name]
+            else:
+              feature['properties']['num_providers'] = 0
+
+          # Write the geojson back to the file
+          with open(geojson_file, 'w') as f:
+            json.dump(geojson, f, indent=2)
+
+      - shell: bash
+        run: |
+          git add src/metadata/providers.csv src/metadata/counties.geojson
+          git status
+
+      # - name: Create Pull Request
+      #   uses: peter-evans/create-pull-request@v5
+      #   with:
+      #     commit-message: Automatic update provider map data
+      #     title: Provider Map Data Auto Update
+      #     body: |
+      #       This is an automatic pull request to update the provider map data.
+      #       It is triggered by a cron job that runs every day at midnight UTC.
