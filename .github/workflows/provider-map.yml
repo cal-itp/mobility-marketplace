@@ -72,7 +72,7 @@ jobs:
             county_name = feature['properties']['county']
 
             if county_name in county_counts:
-              feature['properties']['num_providers'] = county_counts[county_name]
+              feature['properties']['num_providers'] = int(county_counts[county_name])
             else:
               feature['properties']['num_providers'] = 0
 
