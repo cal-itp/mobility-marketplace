@@ -1,22 +1,21 @@
-name: Provider Map Operations
+name: Provider Map Jobs
 on:
   push:
     branches:
       - vlad/provider-map-gha
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 0 * *"
 
 jobs:
   fetch_warehouse:
-    name: Fetch Warehouse Data
+    name: Fetch Warehouse Updates
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - id: auth
-        name: Authenticate with Google
+      - name: Authenticate with Google
         uses: google-github-actions/auth@v1
         with:
             credentials_json: '${{ secrets.GCP_SA_KEY }}'
@@ -80,16 +79,12 @@ jobs:
           with open(geojson_file, 'w') as f:
             json.dump(geojson, f, indent=2)
 
-      - shell: bash
-        run: |
-          git add src/metadata/providers/
-          git diff --cached
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: Auto-update provider data from warehouse
+          title: Provider Map Data Auto Update
+          body: |
+            It's that time again! The warehouse has delivered new data for us to use.
 
-      # - name: Create Pull Request
-      #   uses: peter-evans/create-pull-request@v5
-      #   with:
-      #     commit-message: Automatic update provider map data
-      #     title: Provider Map Data Auto Update
-      #     body: |
-      #       This is an automatic pull request to update the provider map data.
-      #       It is triggered by a cron job that runs every day at midnight UTC.
+            This is an automatic pull request created by the `provider-map-jobs.yml` workflow. It is triggered by a cron job that runs every Sunday at midnight UTC.
