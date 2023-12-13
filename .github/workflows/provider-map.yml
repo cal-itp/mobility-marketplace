@@ -82,8 +82,8 @@ jobs:
 
       - shell: bash
         run: |
-          git add src/metadata/providers.csv src/metadata/counties.geojson
-          git status
+          git add src/metadata/providers/
+          git diff --cached
 
       # - name: Create Pull Request
       #   uses: peter-evans/create-pull-request@v5
