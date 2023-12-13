@@ -1,5 +1,8 @@
 name: Provider Map Operations
 on:
+  push:
+    branches:
+      - vlad/provider-map-gha
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
