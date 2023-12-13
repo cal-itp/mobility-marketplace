@@ -24,7 +24,7 @@ jobs:
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v1
 
-      - name: Download providers from warehouse
+      - name: Download providers.csv from warehouse
         run: |
           bq query \
               --quiet \
@@ -38,7 +38,11 @@ jobs:
         with:
           python-version: '3.10'
 
-      - shell: python
+      - name: Install pandas
+        run: pip install pandas
+
+      - name: Update Counties GeoJSON file
+        shell: python
         run: |
           import json
           import pandas as pd
