@@ -31,8 +31,9 @@ jobs:
               --headless \
               --format=csv \
               --use_legacy_sql=false \
+              --apilog="stderr"
               "SELECT * FROM \`mart_transit_database.dim_mobility_mart_providers\`" \
-          > src/metadata/providers.csv
+          > src/metadata/providers.csv 2>/dev/null
 
       - uses: actions/setup-python@v4
         with:
@@ -40,7 +41,6 @@ jobs:
 
       - name: Install pandas
         run: |
-          cat src/metadata/providers.csv
           pip install pandas
 
       - name: Update Counties GeoJSON file
