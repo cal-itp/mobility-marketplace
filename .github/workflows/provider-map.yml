@@ -31,9 +31,14 @@ jobs:
               --headless \
               --format=csv \
               --use_legacy_sql=false \
-              --apilog="stderr"
               "SELECT * FROM \`mart_transit_database.dim_mobility_mart_providers\`" \
           > src/metadata/providers.csv 2>/dev/null
+
+      - name: Fix our CSV file
+        run: |
+          # Workaround because of...
+          #   https://github.com/google-github-actions/setup-gcloud/issues/666
+          sed -i -n -e '/agency_name/,$p' src/metadata/providers.csv
 
       - uses: actions/setup-python@v4
         with:
