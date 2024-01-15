@@ -54,10 +54,27 @@ jobs:
           import json
           import pandas as pd
 
-          df = pd.read_csv('src/metadata/providers/providers.csv')
+          providers_file = 'src/metadata/providers/providers.csv'
 
-          # Drop the null values for TAs that don't have counties served
-          df = df[df['counties_served'].notnull()]
+          df = pd.read_csv(providers_file)
+          city_lookup = pd.read_csv('src/metadata/cities_to_county.csv')
+          city_to_county = dict(zip(city_lookup['City'], city_lookup['County']))
+
+          lookup_records = df[df['counties_served'].isna()]['ntd_id']
+
+          # Fill in the null values for counties served with the HQ county
+          for record in lookup_records:
+            city = df[df['ntd_id'] == record]['hq_city'].values[0]
+
+            try:
+              county = city_to_county[city] or city_to_county[f'City of {city}']
+              df.loc[df['ntd_id'] == record, 'hq_county'] = county
+              df.loc[df['ntd_id'] == record, 'counties_served'] = county
+
+            except KeyError:
+              print("No county found for city: ", city)
+
+          df.to_csv(providers_file)
 
           # Do a group by for the counties served
           county_counts = df['counties_served'].str.split(';') \
@@ -80,38 +97,12 @@ jobs:
           with open(geojson_file, 'w') as f:
             json.dump(geojson, f, indent=2)
 
-      - name: Setup yq
-        uses: vegardit/gha-setup-yq@v1
-        with:
-          use-cache: true
-          version: 4.40.5
-
-      - name: Check for column updates
-        id: column-updates
-        run: |
-            curl -sO https://raw.githubusercontent.com/cal-itp/data-infra/main/warehouse/models/mart/transit_database/_mart_transit_database.yml
-
-            columns_from_dbt=$(yq '.models[] | select(.name == "dim_mobility_mart_providers") | .columns[].name' _mart_transit_database.yml)
-            columns_from_repo=$(yq '.[].column' src/metadata/providers/dictionary.csv)
-
-            column_diff=$(diff <( printf '%s\n' "$columns_from_dbt" ) <( printf '%s\n' "$columns_from_repo" ))
-
-            echo "column_diff=$column_diff" >> "$GITHUB_OUTPUT"
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
           title: Provider Map Data Auto Update
           body: |
             It's that time again! The warehouse has delivered new data for us to use. This is an automatic pull request created by the `provider-map-jobs.yml` workflow; it is triggered via a cron that runs every Sunday at midnight UTC.
-
-            ## Changed Columns
-
-            These are columns that differ between the warehouse and the repository. If you see descrepancies here, please update the `src/metadata/providers/dictionary.csv` file to match the warehouse.
-
-            ```diff
-            ${{ steps.column-updates.outputs.column_diff }}}
-            ```
           commit-message: Auto-update provider data from warehouse
           add-paths: |
             src/metadata/providers/providers.csv
