@@ -13,7 +13,7 @@
       "properties": {
         "id": 10,
         "county": "Fresno",
-        "num_providers": 0
+        "num_providers": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3026,7 +3026,7 @@
       "properties": {
         "id": 25,
         "county": "Modoc",
-        "num_providers": 0
+        "num_providers": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5288,7 +5288,7 @@
       "properties": {
         "id": 42,
         "county": "Santa Barbara",
-        "num_providers": 3
+        "num_providers": 7
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -8018,7 +8018,7 @@
       "properties": {
         "id": 48,
         "county": "Solano",
-        "num_providers": 2
+        "num_providers": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -8787,7 +8787,7 @@
       "properties": {
         "id": 8,
         "county": "Del Norte",
-        "num_providers": 2
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -14782,7 +14782,7 @@
       "properties": {
         "id": 24,
         "county": "Merced",
-        "num_providers": 1
+        "num_providers": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15595,7 +15595,7 @@
       "properties": {
         "id": 1,
         "county": "Alameda",
-        "num_providers": 4
+        "num_providers": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -17209,7 +17209,7 @@
       "properties": {
         "id": 11,
         "county": "Glenn",
-        "num_providers": 0
+        "num_providers": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -19263,7 +19263,7 @@
       "properties": {
         "id": 16,
         "county": "Kings",
-        "num_providers": 2
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20741,7 +20741,7 @@
       "properties": {
         "id": 21,
         "county": "Marin",
-        "num_providers": 1
+        "num_providers": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22395,7 +22395,7 @@
       "properties": {
         "id": 7,
         "county": "Contra Costa",
-        "num_providers": 2
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23212,7 +23212,7 @@
       "properties": {
         "id": 9,
         "county": "El Dorado",
-        "num_providers": 0
+        "num_providers": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24813,7 +24813,7 @@
       "properties": {
         "id": 12,
         "county": "Humboldt",
-        "num_providers": 3
+        "num_providers": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26475,7 +26475,7 @@
       "properties": {
         "id": 14,
         "county": "Inyo",
-        "num_providers": 1
+        "num_providers": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -28180,7 +28180,7 @@
       "properties": {
         "id": 15,
         "county": "Kern",
-        "num_providers": 4
+        "num_providers": 11
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -29826,7 +29826,7 @@
       "properties": {
         "id": 18,
         "county": "Lassen",
-        "num_providers": 0
+        "num_providers": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -30331,7 +30331,7 @@
       "properties": {
         "id": 19,
         "county": "Los Angeles",
-        "num_providers": 32
+        "num_providers": 80
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -32277,7 +32277,7 @@
       "properties": {
         "id": 20,
         "county": "Madera",
-        "num_providers": 2
+        "num_providers": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -35307,7 +35307,7 @@
       "properties": {
         "id": 44,
         "county": "Santa Cruz",
-        "num_providers": 0
+        "num_providers": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -36092,7 +36092,7 @@
       "properties": {
         "id": 34,
         "county": "Sacramento",
-        "num_providers": 1
+        "num_providers": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -40616,7 +40616,7 @@
       "properties": {
         "id": 36,
         "county": "San Bernardino",
-        "num_providers": 3
+        "num_providers": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -41413,7 +41413,7 @@
       "properties": {
         "id": 29,
         "county": "Nevada",
-        "num_providers": 0
+        "num_providers": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -42730,7 +42730,7 @@
       "properties": {
         "id": 30,
         "county": "Orange",
-        "num_providers": 1
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -43067,7 +43067,7 @@
       "properties": {
         "id": 37,
         "county": "San Diego",
-        "num_providers": 2
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -43304,7 +43304,7 @@
       "properties": {
         "id": 31,
         "county": "Placer",
-        "num_providers": 3
+        "num_providers": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44745,7 +44745,7 @@
       "properties": {
         "id": 38,
         "county": "San Francisco",
-        "num_providers": 0
+        "num_providers": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -46439,7 +46439,7 @@
       "properties": {
         "id": 33,
         "county": "Riverside",
-        "num_providers": 3
+        "num_providers": 7
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47064,7 +47064,7 @@
       "properties": {
         "id": 35,
         "county": "San Benito",
-        "num_providers": 0
+        "num_providers": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48569,7 +48569,7 @@
       "properties": {
         "id": 39,
         "county": "San Joaquin",
-        "num_providers": 2
+        "num_providers": 7
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50030,7 +50030,7 @@
       "properties": {
         "id": 40,
         "county": "San Luis Obispo",
-        "num_providers": 0
+        "num_providers": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51351,7 +51351,7 @@
       "properties": {
         "id": 41,
         "county": "San Mateo",
-        "num_providers": 1
+        "num_providers": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51824,7 +51824,7 @@
       "properties": {
         "id": 43,
         "county": "Santa Clara",
-        "num_providers": 1
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53449,7 +53449,7 @@
       "properties": {
         "id": 45,
         "county": "Shasta",
-        "num_providers": 1
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -55374,7 +55374,7 @@
       "properties": {
         "id": 47,
         "county": "Siskiyou",
-        "num_providers": 0
+        "num_providers": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57207,7 +57207,7 @@
       "properties": {
         "id": 49,
         "county": "Sonoma",
-        "num_providers": 2
+        "num_providers": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58532,7 +58532,7 @@
       "properties": {
         "id": 50,
         "county": "Stanislaus",
-        "num_providers": 0
+        "num_providers": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62787,7 +62787,7 @@
       "properties": {
         "id": 54,
         "county": "Tulare",
-        "num_providers": 1
+        "num_providers": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63836,7 +63836,7 @@
       "properties": {
         "id": 56,
         "county": "Ventura",
-        "num_providers": 5
+        "num_providers": 9
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -64369,7 +64369,7 @@
       "properties": {
         "id": 57,
         "county": "Yolo",
-        "num_providers": 1
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
