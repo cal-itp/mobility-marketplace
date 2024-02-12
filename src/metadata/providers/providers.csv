@@ -1,101 +1,235 @@
-,agency_name,ntd_id,hq_city,hq_county,counties_served,agency_website,caltrans_district_id,caltrans_district_name,is_public_entity,is_publicly_operating,funding_sources,on_demand_vehicles_at_max_service,vehicles_at_max_service,gtfs_schedule_uris
-0,San Mateo County Transit District,90009,San Carlos,San Mateo,San Mateo,http://www.samtrans.com/,4.0,Bay Area / Oakland,True,True,5303;5307;5311;5317,157.0,312.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=SM;https://www.samtrans.com/Assets/GTFS/samtrans/ST-GTFS.zip?v=1114
-1,City of Norwalk ,90022,Norwalk,Los Angeles,Los Angeles,https://www.norwalk.org/city-hall/departments/norwalk-transit-system-nts,7.0,Los Angeles,True,True,5307,24.0,31.0,https://nts.rideralerts.com/InfoPoint/GTFS-Zip.ashx
-2,Kings County Area Public Transit Agency,90200,Hanford,Kings,Kings,http://www.kartbus.org,6.0,Fresno / Bakersfield,True,True,5307;5311;5339,,58.0,https://kart.connexionz.net/rtt/public/utility/gtfs.aspx
-3,Santa Barbara County Association of Governments,90303,Santa Barbara,Santa Barbara,Santa Barbara,http://www.sbcag.org/,5.0,San Luis Obispo / Santa Barbara,True,True,5307,,9.0,https://cleanairexpress.com/gtfs/gtfs.zip
-4,Humboldt Transit Authority,91036,Eureka,Humboldt,Humboldt,http://www.hta.org/,,,,,,14.0,14.0,
-5,Tuolumne County Transit,91057,Sonora,Tuolumne,Tuolumne,https://www.tuolumnecountytransit.com/,,,,,,,12.0,
-6,Quechan Indian Tribe,99310,Winterhaven,Imperial,,http://www.ycipta.org/routes/5,11.0,San Diego,True,False,,,0.0,
-7,Napa Valley Transportation Authority,90088,Napa,Napa,Napa,http://www.vinetransit.com/,4.0,Bay Area / Oakland,True,True,5307;5310;5311,,46.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=VN;https://data.trilliumtransit.com/gtfs/vinetransit-ca-us/vinetransit-ca-us.zip;https://napa.syncromatics.com/gtfs
-8,City of Union City,90161,Union City,Alameda,Alameda,http://www.uctransit.org/,4.0,Bay Area / Oakland,True,True,5307,,20.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=UC;https://data.trilliumtransit.com/gtfs/unioncity-ca-us/unioncity-ca-us.zip;https://gtfs.calitp.org/production/UnionCityParatransitFlex.zip;https://uctransit.info/gtfs
-9,Redwood Coast Transit Authority,91097,Crescent City,Del Norte,Del Norte,http://www.redwoodcoasttransit.org/,,,,,,,6.0,
-10,Kern Regional Transit,A0008,Bakersfield,Kern,Kern,http://kerntransit.org/,,,,,,,0.0,
-11,Pomona Valley Transportation Authority,99425,La Verne,Los Angeles,Los Angeles,http://www.pvtrans.org/,7.0,Los Angeles,True,True,,,27.0,
-12,City of Redondo Beach,90214,Redondo Beach,Los Angeles,Los Angeles,http://www.redondo.org/,7.0,Los Angeles,True,True,5307,,18.0,https://redondobeachbct.com/gtfs;https://www.redondo.org/civicax/filebank/blobdload.aspx?BlobID=33555
-13,Morongo Basin Transit Authority,91090,Joshua Tree,,,http://www.mbtabus.com,,,,,,13.0,13.0,
-14,City of Palmdale,99448,Palmdale,Los Angeles,Los Angeles,https://www.cityofpalmdale.org/,,,,,,,0.0,
-15,"City of Fairfield, California",90092,Fairfield,Solano,Solano,https://fasttransit.org/,4.0,Bay Area / Oakland,True,True,5307,,33.0,https://api.511.org/transit/datafeeds?operator_id=FS;https://api.511.org/transit/datafeeds?operator_id=RG;https://data.trilliumtransit.com/gtfs/fairfield-ca-us/fairfield-ca-us.zip
-16,City of Tracy,90197,Tracy,San Joaquin,San Joaquin,http://www.ridetracer.com,10.0,Stockton,True,True,5307;5339,,13.0,https://gtfs.calitp.org/production/TracyTRACERPlusandParatransitFlex.zip;https://www.cityoftracy.org/home/showpublisheddocument/16626/638342536313270000
-17,City of Madera,90199,Madera,Madera,Madera,https://www.madera.gov/home/departments/transit/,6.0,Fresno / Bakersfield,True,True,5307,,19.0,https://data.trilliumtransit.com/gtfs/cityofmadera-ca-us/cityofmadera-ca-us.zip
-18,Marin County Transit District,90234,San Rafael,Marin,Marin,http://marintransit.org/,4.0,Bay Area / Oakland,True,True,5307;5310;5311;5320;5339,,80.0,https://api.511.org/transit/datafeeds?operator_id=MA;https://api.511.org/transit/datafeeds?operator_id=RG;https://marintransit.net/gtfs;https://marintransit.org/data/google_transit.zip
-19,Los Angeles County Department of Public Works - South Whittier,90276,Alhambra,Los Angeles,Los Angeles,https://www.dpw.lacounty.gov/landing/transportation.cfm,,,,,,,5.0,
-20,City of Roseville,90168,Roseville,Placer,Placer,http://www.roseville.ca.us/transit/,3.0,Marysville / Sacramento,True,True,5307,,24.0,https://iportal.sacrt.com/GTFS/Roseville/google_transit.zip
-21,City of Avalon,90249,Avalon,Los Angeles,Los Angeles,www.avalontransit.org,7.0,Los Angeles,True,True,,,4.0,https://data.trilliumtransit.com/gtfs/avalon-ca-us/avalon-ca-us.zip
-22,City of Corcoran,91002,Corcoran,Kings,Kings,http://www.cityofcorcoran.com/,,,,,,6.0,6.0,
-23,Trinity County,91035,Weaverville,,,http://www.trinitycounty.org/			,,,,,,4.0,4.0,
-24,Bishop Paiute Tribe,99268,Bishop,Inyo,Inyo,http://www.bishoppaiutetribe.com/,9.0,Bishop,True,False,,,0.0,
-25,City of Hawaiian Gardens,99450,Hawaiian Gardens,Los Angeles,Los Angeles,https://hgcity.org/hg/,,,,,,,0.0,
-26,City of Bell Gardens,90253,,Los Angeles,Los Angeles,www.bellgardens.org/government/city-departments/public-works/transportation,7.0,Los Angeles,True,True,,,5.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/bellgardens-ca-us/bellgardens-ca-us.zip
-27,Amador Regional Transit System,91000,Jackson,Amador,Amador,http://amadortransit.com/,,,,,,17.0,17.0,
-28,City of Ridgecrest,91006,Ridgecrest,Kern,Kern,http://ridgecrest-ca.gov/,,,,,,5.0,5.0,
-29,City of Santa Clarita,90171,Santa Clarita,Los Angeles,Los Angeles,http://santaclaritatransit.com,7.0,Los Angeles,True,True,5307,,88.0,https://apps.santaclaritatransit.com/rtt/public/utility/gtfs.aspx
-30,City of Manhattan Beach ,90283,Manhattan Beach,Los Angeles,Los Angeles,www.citymb.info/departments/parks-and-recreation/older-adults-program/dial-a-ride,7.0,Los Angeles,True,False,,3.0,3.0,
-31,Mendocino Transit Authority,91047,Ukiah,Mendocino,Mendocino,http://www.mendocinotransit.org,,,,,,26.0,26.0,
-32,Chemehuevi Indian Tribe,99316,Havasu Lake,San Bernardino,,www.chemehuevi.net,8.0,San Bernardino / Riverside,True,True,5311,1.0,1.0,https://gtfs.calitp.org/production/HavasuLandingFerryGTFS.zip
-33,North County Transit District,90030,Oceanside,San Diego,San Diego,http://www.gonctd.com/,11.0,San Diego,True,True,5307;5311;5316;5337;5339,38.0,231.0,https://www.gonctd.com/google_transit.zip
-34,Ventura County Transportation Commission,90164,Camarillo,Ventura,Santa Clara;Ventura,http://www.goventura.org/,7.0,Los Angeles,True,True,5307;5311;5339,,45.0,https://data.trilliumtransit.com/gtfs/vctc-ca-us/vctc-ca-us.zip;https://govcbus.com/gtfs;https://gtfs.calitp.org/production/ValleyExpressDialARideFlex.zip
-35,Imperial County Transportation Commission,90226,El Centro,Imperial,Imperial,http://www.imperialctc.org/,11.0,San Diego,True,True,5307;5310;5311,,23.0,http://schedule.ivtransit.com/public/gtfs/data.zip
-36,City of Burbank,90256,Burbank,Los Angeles,Los Angeles,www.burbankbus.org,7.0,Los Angeles,True,True,,5.0,17.0,https://rideburbankbus.com/gtfs
-37,City of Arvin,91027,Arvin,Kern,Kern,http://www.arvin.org/,,,,,,4.0,4.0,
-38,City of Gardena,90042,Gardena,Los Angeles,Los Angeles,www.ridegtrans.com,7.0,Los Angeles,True,True,5307,30.0,30.0,http://ridegtrans.com/gtfs.zip
-39,City of Riverside,90086,Riverside,Riverside,Riverside,https://www.riversideca.gov/park_rec/programs-sports/seniors/special-transportation-division,8.0,San Bernardino / Riverside,True,False,,15.0,15.0,
-40,The Eastern Contra Costa Transit Authority,90162,Antioch,Contra Costa,Contra Costa,http://www.trideltatransit.com/,4.0,Bay Area / Oakland,True,True,5307;5311,,91.0,https://api.511.org/transit/datafeeds?operator_id=3D;https://api.511.org/transit/datafeeds?operator_id=RG
-41,City of Thousand Oaks,90165,Thousand Oaks,Ventura,Ventura,https://www.toaks.org/departments/public-works/transit,7.0,Los Angeles,True,True,5307;5310,,14.0,https://data.trilliumtransit.com/gtfs/thousandoaks-ca-us/thousandoaks-ca-us.zip;https://govcbus.com/gtfs;https://gtfs.calitp.org/production/ThousandOaksDialARideParatransitandConnectFlex.zip
-42,City of Alhambra,90247,Alhambra,Los Angeles,Los Angeles,https://www.cityofalhambra.org/293/Alhambra-Community-Transit-ACT,7.0,Los Angeles,True,True,,,15.0,https://www.cityofalhambra.org/DocumentCenter/View/4979/alhambra-ca-us
-43,San Francisco Bay Area Rapid Transit District,90003,Oakland,San Francisco,Alameda,http://www.bart.gov/,4.0,Bay Area / Oakland,True,True,5307;5309;5337,578.0,580.0,https://api.511.org/transit/datafeeds?operator_id=BA;https://api.511.org/transit/datafeeds?operator_id=RG;https://www.bart.gov/dev/schedules/google_transit.zip
-44,San Diego Metropolitan Transit System,90026,San Diego,San Diego,San Diego,http://www.sdmts.com/,11.0,San Diego,True,True,5307;5309;5311;5337;5339,334.0,728.0,https://www.sdmts.com/google_transit_files/google_transit.zip
-45,City of Laguna Beach,90119,Laguna Beach,Orange,Orange,http://www.lagunabeachcity.net/cityhall/transit_and_trolleys/,12.0,Orange County,True,True,,,22.0,https://data.trilliumtransit.com/gtfs/lagunabeach-ca-us/lagunabeach-ca-us.zip;https://gtfs.calitp.org/production/LagunaBeachTransitLocalFlex.zip
-46,Foothill Transit,90146,West Covina,Los Angeles,Los Angeles,http://www.foothilltransit.org/,7.0,Los Angeles,True,True,5307;5339,,303.0,https://foothilltransit.rideralerts.com/myStop/GTFS-Zip.ashx
-47,County of Placer,90196,Auburn,Placer,Placer,https://www.placer.ca.gov/3739/Transportation-Travel,3.0,Marysville / Sacramento,True,True,5307;5311;5339,17.0,45.0,https://data.trilliumtransit.com/gtfs/placercounty-ca-us/placercounty-ca-us.zip;https://gtfs.calitp.org/production/PlacerCountyDialARideFlex.zip
-48,City of Moorpark,90227,,Ventura,Ventura,http://www.moorparkca.gov/transit,7.0,Los Angeles,True,True,5307,,2.0,https://data.trilliumtransit.com/gtfs/moorparkcitytransit-ca-us/moorparkcitytransit-ca-us.zip;https://govcbus.com/gtfs
-49,California Department of Transportation,9R02,Sacramento,Sacramento,Sacramento,http://www.dot.ca.gov/,3.0,Marysville / Sacramento,True,False,,,0.0,
-50,Central Contra Costa Transit Authority,90078,Concord,Contra Costa,Alameda;Contra Costa,http://www.cccta.org/,4.0,Bay Area / Oakland,True,True,5307;5309;5311,78.0,118.0,http://cccta.org/GTFS/google_transit.zip;https://api.511.org/transit/datafeeds?operator_id=CC;https://api.511.org/transit/datafeeds?operator_id=RG
-51,Sierra County Transportation Commission,91038,Downieville,,,http://sierracounty.ca.gov/,,,,,,,4.0,
-52,City of Sierra Madre,99447,Sierra Madre,Los Angeles,Los Angeles,www.cityofsierramadre.com,,,,,,,0.0,
-53,Access Services  ,90157,El Monte,Los Angeles,Los Angeles,https://accessla.org/,7.0,Los Angeles,True,False,,,719.0,
-54,Colusa County Transit Agency,91112,Colusa,Colusa,Colusa,http://www.countyofcolusa.org/transit,,,,,,6.0,6.0,
-55,"University of California, Davis",90142,Davis,Yolo,Yolo,http://unitrans.ucdavis.edu,3.0,Marysville / Sacramento,False,True,5307;5339,25.0,25.0,https://unitrans.ucdavis.edu/media/gtfs/Unitrans_GTFS.zip
-56,City of El Monte ,90265,El Monte,Los Angeles,Los Angeles,http://www.ci.el-monte.ca.us/Government/PublicWorks/Transportation.aspx,7.0,Los Angeles,True,True,,4.0,14.0,https://data.trilliumtransit.com/gtfs/elmonte-ca-us/elmonte-ca-us.zip
-57,Yosemite Area Regional Transportation System,91070,Merced,Merced,Merced,http://www.YARTS.com,,,,,,,10.0,
-58,City of Chowchilla,91071,Chowchilla,Madera,Madera,https://www.cityofchowchilla.org/,,,,,,2.0,2.0,
-59,Mariposa County Transit,91082,Mariposa,,,http://ca-mariposacounty.civicplus.com/,,,,,,8.0,8.0,
-60,Palo Verde Valley Transit Agency,99454,Blythe,Riverside,Riverside,www.pvvta.com,,,,,,,10.0,
-61,Gold Coast Transit District,90035,Oxnard,Ventura,Ventura,http://www.goldcoasttransit.org/,7.0,Los Angeles,True,True,5307;5310;5339,49.0,71.0,https://govcbus.com/gtfs;https://www.goldcoasttransit.org/images/GTFS/GTFS.zip
-62,Monterey-Salinas Transit,90062,Monterey,Monterey,Monterey,http://www.mst.org/,5.0,San Luis Obispo / Santa Barbara,True,True,5307;5310;5311;5339,43.0,88.0,https://www.mst.org/google/google_transit.zip
-63,Los Angeles County Department of Public Works - East Valinda,90272,Alhambra,Los Angeles,Los Angeles,https://www.dpw.lacounty.gov/landing/transportation.cfm,,,,,,,1.0,
-64,Los Angeles County Dept. of Public Works - Florence-Firestone,90273,Alhambra,Los Angeles,Los Angeles,https://www.dpw.lacounty.gov/landing/transportation.cfm,,,,,,,2.0,
-65,Mountain Area Regional Transit Authority,91012,Big Bear Lake,San Bernardino,San Bernardino,http://mountaintransit.org/,,,,,,29.0,29.0,
-66,Southern California Regional Rail Authority,90151,Los Angeles,Los Angeles,Los Angeles,http://www.metrolinktrains.com/,7.0,Los Angeles,True,True,5307;5337,,195.0,https://www.metrolinktrains.com/globalassets/about/gtfs/gtfs.zip
-67,Morongo Band of Mission Indians,99358,Banning,Riverside,Riverside,https://morongonation.org/transportation/,8.0,San Bernardino / Riverside,True,True,,2.0,2.0,
-68,Redding Area Bus Authority ,A0016,Redding,Shasta,Shasta,http://www.rabaride.com/,,,,,,,0.0,
-69,Sonoma-Marin Area Rail Transit District,90299,Petaluma,Sonoma,Sonoma,www.sonomamarintrain.org,4.0,Bay Area / Oakland,True,True,5307,10.0,10.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=SA;https://data.trilliumtransit.com/gtfs/smart-ca-us/smart-ca-us.zip
-70,San Bernardino County Transportation Authority,90302,San Bernardino,San Bernardino,San Bernardino,www.gosbcta.com,8.0,San Bernardino / Riverside,True,True,5307,,57.0,https://www.metrolinktrains.com/globalassets/about/gtfs/gtfs.zip
-71,City of Santa Monica,90008,Santa Monica,Los Angeles,Los Angeles,http://www.bigbluebus.com/,7.0,Los Angeles,True,True,5307;5309,124.0,143.0,http://gtfs.bigbluebus.com/current.zip
-72,City of Arcadia,90044,Arcadia,Los Angeles,Los Angeles,https://www.arcadiaca.gov/shape/development_services_department/transportation_services/index.php,7.0,Los Angeles,True,True,5307,,14.0,https://passio3.com/ArcadiaCity/passioTransit/gtfs/google_transit.zip
-73,Victor Valley Transit Authority,90148,Hesperia,San Bernardino,San Bernardino,http://www.vvta.org/,8.0,San Bernardino / Riverside,True,True,5307;5310;5311;5316;5317;5339,,258.0,https://api.transloc.com/gtfs/vvta.zip;https://ontime.vvta.org/gtfs
-74,City of Manteca,90217,Manteca,San Joaquin,San Joaquin,http://www.mantecatransit.com,10.0,Stockton,True,True,5307,,6.0,https://data.trilliumtransit.com/gtfs/manteca-ca-us/manteca-ca-us.zip;https://gtfs.calitp.org/production/MantecaTransitParatransitFlex.zip
-75,City of Glendora,90266,Glendora,Los Angeles,Los Angeles,https://www.cityofglendora.org/departments-services/transportation,7.0,Los Angeles,True,True,5310,,15.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/glendora-ca-us/glendora-ca-us.zip
-76,City of Guadalupe,91043,Guadalupe,Santa Barbara,Santa Barbara,http://www.ci.guadalupe.ca.us/,,,,,,,3.0,
-77,City of Pasadena,99424,Pasadena,Los Angeles,Los Angeles,https://www.cityofpasadena.net/pasadena-transit/,7.0,Los Angeles,True,True,5316,,33.0,https://rt.pasadenatransit.net/rtt/public/utility/gtfs.aspx
-78,Yuba-Sutter Transit Authority,90061,Marysville,Yuba,Yuba,http://www.yubasuttertransit.com/,3.0,Marysville / Sacramento,True,True,5307;5311,,32.0,https://data.trilliumtransit.com/gtfs/yubasutter-ca-us/yubasutter-ca-us.zip
-79,City of Lincoln,90235,Lincoln,Placer,Placer,https://www.placer.ca.gov/1768/Placer-County-Transit,3.0,Marysville / Sacramento,True,False,,,0.0,
-80,City of Azusa,90250,Azusa,Los Angeles,Los Angeles,https://azusaca.gov/329/Azusa-Transit,7.0,Los Angeles,True,True,,6.0,6.0,
-81,City of Downey,90263,Downey,Los Angeles,Los Angeles,https://www.downeyca.org/our-city/departments/parks-recreation/transit,7.0,Los Angeles,True,True,,,14.0,https://ridedowneylink.com/gtfs
-82,Yurok Tribe,99262,Klamath,Del Norte,Del Norte,http://www.yuroktribe.org/,1.0,Eureka,True,True,5311,5.0,5.0,
-83,Humboldt Transit Authority,A0009,Eureka,Humboldt,Humboldt,http://www.hta.org/,,,,,,,0.0,
-84,Livermore / Amador Valley Transit Authority,90144,Livermore,Alameda,Alameda,http://www.wheelsbus.com/,4.0,Bay Area / Oakland,True,True,5307;5311,,47.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=WH
-85,Butte County Association of Governments,90208,Chico,Butte,Butte,http://www.blinetransit.com,3.0,Marysville / Sacramento,True,True,5307;5310;5311;5339,,36.0,http://www.blinetransit.com/documents/Google%20Transit/google_transit.zip
-86,Los Angeles County Dept. of Public Works - Athens Shuttle Service,90269,Alhambra,Los Angeles,Los Angeles,www.lagobus.info,,,,,,,1.0,
-87,Riverfront Joint Powers Authority,90304,,,,http://www.riverfrontstreetcar.com/board/,,,,,,,0.0,
-88,"Wasco, City of",99426,Wasco,Kern,Kern,http://www.ci.wasco.ca.us/,,,,,,3.0,3.0,
-89,County of Sonoma ,90089,Santa Rosa,Sonoma,Sonoma,http://www.sctransit.com/,4.0,Bay Area / Oakland,True,True,5307;5310;5311,,45.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=SO;https://data.trilliumtransit.com/gtfs/sonomacounty-ca-us/sonomacounty-ca-us.zip
-90,Easy Lift Transportation,90243,Goleta,Santa Barbara,Santa Barbara,http://www.easylift.org/,5.0,San Luis Obispo / Santa Barbara,False,False,5310,28.0,28.0,
-91,City of Whittier,90295,Whittier,Los Angeles,Los Angeles,https://www.whittierprcs.org/transit/dial-a-ride-and-dar-plus,7.0,Los Angeles,True,False,,,12.0,
-92,City of Rio Vista,91014,Rio Vista,Solano,Solano,http://riovistacity.com/delta-breeze-transit-system/,,,,,,,2.0,
-93,City of Ojai,91058,Ojai,Ventura,Ventura,http://www.ci.ojai.ca.us/,,,,,,2.0,2.0,
-94,City of La Mirada ,90024,La Mirada,Los Angeles,Los Angeles,http://www.cityoflamirada.org/departments/community-services/transit,7.0,Los Angeles,True,True,,,6.0,
-95,City of Visalia  ,90091,Visalia,Tulare,Tulare,https://www.visalia.city/depts/transportation_services/transit/default.asp,6.0,Fresno / Bakersfield,True,True,5303;5307;5310;5311;5339,,38.0,https://visaliatransit.info/GTFS
-96,City of Rosemead,90289,Rosemead,Los Angeles,Los Angeles,http://www.cityofrosemead.org/cms/one.aspx?pageId=10909050,7.0,Los Angeles,True,True,,,7.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/rosemead-ca-us/rosemead-ca-us.zip
-97,City of South Gate,90291,South Gate,Los Angeles,Los Angeles,https://www.cityofsouthgate.org/City-Services/Transportation,7.0,Los Angeles,True,True,,,15.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/getaroundtownexpress-ca-us/getaroundtownexpress-ca-us.zip
-98,City of Arcata,91018,Arcata,Humboldt,Humboldt,http://www.cityofarcata.org/,,,,,,2.0,2.0,
-99,Bob Hope Airport,99444,Burbank,Los Angeles,Los Angeles,www.hollywoodburbankairport.com,,,,,,,0.0,
+agency_name,ntd_id,hq_city,hq_county,counties_served,agency_website,caltrans_district_id,caltrans_district_name,is_public_entity,is_publicly_operating,funding_sources,on_demand_vehicles_at_max_service,vehicles_at_max_service,gtfs_schedule_uris
+City of Santa Monica,90008,Santa Monica,Los Angeles,Los Angeles,http://www.bigbluebus.com/,7,Los Angeles,true,true,5307;5309,124.0,143.0,http://gtfs.bigbluebus.com/current.zip
+City of Arcadia,90044,Arcadia,Los Angeles,Los Angeles,https://www.arcadiaca.gov/shape/development_services_department/transportation_services/index.php,7,Los Angeles,true,true,5307,,14.0,https://passio3.com/ArcadiaCity/passioTransit/gtfs/google_transit.zip
+Victor Valley Transit Authority,90148,Hesperia,San Bernardino,San Bernardino,http://www.vvta.org/,8,San Bernardino / Riverside,true,true,5307;5310;5311;5316;5317;5339,,258.0,https://api.transloc.com/gtfs/vvta.zip;https://ontime.vvta.org/gtfs
+City of Manteca,90217,Manteca,San Joaquin,San Joaquin,http://www.mantecatransit.com,10,Stockton,true,true,5307,,6.0,https://data.trilliumtransit.com/gtfs/manteca-ca-us/manteca-ca-us.zip;https://gtfs.calitp.org/production/MantecaTransitParatransitFlex.zip
+City of Glendora,90266,Glendora,Los Angeles,Los Angeles,https://www.cityofglendora.org/departments-services/transportation,7,Los Angeles,true,true,5310,,15.0,https://www.cityofglendora.org/home/showpublisheddocument/29602/638385891493500000
+City of Guadalupe,91043,Guadalupe,,,http://www.ci.guadalupe.ca.us/,,,,,,,3.0,
+City of Pasadena,99424,Pasadena,Los Angeles,Los Angeles,https://www.cityofpasadena.net/pasadena-transit/,7,Los Angeles,true,true,5316,,33.0,https://rt.pasadenatransit.net/rtt/public/utility/gtfs.aspx
+City of Roseville,90168,Roseville,Placer,Placer,http://www.roseville.ca.us/transit/,3,Marysville / Sacramento,true,true,5307,,24.0,https://iportal.sacrt.com/GTFS/Roseville/google_transit.zip
+City of Avalon,90249,Avalon,Los Angeles,Los Angeles,www.avalontransit.org,7,Los Angeles,true,true,,,4.0,https://data.trilliumtransit.com/gtfs/avalon-ca-us/avalon-ca-us.zip
+City of Corcoran,91002,Corcoran,,,http://www.cityofcorcoran.com/,,,,,,6.0,6.0,
+Trinity County,91035,Weaverville,,,http://www.trinitycounty.org/			,,,,,,4.0,4.0,
+Bishop Paiute Tribe,99268,Bishop,Inyo,,http://www.bishoppaiutetribe.com/,9,Bishop,true,false,,,0.0,
+City of Hawaiian Gardens,99450,Hawaiian Gardens,,,https://hgcity.org/hg/,,,,,,,0.0,
+Santa Clara Valley Transportation Authority,90013,San Jose,Santa Clara,Santa Clara,http://www.vta.org/,4,Bay Area / Oakland,true,true,5307;5309;5311;5337,363.0,496.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=SC;https://gtfs.vta.org/gtfs_vta.zip
+SunLine Transit Agency,90079,Thousand Palms,Riverside,Riverside,http://www.sunline.org/,8,San Bernardino / Riverside,true,true,5307;5309;5310;5311;5339,88.0,95.0,https://infopoint.sunline.org/InfoPoint/GTFS-Zip.ashx
+San Francisco Bay Area Water Emergency Transportation Authority,90225,San Francisco,San Francisco,San Francisco,http://www.sanfranciscobayferry.com/weta,4,Bay Area / Oakland,true,true,5307;5337,,11.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=SB;https://data.trilliumtransit.com/gtfs/sfbayferry-ca-us/sfbayferry-ca-us.zip
+City of La Habra Heights,99445,La Habra Heights,,,www.Lhhcity.org,,,,,,,0.0,
+Sacramento Regional Transit District,90019,Sacramento,Sacramento,Sacramento,http://www.sacrt.com/,3,Marysville / Sacramento,true,true,5307;5309;5337,354.0,367.0,https://iportal.sacrt.com/GTFS/SRTD/google_transit.zip
+City of Culver City,90039,Culver City,Los Angeles,Los Angeles,http://www.culvercitybus.org/,7,Los Angeles,true,true,5307,39.0,39.0,https://www.culvercity.org/files/assets/public/documents/information-technology/maps/gtfsexport.zip
+City of Lompoc,90149,Lompoc,Santa Barbara,Santa Barbara,http://www.cityoflompoc.com/transit/,5,San Luis Obispo / Santa Barbara,true,true,5307,,10.0,https://www.cityoflompoc.com/home/showdocument?id=29896
+City of Camarillo,90163,Camarillo,Ventura,Ventura,https://www.cityofcamarillo.org/residents/public_transportation/index.php,7,Los Angeles,true,true,5307,,18.0,https://govcbus.com/gtfs;https://gtfs.calitp.org/production/CamarilloGTFS.zip
+City of Porterville,90198,Porterville,Tulare,Tulare,https://www.ci.porterville.ca.us/departments/porterville_transit/index.php,6,Fresno / Bakersfield,true,false,,,11.0,
+Los Angeles County Dept. of Public Works - King Medical Center Shuttle Service,90274,Alhambra,,,www.lagobus.info,,,,,,,2.0,
+Kern Regional Transit,91059,Bakersfield,,,http://kerntransit.org/,,,,,,,40.0,
+Kings County Area Public Transit Agency,90200,Hanford,Kings,Kings,http://www.kartbus.org,6,Fresno / Bakersfield,true,true,5307;5311;5339,,58.0,https://kart.connexionz.net/rtt/public/utility/gtfs.aspx
+Santa Barbara County Association of Governments,90303,Santa Barbara,Santa Barbara,Santa Barbara,http://www.sbcag.org/,5,San Luis Obispo / Santa Barbara,true,true,5307,,9.0,https://cleanairexpress.com/gtfs/gtfs.zip
+Humboldt Transit Authority,91036,Eureka,,,http://www.hta.org/,,,,,,14.0,14.0,
+Tuolumne County Transit,91057,Sonora,,,https://www.tuolumnecountytransit.com/,,,,,,,12.0,
+Quechan Indian Tribe,99310,Winterhaven,Imperial,,http://www.ycipta.org/routes/5,11,San Diego,true,false,,,0.0,
+Napa Valley Transportation Authority,90088,Napa,Napa,Napa,http://www.vinetransit.com/,4,Bay Area / Oakland,true,true,5307;5310;5311,,46.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=VN;https://data.trilliumtransit.com/gtfs/vinetransit-ca-us/vinetransit-ca-us.zip;https://napa.syncromatics.com/gtfs
+City of Union City,90161,Union City,Alameda,Alameda,http://www.uctransit.org/,4,Bay Area / Oakland,true,true,5307,,20.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=UC;https://data.trilliumtransit.com/gtfs/unioncity-ca-us/unioncity-ca-us.zip;https://gtfs.calitp.org/production/UnionCityParatransitFlex.zip;https://uctransit.info/gtfs
+Redwood Coast Transit Authority,91097,Crescent City,,,http://www.redwoodcoasttransit.org/,,,,,,,6.0,
+Kern Regional Transit,A0008,Bakersfield,,,http://kerntransit.org/,,,,,,,0.0,
+Livermore / Amador Valley Transit Authority,90144,Livermore,Alameda,Alameda,http://www.wheelsbus.com/,4,Bay Area / Oakland,true,true,5307;5311,,47.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=WH
+Butte County Association of Governments,90208,Chico,Butte,Butte,http://www.blinetransit.com,3,Marysville / Sacramento,true,true,5307;5310;5311;5339,,36.0,http://www.blinetransit.com/documents/Google%20Transit/google_transit.zip
+Los Angeles County Dept. of Public Works - Athens Shuttle Service,90269,Alhambra,,,www.lagobus.info,,,,,,,1.0,
+Riverfront Joint Powers Authority,90304,,,,http://www.riverfrontstreetcar.com/board/,,,,,,,0.0,
+"Wasco, City of",99426,Wasco,,,http://www.ci.wasco.ca.us/,,,,,,3.0,3.0,
+Alameda-Contra Costa Transit District,90014,Oakland,Alameda,Alameda,http://www.actransit.org/,4,Bay Area / Oakland,true,true,5307;5308;5309,399.0,546.0,https://api.511.org/transit/datafeeds?operator_id=AC;https://api.511.org/transit/datafeeds?operator_id=RG;https://api.actransit.org/transit/gtfs/download
+City of Delano,90238,Delano,Kern,Kern,http://www.cityofdelano.org/92/Delano-Area-Rapid-Transit-DART,6,Fresno / Bakersfield,true,true,5307;5339,10.0,10.0,https://data.trilliumtransit.com/gtfs/delano-ca-us/delano-ca-us.zip
+City of Fresno,90027,Fresno,Fresno,Fresno,https://www.fresno.gov/transportation/,6,Fresno / Bakersfield,true,true,5307;5308;5309;5317;5339,105.0,145.0,https://gis4u.fresno.gov/downloads/zip/fax_gtfs.zip
+City of Los Angeles,90147,Los Angeles,Los Angeles,Los Angeles,http://www.ladottransit.com/,7,Los Angeles,true,true,5307;5309;5310;5339,,363.0,https://ladotbus.com/gtfs
+Anaheim Transportation Network,90211,Anaheim,Orange,Orange,http://www.rideart.org/,12,Orange County,true,true,5339,,47.0,https://art.tripshot.com/v1/gtfs.zip?regionId=CA558DDC-D7F2-4B48-9CAC-DEEA1134F820
+"Paratransit, Inc.",90223,Sacramento,Sacramento,,http://www.paratransit.org/,3,Marysville / Sacramento,false,false,,18.0,18.0,
+City of Monterey Park,90286,Montery Park,Los Angeles,Los Angeles,http://www.montereypark.ca.gov/549/Spirit-Bus,7,Los Angeles,true,true,,4.0,4.0,https://passio3.com/montereyp/passioTransit/gtfs/google_transit.zip
+Tulare County Area Transit,91055,Visalia,,,http://tularecounty.ca.gov/county/,,,,,,,24.0,
+North Fork Rancheria of Mono Indians of California,99364,North Fork,Madera,Madera,http://northforkrancheria-nsn.gov/,6,Fresno / Bakersfield,true,false,,2.0,2.0,
+San Mateo County Transit District,90009,San Carlos,San Mateo,San Mateo,http://www.samtrans.com/,4,Bay Area / Oakland,true,true,5303;5307;5311;5317,157.0,312.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=SM;https://www.samtrans.com/Assets/GTFS/samtrans/ST-GTFS.zip?v=1114
+City of Norwalk ,90022,Norwalk,Los Angeles,Los Angeles,https://www.norwalk.org/city-hall/departments/norwalk-transit-system-nts,7,Los Angeles,true,true,5307,24.0,31.0,https://nts.rideralerts.com/InfoPoint/GTFS-Zip.ashx
+City of Gardena,90042,Gardena,Los Angeles,Los Angeles,www.ridegtrans.com,7,Los Angeles,true,true,5307,30.0,30.0,http://ridegtrans.com/gtfs.zip
+City of Riverside,90086,Riverside,Riverside,Riverside,https://www.riversideca.gov/park_rec/programs-sports/seniors/special-transportation-division,8,San Bernardino / Riverside,true,false,,15.0,15.0,
+The Eastern Contra Costa Transit Authority,90162,Antioch,Contra Costa,Contra Costa,http://www.trideltatransit.com/,4,Bay Area / Oakland,true,true,5307;5311,,91.0,https://api.511.org/transit/datafeeds?operator_id=3D;https://api.511.org/transit/datafeeds?operator_id=RG
+City of Thousand Oaks,90165,Thousand Oaks,Ventura,Ventura,https://www.toaks.org/departments/public-works/transit,7,Los Angeles,true,true,5307;5310,,14.0,https://data.trilliumtransit.com/gtfs/thousandoaks-ca-us/thousandoaks-ca-us.zip;https://govcbus.com/gtfs;https://gtfs.calitp.org/production/ThousandOaksDialARideParatransitandConnectFlex.zip
+City of Alhambra,90247,Alhambra,Los Angeles,Los Angeles,https://www.cityofalhambra.org/293/Alhambra-Community-Transit-ACT,7,Los Angeles,true,true,,,15.0,https://www.cityofalhambra.org/DocumentCenter/View/4979/alhambra-ca-us
+City of Carson,90258,Carson,Los Angeles,Los Angeles,http://ci.carson.ca.us/CommunityServices/Transportation.aspx,7,Los Angeles,true,false,,4.0,19.0,
+City of West Hollywood,90294,West Hollywood,Los Angeles,Los Angeles,https://www.weho.org/services/public-transportation-transit-options,7,Los Angeles,true,true,,,7.0,https://www.weho.org/home/showdocument?id=53383&t=637901042129473913
+County of Ventura,90298,Ventura,Ventura,,https://www.vcpublicworks.org/rt/publictransportation/,7,Los Angeles,true,false,,,3.0,
+Stanislaus Regional Transit Authority,90306,Modesto,Stanislaus,Stanislaus,https://stanrta.org/,10,Stockton,true,true,5311,,100.0,https://gtfs.calitp.org/production/StanRTAModestoNewmanOakdalePattersomandRiverbankFlex.zip;https://stanrta.rideralerts.com/InfoPoint/gtfs-zip.ashx
+SACRAMENTO AREA COUNCIL OF GOVERNMENTS FINANCING CORPORATION,90308,,Sacramento,,www.sacog.org,3,Marysville / Sacramento,true,false,,,0.0,
+Gold Coast Transit District,90035,Oxnard,Ventura,Ventura,http://www.goldcoasttransit.org/,7,Los Angeles,true,true,5307;5310;5339,49.0,71.0,https://govcbus.com/gtfs;https://www.goldcoasttransit.org/images/GTFS/GTFS.zip
+Monterey-Salinas Transit,90062,Monterey,Monterey,Monterey,http://www.mst.org/,5,San Luis Obispo / Santa Barbara,true,true,5307;5310;5311;5339,43.0,88.0,https://www.mst.org/google/google_transit.zip
+Los Angeles County Department of Public Works - East Valinda,90272,Alhambra,,,https://www.dpw.lacounty.gov/landing/transportation.cfm,,,,,,,1.0,
+Los Angeles County Dept. of Public Works - Florence-Firestone,90273,Alhambra,,,https://www.dpw.lacounty.gov/landing/transportation.cfm,,,,,,,2.0,
+Mountain Area Regional Transit Authority,91012,Big Bear Lake,,,http://mountaintransit.org/,,,,,,29.0,29.0,
+City of Santa Rosa,90017,Santa Rosa,Sonoma,Sonoma,www.srcity.org/citybus,4,Bay Area / Oakland,true,true,5307;5310,20.0,31.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=SR;https://santarosa.syncromatics.com/gtfs
+City of Simi Valley,90050,Simi Valley,Ventura,Ventura,http://www.simivalley.org/,7,Los Angeles,true,true,5307,17.0,17.0,https://data.trilliumtransit.com/gtfs/simivalley-ca-us/simivalley-ca-us.zip;https://govcbus.com/gtfs
+Altamont Corridor Express,90182,Stockton,San Joaquin,San Joaquin,http://www.acerail.com/,10,Stockton,true,true,5307;5309;5337,,27.0,https://api.511.org/transit/datafeeds?operator_id=CE;https://api.511.org/transit/datafeeds?operator_id=RG
+California Vanpool Authority,90230,Hanford,Kings,,http://www.CalVans.org/,6,Fresno / Bakersfield,true,false,,758.0,758.0,
+City of Cudahy,90262,Cudahy,Los Angeles,Los Angeles,http://www.cityofcudahy.com,7,Los Angeles,true,true,,,6.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/cudahy-ca-us/cudahy-ca-us.zip
+Los Angeles County Department of Public Works - Whittier,90277,Alhambra,,,https://dpw.lacounty.gov/transit/DAR.aspx#pageTitle,,,,,,,10.0,
+City of Inglewood,90268,Inglewood,Los Angeles,Los Angeles,https://www.cityofinglewood.org/796/Transportation,7,Los Angeles,true,true,,9.0,9.0,https://www.cityofinglewood.org/gtfs
+City of South Pasadena,90292,South Pasadena,Los Angeles,Los Angeles,http://www.southpasadenaca.gov/index.aspx?page=104,7,Los Angeles,true,false,,6.0,6.0,
+Fresno County Rural Transit Agency,91007,Fresno,,,http://www.ruraltransit.org/,,,,,,,65.0,
+County of Siskiyou,91048,Yreka,,,http://www.co.siskiyou.ca.us/,,,,,,5.0,5.0,
+Antelope Valley Transit Authority,90121,Lancaster,Los Angeles,Los Angeles,http://www.avta.com/,7,Los Angeles,true,true,5307;5310;5311,,88.0,https://www.avta.com/userfiles/files/AVTA_GTFS.zip
+City of San Luis Obispo,90156,San Luis Obispo,San Luis Obispo,San Luis Obispo,www.slotransit.org,5,San Luis Obispo / Santa Barbara,true,true,5307,,15.0,https://app.mecatran.com/urb/ws/feed/c2l0ZT1zbG90cmFuc2l0O2NsaWVudD1zZWxmO2V4cGlyZT07dHlwZT1ndGZzO2tleT0zZTMwMzM1OTRiMTE2NzA0N2IxNjQwNjA0ZjQwMGMzMzdiM2E1MTQ0
+Tulare County Regional Transit Agency,90310,Visalia,Tulare,Tulare,https://tularecog.org/tcag/planning/transit-planning/bus-information/,6,Fresno / Bakersfield,true,true,5311,,17.0,https://gtfs.calitp.org/production/TulareCountyAreaTransitandDialARideFlex.zip;https://tcrta.tripshot.com/v1/gtfs.zip?regionId=CA558DDC-D7F2-4B48-9CAC-DEEA1134F820
+San Benito County LTA,91009,Hollister,,,http://www.sanbenitocountyexpress.org/,,,,,,,10.0,
+City of Tehachapi,91074,Tehachapi,,,http://www.liveuptehachapi.com/,,,,,,,2.0,
+San Joaquin Council,99422,Stockton,San Joaquin,,http://www.sjcog.org/,10,Stockton,true,false,,,360.0,
+County of Shasta Department of Public Works,99438,Redding,,,https://www.co.shasta.ca.us/index/pw_index/rural-transit,,,,,,,0.0,
+Elk Valley Rancheria,99452,Crescent City,Del Norte,,http://elk-valley.com/,1,Eureka,true,false,,1.0,1.0,
+Ventura Intercity Service Transit Authority,A0005,Camarillo,,,http://www.goventura.org/,,,,,,,0.0,
+"City of Fairfield, California",90092,Fairfield,Solano,Solano,https://fasttransit.org/,4,Bay Area / Oakland,true,true,5307,,33.0,https://api.511.org/transit/datafeeds?operator_id=FS;https://api.511.org/transit/datafeeds?operator_id=RG;https://data.trilliumtransit.com/gtfs/fairfield-ca-us/fairfield-ca-us.zip
+City of Tracy,90197,Tracy,San Joaquin,San Joaquin,http://www.ridetracer.com,10,Stockton,true,true,5307;5339,,13.0,https://gtfs.calitp.org/production/TracyTRACERPlusandParatransitFlex.zip;https://www.cityoftracy.org/home/showpublisheddocument/16626/638342536313270000
+City of Madera,90199,Madera,Madera,Madera,https://www.madera.gov/home/departments/transit/,6,Fresno / Bakersfield,true,true,5307,,19.0,https://data.trilliumtransit.com/gtfs/cityofmadera-ca-us/cityofmadera-ca-us.zip
+Marin County Transit District,90234,San Rafael,Marin,Marin,http://marintransit.org/,4,Bay Area / Oakland,true,true,5307;5310;5311;5320;5339,,80.0,https://api.511.org/transit/datafeeds?operator_id=MA;https://api.511.org/transit/datafeeds?operator_id=RG;https://marintransit.net/gtfs;https://marintransit.org/data/google_transit.zip
+Los Angeles County Department of Public Works - South Whittier,90276,Alhambra,,,https://www.dpw.lacounty.gov/landing/transportation.cfm,,,,,,,5.0,
+City of Redondo Beach,90214,Redondo Beach,Los Angeles,Los Angeles,http://www.redondo.org/,7,Los Angeles,true,true,5307,,18.0,https://redondobeachbct.com/gtfs;https://www.redondo.org/civicax/filebank/blobdload.aspx?BlobID=33555
+Morongo Basin Transit Authority,91090,Joshua Tree,,,http://www.mbtabus.com,,,,,,13.0,13.0,
+City of Palmdale,99448,Palmdale,,,https://www.cityofpalmdale.org/,,,,,,,0.0,
+Long Beach Transit,90023,Long Beach,Los Angeles,Los Angeles,http://www.lbtransit.com/,7,Los Angeles,true,true,5307;5339,136.0,144.0,https://drive.google.com/uc?export=download&id=1869EVa1z6m_iD6QmvRXyTHtYiaSUBROl
+Palos Verdes Peninsula Transit Authority,90287,Palos Verdes Peninsula,Los Angeles,Los Angeles,http://www.palosverdes.com/pvtransit/,7,Los Angeles,true,true,,,27.0,https://data.trilliumtransit.com/gtfs/pvpta-ca-us/pvpta-ca-us.zip
+City of Santa Fe Springs,90290,Santa Fe Springs,Los Angeles,Los Angeles,https://www.santafesprings.org/cityhall/transportation_services/default.asp,7,Los Angeles,true,false,,2.0,2.0,
+Modoc Transportation Agency,91008,Alturas,,,http://sagestage.com/,,,,,,,3.0,
+Lake Transit Authority,91053,Lower Lake,,,http://laketransit.org/,,,,,,,26.0,
+City of Eureka ,91093,Eureka,,,http://www.ci.eureka.ca.gov,,,,,,,9.0,
+Nevada County Transit Services,91095,Nevada City,,,http://www.mynevadacounty.com/nc/cda/pw/transit/Pages/Home.aspx,,,,,,7.0,17.0,
+City of California City,91111,California City,,,http://www.californiacity-ca.gov/CC/,,,,,,2.0,2.0,
+Southern California Regional Rail Authority,90151,Los Angeles,Los Angeles,Los Angeles,http://www.metrolinktrains.com/,7,Los Angeles,true,true,5307;5337,,195.0,https://www.metrolinktrains.com/globalassets/about/gtfs/gtfs.zip
+Morongo Band of Mission Indians,99358,Banning,Riverside,Riverside,https://morongonation.org/transportation/,8,San Bernardino / Riverside,true,true,,2.0,2.0,
+Redding Area Bus Authority ,A0016,Redding,,,http://www.rabaride.com/,,,,,,,0.0,
+Sonoma-Marin Area Rail Transit District,90299,Petaluma,Sonoma,Sonoma,www.sonomamarintrain.org,4,Bay Area / Oakland,true,true,5307,10.0,10.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=SA;https://data.trilliumtransit.com/gtfs/smart-ca-us/smart-ca-us.zip
+San Bernardino County Transportation Authority,90302,San Bernardino,San Bernardino,San Bernardino,www.gosbcta.com,8,San Bernardino / Riverside,true,true,5307,,57.0,https://www.metrolinktrains.com/globalassets/about/gtfs/gtfs.zip
+"University of California, Davis",90142,Davis,Yolo,Yolo,http://unitrans.ucdavis.edu,3,Marysville / Sacramento,false,true,5307;5339,25.0,25.0,https://unitrans.ucdavis.edu/media/gtfs/Unitrans_GTFS.zip
+City of El Monte ,90265,El Monte,Los Angeles,Los Angeles,http://www.ci.el-monte.ca.us/Government/PublicWorks/Transportation.aspx,7,Los Angeles,true,true,,4.0,14.0,https://data.trilliumtransit.com/gtfs/elmonte-ca-us/elmonte-ca-us.zip
+Yosemite Area Regional Transportation System,91070,Merced,,,http://www.YARTS.com,,,,,,,10.0,
+City of Chowchilla,91071,Chowchilla,,,https://www.cityofchowchilla.org/,,,,,,2.0,2.0,
+Mariposa County Transit,91082,Mariposa,,,http://ca-mariposacounty.civicplus.com/,,,,,,8.0,8.0,
+Palo Verde Valley Transit Agency,99454,Blythe,,,www.pvvta.com,,,,,,,10.0,
+San Francisco Bay Area Rapid Transit District,90003,Oakland,San Francisco,Alameda,http://www.bart.gov/,4,Bay Area / Oakland,true,true,5307;5309;5337,578.0,580.0,https://api.511.org/transit/datafeeds?operator_id=BA;https://api.511.org/transit/datafeeds?operator_id=RG;https://www.bart.gov/dev/schedules/google_transit.zip
+San Diego Metropolitan Transit System,90026,San Diego,San Diego,San Diego,http://www.sdmts.com/,11,San Diego,true,true,5307;5309;5311;5337;5339,334.0,728.0,https://www.sdmts.com/google_transit_files/google_transit.zip
+City of Laguna Beach,90119,Laguna Beach,Orange,Orange,http://www.lagunabeachcity.net/cityhall/transit_and_trolleys/,12,Orange County,true,true,,,22.0,https://data.trilliumtransit.com/gtfs/lagunabeach-ca-us/lagunabeach-ca-us.zip;https://gtfs.calitp.org/production/LagunaBeachTransitLocalFlex.zip
+Foothill Transit,90146,West Covina,Los Angeles,Los Angeles,http://www.foothilltransit.org/,7,Los Angeles,true,true,5307;5339,,303.0,https://foothilltransit.rideralerts.com/myStop/GTFS-Zip.ashx
+County of Placer,90196,Auburn,Placer,Placer,https://www.placer.ca.gov/3739/Transportation-Travel,3,Marysville / Sacramento,true,true,5307;5311;5339,17.0,45.0,https://data.trilliumtransit.com/gtfs/placercounty-ca-us/placercounty-ca-us.zip;https://gtfs.calitp.org/production/PlacerCountyDialARideFlex.zip
+City of Moorpark,90227,,Ventura,Ventura,http://www.moorparkca.gov/transit,7,Los Angeles,true,true,5307,,2.0,https://data.trilliumtransit.com/gtfs/moorparkcitytransit-ca-us/moorparkcitytransit-ca-us.zip;https://govcbus.com/gtfs
+California Department of Transportation,9R02,Sacramento,Sacramento,,http://www.dot.ca.gov/,3,Marysville / Sacramento,true,false,,,0.0,
+City of Pico Rivera,90288,Pico Rivera,Los Angeles,Los Angeles,http://www.pico-rivera.org/depts/parks/programs/senior/transportation.asp,7,Los Angeles,true,false,,,1.0,
+City of Claremont,90296,Claremont,Los Angeles,,pvtrans.org,7,Los Angeles,true,false,,,22.0,
+City of Solvang,91028,Solvang,,,http://www.cityofsolvang.com/index.php/santa-ynez-valley-transit/,,,,,,,5.0,
+Alpine County Local Transportation Commission,91116,Markleeville,,,http://www.alpinecountyca.gov/index.aspx?NID=159,,,,,,1.0,1.0,
+Los Angeles County Metropolitan Transportation Authority ,A0003,Los Angeles,,,http://www.metro.net/,,,,,,,0.0,
+Pomona Valley Transportation Authority,99425,La Verne,Los Angeles,Los Angeles,http://www.pvtrans.org/,7,Los Angeles,true,true,,,27.0,
+Redding Area Bus Authority,90093,Redding,Shasta,Shasta,http://www.rabaride.com/,2,Redding,true,true,5307;5311;5337,,21.0,https://hosted-gtfs-feeds.s3.amazonaws.com/RABA/gtfs.zip
+San Luis Obispo Regional Transit Authority,90206,San Luis Obispo,San Luis Obispo,San Luis Obispo,http://www.slorta.org/,5,San Luis Obispo / Santa Barbara,true,true,5307;5311;5339,41.0,41.0,https://slo.connexionz.net/rtt/public/resource/gtfs.zip
+County of Sacramento Municipal Services Agency Department of Transportation,90216,Sacramento,,,http://www.sctlink.com/,,,,,,,13.0,
+City of Malibu,90282,Malibu,Los Angeles,Los Angeles,https://www.malibucity.org/343/Senior-Center,7,Los Angeles,true,false,,,2.0,
+Santa Cruz Metropolitan Transit District,90006,Santa Cruz,Santa Cruz,Santa Clara;Santa Cruz,http://www.scmtd.com/,5,San Luis Obispo / Santa Barbara,true,true,5307;5309;5311;5339,86.0,86.0,https://scmtd.com/google_transit/google_transit.zip
+San Joaquin Regional Transit District,90012,Stockton,San Joaquin,San Joaquin,http://www.sanjoaquinrtd.com/,10,Stockton,true,true,5307;5310;5311;5339,75.0,115.0,http://sanjoaquinrtd.com/RTD-GTFS/RTD-GTFS.zip;https://gtfs.calitp.org/production/SanJoaquinRTDDialARideandVanGoFlex.zip
+City of Cerritos,90259,Cerritos,Los Angeles,Los Angeles,www.cerritos.us,7,Los Angeles,true,true,,,16.0,https://passio3.com/cerritos/passioTransit/gtfs/google_transit.zip
+Los Angeles County Department of Public Works - East L.A.,90271,Alhambra,Los Angeles,Los Angeles,www.lagobus.org,7,Los Angeles,true,true,5311,,16.0,https://data.trilliumtransit.com/gtfs/dpwlacounty-ca-us/dpwlacounty-ca-us.zip
+City of Needles,91020,Needles,,,http://www.cityofneedles.com/,,,,,,,1.0,
+Tehama County,91089,Gerber,,,http://www.taketrax.com/,,,,,,,14.0,
+Town of Truckee,91101,Truckee,,,http://www.townoftruckee.com/,,,,,,,6.0,
+City of Lodi,90175,Lodi,San Joaquin,San Joaquin,www.lodi.gov/transit,10,Stockton,true,true,5307;5339,,13.0,https://www.lodi.gov/DocumentCenter/View/2453/lodi_gtfs-ZIP
+Los Angeles County Department of Public Works - Avocado Heights,90270,Alhambra,,,https://www.dpw.lacounty.gov/landing/transportation.cfm,,,,,,,1.0,
+Blue Lake Rancheria,99292,Blue Lake,Humboldt,Humboldt,http://www.bluelakerancheria-nsn.gov/,1,Eureka,true,false,,2.0,2.0,
+Calaveras Transit Agency,99442,San Andreas,,,http://calaverasconnect.org/,,,,,,,11.0,
+City and County of San Francisco,90015,San Francisco,San Francisco,San Francisco,http://www.sfmta.com/,4,Bay Area / Oakland,true,true,5307;5309;5310;5337;5339,658.0,752.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=SF
+Omnitrans,90029,San Bernardino,San Bernardino,San Bernardino,http://www.omnitrans.org/,8,San Bernardino / Riverside,true,true,5307;5310,99.0,143.0,https://www.omnitrans.org/google/google_transit.zip
+City of Dixon ,91041,Dixon,,,http://www.ci.dixon.ca.us/,,,,,,10.0,10.0,
+City of Calabasas,90257,Calabasas,Los Angeles,Los Angeles,www.cityofcalabasas.com,7,Los Angeles,true,true,,,15.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/calabasas-ca-us/calabasas-ca-us.zip
+City of Montebello,90041,Montebello,Los Angeles,Los Angeles,http://www.ridembl.com/,7,Los Angeles,true,true,5307,42.0,87.0,https://mbl.rideralerts.com/infopoint/gtfs-zip.ashx
+City of Corona,90052,Corona,Riverside,Riverside,www.CoronaCA.gov/transit,8,San Bernardino / Riverside,true,true,5307,,10.0,https://data.trilliumtransit.com/gtfs/corona-ca-us/corona-ca-us.zip
+Metropolitan Transportation Commission,90094,San Francisco,San Francisco,,https://511.org/vanpool,4,Bay Area / Oakland,true,false,,,442.0,
+Los Angeles County Metropolitan Transportation Authority ,90154,Los Angeles,Los Angeles,Los Angeles,http://www.metro.net/,7,Los Angeles,true,true,5307;5309;5337;5339,1727.0,2509.0,https://gitlab.com/LACMTA/gtfs_bus/raw/master/gtfs_bus.zip;https://gitlab.com/LACMTA/gtfs_rail/raw/master/gtfs_rail.zip
+City of Vacaville,90155,Vacaville,Solano,Solano,http://www.citycoach.com/,4,Bay Area / Oakland,true,true,5307,,17.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=VC;https://data.trilliumtransit.com/gtfs/vacavillecitycoach-ca-us/vacavillecitycoach-ca-us.zip
+City of Atascadero,90194,Atascadero,San Luis Obispo,San Luis Obispo,https://www.atascadero.org/index.php?option=com_content&view=article&id=633&Itemid=1536,5,San Luis Obispo / Santa Barbara,true,true,,,2.0,
+El Dorado County Transit Authority,90229,Diamond Springs,El Dorado,El Dorado,http://www.eldoradotransit.com/,3,Marysville / Sacramento,true,true,5307;5310;5311;5339,16.0,16.0,https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip
+Los Angeles County Dept. of Public Works - Lennox Shuttle,90275,Alhambra,,,www.lagobus.info,,,,,,,1.0,
+City of Auburn,91032,Auburn,,,http://www.auburn.ca.gov/,,,,,,6.0,6.0,
+City of McFarland,91110,Mcfarland,,,http://www.mcfarlandcity.org,,,,,,1.0,1.0,
+Plumas County Transportation Commission,91119,Quincy,,,http://www.countyofplumas.com/,,,,,,,6.0,
+City of South El Monte,99443,South El Monte,,,http://www.ci.south-el-monte.ca.us/,,,,,,,0.0,
+Riverside Transit Agency,90031,Riverside,Riverside,Riverside,http://www.riversidetransit.com/,8,San Bernardino / Riverside,true,true,5307;5309;5310;5311;5339,87.0,186.0,https://www.riversidetransit.com/google_transit.zip
+City of Compton  ,90260,Compton,Los Angeles,Los Angeles,https://www.comptoncity.org/our-city/visitors/transportation,7,Los Angeles,true,true,,2.0,7.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/compton-ca-us/compton-ca-us.zip
+City of Huntington Park,90267,Huntington Park,Los Angeles,Los Angeles,http://www.hpca.gov/231/City-Transportation,7,Los Angeles,true,true,,,19.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/huntingtonpark-ca-us/huntingtonpark-ca-us.zip
+Madera County,91005,Madera,,,http://www.madera-county.com/,,,,,,,8.0,
+City of Taft,91066,Taft,,,http://www.cityoftaft.org/pView.aspx?id=5385&catid=562,,,,,,3.0,3.0,
+City of Escalon,91078,Escalon,,,http://cityofescalon.org/government/departments/transit_service,,,,,,,2.0,
+City of Glendale,99423,Glendale,Los Angeles,Los Angeles,www.glendaleca.gov/government/departments/public-works/public-transportation/beeline-transit-system,7,Los Angeles,true,true,5307,,41.0,https://glendaleca.gov/Home/ShowDocument?id=29549
+City of Davis,90167,Davis,Yolo,Yolo,http://cityofdavis.org/city-hall/parks-and-community-services/davis-community-transit,3,Marysville / Sacramento,true,false,,3.0,3.0,
+Transit Joint Powers Authority for Merced County,90173,Merced,Merced,Merced,http://www.mercedthebus.com/,10,Stockton,true,true,5307;5311,,50.0,https://data.trilliumtransit.com/gtfs/mercedthebus-ca-us/mercedthebus-ca-us.zip;https://thebuslive.com/gtfs
+City of West Covina,90293,West Covina,Los Angeles,Los Angeles,https://www.westcovina.org/departments/public-services-department/community-services-division/transit-services,7,Los Angeles,true,true,,,8.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/westcovina-ca-us/westcovina-ca-us.zip
+City of Bellflower,90254,Bellflower,Los Angeles,Los Angeles,https://www.bellflower.org/resources/transportation/default.asp,7,Los Angeles,true,true,5309,,4.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/bellflower-ca-us/bellflower-ca-us.zip
+Eastern Sierra Transit Authority,91062,Bishop,,,http://www.estransit.com/CMS/,,,,,,37.0,37.0,
+City of El Segundo,99449,El Segundo,,,https://www.elsegundo.org/,,,,,,,0.0,
+City of Petaluma,90213,Petaluma,Sonoma,Sonoma,http://transit.cityofpetaluma.net/,4,Bay Area / Oakland,true,true,5307,,13.0,https://api.511.org/transit/datafeeds?operator_id=PE;https://api.511.org/transit/datafeeds?operator_id=RG;https://data.trilliumtransit.com/gtfs/petalumatransit-petaluma-ca-us/petalumatransit-petaluma-ca-us.zip;https://petaluma.rideralerts.com/InfoPoint/GTFS-Zip.ashx
+City of Lakewood ,90301,Lakewood,Los Angeles,Los Angeles,https://www.lakewoodcity.org/Residents/Senior-Services/DASH-Transit-and-Buses				,7,Los Angeles,true,false,,12.0,12.0,
+Glenn Transit Service,91088,Willows,,,https://www.countyofglenn.net/dept/public-works/public-transit-transportation/welcome,,,,,,,4.0,
+City of Shafter,91120,Shafter,,,http://www.shafter.com/,,,,,,2.0,2.0,
+County of Sonoma ,90089,Santa Rosa,Sonoma,Sonoma,http://www.sctransit.com/,4,Bay Area / Oakland,true,true,5307;5310;5311,,45.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=SO;https://data.trilliumtransit.com/gtfs/sonomacounty-ca-us/sonomacounty-ca-us.zip
+Easy Lift Transportation,90243,Goleta,Santa Barbara,Santa Barbara,http://www.easylift.org/,5,San Luis Obispo / Santa Barbara,false,false,5310,28.0,28.0,
+City of Whittier,90295,Whittier,Los Angeles,Los Angeles,https://www.whittierprcs.org/transit/dial-a-ride-and-dar-plus,7,Los Angeles,true,false,,,12.0,
+City of Rio Vista,91014,Rio Vista,,,http://riovistacity.com/delta-breeze-transit-system/,,,,,,,2.0,
+City of Ojai,91058,Ojai,,,http://www.ci.ojai.ca.us/,,,,,,2.0,2.0,
+City of Bell Gardens,90253,,Los Angeles,Los Angeles,www.bellgardens.org/government/city-departments/public-works/transportation,7,Los Angeles,true,true,,,5.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/bellgardens-ca-us/bellgardens-ca-us.zip
+Amador Regional Transit System,91000,Jackson,,,http://amadortransit.com/,,,,,,17.0,17.0,
+City of Ridgecrest,91006,Ridgecrest,,,http://ridgecrest-ca.gov/,,,,,,5.0,5.0,
+City of Santa Clarita,90171,Santa Clarita,Los Angeles,Los Angeles,http://santaclaritatransit.com,7,Los Angeles,true,true,5307,,88.0,https://apps.santaclaritatransit.com/rtt/public/utility/gtfs.aspx
+City of Manhattan Beach ,90283,Manhattan Beach,Los Angeles,Los Angeles,www.citymb.info/departments/parks-and-recreation/older-adults-program/dial-a-ride,7,Los Angeles,true,false,,3.0,3.0,
+Mendocino Transit Authority,91047,Ukiah,,,http://www.mendocinotransit.org,,,,,,26.0,26.0,
+Chemehuevi Indian Tribe,99316,Havasu Lake,San Bernardino,,www.chemehuevi.net,8,San Bernardino / Riverside,true,true,5311,1.0,1.0,https://gtfs.calitp.org/production/HavasuLandingFerryGTFS.zip
+City of Commerce,90043,Commerce,Los Angeles,Los Angeles,https://www.ci.commerce.ca.us/city-hall/transportation,7,Los Angeles,true,true,5307,14.0,14.0,https://citycommbus.com/gtfs
+San Diego Association of Governments,90095,San Diego,San Diego,,https://www.icommutesd.com/vanpool/vanpool,11,San Diego,true,false,,,391.0,
+City of Turlock,90201,Turlock,Stanislaus,Stanislaus,www.turlocktransit.com,10,Stockton,true,true,5307,,13.0,https://data.trilliumtransit.com/gtfs/turlock-ca-us/turlock-ca-us.zip;https://gtfs.calitp.org/production/TurlockTransitDialARideFlex.zip
+City of Agoura Hills,90246,Agoura Hills,Los Angeles,Los Angeles,https://www.agourahillscity.org/our-city/residents/transportation-services/alternative-transportation,7,Los Angeles,true,true,,,3.0,
+City of Monrovia,90285,Monrovia,Los Angeles,Los Angeles,https://www.cityofmonrovia.org/your-government/public-works/transportation/gomonrovia,7,Los Angeles,true,true,,,4.0,
+North County Transit District,90030,Oceanside,San Diego,San Diego,http://www.gonctd.com/,11,San Diego,true,true,5307;5311;5316;5337;5339,38.0,231.0,https://www.gonctd.com/google_transit.zip
+Ventura County Transportation Commission,90164,Camarillo,Ventura,Santa Clara;Ventura,http://www.goventura.org/,7,Los Angeles,true,true,5307;5311;5339,,45.0,https://data.trilliumtransit.com/gtfs/vctc-ca-us/vctc-ca-us.zip;https://govcbus.com/gtfs;https://gtfs.calitp.org/production/ValleyExpressDialARideFlex.zip
+Imperial County Transportation Commission,90226,El Centro,Imperial,Imperial,http://www.imperialctc.org/,11,San Diego,true,true,5307;5310;5311,,23.0,http://schedule.ivtransit.com/public/gtfs/data.zip
+City of Burbank,90256,Burbank,Los Angeles,Los Angeles,www.burbankbus.org,7,Los Angeles,true,true,,5.0,17.0,https://rideburbankbus.com/gtfs
+City of Arvin,91027,Arvin,,,http://www.arvin.org/,,,,,,4.0,4.0,
+City of Torrance,90010,Torrance,Los Angeles,Los Angeles,http://Transit.TorranceCA.Gov/,7,Los Angeles,true,true,5307,38.0,74.0,https://transit.torranceca.gov/home/showdocument?id=16673
+Santa Barbara Metropolitan Transit District,90020,Santa Barbara,Santa Barbara,Santa Barbara,http://www.sbmtd.gov/,5,San Luis Obispo / Santa Barbara,true,true,5307;5339,80.0,80.0,https://sbmtd.gov/google_transit/feed.zip
+City of Santa Maria,90087,Santa Maria,Santa Barbara,Santa Barbara,http://www.cityofsantamaria.org/transit,5,San Luis Obispo / Santa Barbara,true,true,5307;5310;5311,,25.0,https://smrt.tripshot.com/v1/gtfs.zip?regionId=CA558DDC-D7F2-4B48-9CAC-DEEA1134F820
+City of Beverly Hills,90255,Beverly Hills,Los Angeles,Los Angeles,http://www.beverlyhills.org/departments/publicworks/transportation/seniordisabledtransportation/web.jsp?NFR=1,7,Los Angeles,true,true,,,4.0,
+City of Covina,90261,Covina,Los Angeles,Los Angeles,https://covinaca.gov/publicworks/page/covina-transit,7,Los Angeles,true,false,,,5.0,
+Metropolitan Transportation Commission,A0013,San Francisco,,,http://www.mtc.ca.gov/,,,,,,,0.0,
+Yuba-Sutter Transit Authority,90061,Marysville,Yuba,Yuba,http://www.yubasuttertransit.com/,3,Marysville / Sacramento,true,true,5307;5311,,32.0,https://data.trilliumtransit.com/gtfs/yubasutter-ca-us/yubasutter-ca-us.zip
+City of Lincoln,90235,Lincoln,Placer,,https://www.placer.ca.gov/1768/Placer-County-Transit,3,Marysville / Sacramento,true,false,,,0.0,
+City of Azusa,90250,Azusa,Los Angeles,Los Angeles,https://azusaca.gov/329/Azusa-Transit,7,Los Angeles,true,true,,6.0,6.0,
+City of Downey,90263,Downey,Los Angeles,Los Angeles,https://www.downeyca.org/our-city/departments/parks-recreation/transit,7,Los Angeles,true,true,,,14.0,https://ridedowneylink.com/gtfs
+Yurok Tribe,99262,Klamath,Del Norte,Del Norte,http://www.yuroktribe.org/,1,Eureka,true,true,5311,5.0,5.0,
+Humboldt Transit Authority,A0009,Eureka,,,http://www.hta.org/,,,,,,,0.0,
+Access Services  ,90157,El Monte,Los Angeles,Los Angeles,https://accessla.org/,7,Los Angeles,true,false,,,719.0,
+Colusa County Transit Agency,91112,Colusa,,,http://www.countyofcolusa.org/transit,,,,,,6.0,6.0,
+Western Contra Costa Transit Authority,90159,Pinole,Contra Costa,Contra Costa,http://www.westcat.org/,4,Bay Area / Oakland,true,true,5307,,32.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=WC;https://data.trilliumtransit.com/gtfs/westcat-ca-us/westcat-ca-us.zip;https://gtfs.calitp.org/production/WestCATSeniorDialARideandParatransitFlex.zip
+Riverside County Transportation Commission,90218,Riverside,Riverside,,http://www.rctc.org/,8,San Bernardino / Riverside,true,false,,,33.0,
+Solano County Transit,90232,Vallejo,Solano,Solano,http://www.soltransride.com/,4,Bay Area / Oakland,true,true,5307,,31.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=ST;https://soltrans.connexionz.net/rtt/public/resource/gtfs.zip
+City of Baldwin Park,90251,Baldwin Park,Los Angeles,Los Angeles,https://www.baldwinpark.com/public-works/public-transit,7,Los Angeles,true,true,,,8.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/baldwinpark-ca-us/baldwinpark-ca-us.zip
+City of Maywood,90284,Maywood,Los Angeles,Los Angeles,www.cityofmaywood.com/200/dial-a-ride,7,Los Angeles,true,true,,,5.0,https://gtfs.calitp.org/production/MaywoodGTFS.zip
+City of San Fernando,99451,San Fernando,,,http://ci.san-fernando.ca.us/getting-around/,,,,,,,0.0,
+"Golden Gate Bridge, Highway and Transportation District",90016,San Francisco,San Francisco,Marin;San Francisco;Sonoma,http://www.goldengate.org/,4,Bay Area / Oakland,true,true,5307;5310,47.0,59.0,https://api.511.org/transit/datafeeds?operator_id=GF;https://api.511.org/transit/datafeeds?operator_id=GG;https://api.511.org/transit/datafeeds?operator_id=RG;https://realtime.goldengate.org/gtfsstatic/GTFSTransitData.zip
+Orange County Transportation Authority,90036,Orange,Orange,Orange,http://www.octa.net/,12,Orange County,true,true,5307;5309;5310;5316;5339,214.0,739.0,https://octa.net/current/google_transit.zip
+Los Angeles County Dept. of Public Works - Willowbrook Shuttle,90278,Alhambra,,,http://www.dpw.lacounty.gov/transit,,,,,,,2.0,
+Lassen Transit Service Agency,91098,Susanville,,,http://lassentransportation.com/ltsa,,,,,,,5.0,
+Central Contra Costa Transit Authority,90078,Concord,Contra Costa,Alameda;Contra Costa,http://www.cccta.org/,4,Bay Area / Oakland,true,true,5307;5309;5311,78.0,118.0,http://cccta.org/GTFS/google_transit.zip;https://api.511.org/transit/datafeeds?operator_id=CC;https://api.511.org/transit/datafeeds?operator_id=RG
+Sierra County Transportation Commission,91038,Downieville,,,http://sierracounty.ca.gov/,,,,,,,4.0,
+City of Sierra Madre,99447,Sierra Madre,,,www.cityofsierramadre.com,,,,,,,0.0,
+City of Bell,90252,Bell,Los Angeles,Los Angeles,http://www.cityofbell.org/?NavID=276,7,Los Angeles,true,true,,,10.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/lacampana-ca-us/lacampana-ca-us.zip
+Los Angeles County Dept. of Public Works - Willowbrook et al.,90279,Alhambra,,,http://www.dpw.lacounty.gov/transit/,,,,,,,3.0,
+City of Artesia,90300,Artesia,Los Angeles,Los Angeles,http://www.cityofartesia.us/index.aspx?NID=189,7,Los Angeles,true,true,,,5.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/artesia-ca-us/artesia-ca-us.zip
+Golden Empire Transit District,90004,Bakersfield,Kern,Kern,http://www.getbus.org/,6,Fresno / Bakersfield,true,true,5307,91.0,91.0,http://eta.getbus.org/rtt/public/utility/gtfs.aspx
+Yolo County Transportation District,90090,Woodland,Yolo,Yolo,http://www.yolobus.com/,3,Marysville / Sacramento,true,true,5307;5311,,42.0,https://www.yolobus.com/GTFS/google_transit.zip
+Peninsula Corridor Joint Powers Board,90134,San Carlos,San Mateo,San Mateo,http://www.caltrain.com/,4,Bay Area / Oakland,true,true,5307;5309;5337,,85.0,https://api.511.org/transit/datafeeds?operator_id=CT;https://api.511.org/transit/datafeeds?operator_id=RG;https://data.trilliumtransit.com/gtfs/caltrain-ca-us/caltrain-ca-us.zip
+City of Lynwood,90281,Lynwood,Los Angeles,Los Angeles,http://lynwood.ca.us/lynwood-trolley-breeze-schedule/,7,Los Angeles,true,true,,,4.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/lynwood-ca-us/lynwood-ca-us.zip
+San Luis Obispo Regional Transit Authority,A0022,San Luis Obispo,,,http://www.slorta.org/,,,,,,,0.0,
+City of La Mirada ,90024,La Mirada,Los Angeles,Los Angeles,http://www.cityoflamirada.org/departments/community-services/transit,7,Los Angeles,true,true,,,6.0,
+City of Visalia  ,90091,Visalia,Tulare,Tulare,https://www.visalia.city/depts/transportation_services/transit/default.asp,6,Fresno / Bakersfield,true,true,5303;5307;5310;5311;5339,,38.0,https://visaliatransit.info/GTFS
+City of Rosemead,90289,Rosemead,Los Angeles,Los Angeles,http://www.cityofrosemead.org/cms/one.aspx?pageId=10909050,7,Los Angeles,true,true,,,7.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/rosemead-ca-us/rosemead-ca-us.zip
+City of South Gate,90291,South Gate,Los Angeles,Los Angeles,https://www.cityofsouthgate.org/City-Services/Transportation,7,Los Angeles,true,true,,,15.0,https://www.cityofsouthgate.org/files/sharedassets/public/v/1/city-services/documents/southgategtfs-2023-01-18.zip
+City of Arcata,91018,Arcata,,,http://www.cityofarcata.org/,,,,,,2.0,2.0,
+Bob Hope Airport,99444,Burbank,,,www.hollywoodburbankairport.com,,,,,,,0.0,
