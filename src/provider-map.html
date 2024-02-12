@@ -24,15 +24,11 @@ class_name: provider-map no-banner
   };
 </script>
 <script defer src="/scripts/providers/map.js"></script>
-<script>
-  const data_tabulator = "tabulator";
-</script>
 <script defer src="https://unpkg.com/tabulator-tables@4.8.1/dist/js/tabulator.min.js"></script>
 <script>
   const data_table = {
     src: "/scripts/providers/table.js",
     data_id: "table-data",
-    dict_id: "table-dict",
     data_file: "/metadata/providers/providers.json",
     dict_file: "/metadata/providers/dictionary.json",
   };
@@ -45,22 +41,14 @@ class_name: provider-map no-banner
   </header>
 
   <div class="mb-3">
-    <p>
-      From buses, shuttles, and on-demand paratransit to commuter and intercity rail, passengers want transportation that’s easy
-      to find and easy to pay for.
-    </p>
+    <p>From buses, shuttles, and on-demand paratransit to commuter and intercity rail, passengers want transportation that’s easy to find and easy to pay for.</p>
 
-    <p>
-      To better understand the size and scale of opportunities for integration in transportation, the Cal-ITP team compiled a list
-      of California’s transit providers.
-    </p>
+    <p>To better understand the size and scale of opportunities for integration in transportation, the Cal-ITP team compiled a list of California’s transit providers.</p>
 
-    <p>
-      Explore the more than 300 providers on this map and table, which links to each operator’s website and offers just a taste of
-      our full dataset—a CSV download that includes fare revenues, fleet size, vehicle type, and more.
-    </p>
+    <p>Explore the data below, which links to each operator’s website and offers just a taste of our full dataset—a CSV download that includes funding information, fleet size, GTFS information, and more.</p>
 
-    <h3>Download the data package</h3>
+    <h2>Download the data package</h2>
+
     <p>The data package includes the full dataset, data dictionary, and glossary as CSV files.</p>
 
     <div class="mt-4 text-center">
@@ -112,9 +100,30 @@ class_name: provider-map no-banner
     <header>
       <h2 class="mt-0">Data dictionary</h2>
     </header>
-    <div>
-      <div class="provider-data-dictionary" id="table-dict"></div>
-    </div>
+    <ul class="list-unstyled">
+      {% for term in site.data.csv.dictionary %}
+        {% capture description %}
+          {%- assign arr = term.definition | markdownify | strip | split: "<p>" -%}
+          {%- if arr.size > 2 -%}
+            {{ arr | join: "<p>" | prepend: "<p>" }}
+          {%- else -%}
+            {{ arr[1] | remove: "</p>" }}
+          {%- endif -%}
+        {% endcapture %}
+        <li>
+          <p><strong>{{ term.label }}</strong>: {{ description }}</p>
+          <dl class="ps-4">
+            <dt>Data Type</dt>
+            <dd>{{ term.type }}</dd>
+
+            <dt>Column</dt>
+            <dd>
+              <code>{{ term.column }}</code>
+            </dd>
+          </dl>
+        </li>
+      {% endfor %}
+    </ul>
   </article>
 
   <article class="mt-5 mb-5">

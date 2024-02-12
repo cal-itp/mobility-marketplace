@@ -82,20 +82,6 @@ $(function () {
     return [data, dictionary];
   };
 
-  const buildDictTable = (dictionary) => {
-    // create the dict table (don't keep a reference)
-    new Tabulator(`#${data_table.dict_id}`, {
-      layout: "fitColumns",
-      data: dictionary,
-      autoColumns: true,
-      headerSort: false,
-      pagination: false,
-      selectable: false,
-    });
-
-    return dictionary;
-  };
-
   const refresh = (county) => {
     if (county && county !== "") {
       // filter where service_county column contains county
@@ -152,6 +138,5 @@ $(function () {
 
   Promise.all(jobs)
     .then(([data, dictionary]) => buildDataTable(data, dictionary))
-    .then(([_, dictionary]) => buildDictTable(dictionary))
     .then(() => refresh());
 });
