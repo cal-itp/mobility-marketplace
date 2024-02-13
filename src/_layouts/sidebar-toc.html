@@ -9,9 +9,9 @@ layout: default
 {{ preface }}
 
 <section class="{{ page.content_class }}">
-  <div class="row position-relative" id="toc-and-content">
-    <div class="col-md-3">
-      <div class="bg-white position-sticky top-0">
+  <div class="row" id="toc-and-content">
+    <div class="toc col-md-3">
+      <div class="toc-container bg-white">
         <h2 class="h4 d-none d-md-block d-lg-block">Table of contents</h2>
         <button
           class="toggle-menu rounded-0 btn btn-secondary dropdown-toggle d-sm-block d-xs-block d-md-none d-lg-none"
@@ -22,8 +22,11 @@ layout: default
         >
           Table of contents
         </button>
-        <div>
-          {% include toc.html html=real_content class="list-unstyled.table-of-contents" submenu_class="list-unstyled" h_max=3 %}
+        <div class="d-none d-md-block d-lg-block">
+          {% include toc.html html=real_content class="table-of-contents" h_max=3 %}
+        </div>
+        <div class="d-block d-md-none d-lg-none">
+          {% include toc.html html=real_content class="dropdown-menu table-of-contents w-100" anchor_class="dropdown-item" h_max=3 %}
         </div>
       </div>
     </div>

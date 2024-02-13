@@ -1,17 +1,171 @@
+.toc {
+  .toc-container {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: 12px 0;
+        margin: 0;
+      }
+    }
+
+    a {
+      text-decoration: none !important;
+      border: none;
+      font-weight: 500;
+    }
+  }
+}
+
+.content-container {
+  h2:first-child {
+    margin-top: calc(8rem / 16);
+  }
+  h2 {
+    margin-top: calc(56rem / 16);
+    margin-bottom: calc(48rem / 16);
+  }
+  h3 {
+    margin-top: calc(56rem / 16);
+    margin-bottom: calc(24rem / 16);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #toc-and-content {
+    div :target::before {
+      // see: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
+      display: block;
+      content: "";
+      height: 1px !important;
+      margin: -1px 0 0 !important;
+    }
+  }
+
+  .toc {
+    .toc-container {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+
+      .h4 {
+        font-family: var(--bs-body-font-family) !important;
+        padding: 12px 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  #toc-and-content {
+    div :target::before {
+      // this ensures clicking an anchor tag takes you to the right spot
+      display: block; // without this code, the fixed header blocks the anchor tag from showing up
+      content: ""; // see: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
+      height: 68px !important;
+      margin: -68px 0 0 !important;
+    }
+  }
+
+  .toc {
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1020;
+    top: 0;
+
+    .toc-container {
+      .toggle-menu {
+        width: 100%;
+        background: white;
+        color: $primary;
+        border-top: 1px solid #d7d7d7;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #d7d7d7;
+        text-align: left;
+        height: 64px;
+        padding-left: 16px;
+
+        &.show {
+          border-bottom: 1px solid #ffffff;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          border: solid $primary;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 3px;
+          top: calc(50% - 6px);
+          right: 20px;
+          transform: rotate(45deg);
+          transition: transform 0.3s ease-in-out;
+        }
+
+        &.show::after {
+          transform: rotate(225deg);
+        }
+      }
+    }
+  }
+
+  .table-of-contents {
+    border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #ffffff;
+
+    & > li > a {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+}
+
 .table-of-contents {
-  & > li > a {
-    color: #000;
-    font-family: var(--bs-body-font-family) !important;
-    font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+
+  & > li {
+    padding: 0 !important;
+
+    & > a {
+      color: #000;
+      font-family: var(--bs-body-font-family) !important;
+      font-weight: 700 !important;
+    }
+  }
+
+  & > li > ul {
+    li a {
+      color: $primary;
+      white-space: break-spaces;
+    }
   }
 
   li {
-    margin: 1.25rem 0;
+    margin: 1.25rem;
   }
 
   ul {
     a {
       font-weight: 500 !important;
     }
+  }
+
+  & > li > a {
+    display: inline-block;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    width: 100%
+  }
+
+  ul .dropdown-item {
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
