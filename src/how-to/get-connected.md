@@ -255,7 +255,7 @@ CalNet supports a dedicated page with self-service instructions to access these 
 {:#firstnet-tiers}
 
 FirstNet created data plans tailored for transit agencies at a competitive price. The tiers incentivize more collective purchases and were designed to enable discounted rates in a way that works for their business case.
- 
+
 The FirstNet tier prices are based on bulk volume purchased on that contract vehicle, (i.e., total number purchased by all agencies combined, not the number of SIMs purchased by an individual agency). Tier II pricing is guaranteed through March 2024. When the Tier III threshold is reached, all agencies will see their plans further discounted.
 
 ### Can FirstNet be used for any device and use case?
