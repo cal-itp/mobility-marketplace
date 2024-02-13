@@ -4,11 +4,13 @@
       list-style: none;
       margin: 0;
       padding: 0;
+
       li {
         padding: 12px 0;
         margin: 0;
       }
     }
+
     a {
       text-decoration: none !important;
       border: none;
@@ -47,6 +49,7 @@
       position: sticky;
       position: -webkit-sticky;
       top: 0;
+
       .h4 {
         font-family: var(--bs-body-font-family) !important;
         padding: 12px 0;
@@ -73,6 +76,7 @@
     position: sticky;
     z-index: 1020;
     top: 0;
+
     .toc-container {
       .toggle-menu {
         width: 100%;
@@ -85,9 +89,11 @@
         text-align: left;
         height: 64px;
         padding-left: 16px;
+
         &.show {
           border-bottom: 1px solid #ffffff;
         }
+
         &::after {
           position: absolute;
           content: "";
@@ -100,22 +106,66 @@
           transform: rotate(45deg);
           transition: transform 0.3s ease-in-out;
         }
+
         &.show::after {
           transform: rotate(225deg);
         }
       }
-      ul {
-        border-top-color: #ffffff;
-        .dropdown-item-text {
-          margin: 0;
-          padding: 0 16px;
-        }
-        .h5 a {
-          color: $primary;
-          white-space: break-spaces;
-          padding: 0 16px;
-        }
-      }
     }
+  }
+
+  .table-of-contents {
+    border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #ffffff;
+
+    & > li > a {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+}
+
+.table-of-contents {
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+
+  & > li {
+    padding: 0 !important;
+
+    & > a {
+      color: #000;
+      font-family: var(--bs-body-font-family) !important;
+      font-weight: 700 !important;
+    }
+  }
+
+  & > li > ul {
+    li a {
+      color: $primary;
+      white-space: break-spaces;
+    }
+  }
+
+  li {
+    margin: 1.25rem;
+  }
+
+  ul {
+    a {
+      font-weight: 500 !important;
+    }
+  }
+
+  & > li > a {
+    display: inline-block;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    width: 100%
+  }
+
+  ul .dropdown-item {
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
