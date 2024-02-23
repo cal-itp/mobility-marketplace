@@ -35,11 +35,11 @@ jobs:
               "SELECT * FROM \`mart_transit_database.dim_mobility_mart_providers\`" \
           > src/metadata/providers/providers.csv
 
-#      - name: Fix our CSV file
-#        run: |
-#          # Workaround because of...
-#          #   https://github.com/google-github-actions/setup-gcloud/issues/666
-#          sed -i -n -e '/agency_name/,$p' src/metadata/providers/providers.csv
+      - name: Fix our CSV file
+        run: |
+          # Workaround because of...
+          #   https://issuetracker.google.com/issues/315160970
+          sed -i -n -e '/agency_name/,$p' src/metadata/providers/providers.csv
 
       - uses: actions/setup-python@v4
         with:
@@ -56,7 +56,7 @@ jobs:
           title: Provider Map Data Auto Update
           body: |
             It's that time again! The warehouse has delivered new data for us to use. This is an automatic pull request created by the `provider-map-jobs.yml` workflow; it is triggered via a cron that runs every Sunday at midnight UTC.
-          commit-message: Auto-update provider data from warehouse
+          commit-message: "chore: auto-update provider data from warehouse"
           add-paths: |
             src/metadata/providers/providers.csv
             src/metadata/providers/counties.geojson

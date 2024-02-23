@@ -1,456 +1,456 @@
-﻿County,City
-San Bernardino,Adelanto
-Los Angeles,Agoura Hills
+﻿City,County
+Adelanto,San Bernardino
+Agoura Hills,Los Angeles
 Alameda,Alameda
-Alameda,Albany
-Los Angeles,Alhambra
-Modoc,Alturas
-Amador,Amador City
-Orange,Anaheim
-Shasta,Anderson
-Calaveras,Angels
-Contra Costa,Antioch
-San Bernardino,Apple Valley
-Los Angeles,Arcadia
-Humboldt,Arcata
-San Luis Obispo,Arroyo Grande
-Los Angeles,Artesia
-Kern,Arvin
-San Luis Obispo,Atascadero
-San Mateo,Atherton
-Merced,Atwater
-Placer,Auburn
-Los Angeles,Avalon
-Kings,Avenal
-Los Angeles,Azusa
-Kern,Bakersfield
-Los Angeles,Baldwin Park
-Riverside,Banning
-San Bernardino,Barstow
-Riverside,Beaumont
-Los Angeles,Bell
-Los Angeles,Bell Gardens
-Los Angeles,Bellflower
-San Mateo,Belmont
-Marin,Belvedere
-Solano,Benicia
-Alameda,Berkeley
-Los Angeles,Beverly Hills
-San Bernardino,Big Bear Lake
-Butte,Biggs
-Inyo,Bishop
-Humboldt,Blue Lake
-Riverside,Blythe
-Los Angeles,Bradbury
-Imperial,Brawley
-Orange,Brea
-Contra Costa,Brentwood
-San Mateo,Brisbane
-Orange,Buena Park
-Los Angeles,Burbank
-San Mateo,Burlingame
-Imperial,Calexico
-Kern,California City
-Imperial,Calipatria
-Napa,Calistoga
-Ventura,Camarillo
-Santa Clara,Campbell
-Santa Cruz,Capitola
-San Diego,Carlsbad
-Monterey,Carmel-By-The-Sea
-Santa Barbara,Carpinteria
-Los Angeles,Carson
-Riverside,Cathedral City
-Stanislaus,Ceres
-Los Angeles,Cerritos
-Butte,Chico
-San Bernardino,Chino
-Madera,Chowchilla
-San Diego,Chula Vista
-Los Angeles,Claremont
-Contra Costa,Clayton
-Sonoma,Cloverdale
-Fresno,Clovis
-Riverside,Coachella
-Fresno,Coalinga
-Placer,Colfax
-San Mateo,Colma
-San Bernardino,Colton
+Albany,Alameda
+Alhambra,Los Angeles
+Alturas,Modoc
+Amador City,Amador
+Anaheim,Orange
+Anderson,Shasta
+Angels,Calaveras
+Antioch,Contra Costa
+Apple Valley,San Bernardino
+Arcadia,Los Angeles
+Arcata,Humboldt
+Arroyo Grande,San Luis Obispo
+Artesia,Los Angeles
+Arvin,Kern
+Atascadero,San Luis Obispo
+Atherton,San Mateo
+Atwater,Merced
+Auburn,Placer
+Avalon,Los Angeles
+Avenal,Kings
+Azusa,Los Angeles
+Bakersfield,Kern
+Baldwin Park,Los Angeles
+Banning,Riverside
+Barstow,San Bernardino
+Beaumont,Riverside
+Bell,Los Angeles
+Bell Gardens,Los Angeles
+Bellflower,Los Angeles
+Belmont,San Mateo
+Belvedere,Marin
+Benicia,Solano
+Berkeley,Alameda
+Beverly Hills,Los Angeles
+Big Bear Lake,San Bernardino
+Biggs,Butte
+Bishop,Inyo
+Blue Lake,Humboldt
+Blythe,Riverside
+Bradbury,Los Angeles
+Brawley,Imperial
+Brea,Orange
+Brentwood,Contra Costa
+Brisbane,San Mateo
+Buena Park,Orange
+Burbank,Los Angeles
+Burlingame,San Mateo
+Calexico,Imperial
+California City,Kern
+Calipatria,Imperial
+Calistoga,Napa
+Camarillo,Ventura
+Campbell,Santa Clara
+Capitola,Santa Cruz
+Carlsbad,San Diego
+Carmel-By-The-Sea,Monterey
+Carpinteria,Santa Barbara
+Carson,Los Angeles
+Cathedral City,Riverside
+Ceres,Stanislaus
+Cerritos,Los Angeles
+Chico,Butte
+Chino,San Bernardino
+Chowchilla,Madera
+Chula Vista,San Diego
+Claremont,Los Angeles
+Clayton,Contra Costa
+Cloverdale,Sonoma
+Clovis,Fresno
+Coachella,Riverside
+Coalinga,Fresno
+Colfax,Placer
+Colma,San Mateo
+Colton,San Bernardino
 Colusa,Colusa
-Los Angeles,Commerce
-Los Angeles,Compton
-Contra Costa,Concord
-Kings,Corcoran
-Tehama,Corning
-Riverside,Corona
-San Diego,Coronado
-Marin,Corte Madera
-Orange,Costa Mesa
-Sonoma,Cotati
-Los Angeles,Covina
-Del Norte,Crescent City
-Los Angeles,Cudahy
-Los Angeles,Culver City
-Santa Clara,Cupertino
-Orange,Cypress
-San Mateo,Daly City
-Orange,Dana Point
-Contra Costa,Danville
-Yolo,Davis
-San Diego,Del Mar
-Monterey,Del Rey Oaks
-Kern,Delano
-Riverside,Desert Hot Springs
-Los Angeles,Diamond Bar
-Tulare,Dinuba
-Solano,Dixon
-Siskiyou,Dorris
-Merced,Dos Palos
-Los Angeles,Downey
-Los Angeles,Duarte
-Alameda,Dublin
-Siskiyou,Dunsmuir
-San Mateo,East Palo Alto
-San Diego,El Cajon
-Imperial,El Centro
-Contra Costa,El Cerrito
-Los Angeles,El Monte
-Los Angeles,El Segundo
-Alameda,Emeryville
-San Diego,Encinitas
-San Joaquin,Escalon
-San Diego,Escondido
-Siskiyou,Etna
-Humboldt,Eureka
-Tulare,Exeter
-Marin,Fairfax
-Solano,Fairfield
-Tulare,Farmersville
-Humboldt,Ferndale
-Ventura,Fillmore
-Fresno,Firebaugh
-Sacramento,Folsom
-San Bernardino,Fontana
-Mendocino,Fort Bragg
-Siskiyou,Fort Jones
-Humboldt,Fortuna
-San Mateo,Foster City
-Orange,Fountain Valley
-Fresno,Fowler
-Alameda,Fremont
+Commerce,Los Angeles
+Compton,Los Angeles
+Concord,Contra Costa
+Corcoran,Kings
+Corning,Tehama
+Corona,Riverside
+Coronado,San Diego
+Corte Madera,Marin
+Costa Mesa,Orange
+Cotati,Sonoma
+Covina,Los Angeles
+Crescent City,Del Norte
+Cudahy,Los Angeles
+Culver City,Los Angeles
+Cupertino,Santa Clara
+Cypress,Orange
+Daly City,San Mateo
+Dana Point,Orange
+Danville,Contra Costa
+Davis,Yolo
+Del Mar,San Diego
+Del Rey Oaks,Monterey
+Delano,Kern
+Desert Hot Springs,Riverside
+Diamond Bar,Los Angeles
+Dinuba,Tulare
+Dixon,Solano
+Dorris,Siskiyou
+Dos Palos,Merced
+Downey,Los Angeles
+Duarte,Los Angeles
+Dublin,Alameda
+Dunsmuir,Siskiyou
+East Palo Alto,San Mateo
+El Cajon,San Diego
+El Centro,Imperial
+El Cerrito,Contra Costa
+El Monte,Los Angeles
+El Segundo,Los Angeles
+Emeryville,Alameda
+Encinitas,San Diego
+Escalon,San Joaquin
+Escondido,San Diego
+Etna,Siskiyou
+Eureka,Humboldt
+Exeter,Tulare
+Fairfax,Marin
+Fairfield,Solano
+Farmersville,Tulare
+Ferndale,Humboldt
+Fillmore,Ventura
+Firebaugh,Fresno
+Folsom,Sacramento
+Fontana,San Bernardino
+Fort Bragg,Mendocino
+Fort Jones,Siskiyou
+Fortuna,Humboldt
+Foster City,San Mateo
+Fountain Valley,Orange
+Fowler,Fresno
+Fremont,Alameda
 Fresno,Fresno
-Orange,Fullerton
-Sacramento,Galt
-Orange,Garden Grove
-Los Angeles,Gardena
-Santa Clara,Gilroy
-Los Angeles,Glendale
-Los Angeles,Glendora
-Monterey,Gonzales
-San Bernardino,Grand Terrace
-Nevada,Grass Valley
-Monterey,Greenfield
-Butte,Gridley
-San Luis Obispo,Grover Beach
-Santa Barbara,Guadalupe
-Merced,Gustine
-San Mateo,Half Moon Bay
-Kings,Hanford
-Los Angeles,Hawaiian Gardens
-Los Angeles,Hawthorne
-Alameda,Hayward
-Sonoma,Healdsburg
-Riverside,Hemet
-Contra Costa,Hercules
-Los Angeles,Hermosa Beach
-San Bernardino,Hesperia
-Los Angeles,Hidden Hills
-San Bernardino,Highland
-San Mateo,Hillsborough
-San Benito,Hollister
-Imperial,Holtville
-Stanislaus,Hughson
-Orange,Huntington Beach
-Los Angeles,Huntington Park
-Fresno,Huron
+Fullerton,Orange
+Galt,Sacramento
+Garden Grove,Orange
+Gardena,Los Angeles
+Gilroy,Santa Clara
+Glendale,Los Angeles
+Glendora,Los Angeles
+Gonzales,Monterey
+Grand Terrace,San Bernardino
+Grass Valley,Nevada
+Greenfield,Monterey
+Gridley,Butte
+Grover Beach,San Luis Obispo
+Guadalupe,Santa Barbara
+Gustine,Merced
+Half Moon Bay,San Mateo
+Hanford,Kings
+Hawaiian Gardens,Los Angeles
+Hawthorne,Los Angeles
+Hayward,Alameda
+Healdsburg,Sonoma
+Hemet,Riverside
+Hercules,Contra Costa
+Hermosa Beach,Los Angeles
+Hesperia,San Bernardino
+Hidden Hills,Los Angeles
+Highland,San Bernardino
+Hillsborough,San Mateo
+Hollister,San Benito
+Holtville,Imperial
+Hughson,Stanislaus
+Huntington Beach,Orange
+Huntington Park,Los Angeles
+Huron,Fresno
 Imperial,Imperial
-San Diego,Imperial Beach
-Riverside,Indian Wells
-Riverside,Indio
-Los Angeles,Industry
-Los Angeles,Inglewood
-Amador,Ione
-Orange,Irvine
-Los Angeles,Irwindale
-Sacramento,Isleton
-Amador,Jackson
-Fresno,Kerman
-Monterey,King City
-Fresno,Kingsburg
-Los Angeles,La Cañada Flintridge
-Orange,La Habra
-Los Angeles,La Habra Heights
-San Diego,La Mesa
-Los Angeles,La Mirada
-Orange,La Palma
-Los Angeles,La Puente
-Riverside,La Quinta
-Los Angeles,La Verne
-Contra Costa,Lafayette
-Orange,Laguna Beach
-Orange,Laguna Niguel
-Riverside,Lake Elsinore
-Lake,Lakeport
-Los Angeles,Lakewood
-Los Angeles,Lancaster
-Marin,Larkspur
-San Joaquin,Lathrop
-Los Angeles,Lawndale
-San Diego,Lemon Grove
-Kings,Lemoore
-Placer,Lincoln
-Tulare,Lindsay
-Sutter,Live Oak
-Alameda,Livermore
-Merced,Livingston
-San Joaquin,Lodi
-San Bernardino,Loma Linda
-Los Angeles,Lomita
-Santa Barbara,Lompoc
-Los Angeles,Long Beach
-Placer,Loomis
-Orange,Los Alamitos
-Santa Clara,Los Altos
-Santa Clara,Los Altos Hills
+Imperial Beach,San Diego
+Indian Wells,Riverside
+Indio,Riverside
+Industry,Los Angeles
+Inglewood,Los Angeles
+Ione,Amador
+Irvine,Orange
+Irwindale,Los Angeles
+Isleton,Sacramento
+Jackson,Amador
+Kerman,Fresno
+King City,Monterey
+Kingsburg,Fresno
+La Cañada Flintridge,Los Angeles
+La Habra,Orange
+La Habra Heights,Los Angeles
+La Mesa,San Diego
+La Mirada,Los Angeles
+La Palma,Orange
+La Puente,Los Angeles
+La Quinta,Riverside
+La Verne,Los Angeles
+Lafayette,Contra Costa
+Laguna Beach,Orange
+Laguna Niguel,Orange
+Lake Elsinore,Riverside
+Lakeport,Lake
+Lakewood,Los Angeles
+Lancaster,Los Angeles
+Larkspur,Marin
+Lathrop,San Joaquin
+Lawndale,Los Angeles
+Lemon Grove,San Diego
+Lemoore,Kings
+Lincoln,Placer
+Lindsay,Tulare
+Live Oak,Sutter
+Livermore,Alameda
+Livingston,Merced
+Lodi,San Joaquin
+Loma Linda,San Bernardino
+Lomita,Los Angeles
+Lompoc,Santa Barbara
+Long Beach,Los Angeles
+Loomis,Placer
+Los Alamitos,Orange
+Los Altos,Santa Clara
+Los Altos Hills,Santa Clara
 Los Angeles,Los Angeles
-Merced,Los Banos
-Santa Clara,Los Gatos
-Sierra,Loyalton
-Los Angeles,Lynwood
+Los Banos,Merced
+Los Gatos,Santa Clara
+Loyalton,Sierra
+Lynwood,Los Angeles
 Madera,Madera
-Mono,Mammoth Lakes
-Los Angeles,Manhattan Beach
-San Joaquin,Manteca
-Kern,Maricopa
-Monterey,Marina
-Contra Costa,Martinez
-Yuba,Marysville
-Los Angeles,Maywood
-Kern,McFarland
-Fresno,Mendota
-San Mateo,Menlo Park
+Mammoth Lakes,Mono
+Manhattan Beach,Los Angeles
+Manteca,San Joaquin
+Maricopa,Kern
+Marina,Monterey
+Martinez,Contra Costa
+Marysville,Yuba
+Maywood,Los Angeles
+McFarland,Kern
+Mendota,Fresno
+Menlo Park,San Mateo
 Merced,Merced
-Marin,Mill Valley
-San Mateo,Millbrae
-Santa Clara,Milpitas
-Orange,Mission Viejo
-Stanislaus,Modesto
-Los Angeles,Monrovia
-Siskiyou,Montague
-San Bernardino,Montclair
-Santa Clara,Monte Sereno
-Los Angeles,Montebello
+Mill Valley,Marin
+Millbrae,San Mateo
+Milpitas,Santa Clara
+Mission Viejo,Orange
+Modesto,Stanislaus
+Monrovia,Los Angeles
+Montague,Siskiyou
+Montclair,San Bernardino
+Monte Sereno,Santa Clara
+Montebello,Los Angeles
 Monterey,Monterey
-Los Angeles,Monterey Park
-Ventura,Moorpark
-Contra Costa,Moraga
-Riverside,Moreno Valley
-Santa Clara,Morgan Hill
-San Luis Obispo,Morro Bay
-Siskiyou,Mount Shasta
-Santa Clara,Mountain View
+Monterey Park,Los Angeles
+Moorpark,Ventura
+Moraga,Contra Costa
+Moreno Valley,Riverside
+Morgan Hill,Santa Clara
+Morro Bay,San Luis Obispo
+Mount Shasta,Siskiyou
+Mountain View,Santa Clara
 Napa,Napa
-San Diego,National City
-San Bernardino,Needles
-Nevada,Nevada City
-Alameda,Newark
-Stanislaus,Newman
-Orange,Newport Beach
-Riverside,Norco
-Los Angeles,Norwalk
-Marin,Novato
-Stanislaus,Oakdale
-Alameda,Oakland
-San Diego,Oceanside
-Ventura,Ojai
-San Bernardino,Ontario
+National City,San Diego
+Needles,San Bernardino
+Nevada City,Nevada
+Newark,Alameda
+Newman,Stanislaus
+Newport Beach,Orange
+Norco,Riverside
+Norwalk,Los Angeles
+Novato,Marin
+Oakdale,Stanislaus
+Oakland,Alameda
+Oceanside,San Diego
+Ojai,Ventura
+Ontario,San Bernardino
 Orange,Orange
-Fresno,Orange Cove
-Contra Costa,Orinda
-Glenn,Orland
-Butte,Oroville
-Ventura,Oxnard
-Monterey,Pacific Grove
-San Mateo,Pacifica
-Riverside,Palm Desert
-Riverside,Palm Springs
-Los Angeles,Palmdale
-Santa Clara,Palo Alto
-Los Angeles,Palos Verdes Estates
-Butte,Paradise
-Los Angeles,Paramount
-Fresno,Parlier
-Los Angeles,Pasadena
-San Luis Obispo,Paso Robles
-Stanislaus,Patterson
-Riverside,Perris
-Sonoma,Petaluma
-Los Angeles,Pico Rivera
-Alameda,Piedmont
-Contra Costa,Pinole
-San Luis Obispo,Pismo Beach
-Contra Costa,Pittsburg
-Orange,Placentia
-El Dorado,Placerville
-Contra Costa,Pleasant Hill
-Alameda,Pleasanton
-Amador,Plymouth
-Mendocino,Point Arena
-Los Angeles,Pomona
-Ventura,Port Hueneme
-Tulare,Porterville
-Plumas,Portola
-San Mateo,Portola Valley
-San Diego,Poway
-San Bernardino,Rancho Cucamonga
-Riverside,Rancho Mirage
-Los Angeles,Rancho Palos Verdes
-Tehama,Red Bluff
-Shasta,Redding
-San Bernardino,Redlands
-Los Angeles,Redondo Beach
-San Mateo,Redwood City
-Fresno,Reedley
-San Bernardino,Rialto
-Contra Costa,Richmond
-Kern,Ridgecrest
-Humboldt,Rio Dell
-Solano,Rio Vista
-San Joaquin,Ripon
-Stanislaus,Riverbank
+Orange Cove,Fresno
+Orinda,Contra Costa
+Orland,Glenn
+Oroville,Butte
+Oxnard,Ventura
+Pacific Grove,Monterey
+Pacifica,San Mateo
+Palm Desert,Riverside
+Palm Springs,Riverside
+Palmdale,Los Angeles
+Palo Alto,Santa Clara
+Palos Verdes Estates,Los Angeles
+Paradise,Butte
+Paramount,Los Angeles
+Parlier,Fresno
+Pasadena,Los Angeles
+Paso Robles,San Luis Obispo
+Patterson,Stanislaus
+Perris,Riverside
+Petaluma,Sonoma
+Pico Rivera,Los Angeles
+Piedmont,Alameda
+Pinole,Contra Costa
+Pismo Beach,San Luis Obispo
+Pittsburg,Contra Costa
+Placentia,Orange
+Placerville,El Dorado
+Pleasant Hill,Contra Costa
+Pleasanton,Alameda
+Plymouth,Amador
+Point Arena,Mendocino
+Pomona,Los Angeles
+Port Hueneme,Ventura
+Porterville,Tulare
+Portola,Plumas
+Portola Valley,San Mateo
+Poway,San Diego
+Rancho Cucamonga,San Bernardino
+Rancho Mirage,Riverside
+Rancho Palos Verdes,Los Angeles
+Red Bluff,Tehama
+Redding,Shasta
+Redlands,San Bernardino
+Redondo Beach,Los Angeles
+Redwood City,San Mateo
+Reedley,Fresno
+Rialto,San Bernardino
+Richmond,Contra Costa
+Ridgecrest,Kern
+Rio Dell,Humboldt
+Rio Vista,Solano
+Ripon,San Joaquin
+Riverbank,Stanislaus
 Riverside,Riverside
-Placer,Rocklin
-Sonoma,Rohnert Park
-Los Angeles,Rolling Hills
-Los Angeles,Rolling Hills Estates
-Los Angeles,Rosemead
-Placer,Roseville
-Marin,Ross
+Rocklin,Placer
+Rohnert Park,Sonoma
+Rolling Hills,Los Angeles
+Rolling Hills Estates,Los Angeles
+Rosemead,Los Angeles
+Roseville,Placer
+Ross,Marin
 Sacramento,Sacramento
-Monterey,Salinas
-Marin,San Anselmo
+Salinas,Monterey
+San Anselmo,Marin
 San Bernardino,San Bernardino
-San Mateo,San Bruno
-San Mateo,San Carlos
-Orange,San Clemente
+San Bruno,San Mateo
+San Carlos,San Mateo
+San Clemente,Orange
 San Diego,San Diego
-Los Angeles,San Dimas
-Los Angeles,San Fernando
+San Dimas,Los Angeles
+San Fernando,Los Angeles
 San Francisco,San Francisco
-Los Angeles,San Gabriel
-Riverside,San Jacinto
-Fresno,San Joaquin
-Santa Clara,San Jose
-San Benito,San Juan Bautista
-Orange,San Juan Capistrano
-Alameda,San Leandro
+San Gabriel,Los Angeles
+San Jacinto,Riverside
+San Joaquin,Fresno
+San Jose,Santa Clara
+San Juan Bautista,San Benito
+San Juan Capistrano,Orange
+San Leandro,Alameda
 San Luis Obispo,San Luis Obispo
-San Diego,San Marcos
-Los Angeles,San Marino
+San Marcos,San Diego
+San Marino,Los Angeles
 San Mateo,San Mateo
-Contra Costa,San Pablo
-Marin,San Rafael
-Contra Costa,San Ramon
-Monterey,Sand City
-Fresno,Sanger
-Orange,Santa Ana
+San Pablo,Contra Costa
+San Rafael,Marin
+San Ramon,Contra Costa
+Sand City,Monterey
+Sanger,Fresno
+Santa Ana,Orange
 Santa Barbara,Santa Barbara
 Santa Clara,Santa Clara
-Los Angeles,Santa Clarita
+Santa Clarita,Los Angeles
 Santa Cruz,Santa Cruz
-Los Angeles,Santa Fe Springs
-Santa Barbara,Santa Maria
-Los Angeles,Santa Monica
-Ventura,Santa Paula
-Sonoma,Santa Rosa
-San Diego,Santee
-Santa Clara,Saratoga
-Marin,Sausalito
-Santa Cruz,Scotts Valley
-Orange,Seal Beach
-Monterey,Seaside
-Sonoma,Sebastopol
-Fresno,Selma
-Kern,Shafter
-Los Angeles,Sierra Madre
-Los Angeles,Signal Hill
-Ventura,Simi Valley
-San Diego,Solana Beach
-Monterey,Soledad
-Santa Barbara,Solvang
+Santa Fe Springs,Los Angeles
+Santa Maria,Santa Barbara
+Santa Monica,Los Angeles
+Santa Paula,Ventura
+Santa Rosa,Sonoma
+Santee,San Diego
+Saratoga,Santa Clara
+Sausalito,Marin
+Scotts Valley,Santa Cruz
+Seal Beach,Orange
+Seaside,Monterey
+Sebastopol,Sonoma
+Selma,Fresno
+Shafter,Kern
+Sierra Madre,Los Angeles
+Signal Hill,Los Angeles
+Simi Valley,Ventura
+Solana Beach,San Diego
+Soledad,Monterey
+Solvang,Santa Barbara
 Sonoma,Sonoma
-Tuolumne,Sonora
-Los Angeles,South El Monte
-Los Angeles,South Gate
-El Dorado,South Lake Tahoe
-Los Angeles,South Pasadena
-San Mateo,South San Francisco
-Napa,St. Helena
-Orange,Stanton
-San Joaquin,Stockton
-Solano,Suisun City
-Santa Clara,Sunnyvale
-Lassen,Susanville
-Amador,Sutter Creek
-Kern,Taft
-Kern,Tehachapi
+Sonora,Tuolumne
+South El Monte,Los Angeles
+South Gate,Los Angeles
+South Lake Tahoe,El Dorado
+South Pasadena,Los Angeles
+South San Francisco,San Mateo
+St. Helena,Napa
+Stanton,Orange
+Stockton,San Joaquin
+Suisun City,Solano
+Sunnyvale,Santa Clara
+Susanville,Lassen
+Sutter Creek,Amador
+Taft,Kern
+Tehachapi,Kern
 Tehama,Tehama
-Riverside,Temecula
-Los Angeles,Temple City
-Ventura,Thousand Oaks
-Marin,Tiburon
-Los Angeles,Torrance
-San Joaquin,Tracy
-Humboldt,Trinidad
+Temecula,Riverside
+Temple City,Los Angeles
+Thousand Oaks,Ventura
+Tiburon,Marin
+Torrance,Los Angeles
+Tracy,San Joaquin
+Trinidad,Humboldt
 Tulare,Tulare
-Siskiyou,Tulelake
-Stanislaus,Turlock
-Orange,Tustin
-San Bernardino,Twentynine Palms
-Mendocino,Ukiah
-Alameda,Union City
-San Bernardino,Upland
-Solano,Vacaville
-Solano,Vallejo
+Tulelake,Siskiyou
+Turlock,Stanislaus
+Tustin,Orange
+Twentynine Palms,San Bernardino
+Ukiah,Mendocino
+Union City,Alameda
+Upland,San Bernardino
+Vacaville,Solano
+Vallejo,Solano
 Ventura,Ventura
-Los Angeles,Vernon
-San Bernardino,Victorville
-Orange,Villa Park
-Tulare,Visalia
-San Diego,Vista
-Los Angeles,Walnut
-Contra Costa,Walnut Creek
-Kern,Wasco
-Stanislaus,Waterford
-Santa Cruz,Watsonville
-Siskiyou,Weed
-Los Angeles,West Covina
-Los Angeles,West Hollywood
-Yolo,West Sacramento
-Los Angeles,Westlake Village
-Orange,Westminster
-Imperial,Westmorland
-Yuba,Wheatland
-Los Angeles,Whittier
-Colusa,Williams
-Mendocino,Willits
-Glenn,Willows
-Yolo,Winters
-Tulare,Woodlake
-Yolo,Woodland
-San Mateo,Woodside
-Orange,Yorba Linda
-Napa,Yountville
-Siskiyou,Yreka
-Sutter,Yuba City
-San Bernardino,Yucaipa
+Vernon,Los Angeles
+Victorville,San Bernardino
+Villa Park,Orange
+Visalia,Tulare
+Vista,San Diego
+Walnut,Los Angeles
+Walnut Creek,Contra Costa
+Wasco,Kern
+Waterford,Stanislaus
+Watsonville,Santa Cruz
+Weed,Siskiyou
+West Covina,Los Angeles
+West Hollywood,Los Angeles
+West Sacramento,Yolo
+Westlake Village,Los Angeles
+Westminster,Orange
+Westmorland,Imperial
+Wheatland,Yuba
+Whittier,Los Angeles
+Williams,Colusa
+Willits,Mendocino
+Willows,Glenn
+Winters,Yolo
+Woodlake,Tulare
+Woodland,Yolo
+Woodside,San Mateo
+Yorba Linda,Orange
+Yountville,Napa
+Yreka,Siskiyou
+Yuba City,Sutter
+Yucaipa,San Bernardino
