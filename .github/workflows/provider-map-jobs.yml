@@ -47,7 +47,7 @@ jobs:
 
       - name: Install dependencies, process providers, and update GeoJSON
         run: |
-          pip install -r requirements.txt
+          pip install -r _requirements.txt
           python .github/resources/process_providers.py
 
       - name: Create Pull Request
