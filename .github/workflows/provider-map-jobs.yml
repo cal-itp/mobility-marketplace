@@ -1,9 +1,5 @@
 name: Provider Map Jobs
 on:
-  # TODO: Remove this once behavior has been finalized
-  push:
-    branches:
-      - vlad/provider-map-gha
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * 0"
@@ -19,7 +15,7 @@ jobs:
       - name: Authenticate with Google
         uses: google-github-actions/auth@v1
         with:
-            credentials_json: '${{ secrets.GCP_SA_KEY }}'
+          credentials_json: '${{ secrets.GCP_SA_KEY }}'
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v1
