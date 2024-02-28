@@ -6,4 +6,5 @@ _site/
 data/providers/*.json
 node_modules/
 vendor/
+venv/
 **/.DS_Store
