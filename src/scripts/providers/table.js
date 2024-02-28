@@ -2,70 +2,122 @@ $(function () {
   let table;
 
   const buildDataTable = (data, dictionary) => {
-    const col = (dict) =>
-      Object.assign(
-        {},
-        {
-          title: dict.label,
-          headerTooltip: dict.definition,
-          field: dict.column,
-        }
-      );
+    const col = (dict) => ({
+      title: dict.label,
+      headerTooltip: dict.definition,
+      field: dict.column,
+    });
 
-    const textCol = (dict) =>
-      Object.assign({}, col(dict), {
-        formatter: "textarea",
-      });
+    const textCol = (dict) => ({
+      ...col(dict),
+      formatter: "textarea",
+    });
 
-    const numCol = (dict) =>
-      Object.assign({}, col(dict), {
-        sorter: "number",
-        sorterParams: {
-          alignEmptyValues: "bottom",
-        },
-        formatter: "money",
-        formatterParams: {
-          precision: false,
-        },
-      });
+    const numCol = (dict) => ({
+      ...col(dict),
+      sorter: "number",
+      sorterParams: {
+        alignEmptyValues: "bottom",
+      },
+      formatter: "money",
+      formatterParams: {
+        precision: false,
+      },
+    });
 
-    const moneyCol = (dict) =>
-      Object.assign({}, numCol(dict), {
-        formatterParams: {
-          symbol: "$",
-        },
-      });
+    const moneyCol = (dict) => ({
+      ...numCol(dict),
+      formatterParams: {
+        symbol: "$",
+      }
+    });
 
-    const urlCol = (dict, label, textKey) =>
-      Object.assign({}, col(dict), {
+    const urlCol = (dict, label, textKey) => ({
+      ...col(dict),
+      formatter: "link",
+      title: label || dict.label,
+      formatterParams: {
+        labelField: textKey || dict.column,
+        target: "_blank",
+      }
+    });
+
+    const columnOverrides = {
+      agency_name: {
+        field: 'agency_website',
         formatter: "link",
-        title: label || dict.label,
         formatterParams: {
-          labelField: textKey || dict.column,
+          labelField: "agency_name",
           target: "_blank",
         },
-      });
+        frozen: true,
+        sorter: (a, b, aRow, bRow) => {
+          a = String(aRow.getData().agency_name);
+          b = String(bRow.getData().agency_name);
+
+          return a.localeCompare(b, "en");
+        },
+        width: '50px',
+      },
+      agency_website: {
+        visible: false,
+      },
+      gtfs_schedule_uris: {
+        title: "GTFS Schedule URLs",
+        formatter: (cell) => {
+          const data = cell.getValue();
+
+          if (!data) {
+            return "";
+          }
+
+          return data
+            .split(";")
+            .map((url) => `<a href="${url}" target="_blank">${url}</a>`)
+            .join("<br />");
+        },
+      },
+    };
 
     const provider = dictionary.find((dict) => dict.column === "provider");
     const cols = dictionary.map((dict) => {
+      let colDef;
+
       switch (dict.type) {
         case "bool":
         case "string":
         case "text":
-          return textCol(dict);
+          colDef = textCol(dict);
+          break;
+
         case "float64":
         case "integer":
         case "int64":
-          return numCol(dict);
+          colDef = numCol(dict);
+          break;
+
         case "money":
-          return moneyCol(dict);
+          colDef = moneyCol(dict);
+          break;
+
         case "url":
-          return dict.column === "url"
+          colDef = dict.column === "url"
             ? urlCol(dict, provider.label, provider.column)
             : urlCol(dict);
+          break;
+
         default:
-          console.log(`Unknown column type: ${dict}`);
+          console.error(`Unknown column type: ${dict}`);
       }
+
+      if (columnOverrides[dict.column]) {
+        colDef = {
+          ...colDef,
+          ...columnOverrides[dict.column],
+        };
+      }
+
+      return colDef;
     });
 
     // create the tabulator data table
@@ -82,7 +134,7 @@ $(function () {
     return [data, dictionary];
   };
 
-  const refresh = (county) => {
+  const filterTableBy = (county) => {
     if (county && county !== "") {
       // filter where service_county column contains county
       table.setFilter("counties_served", "like", county);
@@ -112,7 +164,7 @@ $(function () {
   `);
   const clearCountyFilter = () => {
     $pill.detach();
-    refresh();
+    filterTableBy();
   };
 
   $pill.find(".pill__close").on("click", clearCountyFilter);
@@ -120,7 +172,7 @@ $(function () {
   const handleCountyClick = (e) => {
     if (e && e.detail) {
       const data = e.detail;
-      refresh(data.properties.county);
+      filterTableBy(data.properties.county);
 
       $pill.find(".county").text(data.properties.county);
       $pill.find(".count").text(data.properties.num_providers);
@@ -133,10 +185,12 @@ $(function () {
 
   document.addEventListener("mapClick", handleCountyClick);
 
-  const dataFiles = [data_table.data_file, data_table.dict_file];
-  const jobs = dataFiles.map((dataFile) => $.get(dataFile, (data) => data));
+  const jobs = [
+    data_table.data_file,
+    data_table.dict_file,
+  ].map((dataFile) => $.get(dataFile, (data) => data));
 
   Promise.all(jobs)
     .then(([data, dictionary]) => buildDataTable(data, dictionary))
-    .then(() => refresh());
+    .then(() => filterTableBy());
 });
