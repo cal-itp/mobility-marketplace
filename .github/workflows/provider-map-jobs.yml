@@ -37,7 +37,7 @@ jobs:
           #   https://issuetracker.google.com/issues/315160970
           sed -i -n -e '/agency_name/,$p' src/metadata/providers/providers.csv
 
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
