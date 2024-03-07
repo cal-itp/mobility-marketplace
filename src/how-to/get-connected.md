@@ -76,7 +76,7 @@ A single router could provide connectivity to multiple devices. The router’s S
 
 ### How do I get started?
 
-We welcome you to browse this guide to understand the process and your next steps. Data plans can be found on our [contracts](/contracts/view?contracts-filter-product=Data Plans) page. If you are interested in purchasing the FirstNet data plans, self-serve instructions can be found [here](https://resources.calitp.org/mobility-marketplace/FirstNet-Self-Service-Instructions.pdf){:target="_blank"}.
+We welcome you to browse this guide to understand the process and your next steps. Data plans can be found on our [contracts](/contracts/view?contracts-filter-product=Data Plans) page. If you are interested in purchasing the FirstNet data plans, please review our [Self Service Instructions](https://resources.calitp.org/mobility-marketplace/FirstNet-Self-Service-Instructions.pdf){:target="_blank"}.
 
 Should you have additional questions or want support in implementing data plans for your fleet, we ask that you complete our contact form for Cal-ITP support.
 
