@@ -21,7 +21,7 @@ for record in lookup_records:
   except KeyError:
     print("No county found for city: ", city)
 
-df.to_csv(providers_file)
+df.to_csv(providers_file, index=False)
 
 # Do a group by for the counties served
 county_counts = df['counties_served'].str.split(';') \
