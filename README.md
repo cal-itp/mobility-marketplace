@@ -44,6 +44,25 @@ Auto rebuild/reload will be active and will watch the site files for changes.
 
 \* Try using <kbd>cmd</kbd> and clicking on the server address from the Terminal
 
+### Debugging the Transit Providers CSV file
+
+The automated process to fetch providers from the data warehouse consists of two parts. The first part is downloading the data as a CSV file from the warehouse. The second part is preparing the data with some Python.
+
+```bash
+# Download the data
+bash .github/resources/download_csv.sh
+
+# (Optional) Don't pollute your global Python install
+virtualenv .github/resources/venv
+source .github/resources/venv/bin/activate
+
+# Install Python dependencies
+pip install -r .github/resources/requirements.txt
+
+# Run the Python script with all the preparing logic
+python .github/resources/process_providers.py
+```
+
 ## Documents
 
 This site uses Google Cloud to manage static files, like the PDFs on the How To pages.
