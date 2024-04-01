@@ -52,6 +52,10 @@ The MSAs allow any local government entity that operates public transportation s
 
 Projects resulting from these MSAs may be funded through grants from the Federal Transit Administration (FTA), and/or the State of California, California Department of Transportation (Caltrans), and other sources of local and state public funding. Check with your funding agencies.
 
+#### Non-California Agencies
+
+Not in California? You can still leverage Cal-ITP by accessing our MSAs. Although we cannot provide an account manager to out of state agencies, we can answer technical questions and provide resources to get you started. Follow the guidelines described below and incorporate the MSA into your contract. The contracts or MSAs listed on this site are examples of a “state purchasing schedule.” These schedules are agreements between a state or related entity and vendor(s) to provide goods or services at agreed-upon prices. Fundamentally, state purchasing schedules are designed to accommodate other parties that may enter into and benefit from the agreements in the future. You will sign a contract with the vendors directly. However, the terms and conditions (and pricing!) from the MSA are incorporated by reference in the contract that you will sign. You can use a California STD-213 or another DGS approved user agreement or equivalent.
+
 ### GTFS Compliance
 
 [General Transit Feed Specification (GTFS)](https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines){:target="_blank"} is the global standard for providing up-to-date transit information. We recommend creating an action plan for becoming GTFS-ready before going contactless, as the contactless payment hardware and software services vendors you select can help you use this data for reporting purposes plus help your customers see your real-time vehicle location and fare information on journey-planning smartphone maps and apps.
