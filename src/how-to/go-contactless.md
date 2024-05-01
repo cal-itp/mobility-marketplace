@@ -68,6 +68,8 @@ You’ll need to ensure internet connectivity on your fleet to properly enable c
 
 When you’re ready to start creating cost estimates for purchasing contactless payment hardware and software services, this [MSA Cost Estimation Tool (an Excel Workbook)](https://resources.calitp.org/mobility-marketplace/MSA-Cost-Estimation-Tool.xlsx){:target="_blank"} will help transit agency staff to a) compare MSA-awarded vendors’ maximum prices and develop ballpark estimates for budgeting purposes (and board presentations), and b) make scoping decisions as you prepare to email vendors during the vendor engagement phase.
 
+As stated, the prices in this workbook are maximums. Transit agencies are strongly encouraged to reach out to vendors directly for tailored pricing. Prices may be reduced and/or fee categories waived, at vendors' sole discretion.
+
 ## Purchase
 
 ### Assess vendors
