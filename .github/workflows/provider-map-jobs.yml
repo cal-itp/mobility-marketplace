@@ -15,7 +15,7 @@ jobs:
       - name: Authenticate with Google
         uses: google-github-actions/auth@v2
         with:
-          credentials_json: '${{ secrets.GCP_SA_KEY }}'
+          credentials_json: "${{ secrets.GCP_SA_KEY }}"
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
@@ -37,12 +37,15 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.10"
 
       - name: Install dependencies, process providers, and update GeoJSON
         run: |
           pip install -r .github/resources/requirements.txt
           python .github/resources/process_providers.py
+
+      - name: Run pre-commit formatters
+        uses: pre-commit/action@v3.0.1
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
