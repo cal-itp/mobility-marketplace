@@ -44,7 +44,10 @@ jobs:
           pip install -r .github/resources/requirements.txt
           python .github/resources/process_providers.py
 
+      # This step automatically formats code but will fail if it makes changes, so
+      # we use `continue-on-error: true` to ensure the workflow continues.
       - name: Run pre-commit formatters
+        continue-on-error: true
         uses: pre-commit/action@v3.0.1
 
       - name: Create Pull Request
