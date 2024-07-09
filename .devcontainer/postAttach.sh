@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -eux
 
+git config --global --add safe.directory /user/src/mobimart
+
 # initialize hook environments
 pre-commit install --install-hooks --overwrite
 
