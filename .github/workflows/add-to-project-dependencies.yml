@@ -1,0 +1,24 @@
+name: "Project triage: Depedencies"
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  add-to-project-dependencies:
+    runs-on: ubuntu-latest
+    # see https://docs.github.com/en/code-security/dependabot/working-with-dependabot/automating-dependabot-with-github-actions#responding-to-events
+    if: github.actor == 'dependabot[bot]' || github.actor == 'pre-commit-ci[bot]'
+    steps:
+      - uses: actions/add-to-project@main
+        with:
+          project-url: https://github.com/orgs/cal-itp/projects/${{ secrets.GH_PROJECT }}
+          github-token: ${{ secrets.GH_PROJECTS_TOKEN }}
+
+      - uses: EndBug/project-fields@v2
+        with:
+          operation: set
+          fields: Effort,Status
+          values: 1,In review
+          project_url: https://github.com/orgs/cal-itp/projects/${{ secrets.GH_PROJECT }}
+          github_token: ${{ secrets.GH_PROJECTS_TOKEN }}
