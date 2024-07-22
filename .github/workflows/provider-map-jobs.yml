@@ -57,6 +57,7 @@ jobs:
           body: |
             It's that time again! The warehouse has delivered new data for us to use. This is an automatic pull request created by the `provider-map-jobs.yml` workflow; it is triggered via a cron that runs every Sunday at midnight UTC.
           commit-message: "chore: auto-update provider data from warehouse"
+          author: "Cal-ITP Bot <bot@calitp.org>"
           add-paths: |
             src/metadata/providers/providers.csv
             src/metadata/providers/counties.geojson
