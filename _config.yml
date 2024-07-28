@@ -55,3 +55,5 @@ title: California Mobility Marketplace
 theme_color: "#ffffff"
 theme_color_background: "#ffffff"
 url: "https://www.camobilitymarketplace.org" # the base hostname & protocol for your site, e.g. http://example.com
+plugins:
+  - jekyll-sitemap
