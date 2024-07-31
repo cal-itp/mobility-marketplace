@@ -1,6 +1,11 @@
 ---
 layout: skinny
+
 title: About us
+description: >
+  Managed by Cal-ITP, this website seeks to make the transition to contactless
+  fare collection and GTFS Realtime compliance as easy and cost-effective as
+  possible.
 ---
 Welcome to the California Mobility Marketplace!
 

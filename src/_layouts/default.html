@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {%- capture title -%} {% assign this_title = page.title | default: post.title %} {% if this_title %}{{ this_title }} | {%
-    endif %}{{ site.title }} {%- endcapture %}
     <meta charset="utf-8" />
-    <title>{{ title }}</title>
-    <meta name="description" content="{{site.description}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="{{title}}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{site.url}}/" />
-    <meta property="og:image" content="{{site.url}}/uploads/open-graph.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="{{site.domain}}" />
-    <meta property="twitter:url" content="{{site.url}}/" />
-    <meta name="twitter:title" content="{{title}}" />
-    <meta name="twitter:description" content="{{site.description}}" />
-    <meta name="twitter:image" content="{{site.url}}/uploads/open-graph.png" />
+    {%- capture title -%}
+      {% assign this_title = page.title | default: post.title %}
+      {% if this_title %}{{ this_title }} | {% endif %}{{ site.title }}
+    {%- endcapture %}
+    {% assign description = page.description | default: site.description %}
+
+    {% seo title=title description=description %}
 
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="apple-touch-icon" href="/uploads/icon.png" />
@@ -34,7 +27,6 @@
 
     <link href="https://fonts.googleapis.com/css2?{{site.fonts}}&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
     <meta name="theme-color" content="{{site.theme_color}}" />
   </head>
