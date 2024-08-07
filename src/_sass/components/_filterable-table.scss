@@ -1,11 +1,12 @@
-.filterable-table-container {}
+.filterable-table-container {
+}
 
 .filterable-table__pills {
   width: 100%;
 
   .pill {
     margin-bottom: map-get($spacers, 3);
-    margin-left: map-get($spacers, 2);
+    margin-left: 0.5rem;
 
     &:first-child {
       margin-left: 0;
