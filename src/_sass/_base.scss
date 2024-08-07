@@ -15,7 +15,7 @@ a:focus {
 }
 
 blockquote {
-  background-color: $gray-light;
+  background-color: var(--gray-light);
   border-radius: $border-radius-lg;
   border-width: 0;
   padding: 2rem;

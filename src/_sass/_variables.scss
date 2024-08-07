@@ -3,19 +3,13 @@
 $headings-font-family: "Raleway", sans-serif;
 $text-color: #323a45;
 $headings-color: $text-color;
-$code-color: $text-color;
 
 // Colors
 
-$blue-lightest: #f5f9fb;
-$gray-light: #d1dee3;
 $gray-lightest: #f3f3f4;
 $hover-color: #035376;
 
 // New colors from 2023 / Figma
-
-$primary-black: #212121;
-$dark-blue: #225173;
 
 $gray-1: #eeeeee;
 $gray-3: #8f9399;
@@ -29,7 +23,7 @@ $focus: #99b5fa;
 $backgroundColor: #fff;
 $headerBackgroundColor: $backgroundColor;
 $rowBorderColor: #cccccc;
-$rowHoverBackground: $blue-lightest;
+$rowHoverBackground: #f5f9fb;
 $table-border-color: $rowBorderColor;
 
 // Down arrow icon used in selects and table sorts
@@ -41,29 +35,32 @@ $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" vie
 
 :root {
   --bs-primary: #046b99;
-  --bs-body-color: #{$primary-black};
-  --bs-link-color: #{$primary};
+  --bs-body-color: #212121;
+  --bs-link-color: #046b99;
   --bs-body-font-family: "Poppins", sans-serif;
-  --bs-link-hover-color: #{$dark-blue};
+  --bs-link-hover-color: #225173;
+  --gray-light: #d1dee3;
+  --cal-itp-dark-blue: #225173;
+  --cal-itp-background-blue: #f5f9fb;
 }
 
 .btn-primary {
-  --bs-btn-bg: #{$primary};
-  --bs-btn-border-color: #{$primary};
-  --bs-btn-hover-bg: #{$dark-blue};
+  --bs-btn-bg: #046b99;
+  --bs-btn-border-color: #046b99;
+  --bs-btn-hover-bg: #225173;
   --bs-btn-hover-color: #ffffff;
-  --bs-btn-hover-border-color: #{$dark-blue};
-  --bs-btn-active-bg: #{$dark-blue};
-  --bs-btn-active-border-color: #{$dark-blue};
+  --bs-btn-hover-border-color: #225173;
+  --bs-btn-active-bg: #225173;
+  --bs-btn-active-border-color: #225173;
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #{$primary};
-  --bs-btn-border-color: #{$primary};
+  --bs-btn-color: #046b99;
+  --bs-btn-border-color: #046b99;
 }
 
 .dropdown-menu {
   --bs-dropdown-border-radius: 0;
   --bs-dropdown-link-hover-bg: #f7f8fa;
-  --bs-dropdown-link-active-bg: #{$gray-1};
+  --bs-dropdown-link-active-bg: #eeeeee;
 }

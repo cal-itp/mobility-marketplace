@@ -2,15 +2,11 @@
 $mm-dark-tan: rgb(246, 243, 237);
 
 .bg-blue-lightest {
-  background-color: $blue-lightest;
+  background-color: var(--cal-itp-background-blue);
 }
 
 .bg-dark-tan {
   background-color: $mm-dark-tan;
-}
-
-.bg-gray-light {
-  background-color: $gray-light;
 }
 
 .bg-gray-lightest {
@@ -18,11 +14,11 @@ $mm-dark-tan: rgb(246, 243, 237);
 }
 
 .bg-dark-blue {
-  background-color: $dark-blue;
+  background-color: var(--cal-itp-dark-blue);
 }
 
 .bg-blue-lightest {
-  background-color: $blue-lightest;
+  background-color: var(--cal-itp-background-blue);
 }
 
 // Text
@@ -55,10 +51,10 @@ $mm-dark-tan: rgb(246, 243, 237);
 
 .btn.btn-dark-blue-inverted {
   background-color: #ffffff;
-  color: $dark-blue;
+  color: var(--cal-itp-dark-blue);
   &:hover {
     background-color: $gray-1;
-    color: $dark-blue;
+    color: var(--cal-itp-dark-blue);
   }
 }
 
@@ -110,12 +106,12 @@ $mm-dark-tan: rgb(246, 243, 237);
 // Tables
 
 .table-dark-blue {
-  background-color: $dark-blue !important;
+  background-color: var(--cal-itp-dark-blue) !important;
   box-shadow: none !important;
 }
 
 .border-dark-blue {
-  border-color: $dark-blue !important;
+  border-color: var(--cal-itp-dark-blue) !important;
 }
 
 .table-sticky-column {
