@@ -1,21 +1,12 @@
 .btn {
   border-radius: calc(5rem / 16);
   font-weight: bold;
-  padding: 0.4375rem 0.75rem; // Button height of 40px
+  padding: 0.4375rem 0.75rem;
   width: 100%;
   border-width: 2px;
-  @include media-breakpoint-up(md) {
-    width: initial;
-  }
 }
-
-.btn-outline-primary {
-  background-color: transparent !important;
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: $hover-color;
-    border-color: $hover-color;
+@media (min-width: breakpoint-min(md, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px))) {
+  .btn {
+    width: initial;
   }
 }
