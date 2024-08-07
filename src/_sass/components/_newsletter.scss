@@ -47,8 +47,8 @@
   .ctct-form-button,
   div.ctct-form-embed form.ctct-form-custom button.ctct-form-button {
     font-weight: 700;
-    background-color: $primary;
-    border-color: $primary;
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
     padding: calc(11rem / 16);
     &:hover {
       color: #fff;

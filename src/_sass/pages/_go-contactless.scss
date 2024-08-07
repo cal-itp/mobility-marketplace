@@ -114,8 +114,8 @@ ol.timeline {
     font-weight: 600;
     float: left;
     width: calc(48rem / 16);
-    color: $primary;
-    border: calc(4rem / 16) solid $primary;
+    color: var(--bs-primary);
+    border: calc(4rem / 16) solid var(--bs-primary);
     border-radius: 50%;
     height: calc(48rem / 16);
     font-size: calc(24rem / 16);
@@ -130,7 +130,7 @@ ol.timeline {
   .timeline-item {
     margin-left: calc(24rem / 16);
     padding-left: calc(36rem / 16);
-    border-left: 4px solid $primary;
+    border-left: 4px solid var(--bs-primary);
     padding-bottom: calc(50rem / 16);
   }
   li:last-of-type .timeline-item {

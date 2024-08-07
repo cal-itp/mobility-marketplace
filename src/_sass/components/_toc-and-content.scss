@@ -81,7 +81,7 @@
       .toggle-menu {
         width: 100%;
         background: white;
-        color: $primary;
+        color: var(--bs-primary);
         border-top: 1px solid #d7d7d7;
         border-left: none;
         border-right: none;
@@ -97,7 +97,7 @@
         &::after {
           position: absolute;
           content: "";
-          border: solid $primary;
+          border: solid var(--bs-primary);
           border-width: 0 3px 3px 0;
           display: inline-block;
           padding: 3px;
@@ -142,7 +142,7 @@
 
   & > li > ul {
     li a {
-      color: $primary;
+      color: var(--bs-primary);
       white-space: break-spaces;
     }
   }
@@ -161,7 +161,7 @@
     display: inline-block;
     padding-bottom: 12px;
     padding-top: 12px;
-    width: 100%
+    width: 100%;
   }
 
   ul .dropdown-item {
