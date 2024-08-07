@@ -46,7 +46,7 @@
       &:hover {
         background-color: $blue-lightest;
         .nav-link {
-          color: $primary !important;
+          color: var(--bs-primary);
         }
       }
       .nav-link {
@@ -95,7 +95,7 @@
       border-radius: 0;
       &[aria-current="page"] {
         background-color: $blue-lightest;
-        color: $primary !important;
+        color: var(--bs-primary) !important;
       }
     }
   }
