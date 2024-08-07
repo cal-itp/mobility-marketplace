@@ -1,6 +1,5 @@
 // Variables
 
-$headings-font-family: "Raleway", sans-serif;
 $text-color: #323a45;
 $headings-color: $text-color;
 
@@ -39,6 +38,7 @@ $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" vie
   --bs-link-color: #046b99;
   --bs-body-font-family: "Poppins", sans-serif;
   --bs-link-hover-color: #225173;
+  --headings-font-family: "Raleway", sans-serif;
   --gray-light: #d1dee3;
   --cal-itp-dark-blue: #225173;
   --cal-itp-background-blue: #f5f9fb;
@@ -57,6 +57,11 @@ $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" vie
 .btn-outline-primary {
   --bs-btn-color: #046b99;
   --bs-btn-border-color: #046b99;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-color: #035376;
+  --bs-btn-hover-border-color: #035376;
+  --bs-btn-active-bg: #035376;
+  --bs-btn-active-border-color: #035376;
 }
 
 .dropdown-menu {

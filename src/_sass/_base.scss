@@ -71,7 +71,7 @@ h5 {
 h1,
 h2,
 h3 {
-  font-family: $headings-font-family;
+  font-family: var(--headings-font-family);
 }
 
 h4,
