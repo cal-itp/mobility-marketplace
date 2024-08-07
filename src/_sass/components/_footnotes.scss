@@ -1,38 +1,30 @@
 a.footnote-link {
   color: currentColor;
   display: inline-flex;
-
-  &::before {
-    content: '[';
-  }
-
-  &::after {
-    content: ']';
-  }
 }
-
+a.footnote-link::before {
+  content: "[";
+}
+a.footnote-link::after {
+  content: "]";
+}
 .footnote-listing {
   font-size: 0.85rem;
   list-style: none;
-
-  li:target {
-    background-color: yellow;
-
-    // Stupid overrides for some very invasive CA Gov styles
-    &::before {
-      height: auto;
-      margin: 0;
-    }
-  }
-
-  li {
-    position: relative;
-  }
-
-  span.footnote-number {
-    position: absolute;
-    right: 100%;
-    white-space: nowrap;
-    margin-right: .4em;
-  }
+}
+.footnote-listing li:target {
+  background-color: yellow;
+}
+.footnote-listing li:target::before {
+  height: auto;
+  margin: 0;
+}
+.footnote-listing li {
+  position: relative;
+}
+.footnote-listing span.footnote-number {
+  position: absolute;
+  right: 100%;
+  white-space: nowrap;
+  margin-right: 0.4em;
 }
