@@ -2,8 +2,8 @@
   background-color: rgba(#ebf8fc, 50%);
   border-radius: $border-radius-lg;
   display: flex;
-  margin-bottom: map-get($spacers, 4);
-  padding: map-get($spacers, 4);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -11,7 +11,7 @@
 }
 
 .contactless-technology__icon {
-  margin-right: map-get($spacers, 4);
+  margin-right: 1.5rem;
 }
 
 .contactless-technology__header {
