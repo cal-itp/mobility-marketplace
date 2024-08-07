@@ -1,15 +1,11 @@
-.main-content a {
-  &:not(.btn) {
-    font-weight: bold;
-
-    &,
-    &:hover {
-      background: 0;
-    }
-  }
-
-  &.no-default-style {
-    border-bottom: 0;
-    font-weight: normal;
-  }
+.main-content a:not(.btn) {
+  font-weight: bold;
+}
+.main-content a:not(.btn),
+.main-content a:not(.btn):hover {
+  background: 0;
+}
+.main-content a.no-default-style {
+  border-bottom: 0;
+  font-weight: normal;
 }
