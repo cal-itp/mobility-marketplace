@@ -24,7 +24,7 @@ navigation:
     - name: Contracts
       url: /contracts/
     - name: For vendors
-      url: /for-vendors/
+      url: /for-vendors
     - name: About
       url: /about
     - name: Contact us
