@@ -1,6 +1,13 @@
 ---
 layout: sidebar-toc
+
 title: "How To: Get Connected"
+description: >
+  Enabling contactless payments makes things easy for the rider but as a transit
+  provider, there is some setup required. The California Department of General
+  Services (DGS) has taken care of all the negotiations with service providers
+  and these contracts are now available for providers to use.
+
 class_name: no-footer how-to-go-contactless
 content_class: go-contactless-section go-contactless--how-to
 show_newsletter: false
