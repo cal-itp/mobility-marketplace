@@ -1,7 +1,12 @@
 ---
 layout: skinny
+
 title: Glossary of Key Terms
+description: >
+  Thorough list of terminology and definitions used through the Mobility
+  Marketplace website.
 ---
+
 **Americans with Disabilities Act (ADA)**: 1990 federal legislation that prohibits discrimination based on disability status. Title II requires providers of fixed-route transit to offer paratransit services for people with disabilities.  <br/><br/>
 
 **Arrival predictions**: Real-time transit vehicle locations that estimate arrival times either through platform monitors or web-based applications. <br/><br/>
