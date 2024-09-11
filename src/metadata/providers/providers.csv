@@ -2,7 +2,7 @@ agency_name,ntd_id,hq_city,hq_county,counties_served,agency_website,caltrans_dis
 San Francisco Bay Area Rapid Transit District,90003,Oakland,San Francisco,Alameda,http://www.bart.gov/,4.0,Bay Area / Oakland,True,True,5307;5309;5337,578.0,580.0,https://api.511.org/transit/datafeeds?operator_id=BA;https://api.511.org/transit/datafeeds?operator_id=RG;https://www.bart.gov/dev/schedules/google_transit.zip
 Golden Empire Transit District,90004,Bakersfield,Kern,Kern,http://www.getbus.org/,6.0,Fresno / Bakersfield,True,True,5307,91.0,91.0,http://eta.getbus.org/rtt/public/utility/gtfs.aspx
 Santa Cruz Metropolitan Transit District,90006,Santa Cruz,Santa Cruz,Santa Clara;Santa Cruz,http://www.scmtd.com/,5.0,San Luis Obispo / Santa Barbara,True,True,5307;5309;5311;5339,86.0,86.0,https://scmtd.com/google_transit/google_transit.zip
-City of Santa Monica,90008,Santa Monica,Los Angeles,Los Angeles,http://www.bigbluebus.com/,7.0,Los Angeles,True,True,,124.0,143.0,
+City of Santa Monica,90008,Santa Monica,Los Angeles,Los Angeles,http://www.bigbluebus.com/,7.0,Los Angeles,True,True,5307;5309,124.0,143.0,http://gtfs.bigbluebus.com/current.zip;https://gtfs.bigbluebus.com/current_swiftly.zip
 San Mateo County Transit District,90009,San Carlos,San Mateo,San Mateo,http://www.samtrans.com/,4.0,Bay Area / Oakland,True,True,5303;5307;5311;5317,157.0,312.0,https://api.511.org/transit/datafeeds?operator_id=RG;https://api.511.org/transit/datafeeds?operator_id=SM;https://www.samtrans.com/Assets/GTFS/samtrans/ST-GTFS.zip?v=1114
 City of Torrance,90010,Torrance,Los Angeles,Los Angeles,http://Transit.TorranceCA.Gov/,7.0,Los Angeles,True,True,5307,38.0,74.0,https://transit.torranceca.gov/home/showdocument?id=16673
 San Joaquin Regional Transit District,90012,Stockton,San Joaquin,San Joaquin,http://www.sanjoaquinrtd.com/,10.0,Stockton,True,True,5307;5310;5311;5339,75.0,115.0,http://sanjoaquinrtd.com/RTD-GTFS/RTD-GTFS.zip;https://gtfs.calitp.org/production/SanJoaquinRTDDialARideandVanGoFlex.zip
@@ -23,7 +23,7 @@ North County Transit District,90030,Oceanside,San Diego,San Diego,http://www.gon
 Riverside Transit Agency,90031,Riverside,Riverside,Riverside,http://www.riversidetransit.com/,8.0,San Bernardino / Riverside,True,True,5307;5309;5310;5311;5339,87.0,186.0,https://www.riversidetransit.com/google_transit.zip
 Gold Coast Transit District,90035,Oxnard,Ventura,Ventura,http://www.goldcoasttransit.org/,7.0,Los Angeles,True,True,5307;5310;5339,49.0,71.0,https://govcbus.com/gtfs;https://www.goldcoasttransit.org/images/GTFS/GTFS.zip
 Orange County Transportation Authority,90036,Orange,Orange,Orange,http://www.octa.net/,12.0,Orange County,True,True,5307;5309;5310;5316;5339,214.0,739.0,https://octa.net/current/google_transit.zip
-City of Culver City,90039,Culver City,Los Angeles,Los Angeles,http://www.culvercitybus.org/,7.0,Los Angeles,True,True,,39.0,39.0,
+City of Culver City,90039,Culver City,Los Angeles,Los Angeles,http://www.culvercitybus.org/,7.0,Los Angeles,True,True,5307,39.0,39.0,https://www.culvercity.org/files/assets/public/documents/information-technology/maps/gtfsexport.zip
 City of Montebello,90041,Montebello,Los Angeles,Los Angeles,http://www.ridembl.com/,7.0,Los Angeles,True,True,5307,42.0,87.0,https://mbl.rideralerts.com/infopoint/gtfs-zip.ashx
 City of Gardena,90042,Gardena,Los Angeles,Los Angeles,www.ridegtrans.com,7.0,Los Angeles,True,True,5307,30.0,30.0,https://ridegtrans.com/gtfs.zip
 City of Commerce,90043,Commerce,Los Angeles,Los Angeles,https://www.ci.commerce.ca.us/city-hall/transportation,7.0,Los Angeles,True,True,5307,14.0,14.0,https://citycommbus.com/gtfs
@@ -97,7 +97,7 @@ City of Lincoln,90235,Lincoln,Placer,Placer,https://www.placer.ca.gov/1768/Place
 City of Delano,90238,Delano,Kern,Kern,http://www.cityofdelano.org/92/Delano-Area-Rapid-Transit-DART,6.0,Fresno / Bakersfield,True,True,5307;5339,10.0,10.0,https://data.trilliumtransit.com/gtfs/delano-ca-us/delano-ca-us.zip
 Easy Lift Transportation,90243,Goleta,Santa Barbara,Santa Barbara,http://www.easylift.org/,5.0,San Luis Obispo / Santa Barbara,False,False,5310,28.0,28.0,
 City of Agoura Hills,90246,Agoura Hills,Los Angeles,Los Angeles,https://www.agourahillscity.org/our-city/residents/transportation-services/alternative-transportation,7.0,Los Angeles,True,True,,,3.0,
-City of Alhambra,90247,Alhambra,Los Angeles,Los Angeles,https://www.cityofalhambra.org/293/Alhambra-Community-Transit-ACT,7.0,Los Angeles,True,True,,,15.0,https://www.cityofalhambra.org/DocumentCenter/View/4979/alhambra-ca-us
+City of Alhambra,90247,Alhambra,Los Angeles,Los Angeles,https://www.cityofalhambra.org/293/Alhambra-Community-Transit-ACT,7.0,Los Angeles,True,True,,,15.0,https://www.cityofalhambra.org/DocumentCenter/View/5767/AlhambraGTFS-2024-07-08-2
 City of Avalon,90249,Avalon,Los Angeles,Los Angeles,www.avalontransit.org,7.0,Los Angeles,True,False,,,4.0,
 City of Azusa,90250,Azusa,Los Angeles,Los Angeles,https://azusaca.gov/329/Azusa-Transit,7.0,Los Angeles,True,True,,6.0,6.0,
 City of Baldwin Park,90251,Baldwin Park,Los Angeles,Los Angeles,https://www.baldwinpark.com/public-works/public-transit,7.0,Los Angeles,True,True,,,8.0,https://baldwinpark.tectransit.com/api/public/fixedRoute/gtfs
@@ -108,7 +108,7 @@ City of Beverly Hills,90255,Beverly Hills,Los Angeles,Los Angeles,http://www.bev
 City of Burbank,90256,Burbank,Los Angeles,Los Angeles,www.burbankbus.org,7.0,Los Angeles,True,True,,5.0,17.0,https://rideburbankbus.com/gtfs
 City of Calabasas,90257,Calabasas,Los Angeles,Los Angeles,www.cityofcalabasas.com,7.0,Los Angeles,True,True,,,15.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/calabasas-ca-us/calabasas-ca-us.zip
 City of Carson,90258,Carson,Los Angeles,Los Angeles,http://ci.carson.ca.us/CommunityServices/Transportation.aspx,7.0,Los Angeles,True,False,,4.0,19.0,
-City of Cerritos,90259,Cerritos,Los Angeles,Los Angeles,www.cerritos.us,7.0,Los Angeles,True,True,,,16.0,http://www.cerritos.us/_google/latest/google_transit.zip;https://passio3.com/cerritos/passioTransit/gtfs/google_transit.zip
+City of Cerritos,90259,Cerritos,Los Angeles,Los Angeles,www.cerritos.us,7.0,Los Angeles,True,True,,,16.0,https://passio3.com/cerritos/passioTransit/gtfs/google_transit.zip;https://www.cerritos.gov/media/v4lhplsz/gtfs-date-zip-file.zip
 City of Compton  ,90260,Compton,Los Angeles,Los Angeles,https://www.comptoncity.org/our-city/visitors/transportation,7.0,Los Angeles,True,True,,2.0,7.0,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/compton-ca-us/compton-ca-us.zip
 City of Covina,90261,Covina,Los Angeles,Los Angeles,https://covinaca.gov/publicworks/page/covina-transit,7.0,Los Angeles,True,False,,,5.0,
 City of Cudahy,90262,Cudahy,Los Angeles,Los Angeles,http://www.cityofcudahy.com,7.0,Los Angeles,True,True,,,6.0,https://www.cityofcudahy.com/DocumentCenter/View/2041
