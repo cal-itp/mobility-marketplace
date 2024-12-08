@@ -8787,7 +8787,7 @@
       "properties": {
         "id": 8,
         "county": "Del Norte",
-        "num_providers": 3
+        "num_providers": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -28180,7 +28180,7 @@
       "properties": {
         "id": 15,
         "county": "Kern",
-        "num_providers": 11
+        "num_providers": 10
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -36092,7 +36092,7 @@
       "properties": {
         "id": 34,
         "county": "Sacramento",
-        "num_providers": 4
+        "num_providers": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -43067,7 +43067,7 @@
       "properties": {
         "id": 37,
         "county": "San Diego",
-        "num_providers": 3
+        "num_providers": 9
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -46439,7 +46439,7 @@
       "properties": {
         "id": 33,
         "county": "Riverside",
-        "num_providers": 7
+        "num_providers": 6
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58532,7 +58532,7 @@
       "properties": {
         "id": 50,
         "county": "Stanislaus",
-        "num_providers": 2
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62787,7 +62787,7 @@
       "properties": {
         "id": 54,
         "county": "Tulare",
-        "num_providers": 4
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
