@@ -72,7 +72,7 @@ City of Lodi,90175,Lodi,San Joaquin,San Joaquin,www.lodi.gov/transit,10.0,Stockt
 Altamont Corridor Express,90182,Stockton,San Joaquin,San Joaquin,http://www.acerail.com/,10.0,Stockton,True,True,5307;5309;5337,,27,https://api.511.org/transit/datafeeds?operator_id=CE;https://api.511.org/transit/datafeeds?operator_id=RG
 City of Atascadero,90194,Atascadero,San Luis Obispo,San Luis Obispo,https://www.atascadero.org/service/publictransit,5.0,San Luis Obispo / Santa Barbara,True,True,,,2,
 County of Placer,90196,Auburn,Placer,Placer,https://www.placercountytransit.com,3.0,Marysville / Sacramento,True,True,5307;5311;5339,21.0,47,https://data.trilliumtransit.com/gtfs/placercounty-ca-us/placercounty-ca-us.zip;https://gtfs.calitp.org/production/PlacerCountyDialARideFlex.zip
-City of Tracy,90197,Tracy,San Joaquin,San Joaquin,http://www.ridetracer.com,10.0,Stockton,True,True,5307;5339,,13,https://gtfs.calitp.org/production/TracyTRACERPlusandParatransitFlex.zip;https://www.cityoftracy.org/home/showpublisheddocument/16626/638342536313270000
+City of Tracy,90197,Tracy,San Joaquin,San Joaquin,http://www.ridetracer.com,10.0,Stockton,True,True,5307;5339,,13,https://gtfs.calitp.org/production/TracyTRACERPlusandParatransitFlex.zip
 City of Porterville,90198,Porterville,Tulare,Tulare,https://www.ci.porterville.ca.us/departments/porterville_transit/index.php,6.0,Fresno / Bakersfield,True,False,,,0,
 City of Madera,90199,Madera,Madera,Madera,https://www.madera.gov/home/departments/transit/,6.0,Fresno / Bakersfield,True,True,5307,,17,https://data.trilliumtransit.com/gtfs/cityofmadera-ca-us/cityofmadera-ca-us.zip
 Kings County Area Public Transit Agency,90200,Hanford,Kings,Kings,http://www.kartbus.org,6.0,Fresno / Bakersfield,True,True,5307;5311;5339,,57,https://kart.connexionz.net/rtt/public/utility/gtfs.aspx
@@ -141,7 +141,7 @@ City of Santa Fe Springs,90290,Santa Fe Springs,Los Angeles,Los Angeles,https://
 City of South Gate,90291,South Gate,Los Angeles,Los Angeles,https://www.cityofsouthgate.org/City-Services/Transportation,7.0,Los Angeles,True,True,,,15,https://www.cityofsouthgate.org/files/sharedassets/public/v/1/city-services/documents/southgategtfs-2023-01-18.zip
 City of South Pasadena,90292,South Pasadena,Los Angeles,Los Angeles,https://www.southpasadenaca.gov/government/departments/community-services/dial-a-ride,7.0,Los Angeles,True,False,,3.0,3,
 City of West Covina,90293,West Covina,Los Angeles,Los Angeles,https://www.westcovina.org/departments/public-services-department/community-services-division/transit-services,7.0,Los Angeles,True,True,,,8,https://www.westcovina.org/home/showpublisheddocument/23728/638652960159870000
-City of West Hollywood,90294,West Hollywood,Los Angeles,Los Angeles,https://www.weho.org/services/public-transportation-transit-options,7.0,Los Angeles,True,True,,,8,
+City of West Hollywood,90294,West Hollywood,Los Angeles,Los Angeles,https://www.weho.org/services/public-transportation-transit-options,7.0,Los Angeles,True,True,,,8,https://www.weho.org/home/showdocument?id=53383&t=638712594969943786
 City of Whittier,90295,Whittier,Los Angeles,Los Angeles,https://www.whittierprcs.org/transit/dial-a-ride-and-dar-plus,7.0,Los Angeles,True,False,,,10,
 City of Claremont,90296,Claremont,Los Angeles,Los Angeles,pvtrans.org,7.0,Los Angeles,True,False,,,22,
 County of Ventura,90298,Ventura,Ventura,Ventura,https://www.vcpublicworks.org/rt/publictransportation/,7.0,Los Angeles,True,False,,,4,
