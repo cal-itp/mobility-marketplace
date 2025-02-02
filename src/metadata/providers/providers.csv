@@ -101,7 +101,7 @@ City of Alhambra,90247,Alhambra,Los Angeles,Los Angeles,https://www.cityofalhamb
 City of Avalon,90249,Avalon,Los Angeles,Los Angeles,www.cityofavalon.com/202/Avalon-Transit,7.0,Los Angeles / Ventura,True,False,,,4,
 City of Azusa,90250,Azusa,Los Angeles,Los Angeles,https://azusaca.gov/329/Azusa-Transit,7.0,Los Angeles / Ventura,True,True,,6.0,6,
 City of Baldwin Park,90251,Baldwin Park,Los Angeles,Los Angeles,https://www.baldwinpark.com/public-works/public-transit,7.0,Los Angeles / Ventura,True,True,,,8,https://baldwinpark.tectransit.com/api/public/fixedRoute/gtfs
-City of Bell,90252,Bell,Los Angeles,Los Angeles,http://www.cityofbell.org/?NavID=276,7.0,Los Angeles / Ventura,True,True,,,10,https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/lacampana-ca-us/lacampana-ca-us.zip
+City of Bell,90252,Bell,Los Angeles,Los Angeles,http://www.cityofbell.org/?NavID=276,7.0,Los Angeles / Ventura,True,True,,,10,https://www.cityofbell.org/home/showpublisheddocument/19057/638737574606208813
 City of Bell Gardens,90253,Bell,Los Angeles,Los Angeles,www.bellgardens.org/government/city-departments/public-works/transportation,7.0,Los Angeles / Ventura,True,True,,,5,https://www.ips-systems.com/GTFS/Schedule/21
 City of Bellflower,90254,Bellflower,Los Angeles,Los Angeles,https://www.bellflower.org/community/transportation/index.php,7.0,Los Angeles / Ventura,True,True,5309,,4,https://gtfs.calitp.org/production/BellflowerGTFS.zip
 City of Beverly Hills,90255,Beverly Hills,Los Angeles,Los Angeles,http://www.beverlyhills.org/departments/publicworks/transportation/seniordisabledtransportation/web.jsp?NFR=1,7.0,Los Angeles / Ventura,True,True,,,4,
