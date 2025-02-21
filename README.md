@@ -76,6 +76,10 @@ Requirements: User must be authorized on Google Cloud to access the resources-ca
 1. Click mobility-marketplace
 1. Click button for action needed: Upload Files, Delete or Edit on a particular file
 
+## Analytics
+
+Site analytics is tracked by Google Analytics, version 4. Ask an administrator to grant you access.
+
 ## License
 
 Content (including graphics, images, video, documents, and text) in this repository is licensed under [CC-BY 4.0][content-license].
