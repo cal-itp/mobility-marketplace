@@ -96,7 +96,7 @@ Marin County Transit District,90234,San Rafael,Marin,Marin,http://marintransit.o
 City of Lincoln,90235,Lincoln,Placer,Placer,https://www.placer.ca.gov/1768/Placer-County-Transit,3.0,Marysville / Sacramento,True,False,,,0,
 City of Delano,90238,Delano,Kern,Kern,http://www.cityofdelano.org/92/Delano-Area-Rapid-Transit-DART,6.0,Fresno / Bakersfield,True,True,5307;5339,9.0,9,https://data.trilliumtransit.com/gtfs/delano-ca-us/delano-ca-us.zip
 Easy Lift Transportation,90243,Goleta,Santa Barbara,Santa Barbara,http://www.easylift.org/,5.0,San Luis Obispo / Santa Barbara,False,False,5310,28.0,28,
-City of Agoura Hills,90246,Agoura Hills,Los Angeles,Los Angeles,https://www.agourahillscity.org/our-city/residents/transportation-services/alternative-transportation,7.0,Los Angeles / Ventura,True,True,,,2,
+City of Agoura Hills,90246,Agoura Hills,Los Angeles,Los Angeles,https://www.agourahillscity.org/our-city/residents/transportation-services/alternative-transportation,7.0,Los Angeles / Ventura,True,False,,,2,
 City of Alhambra,90247,Alhambra,Los Angeles,Los Angeles,https://www.cityofalhambra.org/293/Alhambra-Community-Transit-ACT,7.0,Los Angeles / Ventura,True,True,,,17,https://www.cityofalhambra.org/DocumentCenter/View/5955/AlhambraGTFS
 City of Avalon,90249,Avalon,Los Angeles,Los Angeles,www.cityofavalon.com/202/Avalon-Transit,7.0,Los Angeles / Ventura,True,False,,,4,
 City of Azusa,90250,Azusa,Los Angeles,Los Angeles,https://azusaca.gov/329/Azusa-Transit,7.0,Los Angeles / Ventura,True,True,,6.0,6,
