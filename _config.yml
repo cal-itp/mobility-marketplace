@@ -40,6 +40,8 @@ navigation:
       url: /go-contactless
     - name: Data plans
       url: /how-to/get-connected
+    - name: GTFS-Realtime
+      url: /how-to/GTFS-RT
   footer:
     - name: Back to top
       url: "#main-content"
