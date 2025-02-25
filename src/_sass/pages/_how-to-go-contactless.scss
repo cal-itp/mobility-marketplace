@@ -17,3 +17,9 @@
     }
   }
 }
+
+.how-to-go-contactless .content-container a:not(.btn) {
+  text-decoration: underline !important;
+  font-weight: inherit;
+  color: inherit;
+}
