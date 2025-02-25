@@ -1,6 +1,6 @@
 ---
 layout: sidebar-toc
-title: "How To: Go Contactless"
+title: "How To: Get Real-Time data"
 class_name: no-footer how-to-go-contactless
 content_class: go-contactless-section go-contactless--how-to
 show_newsletter: false
