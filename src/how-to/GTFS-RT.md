@@ -34,7 +34,7 @@ show_newsletter: false
 
 To help us better assist you, we ask that you complete an [interest form](/contact) to request Cal-ITP support. With this information, we can determine how best to support you—from developing a project scope, getting buy-in from internal stakeholders, and engaging with vendors, to implementing your new GTFS-Realtime system.
 
-After you complete the form, we welcome you to browse the GTFS-Realtime MSA Information Packet to understand the overall process and your next steps.
+After you complete the form, we welcome you to browse the [GTFS-Realtime MSA Information Packet](https://docs.google.com/presentation/d/1NmuAUXon3jc4XajnEI7sKTOVSdeZifKQ/edit#slide=id.p1) to understand the overall process and your next steps.
 
 If you’d like to learn more about GTFS Realtime, or if you need an informational presentation to share with your staff or board of directors, please review this GTFS-Realtime Introduction.
 
@@ -62,7 +62,7 @@ You can review [available MSAs](/contracts/view?contracts-filter-product=GTFS-RT
 
 ### Draft a Scope of Work (SOW)
 
-After you’ve read through the GTFS Realtime MSA Information Packet and the GTFS Realtime Introduction, move on to [MSA SOW Template And Guidance](https://resources.calitp.org/mobility-marketplace/MSA-SOW-Template-and-Guidance.pdf).
+After you’ve read through the [GTFS Realtime MSA Information Packet](https://docs.google.com/presentation/d/1NmuAUXon3jc4XajnEI7sKTOVSdeZifKQ/edit#slide=id.p1) and the GTFS Realtime Introduction, move on to [MSA SOW Template And Guidance](https://resources.calitp.org/mobility-marketplace/MSA-SOW-Template-and-Guidance.pdf).
 
 This PDF provides detailed guidance for transit agency staff on how to complete a User Agreement Scope of Work (SOW) as required to participate in the MSAs for GTFS Realtime Services. Completing an SOW will assist your agency with key scoping decisions as you work toward purchasing software services and optional hardware.
 
