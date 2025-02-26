@@ -137,6 +137,7 @@ $mm-dark-tan: rgb(246, 243, 237);
 
 @include media-breakpoint-up(md) {
   .two-blurbs {
+    padding-right: 0;
     .col-md-6 {
       width: calc(50% - 4px);
     }
