@@ -134,3 +134,20 @@ $mm-dark-tan: rgb(246, 243, 237);
   caption-side: bottom;
   color: $text-color;
 }
+
+.two-blurbs {
+  margin-right: 0;
+  margin-left: 0;
+  .col-md-6 {
+    padding: 0 1rem;
+    width: calc(50% - 4px);
+  }
+  .bg-info-subtle {
+    margin-left: 0;
+    margin-right: -2rem;
+  }
+  .bg-warning-subtle {
+    margin-left: 2.5rem;
+    margin-right: 0;
+  }
+}
