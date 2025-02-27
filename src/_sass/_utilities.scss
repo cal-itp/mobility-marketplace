@@ -137,12 +137,22 @@ $mm-dark-tan: rgb(246, 243, 237);
 
 @include media-breakpoint-up(md) {
   .two-blurbs {
+    display: flex;
     padding-right: 0;
     .col-md-6 {
       width: calc(50% - 4px);
     }
     .bg-info-subtle {
       margin-right: 8px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .image-blurb {
+    display: flex;
+    .bg-warning-subtle {
+      margin-left: 4px;
     }
   }
 }
