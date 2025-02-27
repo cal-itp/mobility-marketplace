@@ -141,6 +141,7 @@ $mm-dark-tan: rgb(246, 243, 237);
     padding-right: 0;
     .col-md-6 {
       width: calc(50% - 4px);
+      padding: 1rem;
     }
     .bg-info-subtle {
       margin-right: 8px;
@@ -155,4 +156,28 @@ $mm-dark-tan: rgb(246, 243, 237);
       margin-left: 4px;
     }
   }
+}
+
+.with-gtfs-schedule,
+.with-gtfs-realtime {
+  display: flex;
+  align-items: flex-end;
+}
+
+.with-gtfs-schedule::before,
+.with-gtfs-realtime::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: " ";
+  margin-right: 8px;
+  background-size: 20px 20px;
+}
+
+.with-gtfs-schedule::before {
+  background-image: url("/uploads/icon--gtfs-schedule.png");
+}
+
+.with-gtfs-realtime::before {
+  background-image: url("/uploads/icon--gtfs-rt.png");
 }
