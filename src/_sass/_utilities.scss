@@ -161,7 +161,7 @@ $mm-dark-tan: rgb(246, 243, 237);
 .with-gtfs-schedule,
 .with-gtfs-realtime {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .with-gtfs-schedule::before,
