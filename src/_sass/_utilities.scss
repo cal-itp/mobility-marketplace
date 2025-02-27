@@ -135,13 +135,22 @@ $mm-dark-tan: rgb(246, 243, 237);
   color: $text-color;
 }
 
+.two-blurbs {
+  margin: 1rem 0;
+  .col-md-6 {
+    padding: 1rem;
+  }
+  ul {
+    margin-bottom: 0;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .two-blurbs {
     display: flex;
     padding-right: 0;
     .col-md-6 {
       width: calc(50% - 4px);
-      padding: 1rem;
     }
     .bg-info-subtle {
       margin-right: 8px;
@@ -149,9 +158,13 @@ $mm-dark-tan: rgb(246, 243, 237);
   }
 }
 
+.image-blurb {
+  display: flex;
+  align-items: center;
+}
+
 @include media-breakpoint-up(md) {
   .image-blurb {
-    display: flex;
     .bg-warning-subtle {
       margin-left: 4px;
     }
@@ -167,11 +180,11 @@ $mm-dark-tan: rgb(246, 243, 237);
 .with-gtfs-schedule::before,
 .with-gtfs-realtime::before {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   content: " ";
-  margin-right: 8px;
-  background-size: 20px 20px;
+  margin-right: 0.5rem;
+  background-size: 1.25rem 1.25rem;
 }
 
 .with-gtfs-schedule::before {
