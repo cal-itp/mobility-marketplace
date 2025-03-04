@@ -43,6 +43,7 @@ $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" vie
 
 :root {
   --bs-primary: #{$primary};
+  --bs-primary-rgb: #{$primary-rgb};
   --bs-body-color: #{$primary-black};
   --bs-link-color: #{$primary};
   --bs-link-color-rgb: #{$primary-rgb};
