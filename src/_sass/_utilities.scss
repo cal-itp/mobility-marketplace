@@ -1,6 +1,8 @@
 // mm == mobi-mart
 $mm-dark-tan: rgb(246, 243, 237);
 
+// Background colors
+
 .bg-blue-lightest {
   background-color: $blue-lightest;
 }
@@ -23,6 +25,10 @@ $mm-dark-tan: rgb(246, 243, 237);
 
 .bg-blue-lightest {
   background-color: $blue-lightest;
+}
+
+.bg-info-beige {
+  background-color: $beige;
 }
 
 // Text
@@ -139,6 +145,9 @@ $mm-dark-tan: rgb(246, 243, 237);
   color: $text-color;
 }
 
+// Column styles
+
+// Used on Intro to GTFS
 .two-blurbs {
   margin: 1rem 0;
   .col-md-6 {
