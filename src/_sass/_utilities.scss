@@ -171,25 +171,6 @@ $mm-dark-tan: rgb(246, 243, 237);
   }
 }
 
-.image-blurb {
-  display: flex;
-  align-items: center;
-}
-
-@include media-breakpoint-up(md) {
-  .image-blurb {
-    .bg-info-beige {
-      margin-left: 4px;
-    }
-  }
-}
-
-.with-gtfs-schedule,
-.with-gtfs-realtime {
-  display: flex;
-  align-items: center;
-}
-
 .with-gtfs-schedule::before,
 .with-gtfs-realtime::before {
   display: inline-block;
