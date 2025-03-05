@@ -63,7 +63,7 @@
         border-bottom: 0;
         padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
         &[aria-current="page"] {
-          background-color: $blue-lightest;
+          background-color: $cyan-1;
         }
       }
     }
@@ -94,7 +94,7 @@
       margin-left: 2px;
       border-radius: 0;
       &[aria-current="page"] {
-        background-color: $blue-lightest;
+        background-color: $cyan-1;
         color: $primary !important;
       }
     }
@@ -107,7 +107,7 @@
       border-bottom: 1px solid #e1f2f7;
       padding: 20px 0 20px 15px;
       &[aria-current="page"] {
-        background-color: $blue-lightest;
+        background-color: $cyan-1;
       }
     }
   }
