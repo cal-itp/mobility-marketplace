@@ -36,7 +36,7 @@ To help us better assist you, we ask that you complete an [interest form](/conta
 
 After you complete the form, we welcome you to browse the [GTFS-Realtime MSA Information Packet](https://docs.google.com/presentation/d/1NmuAUXon3jc4XajnEI7sKTOVSdeZifKQ/edit#slide=id.p1) to understand the overall process and your next steps.
 
-If you’d like to learn more about GTFS Realtime, or if you need an informational presentation to share with your staff or board of directors, please review this GTFS-Realtime Introduction.
+If you’d like to learn more about GTFS Realtime, or if you need an informational presentation to share with your staff or board of directors, please review this [GTFS-Realtime Introduction](/intro-gtfs-rt).
 
 ### What to know about MSAs?
 
