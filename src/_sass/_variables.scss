@@ -21,6 +21,7 @@ $dark-blue: #225173;
 $gray-1: #eeeeee;
 $gray-3: #8f9399;
 $gray-4: #60656b;
+$cyan-1: #d5eef5;
 
 $warning: #c24f3b;
 $focus: #99b5fa;
@@ -65,7 +66,7 @@ $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" vie
 
 .dropdown-menu {
   --bs-dropdown-border-radius: 0;
-  --bs-dropdown-link-hover-bg: #d5eef5;
+  --bs-dropdown-link-hover-bg: #{$cyan-1};
   --bs-dropdown-link-active-bg: #{$gray-1};
   --bs-dropdown-item-padding-y: 10px;
 }
