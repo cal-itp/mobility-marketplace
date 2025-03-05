@@ -55,6 +55,10 @@
         padding: 12px 0;
         margin: 0;
       }
+
+      ul li:not(:last-child) ul {
+        border-bottom: 1px solid #c8c8c9;
+      }
     }
   }
 }
@@ -161,7 +165,7 @@
     display: inline-block;
     padding-bottom: 12px;
     padding-top: 12px;
-    width: 100%
+    width: 100%;
   }
 
   ul .dropdown-item {
