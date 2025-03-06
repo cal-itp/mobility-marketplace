@@ -92,7 +92,7 @@ entries:
     contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-24-70-42-01
     vendor: Connexionz Ltd
     category: GTFS
-    product: GTFS-RT
+    product: GTFS-Realtime
     user_instructions: ~
     footnotes: ~
 
@@ -100,7 +100,7 @@ entries:
     contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-24-70-42-02
     vendor: Passio Technologies LLC
     category: GTFS
-    product: GTFS-RT
+    product: GTFS-Realtime
     user_instructions: ~
     footnotes: ~
 
@@ -108,6 +108,6 @@ entries:
     contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-24-70-42-03
     vendor: Swiftly Inc
     category: GTFS
-    product: GTFS-RT
+    product: GTFS-Realtime
     user_instructions: ~
     footnotes: ~
