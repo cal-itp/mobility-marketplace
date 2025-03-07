@@ -7,6 +7,10 @@ $gc-blue: rgb(235, 248, 252);
   padding: 4rem 10vw;
 }
 
+.go-contactless-section.go-contactless--how-to {
+  padding: 4rem 10vh 0;
+}
+
 .go-contactless-hero {
   background: $gc-tan;
   background: linear-gradient(90deg, $gc-tan 0, $gc-tan 37%, $gc-blue 37%, $gc-blue 100%);
