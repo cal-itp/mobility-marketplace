@@ -62,7 +62,7 @@ You can review [available MSAs](/contracts/view?contracts-filter-product=GTFS-Re
 
 ### Draft a Scope of Work (SOW)
 
-After you’ve read through the [GTFS Realtime MSA Information Packet](https://docs.google.com/presentation/d/1NmuAUXon3jc4XajnEI7sKTOVSdeZifKQ/edit#slide=id.p1){:target="\_blank"} and the GTFS Realtime Introduction, move on to [MSA SOW Template And Guidance](https://resources.calitp.org/mobility-marketplace/MSA-SOW-Template-and-Guidance.pdf){:target="\_blank"}.
+After you’ve read through the [GTFS Realtime MSA Information Packet](https://docs.google.com/presentation/d/1NmuAUXon3jc4XajnEI7sKTOVSdeZifKQ/edit#slide=id.p1){:target="\_blank"} and the [GTFS-Realtime Introduction](/intro-gtfs-rt){:target="\_blank"}, move on to [MSA SOW Template And Guidance](https://resources.calitp.org/mobility-marketplace/MSA-SOW-Template-and-Guidance.pdf){:target="\_blank"}.
 
 This PDF provides detailed guidance for transit agency staff on how to complete a User Agreement Scope of Work (SOW) as required to participate in the MSAs for GTFS Realtime Services. Completing an SOW will assist your agency with key scoping decisions as you work toward purchasing software services and optional hardware.
 
