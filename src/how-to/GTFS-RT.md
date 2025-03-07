@@ -80,7 +80,7 @@ Look over the proposals you receive from each vendor. Decide which vendor(s) you
 
 ### Sign your contract
 
-After you’ve finalized the details of your project with the vendor “contractors” you’ve selected, you’ll execute a User Agreement contract and sign it as the “contracting agency.” The User Agreement contract can be the Standard Agreement ([STD 213](https://www.documents.dgs.ca.gov/dgs/fmc/pdf/std213.pdf){:target="\_blank"}) from the California Department of General Services (DGS) or an equivalent contract form, such as this [Sample User Agreement](https://resources.calitp.org/mobility-marketplace/User-Agreement-Contract-Form_MSA%205-21-70-28.docx){:target="\_blank"}, which can be used by transit providers across the U.S. The User Agreement will incorporate by reference the terms of the MSA and contain the Scope of Work and Payment Provisions.
+After you’ve finalized the details of your project with the vendor “contractors” you’ve selected, you’ll execute a User Agreement contract and sign it as the “contracting agency.” The User Agreement contract can be the Standard Agreement ([STD 213](https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1){:target="\_blank"}) from the California Department of General Services (DGS) or an equivalent contract form, such as this [Sample User Agreement](https://resources.calitp.org/mobility-marketplace/User-Agreement-Contract-Form_MSA%205-21-70-28.docx){:target="\_blank"}, which can be used by transit providers across the U.S. The User Agreement will incorporate by reference the terms of the MSA and contain the Scope of Work and Payment Provisions.
 
 ## Implement
 
