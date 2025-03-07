@@ -62,7 +62,7 @@ You can review [available MSAs](/contracts/view?contracts-filter-product=GTFS-Re
 
 ### Draft a Scope of Work (SOW)
 
-After you’ve read through the [GTFS Realtime MSA Information Packet](https://docs.google.com/presentation/d/1NmuAUXon3jc4XajnEI7sKTOVSdeZifKQ/edit#slide=id.p1){:target="\_blank"} and the [GTFS-Realtime Introduction](/intro-gtfs-rt){:target="\_blank"}, move on to [MSA SOW Template And Guidance](https://resources.calitp.org/mobility-marketplace/MSA-SOW-Template-and-Guidance.pdf){:target="\_blank"}.
+After you’ve read through the [GTFS Realtime MSA Information Packet](https://docs.google.com/presentation/d/1NmuAUXon3jc4XajnEI7sKTOVSdeZifKQ/edit#slide=id.p1){:target="\_blank"} and the [GTFS-Realtime Introduction](/intro-gtfs-rt){:target="\_blank"}, move on to [MSA SOW Template And Guidance](/uploads/MSA-SOW-Template-and-Guidance-2025.01.20.docx){:target="\_blank"}.
 
 This PDF provides detailed guidance for transit agency staff on how to complete a User Agreement Scope of Work (SOW) as required to participate in the MSAs for GTFS Realtime Services. Completing an SOW will assist your agency with key scoping decisions as you work toward purchasing software services and optional hardware.
 
@@ -72,7 +72,7 @@ Cal-ITP can assist California transit agencies in drafting and/or reviewing thei
 
 When you’re ready to send your SOW to vendors, you can find their contact information in the MSA User Instructions document (which is linked from the vendor’s contract number). We recommend sending the SOW to all MSA-awarded vendors.
 
-An email template has been provided for you in the [MSA SOW Template And Guidance](https://resources.calitp.org/mobility-marketplace/MSA-SOW-Template-and-Guidance.pdf){:target="\_blank"}. Be sure to CC [hello@calitp.org](mailto:hello@calitp.org){:target="\_blank"}. Unless otherwise specified by the transit agency, each vendor will respond within five business days of receiving the SOW.
+An email template has been provided for you in the [MSA SOW Template And Guidance](/uploads/MSA-SOW-Template-and-Guidance-2025.01.20.docx){:target="\_blank"}. Be sure to CC [hello@calitp.org](mailto:hello@calitp.org){:target="\_blank"}. Unless otherwise specified by the transit agency, each vendor will respond within five business days of receiving the SOW.
 
 ### Review vendor proposals
 
