@@ -47,10 +47,6 @@ figure {
   }
 }
 
-a {
-  text-decoration: none !important;
-}
-
 p {
   margin-bottom: 0.7rem;
 }
@@ -94,7 +90,8 @@ h2 {
   margin-bottom: 0.7em;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: calc(24rem / 16);
 }
 
@@ -153,8 +150,4 @@ hr {
   a {
     color: var(--bs-alert-color);
   }
-}
-
-.fs-7 {
-  font-size: calc(14rem / 16);
 }
