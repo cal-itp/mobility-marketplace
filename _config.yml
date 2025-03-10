@@ -9,9 +9,7 @@ description: >-
 announcement:
   enabled: true
   text: |
-    Cal-ITP is offering smaller providers in California a limited number of free
-    licenses to Remix’s suite of scheduling products. Check your eligibility and
-    sign up using our [intake form](https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu){:target="_black"}.
+    Now available! Pre-approved [MSAs for GTFS Realtime](contracts/view?contracts-filter-product=GTFS Realtime){:target="_black"} software and/or hardware. [Get started with our GTFS Realtime guide](/how-to/gtfs-rt){:target="_black"}.
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
