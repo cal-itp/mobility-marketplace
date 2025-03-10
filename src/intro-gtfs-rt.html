@@ -1,0 +1,241 @@
+---
+layout: default
+
+title: Introduction to GTFS
+description: >
+  Managed by Cal-ITP, this website seeks to make the transition to contactless
+  fare collection and GTFS Realtime compliance as easy and cost-effective as
+  possible.
+
+show_newsletter: true
+newsletter_background: bg-dark-tan
+---
+
+<div class="container container--skinny">
+  <article>
+    <h1 class="text-center">{{ page.title }}</h1>
+    <p class="text-center fs-7 fw-medium">Everything you need to know</p>
+    <hr />
+    <p class="mb-2">
+      <strong>Where is my bus?</strong> Real-time data is how both riders and operators answer this question. GTFS allows you to
+      see your vehicle—in real time, on a map.
+    </p>
+    <h2 class="h3 pt-4">So, what exactly is GTFS?</h2>
+    <p class="mb-2">
+      GTFS feeds allow public transit agencies to share their transit data, making it easier for developers to create applications
+      that can use this information effectively. Transit service providers produce schedules and prices; third-party applications
+      (like Google Maps, Transit App, etc.) consume this data. Riders use this data to plan for their transit trip.
+    </p>
+    <p class="mb-2">
+      There are two main components: Schedule and Realtime. GTFS Schedule is the plan of what transit service looks like; GTFS
+      Realtime is what is actually happening with the transit service.
+    </p>
+    <div class="row gx-2 my-3">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <div class="rounded rounded-3 border border-info bg-info-subtle p-3 h-100">
+          <h3 class="h4 with-gtfs-schedule d-flex align-items-center">GTFS Schedule</h3>
+          <ul class="mb-0">
+            <li>Static information</li>
+            <li>Describes the routes and schedule of a transit agency</li>
+            <li>Establishes the baseline transit information</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="rounded rounded-3 border border-warning bg-warning-subtle p-3 h-100">
+          <h3 class="h4 with-gtfs-realtime d-flex align-items-center">GTFS Realtime</h3>
+          <ul class="mb-0">
+            <li>Dynamic information</li>
+            <li>Describes the location of vehicles in real time</li>
+            <li>Adjusts transit information based on real-time updates</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="mb-2">
+      GTFS Schedule is the backbone of transit data. GTFS Schedule and GTFS Realtime depend on each other. GTFS Realtime needs
+      GTFS Schedule to give it the baseline operations assumptions. It then enhances this data by adding in real-time data.
+    </p>
+    <p class="mb-2">They each provide comprehensive information in a standardized format.</p>
+    <div class="row gx-2 my-3">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <div class="rounded rounded-3 border border-info bg-info-subtle p-3 h-100">
+          <h3 class="h4 with-gtfs-schedule d-flex align-items-center">GTFS Schedule Data</h3>
+          <ul class="mb-0">
+            <li>Routes</li>
+            <li>Stops</li>
+            <li>Day and time schedules</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="rounded rounded-3 border border-warning bg-warning-subtle p-3 h-100">
+          <h3 class="h4 with-gtfs-realtime d-flex align-items-center">GTFS Realtime Data</h3>
+          <ul class="mb-0">
+            <li>Vehicle location</li>
+            <li>Updates</li>
+            <li>Alerts (detours, holidays, etc.)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="mb-2">
+      Because GTFS is standardized, you can easily integrate your data with third party applications and build on top of it with
+      other vendors.
+    </p>
+    <h2 class="h3 pt-4">Power of GTFS Realtime</h2>
+    <h3 class="h4">Enhancing rider experience & operational efficiency </h3>
+    <p class="mb-2">
+      For transit riders, knowing when a bus or train will actually arrive reduces uncertainty, increases the attractiveness of
+      transit, and improves rider satisfaction.
+    </p>
+    <p class="mb-2">
+      For operators, real time brings operational insights and supports the ability to dispatch vehicles in emergencies.
+    </p>
+    <h3 class="h4">Meet your riders on the apps they already use</h3>
+    <p class="mb-2">
+      Real-time transit data comes in many forms but only one—the General Transit Feed Specification (GTFS)—provides a universal
+      template that is compatible regardless of who produced it or who wants to use it.
+    </p>
+    <p class="mb-2">
+      That means that no matter who your GTFS vendor is, common third-party transit apps like Apple Maps, Google Maps, and Transit
+      App can use it.
+    </p>
+    <p class="mb-4">
+      With GTFS, you can meet your riders where they are, no need to download a special app; they will be able to see transit
+      options in apps they already use.
+    </p>
+    <div class="d-md-flex align-items-md-center">
+      <div class="col-md-6">
+        <img
+          class="w-100"
+          src="/uploads/intro-to-gtfs--realtime-in-apps.png"
+          alt="Two mobile screenshots of Del Monte / Camino Aguajito bus stop in Montery, CA showing GTFS Realtime data. One screenshot shows the bus stop on Google Maps and the other on Apple Maps."
+        />
+      </div>
+      <div class="col-md-6 rounded rounded-3 ms-md-1 bg-info-beige p-3">
+        <h3 class="h4 text-center mb-4">By the numbers</h3>
+        <strong>NYC & Chicago</strong>
+        <p class="mb-2">Bus ridership increased by 2% after transit agencies published real-time arrival information</p>
+        <strong>Seattle</strong>
+        <p>Riders perceived wait times to be 30% shorter when they had access to GTFS Realtime data</p>
+      </div>
+    </div>
+    <h2 class="h3 pt-4">How do I get GTFS?</h2>
+    <p class="mb-2">
+      You can create GTFS Schedule with a planning and scheduling software. If your agency has received 5311 funding in the last 3
+      years, you may be eligible for a
+      <a target="_blank" href="https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu">free Remix license</a> provided by CalSTA
+      and Caltrans. Remix is a comprehensive transportation planning and scheduling software tool.
+    </p>
+    <p class="mb-2">
+      You can adopt GTFS Realtime with your own hardware or purchase directly from vendors via MSAs (Master Service Agreements).
+      California DGS competitively awards contracts or MSAs to vendors
+      <a target="_blank" href="/contracts/view?contracts-filter-product=GTFS-Realtime/"
+        >offering standardized GTFS Realtime products</a
+      >.
+    </p>
+    <div class="row gx-2 my-3">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <div class="rounded rounded-3 border border-info bg-info-subtle p-3 h-100">
+          <h3 class="h4 with-gtfs-schedule d-flex align-items-center">GTFS Schedule with Remix</h3>
+          <p class="m-0">
+            You may be eligible for a free Remix license from CalSTA and Caltrans. Fill out the
+            <a target="_blank" href="https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu">application form</a>.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="rounded rounded-3 border border-warning bg-warning-subtle p-3 h-100">
+          <h3 class="h4 with-gtfs-realtime d-flex align-items-center">GTFS Realtime with MSAs</h3>
+          <p class="m-0">
+            California DGS competitively awards MSAs to vendors offering
+            <a target="_blank" href="/contracts/view?contracts-filter-product=GTFS-Realtime">GTFS Realtime products</a>. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2 class="h3 pt-4">Quality GTFS Schedule leads to Quality GTFS Realtime</h2>
+    <p class="mb-2">
+      Caltrans developed the
+      <a target="_blank" href="https://dot.ca.gov/cal-itp/california-transit-data-guidelines"
+        >California Transit Data Guidelines</a
+      >
+      to help ensure transit data meets riders’ expectations. The Guidelines address several key features:
+    </p>
+    <ul>
+      <li>Publication of GTFS Schedule and Realtime data, including service alerts and accessibility info</li>
+      <li>Availability of GTFS feeds on open-source feed aggregators, with an open data license</li>
+      <li>Real-time data feeds (APIs) with an uptime greater than 99%</li>
+      <li>Designation of a single point of contact at each transit agency</li>
+      <li>A documented process for improving data quality and supporting processes and technology</li>
+    </ul>
+    <div class="d-flex">
+      <a target="_blank" href="mailto:hello@calitp.org" class="mt-3 mx-auto btn btn-outline-primary">Reach out to learn more</a>
+    </div>
+    <h2 class="h3 pt-4">Caltrans can help monitor your GTFS quality to support your service</h2>
+    <p class="mb-2">
+      Caltrans’ Data Quality Team can help ensure that your data is high quality and able to get you the best results possible.
+    </p>
+    <p class="mb-2">
+      We can help you monitor your GTFS Schedule and GTFS Realtime feeds for errors and provide guidance on how to resolve
+      them. We also provide monthly data quality reports with key metrics to help you understand how your data is working for you.
+    </p>
+    <p class="mb-2">
+      Learn more about data quality at the
+      <a target="_blank" href="https://reports.calitp.org/">California GTFS Quality Dashboard</a> or email
+      <a target="_blank" href="mailto:hello@calitp.org">hello@calitp.org</a> to request a GTFS Data Assessment.  
+    </p>
+    <h2 class="h3 pt-4">Next steps</h2>
+    <ul class="list-unstyled mb-0">
+      <li class="pb-3">
+        <strong>GTFS Schedule</strong> ➞ Check your eligibility and
+        <a target="_blank" href="https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu">apply for a free Remix license</a>.
+      </li>
+      <li class="pb-3">
+        <strong>GTFS Realtime</strong> ➞ Learn more and
+        <a target="_blank" href="/contracts/view?contracts-filter-product=GTFS-Realtime">get started with the MSA contracts</a>.
+      </li>
+      <li class="pb-0">
+        <strong>Data Quality</strong> ➞ Visit
+        <a target="_blank" href="https://reports.calitp.org/">California GTFS Quality Dashboard</a> or email
+        <a target="_blank" href="mailto:hello@calitp.org">hello@calitp.org</a> to request a GTFS Data Assessment.
+      </li>
+    </ul>
+    <div class="d-flex">
+      <a target="_blank" href="mailto:hello@calitp.org" class="my-4 mx-auto btn btn-outline-primary"
+        >Reach out for technical assistance</a
+      >
+    </div>
+    <p class="mb-2">
+      Whichever option you choose, Cal-ITP is here to offer you technical assistance in rolling out GTFS Schedule and GTFS-RT.
+    </p>
+    <hr />
+    <h3 class="h3">Resources</h3>
+    <ul>
+      <li>
+        Email <a target="_blank" href="mailto:hello@calitp.org">hello@calitp.org</a> to get started with MSAs, request a GTFS Data
+        Assessment, and more
+      </li>
+      <li>
+        Check your eligibility for a
+        <a target="_blank" href="https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu">free Remix license</a> to create your
+        GTFS Schedule
+      </li>
+      <li>
+        Get started with <a target="_blank" href="/contracts/view?contracts-filter-product=GTFS-Realtime">MSA contracts</a> to
+        establish GTFS Realtime
+      </li>
+      <li>
+        Obtain a report on the quality of your agency's GTFS data, visit
+        <a target="_blank" href="https://reports.calitp.org/">California GTFS Quality Dashboard</a>
+      </li>
+      <li>
+        Review Caltrans' standards for high-quality transit data at
+        <a target="_blank" href="https://dot.ca.gov/cal-itp/california-transit-data-guidelines"
+          >California Transit Data Guidelines</a
+        >
+      </li>
+    </ul>
+  </article>
+</div>
