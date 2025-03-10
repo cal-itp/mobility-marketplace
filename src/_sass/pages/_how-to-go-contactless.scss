@@ -1,5 +1,6 @@
 @include media-breakpoint-up(md) {
-  .how-to-go-contactless .main-primary {
+  .how-to-go-contactless .main-primary,
+  .toc .toc-container {
     height: calc(100vh - 112px);
     overflow-y: scroll;
   }
@@ -16,4 +17,10 @@
       position: inherit;
     }
   }
+}
+
+.how-to-go-contactless .content-container a:not(.btn) {
+  text-decoration: underline !important;
+  font-weight: inherit;
+  color: inherit;
 }
