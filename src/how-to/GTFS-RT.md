@@ -32,11 +32,11 @@ show_newsletter: false
 
 #### Cal-ITP will provide the resource materials and technical support you need to begin sharing standardized real-time information with your riders.
 
-To help us better assist you, we ask that you complete an [interest form](/contact){:target="\_blank"} to request Cal-ITP support. With this information, we can determine how best to support you—from developing a project scope, getting buy-in from internal stakeholders, and engaging with vendors, to implementing your new GTFS-Realtime system.
+To help us better assist you, we ask that you complete an [interest form](/contact){:target="\_blank"} to request Cal-ITP support. With this information, we can determine how best to support you—from developing a project scope, getting buy-in from internal stakeholders, to engaging with vendors and implementing your new GTFS-Realtime system.
 
-After you complete the form, we welcome you to browse the [GTFS-Realtime MSA Information Packet](https://docs.google.com/presentation/d/1NmuAUXon3jc4XajnEI7sKTOVSdeZifKQ/edit#slide=id.p1){:target="\_blank"} to understand the overall process and your next steps.
+After you complete the form, we welcome you to browse this guide to understand the overall process and your next steps.
 
-If you’d like to learn more about GTFS Realtime, or if you need an informational presentation to share with your staff or board of directors, please review this [GTFS-Realtime Introduction](/intro-gtfs-rt){:target="\_blank"}.
+If you’d like to learn more about GTFS Realtime, or if you need information to share with your staff or board of directors, please review [GTFS-Realtime Introduction](/intro-gtfs-rt){:target="\_blank"}.
 
 ### What to know about MSAs?
 
@@ -54,19 +54,25 @@ Yes. In order to create GTFS Realtime data, you must first produce a compliant G
 
 Yes. You’ll need to ensure internet connectivity on your fleet to enable real-time location information. You can view [details on data plans](/how-to/get-connected){:target="\_blank"}. Your transit agency may be eligible to upgrade your cellular data plan and save on your monthly connectivity costs.
 
+To support your agency in enabling all necessary connectivity services, the MSAs include GTFS Realtime software services and optional hardware. Hardware is necessary to enable software services, however transit providers may choose to either use their own hardware or purchase a device through the MSA.
+
 ## Purchase
 
 ### Review available vendors
 
-You can review [available MSAs](/contracts/view?contracts-filter-product=GTFS-Realtime){:target="\_blank"}. Click on each contract number for complete terms and conditions and to read MSA User Instructions.
+You can review [available MSAs](/contracts/view?contracts-filter-product=GTFS-Realtime){:target="\_blank"}. Click on each contract number for complete terms and conditions and to read MSA user instructions. Please note, all MSA prices are maximums, and they can be negotiated further downward.
+
+To procure from the MSAs, a transit provider and MSA vendor must execute a contract (referred to as a “User Agreement”) that references the terms of the MSA and allows for certain items to be specified for a particular transit provider’s needs.
+
+The MSAs also contain default SLAs/KPIs, which can be modified in the User Agreements. For more on this, refer to the “Implement” section of this guide.
 
 ### Draft a Scope of Work (SOW)
 
-After you’ve read through the [GTFS Realtime MSA Information Packet](https://docs.google.com/presentation/d/1NmuAUXon3jc4XajnEI7sKTOVSdeZifKQ/edit#slide=id.p1){:target="\_blank"} and the [GTFS-Realtime Introduction](/intro-gtfs-rt){:target="\_blank"}, move on to [MSA SOW Template And Guidance](/uploads/MSA-SOW-Template-and-Guidance-2025.01.20.docx){:target="\_blank"}.
+The User Agreement contains a Scope of Work (SOW) that outlines project details. Developing an SOW is the most important step in the process, and Cal-ITP can provide guidance as you get started. After you’ve read through this guide and the [GTFS Realtime Introduction](/intro-gtfs-rt){:target="\_blank"}, move on to the [MSA SOW Template And Guidance](/uploads/MSA-SOW-Template-and-Guidance-2025.01.20.docx){:target="\_blank"}.
 
-This PDF provides detailed guidance for transit agency staff on how to complete a User Agreement Scope of Work (SOW) as required to participate in the MSAs for GTFS Realtime Services. Completing an SOW will assist your agency with key scoping decisions as you work toward purchasing software services and optional hardware.
+The [MSA SOW Template And Guidance](/uploads/MSA-SOW-Template-and-Guidance-2025.01.20.docx){:target="\_blank"} provides detailed instructions for transit agency staff on how to complete an SOW as required to participate in the MSAs for GTFS Realtime Services. Completing an SOW will assist your agency with key scoping decisions as you work toward purchasing software services and optional hardware.
 
-Cal-ITP can assist California transit agencies in drafting and/or reviewing their SOW, making sure it includes your desired operating objectives, intended operating environment, and any desired value-added services. Just send the SOW to [hello@calitp.org](mailto:hello@calitp.org){:target="\_blank"} when it’s ready if you haven’t already connected with Cal-ITP.
+As noted above, Cal-ITP can assist California transit agencies in drafting and/or reviewing their SOW, making sure it includes your desired operating objectives, intended operating environment, and any desired value-added services. Just send the SOW to [hello@calitp.org](mailto:hello@calitp.org){:target="\_blank"} when it’s ready if you haven’t already connected with Cal-ITP.
 
 ### Send the SOW to vendors
 
@@ -80,12 +86,16 @@ Look over the proposals you receive from each vendor. Decide which vendor(s) you
 
 ### Sign your contract
 
-After you’ve finalized the details of your project with the vendor “contractors” you’ve selected, you’ll execute a User Agreement contract and sign it as the “contracting agency.” The User Agreement contract can be the Standard Agreement ([STD 213](https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1){:target="\_blank"}) from the California Department of General Services (DGS) or an equivalent contract form, such as this [Sample User Agreement](https://resources.calitp.org/mobility-marketplace/User-Agreement-Contract-Form_MSA%205-21-70-28.docx){:target="\_blank"}, which can be used by transit providers across the U.S. The User Agreement will incorporate by reference the terms of the MSA and contain the Scope of Work and Payment Provisions.
+After you’ve finalized the details of your project with the vendor “contractors” you’ve selected, you’ll execute a User Agreement contract and sign it as the “contracting agency.” The User Agreement contract can be the Standard Agreement ([STD 213](https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1){:target="\_blank"}) from the California Department of General Services (DGS) or an equivalent contract form, such as this [Sample User Agreement](https://resources.calitp.org/mobility-marketplace/User-Agreement-Contract-Form_MSA%205-21-70-28.docx){:target="\_blank"}, which can be used by transit providers across the U.S. The User Agreement will incorporate by reference the terms of the MSA and contain the Scope of Work (SOW) and Payment Provisions.
+
+The term of the MSAs is for 3 years, with the option to extend for 2 additional 2-year periods; all User Agreements resulting from these MSAs must be executed prior to MSA expiration and may be fulfilled or completed within 12 months following the MSA term end date.
 
 ## Implement
 
 ### Get ready to launch
 
 You will work with your selected vendor to execute the jointly developed implementation plan and begin generating real-time data. Cal-ITP will continue to generate monthly data quality reports on your GTFS Schedule and Realtime feeds via the [California GTFS Quality Dashboard](https://reports.calitp.org/){:target="\_blank"}.
+
+As a reminder, your User Agreement will contain either default SLAs/KPIs, or modified SLAs/KPIs, per your contract negotiations with your selected vendor. Failure to meet SLAs/KPIs on the vendor's part, as well as late completion of Project Implementation Plans, may trigger Service Credits for the Transit Provider.
 
 To request additional help from Cal-ITP, you can [contact us](/contact){:target="\_blank"} for assistance or send an email to [hello@calitp.org](mailto:hello@calitp.org){:target="\_blank"}.
