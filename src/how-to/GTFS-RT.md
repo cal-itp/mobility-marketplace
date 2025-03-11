@@ -32,11 +32,11 @@ show_newsletter: false
 
 #### Cal-ITP will provide the resource materials and technical support you need to begin sharing standardized real-time information with your riders.
 
-To help us better assist you, we ask that you complete an [interest form](/contact){:target="\_blank"} to request Cal-ITP support. With this information, we can determine how best to support you—from developing a project scope, getting buy-in from internal stakeholders, to engaging with vendors and implementing your new GTFS-Realtime system.
+To help us better assist you, we ask that you complete an [interest form](/contact){:target="\_blank"} to request Cal-ITP support. With this information, we can determine how best to support you—from developing a project scope, getting buy-in from internal stakeholders, to engaging with vendors and implementing your new GTFS Realtime system.
 
 After you complete the form, we welcome you to browse this guide to understand the overall process and your next steps.
 
-If you’d like to learn more about GTFS Realtime, or if you need information to share with your staff or board of directors, please review [GTFS-Realtime Introduction](/intro-gtfs-rt){:target="\_blank"}.
+If you’d like to learn more about GTFS Realtime, or if you need information to share with your staff or board of directors, please review [GTFS Realtime Introduction](/intro-gtfs-rt){:target="\_blank"}.
 
 ### What to know about MSAs?
 
