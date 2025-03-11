@@ -44,6 +44,10 @@
     }
   }
 
+  .content-container:last-child {
+    padding-bottom: 2rem;
+  }
+
   .toc {
     .toc-container {
       position: sticky;
@@ -128,7 +132,7 @@
 .table-of-contents {
   line-height: 1.2;
   margin: 0;
-  padding: 0;
+  padding: 0 0 2rem 0 !important;
 
   & > li {
     padding: 0 !important;
