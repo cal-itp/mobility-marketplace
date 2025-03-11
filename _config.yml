@@ -36,9 +36,9 @@ navigation:
     - name: Contact us
       url: /contact
   products:
-    - name: Contactless payments
+    - name: Contactless Payments
       url: /go-contactless
-    - name: Data plans
+    - name: Data Plans
       url: /how-to/get-connected
   footer:
     - name: Back to top
