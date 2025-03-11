@@ -58,6 +58,10 @@ $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" vie
   --bs-warning-rgb: 254, 223, 149; // border
 }
 
+.alert {
+  --bs-alert-border-radius: 0;
+}
+
 .btn-primary {
   --bs-btn-bg: #{$primary};
   --bs-btn-border-color: #{$primary};
