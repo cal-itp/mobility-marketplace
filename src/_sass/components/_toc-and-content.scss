@@ -24,12 +24,12 @@
     margin-top: calc(8rem / 16);
   }
   h2 {
-    margin-top: calc(56rem / 16);
-    margin-bottom: calc(48rem / 16);
+    margin-top: calc(48rem / 16);
+    margin-bottom: calc(24rem / 16);
   }
   h3 {
-    margin-top: calc(56rem / 16);
-    margin-bottom: calc(24rem / 16);
+    margin-top: calc(24rem / 16);
+    margin-bottom: 1rem;
   }
 }
 
@@ -42,6 +42,10 @@
       height: 1px !important;
       margin: -1px 0 0 !important;
     }
+  }
+
+  .content-container:last-child {
+    padding-bottom: 2rem;
   }
 
   .toc {
@@ -128,7 +132,7 @@
 .table-of-contents {
   line-height: 1.2;
   margin: 0;
-  padding: 0;
+  padding: 0 0 2rem 0 !important;
 
   & > li {
     padding: 0 !important;
@@ -161,7 +165,7 @@
     display: inline-block;
     padding-bottom: 12px;
     padding-top: 12px;
-    width: 100%
+    width: 100%;
   }
 
   ul .dropdown-item {
