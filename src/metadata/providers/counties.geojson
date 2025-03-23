@@ -22395,7 +22395,7 @@
       "properties": {
         "id": 7,
         "county": "Contra Costa",
-        "num_providers": 3
+        "num_providers": 4
       },
       "geometry": {
         "type": "MultiPolygon",
