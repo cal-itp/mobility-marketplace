@@ -72,7 +72,7 @@ City of Lodi,90175,Lodi,San Joaquin,San Joaquin,www.lodi.gov/transit,10.0,Stockt
 Altamont Corridor Express,90182,Stockton,San Joaquin,San Joaquin,http://www.acerail.com/,10.0,Stockton,True,True,5307;5309;5337,,27,https://api.511.org/transit/datafeeds?operator_id=CE;https://api.511.org/transit/datafeeds?operator_id=RG
 City of Atascadero,90194,Atascadero,San Luis Obispo,San Luis Obispo,https://www.atascadero.org/service/publictransit,5.0,San Luis Obispo / Santa Barbara,True,True,,,2,
 County of Placer,90196,Auburn,Placer,Placer,https://www.placercountytransit.com,3.0,Marysville / Sacramento,True,True,5307;5311;5339,21.0,47,https://data.trilliumtransit.com/gtfs/placercounty-ca-us/placercounty-ca-us.zip;https://gtfs.calitp.org/production/PlacerCountyDialARideFlex.zip
-City of Tracy,90197,Tracy,San Joaquin,San Joaquin,http://www.ridetracer.com,10.0,Stockton,True,True,5307;5339,,13,http://s3.amazonaws.com/etatransit.gtfs/tracer.etaspot.net/gtfs.zip;https://gtfs.calitp.org/production/TracyTRACERPlusandParatransitFlex.zip
+City of Tracy,90197,Tracy,San Joaquin,San Joaquin,http://www.ridetracer.com,10.0,Stockton,True,True,,,13,
 City of Porterville,90198,Porterville,Tulare,Tulare,https://www.ci.porterville.ca.us/departments/porterville_transit/index.php,6.0,Fresno / Bakersfield,True,False,,,0,
 City of Madera,90199,Madera,Madera,Madera,https://www.madera.gov/home/departments/transit/,6.0,Fresno / Bakersfield,True,True,5307,,17,https://data.trilliumtransit.com/gtfs/cityofmadera-ca-us/cityofmadera-ca-us.zip
 Kings County Area Public Transit Agency,90200,Hanford,Kings,Kings,http://www.kartbus.org,6.0,Fresno / Bakersfield,True,True,5307;5311;5339,,57,https://kart.connexionz.net/rtt/public/utility/gtfs.aspx
@@ -116,7 +116,7 @@ City of Downey,90263,Downey,Los Angeles,Los Angeles,https://www.downeyca.org/our
 City of El Monte,90265,El Monte,Los Angeles,Los Angeles,http://www.ci.el-monte.ca.us/Government/PublicWorks/Transportation.aspx,7.0,Los Angeles / Ventura,True,True,,4.0,14,https://data.trilliumtransit.com/gtfs/elmonte-ca-us/elmonte-ca-us.zip
 City of Glendora,90266,Glendora,Los Angeles,Los Angeles,https://www.cityofglendora.org/departments-services/transportation,7.0,Los Angeles / Ventura,True,True,5310,,12,https://www.cityofglendora.gov/files/assets/city/v/1/community-development/transportation/documents/glendora-ca-us_updated.zip
 City of Huntington Park,90267,Huntington Park,Los Angeles,Los Angeles,http://www.hpca.gov/231/City-Transportation,7.0,Los Angeles / Ventura,True,True,,,16,https://www.hpca.gov/DocumentCenter/View/11702
-City of Inglewood,90268,Inglewood,Los Angeles,Los Angeles,https://www.cityofinglewood.org/796/Transportation,7.0,Los Angeles / Ventura,True,True,,9.0,9,https://www.cityofinglewood.org/gtfs
+City of Inglewood,90268,Inglewood,Los Angeles,Los Angeles,https://www.cityofinglewood.org/796/Transportation,7.0,Los Angeles / Ventura,True,True,,9.0,9,https://www.cityofinglewood.org/documentcenter/view/21177
 Los Angeles County,90269,Alhambra,Los Angeles,Los Angeles,www.lagobus.info,,,,,,,2,
 Los Angeles County,90270,Alhambra,Los Angeles,Los Angeles,https://www.dpw.lacounty.gov/landing/transportation.cfm,,,,,,,1,
 Los Angeles County,90271,Alhambra,Los Angeles,Los Angeles,www.lagobus.org,7.0,Los Angeles / Ventura,True,True,5311,,16,https://data.trilliumtransit.com/gtfs/dpwlacounty-ca-us/dpwlacounty-ca-us.zip
