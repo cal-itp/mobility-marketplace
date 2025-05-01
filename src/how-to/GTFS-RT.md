@@ -60,7 +60,7 @@ To support your agency in enabling all necessary connectivity services, the MSAs
 
 ### Review available vendors
 
-You can review [available MSAs](/contracts/view?contracts-filter-product=GTFS-Realtime){:target="\_blank"}. Click on each contract number for complete terms and conditions and to read MSA user instructions. Please note, all MSA prices are maximums, and they can be negotiated further downward.
+You can review [available MSAs](/contracts/view?contracts-filter-product=GTFS Realtime){:target="\_blank"}. Click on each contract number for complete terms and conditions and to read MSA user instructions. Please note, all MSA prices are maximums, and they can be negotiated further downward.
 
 To procure from the MSAs, a transit provider and MSA vendor must execute a contract (referred to as a “User Agreement”) that references the terms of the MSA and allows for certain items to be specified for a particular transit provider’s needs.
 
