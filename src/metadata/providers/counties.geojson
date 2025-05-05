@@ -36092,7 +36092,7 @@
       "properties": {
         "id": 34,
         "county": "Sacramento",
-        "num_providers": 5
+        "num_providers": 6
       },
       "geometry": {
         "type": "MultiPolygon",
