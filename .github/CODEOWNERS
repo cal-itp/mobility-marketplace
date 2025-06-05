@@ -1,2 +1,8 @@
 # default to web-admin team
 * @cal-itp/web-admin
+
+# web-review team reviews content changes
+src/*.html  @cal-itp/web-review
+src/**/*.md @cal-itp/web-review
+src/**/*.yml @cal-itp/web-review
+src/uploads/ @cal-itp/web-review
