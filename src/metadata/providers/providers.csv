@@ -19,7 +19,7 @@ City of La Mirada,90024,La Mirada,Los Angeles,Los Angeles,http://www.cityoflamir
 San Diego Metropolitan Transit System,90026,San Diego,San Diego,San Diego,http://www.sdmts.com/,11.0,San Diego,True,True,5307;5309;5311;5337;5339,308.0,774,https://www.sdmts.com/google_transit_files/google_transit.zip
 City of Fresno,90027,Fresno,Fresno,Fresno,https://www.fresno.gov/transportation/,6.0,Fresno / Bakersfield,True,True,5307;5308;5309;5317;5339,106.0,144,https://gis4u.fresno.gov/downloads/zip/fax_gtfs.zip
 Omnitrans,90029,San Bernardino,San Bernardino,San Bernardino,http://www.omnitrans.org/,8.0,San Bernardino / Riverside,True,True,5307;5310,108.0,154,https://www.omnitrans.org/google/google_transit.zip
-North County Transit District,90030,Oceanside,San Diego,San Diego,http://www.gonctd.com/,11.0,San Diego,True,True,5307;5311;5316;5337;5339,38.0,189,https://www.gonctd.com/google_transit.zip
+North County Transit District,90030,Oceanside,San Diego,San Diego,http://www.gonctd.com/,11.0,San Diego,True,True,5307;5311;5316;5337;5339,38.0,189,https://lfportal.nctd.org/staticGTFS/google_transit.zip
 Riverside Transit Agency,90031,Riverside,Riverside,Riverside,http://www.riversidetransit.com/,8.0,San Bernardino / Riverside,True,True,5307;5309;5310;5311;5339,85.0,211,https://www.riversidetransit.com/google_transit.zip
 Gold Coast Transit District,90035,Oxnard,Ventura,Ventura,http://www.goldcoasttransit.org/,7.0,Los Angeles / Ventura,True,True,5307;5310;5339,49.0,72,https://govcbus.com/gtfs;https://www.gctd.org/gtfs/
 Orange County Transportation Authority,90036,Orange,Orange,Orange,http://www.octa.net/,12.0,Orange County,True,True,5307;5309;5310;5316;5339,215.0,808,https://octa.net/current/google_transit.zip
