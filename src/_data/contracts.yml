@@ -111,3 +111,12 @@ entries:
     product: GTFS Realtime
     user_instructions: ~
     footnotes: ~
+
+  - contract: SLP-23-70-0280G
+    contract_url: https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=SLP-23-70-0280G
+    vendor: Remix
+    category: GTFS
+    product: Route planning and scheduling
+    user_instructions: ~
+    footnotes:
+      - 1

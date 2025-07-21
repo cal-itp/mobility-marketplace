@@ -1,11 +1,9 @@
 .page-header {
   border-bottom: $border-width solid $border-color;
-  margin-bottom: 30px;
   padding-bottom: map-get($spacers, 3);
   text-align: left;
 
   @include media-breakpoint-up(md) {
-    margin-bottom: 60px;
     text-align: center;
   }
 }

@@ -14,6 +14,23 @@ newsletter_background: bg-dark-tan
 class_name: no-banner
 
 new_technology:
+  - icon: route-scheduling.svg
+    icon-alt: Bi-directional arrows
+    title: Route planning and scheduling
+    url: ./view?contracts-filter-product=Route planning and scheduling
+    button: View contracts
+    content: >
+      Software-as-a-service (SaaS) platform that allows transit agencies and cities to better plan public transportation systems and more easily schedule transit service.
+
+  - icon: connectivity.svg
+    icon-alt: A signal connection strength indicator
+    title: Data plans
+    url: ./view?contracts-filter-product=Data Plans
+    button: View contracts
+    content: >
+      Fleet modernization and new vehicle technology are allowing us to be even more connected with our transit journeys.
+      To do this, most require data access. These data plans are available to agencies with the pre-negotiated rates listed.
+
   - icon: gtfs-realtime.svg
     icon-alt: Bus with a GPS location icon
     title: GTFS Realtime
@@ -50,15 +67,6 @@ new_technology:
     content: >
       On-board or platform devices equipped with the technology to read and validate riders’ contactless bank
       cards and smart devices.
-
-  - icon: connectivity.svg
-    icon-alt: A signal connection strength indicator
-    title: Data plans
-    url: ./view?contracts-filter-product=Data Plans
-    button: View contracts
-    content: >
-      Fleet modernization and new vehicle technology are allowing us to be even more connected with our transit journeys.
-      To do this, most require data access. These data plans are available to agencies with the pre-negotiated rates listed.
 ---
 
 <strong class="h4">Contracts</strong>
@@ -114,7 +122,7 @@ new_technology:
       </div>
 
       {% if technology.url %}
-        <a class="btn btn-primary px-5" href="{{ technology.url }}" target="{{ technology.url_target | default: '_self' }}">
+        <a class="btn btn-primary px-3" href="{{ technology.url }}" target="{{ technology.url_target | default: '_self' }}">
       {% else %}
         <p class="text-red"><em><strong>
       {% endif %}

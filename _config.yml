@@ -40,6 +40,8 @@ navigation:
       url: /how-to/get-connected
     - name: GTFS Realtime
       url: /how-to/GTFS-RT
+    - name: Route planning and scheduling
+      url: /how-to/route-planning-scheduling
   footer:
     - name: Back to top
       url: "#main-content"
