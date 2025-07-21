@@ -1,0 +1,9 @@
+variants: []
+outputs:
+  - format: json
+    framework: i18next
+    outDir: ./ditto/remix
+    projects:
+      - id: mobimart
+    variants:
+      - id: all

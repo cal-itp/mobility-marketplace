@@ -8,3 +8,7 @@ node_modules/
 vendor/
 venv/
 **/.DS_Store
+
+# Ditto artifacts we don't need
+ditto/remix/index.js
+ditto/remix/variables.json
