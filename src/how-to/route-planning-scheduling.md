@@ -73,7 +73,7 @@ With a limited number of licenses available, during the first year of the progra
 
 We will extend access to 5311 + 5307 as soon as capacity allows, or once year two of the program begins.
 
-[Apply to join the Remix program](https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu){:.btn.btn-primary target="_blank"}
+[Apply to join the Remix program](https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu){:.btn.btn-primary-dark-blue target="_blank"}
 
 If you have questions about your eligibility based on past funding, please see [Commonly asked questions](#commonly-asked-questions). If you do not qualify for this program, you can still purchase directly off the [Software Licensing Program (SLP)](/contracts/view?contracts-filter-product=Route planning and scheduling){:target="_blank"}. Reach out to your Cal-ITP Account Manager or [hello@calitp.org](mailto:hello@calitp.org) for assistance.
 

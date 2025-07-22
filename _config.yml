@@ -34,9 +34,9 @@ navigation:
     - name: Contact us
       url: /contact
   products:
-    - name: Contactless Payments
+    - name: Contactless payments
       url: /go-contactless
-    - name: Data Plans
+    - name: Data plans
       url: /how-to/get-connected
     - name: GTFS Realtime
       url: /how-to/GTFS-RT
