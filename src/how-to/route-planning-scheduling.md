@@ -26,7 +26,7 @@ show_newsletter: false
         The project is administered by Cal-ITP via support from Account Managers, and agencies will continue to receive technical support from both Cal-ITP and Remix for the duration of the license.
       </p>
       <div class="mx-auto text-center pt-4">
-        <a class="btn btn-dark-blue-inverted" href="https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu">Apply today!</a>
+        <a class="btn btn-dark-blue-inverted" href="https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu" target="_blank">Apply today!</a>
       </div>
     </div>
   </div>
@@ -63,23 +63,23 @@ Licenses distributed through this program will include:
 
 Both the Transit and Scheduling modules include **Remix Explore**, a geospatial data visualization and analysis tool that lets you bring your data together in one place.
 
-For a more detailed overview of how Remix works, as well as the different modules available, we suggest [watching the demos featured on their website](https://info.ridewithvia.com/videos/remix-ben-peabody). Please note: The Cal-ITP Remix Program does not offer access to the Streets module. To learn about all the products Remix has to offer, [visit their website](https://ridewithvia.com/solutions/remix).
+For a more detailed overview of how Remix works, as well as the different modules available, we suggest [watching the demos featured on their website](https://info.ridewithvia.com/videos/remix-ben-peabody){:target="_blank"}. Please note: The Cal-ITP Remix Program does not offer access to the Streets module. To learn about all the products Remix has to offer, [visit their website](https://ridewithvia.com/solutions/remix){:target="_blank"}.
 
 ## Apply to the program
 
 ### Eligibility requirements
 
-With a limited number of licenses available, during the first year of the program, priority will be given to agencies who have received **only** 5311 funding in the past 3 years. However, agencies who have received 5311 and 5307 funding are still encouraged to express their interest through the [intake form](https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu).
+With a limited number of licenses available, during the first year of the program, priority will be given to agencies who have received **only** 5311 funding in the past 3 years. However, agencies who have received 5311 and 5307 funding are still encouraged to express their interest through the [intake form](https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu){:target="_blank"}.
 
 We will extend access to 5311 + 5307 as soon as capacity allows, or once year two of the program begins.
 
-[Apply to join the Remix program](https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu){:.btn.btn-primary}
+[Apply to join the Remix program](https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu){:.btn.btn-primary target="_blank"}
 
-If you have questions about your eligibility based on past funding, please see [Commonly asked questions](#commonly-asked-questions). If you do not qualify for this program, you can still purchase directly off the [Software Licensing Program (SLP)](/contracts/view?contracts-filter-product=Route planning and scheduling). Reach out to your Cal-ITP Account Manager or [hello@calitp.org](mailto:hello@calitp.org) for assistance.
+If you have questions about your eligibility based on past funding, please see [Commonly asked questions](#commonly-asked-questions). If you do not qualify for this program, you can still purchase directly off the [Software Licensing Program (SLP)](/contracts/view?contracts-filter-product=Route planning and scheduling){:target="_blank"}. Reach out to your Cal-ITP Account Manager or [hello@calitp.org](mailto:hello@calitp.org) for assistance.
 
 ### How to apply
 
-Fill out [an interest form](https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu) to apply for a free Remix license. The form should take about 10-15 minutes to fill out. You’ll share information about your current vendors, scheduling processes, and GTFS pipeline.
+Fill out [an interest form](https://share.hsforms.com/13WkzY7taSoSdxBATWsNedQ3aanu){:target="_blank"} to apply for a free Remix license. The form should take about 10-15 minutes to fill out. You’ll share information about your current vendors, scheduling processes, and GTFS pipeline.
 
 Within 30 days of submitting the interest form, agencies will be notified of whether or not they are eligible. Access to Remix Planning will be granted to eligible agencies within 7 days of that notification. Participating agencies will receive training and onboarding resources as well as access to Remix Scheduling and Remix GTFS Publisher within 30 days of the first login.
 
@@ -95,7 +95,7 @@ Agencies selected for participation in this program will be required to: 
 
 There is also an expectation for participating agencies to utilize Remix as your primary tool for maintaining and publishing schedule data including the GTFS Schedule information submitted to trip planners and any CAD/AVL systems.
 
-[Reach out with any questions](/contact){:.btn.btn-outline-primary}
+[Reach out with any questions](/contact){:.btn.btn-outline-primary target="_blank"}
 
 ## Additional program info
 
