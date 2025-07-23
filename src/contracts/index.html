@@ -14,6 +14,23 @@ newsletter_background: bg-dark-tan
 class_name: no-banner
 
 new_technology:
+  - icon: route-scheduling.svg
+    icon-alt: Bi-directional arrows
+    title: Route planning and scheduling
+    url: ./view?contracts-filter-product=Route planning and scheduling
+    button: View contracts
+    content: >
+      Software-as-a-service (SaaS) platform that allows transit agencies and cities to better plan public transportation systems and more easily schedule transit service.
+
+  - icon: connectivity.svg
+    icon-alt: A signal connection strength indicator
+    title: Data plans
+    url: ./view?contracts-filter-product=Data Plans
+    button: View contracts
+    content: >
+      Fleet modernization and new vehicle technology are allowing us to be even more connected with our transit journeys.
+      To do this, most require data access. These data plans are available to agencies with the pre-negotiated rates listed.
+
   - icon: gtfs-realtime.svg
     icon-alt: Bus with a GPS location icon
     title: GTFS Realtime
@@ -24,7 +41,7 @@ new_technology:
 
   - icon: payment-processor.svg
     icon-alt: Dollar sign wrapped with arrows in a circular shape
-    title: Payment Processor
+    title: Payment processor
     url: ./view?contracts-filter-product=Payment Processor
     button: View contracts
     content: >
@@ -50,15 +67,6 @@ new_technology:
     content: >
       On-board or platform devices equipped with the technology to read and validate riders’ contactless bank
       cards and smart devices.
-
-  - icon: connectivity.svg
-    icon-alt: A signal connection strength indicator
-    title: Data plans
-    url: ./view?contracts-filter-product=Data Plans
-    button: View contracts
-    content: >
-      Fleet modernization and new vehicle technology are allowing us to be even more connected with our transit journeys.
-      To do this, most require data access. These data plans are available to agencies with the pre-negotiated rates listed.
 ---
 
 <strong class="h4">Contracts</strong>
@@ -66,7 +74,7 @@ new_technology:
   The State of California has Master Service Agreements (MSAs)—most of which are open to all public transportation providers in the U.S.—available to help you modernize your transit system. The Mobility Marketplace serves as Cal-ITP’s online catalog, where transit providers can browse available goods and services and build a customized transit technology system that suits their needs.
 </p>
 
-<strong class="h4">How do MSAs Work?</strong>
+<strong class="h4">How do MSAs work?</strong>
 <p class="pb-3">
     The contracts or MSAs listed on this site are examples of a “state purchasing schedule.” These schedules are agreements between a state or related entity and vendor(s) to provide goods or services at agreed-upon prices. Fundamentally, state purchasing schedules are designed to accommodate other parties that may enter into and benefit from the agreements in the future.
 </p>
@@ -74,7 +82,7 @@ new_technology:
     <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/Third%20Party%20Contracting%20Guidance%20%28Circular%204220.1F%29.pdf" target="_blank">Guidance from the Federal Transit Administration (FTA)</a> supports recipients in pursuing state purchasing schedules, given that agreement parties have granted express permission and all FTA and Federal requirements are met. Read more about <a href="https://www.transit.dot.gov/funding/procurement/third-party-procurement/third-party-procurement-faqs" target="_blank">Third Party Procurement</a> from the FTA.
 </p>
 
-<strong class="h4">Contactless Fare Collection</strong>
+<strong class="h4">Contactless fare collection</strong>
 <p class="pb-3">
     To add contactless fare collection, you will need up to three new technologies and to ensure internet connectivity on your fleet (if you don’t already have it).
 </p>
@@ -114,7 +122,7 @@ new_technology:
       </div>
 
       {% if technology.url %}
-        <a class="btn btn-primary px-5" href="{{ technology.url }}" target="{{ technology.url_target | default: '_self' }}">
+        <a class="btn btn-primary px-3" href="{{ technology.url }}" target="{{ technology.url_target | default: '_self' }}">
       {% else %}
         <p class="text-red"><em><strong>
       {% endif %}

@@ -16,9 +16,9 @@ $beige: #f6f3ed;
 // New colors from 2023 / Figma
 
 $primary: #046b99;
-$primary-rgb: 4, 91, 134;
+$primary-rgb: 4, 107, 153;
 $primary-black: #212121;
-$dark-blue: #225173;
+$dark-blue: #044869;
 
 $cyan-1: #d5eef5;
 $gray-1: #eeeeee;
@@ -70,6 +70,17 @@ $custom-select-indicator: url('data:image/svg+xml,<svg width="12" height="7" vie
   --bs-btn-hover-border-color: #{$dark-blue};
   --bs-btn-active-bg: #{$dark-blue};
   --bs-btn-active-border-color: #{$dark-blue};
+}
+
+.btn-primary-dark-blue {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #{$dark-blue};
+  --bs-btn-border-color: #{$dark-blue};
+  --bs-btn-hover-bg: #{$primary};
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-border-color: #{$primary};
+  --bs-btn-active-bg: #{$primary};
+  --bs-btn-active-border-color: #{$primary};
 }
 
 .btn-outline-primary {
