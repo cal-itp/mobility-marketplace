@@ -17,7 +17,7 @@ show_newsletter: false
   <div class="row justify-content-center">
     <div class="col-md-8">
       <header>
-        <h1 class="page-header text-white">How to Get Connected</h1>
+        <h1 class="page-header text-white">How to get connected</h1>
       </header>
       <p class="text-white">
         Whether enabling passengers to tap to pay with mobile wallets or to see the live location of a bus on their phone map,
@@ -38,7 +38,7 @@ show_newsletter: false
 
 <!-- END_PREFACE -->
 
-## Getting Started
+## Getting started
 
 ### What is connectivity?
 

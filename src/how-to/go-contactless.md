@@ -10,7 +10,7 @@ show_newsletter: false
   <div class="row justify-content-center">
     <div class="col-md-8">
       <header>
-        <h1 class="page-header text-white">How to Go Contactless</h1>
+        <h1 class="page-header text-white">How to go contactless</h1>
       </header>
       <p class="text-white">
         California is making it easier for public transit providers to accept contactless credit/debit/prepaid cards or mobile
