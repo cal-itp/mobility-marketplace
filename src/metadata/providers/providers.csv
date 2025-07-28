@@ -23,7 +23,7 @@ North County Transit District,90030,Oceanside,San Diego,San Diego,http://www.gon
 Riverside Transit Agency,90031,Riverside,Riverside,Riverside,http://www.riversidetransit.com/,8.0,San Bernardino / Riverside,True,True,5307;5309;5310;5311;5339,85.0,211,https://www.riversidetransit.com/google_transit.zip
 Gold Coast Transit District,90035,Oxnard,Ventura,Ventura,http://www.goldcoasttransit.org/,7.0,Los Angeles / Ventura,True,True,5307;5310;5339,49.0,72,https://govcbus.com/gtfs;https://www.gctd.org/gtfs/
 Orange County Transportation Authority,90036,Orange,Orange,Orange,http://www.octa.net/,12.0,Orange County,True,True,5307;5309;5310;5316;5339,215.0,808,https://octa.net/current/google_transit.zip
-City of Culver City,90039,Culver City,Los Angeles,Los Angeles,https://www.culvercitybus.com/,7.0,Los Angeles / Ventura,True,True,5307,41.0,41,https://www.culvercity.org/files/assets/public/v/1/documents/information-technology/maps/gtfsexport.zip
+City of Culver City,90039,Culver City,Los Angeles,Los Angeles,https://www.culvercitybus.com/,7.0,Los Angeles / Ventura,True,True,5307,41.0,41,https://www.culvercity.org/files/assets/public/v/9/documents/information-technology/maps/gtfsexport.zip
 City of Montebello,90041,Montebello,Los Angeles,Los Angeles,http://www.ridembl.com/,7.0,Los Angeles / Ventura,True,True,5307,40.0,85,https://mbl.rideralerts.com/infopoint/gtfs-zip.ashx
 City of Gardena,90042,Gardena,Los Angeles,Los Angeles,www.ridegtrans.com,7.0,Los Angeles / Ventura,True,True,5307,29.0,29,https://ridegtrans.com/gtfs.zip
 City of Commerce,90043,Commerce,Los Angeles,Los Angeles,https://www.ci.commerce.ca.us/city-hall/transportation,7.0,Los Angeles / Ventura,True,True,5307,14.0,14,https://citycommbus.com/gtfs
