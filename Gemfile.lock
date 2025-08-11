@@ -64,7 +64,7 @@ GEM
       ffi (~> 1.0)
     rexml (3.4.0)
     rouge (4.5.1)
-    rubyzip (2.4.1)
+    rubyzip (3.0.1)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -84,7 +84,7 @@ DEPENDENCIES
   jekyll-sass-converter (= 2.2.0)
   jekyll-seo-tag (~> 2.8.0)
   jekyll-sitemap (~> 1.4.0)
-  rubyzip (~> 2.4)
+  rubyzip (~> 3.0)
 
 BUNDLED WITH
    2.4.13
