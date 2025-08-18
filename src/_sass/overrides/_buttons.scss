@@ -9,6 +9,10 @@
   }
 }
 
+.btn:focus-visible {
+  --bs-btn-focus-box-shadow: 0 0 0 2px #2ea3f2;
+}
+
 .btn-outline-primary {
   background-color: transparent !important;
 
