@@ -35,7 +35,7 @@ jobs:
           # Download the latest providers.csv from the warehouse
           bash .github/resources/download_csv.sh
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.10"
 
