@@ -13,7 +13,7 @@
       "properties": {
         "id": 10,
         "county": "Fresno",
-        "num_providers": 2
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -8787,7 +8787,7 @@
       "properties": {
         "id": 8,
         "county": "Del Norte",
-        "num_providers": 2
+        "num_providers": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -19263,7 +19263,7 @@
       "properties": {
         "id": 16,
         "county": "Kings",
-        "num_providers": 3
+        "num_providers": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -30331,7 +30331,7 @@
       "properties": {
         "id": 19,
         "county": "Los Angeles",
-        "num_providers": 80
+        "num_providers": 79
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -31348,7 +31348,7 @@
       "properties": {
         "id": 23,
         "county": "Mendocino",
-        "num_providers": 1
+        "num_providers": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -36092,7 +36092,7 @@
       "properties": {
         "id": 34,
         "county": "Sacramento",
-        "num_providers": 6
+        "num_providers": 7
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -43067,7 +43067,7 @@
       "properties": {
         "id": 37,
         "county": "San Diego",
-        "num_providers": 9
+        "num_providers": 8
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62787,7 +62787,7 @@
       "properties": {
         "id": 54,
         "county": "Tulare",
-        "num_providers": 3
+        "num_providers": 5
       },
       "geometry": {
         "type": "MultiPolygon",
