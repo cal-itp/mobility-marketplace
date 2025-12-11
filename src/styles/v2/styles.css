@@ -1,16 +1,14 @@
-body {
-  min-height: 100vh;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+:root {
+  --dsdl-white: #fff;
+  --dsdl-black: #101010;
 }
 
-footer {
-  color: var(--dsdl-gray-10);
-  min-height: 296px;
+.footer {
+  background-color: var(--dsdl-black);
+  color: var(--dsdl-white);
+  padding: 2rem 80px;
 }
 
-.footer-row {
-  margin-top: 2rem;
-  margin-left: 80px;
+a.subtle-link {
+  text-decoration: none;
 }

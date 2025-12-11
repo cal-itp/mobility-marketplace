@@ -1,5 +1,5 @@
-<footer class="bg-dark container-fluid">
-  <div class="row footer-row">
+<footer class="container-fluid footer">
+  <div class="row column-gap-4">
     <div class="col-2">
       <img src="/uploads/logo-sm.svg" alt="California Integrated Travel Project (Cal-ITP)" />
     </div>
@@ -9,23 +9,38 @@
         Cal-ITP.
       </p>
       <p>
-        <a class="fw-bold text-reset" href="mailto:hello@calitp.org">hello@calitp.org</a>
+        <a class="font-weight-bold text-reset" href="mailto:hello@calitp.org">hello@calitp.org</a>
       </p>
-      <!-- in eleventy you can just include the raw svg. that might be an anti-pattern though -->
       <img src="/uploads/v2/linkedin.svg" alt="linkedin" />
       <img src="/uploads/v2/youtube.svg" alt="youtube" />
     </div>
-    <div class="col">
-      <p class="fw-bold">Data plans</p>
-      <p class="fw-bold">Route schedule</p>
-      <p class="fw-bold">GTFS-Realtime</p>
-      <p class="fw-bold">Tap to pay</p>
-      <p class="fw-bold">Rider benefits</p>
-    </div>
     <div class="col-2">
-      <p>Register to vote</p>
-      <p>Privacy policy</p>
-      <p>Conditions of use</p>
+      <p><a class="font-weight-bold text-reset" href>Data plans</a></p>
+      <p><a class="font-weight-bold text-reset" href>Route schedule</a></p>
+      <!-- no hyphen -->
+      <p><a class="font-weight-bold text-reset" href>GTFS Realtime</a></p>
+      <p><a class="font-weight-bold text-reset" href>Tap to pay</a></p>
+      <p><a class="font-weight-bold text-reset" href>Rider benefits</a></p>
+    </div>
+    <div class="col-2 ms-auto">
+      <p>
+        <a class="subtle-link font-size-s font-weight-normal text-reset" href="https://registertovote.ca.gov/" target="_blank"
+          >Register to vote</a
+        >
+      </p>
+      <p>
+        <a class="subtle-link font-size-s font-weight-normal text-reset" href="https://dot.ca.gov/privacy-policy" target="_blank"
+          >Privacy policy</a
+        >
+      </p>
+      <p>
+        <a
+          class="subtle-link font-size-s font-weight-normal text-reset"
+          href="https://dot.ca.gov/conditions-of-use"
+          target="_blank"
+          >Conditions of use</a
+        >
+      </p>
     </div>
   </div>
 </footer>
