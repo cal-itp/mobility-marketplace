@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="/styles/v2/styles.css" />
   </head>
   <body>
-    <div class="d-none d-lg-flex align-items-end justify-content-end vh-100">
-      <!-- mostly temp styles to wrap dummy footer -->
-      {% include v2/site-footer.html %}
+    <!-- temp styles -->
+    <div class="d-flex align-items-end justify-content-end vh-100">
+      {% include v2/desktop-footer.html %}
+      <!-- we can consolidate and/or DRY things once we're happy with the layout -->
+      {% include v2/mobile-footer.html %}
     </div>
   </body>
 </html>
