@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://feature-dsdl--cal-itp-website.netlify.app/stylesheets/dsdl/dsdl.css" />
+    <link rel="stylesheet" href="/styles/v2/styles.css" />
+  </head>
+  <body>
+    <!-- temp styles -->
+    <div class="d-flex align-items-end justify-content-end vh-100">
+      {% include v2/desktop-footer.html %}
+      <!-- we can consolidate and/or DRY things once we're happy with the layout -->
+      {% include v2/mobile-footer.html %}
+    </div>
+  </body>
+</html>

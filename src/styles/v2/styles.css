@@ -1,0 +1,31 @@
+:root {
+  --dsdl-white: #fff;
+  --dsdl-black: #101010;
+}
+
+.footer {
+  background-color: var(--dsdl-black);
+  color: var(--dsdl-white);
+  padding: 2rem 24px;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    padding: 2rem 80px;
+  }
+}
+
+.footer .underlined-link {
+  text-decoration: underline;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer hr {
+  margin-left: 24px;
+  margin-right: 24px;
+  opacity: 1;
+}
