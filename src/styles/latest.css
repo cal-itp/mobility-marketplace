@@ -1,0 +1,59 @@
+.footer-wrapper {
+  background-color: var(--dsdl-gray-100);
+  width: 100%;
+}
+
+.footer {
+  color: #fff;
+  max-width: calc(var(--spacing-base) * 180); /* don't let the actual footer content stretch beyond 1440px */
+  padding: var(--spacing-4) var(--spacing-3) var(--spacing-2);
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.privacy-links ul {
+  display: flex;
+  gap: var(--spacing-1);
+  justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    padding: var(--spacing-4) var(--spacing-10);
+  }
+
+  .privacy-links ul {
+    display: unset;
+  }
+}
+
+.footer a {
+  color: inherit;
+  /* without this the privacy links wrap onto a second line */
+  text-wrap: nowrap;
+}
+
+.footer a:focus {
+  border-radius: calc(2rem / 16);
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.footer a:hover {
+  color: var(--calitp-brand-yellow);
+}
+
+.footer nav a,
+a:has(> img) {
+  text-decoration: none;
+}
+
+.footer hr {
+  margin: var(--spacing-1) var(--spacing-3);
+  opacity: 1;
+  width: unset;
+}
