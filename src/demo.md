@@ -8,10 +8,9 @@ description: >
 
 <div class="container">
   <h2>Pull quote</h2>
-  <h3>Attributed with color scheme: yellow</h3>
+  <h3>Attributed with default color scheme (yellow)</h3>
 </div>
 
-{% assign quote_color_scheme = "yellow" %}
 {% assign quote_content = "I really appreciate Cal-ITP filling this role of keeping these things moving. It’s a type of support I’m constantly requesting in all sorts of different spaces (like implementation of regional goals, etc.). It's really helpful, particularly on these types of projects that directly improve passenger experience. <strong>At the end of the day passenger experience matters the most.</strong>" %}
 {% assign quote_source_name = "Jerome Qiriazi" %}
 {% assign quote_source_title = "Transit Planner, Humboldt Transit Authority" %}

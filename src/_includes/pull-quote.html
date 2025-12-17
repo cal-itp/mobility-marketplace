@@ -7,19 +7,19 @@
         {% include pull-quote.html color_scheme=quote_color_scheme content=quote_content source_name=quote_source_name source_title=quote_source_title %}
 
     Parameters:
-        * color_scheme (string) - a color name to be added to a class for CSS to use to set element colors
-        * content      (string) - a chunk of text to be inserted into the main <p> element;
-                                  supports inline HTML
+        * content (string) - a chunk of text to be inserted into the main <p> element; supports inline HTML
 
     Optional Parameters:
-        * source_name  (string) : '' - name of the person the quote can be attributed to
-        * source_title (string) : '' - the person's job title or other useful description of them
+        * color_scheme (enum)   : 'yellow' - color name to be added to a class for CSS to use for styling;
+                                             valid options: 'yellow', 'purple', 'cyan-light', 'cyan-dark'
+        * source_name  (string) : ''       - name of the person the quote can be attributed to
+        * source_title (string) : ''       - the person's job title or other useful description of them
 
     Output:
         Markup for a pull quote with optional attribution using the Bootstrap layout grid.
 {% endcomment %}
 
-<blockquote class="pull-quote pull-quote_{{ include.color_scheme }}">
+<blockquote class="pull-quote pull-quote_{{ include.color_scheme | default: "yellow" }}">
   <div class="container">
       <div class="row">
         <p class="pull-quote-content {% if include.source_name %}pull-quote-content_attributed offset-lg-3{% else %}pull-quote-content_unattributed offset-lg-2{% endif %} col-lg-6 col-12">{{ include.content }}</p>
