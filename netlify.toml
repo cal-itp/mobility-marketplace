@@ -1,9 +1,5 @@
 [build]
-    command = "bundle exec jekyll build"
-    environment = { JEKYLL_ENV = "development" }
-
-[context.production]
-    environment = { JEKYLL_ENV = "production" }
+    command = "npm run build"
 
 [[redirects]]
   from = "/assets/Cal-ITP.MobilityMarketplace.DataPlans.NASPO.FirstNet.pdf"

@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # Mobility Marketplace
 
 [`camobilitymarketplace.org`](https://camobilitymarketplace.org/)
