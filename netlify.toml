@@ -1,6 +1,5 @@
 [build]
-    command = "npx @11ty/eleventy"
-    publish = "_site"
+    command = "npm run build"
 
 [[redirects]]
   from = "/assets/Cal-ITP.MobilityMarketplace.DataPlans.NASPO.FirstNet.pdf"
