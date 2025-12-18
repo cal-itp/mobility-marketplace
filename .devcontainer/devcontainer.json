@@ -3,21 +3,30 @@
   "dockerComposeFile": "compose.yml",
   "service": "site",
   "workspaceFolder": "/usr/src/mobimart",
-  "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.profiles.linux": {
-      "bash": {
-        "path": "/bin/bash"
-      }
-    }
+  "remoteEnv": {
+    "MISE_TRUSTED_CONFIG_PATHS": "${containerEnv:PATH}:/usr/src/mobimart"
   },
-  "extensions": [
-    "bungcip.better-toml",
-    "eamodio.gitlens",
-    "esbenp.prettier-vscode",
-    "mhutchie.git-graph",
-    "redhat.vscode-xml",
-    "sissel.shopify-liquid"
-  ]
+  "postStartCommand": [
+    "/bin/bash",
+    ".devcontainer/postStart.sh"
+  ],
+  "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
+  "customizations": {
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash",
+      "terminal.integrated.profiles.linux": {
+        "bash": {
+          "path": "/bin/bash"
+        }
+      }
+    },
+    "extensions": [
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "mhutchie.git-graph",
+      "redhat.vscode-xml",
+      "sissel.shopify-liquid",
+      "tombi-toml.tombi"
+    ]
+  }
 }

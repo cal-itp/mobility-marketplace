@@ -1,10 +1,4 @@
 _site/
-.bundle/
-.jekyll-cache/
-.jekyll-metadata/
 .netlify/
-data/providers/*.json
 node_modules/
-vendor/
-venv/
 **/.DS_Store
