@@ -2,9 +2,6 @@ FROM python:3.14
 
 WORKDIR /usr/src/mobimart
 
-# Install our one Python dependency
-RUN pip install pre-commit
-
 # Install Mise for the same tool management as Netlify
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ENV MISE_DATA_DIR="/mise"
@@ -21,3 +18,8 @@ COPY package*.json ./
 # Mise will install the version of Node specified in .node-version
 # before it tries to run `npm ci`
 RUN mise exec -- npm ci
+
+# Install Python dependencies
+COPY .devcontainer/requirements.txt .devcontainer/requirements.txt
+RUN python -m pip install --upgrade pip
+RUN pip install --no-cache-dir -r .devcontainer/requirements.txt
