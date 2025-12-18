@@ -6,10 +6,6 @@
   "remoteEnv": {
     "MISE_TRUSTED_CONFIG_PATHS": "${containerEnv:PATH}:/usr/src/mobimart"
   },
-  "postStartCommand": [
-    "/bin/bash",
-    ".devcontainer/postStart.sh"
-  ],
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "customizations": {
     "settings": {
