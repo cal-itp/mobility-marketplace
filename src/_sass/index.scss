@@ -3,9 +3,10 @@
 @import "variables";
 @import "functions";
 
-// looks like the only things we're leaning on from this now are inlined bootstrap variables and functions
-// https://github.com/olifolkerd/tabulator/blob/56bfd082a63f1002266eea7b88a35cc1f6e42280/src/scss/themes/bootstrap/tabulator_bootstrap4.scss
-@import "../../submodules/tabulator/src/scss/bootstrap/tabulator_bootstrap4.scss";
+// it would make more sense (to me) to @import all of bootstrap's Sass here and stop loading it via CDN
+// but i don't think thats a yak worth shaving until/unless we decide to keep sass after the information rearchitecture
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
 
 @import "base";
 @import "layout";
