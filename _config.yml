@@ -47,8 +47,6 @@ navigation:
       url: "#main-content"
     - name: Glossary
       url: /glossary-of-key-terms
-    - name: Provider map
-      url: /provider-map
     - name: Privacy policy
       url: https://dot.ca.gov/privacy-policy
       target: _blank
