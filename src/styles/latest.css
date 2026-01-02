@@ -22,9 +22,6 @@
   font-weight: 700;
   margin-bottom: -0.25em;
 }
-.pull-quote cite {
-  font-style: normal;
-}
 .pull-quote_yellow {
   background-color: var(--calitp-brand-yellow);
   color: var(--dsdl-black);

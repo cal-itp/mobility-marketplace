@@ -19,18 +19,18 @@
         Markup for a pull quote with optional attribution using the Bootstrap layout grid.
 {% endcomment %}
 
-<blockquote class="pull-quote pull-quote_{{ include.color_scheme | default: "yellow" }}">
+<figure class="pull-quote pull-quote_{{ include.color_scheme | default: "yellow" }}">
   <div class="container">
-      <div class="row">
-        <p class="pull-quote-content {% if include.source_name %}pull-quote-content_attributed offset-lg-3{% else %}pull-quote-content_unattributed offset-lg-2{% endif %} col-lg-6 col-12">{{ include.content }}</p>
-      </div>
-      {% if include.source_name %}
-        <div class="row">
-          <cite class="col-lg-4 offset-lg-6">
-              <div class="fw-bold">{{ include.source_name }}</div>
-              {% if include.source_title %}<div>{{ include.source_title }}</div>{% endif %}
-          </cite>
+    <blockquote class="row">
+      <p class="pull-quote-content {% if include.source_name %}pull-quote-content_attributed offset-lg-3{% else %}pull-quote-content_unattributed offset-lg-2{% endif %} col-lg-6 col-12">{{ include.content }}</p>
+    </blockquote>
+    {% if include.source_name %}
+      <figcaption class="row">
+        <div class="col-lg-4 offset-lg-6">
+          <div class="fw-bold">{{ include.source_name }}</div>
+          {% if include.source_title %}<div>{{ include.source_title }}</div>{% endif %}
         </div>
-      {% endif %}
+      </figcaption>
+    {% endif %}
   </div>
-</blockquote>
+</figure>
