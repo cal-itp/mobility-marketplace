@@ -25,8 +25,6 @@ google_analytics_id: "G-6M5TSH3VCY"
 mailing_list: https://lp.constantcontactpages.com/su/eLbtFoE/calitp?source_id=a41b99cd-7f28-4be8-a286-f9e75fc7bbce&source_type=em&c=
 navigation:
   header:
-    - name: Contracts
-      url: /contracts/
     - name: For vendors
       url: /for-vendors
     - name: About
@@ -47,8 +45,6 @@ navigation:
       url: "#main-content"
     - name: Glossary
       url: /glossary-of-key-terms
-    - name: Provider map
-      url: /provider-map
     - name: Privacy policy
       url: https://dot.ca.gov/privacy-policy
       target: _blank

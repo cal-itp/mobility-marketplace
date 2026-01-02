@@ -3,6 +3,8 @@
 @import "variables";
 @import "functions";
 
+// looks like the only things we're leaning on from this now are inlined bootstrap variables and functions
+// https://github.com/olifolkerd/tabulator/blob/56bfd082a63f1002266eea7b88a35cc1f6e42280/src/scss/themes/bootstrap/tabulator_bootstrap4.scss
 @import "../../submodules/tabulator/src/scss/bootstrap/tabulator_bootstrap4.scss";
 
 @import "base";
@@ -11,7 +13,6 @@
 @import "overrides/buttons";
 @import "overrides/forms";
 @import "overrides/main-content";
-@import "overrides/tables";
 
 @import "components/filterable-table";
 @import "components/footnotes";
@@ -24,7 +25,6 @@
 
 @import "pages/contracts";
 @import "pages/home";
-@import "pages/provider-map";
 @import "pages/go-contactless";
 @import "pages/how-to-go-contactless";
 

@@ -50,13 +50,6 @@
       gtag("js", new Date());
 
       gtag("config", "{{site.google_analytics_id}}");
-
-      function handleDownloadClick(event_label) {
-        gtag("event", "download", {
-          event_category: "downloads",
-          event_label: event_label,
-        });
-      }
     </script>
 
     {% assign page_form = page.form %} {% if page_form %} {% assign script_src = page_form.src | default: "/scripts/forms.js" %}

@@ -1,5 +1,3 @@
-.filterable-table-container {}
-
 .filterable-table__pills {
   width: 100%;
 
@@ -11,11 +9,4 @@
       margin-left: 0;
     }
   }
-}
-
-// These are magic numbers that probably can be replaced by some CSS magic
-.filterable-table__pills--provider-map {
-  left: 15px;
-  position: absolute;
-  top: -35px;
 }
