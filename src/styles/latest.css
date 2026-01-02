@@ -33,8 +33,6 @@
 
 .footer a {
   color: inherit;
-  /* without this the privacy links wrap onto a second line */
-  text-wrap: nowrap;
 }
 
 .footer a:focus {
