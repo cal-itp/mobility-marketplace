@@ -47,9 +47,9 @@ description: >
 <div class="container">
   <h2>Step list</h2>
   <div class="row">
-    <h3>Default color scheme (yellow)</h3>
+    <h3>Color scheme: yellow</h3>
     <div class="offset-lg-2 col-lg-6 col-12">
-      <ol class="step-list my-4">
+      <ol class="step-list step-list_yellow my-4">
         <li><b>Choose a data-only provider</b> and plan that fits your agency’s needs</li>
         <li><b>Review purchase options:</b> You can access data plans in the commercial marketplace or at discounted rates on <a href="#">CALNET</a> or on <a href="#">NASPO</a></li>
         <li><b>Engage the vendor</b> you’d like to purchase from</li>

@@ -3,6 +3,7 @@
 .pull-quote {
   padding: var(--spacing-5) 0;
   margin: var(--spacing-7) 0;
+  background-color: var(--dsdl-gray-20);
 }
 .pull-quote-content {
   font-family: var(--dsdl-heading-font-stack);
@@ -18,25 +19,20 @@
 .pull-quote-content_attributed::before {
   content: '“';
   display: block;
+  margin-bottom: -0.25em;
+  color: white;
   font-family: var(--dsdl-heading-font-stack);
   font-size: calc(150 / 16 * 1rem);
   line-height: 0.75;
   font-weight: 700;
-  margin-bottom: -0.25em;
 }
 .pull-quote_yellow {
   background-color: var(--calitp-brand-yellow);
   color: var(--dsdl-black);
 }
-.pull-quote_yellow .pull-quote-content_attributed::before {
-  color: white;
-}
 .pull-quote_purple {
   background-color: var(--dsdl-purple-30);
   color: var(--dsdl-black);
-}
-.pull-quote_purple .pull-quote-content_attributed::before {
-  color: white;
 }
 .pull-quote_cyan-light {
   background-color: var(--dsdl-cyan-10);
@@ -70,7 +66,7 @@
 .step-list {
   padding-left: 1.875rem;
   padding-bottom: 1.5rem;
-  border-left: 0.1875rem solid var(--calitp-brand-yellow);
+  border-left: 0.1875rem solid var(--dsdl-gray-20);
   margin-left: 0.9375rem;
   font-size: var(--text-l);
   list-style: none;
@@ -93,7 +89,7 @@
   position: absolute;
   left: -3rem;
   top: -0.0625rem;
-  background-color: var(--calitp-brand-yellow);
+  background-color: var(--dsdl-gray-20);
   color: var(--dsdl-black);
   font-family: var(--dsdl-heading-font-stack);
   font-size: var(--text-m);
@@ -102,6 +98,11 @@
   text-align: center;
 }
 
+.step-list_yellow { border-left-color: var(--calitp-brand-yellow); }
+.step-list_yellow li::before {
+  background-color: var(--calitp-brand-yellow);
+  color: var(--dsdl-black);
+}
 .step-list_purple { border-left-color: var(--dsdl-purple-80);  }
 .step-list_purple li::before {
   background-color: var(--dsdl-purple-80);
