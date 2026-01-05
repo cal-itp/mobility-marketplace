@@ -157,6 +157,17 @@
   outline-offset: 2px;
 }
 
+.header a:hover {
+  border-color: var(--dsdl-cyan-60);
+  background-color: var(--dsdl-cyan-10);
+}
+
+.header a:active {
+  border-color: var(--dsdl-cyan-60);
+  background-color: var(--dsdl-cyan-60);
+  color: #fff;
+}
+
 .header a.contact {
   border: none;
 }
