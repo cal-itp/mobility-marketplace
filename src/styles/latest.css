@@ -17,7 +17,7 @@
   margin-bottom: 0;
 }
 .pull-quote-content_attributed::before {
-  content: '“';
+  content: "“";
   display: block;
   margin-bottom: -0.25em;
   color: white;
@@ -60,7 +60,6 @@
   }
 }
 
-
 /* STEP LIST */
 
 .step-list {
@@ -98,28 +97,87 @@
   text-align: center;
 }
 
-.step-list_yellow { border-left-color: var(--calitp-brand-yellow); }
+.step-list_yellow {
+  border-left-color: var(--calitp-brand-yellow);
+}
 .step-list_yellow li::before {
   background-color: var(--calitp-brand-yellow);
   color: var(--dsdl-black);
 }
-.step-list_purple { border-left-color: var(--dsdl-purple-80);  }
+.step-list_purple {
+  border-left-color: var(--dsdl-purple-80);
+}
 .step-list_purple li::before {
   background-color: var(--dsdl-purple-80);
   color: white;
 }
-.step-list_cyan-light { border-left-color: var(--dsdl-cyan-10);  }
+.step-list_cyan-light {
+  border-left-color: var(--dsdl-cyan-10);
+}
 .step-list_cyan-light li::before {
   background-color: var(--dsdl-cyan-10);
 }
-.step-list_cyan-dark { border-left-color: var(--dsdl-cyan-60);  }
+.step-list_cyan-dark {
+  border-left-color: var(--dsdl-cyan-60);
+}
 .step-list_cyan-dark li::before {
   background-color: var(--dsdl-cyan-60);
   color: white;
 }
 
-/* FOOTER */
+/* HEADER */
+.header {
+  background-color: #fff;
+  max-width: calc(var(--spacing-base) * 180); /* don't let the actual content stretch beyond 1440px */
+  padding: var(--spacing-4) var(--spacing-8);
+}
 
+.header a {
+  text-decoration: none;
+  color: var(--dsdl-gray-100);
+}
+
+.header ul {
+  display: flex;
+  gap: var(--spacing-2);
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.header a {
+  border: 1px solid var(--dsdl-gray-40);
+  border-radius: var(--spacing-2);
+  padding: var(--spacing-1) 12px;
+}
+
+.header a:focus {
+  outline: 3px solid var(--calitp-brand-blue);
+  outline-offset: 2px;
+}
+
+.header a:hover {
+  border-color: var(--dsdl-cyan-60);
+  background-color: var(--dsdl-cyan-10);
+}
+
+.header a:active {
+  border-color: var(--dsdl-cyan-60);
+  background-color: var(--dsdl-cyan-60);
+  color: #fff;
+}
+
+.header a.contact {
+  border: none;
+}
+
+.cta-banner {
+  background-color: var(--calitp-brand-yellow);
+  height: var(--spacing-10);
+}
+
+/* FOOTER */
 .footer-wrapper {
   background-color: var(--dsdl-gray-100);
   width: 100%;
