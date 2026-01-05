@@ -43,3 +43,55 @@ description: >
 {% assign quote_source_name = "Gustavo Gomez" %}
 {% assign quote_source_title = "Senior Transit Planner, ICTC" %}
 {% include pull-quote.html color_scheme=quote_color_scheme content=quote_content source_name=quote_source_name source_title=quote_source_title %}
+
+<div class="container">
+  <h2>Step list</h2>
+  <div class="row">
+    <h3>Default color scheme (yellow)</h3>
+    <div class="offset-lg-2 col-lg-6 col-12">
+      <ol class="step-list my-4">
+        <li><b>Choose a data-only provider</b> and plan that fits your agency’s needs</li>
+        <li><b>Review purchase options:</b> You can access data plans in the commercial marketplace or at discounted rates on <a href="#">CALNET</a> or on <a href="#">NASPO</a></li>
+        <li><b>Engage the vendor</b> you’d like to purchase from</li>
+        <li><b>Sign the agreement</b></li>
+        <li><b>Implement and launch,</b> be sure to coordinate with your hardware providers to align on who will install SIMs</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <h3>Color scheme: purple</h3>
+    <div class="offset-lg-2 col-lg-6 col-12">
+      <ol class="step-list step-list_purple my-4">
+        <li><b>Choose a data-only provider</b> and plan that fits your agency’s needs</li>
+        <li><b>Review purchase options:</b> You can access data plans in the commercial marketplace or at discounted rates on <a href="#">CALNET</a> or on <a href="#">NASPO</a></li>
+        <li><b>Engage the vendor</b> you’d like to purchase from</li>
+        <li><b>Sign the agreement</b></li>
+        <li><b>Implement and launch,</b> be sure to coordinate with your hardware providers to align on who will install SIMs</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <h3>Color scheme: cyan-light</h3>
+    <div class="offset-lg-2 col-lg-6 col-12">
+      <ol class="step-list step-list_cyan-light my-4">
+        <li><b>Choose a data-only provider</b> and plan that fits your agency’s needs</li>
+        <li><b>Review purchase options:</b> You can access data plans in the commercial marketplace or at discounted rates on <a href="#">CALNET</a> or on <a href="#">NASPO</a></li>
+        <li><b>Engage the vendor</b> you’d like to purchase from</li>
+        <li><b>Sign the agreement</b></li>
+        <li><b>Implement and launch,</b> be sure to coordinate with your hardware providers to align on who will install SIMs</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <h3>Color scheme: cyan-dark</h3>
+    <div class="offset-lg-2 col-lg-6 col-12">
+      <ol class="step-list step-list_cyan-dark my-4">
+        <li><b>Choose a data-only provider</b> and plan that fits your agency’s needs</li>
+        <li><b>Review purchase options:</b> You can access data plans in the commercial marketplace or at discounted rates on <a href="#">CALNET</a> or on <a href="#">NASPO</a></li>
+        <li><b>Engage the vendor</b> you’d like to purchase from</li>
+        <li><b>Sign the agreement</b></li>
+        <li><b>Implement and launch,</b> be sure to coordinate with your hardware providers to align on who will install SIMs</li>
+      </ol>
+    </div>
+  </div>
+</div>
