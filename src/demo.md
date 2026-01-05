@@ -94,4 +94,14 @@ description: >
       </ol>
     </div>
   </div>
+
+  <h2>Numbered headings</h2>
+  <div class="row">
+    <div class="offset-lg-2 col-lg-6 col-12">
+      <h3 class="numbered numbered_yellow my-4" data-number="1">Choose a data plan</h3>
+      <h3 class="numbered numbered_purple my-4" data-number="2">Review purchase options</h3>
+      <h3 class="numbered numbered_cyan-light my-4" data-number="3">Reach out to your vendor</h3>
+      <h3 class="numbered numbered_cyan-dark my-4" data-number="4">Sign agreement</h3>
+    </div>
+  </div>
 </div>

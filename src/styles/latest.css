@@ -63,64 +63,90 @@
 /* STEP LIST */
 
 .step-list {
-  padding-left: 1.875rem;
-  padding-bottom: 1.5rem;
-  border-left: 0.1875rem solid var(--dsdl-gray-20);
-  margin-left: 0.9375rem;
+  /* This dance of padding/border/margin is needed to
+     align the left border with the center of the markers
+     and have the text end up 1rem from the marker.
+     The amounts total up to 48px / 3rem. */
+  padding-left: calc(30rem / 16);
+  border-left: calc(3rem / 16) solid var(--dsdl-gray-20);
+  margin-left: calc(15rem / 16);
+  /* Bottom padding ensures the vertical line extends below the last item. */
+  padding-bottom: var(--spacing-3);
   font-size: var(--text-l);
   list-style: none;
   counter-reset: step-list;
 }
+.numbered {
+  position: relative;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  padding-left: 2.5em;
+}
 .step-list li {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-3);
   position: relative;
   counter-increment: step-list;
 }
 .step-list li:last-child {
   margin-bottom: 0;
 }
-.step-list li::before {
-  content: counter(step-list);
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
+.step-list li::before,
+.numbered::before {
+  display: block;
   border-radius: 100%;
   position: absolute;
-  left: -3rem;
-  top: -0.0625rem;
   background-color: var(--dsdl-gray-20);
   color: var(--dsdl-black);
   font-family: var(--dsdl-heading-font-stack);
   font-size: var(--text-m);
   font-weight: bold;
-  line-height: 2.0625rem;
   text-align: center;
+}
+.step-list li::before {
+  content: counter(step-list);
+  width: var(--spacing-4);
+  height: var(--spacing-4);
+  left: calc(-1 * var(--spacing-6));
+  line-height: calc(2rem + (1rem / 16));
+}
+.numbered::before {
+  content: attr(data-number);
+  width: 1.75em;
+  height: 1.75em;
+  left: 0;
+  top: 0;
+  font-size: 1em;
+  line-height: 1.75em;
 }
 
 .step-list_yellow {
   border-left-color: var(--calitp-brand-yellow);
 }
-.step-list_yellow li::before {
+.step-list_yellow li::before,
+.numbered_yellow::before {
   background-color: var(--calitp-brand-yellow);
   color: var(--dsdl-black);
 }
 .step-list_purple {
   border-left-color: var(--dsdl-purple-80);
 }
-.step-list_purple li::before {
+.step-list_purple li::before,
+.numbered_purple::before {
   background-color: var(--dsdl-purple-80);
   color: white;
 }
 .step-list_cyan-light {
   border-left-color: var(--dsdl-cyan-10);
 }
-.step-list_cyan-light li::before {
+.step-list_cyan-light li::before,
+.numbered_cyan-light::before {
   background-color: var(--dsdl-cyan-10);
 }
 .step-list_cyan-dark {
   border-left-color: var(--dsdl-cyan-60);
 }
-.step-list_cyan-dark li::before {
+.step-list_cyan-dark li::before,
+.numbered_cyan-dark::before {
   background-color: var(--dsdl-cyan-60);
   color: white;
 }
