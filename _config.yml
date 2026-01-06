@@ -26,36 +26,14 @@ fonts: "family=Poppins:wght@400;500;700&family=Raleway:wght@700"
 google_analytics_id: "G-6M5TSH3VCY"
 mailing_list: https://lp.constantcontactpages.com/su/eLbtFoE/calitp?source_id=a41b99cd-7f28-4be8-a286-f9e75fc7bbce&source_type=em&c=
 navigation:
-  header:
-    - name: For vendors
-      url: /for-vendors
-    - name: About
-      url: /about
-    - name: Contact us
-      url: /contact
-  products:
-    - name: Contactless payments
-      url: /go-contactless
-    - name: Data plans
-      url: /how-to/get-connected
-    - name: GTFS Realtime
-      url: /how-to/GTFS-RT
-    - name: Route planning and scheduling
-      url: /how-to/route-planning-scheduling
-  footer:
-    - name: Back to top
-      url: "#main-content"
-    - name: Glossary
-      url: /glossary-of-key-terms
-    - name: Privacy policy
-      url: https://dot.ca.gov/privacy-policy
-      target: _blank
-    - name: Conditions of use
-      url: https://dot.ca.gov/conditions-of-use
-      target: _blank
-    - name: Register to vote
-      url: https://registertovote.ca.gov/
-      target: _blank
+  - name: Data plans
+    url: /
+  - name: Route schedule
+    url: /
+  - name: GTFS Realtime
+    url: /
+  - name: Tap to pay
+    url: /
 source: ./src
 title: California Mobility Marketplace
 theme_color: "#ffffff"
