@@ -310,4 +310,53 @@ description: >
       </table>
     </div>
   </div>
+
+  <h2>Download cards</h2>
+
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto">
+      <div class="dl-card">
+        <img class="dl-card-thumbnail" src="https://placehold.co/272x352/white/black?text=8.5×11" alt="">
+        <div class="dl-card-text">
+          <div class="dl-tag">GTFS-RT</div>
+          <h3 class="h5 mt-3 mb-1">Scope of Work template</h3>
+          <p class="mb-3">to document your project needs and goals to send to vendors</p>
+          <div class="dl-card-buttons">
+            <a class="dl-button" href="#">View <span class="visually-hidden">Scope of Work template</span></a>
+            <a class="dl-button" href="#" download>Download <span class="visually-hidden">Scope of Work template</span> ⤓</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-auto">
+      <div class="dl-card">
+        <img class="dl-card-thumbnail" src="https://placehold.co/272x352/white/black?text=8.5×11" alt="">
+        <div class="dl-card-text">
+          <div class="dl-tag">GTFS-RT</div>
+          <h3 class="h5 mt-3 mb-1">Scope of Work template</h3>
+          <p class="mb-3">to document your project needs and goals to send to vendors and more text for three lines</p>
+          <div class="dl-card-buttons">
+            <a class="dl-button" href="#">View</a>
+            <a class="dl-button" href="#" download>Download ⤓</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-auto">
+      <div class="dl-card">
+        <img class="dl-card-thumbnail" src="https://placehold.co/272x352/white/black?text=8.5×11" alt="">
+        <div class="dl-card-text">
+          <div class="dl-tag">GTFS-RT</div>
+          <h3 class="h5 mt-3 mb-1">Scope of Work template</h3>
+          <p class="mb-3">to document your project needs and goals to send to vendors</p>
+          <div class="dl-card-buttons">
+            <a class="dl-button" href="#">View</a>
+            <a class="dl-button" href="#" download>Download ⤓</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
