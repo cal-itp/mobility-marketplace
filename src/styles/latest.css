@@ -151,6 +151,59 @@
   color: white;
 }
 
+/* TABLES */
+
+table {
+  width: 100%;
+  border: 1px solid var(--dsdl-gray-40);
+  border-collapse: separate;
+  border-radius: var(--spacing-05);
+  border-spacing: 0;
+}
+/* Apply a border to the right of all but the last column */
+th:not(:last-child),
+td:not(:last-child) {
+  border-right: 1px solid var(--dsdl-gray-40);
+}
+/* Apply a border to the bottom of all but the last row */
+thead th,
+tr:not(:last-child) > td,
+tbody > tr:not(:last-child) > th {
+  border-bottom: 1px solid var(--dsdl-gray-40);
+}
+td,
+th {
+  padding: calc(var(--spacing-base) * 1.5);  /* 1.25rem (20px) -- add new var --spacing-1-05 var for this? */
+}
+th {
+  background-color: var(--dsdl-gray-20);
+}
+td ul,
+td ol {
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+.table_yellow th {
+  background-color: var(--dsdl-yellow-10);
+}
+.table_purple th {
+  background-color: var(--dsdl-purple-20);
+}
+.table_cyan th {
+  background-color: var(--dsdl-cyan-10);
+}
+.table-responsive {
+  container-name: responsive-table-wrapper;
+  container-type: inline-size;
+}
+
+/* Magic numbers decided based on current table content. */
+@container responsive-table-wrapper (max-width: calc(720rem / 16)) {  /* Variables can't be used here yet. */
+  .wider {
+    min-width: calc(var(--spacing-base) * 120);
+  }
+}
+
 /* HEADER */
 .header {
   background-color: #fff;
