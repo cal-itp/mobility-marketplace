@@ -1,3 +1,43 @@
+/* TYPE SCALE */
+
+/* If these adjustments prove successful, they should be relocated to the DSDL styles in calitp.org. */
+
+h3,
+.h3,
+h4,
+.h4 {
+  font-weight: 700;
+}
+h5,
+.h5 {
+  font-size: calc(18 / var(--text-base) * 1rem);
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  h1,
+  .h1 {
+    font-size: calc(48 / var(--text-base) * 1rem);
+  }
+  h2,
+  .h2 {
+    font-size: var(--text-xxxl);
+  }
+  h3,
+  .h3 {
+    font-size: var(--text-xxl);
+  }
+  h4,
+  .h4 {
+    font-size: var(--text-xl);
+  }
+  small,
+  .small,
+  .text-caption {
+    font-size: var(--text-s);
+  }
+}
+
 /* PULL QUOTE */
 
 .pull-quote {
