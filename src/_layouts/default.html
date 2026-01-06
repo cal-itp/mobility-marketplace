@@ -30,7 +30,7 @@
   </head>
 
   <body class="mobi-mart-container {{ layout.class_name | default: page.class_name }} {{ page.collection }}">
-    {% include site-header.html %}
+    {% include header/desktop.html %} {% include header/mobile.html %}
     <div id="main-content" class="mobi-mart-content main-content">
       <main class="main-primary">{{content}}</main>
     </div>

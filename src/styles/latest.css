@@ -38,6 +38,16 @@ h5,
   }
 }
 
+/* BOOTSTRAP OVERRIDES */
+.navbar {
+  gap: var(--spacing-4);
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
 /* PULL QUOTE */
 
 .pull-quote {
@@ -213,7 +223,7 @@ tbody > tr:not(:last-child) > th {
 }
 td,
 th {
-  padding: calc(var(--spacing-base) * 1.5);  /* 1.25rem (20px) -- add new var --spacing-1-05 var for this? */
+  padding: calc(var(--spacing-base) * 1.5); /* 1.25rem (20px) -- add new var --spacing-1-05 var for this? */
 }
 th {
   background-color: var(--dsdl-gray-20);
@@ -238,7 +248,8 @@ td ol {
 }
 
 /* Magic numbers decided based on current table content. */
-@container responsive-table-wrapper (max-width: calc(720rem / 16)) {  /* Variables can't be used here yet. */
+@container responsive-table-wrapper (max-width: calc(720rem / 16)) {
+  /* Variables can't be used here yet. */
   .wider {
     min-width: calc(var(--spacing-base) * 120);
   }
@@ -248,7 +259,7 @@ td ol {
 .header {
   background-color: #fff;
   max-width: calc(var(--spacing-base) * 180); /* don't let the actual content stretch beyond 1440px */
-  padding: var(--spacing-4) var(--spacing-8);
+  padding: var(--spacing-3) var(--spacing-8);
 }
 
 .header a {
@@ -257,12 +268,16 @@ td ol {
 }
 
 .header ul {
-  display: flex;
-  gap: var(--spacing-2);
-  list-style-type: none;
-  justify-content: space-between;
+  gap: var(--spacing-4);
+  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 992px) {
+  .header ul {
+    gap: var(--spacing-2);
+  }
 }
 
 .header a {
