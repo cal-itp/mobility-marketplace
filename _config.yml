@@ -27,13 +27,13 @@ google_analytics_id: "G-6M5TSH3VCY"
 mailing_list: https://lp.constantcontactpages.com/su/eLbtFoE/calitp?source_id=a41b99cd-7f28-4be8-a286-f9e75fc7bbce&source_type=em&c=
 navigation:
   - name: Data plans
-    url: /
-  - name: Route schedule
-    url: /
+    url: /data-plans
+  - name: Route scheduling
+    url: /route-scheduling
   - name: GTFS Realtime
-    url: /
+    url: /gtfs-realtime
   - name: Tap to pay
-    url: /
+    url: /tap-to-pay
 source: ./src
 title: California Mobility Marketplace
 theme_color: "#ffffff"
