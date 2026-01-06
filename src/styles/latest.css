@@ -266,9 +266,12 @@ td ol {
 }
 
 .header a {
-  border: 1px solid var(--dsdl-gray-40);
   border-radius: var(--spacing-2);
   padding: var(--spacing-1) 12px;
+}
+
+.header nav a {
+  border: 1px solid var(--dsdl-gray-40);
 }
 
 .header a:focus {
@@ -276,12 +279,14 @@ td ol {
   outline-offset: 2px;
 }
 
-.header a:hover {
+.header nav a:hover,
+.header a.contact:hover {
   border-color: var(--dsdl-cyan-60);
   background-color: var(--dsdl-cyan-10);
 }
 
-.header a:active {
+.header nav a:active,
+.header a.contact:active {
   border-color: var(--dsdl-cyan-60);
   background-color: var(--dsdl-cyan-60);
   color: #fff;
