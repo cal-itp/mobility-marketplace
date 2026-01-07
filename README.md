@@ -19,15 +19,7 @@ and development.
 1. Enter or select `Rebuild and Reopen in Container` to start from scratch
 1. Enter or select `Reopen in Container` to reopen the last devcontainer used
 
-Once inside the devcontainer, you'll have to install the npm dependencies:
-
-```bash
-mise exec -- npm ci
-# or
-eval "$(mise activate bash)" && npm ci
-```
-
-You can manually start the site like this:
+Once inside the devcontainer, you can manually start the site like this:
 
 1. `Ctrl/Cmd+Shift+P` to bring up the Command Palette
 1. Enter `Tasks: Run Task`

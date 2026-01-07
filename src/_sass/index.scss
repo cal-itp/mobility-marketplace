@@ -3,8 +3,7 @@
 @import "variables";
 @import "functions";
 
-// it would make more sense (to me) to @import all of bootstrap's Sass here and stop loading it via CDN
-// but i don't think thats a yak worth shaving until/unless we decide to keep sass after the information rearchitecture
+// when we're done generating our own sass we can remove our npm dependency on bootstrap altogether
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
