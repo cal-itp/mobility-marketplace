@@ -1,0 +1,25 @@
+<header class="d-lg-none d-flex justify-content-between header">
+  {% include site-logo.html %}
+
+  <nav class="navbar" aria-label="Primary">
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#siteHeaderNav"
+      aria-controls="siteHeaderNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="siteHeaderNav">
+      <ul class="navbar-nav nav-pills nav-fill w-100 align-items-end">
+        <li class="pt-2"><a href>Contact</a></li>
+        <li class="font-weight-bold text-end">Explore products and contracts</li>
+        {% include link-repeater.html menu_items=site.navigation %}
+      </ul>
+    </div>
+  </nav>
+</header>

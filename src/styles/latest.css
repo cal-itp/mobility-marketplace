@@ -38,6 +38,17 @@ h5,
   }
 }
 
+/* BOOTSTRAP OVERRIDES */
+.navbar {
+  gap: var(--spacing-4);
+  justify-content: flex-end;
+  padding: 12px 0;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
 /* PULL QUOTE */
 
 .pull-quote {
@@ -213,7 +224,7 @@ tbody > tr:not(:last-child) > th {
 }
 td,
 th {
-  padding: calc(var(--spacing-base) * 1.5);  /* 1.25rem (20px) -- add new var --spacing-1-05 var for this? */
+  padding: calc(var(--spacing-base) * 1.5); /* 1.25rem (20px) -- add new var --spacing-1-05 var for this? */
 }
 th {
   background-color: var(--dsdl-gray-20);
@@ -238,7 +249,8 @@ td ol {
 }
 
 /* Magic numbers decided based on current table content. */
-@container responsive-table-wrapper (max-width: calc(720rem / 16)) {  /* Variables can't be used here yet. */
+@container responsive-table-wrapper (max-width: calc(720rem / 16)) {
+  /* Variables can't be used here yet. */
   .wider {
     min-width: calc(var(--spacing-base) * 120);
   }
@@ -248,7 +260,7 @@ td ol {
 .header {
   background-color: #fff;
   max-width: calc(var(--spacing-base) * 180); /* don't let the actual content stretch beyond 1440px */
-  padding: var(--spacing-4) var(--spacing-8);
+  padding: var(--spacing-3) var(--spacing-2);
 }
 
 .header a {
@@ -257,15 +269,23 @@ td ol {
 }
 
 .header ul {
-  display: flex;
-  gap: var(--spacing-2);
-  list-style-type: none;
-  justify-content: space-between;
+  gap: var(--spacing-4);
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.header a {
+@media (min-width: 992px) {
+  .header {
+    padding: var(--spacing-3) var(--spacing-8);
+  }
+
+  .header ul {
+    gap: var(--spacing-2);
+  }
+}
+
+.header nav a {
   border: 1px solid var(--dsdl-gray-40);
   border-radius: var(--spacing-2);
   padding: var(--spacing-1) 12px;
@@ -276,12 +296,14 @@ td ol {
   outline-offset: 2px;
 }
 
-.header a:hover {
+.header nav a:hover,
+.header a.contact:hover {
   border-color: var(--dsdl-cyan-60);
   background-color: var(--dsdl-cyan-10);
 }
 
-.header a:active {
+.header nav a:active,
+.header a.contact:active {
   border-color: var(--dsdl-cyan-60);
   background-color: var(--dsdl-cyan-60);
   color: #fff;
@@ -294,6 +316,16 @@ td ol {
 .cta-banner {
   background-color: var(--calitp-brand-yellow);
   height: var(--spacing-10);
+}
+
+.site-logo {
+  width: 140px;
+}
+
+@media (min-width: 992px) {
+  .site-logo {
+    width: 160px;
+  }
 }
 
 /* FOOTER */

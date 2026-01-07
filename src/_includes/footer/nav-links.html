@@ -1,11 +1,5 @@
 <nav aria-label="Primary">
   <ul>
-    <li class="mb-3"><a class="font-weight-bold" href>Data plans</a></li>
-    <li class="mb-3"><a class="font-weight-bold" href>Route schedule</a></li>
-    <li class="mb-3"><a class="font-weight-bold" href>GTFS Realtime</a></li>
-    <li class="mb-3"><a class="font-weight-bold" href>Tap to pay</a></li>
-    {% comment %} TK
-    <li class="mb-3"><a class="font-weight-bold" href>Rider benefits</a></li>
-    {% endcomment %}
+    {% include link-repeater.html menu_items=site.navigation list_class="mb-3" anchor_class="font-weight-bold" %}
   </ul>
 </nav>
