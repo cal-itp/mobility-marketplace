@@ -384,6 +384,7 @@ td ol {
 /* HEADER */
 .header {
   background-color: #fff;
+  box-shadow: 0 var(--spacing-1) var(--spacing-2) 0 rgba(4, 91, 134, 0.12);
   max-width: calc(var(--spacing-base) * 180); /* don't let the actual content stretch beyond 1440px */
   padding: var(--spacing-3) var(--spacing-2);
 }
