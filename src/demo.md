@@ -315,48 +315,32 @@ description: >
 
   <div class="row justify-content-md-center">
     <div class="col-md-auto">
-      <div class="dl-card">
-        <img class="dl-card-thumbnail" src="https://placehold.co/272x352/white/black?text=8.5×11" alt="">
-        <div class="dl-card-text">
-          <div class="dl-tag">GTFS-RT</div>
-          <h3 class="h5 mt-3 mb-1">Scope of Work template</h3>
-          <p class="mb-3">to document your project needs and goals to send to vendors</p>
-          <div class="dl-card-buttons">
-            <a class="dl-button" href="#">View <span class="visually-hidden">Scope of Work template</span></a>
-            <a class="dl-button" href="#" download>Download <span class="visually-hidden">Scope of Work template</span> ⤓</a>
-          </div>
-        </div>
-      </div>
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %}
+      {% assign dl_tag = "GTFS-RT" %}
+      {% assign dl_title = "Scope of Work template" %}
+      {% assign dl_description = "to document your project needs and goals to send to vendors" %}
+      {% assign dl_view_url = "/resources/assets/gtfs-rt_scope-of-work-template.docx" %}
+      {% assign dl_download_url = "/resources/gtfs-rt_scope-of-work-template" %}
+      {% include dl-card.html img=dl_img tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
     </div>
 
     <div class="col-md-auto">
-      <div class="dl-card">
-        <img class="dl-card-thumbnail" src="https://placehold.co/272x352/white/black?text=8.5×11" alt="">
-        <div class="dl-card-text">
-          <div class="dl-tag">GTFS-RT</div>
-          <h3 class="h5 mt-3 mb-1">Scope of Work template</h3>
-          <p class="mb-3">to document your project needs and goals to send to vendors and more text for three lines</p>
-          <div class="dl-card-buttons">
-            <a class="dl-button" href="#">View</a>
-            <a class="dl-button" href="#" download>Download ⤓</a>
-          </div>
-        </div>
-      </div>
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %}
+      {% assign dl_tag = "GTFS-RT" %}
+      {% assign dl_title = "Scope of Work template" %}
+      {% assign dl_description = "to document your project needs and goals to send to vendors and more text for three lines" %}
+      {% assign dl_view_url = "/resources/assets/gtfs-rt_scope-of-work-template.docx" %}
+      {% assign dl_download_url = "/resources/gtfs-rt_scope-of-work-template" %}
+      {% include dl-card.html img=dl_img tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
     </div>
 
     <div class="col-md-auto">
-      <div class="dl-card">
-        <img class="dl-card-thumbnail" src="https://placehold.co/272x352/white/black?text=8.5×11" alt="">
-        <div class="dl-card-text">
-          <div class="dl-tag">GTFS-RT</div>
-          <h3 class="h5 mt-3 mb-1">Scope of Work template</h3>
-          <p class="mb-3">to document your project needs and goals to send to vendors</p>
-          <div class="dl-card-buttons">
-            <a class="dl-button" href="#">View</a>
-            <a class="dl-button" href="#" download>Download ⤓</a>
-          </div>
-        </div>
-      </div>
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %}
+      {% assign dl_tag = "GTFS-RT" %}
+      {% assign dl_title = "Scope of Work template" %}
+      {% assign dl_view_url = "/resources/assets/gtfs-rt_scope-of-work-template.docx" %}
+      {% assign dl_download_url = "/resources/gtfs-rt_scope-of-work-template" %}
+      {% include dl-card.html img=dl_img tag=dl_tag title=dl_title view_url=dl_view_url download_url=dl_download_url %}
     </div>
   </div>
 </div>

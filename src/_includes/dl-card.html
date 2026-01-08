@@ -1,0 +1,36 @@
+{% comment %}
+    Usage:
+        {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %}
+        {% assign dl_tag = "GTFS-RT" %}
+        {% assign dl_title = "Scope of Work template" %}
+        {% assign dl_description = "to document your project needs and goals to send to vendors" %}
+        {% assign dl_view_url = "/resources/assets/gtfs-rt_scope-of-work-template.docx" %}
+        {% assign dl_download_url = "/resources/gtfs-rt_scope-of-work-template" %}
+        {% include dl-card.html img=dl_img tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+
+    Parameters:
+        * img (string)          - URL or path to image to be used for the thumbnail
+        * tag (string)          - text for the tag indicating the download category
+        * title (string)        - the download's title
+        * view_url (string)     - URL to the download's detail page
+        * download_url (string) - URL to the download itself
+
+    Optional Parameters:
+        * description (string) : '' - an additional short description for the download
+
+    Output:
+        Markup for a download card with a thumbnail, tag, title, optional description, and view & download buttons.
+{% endcomment %}
+
+<div class="dl-card">
+  <img class="dl-card-thumbnail" src="{{ include.img }}" alt="">
+  <div class="dl-card-text">
+    <div class="dl-tag">{{ include.tag }}</div>
+    <h3 class="h5 mt-3 mb-1">{{ include.title }}</h3>
+    <p class="mb-3">{{ include.description | default: "" }}</p>
+    <div class="dl-card-buttons">
+      <a class="dl-button" href="{{ include.view_url }}">View <span class="visually-hidden">{{ include.title }}</span></a>
+      <a class="dl-button" href="{{ include.download_url }}" download>Download <span class="visually-hidden">{{ include.title }}</span> ⤓</a>
+    </div>
+  </div>
+</div>

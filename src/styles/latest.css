@@ -49,6 +49,12 @@ h5,
   border: none;
 }
 
+span.visually-hidden {
+  /* Deals with an issue that causes screen readers to read hidden span elements out of order:
+     https://github.com/h5bp/main.css/issues/12 */
+  margin: auto !important;
+}
+
 /* PULL QUOTE */
 
 .pull-quote {
@@ -279,6 +285,7 @@ td ol {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  width: 100%;
   min-height: 52%;  /* Ensures three lines of description fit comfortably at default text size. */
   padding: 24px;
   border-top: 1px solid var(--dsdl-gray-50);
@@ -307,6 +314,7 @@ td ol {
 .dl-button {
   padding: var(--spacing-1) var(--spacing-2);
   border-radius: 2em;
+  background-color: white;
   color: var(--dsdl-black);
   font-family: var(--dsdl-heading-font-stack);
   font-size: calc(18 / var(--text-base) * 1rem);
