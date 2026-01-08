@@ -208,7 +208,7 @@ table {
   width: 100%;
   border: 1px solid var(--dsdl-gray-40);
   border-collapse: separate;
-  border-radius: var(--spacing-05);
+  border-radius: 4px;
   border-spacing: 0;
 }
 /* Apply a border to the right of all but the last column */
@@ -260,11 +260,11 @@ td ol {
 
 .dl-card {
   display: block;
-  max-width: 332px;
+  max-width: calc(var(--spacing-base) * 41.5);  /* 20.75rem  (332px) */
   aspect-ratio: 2 / 3;
-  padding: var(--spacing-5);
+  padding: 40px;
   border: 1px solid var(--dsdl-gray-50);
-  border-radius: var(--spacing-1);
+  border-radius: 8px;
   margin-bottom: var(--spacing-2);
   position: relative;
   background-color: var(--dsdl-cyan-10);
@@ -279,10 +279,10 @@ td ol {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  height: 50%;
-  padding: var(--spacing-3);
+  min-height: 52%;  /* Ensures three lines of description fit comfortably at default text size. */
+  padding: 24px;
   border-top: 1px solid var(--dsdl-gray-50);
-  border-radius: 0 0 var(--spacing-1) var(--spacing-1);
+  border-radius: 0 0 8px 8px;
   position: absolute;
   bottom: 0;
   left: 0;
