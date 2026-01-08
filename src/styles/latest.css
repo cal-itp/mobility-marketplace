@@ -444,6 +444,16 @@ td ol {
   height: var(--spacing-10);
 }
 
+.out-of-service {
+  width: 260px;
+}
+
+@media (min-width: 992px) {
+  .out-of-service {
+    width: 424px;
+  }
+}
+
 .site-logo {
   width: 140px;
 }
