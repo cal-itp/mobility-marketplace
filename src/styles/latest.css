@@ -334,6 +334,12 @@ td ol {
   background-color: var(--dsdl-cyan-80);
   color: white;
 }
+.dl-button > svg {
+  height: 1em;
+  margin-left: 0.25em;
+  position: relative;
+  top: calc(-1.5em / 18);  /* adjustment for optical alignment with the text */
+}
 .dl-button + .dl-button {
   margin-left: var(--spacing-05);
 }
