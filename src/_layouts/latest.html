@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Page Not Found | {{site.title}}</title>
+    {%- capture title -%} {% assign this_title = page.title | default: post.title %} {% if this_title %}{{ this_title }} | {%
+    endif %}{{ site.title }} {%- endcapture %} {% assign description = page.description | default: site.description %} {% seo
+    title=title description=description %}
+
+    <title>{{page.title}} | {{site.title}}</title>
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="apple-touch-icon" href="/uploads/icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -24,9 +28,11 @@
 
   <body>
     <div class="d-flex flex-column justify-content-between vh-100">
-      <div class="header-wrapper">{% include header/desktop.html %} {% include header/mobile.html %}</div>
-      <!-- cheeky (and brittle) bootstrap variable override  -->
-      <main class="container" style="--bs-gutter-x: 2rem">{{content}}</main>
+      <div class="header-wrapper">
+        {% include header/desktop.html %} {% include header/mobile.html %} {% if page.show_call_to_action %} {% include
+        header/cta-banner.html text=site.cta_banner.text %} {% endif %}
+      </div>
+      <main>{{content}}</main>
       <div class="footer-wrapper">{% include footer/desktop.html %} {% include footer/mobile.html %}</div>
     </div>
 
