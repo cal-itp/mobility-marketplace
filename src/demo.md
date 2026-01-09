@@ -213,13 +213,6 @@ description: >
             <td>$34</td>
           </tr>
           <tr>
-            <th scope="row">100 GB</th>
-            <td>$410</td>
-            <td>$97.57</td>
-            <td>$353.50</td>
-            <td>–</td>
-          </tr>
-          <tr>
             <th scope="row">Unlimited</th>
             <td>$50</td>
             <td>–</td>
@@ -343,4 +336,22 @@ description: >
       {% include dl-card.html img=dl_img tag=dl_tag title=dl_title view_url=dl_view_url download_url=dl_download_url %}
     </div>
   </div>
+  <h2>Download hero</h2>
 </div>
+
+<section class="dl-hero">
+  <div class="container">
+    <div class="row">
+      <div class="dl-hero-text col-12 col-lg-4 offset-lg-1">
+        <div class="dl-tag">GTFS-RT</div>
+        <h1 class="mt-2 mb-lg-3">GTFS Realtime Scope of Work template</h1>
+        <a class="dl-button my-3 my-lg-4" href="#" download>Download</a>
+        <p>This document is both a guide and fillable template for purchasing services to help your agency implement GTFS Realtime. It will walk you through how to turn your project needs and goals into a Scope of Work (SOW) to send to vendors in order to purchase GTFS-RT software and optional hardware via the Master Service Agreement (MSA).</p>
+        <p class="mt-2 mt-lg-5">Last updated: November 2025 | Cal-ITP</p>
+      </div>
+      <div class="dl-hero-image col-12 col-lg-5 offset-lg-2">
+        <img src="https://placehold.co/544x704/white/black?text=8.5×11" alt="First page of the document">
+      </div>
+    </div>
+  </div>
+</section>
