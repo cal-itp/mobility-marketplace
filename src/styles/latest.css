@@ -1,4 +1,10 @@
 /* BOOTSTRAP OVERRIDES */
+
+/* this allows us to override left and right container padding (w/o leaning on sass) */
+.container {
+  --bs-gutter-x: 2rem;
+}
+
 .navbar {
   gap: var(--spacing-4);
   justify-content: flex-end;
@@ -530,4 +536,15 @@ a:has(> img) {
   margin: var(--spacing-1) var(--spacing-3);
   opacity: 1;
   width: unset;
+}
+
+/* 404 PAGE */
+.wrapper-404 {
+  gap: var(--spacing-8);
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}
+
+.heading-404 {
+  max-width: calc(var(--spacing-10) * 5);
 }
