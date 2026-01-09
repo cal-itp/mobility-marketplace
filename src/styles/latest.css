@@ -49,6 +49,12 @@ h5,
   border: none;
 }
 
+span.visually-hidden {
+  /* Deals with an issue that causes screen readers to read hidden span elements out of order:
+     https://github.com/h5bp/main.css/issues/12 */
+  margin: auto !important;
+}
+
 /* PULL QUOTE */
 
 .pull-quote {
@@ -208,7 +214,7 @@ table {
   width: 100%;
   border: 1px solid var(--dsdl-gray-40);
   border-collapse: separate;
-  border-radius: var(--spacing-05);
+  border-radius: 4px;
   border-spacing: 0;
 }
 /* Apply a border to the right of all but the last column */
@@ -254,6 +260,88 @@ td ol {
   .wider {
     min-width: calc(var(--spacing-base) * 120);
   }
+}
+
+/* DOWNLOAD CARDS */
+
+.dl-card {
+  display: block;
+  max-width: calc(var(--spacing-base) * 41.5);  /* 20.75rem  (332px) */
+  aspect-ratio: 2 / 3;
+  padding: 40px;
+  border: 1px solid var(--dsdl-gray-50);
+  border-radius: 8px;
+  margin-bottom: var(--spacing-2);
+  position: relative;
+  background-color: var(--dsdl-cyan-10);
+}
+.dl-card-thumbnail {
+  display: block;
+  width: 100%;
+  box-shadow: 0 -2px 16px rgb(38 38 38 / 0.25);  /* gray 80 at 20% opacity */
+}
+.dl-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 52%;  /* Ensures three lines of description fit comfortably at default text size. */
+  padding: 24px;
+  border-top: 1px solid var(--dsdl-gray-50);
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+.dl-card-text > h3 {
+  color: var(--dsdl-cyan-60);
+  font-weight: 700;
+}
+.dl-card-text > p {
+  flex-grow: 1;
+}
+.dl-tag,
+.dl-button {
+  display: inline-block;
+  border: 1px solid var(--dsdl-gray-50);
+  line-height: var(--line-height-tight);
+}
+.dl-tag {
+  padding: var(--spacing-05) var(--spacing-1);
+}
+.dl-button {
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: 2em;
+  background-color: white;
+  color: var(--dsdl-black);
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: calc(18 / var(--text-base) * 1rem);
+  font-weight: 500;
+  text-decoration: none;
+}
+.dl-button:hover {
+  border-color: var(--dsdl-cyan-60);
+  background-color: var(--dsdl-cyan-10);
+}
+.dl-button:focus {
+  outline: 3px solid var(--calitp-brand-blue);
+  outline-offset: 3px;
+}
+.dl-button:active {
+  border-color: var(--dsdl-cyan-80);
+  background-color: var(--dsdl-cyan-80);
+  color: white;
+}
+.dl-button > svg {
+  height: 1em;
+  margin-left: 0.25em;
+  position: relative;
+  top: calc(-1.5em / 18);  /* adjustment for optical alignment with the text */
+}
+.dl-button + .dl-button {
+  margin-left: var(--spacing-05);
 }
 
 /* HEADER */
