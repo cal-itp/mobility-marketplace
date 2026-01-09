@@ -24,8 +24,9 @@
 
   <body>
     <div class="d-flex flex-column justify-content-between vh-100">
-      <div>{% include header/desktop.html %} {% include header/mobile.html %}</div>
-      <main>{{content}}</main>
+      <div class="header-wrapper">{% include header/desktop.html %} {% include header/mobile.html %}</div>
+      <!-- cheeky (and brittle) bootstrap variable override  -->
+      <main class="container" style="--bs-gutter-x: 2rem">{{content}}</main>
       <div class="footer-wrapper">{% include footer/desktop.html %} {% include footer/mobile.html %}</div>
     </div>
 

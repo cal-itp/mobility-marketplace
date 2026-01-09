@@ -2,14 +2,24 @@
 layout: latest
 ---
 
-<div class="d-flex flex-column flex-lg-row align-items-center justify-content-center p-4">
-  <img
-    class="out-of-service"
-    src="uploads/out-of-service.png"
-    alt="a bus displaying out of service sign with a pidgeon on top of it"
-  />
-  <div>
-    <h1>Out of service</h1>
-    <h4>The page you are looking for has been moved or doesn't exist.</h4>
+<div class="d-flex flex-column align-items-center" style="gap: 64px; margin-top: 64px; margin-bottom: 64px">
+  <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3">
+    <img
+      class="out-of-service"
+      src="uploads/out-of-service.png"
+      alt="a bus displaying out of service sign with a pidgeon on top of it"
+    />
+    <div style="max-width: 400px">
+      <h1>Out of service</h1>
+      <h4 class="mt-4">The page you are looking for has been moved or doesn't exist.</h4>
+    </div>
+  </div>
+  <div class="mb-4">
+    <h3 class="mb-3">Return home or jump to our guides:</h3>
+    <nav class="global-nav" aria-label="Primary">
+      <ul class="d-flex flex-column flex-md-row gap-md-3 gap-4 my-2">
+        {% include link-repeater.html menu_items=site.navigation %}
+      </ul>
+    </nav>
   </div>
 </div>

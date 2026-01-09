@@ -1,3 +1,20 @@
+/* BOOTSTRAP OVERRIDES */
+.navbar {
+  gap: var(--spacing-4);
+  justify-content: flex-end;
+  padding: 12px 0;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+span.visually-hidden {
+  /* Deals with an issue that causes screen readers to read hidden span elements out of order:
+     https://github.com/h5bp/main.css/issues/12 */
+  margin: auto !important;
+}
+
 /* TYPE SCALE */
 
 /* If these adjustments prove successful, they should be relocated to the DSDL styles in calitp.org. */
@@ -36,23 +53,6 @@ h5,
   .text-caption {
     font-size: var(--text-s);
   }
-}
-
-/* BOOTSTRAP OVERRIDES */
-.navbar {
-  gap: var(--spacing-4);
-  justify-content: flex-end;
-  padding: 12px 0;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-span.visually-hidden {
-  /* Deals with an issue that causes screen readers to read hidden span elements out of order:
-     https://github.com/h5bp/main.css/issues/12 */
-  margin: auto !important;
 }
 
 /* PULL QUOTE */
@@ -266,7 +266,7 @@ td ol {
 
 .dl-card {
   display: block;
-  max-width: calc(var(--spacing-base) * 41.5);  /* 20.75rem  (332px) */
+  max-width: calc(var(--spacing-base) * 41.5); /* 20.75rem  (332px) */
   aspect-ratio: 2 / 3;
   padding: 40px;
   border: 1px solid var(--dsdl-gray-50);
@@ -278,7 +278,7 @@ td ol {
 .dl-card-thumbnail {
   display: block;
   width: 100%;
-  box-shadow: 0 -2px 16px rgb(38 38 38 / 0.25);  /* gray 80 at 20% opacity */
+  box-shadow: 0 -2px 16px rgb(38 38 38 / 0.25); /* gray 80 at 20% opacity */
 }
 .dl-card-text {
   display: flex;
@@ -286,7 +286,7 @@ td ol {
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  min-height: 52%;  /* Ensures three lines of description fit comfortably at default text size. */
+  min-height: 52%; /* Ensures three lines of description fit comfortably at default text size. */
   padding: 24px;
   border-top: 1px solid var(--dsdl-gray-50);
   border-radius: 0 0 8px 8px;
@@ -338,7 +338,7 @@ td ol {
   height: 1em;
   margin-left: 0.25em;
   position: relative;
-  top: calc(-1.5em / 18);  /* adjustment for optical alignment with the text */
+  top: calc(-1.5em / 18); /* adjustment for optical alignment with the text */
 }
 .dl-button + .dl-button {
   margin-left: var(--spacing-05);
@@ -382,19 +382,25 @@ td ol {
 }
 
 /* HEADER */
+.header-wrapper {
+  box-shadow: 0 var(--spacing-1) var(--spacing-2) 0 rgba(4, 91, 134, 0.12);
+}
+
 .header {
   background-color: #fff;
-  box-shadow: 0 var(--spacing-1) var(--spacing-2) 0 rgba(4, 91, 134, 0.12);
   max-width: calc(var(--spacing-base) * 180); /* don't let the actual content stretch beyond 1440px */
   padding: var(--spacing-3) var(--spacing-2);
 }
 
-.header a {
-  text-decoration: none;
+.global-nav a {
+  border: 1px solid var(--dsdl-gray-40);
+  border-radius: var(--spacing-2);
   color: var(--dsdl-gray-100);
+  padding: var(--spacing-1) 12px;
+  text-decoration: none;
 }
 
-.header ul {
+.global-nav ul {
   gap: var(--spacing-4);
   list-style: none;
   margin: 0;
@@ -411,24 +417,24 @@ td ol {
   }
 }
 
-.header nav a {
+.global-nav a {
   border: 1px solid var(--dsdl-gray-40);
   border-radius: var(--spacing-2);
   padding: var(--spacing-1) 12px;
 }
 
-.header a:focus {
+.global-nav a:focus {
   outline: 3px solid var(--calitp-brand-blue);
   outline-offset: 2px;
 }
 
-.header nav a:hover,
+.global-nav a:hover,
 .header a.contact:hover {
   border-color: var(--dsdl-cyan-60);
   background-color: var(--dsdl-cyan-10);
 }
 
-.header nav a:active,
+.global-nav a:active,
 .header a.contact:active {
   border-color: var(--dsdl-cyan-60);
   background-color: var(--dsdl-cyan-60);
@@ -448,7 +454,7 @@ td ol {
   width: 260px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .out-of-service {
     width: 424px;
   }
@@ -473,7 +479,7 @@ td ol {
 .footer {
   color: #fff;
   max-width: calc(var(--spacing-base) * 180); /* don't let the actual footer content stretch beyond 1440px */
-  padding: var(--spacing-4) var(--spacing-3) var(--spacing-2);
+  padding: var(--spacing-4) var(--spacing-2) var(--spacing-2);
 }
 
 .footer ul {
