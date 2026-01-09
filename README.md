@@ -8,20 +8,6 @@ Deployed via [Netlify][netlify] [![Netlify Status](https://api.netlify.com/api/v
 
 ## Development
 
-### Cloning the repository
-
-You can run the usual `git clone` command to check out this project, but notice that this repo contains [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). To ensure you have all the files in those submodules, you can pass `--recuse-submodules` when cloning:
-
-```
-git clone --recurse-submodules https://github.com/cal-itp/mobility-marketplace.git
-```
-
-or if you've already cloned the project, you can run:
-
-```
-git submodule update --init
-```
-
 ### Running a local instance
 
 This is a [Jekyll][jekyll] static site. We include a [Devcontainer][devcontainer] configuration to help with local testing
@@ -33,7 +19,7 @@ and development.
 1. Enter or select `Rebuild and Reopen in Container` to start from scratch
 1. Enter or select `Reopen in Container` to reopen the last devcontainer used
 
-Once inside the devcontainer, you have the manually start the site:
+Once inside the devcontainer, you can manually start the site like this:
 
 1. `Ctrl/Cmd+Shift+P` to bring up the Command Palette
 1. Enter `Tasks: Run Task`

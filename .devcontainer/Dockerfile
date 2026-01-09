@@ -1,6 +1,17 @@
-FROM python:3.10
+FROM python:3.12
 
 WORKDIR /usr/src/mobimart
+
+# Install mise (to manage Node.js) https://mise.jdx.dev/mise-cookbook/docker.html#docker-image-with-mise
+# it can manage ruby installs too, but we dont want to bother with that because jekyll's days are numbered
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+ENV MISE_DATA_DIR="/mise"
+ENV MISE_CONFIG_DIR="/mise"
+ENV MISE_CACHE_DIR="/mise/cache"
+ENV MISE_INSTALL_PATH="/usr/local/bin/mise"
+ENV PATH="/mise/shims:$PATH"
+
+RUN curl https://mise.run | sh
 
 RUN apt-get update
 
