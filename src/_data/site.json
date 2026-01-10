@@ -1,0 +1,12 @@
+{
+  "navigation": [
+    { "name": "Data plans", "url": "/data-plans" },
+    { "name": "Route scheduling", "url": "/route-scheduling" },
+    { "name": "GTFS Realtime", "url": "/gtfs-realtime" },
+    { "name": "Tap to pay", "url": "/tao-to-pay" }
+  ],
+  "announcement": {
+    "enabled": true,
+    "text": "Now available! Pre-approved [MSAs for GTFS Realtime](contracts/view?contracts-filter-product=GTFS%20Realtime) software and/or hardware. [Get started with our GTFS Realtime guide](/how-to/gtfs-rt)."
+  }
+}

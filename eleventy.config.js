@@ -3,7 +3,6 @@ import path from "path";
 import markdownIt from "markdown-it";
 import sass from "sass";
 
-// Add within your config module
 const md = new markdownIt({ html: true });
 
 export default function (eleventyConfig) {
@@ -12,6 +11,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.setLiquidOptions({ dynamicPartials: false });
 
+  eleventyConfig.addPassthroughCopy("src/_redirects");
   eleventyConfig.addPassthroughCopy("src/styles/latest.css");
 
   // Copy all png and svg files to `_site`, via Glob pattern
@@ -21,7 +21,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("markdownify", (content) => md.render(content));
 
-  // once we get rid of the sass for this site, we can get rid of the rest of this pre-processing and the 'sass' dependency
+  // once we ditch our scss, we can get rid of everything below this comment
   eleventyConfig.addTemplateFormats("scss");
 
   eleventyConfig.addExtension("scss", {

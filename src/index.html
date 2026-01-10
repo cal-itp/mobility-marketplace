@@ -9,9 +9,7 @@ show_newsletter: true
 newsletter_background: bg-white
 ---
 
-{% if site.announcement.enabled %}
-  {% include alert.html text=site.announcement.text %}
-{% endif %}
+{% if site.announcement.enabled %} {% include alert.html text=site.announcement.text %} {% endif %}
 
 <div class="container">
   <div class="imaged-section imaged-section--right">

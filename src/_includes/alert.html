@@ -1,6 +1,6 @@
 <div class="alert alert-light {{ include.display }}" role="alert">
   <div class="container fs-7">
-    {{ include.text | markdownify | remove: '
+    {{ site.announcement.text | markdownify | remove: '
     <p>' | remove: '</p>
     ' }}
   </div>
