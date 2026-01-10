@@ -1,13 +1,16 @@
 import path from "path";
+
+import markdownIt from "markdown-it";
 import sass from "sass";
+
+// Add within your config module
+const md = new markdownIt({ html: true });
 
 export default function (eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setLayoutsDirectory("_layouts");
 
-  eleventyConfig.setLiquidOptions({
-    dynamicPartials: false,
-  });
+  eleventyConfig.setLiquidOptions({ dynamicPartials: false });
 
   eleventyConfig.addPassthroughCopy("src/styles/latest.css");
 
@@ -15,6 +18,8 @@ export default function (eleventyConfig) {
   // Keeps the same directory structure.
   eleventyConfig.addPassthroughCopy("**/*.png");
   eleventyConfig.addPassthroughCopy("**/*.svg");
+
+  eleventyConfig.addFilter("markdownify", (content) => md.render(content));
 
   // once we get rid of the sass for this site, we can get rid of the rest of this pre-processing and the 'sass' dependency
   eleventyConfig.addTemplateFormats("scss");
