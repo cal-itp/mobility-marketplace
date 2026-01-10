@@ -9,6 +9,8 @@ export default function (eleventyConfig) {
     dynamicPartials: false,
   });
 
+  eleventyConfig.addPassthroughCopy("src/styles/latest.css");
+
   // Copy all png and svg files to `_site`, via Glob pattern
   // Keeps the same directory structure.
   eleventyConfig.addPassthroughCopy("**/*.png");
