@@ -2,7 +2,7 @@
 
 /* this allows us to override left and right container padding (w/o leaning on sass) */
 .container {
-  --bs-gutter-x: 2rem;
+  --bs-gutter-x: var(--spacing-6); /* results in gutters of 24px */
 }
 
 .navbar {
@@ -382,14 +382,14 @@ td ol {
 
 @media (min-width: 992px) {
   .dl-hero {
-    padding-top: calc(var(--spacing-base) * 13 );  /* 6.5rem (104px) */
-    padding-bottom: calc(var(--spacing-base) * 22 );  /* 11rem (176px) */
+    padding-top: calc(var(--spacing-base) * 13); /* 6.5rem (104px) */
+    padding-bottom: calc(var(--spacing-base) * 22); /* 11rem (176px) */
   }
 }
 
 /* HEADER */
 .header-wrapper {
-  box-shadow: 0 var(--spacing-1) var(--spacing-2) 0 rgba(4, 91, 134, 0.12);
+  box-shadow: 0 var(--spacing-05) var(--spacing-05) rgba(0, 0, 0, 0.04);
 }
 
 .header {
@@ -428,6 +428,8 @@ td ol {
 .header a.contact {
   border: 1px solid var(--dsdl-gray-40);
   border-radius: var(--spacing-2);
+  display: inline-block;
+  line-height: var(--line-height-tight);
   padding: var(--spacing-1) 12px;
 }
 
