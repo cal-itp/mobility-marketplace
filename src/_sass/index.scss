@@ -3,9 +3,8 @@
 @import "variables";
 @import "functions";
 
-// when we're done generating our own sass we can remove our npm dependency on bootstrap altogether
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
+// when we're done writing scss we can remove our npm dependency on bootstrap (and sass) altogether
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 @import "base";
 @import "layout";

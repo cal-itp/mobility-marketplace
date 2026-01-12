@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     {%- capture title -%} {% assign this_title = page.title | default: post.title %} {% if this_title %}{{ this_title }} | {%
-    endif %}{{ site.title }} {%- endcapture %} {% assign description = page.description | default: site.description %} {% seo
-    title=title description=description %}
+    endif %}{{ site.title }} {%- endcapture %} {% assign description = page.description | default: site.description %}
 
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="apple-touch-icon" href="/uploads/icon.png" />
