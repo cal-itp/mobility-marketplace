@@ -398,15 +398,6 @@ td ol {
   padding: var(--spacing-3) var(--spacing-2);
 }
 
-.global-nav a,
-.header a.contact {
-  border: 1px solid var(--dsdl-gray-40);
-  border-radius: var(--spacing-2);
-  color: var(--dsdl-gray-100);
-  padding: var(--spacing-1) 12px;
-  text-decoration: none;
-}
-
 .global-nav ul {
   gap: var(--spacing-4);
   list-style: none;
@@ -428,9 +419,11 @@ td ol {
 .header a.contact {
   border: 1px solid var(--dsdl-gray-40);
   border-radius: var(--spacing-2);
+  color: var(--dsdl-gray-100);
   display: inline-block;
   line-height: var(--line-height-tight);
   padding: var(--spacing-1) 12px;
+  text-decoration: none;
 }
 
 .global-nav a:focus,
