@@ -387,6 +387,31 @@ td ol {
   }
 }
 
+/* COMPARISON BLOCK */
+
+.comparison > div {
+  padding: 16px;
+  border-radius: 8px;
+}
+.comparison > div:first-child {
+  border: 1px solid var(--dsdl-cyan-30);
+  background-color: var(--dsdl-cyan-10);
+}
+.comparison > div:last-child {
+  background-color: var(--dsdl-cyan-60);
+  color: white;
+}
+.comparison h3 > svg {
+  height: 0.875em;
+  margin-right: 0.25em;
+  position: relative;
+  top: calc(-1.5em / 18); /* adjustment for optical alignment with the text */
+}
+.comparison ul {
+  padding-left: 1.375em;
+  margin-bottom: 0;
+}
+
 /* HEADER */
 .header-wrapper {
   box-shadow: 0 var(--spacing-05) var(--spacing-05) rgba(0, 0, 0, 0.04);
