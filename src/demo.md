@@ -1,10 +1,15 @@
 ---
-layout: demo
+layout: latest
 
-title: demo (latest)
+title: Component demo
 description: >
   A page to view individual layout components as they are completed
+show_call_to_action: true
 ---
+
+<div class="container">
+  <h1>DSDL component demo</h1>
+</div>
 
 <div class="container">
   <h2>Pull quote</h2>

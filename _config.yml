@@ -6,6 +6,8 @@ collections:
     permalink: /:title
 description: >-
   A resource to help transit providers upgrade their fare collection systems to accept contactless payment methods like credit/debit cards and smartphones.
+cta_banner:
+  text: Optional banner. <b>With CTA.</b>
 announcement:
   enabled: true
   text: |
