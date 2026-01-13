@@ -389,15 +389,19 @@ td ol {
 
 /* COMPARISON BLOCK */
 
-.comparison > div {
+.comparison {
+  --bs-gutter-x: var(--spacing-1);
+}
+.comparison-box {
   padding: 16px;
   border-radius: 8px;
+  margin-bottom: var(--spacing-1);
 }
-.comparison > div:first-child {
+.comparison-1 {
   border: 1px solid var(--dsdl-cyan-30);
   background-color: var(--dsdl-cyan-10);
 }
-.comparison > div:last-child {
+.comparison-2 {
   background-color: var(--dsdl-cyan-60);
   color: white;
 }
