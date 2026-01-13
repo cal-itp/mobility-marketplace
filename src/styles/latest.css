@@ -392,10 +392,13 @@ td ol {
 .comparison {
   --bs-gutter-x: var(--spacing-1);
 }
+.comparison > .col-md {
+  margin-bottom: var(--spacing-1);
+}
 .comparison-box {
+  height: 100%;
   padding: 16px;
   border-radius: 8px;
-  margin-bottom: var(--spacing-1);
 }
 .comparison-1 {
   border: 1px solid var(--dsdl-cyan-30);
