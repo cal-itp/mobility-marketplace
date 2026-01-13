@@ -419,6 +419,40 @@ td ol {
   margin-bottom: 0;
 }
 
+/* RELATED NAV */
+
+.related-nav {
+  --bs-gutter-x: var(--spacing-1);
+}
+.related-nav-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  height: var(--spacing-15);
+  padding: 16px;
+  border: 1px solid var(--dsdl-gray-30);
+  border-radius: 8px;
+  margin-bottom: var(--spacing-1);
+  color: var(--dsdl-black);
+  text-decoration: none;
+}
+.related-nav-link:focus {
+  outline: 3px solid var(--calitp-brand-blue);
+  outline-offset: 2px;
+}
+.related-nav-link:hover {
+  border-color: var(--dsdl-cyan-60);
+  background-color: var(--dsdl-cyan-10);
+}
+.related-nav-link:active {
+  border-color: var(--dsdl-cyan-60);
+  background-color: var(--dsdl-cyan-60);
+  color: #fff;
+}
+.related-nav-link > .text {
+  flex-grow: 1;
+}
+
 /* HEADER */
 .header-wrapper {
   box-shadow: 0 var(--spacing-05) var(--spacing-05) rgba(0, 0, 0, 0.04);
