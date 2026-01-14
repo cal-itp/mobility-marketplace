@@ -663,3 +663,7 @@ input[type="checkbox"] {
   height: var(--spacing-3);
   width: var(--spacing-3);
 }
+
+.spacer-10 {
+  height: var(--spacing-10);
+}
