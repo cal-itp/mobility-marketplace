@@ -15,32 +15,18 @@ layout: latest
     <div class="col-lg-5">
       <img class="d-block w-100" src="uploads/hero_home.png" alt="In the foreground is an illustration of a brown-skinned woman with wavy black hair tapping a payment card on a reader, which displays a success indicator. In the background are subtle illustrations of different modes of public transit, trains and two types of buses.">
     </div>
+  </div>
 </div>
 
-<div class="bg-dark-tan">
-  <div class="container">
-    <section class="py-5">
-      <header>
-        <h2 class="text-center pt-3">Modernize your fleet</h2>
-      </header>
-      <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-          <p>
-            Cal-ITP provides resource materials and technical assistance to public transportation providers in California and
-            beyond as they modernize their fleets with <a href="/go-contactless">contactless payments</a>,
-            <a href="/how-to/get-connected">data plans</a>, and more. These are just some of the agencies we’ve worked with.
-          </p>
-        </div>
-      </div>
-
-      {% include agencies.html %}
-
-      <div class="text-center">
-        <p>Have questions about your fleet? Reach out and we can help!</p>
-        <a class="btn btn-action btn-primary" href="/contact">Contact us</a>
-      </div>
-    </section>
-  </div>
+<div class="logo-strip my-5">
+  <ul class="logo-strip-list">
+    {% for agency in site.data.agencies -%}
+      <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}"></li>
+    {% endfor %}
+    {% for agency in site.data.agencies -%}
+      <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}"></li>
+    {% endfor %}
+  </ul>
 </div>
 
 <div class="container" id="what-is">
