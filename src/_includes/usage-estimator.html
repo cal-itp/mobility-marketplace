@@ -3,30 +3,20 @@
     <legend class="text-body-l"><b>Select your (per vehicle) features:</b></legend>
     <div class="d-flex gap-3 flex-md-row flex-column">
       <div class="d-flex flex-column flex-fill p-4 pb-5 estimator gap-3">
+        {% for category in site.data.usage-categories -%}
         <div class="d-flex align-items-center gap-2">
-          <input type="checkbox" id="gtfs" name="gtfs" data-estimate="1" checked />
-          <label for="gtfs">GTFS Realtime</label>
+          <input
+            type="checkbox"
+            id="{{ category.id }}"
+            name="{{ category.id }}"
+            data-estimate="{{ category.estimate }}"
+            {{
+            category.checked
+            }}
+          />
+          <label for="{{ category.id }}">{{ category.label }}</label>
         </div>
-        <div class="d-flex align-items-center gap-2">
-          <input type="checkbox" id="fare-1" name="fare-1" data-estimate="1" />
-          <label for="fare-1">1 fare payment validator</label>
-        </div>
-        <div class="d-flex align-items-center gap-2">
-          <input type="checkbox" id="fare-2" name="fare-2" data-estimate="2" />
-          <label for="fare-2">2 fare payment validators</label>
-        </div>
-        <div class="d-flex align-items-center gap-2">
-          <input type="checkbox" id="camera" name="camera" data-estimate="80" />
-          <label for="camera">Cameras</label>
-        </div>
-        <div class="d-flex align-items-center gap-2">
-          <input type="checkbox" id="cad" name="cad" data-estimate="10" />
-          <label for="cad">CAD/AVL</label>
-        </div>
-        <div class="d-flex align-items-center gap-2">
-          <input type="checkbox" id="wifi" name="wifi" data-estimate="50" />
-          <label for="wifi">Passenger Wi-Fi</label>
-        </div>
+        {% endfor %}
       </div>
       <div class="flex-fill align-self-md-start p-4 estimator estimator-2">
         <p>Recommended data plan</p>
