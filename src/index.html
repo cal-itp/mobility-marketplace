@@ -1,42 +1,20 @@
 ---
-layout: default
+layout: latest
 
 # Allow the default _config.yml to set these values
 # title: ~
 # description: ~
-
-show_newsletter: true
-newsletter_background: bg-white
 ---
 
-{% if site.announcement.enabled %}
-  {% include alert.html text=site.announcement.text %}
-{% endif %}
-
-<div class="container">
-  <div class="imaged-section imaged-section--right">
-    <div class="imaged-section__title">
-      <h1 class="home-hero-title">A new home for modern and equitable transportation innovations</h1>
+<div class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6 offset-lg-1">
+      <h1 class="fw-normal mb-3">Modernize your transit system with free, guided support from <span class="text-nowrap">Cal-ITP</span></h1>
+      <p class="text-body-xl mb-0">Whether it’s connecting your fleet, adding real-time updates, or launching tap-to-pay rides, <span class="text-nowrap">Cal-ITP</span> guides your agency every step of the way. Free support, proven tools, and pre-negotiated contracts put innovation within reach.</p>
     </div>
-    <div class="imaged-section__image">
-      <img
-        alt="A woman and child paying for bus fare from their smart phone while at bus stop"
-        class="img-fluid"
-        src="/uploads/home-illo-main.png"
-      />
+    <div class="col-lg-5">
+      <img class="d-block w-100" src="uploads/hero_home.png" alt="In the foreground is an illustration of a brown-skinned woman with wavy black hair tapping a payment card on a reader, which displays a success indicator. In the background are subtle illustrations of different modes of public transit, trains and two types of buses.">
     </div>
-    <div class="imaged-section__content">
-      <p>
-        Welcome to the California Mobility Marketplace—a one-stop resource to help California’s transportation providers make
-        travel planning and payments simpler and more cost effective for customers.
-      </p>
-      <p>
-        Explore this site to find support for purchasing various products, such as open-loop fare collection hardware/software and
-        data plans, that can help your agency design and provide the best experience for your riders.
-      </p>
-      <a class="btn btn-primary m-t-md" href="/contracts/" target="_self">View contracts</a>
-    </div>
-  </div>
 </div>
 
 <div class="bg-dark-tan">

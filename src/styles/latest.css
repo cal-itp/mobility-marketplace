@@ -83,6 +83,7 @@ h5,
   font-weight: 500;
 }
 .text-body-xl {
+  /* Referred to in Figma as "p2" */
   font-size: var(--text-l);
 }
 
