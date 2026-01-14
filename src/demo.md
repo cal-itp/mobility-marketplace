@@ -344,7 +344,7 @@ show_call_to_action: true
   <h2>Download hero</h2>
 </div>
 
-<section class="dl-hero">
+<section class="dl-hero my-4">
   <div class="container">
     <div class="row">
       <div class="dl-hero-text col-12 col-lg-4 offset-lg-1">
@@ -360,3 +360,43 @@ show_call_to_action: true
     </div>
   </div>
 </section>
+
+<div class="container">
+  <h2>Comparison block</h2>
+  <div class="comparison row my-4">
+    <div class="col-md">
+      <div class="comparison-box comparison-1">
+        <h3 class="h4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" aria-hidden="true">
+            <path stroke="currentcolor" stroke-width=".455"
+                  d="M4.351.228a.58.58 0 0 0-.542.368.6.6 0 0 0-.044.227v1.033h-1.78c-.993 0-1.758.874-1.758 1.878v11.77c0 1.005.765 1.878 1.757 1.878h7.703c.979 1.699 2.803 2.845 4.886 2.845 3.113 0 5.654-2.56 5.654-5.699 0-1.898-.93-3.583-2.353-4.618V3.734c0-1.004-.767-1.878-1.76-1.878h-1.78V.823a.6.6 0 0 0-.361-.55.584.584 0 0 0-.771.322.6.6 0 0 0-.045.228v1.033h-8.22V.823a.6.6 0 0 0-.361-.55.6.6 0 0 0-.225-.045ZM1.984 3.043h1.781v1.028a.6.6 0 0 0 .361.55.58.58 0 0 0 .45 0 .59.59 0 0 0 .361-.55V3.043h8.22v1.028a.6.6 0 0 0 .365.551.584.584 0 0 0 .768-.323.6.6 0 0 0 .044-.228V3.043h1.78c.306 0 .582.272.582.691v2.267H1.403V3.734c0-.419.276-.691.581-.691Zm-.581 4.145h15.293v2.064a5.6 5.6 0 0 0-2.123-.418c-3.114 0-5.65 2.556-5.65 5.694 0 .58.088 1.14.249 1.668H1.984c-.305 0-.581-.272-.581-.691zm13.17 2.832a4.45 4.45 0 0 1 2.433.72 4.5 4.5 0 0 1 2.044 3.788c0 2.498-2 4.514-4.477 4.514S10.1 17.026 10.1 14.528c0-2.497 1.995-4.508 4.473-4.508Zm-.33 1.5a.59.59 0 0 0-.414.175.6.6 0 0 0-.172.417v3.297a.586.586 0 0 0 .586.59h2.293a.585.585 0 0 0 .545-.364.597.597 0 0 0-.318-.777.6.6 0 0 0-.227-.045h-1.702v-2.7a.6.6 0 0 0-.365-.548.6.6 0 0 0-.226-.044Z" />
+          </svg>
+          GTFS Schedule
+        </h3>
+        <ul>
+          <li>Static information</li>
+          <li>Describes the routes and schedule of a transit agency</li>
+          <li>Establishes the baseline transit information</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="comparison-box comparison-2">
+        <h3 class="h4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" aria-hidden="true">
+            <path fill="currentcolor" stroke="currentcolor" stroke-width=".45"
+                  d="M10.224.225c-5.514 0-10 4.486-10 10a.922.922 0 0 0 1.842 0c0-4.499 3.66-8.159 8.158-8.159 4.499 0 8.159 3.66 8.159 8.159 0 4.498-3.66 8.158-8.159 8.158a8.12 8.12 0 0 1-6.127-2.774l.388-.29a.79.79 0 0 0 .313-.73.79.79 0 0 0-.475-.636l-2.721-1.167a.792.792 0 0 0-1.1.823l.349 2.94a.795.795 0 0 0 1.263.543l.504-.377a9.95 9.95 0 0 0 7.607 3.51c5.514 0 10-4.486 10-10s-4.487-10-10-10Z" />
+            <path fill="currentcolor" stroke="currentcolor" stroke-width=".45"
+                  d="M14.771 12.483a1 1 0 0 0 .095-.127.79.79 0 0 0 .02-.82.84.84 0 0 0-.264-.276l-3.754-2.52a1.2 1.2 0 0 0-.29-.517l-.48-2.904a.78.78 0 0 0-.238-.475.78.78 0 0 0-1.315.643l.18 2.783a1.25 1.25 0 0 0 .093 1.701c.272.256.648.38 1.02.329l3.935 2.307c.32.2.74.15.998-.124ZM9.154 9.608a.698.698 0 0 1-.024-.98.694.694 0 0 1 .98-.025.71.71 0 0 1 .025.98.697.697 0 0 1-.981.025Z" />
+          </svg>
+          GTFS Realtime
+        </h3>
+        <ul>
+          <li>Dynamic information</li>
+          <li>Describes the location of vehicles in real time </li>
+          <li>Adjusts transit information based on real-time updates</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
