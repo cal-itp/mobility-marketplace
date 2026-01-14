@@ -645,3 +645,21 @@ a:has(> img) {
 .heading-404 {
   max-width: calc(var(--spacing-10) * 5);
 }
+
+/* DATA-PLANS */
+.estimator {
+  border: 1px solid var(--dsdl-black);
+  border-radius: 16px;
+}
+
+.estimator-2 {
+  background-color: var(--dsdl-purple-20);
+  border-color: var(--dsdl-purple-50);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--dsdl-indigo-80);
+  border-radius: 4px;
+  height: var(--spacing-3);
+  width: var(--spacing-3);
+}

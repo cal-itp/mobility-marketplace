@@ -1,0 +1,63 @@
+<form id="usage-estimator">
+  <fieldset>
+    <legend class="text-body-l"><b>Select your (per vehicle) features:</b></legend>
+    <div class="d-flex gap-3 flex-md-row flex-column">
+      <div class="d-flex flex-column flex-fill p-4 pb-5 estimator gap-3">
+        <div class="d-flex align-items-center gap-2">
+          <input type="checkbox" id="gtfs" name="gtfs" data-estimate="1" checked />
+          <label for="gtfs">GTFS Realtime</label>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <input type="checkbox" id="fare-1" name="fare-1" data-estimate="1" />
+          <label for="fare-1">1 fare payment validator</label>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <input type="checkbox" id="fare-2" name="fare-2" data-estimate="2" />
+          <label for="fare-2">2 fare payment validators</label>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <input type="checkbox" id="camera" name="camera" data-estimate="80" />
+          <label for="camera">Cameras</label>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <input type="checkbox" id="cad" name="cad" data-estimate="10" />
+          <label for="cad">CAD/AVL</label>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <input type="checkbox" id="wifi" name="wifi" data-estimate="50" />
+          <label for="wifi">Passenger Wi-Fi</label>
+        </div>
+      </div>
+      <div class="flex-fill align-self-md-start p-4 estimator estimator-2">
+        <p>Recommended data plan</p>
+        <h3 id="plan-recommendation">1 GB</h3>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<script>
+  // sum usage estimates for active checkboxes only
+  const aggregateEstimate = (form) => {
+    const checks = Array.from(form.querySelectorAll("input:checked"));
+    // cast the 'data-estimate' attribute as a number (w/ fallback)
+    const estimates = checks.map((input) => Number(input.dataset.estimate) || 0);
+    return estimates.reduce((accumulator, currVal) => accumulator + currVal, 0);
+  };
+
+  // determine the most appropriate data plan from a raw total usage estimate (in GB)
+  const recommendPlan = (estimate) =>
+    estimate > 25 ? "Unlimited" : estimate > 5 ? "25 GB" : estimate === 4 ? "5 GB" : `${estimate} GB`;
+
+  // self executing function
+  (function () {
+    const form = document.querySelector("#usage-estimator");
+    const recommendation = document.querySelector("#plan-recommendation");
+
+    // recalculate a suggestion each time a user interacts with the form
+    form.addEventListener("change", () => {
+      const sum = aggregateEstimate(form);
+      recommendation.innerText = recommendPlan(sum);
+    });
+  })();
+</script>

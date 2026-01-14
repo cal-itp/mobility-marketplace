@@ -420,5 +420,6 @@ show_call_to_action: true
   </nav>
 </div>
 <div class="container py-5">
-  {% include data-estimator.html %}
+  <h2 id="estimator">Usage estimator</h2>
+  {% include usage-estimator.html %}
 </div>
