@@ -36,6 +36,10 @@ h5,
   font-size: calc(18 / var(--text-base) * 1rem);
   font-weight: 500;
 }
+.text-body-xl {
+  /* Referred to in Figma as "p2" */
+  font-size: var(--text-l);
+}
 
 @media (min-width: 992px) {
   h1,
