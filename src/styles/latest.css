@@ -665,6 +665,52 @@ a:has(> img) {
   max-width: calc(var(--spacing-10) * 5);
 }
 
+/* HOMEPAGE */
+
+.logo-strip {
+  height: 48px;
+  overflow: hidden;
+  position: relative;
+}
+.logo-strip-list {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  animation-name: slide-to-the-left;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.logo-strip-list > li {
+  height: 48px;
+  margin-left: var(--spacing-5);  /* 40px between logos */
+}
+.logo-strip img {
+  height: 100%;
+}
+
+@keyframes slide-to-the-left {
+  from {
+    translate: 0 0;
+  }
+
+  to {
+    translate: -50% 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-strip-list {
+    animation-duration: 180s;
+  }
+  .logo-strip-list > li {
+    height: 48px;
+    margin-left: calc(var(--spacing-base) * 12.5);  /* 100px between logos */
+  }
+}
+
 /* DATA-PLANS */
 .estimator {
   border: 1px solid var(--dsdl-black);
