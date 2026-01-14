@@ -5,7 +5,7 @@ title: Data plans
 
 <div class="container" style="max-width: 800px">
   <img width="800px" src="uploads/data-plans.svg" alt="a bus driver, cruisin." />
-  <h1>Data plans</h1>
+  <h1 class="text-center">Data plans</h1>
   <p>
     Whether enabling passengers to see the live location of a bus or train on their phone or tap to pay their fare with
     contactless payment, transit is leveraging cellular data and connectivity to modernize and improve the rider experience.
@@ -40,24 +40,24 @@ connectivity to modernize and improve the rider experience." %} {% include pull-
 content=quote_content %}
 
 <div class="container" style="max-width: 800px">
-  <h2>Guide to purchase or change data plans</h2>
+  <h2 class="text-center">Guide to purchase or change data plans</h2>
   <h3 class="numbered numbered_purple my-4" data-number="1">Choose a data plan</h3>
   <h4>Coverage</h4>
   <p>
     Check your area’s coverage, as signal strength can vary. Below is a map showing FCC data of AT&T, T-Mobile, and Verizon
-    coverage as well as FirstNet’s coverage. Toggle on any network and select in vehicle motion or outdoor stations.
+    coverage as well as FirstNet’s coverage.
   </p>
   <a href="https://broadbandmap.fcc.gov/location-summary/mobile?zoom=4.17&vlon=-117.083903&vlat=40.891704&env=0&tech=tech4g">
     <img src="/uploads/fcc-coverage-map.png" alt="screenshot of FCC coverage map" />
   </a>
   <p>
-    For non-California agencies, visit
+    Visit
     <a href="https://broadbandmap.fcc.gov/location-summary/mobile?zoom=4.17&vlon=-117.083903&vlat=40.891704&env=0&tech=tech4g"
       >FCC<span aria-label="(external link)">↗</span></a
     >
     or
     <a href="https://www.firstnet.com/coverage.html">FirstNet<span aria-label="(external link)">↗</span></a>
-    to check coverage.
+    to learn more.
   </p>
   <h4>Hardware</h4>
   <p>
@@ -75,10 +75,10 @@ content=quote_content %}
   </p>
   <h4>Data estimation</h4>
   <p>
-    How much data you use depends on how many devices are on each vehicle. Typical usage for GTFS software and two fare payment
-    validators is 2 GB/month.
+    How much data you use depends on how many devices are on each vehicle. Typical usage for GTFS software and one fare payment
+    validator is 2 GB/month.
   </p>
-  <p>[form tk]</p>
+  {% include usage-estimator.html %}
   <h4>Funding</h4>
   <p>
     You may use funding from various sources to complete this purchase, including the
@@ -266,8 +266,8 @@ content=quote_content %}
   <p>
     If switching carriers, be sure to align your previous contract end and new provider start dates so you do not lose coverage.
   </p>
-
-  <h2>Additional info</h2>
+  <div class="spacer-10"></div>
+  <h2 class="mb-2 text-center">Additional info</h2>
   <h3>Commonly asked questions</h3>
   <h4>What is FirstNet? Why am I on commercial versus Band 14?</h4>
   <p>
@@ -297,10 +297,10 @@ content=quote_content %}
     Still have questions? Email us at <a href="mailto:hello@calitp.org">hello@calitp.org</a> or
     <a href="mailto:calnethelp@state.ca.gov">calnethelp@state.ca.gov</a>.
   </h4>
-  <h3>Special cases</h3>
+  <h3 class="mt-4">Special cases</h3>
   <h4>Does FirstNet offer passenger Wi-Fi?</h4>
   <p>Chat with your FirstNet account manager to understand what potential solutions could be.</p>
-
-  <h2>Related</h2>
-  <p>[related cards TK]</p>
+  <div class="spacer-10"></div>
+  <h2 class="text-center">Related</h2>
+  <p>[tap to pay and GTFS cards TK]</p>
 </div>
