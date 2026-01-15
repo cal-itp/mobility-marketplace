@@ -26,7 +26,7 @@ span.visually-hidden {
 :root {
   --button-bg-color: white;
   --button-border: 1px solid var(--dsdl-gray-50);
-  --button-border-radius: 2em;  /* enough for the ends to be perfect semicircles */
+  --button-border-radius: 2em; /* enough for the ends to be perfect semicircles */
   --button-font-size: calc(18 / var(--text-base) * 1rem);
   --button-font-weight: 500;
   --button-text-color: var(--dsdl-black);
@@ -466,8 +466,8 @@ td ol {
   gap: var(--spacing-2);
   height: var(--spacing-15);
   padding: 16px;
-  border: 1px solid var(--dsdl-gray-30);  /* lighter than standard buttons */
-  border-radius: 8px;  /* smaller than standard buttons */
+  border: 1px solid var(--dsdl-gray-30); /* lighter than standard buttons */
+  border-radius: 8px; /* smaller than standard buttons */
   margin-bottom: var(--spacing-1);
   color: var(--button-text-color);
   text-decoration: none;
@@ -520,7 +520,7 @@ td ol {
 .global-nav a,
 .header a.contact {
   border: var(--button-border);
-  border-radius: 1em;  /* not fully rounded like the default buttons */
+  border-radius: 1em; /* not fully rounded like the default buttons */
   color: var(--button-text-color);
   display: inline-block;
   line-height: var(--line-height-tight);
@@ -657,9 +657,9 @@ a:has(> img) {
   border-color: var(--dsdl-purple-50);
 }
 
+/* TODO: consider further customizing border-radius etc. using appearance: none; */
 input[type="checkbox"] {
   accent-color: var(--dsdl-indigo-80);
-  border-radius: 4px;
   height: var(--spacing-3);
   width: var(--spacing-3);
 }

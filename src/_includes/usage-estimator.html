@@ -1,8 +1,8 @@
 <form id="usage-estimator">
   <fieldset>
-    <legend class="text-body-l"><b>Select your (per vehicle) features:</b></legend>
-    <div class="d-flex gap-3 flex-md-row flex-column">
-      <div class="d-flex flex-column flex-fill p-4 pb-5 estimator gap-3">
+    <div class="row gap-3">
+      <div class="estimator col-md p-4 d-flex flex-column gap-3">
+        <legend class="text-body-l"><b>Select your (per vehicle) features:</b></legend>
         {% for category in site.data.usage-categories -%}
         <div class="d-flex align-items-center gap-2">
           <input
@@ -18,9 +18,9 @@
         </div>
         {% endfor %}
       </div>
-      <div class="flex-fill align-self-md-start p-4 estimator estimator-2">
+      <div class="estimator estimator-2 col-md align-self-md-start p-4">
         <p>Recommended data plan</p>
-        <h3 id="plan-recommendation">1 GB</h3>
+        <p id="plan-recommendation" class="h3 mb-0">1 GB</p>
       </div>
     </div>
   </fieldset>
