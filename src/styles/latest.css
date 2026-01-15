@@ -21,6 +21,35 @@ span.visually-hidden {
   margin: auto !important;
 }
 
+/* VARIABLES */
+
+:root {
+  --button-bg-color: white;
+  --button-border: 1px solid var(--dsdl-gray-50);
+  --button-border-radius: 2em;  /* enough for the ends to be perfect semicircles */
+  --button-font-size: calc(18 / var(--text-base) * 1rem);
+  --button-font-weight: 500;
+  --button-text-color: var(--dsdl-black);
+
+  --button-hover-bg-color: var(--dsdl-cyan-10);
+  --button-hover-border-color: var(--dsdl-cyan-60);
+  --button-hover-text-color: inherit;
+
+  --button-focus-outline: 3px solid var(--calitp-brand-blue);
+  --button-focus-outline-offset: 3px;
+
+  --button-active-bg-color: var(--dsdl-cyan-80);
+  --button-active-border-color: var(--dsdl-cyan-80);
+  --button-active-text-color: white;
+
+  --button-large-font-size: var(--text-xl);
+  --button-large-font-weight: 700;
+  --button-large-text-color: var(--dsdl-cyan-60);
+  --button-large-hover-bg-color: var(--dsdl-cyan-60);
+  --button-large-hover-border-color: var(--dsdl-cyan-60);
+  --button-large-hover-text-color: white;
+}
+
 /* TYPE SCALE */
 
 /* If these adjustments prove successful, they should be relocated to the DSDL styles in calitp.org. */
@@ -311,7 +340,7 @@ td ol {
 .dl-tag,
 .dl-button {
   display: inline-block;
-  border: 1px solid var(--dsdl-gray-50);
+  border: var(--button-border);
   line-height: var(--line-height-tight);
 }
 .dl-tag {
@@ -319,26 +348,26 @@ td ol {
 }
 .dl-button {
   padding: var(--spacing-1) var(--spacing-2);
-  border-radius: 2em;
-  background-color: white;
-  color: var(--dsdl-black);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
   font-family: var(--dsdl-heading-font-stack);
-  font-size: calc(18 / var(--text-base) * 1rem);
-  font-weight: 500;
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
   text-decoration: none;
 }
 .dl-button:hover {
-  border-color: var(--dsdl-cyan-60);
-  background-color: var(--dsdl-cyan-10);
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
 }
 .dl-button:focus {
-  outline: 3px solid var(--calitp-brand-blue);
-  outline-offset: 3px;
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
 }
 .dl-button:active {
-  border-color: var(--dsdl-cyan-80);
-  background-color: var(--dsdl-cyan-80);
-  color: white;
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
 }
 .dl-button > svg {
   height: 1em;
@@ -372,7 +401,14 @@ td ol {
 }
 .dl-hero .dl-button {
   padding: var(--spacing-1) var(--spacing-3);
-  color: var(--dsdl-cyan-60);
+  color: var(--button-large-text-color);
+  font-size: var(--button-large-font-size);
+  font-weight: var(--button-large-font-weight);
+}
+.dl-hero .dl-button:hover {
+  border-color: var(--button-large-hover-border-color);
+  background-color: var(--button-large-hover-bg-color);
+  color: var(--button-large-hover-text-color);
 }
 .dl-hero-image > img {
   display: block;
@@ -430,24 +466,24 @@ td ol {
   gap: var(--spacing-2);
   height: var(--spacing-15);
   padding: 16px;
-  border: 1px solid var(--dsdl-gray-30);
-  border-radius: 8px;
+  border: 1px solid var(--dsdl-gray-30);  /* lighter than standard buttons */
+  border-radius: 8px;  /* smaller than standard buttons */
   margin-bottom: var(--spacing-1);
-  color: var(--dsdl-black);
+  color: var(--button-text-color);
   text-decoration: none;
 }
 .related-nav-link:focus {
-  outline: 3px solid var(--calitp-brand-blue);
-  outline-offset: 2px;
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
 }
 .related-nav-link:hover {
-  border-color: var(--dsdl-cyan-60);
-  background-color: var(--dsdl-cyan-10);
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
 }
 .related-nav-link:active {
-  border-color: var(--dsdl-cyan-60);
-  background-color: var(--dsdl-cyan-60);
-  color: #fff;
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
 }
 .related-nav-link > .text {
   flex-grow: 1;
@@ -483,9 +519,9 @@ td ol {
 
 .global-nav a,
 .header a.contact {
-  border: 1px solid var(--dsdl-gray-40);
-  border-radius: var(--spacing-2);
-  color: var(--dsdl-gray-100);
+  border: var(--button-border);
+  border-radius: 1em;  /* not fully rounded like the default buttons */
+  color: var(--button-text-color);
   display: inline-block;
   line-height: var(--line-height-tight);
   padding: var(--spacing-1) 12px;
@@ -494,21 +530,21 @@ td ol {
 
 .global-nav a:focus,
 .header a.contact:focus {
-  outline: 3px solid var(--calitp-brand-blue);
-  outline-offset: 2px;
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
 }
 
 .global-nav a:hover,
 .header a.contact:hover {
-  border-color: var(--dsdl-cyan-60);
-  background-color: var(--dsdl-cyan-10);
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
 }
 
 .global-nav a:active,
 .header a.contact:active {
-  border-color: var(--dsdl-cyan-60);
-  background-color: var(--dsdl-cyan-60);
-  color: #fff;
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
 }
 
 .header a.contact {
