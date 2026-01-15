@@ -340,6 +340,7 @@ show_call_to_action: true
       {% assign dl_download_url = "/resources/gtfs-rt_scope-of-work-template" %}
       {% include dl-card.html img=dl_img tag=dl_tag title=dl_title view_url=dl_view_url download_url=dl_download_url %}
     </div>
+
   </div>
   <h2>Download hero</h2>
 </div>
@@ -417,4 +418,8 @@ show_call_to_action: true
       </a>
     </div>
   </nav>
+</div>
+<div class="container py-5">
+  <h2 id="estimator">Usage estimator</h2>
+  {% include usage-estimator.html %}
 </div>
