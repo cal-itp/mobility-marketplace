@@ -3,6 +3,7 @@
 /* this allows us to override left and right container padding (w/o leaning on sass) */
 .container {
   --bs-gutter-x: var(--spacing-6); /* results in gutters of 24px */
+  max-width: 800px;
 }
 
 .navbar {
@@ -647,6 +648,10 @@ a:has(> img) {
 }
 
 /* DATA-PLANS */
+.table-caption {
+  color: var(--dsdl-gray-60);
+}
+
 .estimator {
   border: 1px solid var(--dsdl-black);
   border-radius: 16px;
