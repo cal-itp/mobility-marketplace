@@ -658,6 +658,10 @@ a:has(> img) {
 }
 
 /* DATA-PLANS */
+.table-caption {
+  color: var(--dsdl-gray-60);
+}
+
 .estimator {
   border: 1px solid var(--dsdl-black);
   border-radius: 16px;
