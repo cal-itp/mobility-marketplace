@@ -60,6 +60,13 @@ a {
   color: unset;
 }
 
+/* TODO: consider further customizing border-radius etc. using appearance: none; */
+input[type="checkbox"] {
+  accent-color: var(--dsdl-indigo-80);
+  height: var(--spacing-3);
+  width: var(--spacing-3);
+}
+
 /* TYPE SCALE */
 
 /* If these adjustments prove successful, they should be relocated to the DSDL styles in calitp.org. */
@@ -658,10 +665,6 @@ a:has(> img) {
 }
 
 /* DATA-PLANS */
-.table-caption {
-  color: var(--dsdl-gray-60);
-}
-
 .estimator {
   border: 1px solid var(--dsdl-black);
   border-radius: 16px;
@@ -670,13 +673,6 @@ a:has(> img) {
 .estimator-2 {
   background-color: var(--dsdl-purple-20);
   border-color: var(--dsdl-purple-50);
-}
-
-/* TODO: consider further customizing border-radius etc. using appearance: none; */
-input[type="checkbox"] {
-  accent-color: var(--dsdl-indigo-80);
-  height: var(--spacing-3);
-  width: var(--spacing-3);
 }
 
 /* GENERIC / SHARED */
