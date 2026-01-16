@@ -1,8 +1,8 @@
 /* BOOTSTRAP OVERRIDES */
 
-/* this allows us to override left and right container padding (w/o leaning on sass) */
-.container {
-  --bs-gutter-x: var(--spacing-6); /* results in gutters of 24px */
+main > .container {
+  --bs-gutter-x: var(--spacing-6); /* 24px padding override (w/o sass) */
+  max-width: 800px;
 }
 
 .navbar {
@@ -21,7 +21,7 @@ span.visually-hidden {
   margin: auto !important;
 }
 
-/* VARIABLES */
+/* GLOBAL / VARIABLES */
 
 :root {
   --button-bg-color: white;
@@ -48,6 +48,17 @@ span.visually-hidden {
   --button-large-hover-bg-color: var(--dsdl-cyan-60);
   --button-large-hover-border-color: var(--dsdl-cyan-60);
   --button-large-hover-text-color: white;
+}
+
+a {
+  color: unset;
+}
+
+/* TODO: consider further customizing border-radius etc. using appearance: none; */
+input[type="checkbox"] {
+  accent-color: var(--dsdl-indigo-80);
+  height: var(--spacing-3);
+  width: var(--spacing-3);
 }
 
 /* TYPE SCALE */
@@ -657,9 +668,11 @@ a:has(> img) {
   border-color: var(--dsdl-purple-50);
 }
 
-/* TODO: consider further customizing border-radius etc. using appearance: none; */
-input[type="checkbox"] {
-  accent-color: var(--dsdl-indigo-80);
-  height: var(--spacing-3);
-  width: var(--spacing-3);
+/* GENERIC / SHARED */
+.spacer-10 {
+  height: var(--spacing-10);
+}
+
+.table-caption {
+  color: var(--dsdl-gray-60);
 }
