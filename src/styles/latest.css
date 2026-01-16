@@ -21,7 +21,7 @@ span.visually-hidden {
   margin: auto !important;
 }
 
-/* VARIABLES */
+/* GLOBAL / VARIABLES */
 
 :root {
   --button-bg-color: white;
@@ -50,6 +50,10 @@ span.visually-hidden {
   --button-large-hover-text-color: white;
 }
 
+a {
+  color: unset;
+}
+
 /* TYPE SCALE */
 
 /* If these adjustments prove successful, they should be relocated to the DSDL styles in calitp.org. */
@@ -67,10 +71,6 @@ h5,
 }
 .text-body-xl {
   font-size: var(--text-l);
-}
-
-.table-caption {
-  color: var(--dsdl-gray-60);
 }
 
 @media (min-width: 992px) {
@@ -671,7 +671,11 @@ input[type="checkbox"] {
   width: var(--spacing-3);
 }
 
-/* SHARED */
+/* GENERIC / SHARED */
 .spacer-10 {
   height: var(--spacing-10);
+}
+
+.table-caption {
+  color: var(--dsdl-gray-60);
 }

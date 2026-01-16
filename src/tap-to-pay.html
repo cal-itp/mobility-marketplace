@@ -25,11 +25,12 @@ description: >
     Learn where to start, what tools and resources you need, and how to effectively plan your tap to pay rollout
   </p>
   <ol class="step-list step-list_yellow my-4">
-    <li><b>Prepare:</b> Ensure you have a connected fleet and GTFS-RT</li>
+    <li><b>Prepare:</b> Ensure you have a connected <a href="/data-plans">fleet</a> and <a href="/gtfs-realtime">GTFS-RT</a></li>
     <li>
       <b>Review:</b> the pre-negotiated contracts for Payment Processors, Transit Processors, PADs (Payment Acceptance Devices);
-      these MSAs are available to purchase from DGS↗ (no further competitive bidding needed). Secure funding and draft SOW
-      requirements. 
+      these MSAs are available to purchase from
+      <a href="https://www.dgs.ca.gov/">DGS<span aria-label="(external link)">↗</span></a> (no further competitive bidding
+      needed). Secure funding and draft SOW requirements.
     </li>
     <li><b>Engage</b> vendors for pricing and project detail</li>
     <li><b>Purchase:</b> Select vendor to contract with, and sign a User Agreement</li>
@@ -49,52 +50,273 @@ with contactless hardware and fare-calculation and payment-processing software. 
 color_scheme=quote_color_scheme content=quote_content source_name=quote_source_name source_title=quote_source_title%}
 
 <div class="container">
-  <h2>Go contactless with tap to pay</h2>
+  <h2 class="text-center">Go contactless with tap to pay</h2>
   <h3 class="numbered numbered_yellow my-4" data-number="1">Prepare</h3>
   <p>Data connection is required to enable tap to pay fare collection</p>
   <ul>
-    <li>Check out the pre-negotiated data plans, your agency may be eligible to upgrade and save on monthly costs.</li>
+    <li>
+      Check out the pre-negotiated <a href="/data-plans">data plans</a>, your agency may be eligible to upgrade and save on
+      monthly costs.
+    </li>
+  </ul>
+  <p>
+    Verify your GTFS Realtime feeds are valid and up-to-date. We highly recommend being GTFS-ready before implementing tap to pay
+  </p>
+  <ul>
+    <li>
+      Explore pre-negotiated <a href="/gtfs-realtime">GTFS Realtime MSAs</a> or <a href="mailto:hello@calitp.org">connect</a> with
+      an Cal-ITP Account Manager for support.
+    </li>
   </ul>
   <p>Review your fare policy and identify opportunities to simplify</p>
   <ul>
-    <li>Check out Cal-ITP's Statewide Fare Guidelines Toolkit for more.</li>
+    <li>Check out Cal-ITP's <a href="/TK">Statewide Fare Guidelines Toolkit</a> for more.</li>
   </ul>
   <p>Prepare your stakeholders</p>
   <ul>
     <li>
-      If you need an informational presentation to share with your staff/board of directors, please review Contactless Payments
-      Introduction
+      If you need an informational presentation to share with your staff/board of directors, please review
+      <a href="/TK">Contactless Payments Introduction</a>
     </li>
   </ul>
-  <h4>How much will this cost? And how should our agency pay for it?</h4>
+  <h4 class="my-3">How much will this cost? And how should our agency pay for it?</h4>
   <p>
-    Projects resulting from these MSAs may be funded through grants from the FTA↗, Caltrans↗, other sources of local and state
+    Projects resulting from these MSAs may be funded through grants from the
+    <a href="https://www.transit.dot.gov/funding/grants/grant-programs">FTA<span aria-label="(external link)">↗</span></a
+    >, <a href="https://dot.ca.gov/">Caltrans<span aria-label="(external link)">↗</span></a> and other sources of local and state
     public funding. Check with your funding agencies.
   </p>
-  <h5>Estimated cost ranges</h5>
-  <p>
-    Input fleet size, device count, and revenue to see MSA maximum cost estimates to help you find what size grant or funding is
-    needed. This data is not saved anywhere.
-  </p>
-  <p>[calculator placeholder]</p>
-  <p>
-    For more thorough purchasing estimates, download the MSA Cost Estimation Tool. Estimates will help you compare MSA-awarded
-    vendors’ maximum prices, draft budgets, and board presentations and make scoping decisions as you prepare to email vendors.
-    The prices in this workbook are maximums. Transit agencies are strongly encouraged to reach out to vendors directly for
-    tailored pricing. Prices may be reduced and/or fee categories waived, at vendors’ sole discretion.
-  </p>
+  <p>[additional pricing content TK]</p>
   <h3 class="numbered numbered_yellow my-4" data-number="2">Review MSAs</h3>
   <h4>Assess vendors</h4>
   <p class="table-caption">Click on each MSA for terms and conditions.</p>
   <h4>Payment Processors MSAs</h4>
+  <table class="table_yellow my-4">
+    <thead>
+      <tr>
+        <th scope="col">Vendors</th>
+        <th scope="col">MSAs</th>
+        <th scope="col">Types of transactions</th>
+        <th scope="col">Payment networks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fiserv*</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-22-70-22-02"
+            >5-22-70-22-02</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>credit</li>
+            <li>debit</li>
+            <li>mobile wallet</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>American Express</li>
+            <li>Discover</li>
+            <li>Mastercard</li>
+            <li>Visa</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Elavon*</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-22-70-22-01"
+            >5-22-70-22-01</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>credit</li>
+            <li>debit</li>
+            <li>mobile wallet</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>American Express</li>
+            <li>Discover</li>
+            <li>Mastercard</li>
+            <li>Visa</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+    <!-- is this caption redundant? -->
+    <caption class="visually-hidden">
+      Payment Processors MSAs (click on each MSA for terms and conditions)
+    </caption>
+  </table>
   <p class="table-caption">*Available to California agencies only.</p>
   <h4>Transit Processors MSAs</h4>
+  <table class="table_yellow my-4">
+    <thead>
+      <tr>
+        <th scope="col">Vendors</th>
+        <th scope="col">MSAs</th>
+        <th scope="col">Rider Benefits & discounts</th>
+        <th scope="col">Fare calculation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bytemark</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-04"
+            >5-21-70-28-04</a
+          >
+        </td>
+        <td>Not integrated with Cal-ITP Rider Benefits</td>
+        <td>
+          <ul>
+            <li>Basic transfers</li>
+            <li>Fare capping</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Enghouse</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-05"
+            >5-21-70-28-05</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>Older adults</li>
+            <li>Veterans</li>
+            <li>Medicare recipients</li>
+            <li>CalFresh recipients</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Basic transfers</li>
+            <li>Fare capping</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>INIT</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-01"
+            >5-21-70-28-01</a
+          >
+        </td>
+        <td>Not integrated with Cal-ITP Rider Benefits</td>
+        <td>
+          <ul>
+            <li>Basic transfers</li>
+            <li>Fare capping</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Littlepay</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-06"
+            >5-21-70-28-06</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>Older adults</li>
+            <li>Veterans</li>
+            <li>Medicare recipients</li>
+            <li>CalFresh recipients</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Basic transfers</li>
+            <li>Fare capping</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+    <!-- is this caption redundant? -->
+    <caption class="visually-hidden">
+      Transit Processors MSAs (click on each MSA for terms and conditions)
+    </caption>
+  </table>
   <h4>PADs (Payment Acceptance Devices) MSAs</h4>
+  <table class="table_yellow my-4">
+    <thead>
+      <tr>
+        <th scope="col">Vendors</th>
+        <th scope="col">MSAs</th>
+        <th scope="col">Transit Processor integrations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>INIT</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-01"
+            >5-21-70-28-01</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>INIT</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Kuba</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-02"
+            >5-21-70-28-02</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>Enghouse</li>
+            <li>Littlepay</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>SC Soft</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-03"
+            >5-21-70-28-03</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>Enghouse</li>
+            <li>Littlepay</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+    <!-- is this caption redundant? -->
+    <caption class="visually-hidden">
+      Payment Processors MSAs (click on each MSA for terms and conditions)
+    </caption>
+  </table>
   <h4>Draft a Scope of Work (SOW)</h4>
   <p>
-    Draft a scope of work using our SOW Template. Completing an SOW will assist your agency with key decisions as you work toward
-    purchasing hardware and software services. Be sure to specify your operating goals, technical environment, and any must-have
-    features or services. Your Cal-ITP Account Manager can offer guidance and review your SOW before sending it to vendors.
+    Draft a scope of work using our <a href="/TK">SOW Template</a>. Completing an SOW will assist your agency with key decisions
+    as you work toward purchasing hardware and software services. Be sure to specify your operating goals, technical environment,
+    and any must-have features or services. Your Cal-ITP Account Manager can offer guidance and review your SOW before sending it
+    to vendors.
   </p>
   <h3 class="numbered numbered_yellow my-4" data-number="3">Engage vendors</h3>
   <h4>Send SOW</h4>
@@ -103,15 +325,18 @@ color_scheme=quote_color_scheme content=quote_content source_name=quote_source_n
     in the MSA User Instructions document (which is linked from each vendor’s contract number).
   </p>
   <p>
-    You can use this email template to send out your SOW, cc: hello@calitp.org. Unless otherwise specified by the transit agency,
-    each vendor will respond within five business days of receiving the SOW.
+    You can use <a href="/TK">this email template</a> to send out your SOW, cc:
+    <a href="mailto:hello@calitp.org">hello@calitp.org</a>. Unless otherwise specified by the transit agency, each vendor will
+    respond within five business days of receiving the SOW.
   </p>
   <h3 class="numbered numbered_yellow my-4" data-number="4">Select vendor to purchase from</h3>
   <p>
     Look over the proposals you receive from each vendor and decide which vendors you want to negotiate with. When you reach an
     agreement, you’re ready to place your order by signing a User Agreement contract for your purchases. The User Agreement
-    contract can be this Sample User Agreement or the Standard Agreement (STD 213); the User Agreement will incorporate the terms
-    of the MSA by reference, contain the scope of work and payment provisions. 
+    contract can be this <a href="/TK">Sample User Agreement</a> or the Standard Agreement (<a
+      href="https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1"
+      >STD 213<span aria-label="(external link)">↗</span></a
+    >); the User Agreement will incorporate the terms of the MSA by reference, contain the scope of work and payment provisions. 
   </p>
   <h3 class="numbered numbered_yellow my-4" data-number="5">Implementation</h3>
   <h4>Get ready to launch</h4>
@@ -125,8 +350,8 @@ color_scheme=quote_color_scheme content=quote_content source_name=quote_source_n
     <li>Setting up finance dashboards</li>
   </ul>
   <p>
-    Additionally, templated staff training guides and marketing materials are available, which can be used for internal staff
-    training, website copy, and rider communications.
+    Additionally, templated <a href="/TK">staff training guides</a> and <a href="/TK">marketing materials</a> are available, which
+    can be used for internal staff training, website copy, and rider communications.
   </p>
   <h4>Leverage a phased-approach</h4>
   <p>
@@ -136,9 +361,9 @@ color_scheme=quote_color_scheme content=quote_content source_name=quote_source_n
   </p>
   <h4>Maintenance and support</h4>
   <p>
-    Cal-ITP is here to help! Please download and review our Support Framework - a document you can fill in and use to provide
-    information to your internal team(s) about roles and responsibilities, common troubleshooting steps, how to manage your vendor
-    relationships and how to monitor key performance outcomes.
+    Cal-ITP is here to help! Please download and review our <a href="/TK">Support Framework</a> - a document you can fill in and
+    use to provide information to your internal team(s) about roles and responsibilities, common troubleshooting steps, how to
+    manage your vendor relationships and how to monitor key performance outcomes.
   </p>
   <div class="spacer-10"></div>
   <h2 class="mb-2 text-center">Additional info</h2>
@@ -153,9 +378,9 @@ color_scheme=quote_color_scheme content=quote_content source_name=quote_source_n
     still required to integrate with each other.
   </p>
   <p>
-    The pricing is included within the contracts. We also have a cost estimation calculator spreadsheet. Vendors had to bid blind,
-    so you will see a wide range. The cost estimator is an estimate and all numbers are the maximum they can charge. Consider
-    negotiating with your vendor. Payment processor is a state contract, you get lower rates as transit provider.
+    The pricing is included within the contracts. We also have a cost <a href="/TK">estimation calculator spreadsheet</a>. Vendors
+    had to bid blind, so you will see a wide range. The cost estimator is an estimate and all numbers are the maximum they can
+    charge. Consider negotiating with your vendor. Payment processor is a state contract, you get lower rates as transit provider.
   </p>
   <h4>What are MSAs?</h4>
   <p>
@@ -185,7 +410,10 @@ color_scheme=quote_color_scheme content=quote_content source_name=quote_source_n
     development of a memorandum of understanding.
   </p>
   <h4>How can I support unbanked riders?</h4>
-  <p>We can advise on getting un/underbanked riders access to specialized, low- to no-cost accounts through Bank On.</p>
+  <p>
+    We can advise on getting un/underbanked riders access to specialized, low- to no-cost accounts through
+    <a href="https://www.calitp.org/resources/fact-sheet-enhancing-transit-experience-with-bankon">Bank On</a>.
+  </p>
   <h4>Can I bring my own acquirer? [existing city/state banking relationship/contract]</h4>
   <p>
     Yes, please! Please ensure that your acquirer can process mass transit transactions (MTT), which are different from retail
@@ -215,7 +443,68 @@ color_scheme=quote_color_scheme content=quote_content source_name=quote_source_n
     a California STD-213 or another DGS approved user agreement or equivalent.
   </p>
   <h4>Still have questions? Email us at <a href="mailto:hello@calitp.org">hello@calitp.org</a>.</h4>
-  <div class="spacer-10"></div>
+  <h3 class="text-center m-4">Downloadable resources</h3>
+</div>
+<div class="container" style="max-width: 1200px">
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto">
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+      dl_title = "Scope of Work" %} {% assign dl_description = "Template to facilitate communication of program goals" %} {%
+      assign dl_view_url = "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html
+      img=dl_img tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    </div>
+    <div class="col-md-auto">
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+      dl_title = "Email template" %} {% assign dl_description = "To facilitate vendor outreach" %} {% assign dl_view_url =
+      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    </div>
+    <div class="col-md-auto">
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+      dl_title = "Sample User Agreement" %} {% assign dl_description = "To enter into contract with your selected vendor" %} {%
+      assign dl_view_url = "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html
+      img=dl_img tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    </div>
+    <div class="col-md-auto">
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+      dl_title = "Statewide Fare Guidelines Toolkit" %} {% assign dl_description = "" %} {% assign dl_view_url =
+      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    </div>
+    <div class="col-md-auto">
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+      dl_title = "Contactless Payments Introduction" %} {% assign dl_description = "" %} {% assign dl_view_url =
+      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    </div>
+    <div class="col-md-auto">
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+      dl_title = "MSA Cost Estimation Tool (Excel)" %} {% assign dl_description = "" %} {% assign dl_view_url =
+      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    </div>
+    <div class="col-md-auto">
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+      dl_title = "Tap to pay staff training guide" %} {% assign dl_description = "" %} {% assign dl_view_url =
+      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    </div>
+    <div class="col-md-auto">
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+      dl_title = "Marketing templates" %} {% assign dl_description = "To facilitate customer communications and marketing" %} {%
+      assign dl_view_url = "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html
+      img=dl_img tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    </div>
+    <div class="col-md-auto">
+      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+      dl_title = "Contactless payments support framework" %} {% assign dl_description = "" %} {% assign dl_view_url =
+      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    </div>
+  </div>
+</div>
+<div class="spacer-10"></div>
+<div class="container">
   <h2 class="text-center">Related</h2>
   <nav class="related-nav row mb-5" aria-label="Related">
     <div class="col-md">
