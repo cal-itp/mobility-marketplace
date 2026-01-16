@@ -1,8 +1,7 @@
 /* BOOTSTRAP OVERRIDES */
 
-/* this allows us to override left and right container padding (w/o leaning on sass) */
-.container {
-  --bs-gutter-x: var(--spacing-6); /* results in gutters of 24px */
+main > .container {
+  --bs-gutter-x: var(--spacing-6); /* 24px padding override (w/o sass) */
   max-width: 800px;
 }
 
@@ -22,7 +21,7 @@ span.visually-hidden {
   margin: auto !important;
 }
 
-/* VARIABLES */
+/* GLOBAL / VARIABLES */
 
 :root {
   --button-bg-color: white;
@@ -49,6 +48,10 @@ span.visually-hidden {
   --button-large-hover-bg-color: var(--dsdl-cyan-60);
   --button-large-hover-border-color: var(--dsdl-cyan-60);
   --button-large-hover-text-color: white;
+}
+
+a {
+  color: unset;
 }
 
 /* TYPE SCALE */
