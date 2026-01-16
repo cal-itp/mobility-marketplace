@@ -1,8 +1,8 @@
 /* BOOTSTRAP OVERRIDES */
 
-/* this allows us to override left and right container padding (w/o leaning on sass) */
-.container {
-  --bs-gutter-x: var(--spacing-6); /* results in gutters of 24px */
+main > .container {
+  --bs-gutter-x: var(--spacing-6); /* 24px padding override (w/o sass) */
+  max-width: 800px;
 }
 
 .navbar {
@@ -64,6 +64,9 @@ h5,
 .h5 {
   font-size: calc(18 / var(--text-base) * 1rem);
   font-weight: 500;
+}
+.text-body-xl {
+  font-size: var(--text-l);
 }
 
 @media (min-width: 992px) {
@@ -662,4 +665,9 @@ input[type="checkbox"] {
   accent-color: var(--dsdl-indigo-80);
   height: var(--spacing-3);
   width: var(--spacing-3);
+}
+
+/* SHARED */
+.spacer-10 {
+  height: var(--spacing-10);
 }
