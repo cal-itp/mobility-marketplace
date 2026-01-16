@@ -69,6 +69,10 @@ h5,
   font-size: var(--text-l);
 }
 
+.table-caption {
+  color: var(--dsdl-gray-60);
+}
+
 @media (min-width: 992px) {
   h1,
   .h1 {
