@@ -446,61 +446,52 @@ color_scheme=quote_color_scheme content=quote_content source_name=quote_source_n
   <h3 class="text-center m-4">Downloadable resources</h3>
 </div>
 <div class="container" style="max-width: 1200px">
-  <div class="row justify-content-md-center">
-    <div class="col-md-auto">
-      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
-      dl_title = "Scope of Work" %} {% assign dl_description = "Template to facilitate communication of program goals" %} {%
-      assign dl_view_url = "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html
-      img=dl_img tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
-    </div>
-    <div class="col-md-auto">
-      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
-      dl_title = "Email template" %} {% assign dl_description = "To facilitate vendor outreach" %} {% assign dl_view_url =
-      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
-      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
-    </div>
-    <div class="col-md-auto">
-      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
-      dl_title = "Sample User Agreement" %} {% assign dl_description = "To enter into contract with your selected vendor" %} {%
-      assign dl_view_url = "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html
-      img=dl_img tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
-    </div>
-    <div class="col-md-auto">
-      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
-      dl_title = "Statewide Fare Guidelines Toolkit" %} {% assign dl_description = "" %} {% assign dl_view_url =
-      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
-      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
-    </div>
-    <div class="col-md-auto">
-      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
-      dl_title = "Contactless Payments Introduction" %} {% assign dl_description = "" %} {% assign dl_view_url =
-      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
-      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
-    </div>
-    <div class="col-md-auto">
-      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
-      dl_title = "MSA Cost Estimation Tool (Excel)" %} {% assign dl_description = "" %} {% assign dl_view_url =
-      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
-      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
-    </div>
-    <div class="col-md-auto">
-      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
-      dl_title = "Tap to pay staff training guide" %} {% assign dl_description = "" %} {% assign dl_view_url =
-      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
-      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
-    </div>
-    <div class="col-md-auto">
-      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
-      dl_title = "Marketing templates" %} {% assign dl_description = "To facilitate customer communications and marketing" %} {%
-      assign dl_view_url = "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html
-      img=dl_img tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
-    </div>
-    <div class="col-md-auto">
-      {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
-      dl_title = "Contactless payments support framework" %} {% assign dl_description = "" %} {% assign dl_view_url =
-      "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
-      title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
-    </div>
+  <!-- this is a deviation from the demo that centers the cards horizontally on narrow screens -->
+  <div class="d-flex flex-md-row flex-column flex-wrap justify-content-center align-content-center gap-4">
+    {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+    dl_title = "Scope of Work" %} {% assign dl_description = "Template to facilitate communication of program goals" %} {% assign
+    dl_view_url = "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img
+    tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    <!-- TODO: figure out how to get the same autoformatting for these as we get in .md files -->
+    {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+    dl_title = "Email template" %} {% assign dl_description = "To facilitate vendor outreach" %} {% assign dl_view_url =
+    "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+    title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    <!-- TODO: figure out how to get the same autoformatting for these as we get in .md files -->
+    {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+    dl_title = "Sample User Agreement" %} {% assign dl_description = "To enter into contract with your selected vendor" %} {%
+    assign dl_view_url = "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html
+    img=dl_img tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    <!-- TODO: figure out how to get the same autoformatting for these as we get in .md files -->
+    {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+    dl_title = "Statewide Fare Guidelines Toolkit" %} {% assign dl_description = "" %} {% assign dl_view_url =
+    "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+    title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    <!-- TODO: figure out how to get the same autoformatting for these as we get in .md files -->
+    {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+    dl_title = "Contactless Payments Introduction" %} {% assign dl_description = "" %} {% assign dl_view_url =
+    "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+    title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    <!-- TODO: figure out how to get the same autoformatting for these as we get in .md files -->
+    {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+    dl_title = "MSA Cost Estimation Tool (Excel)" %} {% assign dl_description = "" %} {% assign dl_view_url =
+    "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+    title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    <!-- TODO: figure out how to get the same autoformatting for these as we get in .md files -->
+    {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+    dl_title = "Tap to pay staff training guide" %} {% assign dl_description = "" %} {% assign dl_view_url =
+    "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+    title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    <!-- TODO: figure out how to get the same autoformatting for these as we get in .md files -->
+    {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+    dl_title = "Marketing templates" %} {% assign dl_description = "To facilitate customer communications and marketing" %} {%
+    assign dl_view_url = "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html
+    img=dl_img tag=dl_tag title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+    <!-- TODO: figure out how to get the same autoformatting for these as we get in .md files -->
+    {% assign dl_img = "https://placehold.co/272x352/white/black?text=8.5×11" %} {% assign dl_tag = "Tap2Pay" %} {% assign
+    dl_title = "Contactless payments support framework" %} {% assign dl_description = "" %} {% assign dl_view_url =
+    "/resources/assets/TK" %} {% assign dl_download_url = "/resources/TK" %} {% include dl-card.html img=dl_img tag=dl_tag
+    title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %}
   </div>
 </div>
 <div class="spacer-10"></div>
