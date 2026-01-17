@@ -1,111 +1,471 @@
 ---
-layout: sidebar-toc
-title: "How To: Go Contactless"
-class_name: no-footer how-to-go-contactless
-content_class: go-contactless-section go-contactless--how-to
-show_newsletter: false
+layout: latest
+title: Tap to pay
+description: >
+  TK.
 ---
 
-<section class="go-contactless-section bg-dark-blue">
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <header>
-        <h1 class="page-header text-white">How to go contactless</h1>
-      </header>
-      <p class="text-white">
-        California is making it easier for public transit providers to accept contactless credit/debit/prepaid cards or mobile
-        wallets on a smart device through Master Service Agreements (MSAs) established by the California Department of General
-        Services (DGS). Transit providers can take advantage of the MSAs to purchase the key hardware and software needed to
-        accept contactless payments.
-      </p>
-      <p class="text-white">Reach out to us for support at any time as your agency explores these resources.</p>
-      <div class="mx-auto text-center pt-4">
-        <a class="btn btn-dark-blue-inverted" href="#toc-and-content">View guide</a>
-      </div>
-    </div>
+<div class="container">
+  <img width="100%" src="uploads/tap-to-pay-hero.png" alt="a hand holding a debit card to a contactless payment validator" />
+  <h1 class="text-center">Tap into the future of fare payment</h1>
+  <p>
+    California is making it easier for transit providers across the country to accept contactless credit, debit, mobile, or
+    prepaid cards (including mobile wallets) through competitively awarded contracts.
+  </p>
+  <p>
+    Nearly 75% of Californians have access to a contactless bank card, and most have a smart device. Travelers are more likely to
+    choose transit if they can use what’s already in their pocket to pay for it. Tap to pay increase ridership, agencies save on
+    overhead—spending less servicing ticket vending machines and handling cash—and dwell times are cut in half as riders are able
+    to board faster.
+  </p>
+  <p>
+    Transit providers can take advantage of these MSAs to purchase hardware and software needed to accept contactless payments.
+  </p>
+  <p class="text-body-xl">
+    Learn where to start, what tools and resources you need, and how to effectively plan your tap to pay rollout
+  </p>
+  <ol class="step-list step-list_yellow my-4">
+    <li><b>Prepare:</b> Ensure you have a connected <a href="/data-plans">fleet</a> and <a href="/gtfs-realtime">GTFS-RT</a></li>
+    <li>
+      <b>Review:</b> the pre-negotiated contracts for Payment Processors, Transit Processors, PADs (Payment Acceptance Devices);
+      these MSAs are available to purchase from
+      <a href="https://www.dgs.ca.gov/">DGS<span aria-label="(external link)">↗</span></a> (no further competitive bidding
+      needed). Secure funding and draft SOW requirements.
+    </li>
+    <li><b>Engage</b> vendors for pricing and project detail</li>
+    <li><b>Purchase:</b> Select vendor to contract with, and sign a User Agreement</li>
+    <li>
+      <b>Launch:</b> Implement open-loop tap to pay across your fleet. Cal-ITP can provide technical assistance and support along
+      the way
+    </li>
+  </ol>
+</div>
+
+{% assign quote_color_scheme = "yellow" %} {% assign quote_content = "<b> We’re excited to offer tap to pay to make it easy for customers to choose public transportation.</b> Cal-ITP’s free support helped us save the hassle and expense of running our own procurement while modernizing our fare systems with contactless hardware and fare-calculation and payment-processing software." %}
+{% assign quote_source_name = "Greg Pratt" %}
+{% assign quote_source_title = "General Manager, Humboldt Transit Authority" %}
+{% include pull-quote.html color_scheme=quote_color_scheme content=quote_content source_name=quote_source_name source_title=quote_source_title%}
+
+<div class="container">
+  <h2 class="text-center">Go contactless with tap to pay</h2>
+  <h3 class="numbered numbered_yellow my-4" data-number="1">Prepare</h3>
+  <p>Data connection is required to enable tap to pay fare collection</p>
+  <ul>
+    <li>
+      Check out the pre-negotiated <a href="/data-plans">data plans</a>, your agency may be eligible to upgrade and save on
+      monthly costs.
+    </li>
+  </ul>
+  <p>
+    Verify your GTFS Realtime feeds are valid and up-to-date. We highly recommend being GTFS-ready before implementing tap to pay
+  </p>
+  <ul>
+    <li>
+      Explore pre-negotiated <a href="/gtfs-realtime">GTFS Realtime MSAs</a> or <a href="mailto:hello@calitp.org">connect</a> with
+      an Cal-ITP Account Manager for support.
+    </li>
+  </ul>
+  <p>Review your fare policy and identify opportunities to simplify</p>
+  <ul>
+    <li>Check out Cal-ITP's <a href="/TK">Statewide Fare Guidelines Toolkit</a> for more.</li>
+  </ul>
+  <p>Prepare your stakeholders</p>
+  <ul>
+    <li>
+      If you need an informational presentation to share with your staff/board of directors, please review
+      <a href="/TK">Contactless Payments Introduction</a>
+    </li>
+  </ul>
+  <h4 class="my-3">How much will this cost? And how should our agency pay for it?</h4>
+  <p>
+    Projects resulting from these MSAs may be funded through grants from the
+    <a href="https://www.transit.dot.gov/funding/grants/grant-programs">FTA<span aria-label="(external link)">↗</span></a
+    >, <a href="https://dot.ca.gov/">Caltrans<span aria-label="(external link)">↗</span></a> and other sources of local and state
+    public funding. Check with your funding agencies.
+  </p>
+  <p>[additional pricing content TK]</p>
+  <h3 class="numbered numbered_yellow my-4" data-number="2">Review MSAs</h3>
+  <h4>Assess vendors</h4>
+  <p class="table-caption">Click on each MSA for terms and conditions.</p>
+  <h4>Payment Processors MSAs</h4>
+  <table class="table_yellow my-4">
+    <thead>
+      <tr>
+        <th scope="col">Vendors</th>
+        <th scope="col">MSAs</th>
+        <th scope="col">Types of transactions</th>
+        <th scope="col">Payment networks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fiserv*</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-22-70-22-02"
+            >5-22-70-22-02</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>credit</li>
+            <li>debit</li>
+            <li>mobile wallet</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>American Express</li>
+            <li>Discover</li>
+            <li>Mastercard</li>
+            <li>Visa</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Elavon*</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-22-70-22-01"
+            >5-22-70-22-01</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>credit</li>
+            <li>debit</li>
+            <li>mobile wallet</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>American Express</li>
+            <li>Discover</li>
+            <li>Mastercard</li>
+            <li>Visa</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+    <!-- are these captions redundant? -->
+    <caption class="visually-hidden">
+      Payment Processors MSAs (click on each MSA for terms and conditions)
+    </caption>
+  </table>
+  <p class="table-caption">*Available to California agencies only.</p>
+  <h4>Transit Processors MSAs</h4>
+  <table class="table_yellow my-4">
+    <thead>
+      <tr>
+        <th scope="col">Vendors</th>
+        <th scope="col">MSAs</th>
+        <th scope="col">Rider Benefits & discounts</th>
+        <th scope="col">Fare calculation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bytemark</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-04"
+            >5-21-70-28-04</a
+          >
+        </td>
+        <td>Not integrated with Cal-ITP Rider Benefits</td>
+        <td>
+          <ul>
+            <li>Basic transfers</li>
+            <li>Fare capping</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Enghouse</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-05"
+            >5-21-70-28-05</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>Older adults</li>
+            <li>Veterans</li>
+            <li>Medicare recipients</li>
+            <li>CalFresh recipients</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Basic transfers</li>
+            <li>Fare capping</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>INIT</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-01"
+            >5-21-70-28-01</a
+          >
+        </td>
+        <td>Not integrated with Cal-ITP Rider Benefits</td>
+        <td>
+          <ul>
+            <li>Basic transfers</li>
+            <li>Fare capping</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Littlepay</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-06"
+            >5-21-70-28-06</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>Older adults</li>
+            <li>Veterans</li>
+            <li>Medicare recipients</li>
+            <li>CalFresh recipients</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Basic transfers</li>
+            <li>Fare capping</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+    <caption class="visually-hidden">
+      Transit Processors MSAs (click on each MSA for terms and conditions)
+    </caption>
+  </table>
+  <h4>PADs (Payment Acceptance Devices) MSAs</h4>
+  <table class="table_yellow my-4">
+    <thead>
+      <tr>
+        <th scope="col">Vendors</th>
+        <th scope="col">MSAs</th>
+        <th scope="col">Transit Processor integrations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>INIT</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-01"
+            >5-21-70-28-01</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>INIT</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Kuba</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-02"
+            >5-21-70-28-02</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>Enghouse</li>
+            <li>Littlepay</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>SC Soft</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-21-70-28-03"
+            >5-21-70-28-03</a
+          >
+        </td>
+        <td>
+          <ul>
+            <li>Enghouse</li>
+            <li>Littlepay</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+    <caption class="visually-hidden">
+      Payment Processors MSAs (click on each MSA for terms and conditions)
+    </caption>
+  </table>
+  <h4>Draft a Scope of Work (SOW)</h4>
+  <p>
+    Draft a scope of work using our <a href="/TK">SOW Template</a>. Completing an SOW will assist your agency with key decisions
+    as you work toward purchasing hardware and software services. Be sure to specify your operating goals, technical environment,
+    and any must-have features or services. Your Cal-ITP Account Manager can offer guidance and review your SOW before sending it
+    to vendors.
+  </p>
+  <h3 class="numbered numbered_yellow my-4" data-number="3">Engage vendors</h3>
+  <h4>Send SOW</h4>
+  <p>
+    We recommend sending the SOW to all MSA-awarded hardware and software services vendors. You can find their contact information
+    in the MSA User Instructions document (which is linked from each vendor’s contract number).
+  </p>
+  <p>
+    You can use <a href="/TK">this email template</a> to send out your SOW, cc:
+    <a href="mailto:hello@calitp.org">hello@calitp.org</a>. Unless otherwise specified by the transit agency, each vendor will
+    respond within five business days of receiving the SOW.
+  </p>
+  <h3 class="numbered numbered_yellow my-4" data-number="4">Select vendor to purchase from</h3>
+  <p>
+    Look over the proposals you receive from each vendor and decide which vendors you want to negotiate with. When you reach an
+    agreement, you’re ready to place your order by signing a User Agreement contract for your purchases. The User Agreement
+    contract can be this <a href="/TK">Sample User Agreement</a> or the Standard Agreement (<a
+      href="https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1"
+      >STD 213<span aria-label="(external link)">↗</span></a
+    >); the User Agreement will incorporate the terms of the MSA by reference, contain the scope of work and payment provisions.
+  </p>
+  <h3 class="numbered numbered_yellow my-4" data-number="5">Implementation</h3>
+  <h4>Get ready to launch</h4>
+  <p>Cal-ITP can work with you to develop an operational launch plan for your agency, covering key elements such as:</p>
+  <ul>
+    <li>Hardware installation</li>
+    <li>Fare calculation software configuration</li>
+    <li>Payment processor onboarding</li>
+    <li>End-to-end testing</li>
+    <li>Soft launch to full launch</li>
+    <li>Setting up finance dashboards</li>
+  </ul>
+  <p>
+    Additionally, templated <a href="/TK">staff training guides</a> and <a href="/TK">marketing materials</a> are available, which
+    can be used for internal staff training, website copy, and rider communications.
+  </p>
+  <h4>Leverage a phased-approach</h4>
+  <p>
+    Consider approaching your roll out of tap to pay in phases. Riders will be able to benefit from this new, easier way to pay
+    immediately. Then, you can continue to add additional features like additional discount offerings, promotional fare caps, and
+    payment options for the un/underbanked to grow your tap to pay system over time.
+  </p>
+  <h4>Maintenance and support</h4>
+  <p>
+    Cal-ITP is here to help! Please download and review our <a href="/TK">Support Framework</a> - a document you can fill in and
+    use to provide information to your internal team(s) about roles and responsibilities, common troubleshooting steps, how to
+    manage your vendor relationships and how to monitor key performance outcomes.
+  </p>
+  <div class="spacer-10"></div>
+  <h2 class="mb-2 text-center">Additional info</h2>
+  <h3>Commonly asked questions</h3>
+  <h4>
+    I understand the 3 requirements for contactless payments, do vendors provide all 3 requirements or do we pick and choose for
+    each? Are prices transparent for agencies?
+  </h4>
+  <p>
+    There are hardware vendors and software vendors. There are 7 vendors in total. All were awarded contracts which require that
+    they are interoperable with each other. So you can pick a combination of vendors; if the combo has never been done, they are
+    still required to integrate with each other.
+  </p>
+  <p>
+    The pricing is included within the contracts. We also have a cost <a href="/TK">estimation calculator spreadsheet</a>. Vendors
+    had to bid blind, so you will see a wide range. The cost estimator is an estimate and all numbers are the maximum they can
+    charge. Consider negotiating with your vendor. Payment processor is a state contract, you get lower rates as transit provider.
+  </p>
+  <h4>What are MSAs?</h4>
+  <p>
+    The California Department of General Services (DGS), in collaboration with Cal-ITP, conducted a Request for Proposals (RFP)
+    that established six competitively awarded Master Service Agreements (MSAs), contracts that allow U.S. public transportation
+    providers to purchase directly from California’s DGS without further competitive bidding.
+  </p>
+  <p>
+    The MSAs allow any local government entity that operates public transportation services (“transit providers”) to purchase
+    goods and services off of California’s MSAs. Out-of-state transit providers can also participate. Each transit provider should
+    determine whether use of the MSAs is consistent with its procurement policies and regulations.
+  </p>
+  <p>
+    Projects resulting from these MSAs may be funded through grants from the Federal Transit Administration (FTA), and/or the
+    State of California, California Department of Transportation (Caltrans), and other sources of local and state public funding.
+    Check with your funding agencies.
+  </p>
+  <h4>Can I contract with Elavon or Fiserv directly or do I need to do a competitive bid?</h4>
+  <p>
+    You are free to complete a sole source purchase if your procurement rules allow you to do so. The important consideration is
+    understanding certification timelines and costs associated with integrating the other parts of your system (your PADs and
+    Transit Processor) with the Payment Processor of your choice.
+  </p>
+  <h4>Can I buy alongside multiple agencies?</h4>
+  <p>
+    Yes, Cal ITP has supported group-buys that fit different regional needs in payment and contracting, and can help guide the
+    development of a memorandum of understanding.
+  </p>
+  <h4>How can I support unbanked riders?</h4>
+  <p>
+    We can advise on getting un/underbanked riders access to specialized, low- to no-cost accounts through
+    <a href="https://www.calitp.org/resources/fact-sheet-enhancing-transit-experience-with-bankon">Bank On</a>.
+  </p>
+  <h4>Can I bring my own acquirer? [existing city/state banking relationship/contract]</h4>
+  <p>
+    Yes, please! Please ensure that your acquirer can process mass transit transactions (MTT), which are different from retail
+    transactions.
+  </p>
+  <h4>How much are my merchant service/interchange rates?</h4>
+  <p>For California agencies, this information can be found in Elavon and Fiserv’s respective EPAY agreements.</p>
+  <p>
+    For out of state agencies, Elavon has agreed to extend EPAY Terms, Conditions and Pricing from California to other agencies.
+    Please confirm with Elavon, as Cal-ITP will not have visibility of these terms. Similarly, California’s “transit program”
+    interchange discount for regulated debit cards - administered through Visa and Mastercard - will also apply.
+  </p>
+  <h4>What is a payment gateway and is this a separate contract?</h4>
+  <p>
+    A payment gateway transmits card information from your transit processor to the acquirer to facilitate a transaction. If you
+    decide to contract with Elavon, a gateway is provided as part of the EPAY agreement (Cybersource is the gateway provider). You
+    may need to engage with the payment gateway provider as part of the initial set-up, but this will be facilitated by either
+    your payment processor or your transit processor.
+  </p>
+  <h4>Not in California?</h4>
+  <p>
+    Not in California? Follow this guide and incorporate the MSA into your contract. The MSAs listed on this site are examples of
+    a “state purchasing schedule.” These schedules are agreements between a state or related entity and vendor(s) to provide goods
+    or services at agreed-upon prices. Fundamentally, state purchasing schedules are designed to accommodate other parties that
+    may enter into and benefit from the agreements in the future. You’ll sign a contract with the vendors directly. However, the
+    terms and conditions (and pricing!) from the MSA are incorporated by reference in the contract that you will sign. You can use
+    a California STD-213 or another DGS approved user agreement or equivalent.
+  </p>
+  <h4>Still have questions? Email us at <a href="mailto:hello@calitp.org">hello@calitp.org</a>.</h4>
+  <h3 class="text-center m-4">Downloadable resources</h3>
+</div>
+<div class="container" style="max-width: 1200px">
+  <!--deviation from the demo.md layout pattern (to center the cards horizontally on narrow screens)-->
+  <div class="d-flex flex-md-row flex-column flex-wrap justify-content-center align-content-center gap-4">
+    {% for resource in site.data.resources -%} {% assign dl_img = resource.thumbnail %} {% assign dl_tag = resource.tag %} {%
+    assign dl_title = resource.title %} {% assign dl_description = resource.description %} {% assign dl_view_url =
+    "/resources/assets" %} {% assign dl_download_url = "/resources/" %} {% include dl-card.html img=dl_img tag=dl_tag
+    title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %} {% endfor %}
   </div>
-</section>
-
-<!-- END_PREFACE -->
-
-## Prepare
-
-### Getting started
-
-#### How do I get started?
-
-Cal-ITP will provide the resource materials and technical support you need to navigate modernizing your fleet to accept contactless payments. To help us better assist you, we ask that you complete an [interest form](/contact) to request Cal-ITP support. With this information, we can determine how best to support you with developing a project scope, getting buy-in from internal stakeholders, engaging with vendors, and implementing your new fare payments system.
-
-After you complete the form, we welcome you to browse the [Contactless Payments MSA Information Packet (PDF)](https://resources.calitp.org/mobility-marketplace/Contactless-Payments-MSA-Information-Packet.pdf){:target="_blank"} to understand the overall process and your next steps.
-
-#### What else do I need to know about contactless payments?
-
-If you’d like to learn more about contactless payments or need an informational presentation to share with your staff or board of directors, please review this [Contactless Payments Introduction (PDF)](https://resources.calitp.org/mobility-marketplace/Contactless-Payments-Introduction.pdf){:target="_blank"}.
-
-### What to know about MSAs?
-
-#### What are MSAs?
-
-The California Department of General Services (DGS), in collaboration with Cal-ITP, conducted a Request for Proposals (RFP) that established six competitively awarded Master Service Agreements (MSAs), contracts that allow U.S. public transportation providers to purchase directly from California’s DGS without further competitive bidding.
-
-The MSAs allow any local government entity that operates public transportation services (“transit providers”) to purchase goods and services off of California’s MSAs. Out-of-state transit providers—including but not limited to members of the Oregon Cooperative Procurement Program (ORCPP) and the Washington State Purchasing Cooperative (WSPC)—can also participate. Each transit provider should determine whether use of the MSAs is consistent with its procurement policies and regulations. California’s MSAs are generally known as State Purchasing Schedules in other states.
-
-Projects resulting from these MSAs may be funded through grants from the Federal Transit Administration (FTA), and/or the State of California, California Department of Transportation (Caltrans), and other sources of local and state public funding. Check with your funding agencies.
-
-#### Non-California Agencies
-
-Not in California? You can still leverage Cal-ITP by accessing our MSAs. Although we cannot provide an account manager to out of state agencies, we can answer technical questions and provide resources to get you started. Follow the guidelines described below and incorporate the MSA into your contract. The contracts or MSAs listed on this site are examples of a “state purchasing schedule.” These schedules are agreements between a state or related entity and vendor(s) to provide goods or services at agreed-upon prices. Fundamentally, state purchasing schedules are designed to accommodate other parties that may enter into and benefit from the agreements in the future. You will sign a contract with the vendors directly. However, the terms and conditions (and pricing!) from the MSA are incorporated by reference in the contract that you will sign. You can use a California STD-213 or another DGS approved user agreement or equivalent.
-
-### GTFS Compliance
-
-[General Transit Feed Specification (GTFS)](https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines){:target="_blank"} is the global standard for providing up-to-date transit information. We recommend creating an action plan for becoming GTFS-ready before going contactless, as the contactless payment hardware and software services vendors you select can help you use this data for reporting purposes plus help your customers see your real-time vehicle location and fare information on journey-planning smartphone maps and apps.
-
-### Connectivity
-
-You’ll need to ensure internet connectivity on your fleet to properly enable contactless fare collection. You can view [details on Data Plans](/contracts/view?contracts-filter-product=Data%20Plans). Your transit agency may be eligible to upgrade your cellular data plan and save on your monthly connectivity costs.
-
-### How much will this cost?
-
-When you’re ready to start creating cost estimates for purchasing contactless payment hardware and software services, this [MSA Cost Estimation Tool (an Excel Workbook)](https://resources.calitp.org/mobility-marketplace/MSA-Cost-Estimation-Tool.xlsx){:target="_blank"} will help transit agency staff to a) compare MSA-awarded vendors’ maximum prices and develop ballpark estimates for budgeting purposes (and board presentations), and b) make scoping decisions as you prepare to email vendors during the vendor engagement phase.
-
-As stated, the prices in this workbook are maximums. Transit agencies are strongly encouraged to reach out to vendors directly for tailored pricing. Prices may be reduced and/or fee categories waived, at vendors' sole discretion.
-
-## Purchase
-
-### Assess vendors
-
-You can review [available MSAs](/contracts/). Click through to each contract number for complete terms and conditions and to read MSA User Instructions.
-
-### Draft a Scope of Work (SOW)
-
-After you’ve read through the Contactless Payments MSA Information Packet and Contactless Payments Introduction, move on to this [MSA SOW Template and Guidance (PDF)](https://resources.calitp.org/mobility-marketplace/MSA-SOW-Template-and-Guidance.pdf){:target="_blank"}.
-
-This PDF provides detailed guidance for transit agency staff on how to complete a User Agreement Scope of Work (SOW) as required to participate in the MSAs for Payment Acceptance Devices (PADs) and Transit Processor Services. Completing an SOW will assist your agency with key scoping decisions as you work toward purchasing hardware and software services.
-
-Cal-ITP can assist California transit agencies in drafting and/or reviewing their SOW, making sure it includes your desired operating objectives, intended operating environment, and any desired value-added services. Just send the SOW to [hello@calitp.org](mailto:hello@calitp.org) when it’s ready if you haven’t already connected with Cal-ITP.
-
-### Send the SOW to vendors
-
-When your SOW is ready to send to hardware and software services vendors, you can find their contact information in the MSA User Instructions document (which is linked from each vendor’s contract number). We recommend sending the SOW to all MSA-awarded hardware and software services vendors.
-
-You can use [this email template](https://resources.calitp.org/mobility-marketplace/MSA_VendorContact_EmailTemplate.docx){:target="_blank"} when sending out your SOW. Be sure to CC [hello@calitp.org](mailto:hello@calitp.org). Unless otherwise specified by the transit agency, each vendor will respond within five business days of receiving the SOW.
-
-### Review vendor proposals
-
-Look over the proposals you receive from each hardware and software services vendor. Decide which vendors you want to negotiate with. When you reach an agreement, including any necessary value-added services, you’re ready to place your order for hardware and software services by signing a contract for your purchases.
-
-### What contract do I sign with the selected vendors?
-
-After you’ve finalized the details of your project with the vendor “contractors” you’ve selected, you’ll execute a User Agreement contract and sign it as the “contracting agency.” The User Agreement contract can be the Standard Agreement ([STD 213](https://www.documents.dgs.ca.gov/dgs/fmc/pdf/std213.pdf){:target="_blank"}; note that you’ll need Adobe Acrobat or Reader to complete this PDF form) from the California Department of General Services (DGS) or an equivalent contract form, such as this [Sample User Agreement](https://resources.calitp.org/mobility-marketplace/User-Agreement-Contract-Form_MSA%205-21-70-28.docx){:target="_blank"}, which can be used by transit providers across the U.S. The User Agreement will incorporate by reference the terms of the MSA and contain the Scope of Work and Payment Provisions.
-
-## Implement
-
-### Get ready to launch
-
-Cal-ITP can work with you to develop an operational launch plan for your agency, including staff training guides, customer-facing communications, and marketing materials.
-
-###  Maintenance and support
-
-Cal-ITP is here to help! Please download and review our [Support Framework](https://docs.google.com/presentation/d/1J_4TvF5fhI73fE4xcGPQ6e6atehFyEIx/edit#slide=id.p1){:target="_blank"} - a document you can fill in and use to provide information to your internal team(s) about roles and responsibilities, common troubleshooting steps, how to manage your vendor relationships and how to monitor key performance outcomes.
-
-For additional help, you can [contact us](/contact) for assistance or send an email to [hello@calitp.org](mailto:hello@calitp.org).
+</div>
+<div class="spacer-10"></div>
+<div class="container">
+  <h2 class="text-center">Related</h2>
+  <nav class="related-nav row mb-5" aria-label="Related">
+    <div class="col-md">
+      <a class="related-nav-link" href="/gtfs-realtime">
+        <span class="arrow" aria-label="(previous page)">←</span>
+        <span class="text">Build on Schedule data with <b>GTFS Realtime</b>. Explore the guide</span>
+      </a>
+    </div>
+    {% comment %}
+    <div class="col-md">
+      <a class="related-nav-link related-nav-link_next" href="/intro-gtfs-rt">
+        <span class="text">Make your tap to pay program more robust with rider benefits & discounts</span>
+        <span class="arrow" aria-label="(next page)">→</span>
+      </a>
+    </div>
+    {% endcomment %}
+  </nav>
+</div>
