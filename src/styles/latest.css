@@ -826,6 +826,72 @@ a:has(> img) {
   margin: var(--spacing-4) 0;
 }
 
+.guide-cards {
+  padding: var(--spacing-7) 0 var(--spacing-10);
+  background-color: var(--dsdl-gray-10);
+}
+.guide-cards h2 {
+  max-width: calc(var(--spacing-base) * 105);
+  margin-bottom: var(--spacing-7);
+}
+.guide-cards ul {
+  --bs-gutter-x: var(--spacing-1);
+  list-style: none;
+  padding: 0;
+}
+.guide-cards li {
+  margin-bottom: var(--spacing-1);
+}
+.guide-card {
+  display: block;
+  height: 100%;
+  padding: 20px;
+  background-color: white;
+  text-decoration: none;
+}
+.guide-card.data-plans:hover { background-color: var(--dsdl-purple-20); }
+.guide-card.route-scheduling:hover { background-color: var(--dsdl-blue-20); }
+.guide-card.gtfs-rt:hover { background-color: var(--dsdl-cyan-10); }
+.guide-card.tap-to-pay:hover { background-color: var(--dsdl-yellow-10); }
+.guide-card.rider-benefits:hover { background-color: var(--dsdl-green-20); }
+.guide-card:focus {
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+.guide-card.data-plans .h4 { color: var(--dsdl-purple-80); }
+.guide-card.route-scheduling .h4 { color: var(--dsdl-blue-70); }
+.guide-card.gtfs-rt .h4 { color: var(--dsdl-cyan-70); }
+.guide-card.tap-to-pay .h4 { color: var(--dsdl-yellow-70); }
+.guide-card.rider-benefits .h4 { color: var(--dsdl-green-70); }
+.guide-card:active {
+  box-shadow: inset 0 0 4px 4px white;
+}
+.guide-card:active .h4 {
+  color: var(--dsdl-black);
+}
+.guide-cards a.contact-cs {
+  border: var(--button-border);
+  border-radius: 1em; /* not fully rounded like the default buttons */
+  background-color: white;
+  color: var(--button-text-color);
+  display: inline-block;
+  line-height: var(--line-height-tight);
+  padding: var(--spacing-1) 12px;
+}
+.guide-cards a.contact-cs:hover {
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
+}
+.guide-cards a.contact-cs:focus {
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+.guide-cards a.contact-cs:active {
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
+}
+
 /* DATA-PLANS */
 .estimator {
   border: 1px solid var(--dsdl-black);
