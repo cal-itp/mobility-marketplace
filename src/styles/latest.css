@@ -1,7 +1,12 @@
 /* BOOTSTRAP OVERRIDES */
 
-main > .container {
+/* top-level containers and pull quotes */
+main > .container,
+main > figure > .container {
   --bs-gutter-x: var(--spacing-6); /* 24px padding override (w/o sass) */
+}
+
+main > .container {
   max-width: 800px;
 }
 
@@ -499,10 +504,6 @@ td ol {
 }
 
 /* HEADER */
-.header-wrapper {
-  box-shadow: 0 var(--spacing-05) var(--spacing-05) rgba(0, 0, 0, 0.04);
-}
-
 .header {
   background-color: #fff;
   max-width: calc(var(--spacing-base) * 180); /* don't let the actual content stretch beyond 1440px */
