@@ -60,6 +60,13 @@ a {
   color: unset;
 }
 
+h1,
+.h1,
+h2,
+.h2 {
+  text-align: center;
+}
+
 /* TODO: consider further customizing border-radius etc. using appearance: none; */
 input[type="checkbox"] {
   accent-color: var(--dsdl-indigo-80);
@@ -91,12 +98,10 @@ h5,
   h1,
   .h1 {
     font-size: calc(48 / var(--text-base) * 1rem);
-    text-align: center;
   }
   h2,
   .h2 {
     font-size: var(--text-xxxl);
-    text-align: center;
   }
   h3,
   .h3 {
@@ -803,6 +808,22 @@ a:has(> img) {
     /* We'll never have more than one line at this width and up. */
     min-height: auto;
   }
+}
+
+.highlight {
+  padding: 24px 40px;
+  border: 1px solid var(--dsdl-gray-30);
+  border-radius: 40px;
+  margin-bottom: var(--spacing-2);
+}
+.highlight > h3 {
+  color: var(--calitp-brand-blue);
+  text-align: center;
+}
+.highlight > img {
+  display: block;
+  width: 100%;
+  margin: var(--spacing-4) 0;
 }
 
 /* DATA-PLANS */
