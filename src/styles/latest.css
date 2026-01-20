@@ -669,8 +669,9 @@ a:has(> img) {
 
 .logo-strip {
   height: 48px;
-  overflow: hidden;
+  margin-bottom: var(--spacing-8);
   position: relative;
+  overflow: hidden;
 }
 .logo-strip-list {
   list-style: none;
@@ -708,6 +709,99 @@ a:has(> img) {
   .logo-strip-list > li {
     height: 48px;
     margin-left: calc(var(--spacing-base) * 12.5);  /* 100px between logos */
+  }
+}
+
+.carousel {
+  --bs-carousel-caption-color: var(--dsdl-black);
+  max-width: 870px;
+  margin: 0 auto;
+}
+.carousel-caption {
+  position: static;
+  padding-bottom: 0;
+  margin-bottom: var(--spacing-5);
+}
+.carousel-caption > p {
+  /* Ensures consistent element positioning when sliding if some captions have more lines than others. */
+  min-height: calc(1em * 3 * 1.5);  /* max 3 lines at line-height 1.5 */
+}
+.carousel-caption > a {
+  /* Ensures consistent element positioning when sliding if some captions have more lines than others. */
+  display: inline-block;
+  min-height: calc(1em * 2 * 1.25);  /* max 2 lines at line-height 1.25 */
+  margin-bottom: 0;
+}
+.carousel-indicators {
+  margin: 0;
+  bottom: calc(var(--spacing-base) * 21);
+  gap: var(--spacing-2);
+}
+.carousel-indicators [data-bs-target],
+.carousel-controls > button {
+  box-sizing: initial;
+  width: auto;
+  height: auto;
+  padding: var(--spacing-1) 12px;
+  border: var(--button-border);
+  border-radius: 1em; /* not fully rounded like the default buttons */
+  margin: 0;
+  position: static;
+  background-color: white;
+  color: var(--button-text-color);
+  line-height: var(--line-height-tight);
+  text-indent: 0;
+  opacity: 1;
+}
+.carousel-indicators .active {
+  border-color: var(--dsdl-cyan-60);
+  background-color: var(--dsdl-cyan-10);
+}
+.carousel-indicators [data-bs-target]:focus,
+.carousel-controls > button:focus {
+  color: var(--button-text-color);
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+.carousel-indicators [data-bs-target]:hover,
+.carousel-controls > button:hover {
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
+  color: var(--button-text-color);
+}
+.carousel-indicators [data-bs-target]:active,
+.carousel-controls > button:active {
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
+}
+.carousel-controls > button {
+  gap: var(--spacing-1);
+}
+.carousel-controls svg {
+  height: 1em;
+  position: relative;
+  top: calc(0.5em / 16);
+}
+
+@media (min-width: 576px) {
+  .carousel-caption > p {
+    /* Ensures consistent element positioning when sliding if some captions have more lines than others. */
+    min-height: calc(1em * 2 * 1.5);  /* max 2 lines at line-height 1.5 */
+  }
+  .carousel-caption > a {
+    /* We'll never have more than one line at this width and up. */
+    min-height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-caption {
+    padding-top: calc(var(--spacing-base) * 11);
+  }
+  .carousel-caption > p {
+    /* We'll never have more than one line at this width and up. */
+    min-height: auto;
   }
 }
 
