@@ -77,10 +77,12 @@ h5,
   h1,
   .h1 {
     font-size: calc(48 / var(--text-base) * 1rem);
+    text-align: center;
   }
   h2,
   .h2 {
     font-size: var(--text-xxxl);
+    text-align: center;
   }
   h3,
   .h3 {
