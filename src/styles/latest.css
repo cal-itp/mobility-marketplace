@@ -2,7 +2,8 @@
 
 /* top-level containers and pull quotes */
 main > .container,
-main > figure > .container {
+.pull-quote > .container,
+.dl-hero > .container {
   --bs-gutter-x: var(--spacing-6); /* 24px padding override (w/o sass) */
 }
 
