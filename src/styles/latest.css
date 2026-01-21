@@ -8,7 +8,7 @@ main > .container,
 }
 
 main > .container {
-  max-width: 800px;
+  max-width: calc(800px + var(--bs-gutter-x) * 2);
 }
 
 .navbar {
