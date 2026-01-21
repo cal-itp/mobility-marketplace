@@ -309,7 +309,7 @@ show_call_to_action: true
     </div>
   </div>
 </div>
-{% include related-documents.html resource_tag="GTFS-RT" %}
+{% include downloadable-resources.html resource_tag="GTFS-RT" %}
 <h2 class="my-5">Download hero</h2>
 <section class="dl-hero my-4">
   <div class="container">
