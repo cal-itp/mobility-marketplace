@@ -810,6 +810,11 @@ a:has(> img) {
   }
 }
 
+.highlights {
+  /* --bs-gutter-x: var(--spacing-1); */
+  list-style: none;
+  padding: 0;
+}
 .highlight {
   padding: 24px 40px;
   border: 1px solid var(--dsdl-gray-30);

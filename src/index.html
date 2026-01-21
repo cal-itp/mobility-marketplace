@@ -6,33 +6,40 @@ layout: latest
 # description: ~
 ---
 
-<div class="container-sm my-5">
+<section class="container-sm my-5">
   <div class="row align-items-center">
     <div class="col-lg-6 offset-lg-1">
-      <h1 class="fw-normal text-start mb-3">Modernize your transit system with free, guided support from <span class="text-nowrap">Cal-ITP</span></h1>
+      <h1 class="fw-normal text-start mb-3">
+        <span role="text">
+          Modernize your transit system with free, guided support from <span class="text-nowrap">Cal-ITP</span>
+        </span>
+      </h1>
       <p class="text-body-xl mb-0">Whether it’s connecting your fleet, adding real-time updates, or launching tap-to-pay rides, <span class="text-nowrap">Cal-ITP</span> guides your agency every step of the way. Free support, proven tools, and pre-negotiated contracts put innovation within reach.</p>
     </div>
     <div class="col-lg-5">
       <img class="d-block w-100" src="uploads/hero_home.png" alt="In the foreground is an illustration of a brown-skinned woman with wavy black hair tapping a payment card on a reader, which displays a success indicator. In the background are subtle illustrations of different modes of public transit, trains and two types of buses.">
     </div>
   </div>
-</div>
+</section>
 
-<div class="logo-strip">
+<section class="logo-strip">
+  <h2 class="visually-hidden">Transit providers that Cal-ITP has served</h2>
   <ul class="logo-strip-list">
     {% for agency in site.data.agencies -%}
       <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}"></li>
     {% endfor %}
     {% for agency in site.data.agencies -%}
-      <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}"></li>
+      <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}" aria-hidden="true"></li>
     {% endfor %}
   </ul>
-</div>
+</section>
 
-<div class="container-sm mb-5">
+<section class="container-sm mb-5">
   <h2 class="fw-normal">
-    <span class="d-md-block">Plan, purchase, and launch</span>
-    from data plans to tap to pay benefits
+    <span role="text">
+      <span class="d-md-block">Plan, purchase, and launch<span class="visually-hidden">,</span></span>
+      from data plans to tap to pay benefits
+    </span>
   </h2>
   <div id="showcase" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators d-none d-lg-flex w-100">
@@ -90,80 +97,84 @@ layout: latest
       </button>
     </div>
   </div>
-</div>
+</section>
 
 {% assign quote_content = "Cal-ITP has been fantastic. Their support and collaboration has been immensely helpful as well as informative. So happy they are a part of our team!" %}
 {% assign quote_source_name = "Robin Van Valkenburgh" %}
 {% assign quote_source_title = "Transit Services Division Manager, Nevada County Connects" %}
 {% include pull-quote.html content=quote_content source_name=quote_source_name source_title=quote_source_title %}
 
-<div class="container-sm my-5">
+<section class="container-sm my-5">
   <h2 class="mb-5">Improve rider experience and your agency’s operations</h2>
-  <div class="highlights row">
-    <div class="col-md-6 col-lg-4">
+  <ul class="highlights row">
+    <li class="col-md-6 col-lg-4">
       <div class="highlight">
         <h3>Grow ridership</h3>
         <img src="uploads/highlight_grow-ridership.png" alt="Illustration of a person tapping a card against a payment acceptance device mounted to a pole">
         <p class="text-body-xl">Tap-to-pay boosted London Underground ridership by 4%</p>
       </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
+    </li>
+    <li class="col-md-6 col-lg-4">
       <div class="highlight">
         <h3>Build trust</h3>
         <img src="uploads/highlight_build-trust.png" alt="Illustration of a person using their phone while riding public transportation">
         <p class="text-body-xl">30% shorter perceived wait times with GTFS Realtime data in Seattle</p>
       </div>
-    </div>
-    <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
+    </li>
+    <li class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
       <div class="highlight">
         <h3>Board faster</h3>
         <img src="uploads/highlight_board-faster.png" alt="Illustration of a hand tapping a card against a payment acceptance device">
         <p class="text-body-xl">Dwell time is 50% less when riders tap vs swipe to pay</p>
       </div>
-    </div>
-  </div>
-</div>
+    </li>
+  </ul>
+</section>
 
-<div class="guide-cards">
+<section class="guide-cards">
   <div class="container-sm">
-    <h2 class="text-start">Cut your procurement times with <span class="text-nowrap">pre-approved</span> MSAs. Start with our guides.</h2>
+    <h2 class="text-start">
+      <span role="text">
+        Cut your procurement times with <span class="text-nowrap">pre-approved</span> MSAs. Start with our guides.
+      </span>
+    </h2>
     <ul class="row">
       <li class="col-md-4 col-lg">
         <a class="guide-card data-plans" href="/data-plans">
-          <h3 class="h4">Data plans</h3>
+          <h3 class="h4">Data plans<span class="visually-hidden">:</span></h3>
           <p>Increase your fleet's plan or save with pre-negotiated rates</p>
         </a>
       </li>
       <li class="col-md-4 col-lg">
         <a class="guide-card route-scheduling" href="/route-scheduling">
-          <h3 class="h4">Route scheduling</h3>
+          <h3 class="h4">Route scheduling<span class="visually-hidden">:</span></h3>
           <p>Plan and schedule your routes with ease</p>
         </a>
       </li>
       <li class="col-md-4 col-lg">
         <a class="guide-card gtfs-rt" href="/gtfs-rt">
-          <h3 class="h4">GTFS Realtime</h3>
+          <h3 class="h4">GTFS Realtime<span class="visually-hidden">:</span></h3>
           <p>Get real-time performance insights and share arrival times with riders</p>
         </a>
       </li>
       <li class="col-md-4 col-lg">
         <a class="guide-card tap-to-pay" href="/tap-to-pay">
-          <h3 class="h4">Tap to pay</h3>
+          <h3 class="h4">Tap to pay<span class="visually-hidden">:</span></h3>
           <p>Cut boarding times and keep riders moving fast</p>
         </a>
       </li>
       <li class="col-md-4 col-lg">
         <a class="guide-card rider-benefits" href="/rider-benefits">
-          <h3 class="h4">Rider benefits</h3>
+          <h3 class="h4">Rider benefits<span class="visually-hidden">:</span></h3>
           <p>Offer tap-to-pay-discounts for older adults, veterans, CalFresh, and more</p>
         </a>
       </li>
     </ul>
     <a class="contact-cs" href="mailto:hello@calitp.org" aria-label="Questions? Contact Customer success by emailing hello at cal i t p dot org">Questions? Contact Customer Success →</a>
   </div>
-</div>
+</section>
 
-<div class="container my-5">
+<section class="container my-5">
   <h2 class="text-start">Commonly asked questions</h2>
 
   <h3 class="h4 mt-4 mb-3">How is this support free?</h3>
@@ -182,4 +193,4 @@ layout: latest
   <p>Currently, Veterans, CalFresh, Agencies, Older Adults, and Medicare rider benefits and discounts are supported.</p>
 
   <p class="h4 mt-4 mb-3">Still have questions? Email us at <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">hello@calitp.org</a>.</p>
-</div>
+</section>
