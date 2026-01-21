@@ -1,53 +1,59 @@
 - title: Scope of Work
-  tag: Tap2Pay
+  tags:
+    - GTFS-RT
+    - Tap2Pay
   thumbnail: /uploads/thumbnails/scope-of-work.png
-  description: Template to facilitate communication of program goals
+  description: Document your project needs and goals to send to vendors
   filename: TK
 
 - title: Email template
-  tag: Tap2Pay
+  tags:
+    - GTFS-RT
+    - Tap2Pay
   thumbnail: /uploads/thumbnails/email-template.png
   description: To facilitate vendor outreach
   filename: TK
 
 - title: Sample User Agreement
-  tag: Tap2Pay
+  tags:
+    - GTFS-RT
+    - Tap2Pay
   thumbnail: /uploads/thumbnails/sample-user-agreement.png
   description: To enter into contract with your selected vendor
   filename: TK
 
 - title: Statewide Fare Guidelines Toolkit
-  tag: Tap2Pay
+  tags: Tap2Pay
   thumbnail: /uploads/thumbnails/statewide-fare-guidelines-toolkit.png
   description:
   filename: TK
 
 - title: Contactless Payments Introduction
-  tag: Tap2Pay
+  tags: Tap2Pay
   thumbnail: /uploads/thumbnails/contactless-payments-introduction.png
   description: To enter into contract with your selected vendor
   filename: TK
 
 - title: MSA Cost Estimation Tool (Excel)
-  tag: Tap2Pay
+  tags: Tap2Pay
   thumbnail: /uploads/thumbnails/msa-cost-estimation-tool.png
   description: To enter into contract with your selected vendor
   filename: TK
 
 - title: Tap to pay staff training guide
-  tag: Tap2Pay
+  tags: Tap2Pay
   thumbnail: /uploads/thumbnails/tap-to-pay-staff-training-guide.png
   description:
   filename: TK
 
 - title: Marketing templates
-  tag: Tap2Pay
+  tags: Tap2Pay
   thumbnail: /uploads/thumbnails/marketing-templates.png
   description: To facilitate customer communications and marketing
   filename: TK
 
 - title: Contactless payments support framework
-  tag: Tap2Pay
+  tags: Tap2Pay
   thumbnail: /uploads/thumbnails/contactless-payments-support-framework.png
   description:
   filename: TK

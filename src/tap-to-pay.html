@@ -1,6 +1,7 @@
 ---
 layout: latest
 title: Tap to pay
+resourceTag: Tap2Pay
 description: >
   Learn how to roll out a tap to pay program at your transit agency to accept contactless credit and debit cards, prepaid cards, and mobile wallets.
 ---
@@ -465,17 +466,8 @@ color_scheme=quote_color_scheme content=quote_content source_name=quote_source_n
     Still have questions? Email us at
     <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">hello@calitp.org</a>.
   </h4>
-  <h3 class="text-center m-4">Downloadable resources</h3>
 </div>
-<div class="container" style="max-width: 1200px">
-  <!--deviation from the demo.md layout pattern (to center the cards horizontally on narrow screens)-->
-  <div class="d-flex flex-md-row flex-column flex-wrap justify-content-center align-content-center gap-4">
-    {% for resource in site.data.resources -%} {% assign dl_img = resource.thumbnail %} {% assign dl_tag = resource.tag %} {%
-    assign dl_title = resource.title %} {% assign dl_description = resource.description %} {% assign dl_view_url =
-    "/resources/assets" %} {% assign dl_download_url = "/resources/" %} {% include dl-card.html img=dl_img tag=dl_tag
-    title=dl_title description=dl_description view_url=dl_view_url download_url=dl_download_url %} {% endfor %}
-  </div>
-</div>
+{% include related-documents.html resource_tag=page.resourceTag %}
 <div class="spacer-10"></div>
 <div class="container">
   <h2>Related</h2>
