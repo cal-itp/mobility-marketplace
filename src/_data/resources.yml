@@ -1,8 +1,10 @@
 - title: Scope of work template
+  slug: scope-of-work-gtfs
   tags: GTFS-RT
   thumbnail: /uploads/thumbnails/scope-of-work.png
   description: Document your project needs and goals to send to vendors
   filename: TK
+  lastUpdated: "2025-09-01 00:00:00"
 
 - title: Email template
   tags: GTFS-RT
