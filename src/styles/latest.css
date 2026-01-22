@@ -758,23 +758,34 @@ a:has(> img) {
   text-indent: 0;
   opacity: 1;
 }
+.carousel-indicators [data-bs-target] {
+  border: 1px solid var(--dsdl-gray-20);
+}
+.carousel-indicators [data-bs-target]:hover {
+  border-color: var(--dsdl-blue-10);
+  background-color: var(--dsdl-blue-10);
+}
+.carousel-indicators [data-bs-target]:focus {
+  outline: 2px solid var(--calitp-brand-cyan);
+}
+.carousel-indicators [data-bs-target]:active {
+  border-color: var(--dsdl-cyan-30);
+  background-color: var(--dsdl-cyan-30);
+}
 .carousel-indicators .active {
-  border-color: var(--dsdl-cyan-60);
+  border-color: var(--dsdl-cyan-10);
   background-color: var(--dsdl-cyan-10);
 }
-.carousel-indicators [data-bs-target]:focus,
 .carousel-controls > button:focus {
   color: var(--button-text-color);
   outline: var(--button-focus-outline);
   outline-offset: var(--button-focus-outline-offset);
 }
-.carousel-indicators [data-bs-target]:hover,
 .carousel-controls > button:hover {
   border-color: var(--button-hover-border-color);
   background-color: var(--button-hover-bg-color);
   color: var(--button-text-color);
 }
-.carousel-indicators [data-bs-target]:active,
 .carousel-controls > button:active {
   border-color: var(--button-active-border-color);
   background-color: var(--button-active-bg-color);
