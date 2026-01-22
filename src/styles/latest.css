@@ -67,13 +67,6 @@ h2,
   text-align: center;
 }
 
-/* TODO: consider further customizing border-radius etc. using appearance: none; */
-input[type="checkbox"] {
-  accent-color: var(--dsdl-indigo-80);
-  height: var(--spacing-3);
-  width: var(--spacing-3);
-}
-
 /* TYPE SCALE */
 
 /* If these adjustments prove successful, they should be relocated to the DSDL styles in calitp.org. */
@@ -128,7 +121,6 @@ h5,
 .pull-quote-content {
   font-family: var(--dsdl-heading-font-stack);
   font-size: var(--text-xl);
-  line-height: var(--line-height-tight);
 }
 .pull-quote-content_attributed {
   margin-bottom: var(--spacing-3);
@@ -912,6 +904,136 @@ a:has(> img) {
 .estimator-2 {
   background-color: var(--dsdl-purple-20);
   border-color: var(--dsdl-purple-50);
+}
+
+/* CONTACT PAGE */
+
+.hs-form-field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-1);
+  margin-bottom: var(--spacing-2);
+}
+.hs-form-field > label {
+  width: calc(var(--spacing-base) * 12 );  /* just wide enough for the labels with asterisks */
+  padding: 1px 0;  /* compensate for top and bottom border on standard text input */
+  line-height: var(--spacing-4);  /* matching height of standard text input */
+}
+.hs-form-booleancheckbox > label {
+  display: inline;  /* overriding Bootstrap's inline-block to prevent text wrapping */
+}
+.hs-form-required {
+  display: none;
+}
+.hs-error-msgs {
+  width: 100%;
+  color: var(--dsdl-red-60);
+  text-align: right;
+}
+.hs-form-field > .input {
+  flex-grow: 1;
+}
+.hs-input {
+  width: 100%;
+}
+.hs_contact_type .inputs-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.hs-input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+.hs-input[type="radio"] + span {
+  padding: var(--spacing-05) var(--spacing-1);
+  border: 1px solid var(--dsdl-gray-50);
+  border-radius: var(--spacing-05);
+}
+.hs-input[type="radio"]:hover + span {
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
+}
+.hs-input[type="radio"]:focus + span {
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+.hs-input[type="radio"]:active + span {
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
+}
+.hs-input[type="radio"]:checked + span {
+  /* TODO: Turn into named variables and apply to current page in global nav */
+  border-color: var(--dsdl-cyan-60);
+  background-color: var(--dsdl-cyan-60);
+  color: white;
+}
+.hs-form-radio {
+  line-height: 2rem;
+}
+label[for="TICKET.content-bc98c500-50cf-4793-ad1b-1ea6f58eeb11"] {
+  display: none;
+}
+textarea[name="TICKET.content"] {
+  height: var(--spacing-20);
+}
+.hs-input[type="checkbox"] {
+  margin-right: var(--spacing-1);
+}
+.hbspt-form ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.hs-submit {
+  text-align: center;
+}
+.hs-button.primary {
+  background-color: white;
+  font-size: var(--text-l);
+}
+.hs-button.primary:focus {
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+.hs-button.primary:hover {
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
+}
+.hs-button.primary:active {
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
+}
+.hbspt-form .submitted-message {
+  padding: var(--spacing-5);
+  margin: var(--spacing-3) auto var(--spacing-6);
+  background-color: var(--dsdl-cyan-10);
+}
+
+/* GLOBAL FORM STYLING */
+
+input,
+textarea {
+  padding: var(--spacing-05) var(--spacing-1);
+  border: 1px solid var(--dsdl-gray-50);
+  border-radius: var(--spacing-05);
+}
+input:hover,
+textarea:hover {
+  border-color: var(--dsdl-black);
+}
+input:focus,
+textarea:focus {
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+
+/* TODO: consider further customizing border-radius etc. using appearance: none; */
+input[type="checkbox"] {
+  accent-color: var(--dsdl-indigo-80);
+  height: var(--spacing-3);
+  width: var(--spacing-3);
 }
 
 /* GENERIC / SHARED */
