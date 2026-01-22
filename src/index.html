@@ -1,118 +1,196 @@
 ---
-layout: default
+layout: latest
+title: Modernize Your Transit System
 
-# Allow the default _config.yml to set these values
-# title: ~
+# Allow the default _config.yml to set this value
 # description: ~
-
-show_newsletter: true
-newsletter_background: bg-white
 ---
 
-{% if site.announcement.enabled %}
-  {% include alert.html text=site.announcement.text %}
-{% endif %}
-
-<div class="container">
-  <div class="imaged-section imaged-section--right">
-    <div class="imaged-section__title">
-      <h1 class="home-hero-title">A new home for modern and equitable transportation innovations</h1>
+<section class="container-sm my-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6 offset-lg-1">
+      <h1 class="fw-normal text-start mb-3">
+        <span role="text">
+          Modernize your transit system with free, guided support from <span class="text-nowrap">Cal-ITP</span>
+        </span>
+      </h1>
+      <p class="text-body-xl mb-0">Whether it’s connecting your fleet, adding real-time updates, or launching tap-to-pay rides, <span class="text-nowrap">Cal-ITP</span> guides your agency every step of the way. Free support, proven tools, and pre-negotiated contracts put innovation within reach.</p>
     </div>
-    <div class="imaged-section__image">
-      <img
-        alt="A woman and child paying for bus fare from their smart phone while at bus stop"
-        class="img-fluid"
-        src="/uploads/home-illo-main.png"
-      />
-    </div>
-    <div class="imaged-section__content">
-      <p>
-        Welcome to the California Mobility Marketplace—a one-stop resource to help California’s transportation providers make
-        travel planning and payments simpler and more cost effective for customers.
-      </p>
-      <p>
-        Explore this site to find support for purchasing various products, such as open-loop fare collection hardware/software and
-        data plans, that can help your agency design and provide the best experience for your riders.
-      </p>
-      <a class="btn btn-primary m-t-md" href="/contracts/" target="_self">View contracts</a>
+    <div class="col-lg-5">
+      <img class="d-block w-100" src="uploads/hero_home.png" alt="">
     </div>
   </div>
-</div>
+</section>
 
-<div class="bg-dark-tan">
-  <div class="container">
-    <section class="py-5">
-      <header>
-        <h2 class="text-center pt-3">Modernize your fleet</h2>
-      </header>
-      <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-          <p>
-            Cal-ITP provides resource materials and technical assistance to public transportation providers in California and
-            beyond as they modernize their fleets with <a href="/go-contactless">contactless payments</a>,
-            <a href="/how-to/get-connected">data plans</a>, and more. These are just some of the agencies we’ve worked with.
-          </p>
+<section class="logo-strip">
+  <h2 class="visually-hidden">Transit providers that have worked with Cal-ITP</h2>
+  <ul class="logo-strip-list">
+    {% for agency in site.data.agencies -%}
+      <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}"></li>
+    {% endfor %}
+    {% for agency in site.data.agencies -%}
+      <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}" aria-hidden="true"></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="container-sm mb-5">
+  <h2 class="fw-normal">
+    <span role="text">
+      <span class="d-md-block">Plan, purchase, and launch<span class="visually-hidden">,</span></span>
+      from data plans to tap to pay benefits
+    </span>
+  </h2>
+  <div id="showcase" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="uploads/showcase_data-plans.png" class="d-block w-100" alt="A collage showing a speculative dashboard of fleet connectivity data, and a bus driver operates a vehicle transmitting real-time data.">
+        <div class="carousel-caption">
+          <a class="h3" href="/data-plans">Explore data plan guide</a>
+          <p class="text-body-xl mt-4">Save with pre-negotiated data plans for your fleets</p>
         </div>
       </div>
-
-      {% include agencies.html %}
-
-      <div class="text-center">
-        <p>Have questions about your fleet? Reach out and we can help!</p>
-        <a class="btn btn-action btn-primary" href="/contact">Contact us</a>
+      <div class="carousel-item">
+        <img src="uploads/showcase_route-scheduling.png" class="d-block w-100" alt="A collage showing route planning software and two transit agency employees adjusting a bus route on a computer.">
+        <div class="carousel-caption">
+          <a class="h3" href="/route-scheduling">Explore route scheduling guide</a>
+          <p class="text-body-xl mt-4">Plan and schedule your routes with ease</p>
+        </div>
       </div>
-    </section>
+      <div class="carousel-item">
+        <img src="uploads/showcase_gtfs-rt.png" class="d-block w-100" alt="A collage showing a GTFS code snippet alongside a phone screen that shows a bus approaching in real time.">
+        <div class="carousel-caption">
+          <a class="h3" href="/gtfs-realtime">Explore GTFS Realtime guide</a>
+          <p class="text-body-xl mt-4">Get real-time performance insights and share arrival times with riders</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="uploads/showcase_tap-to-pay.png" class="d-block w-100" alt="A speculative graph showing share of different payment methods, where most transactions are mobile wallets, followed by bank cards and cash.">
+        <div class="carousel-caption">
+          <a class="h3" href="/tap-to-pay">Explore tap to pay guide</a>
+          <p class="text-body-xl mt-4">Get tap to pay, cut boarding times, and keep riders moving fast</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="uploads/showcase_benefits.png" class="d-block w-100" alt="A collage of a web page enrolling a rider in a reduced fare, and an older man with a walker using contactless payments to board a bus and get a reduced fare.">
+        <div class="carousel-caption">
+          <a class="h3" href="/rider-benefits">Explore rider benefits guide</a>
+          <p class="text-body-xl mt-4">Offer tap-to-pay rider benefits from older adults to veterans to CalFresh and more</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-indicators d-none d-lg-flex w-100">
+      <button type="button" data-bs-target="#showcase" data-bs-slide-to="0" class="active" aria-current="true">Data plans</button>
+      <button type="button" data-bs-target="#showcase" data-bs-slide-to="1">Route scheduling</button>
+      <button type="button" data-bs-target="#showcase" data-bs-slide-to="2">GTFS Realtime</button>
+      <button type="button" data-bs-target="#showcase" data-bs-slide-to="3">Tap to pay</button>
+      <button type="button" data-bs-target="#showcase" data-bs-slide-to="4">Rider benefits</button>
+    </div>
+    <div class="carousel-controls d-flex justify-content-center gap-3 d-lg-none">
+      <button class="carousel-control-prev" type="button" data-bs-target="#showcase" data-bs-slide="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14"><path fill="#828282" d="M.278 5.981a.95.95 0 0 0 0 1.345l5.7 5.7a.951.951 0 0 0 1.345-1.345L2.294 6.652 7.32 1.623A.951.951 0 0 0 5.975.278l-5.7 5.7z"/></svg>
+        Previous
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#showcase" data-bs-slide="next">
+        Next
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14"><path fill="#828282" d="M7.323 5.981a.95.95 0 0 1 0 1.345l-5.7 5.7a.951.951 0 0 1-1.345-1.345l5.03-5.029L.28 1.623A.951.951 0 0 1 1.626.278l5.7 5.7z"/></svg>
+      </button>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="container" id="what-is">
-  <section class="imaged-section imaged-section--right">
-    <div class="imaged-section__title">
-      <h2 class="home-title">What is Cal-ITP?</h2>
-    </div>
-    <div class="imaged-section__image">
-      <img
-        alt="A smart phone and credit card being tapped at a bus fare device"
-        class="img-fluid"
-        src="/uploads/home-illo-payment-types.png"
-      />
-    </div>
-    <div class="imaged-section__content">
-      <p>
-        Supported by the
-        <a rel="noreferrer" target="_blank" href="https://calsta.ca.gov/">California State Transportation Agency</a>
-        (CalSTA) and the
-        <a rel="noreferrer" target="_blank" href="https://dot.ca.gov/ ">California Department of Transportation</a>
-        (Caltrans) through a grant from the
-        <a rel="noreferrer" target="_blank" href="https://calsta.ca.gov/subject-areas/transit-intercity-rail-capital-prog"
-          >California Transit and Intercity Rail Capital Program</a
-        >
-        (<abbr>TIRCP</abbr>), the California Integrated Travel Project (Cal-ITP) is a statewide solution to make travel simpler
-        and cost-effective for everyone.
-      </p>
-      <a class="btn btn-action btn-primary" rel="noreferrer" target="_blank" href="https://www.calitp.org/">Learn more</a>
-    </div>
-  </section>
-</div>
+{% assign quote_content = "Cal-ITP has been fantastic. Their support and collaboration has been immensely helpful as well as informative. So happy they are a part of our team!" %}
+{% assign quote_source_name = "Robin Van Valkenburgh" %}
+{% assign quote_source_title = "Transit Services Division Manager, Nevada County Connects" %}
+{% include pull-quote.html content=quote_content source_name=quote_source_name source_title=quote_source_title %}
 
-<div class="bg-blue-lightest">
-  <div class="container" id="cta">
-    <section class="imaged-section imaged-section--right">
-      <div class="imaged-section__title">
-        <h2 class="home-title">Get in touch</h2>
+<section class="container-sm my-5">
+  <h2 class="mb-5">Improve rider experience and your agency’s operations</h2>
+  <ul class="highlights row">
+    <li class="col-md-6 col-lg-4">
+      <div class="highlight">
+        <h3>Grow ridership</h3>
+        <img src="uploads/highlight_grow-ridership.png" alt="A person taps their card on a fare validator when boarding a bus.">
+        <p class="text-body-xl">Tap-to-pay boosted London Underground ridership by 4%</p>
       </div>
-      <div class="imaged-section__image">
-        <img alt="An illustration of a bus' front entrance" class="img-fluid" src="/uploads/bus-circle.svg" />
+    </li>
+    <li class="col-md-6 col-lg-4">
+      <div class="highlight">
+        <h3>Build trust</h3>
+        <img src="uploads/highlight_build-trust.png" alt="A woman checks her phone on the bus.">
+        <p class="text-body-xl">30% shorter perceived wait times with GTFS Realtime data in Seattle</p>
       </div>
-      <div class="imaged-section__content">
-        <p>
-          Whether you are a public transit provider in California or elsewhere in the US, Cal-ITP can provide materials and
-          support to help you navigate the process to modernize your fleet. If you’re a vendor, we’d love to hear about your
-          company’s products and/or services.
-        </p>
+    </li>
+    <li class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
+      <div class="highlight">
+        <h3>Board faster</h3>
+        <img src="uploads/highlight_board-faster.png" alt="A hand taps a credit card on a fare validator.">
+        <p class="text-body-xl">Dwell time is 50% less when riders tap vs swipe to pay</p>
+      </div>
+    </li>
+  </ul>
+</section>
 
-        <a class="btn btn-primary m-t-md" href="/contact" target="_self">Contact us</a>
-      </div>
-    </section>
+<section class="guide-cards">
+  <div class="container-sm">
+    <h2 class="text-start">
+      <span role="text">
+        Cut your procurement times with <span class="text-nowrap">pre-approved</span> MSAs. Start with our guides.
+      </span>
+    </h2>
+    <ul class="row">
+      <li class="col-md-4 col-lg">
+        <a class="guide-card data-plans" href="/data-plans">
+          <h3 class="h4">Data plans<span class="visually-hidden">:</span></h3>
+          <p>Increase your fleet's plan or save with pre-negotiated rates</p>
+        </a>
+      </li>
+      <li class="col-md-4 col-lg">
+        <a class="guide-card route-scheduling" href="/route-scheduling">
+          <h3 class="h4">Route scheduling<span class="visually-hidden">:</span></h3>
+          <p>Plan and schedule your routes with ease</p>
+        </a>
+      </li>
+      <li class="col-md-4 col-lg">
+        <a class="guide-card gtfs-rt" href="/gtfs-realtime">
+          <h3 class="h4">GTFS Realtime<span class="visually-hidden">:</span></h3>
+          <p>Get real-time performance insights and share arrival times with riders</p>
+        </a>
+      </li>
+      <li class="col-md-4 col-lg">
+        <a class="guide-card tap-to-pay" href="/tap-to-pay">
+          <h3 class="h4">Tap to pay<span class="visually-hidden">:</span></h3>
+          <p>Cut boarding times and keep riders moving fast</p>
+        </a>
+      </li>
+      <li class="col-md-4 col-lg">
+        <a class="guide-card rider-benefits" href="/rider-benefits">
+          <h3 class="h4">Rider benefits<span class="visually-hidden">:</span></h3>
+          <p>Offer tap-to-pay-discounts for older adults, veterans, CalFresh, and more</p>
+        </a>
+      </li>
+    </ul>
+    <a class="contact-cs" href="mailto:hello@calitp.org" aria-label="Questions? Contact Customer success by emailing hello at cal i t p dot org">Questions? Contact Customer Success →</a>
   </div>
-</div>
+</section>
+
+<section class="container my-5">
+  <h2 class="text-start">Commonly asked questions</h2>
+
+  <h3 class="h4 mt-4 mb-3">How is this support free?</h3>
+  <p>The support provided by Cal-ITP to adopt the products and services found on the Mobility Marketplace is funded through grants provided by the state of California.</p>
+  <h3 class="h4 mt-4 mb-3">Can I have help on one or multiple projects?</h3>
+  <p>The Cal-ITP Customer Success team is here to support you across data plans, route scheduling, GTFS Realtime, tap to pay, and rider benefits. Some agencies tackle multiple projects at the same time, others one by one.</p>
+  <h3 class="h4 mt-4 mb-3">What is an MSA?</h3>
+  <p>The <a href="https://www.dgs.ca.gov/">California Department of General Services<span aria-label="(external link)">↗</span></a> (DGS), in collaboration with Cal-ITP, conducted a Request for Proposals that established competitively awarded Master Service Agreements (MSAs), contracts that allow U.S. public transportation providers to purchase directly from California’s DGS without further competitive bidding. Out-of-state transit providers can also participate. Each transit provider should determine whether use of the MSAs is consistent with its procurement policies and regulations.</p>
+  <p>Projects resulting from these MSAs may be funded through grants from the Federal Transit Administration (FTA), and/or the State of California, California Department of Transportation (Caltrans), and other sources of local and state public funding. Check with your funding agencies.</p>
+  <h3 class="h4 mt-4 mb-3">Can our agency continue to support cash based populations with a tap to pay system?</h3>
+  <p>Yes. Tap to pay is simply another option for your riders. If you want to discuss options for supporting cash-based populations with new technologies, please reach out to <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">hello@calitp.org</a> to discuss further.</p>
+  <h3 class="h4 mt-4 mb-3">My agency is not in California, can I use this information? Can I get support from Cal-ITP?</h3>
+  <p>Out-of-state transit providers can follow the guide content and incorporate the MSA into your contract. The MSAs listed on this site are examples of a “state purchasing schedule,”  which are agreements between a state or related entity and vendor(s) to provide goods or services at agreed-upon prices. Fundamentally, they are designed to accommodate other parties that may enter into and benefit from the agreements in the future. You’ll sign a contract with the vendors directly.</p>
+  <p>The terms and conditions (and pricing) from the MSA are incorporated by reference in the contract that you will sign. You can use a California STD-213 or another DGS approved user agreement or equivalent. Cal-ITP is unable to provide account management support.</p>
+  <h3 class="h4 mt-4 mb-3">What rider benefits or discounts are offered?</h3>
+  <p>Currently, Veterans, CalFresh, Agencies, Older Adults, and Medicare rider benefits and discounts are supported.</p>
+
+  <p class="h4 mt-4 mb-3">Still have questions? Email us at <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">hello@calitp.org</a>.</p>
+</section>
