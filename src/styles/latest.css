@@ -724,8 +724,6 @@ a:has(> img) {
 }
 .carousel-caption {
   position: static;
-  padding-bottom: 0;
-  margin-bottom: var(--spacing-5);
 }
 .carousel-caption > p {
   /* Ensures consistent element positioning when sliding if some captions have more lines than others. */
@@ -738,8 +736,8 @@ a:has(> img) {
   margin-bottom: 0;
 }
 .carousel-indicators {
+  position: static;
   margin: 0;
-  bottom: calc(var(--spacing-base) * 21);
   gap: var(--spacing-2);
 }
 .carousel-indicators [data-bs-target],
@@ -812,9 +810,6 @@ a:has(> img) {
 }
 
 @media (min-width: 992px) {
-  .carousel-caption {
-    padding-top: calc(var(--spacing-base) * 11);
-  }
   .carousel-caption > p {
     /* We'll never have more than one line at this width and up. */
     min-height: auto;
