@@ -909,15 +909,11 @@ a:has(> img) {
 /* CONTACT PAGE */
 
 .hs-form-field {
-  display: flex;
-  flex-wrap: wrap;
   gap: var(--spacing-1);
   margin-bottom: var(--spacing-2);
 }
 .hs-form-field > label {
-  width: calc(var(--spacing-base) * 12 );  /* just wide enough for the labels with asterisks */
-  padding: 1px 0;  /* compensate for top and bottom border on standard text input */
-  line-height: var(--spacing-4);  /* matching height of standard text input */
+  margin-bottom: var(--spacing-1);
 }
 .hs-form-booleancheckbox > label {
   display: inline;  /* overriding Bootstrap's inline-block to prevent text wrapping */
@@ -925,10 +921,14 @@ a:has(> img) {
 .hs-form-required {
   display: none;
 }
+.hs-input.invalid,
+.hs-input.error {
+  border-color: var(--dsdl-red-60);
+}
 .hs-error-msgs {
   width: 100%;
+  margin-top: var(--spacing-1);
   color: var(--dsdl-red-60);
-  text-align: right;
 }
 .hs-form-field > .input {
   flex-grow: 1;
@@ -938,7 +938,9 @@ a:has(> img) {
 }
 .hs_contact_type .inputs-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 8px;
   margin-bottom: 0;
 }
 .hs-input[type="radio"] {
@@ -972,15 +974,29 @@ a:has(> img) {
 .hs-form-radio {
   line-height: 2rem;
 }
-label[for="TICKET.content-bc98c500-50cf-4793-ad1b-1ea6f58eeb11"] {
-  display: none;
+label[for="TICKET.content-bc98c500-50cf-4793-ad1b-1ea6f58eeb11"]::after {
+  content: ' - Optional';
+  font-style: italic;
 }
 textarea[name="TICKET.content"] {
   height: var(--spacing-20);
+  padding: 8px 12px;
 }
-.hs-input[type="checkbox"] {
-  margin-right: var(--spacing-1);
+textarea[name="TICKET.content"]::placeholder {
+  color: var(--dsdl-gray-40);
+  font-style: italic;
 }
+.hs-form-booleancheckbox > label {
+  display: flex;
+}
+.legal-consent-container .hs-form-booleancheckbox-display input {
+  flex-shrink: 0;
+  float: none;
+}
+.legal-consent-container .hs-form-booleancheckbox-display > span {
+  margin-left: var(--spacing-2);
+}
+
 .hbspt-form ul {
   list-style-type: none;
   padding-left: 0;
