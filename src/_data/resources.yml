@@ -1,12 +1,26 @@
-- title: Scope of Work
-  slug: scope-of-work
-  tags:
-    - GTFS-RT
-    - Tap2Pay
+- title: Scope of work template
+  tags: GTFS-RT
   thumbnail: /uploads/thumbnails/scope-of-work.png
   description: Document your project needs and goals to send to vendors
   filename: TK
-  lastUpdated: "2025-09-01 00:00:00"
+
+- title: Email template
+  tags: GTFS-RT
+  thumbnail: /uploads/thumbnails/email-template.png
+  description: To facilitate vendor outreach
+  filename: TK
+
+- title: Sample User Agreement
+  tags: GTFS-RT
+  thumbnail: /uploads/thumbnails/sample-user-agreement.png
+  description: To enter into contract with your selected vendor
+  filename: TK
+
+- title: Scope of work template
+  tags: Tap2Pay
+  thumbnail: /uploads/thumbnails/scope-of-work.png
+  description: Document your project needs and goals to send to vendors
+  filename: TK
 
 - title: Email template
   slug: email-template
