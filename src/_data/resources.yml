@@ -1,74 +1,80 @@
 - title: Scope of work template
   slug: scope-of-work-gtfs
   tags: GTFS-RT
-  thumbnail: /uploads/thumbnails/scope-of-work.png
+  thumbnail: scope-of-work.png
   description: Document your project needs and goals to send to vendors
-  filename: TK
-  lastUpdated: "2025-09-01 00:00:00"
+  filename: /resources/assets/Cal-ITP.GTFS.RT.MSA.SOW.Template.and.Guidance.docx
+  lastUpdated: "2025-12-30 00:00:00"
 
 - title: Email template
+  slug: email-templater-gtfs
   tags: GTFS-RT
-  thumbnail: /uploads/thumbnails/email-template.png
+  thumbnail: email-template.png
   description: To facilitate vendor outreach
-  filename: TK
+  filename: /resources/assets/Cal.ITP.GTFS.RT.MSA.Vendor.Contact.Email.Template.docx
+  lastUpdated: "2025-12-30 00:00:00"
 
 - title: Sample User Agreement
+  slug: sample-user-agreement-gtfs
   tags: GTFS-RT
-  thumbnail: /uploads/thumbnails/sample-user-agreement.png
+  thumbnail: sample-user-agreement.png
   description: To enter into contract with your selected vendor
-  filename: TK
+  # confirm this one isn't intended for Tap2Pay
+  filename: https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1
 
 - title: Scope of work template
+  slug: scope-of-work-tap2pay
   tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/scope-of-work.png
+  thumbnail: scope-of-work.png
   description: Document your project needs and goals to send to vendors
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Tap.To.Pay.MSA.SOW.Template.and.Guidance.pdf
 
 - title: Email template
-  slug: email-template
+  slug: email-template-tap2pay
   tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/email-template.png
+  thumbnail: email-template.png
   description: To facilitate vendor outreach
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Tap.To.Pay.MSA.Vendor.Contact.Email.Template.docx
 
 - title: Sample User Agreement
+  slug: sample-user-agreement-tap2pay
   tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/sample-user-agreement.png
+  thumbnail: sample-user-agreement.png
   description: To enter into contract with your selected vendor
-  filename: TK
+  # confirm this one isn't intended for GTFS-RT
+  filename: /resources/assets/Cal.ITP.User-Agreement-Contract-Form_MSA 5-21-70-28.docx
 
 - title: Statewide Fare Guidelines Toolkit
+  slug: statewide-fare-guidelines-toolkit
   tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/statewide-fare-guidelines-toolkit.png
+  thumbnail: statewide-fare-guidelines-toolkit.png
   description:
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Statewide.Fare.Guidelines.Toolkit.pdf
 
 - title: Contactless Payments Introduction
+  slug: contactless-payments-introduction
   tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/contactless-payments-introduction.png
+  thumbnail: contactless-payments-introduction.png
   description: To enter into contract with your selected vendor
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Contactless.Payments.Introduction.pdf
 
 - title: MSA Cost Estimation Tool (Excel)
+  slug: msa-cost-estimation-tool
   tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/msa-cost-estimation-tool.png
+  thumbnail: msa-cost-estimation-tool.png
   description: To enter into contract with your selected vendor
-  filename: TK
-
-- title: Tap to pay staff training guide
-  tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/tap-to-pay-staff-training-guide.png
-  description:
-  filename: TK
+  filename: https://resources.calitp.org/mobility-marketplace/MSA-Cost-Estimation-Tool.xlsx
 
 - title: Marketing templates
+  slug: marketing-templates
   tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/marketing-templates.png
+  thumbnail: marketing-templates.png
   description: To facilitate customer communications and marketing
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Marketing.Templates.zip
 
 - title: Contactless payments support framework
+  slug: contactless-payments-support-framework
   tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/contactless-payments-support-framework.png
+  thumbnail: contactless-payments-support-framework.png
   description:
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Contactless.Payments.Support.Framework.pptx

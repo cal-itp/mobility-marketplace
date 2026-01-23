@@ -9,12 +9,12 @@
   <div class="d-flex flex-md-row flex-column flex-wrap justify-content-center align-content-center gap-4">
     {% for resource in site.data.resources %}
       {% if resource.tags contains include.resource_tag %}
-        {% assign dl_img = resource.thumbnail %}
+        {% assign dl_img = "/uploads/resources/thumbnails/" | append: resource.thumbnail %}
         {% assign dl_tag = include.resource_tag %}
         {% assign dl_title = resource.title %}
         {% assign dl_description = resource.description %}
         {% assign dl_view_url = "/resources/" | append: resource.slug %}
-        {% assign dl_download_url = "/resources/assets/" | append: resource.filename %}
+        {% assign dl_download_url = resource.filename %}
         {% include dl-card.html img=dl_img tag=dl_tag title=dl_title
           description=dl_description view_url=dl_view_url download_url=dl_download_url %}
       {% endif %}

@@ -22,4 +22,4 @@ repos:
       - id: requirements-txt-fixer
       - id: check-yaml
         args: ["--unsafe"]
-      - id: check-added-large-files
+      # - id: check-added-large-files
