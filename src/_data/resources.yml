@@ -24,17 +24,13 @@
 
 - title: Email template
   slug: email-template
-  tags:
-    - GTFS-RT
-    - Tap2Pay
+  tags: Tap2Pay
   thumbnail: /uploads/thumbnails/email-template.png
   description: To facilitate vendor outreach
   filename: TK
 
 - title: Sample User Agreement
-  tags:
-    - GTFS-RT
-    - Tap2Pay
+  tags: Tap2Pay
   thumbnail: /uploads/thumbnails/sample-user-agreement.png
   description: To enter into contract with your selected vendor
   filename: TK
