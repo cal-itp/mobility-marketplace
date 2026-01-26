@@ -1,0 +1,317 @@
+---
+layout: latest
+title: GTFS Realtime
+resourceTag: GTFS-RT
+description: >
+  Follow this step-by-step guide to launch a GTFS Realtime program and share live transit data with your riders.
+---
+
+<div class="container">
+  <img width="100%" src="uploads/gtfs-realtime-hero.png" alt="A phone screen showing a bus approaching in real time." />
+  <h1>Get real-time data</h1>
+  <p>
+    Transit agencies can successfully launch a GTFS Realtime (General Transit Feed Specification Realtime) program by following
+    this step-by-step process that demystifies what’s required and where to get help at every stage.
+  </p>
+  <p>
+    Why GTFS-RT matters? GTFS Realtime lets agencies share live bus and train arrival times with riders, reducing uncertainty and
+    improving overall satisfaction. Riders increasingly expect this information, and agencies benefit from better trip planning
+    and increased ridership.
+  </p>
+  <p class="text-body-xl">Find out where to begin, what you need, and how to plan for success:</p>
+  <ol class="step-list step-list_cyan-light my-4">
+    <li>
+      <b>Plan:</b> Ensure your agency has <a href="/intro-gtfs-rt">GTFS schedule feeds</a> and
+      <a href="/data-plans">fleet connectivity</a>, gather your project team to determine what, if any, support is needed to
+      initiate the project
+    </li>
+    <li>
+      <b>Review</b> the 3 pre-negotiated contracts that are available to purchase from DGS (no further competitive bidding needed)
+      and draft initial requirements
+    </li>
+    <li><b>Engage</b> vendors for pricing and project detail</li>
+    <li><b>Purchase:</b> Select vendor to contract with, and sign a User Agreement</li>
+    <li><b>Launch:</b> Follow implementation guidance and start sharing real-time updates with your riders</li>
+  </ol>
+</div>
+
+{% assign quote_color_scheme = "cyan-dark" %} {% assign quote_content = "The scoping process was way easier and more accessible
+for our small team. We’re able to prioritize GTFS-RT first and foremost before getting contactless payments." %} {% assign
+quote_source_name = "Gustavo Gomez" %} {% assign quote_source_title = "Senior Transportation Planner, ICTC" %} {% include
+pull-quote.html color_scheme=quote_color_scheme content=quote_content source_name=quote_source_name
+source_title=quote_source_title%}
+
+<div class="container">
+  <h2>Agency guide for real-time data</h2>
+  <h3 class="numbered numbered_cyan-light my-4" data-number="1">Assemble your basics</h3>
+  <p>Confirm your current GTFS Schedule feed is correct and up-to-date.</p>
+  <ul>
+    <li>
+      If you do not have a GTFS Schedule feed, please
+      <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">reach out</a> to discuss your options. If you need
+      educational information to share with your staff or board of directors, please review
+      <a href="/intro-gtfs-rt">GTFS Realtime Introduction</a>
+    </li>
+    <li>If you have a Schedule feed, Cal-ITP provides monthly data quality reports.</li>
+  </ul>
+  <p>Check your fleet’s internet connectivity; a data connection is required, and you may need to upgrade existing data plans.</p>
+  <ul>
+    <li>
+      Check out the <a href="/data-plans">pre-negotiated data plans</a> your agency may be eligible to upgrade and save on monthly
+      costs.
+    </li>
+  </ul>
+  <p>Check with your funding agencies.</p>
+  <ul>
+    <li>
+      Projects from these MSAs may be funded through grants from the
+      <a href="https://www.transit.dot.gov/funding/grants/grant-programs">FTA<span aria-label="(external link)">↗</span></a
+      >, <a href="https://dot.ca.gov/">Caltrans<span aria-label="(external link)">↗</span></a
+      >, and other sources of local and state public funding.
+    </li>
+  </ul>
+  <p>
+    <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">Connect</a> with an Cal-ITP Account Manager for
+    guided GTFS Realtime support
+  </p>
+  <h3 class="numbered numbered_cyan-light my-4" data-number="2">Understand purchase options</h3>
+  <h4>How to buy off the pre-procured bench</h4>
+  <p>
+    California offers 3 MSAs (Master Service Agreements) that make it easy to purchase GTFS Realtime software (and optional
+    hardware) without doing your own procurement. You can purchase through these agreements and negotiate the best prices for your
+    agency.
+  </p>
+  <p>All contracts include:</p>
+  <ul>
+    <li>Creation of GTFS Realtime feeds</li>
+    <li>Integration into up to 3 journey planning apps (i.e. Google Maps, Transit App, Apple Maps, etc.)</li>
+    <li>Optional hardware for purchase*</li>
+  </ul>
+  <p>
+    *Hardware is necessary to enable software services, however transit providers may choose to either use their own hardware or
+    purchase devices through the MSA
+  </p>
+  <h4>GTFS Realtime MSAs</h4>
+  <p class="table-caption">Click on each MSA for terms and conditions.</p>
+  <table class="table_cyan wider my-4">
+    <thead>
+      <tr>
+        <th scope="col">MSA vendors</th>
+        <th scope="col">MSAs</th>
+        <th scope="col">Pricing structure</th>
+        <th scope="col">Hardware options**</th>
+        <th scope="col">Eligible networks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Connexionz Ltd</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-01&SETID=STATE&VERSION_NBR=3"
+            >5-24-70-42-01</a
+          >
+        </td>
+        <td>Base fee + variable fees based on EITHER vehicles or routes</td>
+        <td>Cellular routing kit (with Pepwave MAX BR1 Mini)</td>
+        <td>
+          <ul>
+            <li>WiFi</li>
+            <li>AT&T</li>
+            <li class="text-nowrap">T-Mobile</li>
+            <li>Verizon</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Passio Technologies LLC</td>
+        <td>
+          <a
+            href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-24-70-42-02"
+            >5-24-70-42-02</a
+          >
+        </td>
+        <td>Base fee + variable fees based on EITHER vehicles or routes</td>
+        <td>
+          <ul>
+            <li>Calamp LMU-3641</li>
+            <li>Lilliput RT-V7000 Pro</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>WiFi</li>
+            <li>AT&T</li>
+            <li class="text-nowrap">T-Mobile</li>
+            <li>Verizon</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2" style="border-bottom: none">Swiftly Inc</td>
+        <td rowspan="2" style="border-bottom: none">
+          <a
+            href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-03&SETID=STATE&VERSION_NBR=2"
+            >5-24-70-42-03</a
+          >
+        </td>
+        <td rowspan="2" style="border-bottom: none">Variable fees based on number of vehicles</td>
+        <td>Samsara VG55</td>
+        <td>
+          <ul>
+            <li>WiFi</li>
+            <li>AT&T</li>
+            <li>FirstNet</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li>Samsung Tab Active 5</li>
+            <li>Cradlepoint R1900</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>WiFi</li>
+            <li>AT&T</li>
+            <li>FirstNet</li>
+            <li>T-Mobile</li>
+            <li>Verizon</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+    <caption class="visually-hidden">
+      GTFS Realtime MSAs (click on each MSA for terms and conditions)
+    </caption>
+  </table>
+  <p class="table-caption">
+    **You can always bring your own hardware. These are simply the options you could purchase through each vendor. Purchase
+    through a vendor includes a 5-year device warranty.
+  </p>
+  <h4>Draft a Scope of Work (SOW)</h4>
+  <p>
+    Creating a clear, focused SOW will ensure vendors understand your needs. Download and fill in our
+    <a href="/TK">SOW template</a>. Be sure to specify your operating goals, technical environment, and any must-have features or
+    services. Your Cal-ITP Account Manager can offer guidance and review your SOW before sending it to vendors.
+  </p>
+  <h3 class="numbered numbered_cyan-light my-4" data-number="3">Engage vendors</h3>
+  <p>
+    Send your SOW to vendors. We recommend sending the SOW to all MSA-awarded vendors using our <a href="/TK">email template</a>.
+    Their up-to-date contact information can be found in the MSA User Instructions document (vendor links:
+    <a
+      href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-24-70-42-01"
+      >Connexionz Ltd<span aria-label="(external link)">↗</span></a
+    >,
+    <a
+      href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-02&SETID=STATE&VERSION_NBR=2"
+      >Passio Technologies LLC<span aria-label="(external link)">↗</span></a
+    >,
+    <a
+      href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-03&SETID=STATE&VERSION_NBR=3"
+      >Swiftly Inc<span aria-label="(external link)">↗</span></a
+    >)
+  </p>
+  <p>Assess proposals and negotiate as needed; don’t be afraid to ask questions or request changes.</p>
+  <h3 class="numbered numbered_cyan-light my-4" data-number="4">Sign your user agreement</h3>
+  <p>
+    Once you’ve selected the winning proposal, you and the MSA vendor must execute a User Agreement including the SOW, agreed
+    pricing, and referencing the MSA terms. You can use a Standard Agreement such as
+    <a
+      href="https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1"
+      >STD 213 for DGS<span aria-label="(external link)">↗</span></a
+    >
+    or <a href="/TK">Sample User Agreement</a>.
+  </p>
+  <p>
+    The User Agreement references the terms of the MSA and allows items to be specified, for example, you can modify the default
+    SLAs/KPIs. The term of the MSAs is for 3 years, with the option to extend for 2-year periods twice.
+  </p>
+  <h3 class="numbered numbered_cyan-light my-4" data-number="5">Get ready to launch</h3>
+  <p>
+    Work closely with your vendor to implement and begin generating real-time data. If technical or practical issues arise,
+    dedicated support channels are available for ongoing troubleshooting.
+  </p>
+  <p>
+    Your User Agreement will contain SLAs/KPIs. If the vendor is unable to meet the SLAs/KPIs or the completion of Project
+    Implementation Plans is late, it may trigger service credits for you.
+  </p>
+  <h4>Tell your riders</h4>
+  <p>
+    Share the exciting news with your riders and community. Consider reaching out to local press or
+    <a href="https://cal.streetsblog.org/">Streetsblog<span aria-label="(external link)">↗</span></a
+    >. Take a moment to celebrate the hard work of launching GTFS Realtime!
+  </p>
+  <div class="spacer-10"></div>
+  <h2>Additional info</h2>
+  <h3 class="my-3">Commonly asked questions</h3>
+  <h4>Do I need any special hardware?</h4>
+  <p>
+    No, you don’t need special hardware. However, fleets must have internet connectivity and GPS to share real-time data. You can
+    use existing equipment or purchase devices through MSAs.
+  </p>
+  <h4>Do I need GTFS Schedule to create GTFS Realtime data?</h4>
+  <p>Yes, you must first produce a compliant GTFS Schedule feed.</p>
+  <p>
+    Cal-ITP offers support with GTFS, including providing a monthly quality report on both your GTFS Schedule and Realtime feeds
+    via
+    <a
+      href="https://reports.dds.dot.ca.gov/?__hstc=108482141.9944d092040d25605d676cd71e4f5481.1716343003950.1754938106690.1755115450425.112&__hssc=108482141.4.1755115450425&__hsfp=3863828579"
+      >California GTFS Quality Dashboard<span aria-label="(external link)">↗</span></a
+    >. Technical experts are available to help agencies understand the report and resolve any errors.
+  </p>
+  <h4>How do I know if my feed has good data quality?</h4>
+  <p>
+    To check if your GTFS Schedule feed has any validation errors or warnings that could compromise its quality, run your feed
+    through the
+    <a href="https://gtfs-validator.mobilitydata.org/">Mobility Data validator<span aria-label="(external link)">↗</span></a
+    >.
+  </p>
+  <p>
+    Fare, holiday service, wheelchair accessible, etc. should be dictated within your GTFS Schedule feed which works in tandem
+    with your GTFS-RT feed to provide accurate service information to riders.
+  </p>
+  <h4>What are MSAs?</h4>
+  <p>
+    The California Department of General Services (DGS), in collaboration with Cal-ITP, conducted a Request for Proposals that
+    established three competitively awarded Master Service Agreements (MSAs), contracts that allow U.S. public transportation
+    providers to purchase directly from California’s DGS without further competitive bidding.
+  </p>
+  <p>
+    Projects resulting from these MSAs may be funded through grants from the Federal Transit Administration (FTA), and/or the
+    State of California, California Department of Transportation (Caltrans), and other sources of local and state public funding.
+    Check with your funding agencies.
+  </p>
+  <h4>
+    Still have questions? Email us at
+    <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">hello@calitp.org</a>.
+  </h4>
+  <h3 class="mt-4">Special cases</h3>
+  <h4>Can I use this for my on-demand route?</h4>
+  <p>
+    GTFS Realtime is generally used in a fixed-route environment. There are many widespread use cases with fixed-route service
+    such as integration with major trip planners (such as Google Maps). There may be some experimental use cases in on-demand
+    settings that not all GTFS Realtime consuming applications may be able to support.
+  </p>
+</div>
+{% include downloadable-resources.html resource_tag=page.resourceTag %}
+<div class="spacer-10"></div>
+<div class="container">
+  <h2>Related</h2>
+  <nav class="related-nav row mb-5" aria-label="Related">
+    <div class="col-md">
+      <a class="related-nav-link" href="/intro-gtfs-rt">
+        <span class="arrow" aria-label="(previous page)">←</span>
+        <span class="text">Set up your <b>GTFS Schedule</b> to lay the groundwork for GTFS Realtime</span>
+      </a>
+    </div>
+    <div class="col-md">
+      <a class="related-nav-link related-nav-link_next" href="/tap-to-pay">
+        <span class="text">Explore tap to pay to bring contactless payments to your fleet</span>
+        <span class="arrow" aria-label="(next page)">→</span>
+      </a>
+    </div>
+  </nav>
+</div>
