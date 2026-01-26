@@ -20,7 +20,7 @@ layout: latest
           <div class="dl-tag">{{ tag }}</div>
           {% endfor %}
         </div>
-        <h1 class="mt-2 mb-lg-3">{{ resource.title }}</h1>
+        <h1 class="mt-2 mb-lg-3 text-start">{{ resource.title }}</h1>
         <a class="dl-button my-3 my-lg-4" href="{{resource.filename}}" download>Download</a>
         <p>{{ page.description }}</p>
         <p class="mt-2 mt-lg-5">Last updated: {{ resource.lastUpdated | date: "%B %e, %Y" }} | Cal-ITP</p>
