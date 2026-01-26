@@ -1,72 +1,119 @@
+- title: Sample User Agreement
+  slug: user-agreement-gtfs
+  tags:
+    - GTFS-RT
+  thumbnail: /uploads/resources/thumbnails/sample-user-agreement.png
+  description: To enter into contract with your selected vendor
+  filename: /resources/assets/Cal.ITP.User-Agreement-Contract-Form_MSA 5-21-70-28.docx
+  lastUpdated: "2026-01-01 00:00:00"
+
+- title: Standard Agreement
+  slug: std-213-gtfs
+  tags:
+    - GTFS-RT
+  thumbnail: /uploads/resources/thumbnails/sample-user-agreement.png
+  description: To enter into contract with your selected vendor
+  filename: https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1
+  lastUpdated: "2026-01-01 00:00:00"
+
 - title: Scope of work template
-  tags: GTFS-RT
-  thumbnail: /uploads/thumbnails/scope-of-work.png
+  slug: sow-gtfs
+  tags:
+    - GTFS-RT
+  thumbnail: /uploads/resources/thumbnails/scope-of-work.png
   description: Document your project needs and goals to send to vendors
-  filename: TK
+  filename: /resources/assets/Cal-ITP.GTFS.RT.MSA.SOW.Template.and.Guidance.docx
+  lastUpdated: "2025-12-30 00:00:00"
 
 - title: Email template
-  tags: GTFS-RT
-  thumbnail: /uploads/thumbnails/email-template.png
+  slug: email-template-gtfs
+  tags:
+    - GTFS-RT
+  thumbnail: /uploads/resources/thumbnails/email-template.png
   description: To facilitate vendor outreach
-  filename: TK
+  filename: /resources/assets/Cal.ITP.GTFS.RT.MSA.Vendor.Contact.Email.Template.docx
+  lastUpdated: "2025-12-30 00:00:00"
 
+# points at the same resource as the GTFS-RT variant
 - title: Sample User Agreement
-  tags: GTFS-RT
-  thumbnail: /uploads/thumbnails/sample-user-agreement.png
+  slug: user-agreement-tap-to-pay
+  tags:
+    - Tap2Pay
+  thumbnail: /uploads/resources/thumbnails/sample-user-agreement.png
   description: To enter into contract with your selected vendor
-  filename: TK
+  filename: /resources/assets/Cal.ITP.User-Agreement-Contract-Form_MSA 5-21-70-28.docx
+  lastUpdated: "2026-01-01 00:00:00"
+
+# points at the same resource as the GTFS-RT variant
+- title: Standard Agreement
+  slug: std-213-tap-to-pay
+  tags:
+    - Tap2Pay
+  thumbnail: /uploads/resources/thumbnails/sample-user-agreement.png
+  description: To enter into contract with your selected vendor
+  filename: https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1
+  lastUpdated: "2026-01-01 00:00:00"
 
 - title: Scope of work template
-  tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/scope-of-work.png
+  slug: sow-tap2pay
+  tags:
+    - Tap2Pay
+  thumbnail: /uploads/resources/thumbnails/scope-of-work.png
   description: Document your project needs and goals to send to vendors
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Tap.To.Pay.MSA.SOW.Template.and.Guidance.pdf
+  lastUpdated: "2026-01-01 00:00:00"
 
+# reuses the same thumbnail as GTFS, but the actual resource is unique
 - title: Email template
-  slug: email-template
-  tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/email-template.png
+  slug: email-template-tap2pay
+  tags:
+    - Tap2Pay
+  thumbnail: /uploads/resources/thumbnails/email-template.png
   description: To facilitate vendor outreach
-  filename: TK
-
-- title: Sample User Agreement
-  tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/sample-user-agreement.png
-  description: To enter into contract with your selected vendor
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Tap.To.Pay.MSA.Vendor.Contact.Email.Template.docx
+  lastUpdated: "2026-01-01 00:00:00"
 
 - title: Statewide Fare Guidelines Toolkit
-  tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/statewide-fare-guidelines-toolkit.png
+  slug: statewide-fare-guidelines-toolkit
+  tags:
+    - Tap2Pay
+  thumbnail: /uploads/resources/thumbnails/statewide-fare-guidelines-toolkit.png
   description:
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Statewide.Fare.Guidelines.Toolkit.pdf
+  lastUpdated: "2026-01-01 00:00:00"
 
 - title: Contactless Payments Introduction
-  tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/contactless-payments-introduction.png
+  slug: contactless-payments-introduction
+  tags:
+    - Tap2Pay
+  thumbnail: /uploads/resources/thumbnails/contactless-payments-introduction.png
   description: To enter into contract with your selected vendor
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Contactless.Payments.Introduction.pdf
+  lastUpdated: "2026-01-01 00:00:00"
 
-- title: MSA Cost Estimation Tool (Excel)
-  tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/msa-cost-estimation-tool.png
+- title: MSA Cost Estimation Tool
+  slug: msa-cost-estimation-tool
+  tags:
+    - Tap2Pay
+  thumbnail: /uploads/resources/thumbnails/msa-cost-estimation-tool.png
   description: To enter into contract with your selected vendor
-  filename: TK
+  filename: https://resources.calitp.org/mobility-marketplace/MSA-Cost-Estimation-Tool.xlsx
+  lastUpdated: "2026-01-01 00:00:00"
 
-- title: Tap to pay staff training guide
-  tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/tap-to-pay-staff-training-guide.png
-  description:
-  filename: TK
-
-- title: Marketing templates
-  tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/marketing-templates.png
+- title: Marketing materials
+  slug: marketing-materials
+  tags:
+    - Tap2Pay
+  thumbnail: /uploads/resources/thumbnails/marketing-materials.png
   description: To facilitate customer communications and marketing
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Marketing.Templates.zip
+  lastUpdated: "2026-01-01 00:00:00"
 
 - title: Contactless payments support framework
-  tags: Tap2Pay
-  thumbnail: /uploads/thumbnails/contactless-payments-support-framework.png
+  slug: contactless-payments-support-framework
+  tags:
+    - Tap2Pay
+  thumbnail: /uploads/resources/thumbnails/contactless-payments-support-framework.png
   description:
-  filename: TK
+  filename: /resources/assets/Cal-ITP.Contactless.Payments.Support.Framework.pptx
+  lastUpdated: "2026-01-01 00:00:00"
