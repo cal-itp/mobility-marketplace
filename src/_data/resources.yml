@@ -55,7 +55,7 @@
   lastUpdated: "2026-01-01 00:00:00"
 
 - title: Scope of work template
-  slug: sow-tap2pay
+  slug: sow-tap-to-pay
   tags:
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/scope-of-work.png
@@ -65,7 +65,7 @@
 
 # reuses the same thumbnail as GTFS, but the actual resource is unique
 - title: Email template
-  slug: email-template-tap2pay
+  slug: email-template-tap-to-pay
   tags:
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/email-template.png
