@@ -6,6 +6,11 @@ collections:
     permalink: /:title
 description: >-
   A resource for transit providers on how to modernize operations and improve rider experiences through contactless fare collection, fleet connectivity, and real-time data.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /uploads/og-image.png
 cta_banner:
   text: Optional banner. <b>With CTA.</b>
 announcement:
