@@ -11,6 +11,25 @@ main > .container {
   max-width: calc(800px + var(--bs-gutter-x) * 2);
 }
 
+.btn.btn-outline-primary {
+  padding: var(--spacing-05) var(--spacing-1);
+  border: 1px solid var(--dsdl-gray-50);
+  color: var(--dsdl-black);
+  font-size: var(--text-l);
+}
+
+.btn.btn-outline-primary:focus,
+.btn.btn-outline-primary:hover {
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
+}
+
+.btn.btn-outline-primary:active {
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
+}
+
 .navbar {
   gap: var(--spacing-4);
   justify-content: flex-end;
@@ -936,7 +955,7 @@ a:has(> img) {
   margin-bottom: var(--spacing-1);
 }
 .hs-form-booleancheckbox > label {
-  display: inline;  /* overriding Bootstrap's inline-block to prevent text wrapping */
+  display: inline; /* overriding Bootstrap's inline-block to prevent text wrapping */
 }
 .hs-form-required {
   display: none;
@@ -995,7 +1014,7 @@ a:has(> img) {
   line-height: 2rem;
 }
 label[for="TICKET.content-bc98c500-50cf-4793-ad1b-1ea6f58eeb11"]::after {
-  content: ' - Optional';
+  content: " - Optional";
   font-style: italic;
 }
 textarea[name="TICKET.content"] {
@@ -1081,7 +1100,6 @@ input[type="checkbox"] {
   color: var(--dsdl-gray-60);
 }
 
-/* TODO: replace with a DSDL color? */
-.bg-info-beige {
-  background-color: #f6f3ed;
+.bg-info-yellow {
+  background-color: var(--dsdl-yellow-10);
 }
