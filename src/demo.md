@@ -372,7 +372,7 @@ show_call_to_action: true
     </div>
     <div class="col-md">
       <a class="related-nav-link related-nav-link_next" href="#">
-        <span class="text">Set up your <b>GTFS Schedule</b> to lay the ground work for GTFS Realtime</span>
+        <span class="text">Set up your <b>GTFS Schedule</b> to lay the groundwork for GTFS Realtime</span>
         <span class="arrow" aria-label="(next page)">→</span>
       </a>
     </div>
