@@ -2,10 +2,12 @@
 layout: latest
 ---
 
-<!-- why is page.slug undefined? https://jekyllrb.com/docs/variables/#page-variables -->
+{% comment %}
+  why is page.slug undefined? https://jekyllrb.com/docs/variables/#page-variables
+{% endcomment %}
+{% assign slug = page.name | remove: ".md" %}
 
 {% assign url = page.url %}
-{% assign slug = page.name | remove: ".md" %}
 {% assign resource = site.data.resources | where: "slug", slug | first %}
 {% assign resourceTag = resource.tags | first %}
 
@@ -14,7 +16,6 @@ layout: latest
     <div class="row">
       <div class="dl-hero-text col-12 col-lg-4 offset-lg-1">
         <div>
-
           {% for tag in resource.tags %}
           <div class="dl-tag">{{ tag }}</div>
           {% endfor %}
