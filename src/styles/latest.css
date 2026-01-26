@@ -8,7 +8,7 @@ main > .container,
 }
 
 main > .container {
-  max-width: calc(800px + var(--bs-gutter-x) * 2);
+  max-width: calc(800px + var(--bs-gutter-x));
 }
 
 .btn.btn-outline-primary {
