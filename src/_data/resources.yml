@@ -4,7 +4,7 @@
     - GTFS-RT
   thumbnail: /uploads/resources/thumbnails/sample-user-agreement.png
   description: To enter into contract with your selected vendor
-  filename: /resources/assets/Cal.ITP.User-Agreement-Contract-Form_MSA 5-21-70-28.docx
+  filename: /uploads/resources/Cal.ITP.User-Agreement-Contract-Form-MSA-5-21-70-28.docx
   lastUpdated: "2026-01-01 00:00:00"
 
 - title: Standard Agreement
@@ -22,7 +22,7 @@
     - GTFS-RT
   thumbnail: /uploads/resources/thumbnails/scope-of-work.png
   description: Document your project needs and goals to send to vendors
-  filename: /resources/assets/Cal-ITP.GTFS.RT.MSA.SOW.Template.and.Guidance.docx
+  filename: /uploads/resources/Cal-ITP.GTFS.RT.MSA.SOW.Template.and.Guidance.docx
   lastUpdated: "2025-12-30 00:00:00"
 
 - title: Email template
@@ -31,20 +31,19 @@
     - GTFS-RT
   thumbnail: /uploads/resources/thumbnails/email-template.png
   description: To facilitate vendor outreach
-  filename: /resources/assets/Cal.ITP.GTFS.RT.MSA.Vendor.Contact.Email.Template.docx
+  filename: /uploads/resources/Cal.ITP.GTFS.RT.MSA.Vendor.Contact.Email.Template.docx
   lastUpdated: "2025-12-30 00:00:00"
 
-# points at the same resource as the GTFS-RT variant
-- title: Sample User Agreement
+- title: Sample User Agreements
   slug: user-agreement-tap-to-pay
   tags:
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/sample-user-agreement.png
   description: To enter into contract with your selected vendor
-  filename: /resources/assets/Cal.ITP.User-Agreement-Contract-Form_MSA 5-21-70-28.docx
+  filename: /uploads/resources/Cal.ITP.Contactless.User-Agreements.zip
   lastUpdated: "2026-01-01 00:00:00"
 
-# points at the same resource as the GTFS-RT variant
+# points at the same external resource as the GTFS-RT variant
 - title: Standard Agreement
   slug: std-213-tap-to-pay
   tags:
@@ -60,17 +59,17 @@
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/scope-of-work.png
   description: Document your project needs and goals to send to vendors
-  filename: /resources/assets/Cal-ITP.Tap.To.Pay.MSA.SOW.Template.and.Guidance.pdf
+  filename: /uploads/resources/Cal-ITP.Contactless.MSA.SOW.Template.and.Guidance.docx
   lastUpdated: "2026-01-01 00:00:00"
 
 # reuses the same thumbnail as GTFS, but the actual resource is unique
-- title: Email template
+- title: Email templates
   slug: email-template-tap-to-pay
   tags:
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/email-template.png
   description: To facilitate vendor outreach
-  filename: /resources/assets/Cal-ITP.Tap.To.Pay.MSA.Vendor.Contact.Email.Template.docx
+  filename: /uploads/resources/Cal.ITP.Contactless.MSA.Vendor.Contact.Email.Template.docx
   lastUpdated: "2026-01-01 00:00:00"
 
 - title: Statewide Fare Guidelines Toolkit
@@ -79,7 +78,7 @@
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/statewide-fare-guidelines-toolkit.png
   description:
-  filename: /resources/assets/Cal-ITP.Statewide.Fare.Guidelines.Toolkit.pdf
+  filename: /uploads/resources/Cal-ITP.Statewide.Fare.Guidelines.Toolkit.pdf
   lastUpdated: "2026-01-01 00:00:00"
 
 - title: Contactless Payments Introduction
@@ -88,7 +87,7 @@
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/contactless-payments-introduction.png
   description: To enter into contract with your selected vendor
-  filename: /resources/assets/Cal-ITP.Contactless.Payments.Introduction.pdf
+  filename: /uploads/resources/Cal-ITP.Contactless.Payments.Introduction.pdf
   lastUpdated: "2026-01-01 00:00:00"
 
 - title: MSA Cost Estimation Tool
@@ -97,7 +96,7 @@
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/msa-cost-estimation-tool.png
   description: To enter into contract with your selected vendor
-  filename: https://resources.calitp.org/mobility-marketplace/MSA-Cost-Estimation-Tool.xlsx
+  filename: /uploads/resources/Cal-ITP.MSA-Cost-Estimation-Tool.xlsx
   lastUpdated: "2026-01-01 00:00:00"
 
 - title: Marketing materials
@@ -106,7 +105,7 @@
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/marketing-materials.png
   description: To facilitate customer communications and marketing
-  filename: /resources/assets/Cal-ITP.Marketing.Templates.zip
+  filename: /uploads/resources/Cal-ITP.Marketing.Materials.zip
   lastUpdated: "2026-01-01 00:00:00"
 
 - title: Contactless payments support framework
@@ -115,5 +114,5 @@
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/contactless-payments-support-framework.png
   description:
-  filename: /resources/assets/Cal-ITP.Contactless.Payments.Support.Framework.pptx
+  filename: /uploads/resources/Cal-ITP.Contactless.Payments.Support.Framework.pptx
   lastUpdated: "2026-01-01 00:00:00"

@@ -32,16 +32,7 @@ Auto rebuild/reload will be active and will watch the site files for changes.
 
 ## Documents
 
-This site uses Google Cloud to manage static files, like the PDFs on the How To pages.
-
-Requirements: User must be authorized on Google Cloud to access the resources-calitp-org bucket.
-
-1. Go to https://cloud.google.com/
-1. Click `Console`
-1. Click `Cloud Storage`
-1. Click `resources.calitp.org`
-1. Click mobility-marketplace
-1. Click button for action needed: Upload Files, Delete or Edit on a particular file
+The downloadable resources on this site are a mix of external links and files checked directly into version control in [src/uploads/resources](./src/uploads/resources/)
 
 ## Analytics
 
