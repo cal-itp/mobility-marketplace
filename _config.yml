@@ -13,10 +13,6 @@ defaults:
       image: /uploads/og-image.png
 cta_banner:
   text: Optional banner. <b>With CTA.</b>
-announcement:
-  enabled: true
-  text: |
-    Now available! Pre-approved [MSAs for GTFS Realtime](contracts/view?contracts-filter-product=GTFS Realtime){:target="_black"} software and/or hardware. [Get started with our GTFS Realtime guide](/how-to/gtfs-rt){:target="_black"}.
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -29,9 +25,7 @@ exclude:
   - _data/
 include:
   - _redirects
-fonts: "family=Poppins:wght@400;500;700&family=Raleway:wght@700"
 google_analytics_id: "G-6M5TSH3VCY"
-mailing_list: https://lp.constantcontactpages.com/su/eLbtFoE/calitp?source_id=a41b99cd-7f28-4be8-a286-f9e75fc7bbce&source_type=em&c=
 navigation:
   - name: Data plans
     url: /data-plans
