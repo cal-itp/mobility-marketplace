@@ -103,10 +103,10 @@ show_call_to_action: true
   <div class="row">
     <h2>Numbered headings</h2>
     <div class="offset-lg-2 col-lg-7 col-12">
-      <h3 class="numbered numbered_yellow my-4" data-number="1">Choose a data plan</h3>
-      <h3 class="numbered numbered_purple my-4" data-number="2">Review purchase options</h3>
-      <h3 class="numbered numbered_cyan-light my-4" data-number="3">Reach out to your vendor</h3>
-      <h3 class="numbered numbered_cyan-dark my-4" data-number="4">Sign agreement</h3>
+      <h3 class="numbered numbered_yellow" data-number="1">Choose a data plan</h3>
+      <h3 class="numbered numbered_purple" data-number="2">Review purchase options</h3>
+      <h3 class="numbered numbered_cyan-light" data-number="3">Reach out to your vendor</h3>
+      <h3 class="numbered numbered_cyan-dark" data-number="4">Sign agreement</h3>
     </div>
   </div>
 
