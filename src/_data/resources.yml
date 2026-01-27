@@ -40,7 +40,7 @@
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/sample-user-agreement.png
   description: To enter into contract with your selected vendor
-  filename: https://drive.google.com/drive/folders/1Uy2oPA3RdPUysCkRNvGFqOq-LH9R0NnO?usp=sharing
+  filename: /uploads/resources/Cal.ITP.Contactless.User-Agreements.zip
   lastUpdated: "2026-01-01 00:00:00"
 
 # points at the same external resource as the GTFS-RT variant
@@ -59,17 +59,17 @@
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/scope-of-work.png
   description: Document your project needs and goals to send to vendors
-  filename: https://docs.google.com/document/d/1ClaG-2FWFjf7yJD5LbytGxDs1-GHo0uf/edit
+  filename: /uploads/resources/Cal-ITP.Contactless.MSA.SOW.Template.and.Guidance.docx
   lastUpdated: "2026-01-01 00:00:00"
 
 # reuses the same thumbnail as GTFS, but the actual resource is unique
-- title: Email template
+- title: Email templates
   slug: email-template-tap-to-pay
   tags:
     - Tap2Pay
   thumbnail: /uploads/resources/thumbnails/email-template.png
   description: To facilitate vendor outreach
-  filename: https://docs.google.com/document/d/1b6q3ORv8qkKMklVBj6vYYR_40Zqu3ZVq/edit
+  filename: /uploads/resources/Cal.ITP.Contactless.MSA.Vendor.Contact.Email.Template.docx
   lastUpdated: "2026-01-01 00:00:00"
 
 - title: Statewide Fare Guidelines Toolkit
