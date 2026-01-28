@@ -1,0 +1,12 @@
+{
+  "name": "mobility-marketplace",
+  "version": "2.0.0",
+  "description": "California’s one-stop resource for modern, equitable, and accessible public transit products and services.",
+  "author": "Compiler",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}

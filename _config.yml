@@ -5,11 +5,14 @@ collections:
     output: true
     permalink: /:title
 description: >-
-  A resource to help transit providers upgrade their fare collection systems to accept contactless payment methods like credit/debit cards and smartphones.
-announcement:
-  enabled: true
-  text: |
-    Now available! Pre-approved [MSAs for GTFS Realtime](contracts/view?contracts-filter-product=GTFS Realtime){:target="_black"} software and/or hardware. [Get started with our GTFS Realtime guide](/how-to/gtfs-rt){:target="_black"}.
+  A resource for transit providers on how to modernize operations and improve rider experiences through contactless fare collection, fleet connectivity, and real-time data.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /uploads/og-image.png
+cta_banner:
+  text: Optional banner. <b>With CTA.</b>
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -20,44 +23,18 @@ announcement:
 #
 exclude:
   - _data/
-fonts: "family=Poppins:wght@400;500;700&family=Raleway:wght@700"
+include:
+  - _redirects
 google_analytics_id: "G-6M5TSH3VCY"
-mailing_list: https://lp.constantcontactpages.com/su/eLbtFoE/calitp?source_id=a41b99cd-7f28-4be8-a286-f9e75fc7bbce&source_type=em&c=
 navigation:
-  header:
-    - name: Contracts
-      url: /contracts/
-    - name: For vendors
-      url: /for-vendors
-    - name: About
-      url: /about
-    - name: Contact us
-      url: /contact
-  products:
-    - name: Contactless payments
-      url: /go-contactless
-    - name: Data plans
-      url: /how-to/get-connected
-    - name: GTFS Realtime
-      url: /how-to/GTFS-RT
-    - name: Route planning and scheduling
-      url: /how-to/route-planning-scheduling
-  footer:
-    - name: Back to top
-      url: "#main-content"
-    - name: Glossary
-      url: /glossary-of-key-terms
-    - name: Provider map
-      url: /provider-map
-    - name: Privacy policy
-      url: https://dot.ca.gov/privacy-policy
-      target: _blank
-    - name: Conditions of use
-      url: https://dot.ca.gov/conditions-of-use
-      target: _blank
-    - name: Register to vote
-      url: https://registertovote.ca.gov/
-      target: _blank
+  - name: Data plans
+    url: /data-plans
+  - name: Route scheduling
+    url: /route-scheduling
+  - name: GTFS Realtime
+    url: /gtfs-realtime
+  - name: Tap to pay
+    url: /tap-to-pay
 source: ./src
 title: California Mobility Marketplace
 theme_color: "#ffffff"
