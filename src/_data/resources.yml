@@ -11,7 +11,7 @@
   slug: std-213-gtfs
   tags:
     - GTFS-RT
-  thumbnail: /uploads/resources/thumbnails/sample-user-agreement.png
+  thumbnail: /uploads/resources/thumbnails/standard-agreement.png
   description: To enter into contract with your selected vendor
   filename: https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1
   lastUpdated: "2026-01-01 00:00:00"
@@ -48,7 +48,7 @@
   slug: std-213-tap-to-pay
   tags:
     - Tap2Pay
-  thumbnail: /uploads/resources/thumbnails/sample-user-agreement.png
+  thumbnail: /uploads/resources/thumbnails/standard-agreement.png
   description: To enter into contract with your selected vendor
   filename: https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1
   lastUpdated: "2026-01-01 00:00:00"
