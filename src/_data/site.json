@@ -1,0 +1,8 @@
+{
+  "navigation": [
+    { "name": "Data plans", "url": "/data-plans" },
+    { "name": "Route scheduling", "url": "/route-scheduling" },
+    { "name": "GTFS Realtime", "url": "/gtfs-realtime" },
+    { "name": "Tap to pay", "url": "/tap-to-pay" }
+  ]
+}
