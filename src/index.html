@@ -25,10 +25,10 @@ title: Modernize Your Transit System
 <section class="logo-strip">
   <h2 class="visually-hidden">Transit providers that have worked with Cal-ITP</h2>
   <ul class="logo-strip-list">
-    {% for agency in site.data.agencies -%}
+    {% for agency in agencies -%}
       <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}"></li>
     {% endfor %}
-    {% for agency in site.data.agencies -%}
+    {% for agency in agencies -%}
       <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}" aria-hidden="true"></li>
     {% endfor %}
   </ul>
@@ -103,7 +103,7 @@ title: Modernize Your Transit System
 {% assign quote_content = "Cal-ITP has been fantastic. Their support and collaboration has been immensely helpful as well as informative. So happy they are a part of our team!" %}
 {% assign quote_source_name = "Robin Van Valkenburgh" %}
 {% assign quote_source_title = "Transit Services Division Manager, Nevada County Connects" %}
-{% include pull-quote.html content=quote_content source_name=quote_source_name source_title=quote_source_title %}
+{% render "pull-quote.html" content:quote_content source_name:quote_source_name source_title:quote_source_title %}
 
 <section class="container-sm my-5">
   <h2 class="mb-5">Improve rider experience and your agency’s operations</h2>
