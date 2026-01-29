@@ -1130,17 +1130,3 @@ input[type="checkbox"] {
 .bg-info-yellow {
   background-color: var(--dsdl-yellow-10);
 }
-
-#skip-to-content a {
-  height: 0;
-  left: 50%;
-  overflow: hidden;
-  position: absolute;
-  transform: translateX(-50%);
-  width: 0;
-}
-
-#skip-to-content a:focus {
-  height: 28px;
-  width: 180px;
-}
