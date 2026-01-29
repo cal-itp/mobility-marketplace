@@ -1,6 +1,5 @@
 [build]
-    # see https://github.com/cal-itp/mobility-marketplace/pull/765 for more info about why we are calling 'bundle install' explicitly
-    command = "bundle install && bundle exec jekyll build"
+    command = "npm run build"
     environment = { JEKYLL_ENV = "development" }
 
 [context.production]

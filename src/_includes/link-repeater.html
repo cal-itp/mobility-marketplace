@@ -1,9 +1,9 @@
-{% for menu_item in include.menu_items %}
+{% for menu_item in menu_items %}
   {% assign current_page = page.url | replace: '.html', '' %}
-  <li class="{{ include.list_class | default: '' }}">
+  <li class="{{ list_class | default: '' }}">
     <a
       href="{{ menu_item.url }}"
-      class="{{ include.anchor_class | default: '' }}"
+      class="{{ anchor_class | default: '' }}"
       {% if menu_item.target %}target="{{ menu_item.target }}"{% endif %}
       {% if menu_item.url == current_page %}aria-current="page"{% endif %}
     >
