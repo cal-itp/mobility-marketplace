@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% comment %} {% seo %} {% endcomment %}
     <link rel="manifest" href="/site.webmanifest" />
+    {% if page.noindex %}
+      <meta name="robots" content="noindex" />
+    {%- endif -%}
     <link rel="apple-touch-icon" href="/uploads/icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -16,7 +18,6 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="https://www.calitp.org/stylesheets/dsdl/dsdl.css" />
     <link rel="stylesheet" href="/styles/latest.css" />
 
@@ -35,14 +36,16 @@
     </script>
     <!-- End Google Tag Manager -->
   </head>
-
   <body>
+    <div class="d-flex justify-content-center">
+      <a class="my-1 visually-hidden-focusable" href="#main-content">Skip to Main Content</a>
+    </div>
     <div class="d-flex flex-column justify-content-between vh-100">
       <div class="header-wrapper">
         {% include header/desktop.html %} {% include header/mobile.html %} {% if page.show_call_to_action %} {% include
         header/cta-banner.html %} {% endif %}
       </div>
-      <main>{{content}}</main>
+      <main id="main-content">{{content}}</main>
       <div class="footer-wrapper">{% include footer/desktop.html %} {% include footer/mobile.html %}</div>
     </div>
 

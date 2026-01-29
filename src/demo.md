@@ -4,6 +4,7 @@ layout: latest
 title: Component demo
 description: >
   A page to view individual layout components as they are completed
+noindex: true
 show_call_to_action: true
 ---
 
