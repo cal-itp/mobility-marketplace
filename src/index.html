@@ -74,7 +74,8 @@ title: Modernize Your Transit System
       <div class="carousel-item">
         <img src="uploads/showcase_benefits.png" class="d-block w-100" alt="A collage of a web page enrolling a rider in a reduced fare, and an older man with a walker using contactless payments to board a bus and get a reduced fare.">
         <div class="carousel-caption">
-          <a class="h3" href="/rider-benefits">Explore rider benefits guide</a>
+          {% comment %} <a class="h3" href="/rider-benefits">Explore rider benefits guide</a> {% endcomment %}
+          <div class="h3">Rider benefits (guide coming soon!)</div>
           <p class="text-body-xl mt-4">Offer tap-to-pay rider benefits from older adults to veterans to CalFresh and more</p>
         </div>
       </div>
@@ -163,12 +164,14 @@ title: Modernize Your Transit System
           <p>Cut boarding times and keep riders moving fast</p>
         </a>
       </li>
+      {% comment %}
       <li class="col-md-4 col-lg">
         <a class="guide-card rider-benefits" href="/rider-benefits">
           <h3 class="h4">Rider benefits<span class="visually-hidden">:</span></h3>
           <p>Offer tap-to-pay-discounts for older adults, veterans, CalFresh, and more</p>
         </a>
       </li>
+      {% endcomment %}
     </ul>
     <a class="contact-cs" href="mailto:hello@calitp.org" aria-label="Questions? Contact Customer success by emailing hello at cal i t p dot org">Questions? Contact Customer Success →</a>
   </div>
