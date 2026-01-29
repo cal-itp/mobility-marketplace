@@ -4,5 +4,9 @@
     { "name": "Route scheduling", "url": "/route-scheduling" },
     { "name": "GTFS Realtime", "url": "/gtfs-realtime" },
     { "name": "Tap to pay", "url": "/tap-to-pay" }
-  ]
+  ],
+  "cta_banner": {
+    "text": "Optional banner. <b>With CTA.</b>"
+  },
+  "google_analytics_id": "G-6M5TSH3VCY"
 }
