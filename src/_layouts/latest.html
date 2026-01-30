@@ -42,16 +42,16 @@
     </div>
     <div class="d-flex flex-column justify-content-between vh-100">
       <div class="header-wrapper">
-        {% render "header/desktop.html" site:site %}
-        {% render "header/mobile.html" site:site %}
+        {% render "header/desktop.html" page:page site:site %}
+        {% render "header/mobile.html" page:page site:site %}
         {% if page.show_call_to_action %}
           {% render "header/cta-banner.html" %}
         {% endif %}
       </div>
       <main id="main-content">{{content}}</main>
       <div class="footer-wrapper">
-        {% render "footer/desktop.html" site:site %}
-        {% render "footer/mobile.html" site:site %}
+        {% render "footer/desktop.html" page:page site:site %}
+        {% render "footer/mobile.html" page:page site:site %}
       </div>
     </div>
 

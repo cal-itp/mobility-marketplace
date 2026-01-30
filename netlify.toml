@@ -1,6 +1,2 @@
 [build]
     command = "npm run build"
-    environment = { JEKYLL_ENV = "development" }
-
-[context.production]
-    environment = { JEKYLL_ENV = "production" }
