@@ -1119,8 +1119,14 @@ input[type="checkbox"] {
 
 /* GENERIC / SHARED */
 .hero-img {
-  height: 533px; /* explict height declaration to avoid jitter during load */
   width: 100%;
+}
+
+@media (min-width: 992px) {
+  .hero-img {
+    /* to avoid jitter during load */
+    height: 533px;
+  }
 }
 
 .spacer-10 {
