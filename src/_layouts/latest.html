@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% seo %}
+    <link rel="manifest" href="/site.webmanifest" />
+    {% if page.noindex %}
+      <meta name="robots" content="noindex" />
+    {%- endif -%}
+    <link rel="apple-touch-icon" href="/uploads/icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.calitp.org/stylesheets/dsdl/dsdl.css" />
+    <link rel="stylesheet" href="/styles/latest.css" />
+
+    <!-- Google Tag Manager https://support.google.com/tagmanager/answer/14847097?hl=en&ref_topic=15191151&sjid=3924574870016540527-NC -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "{{site.google_analytics_id}}");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <div class="d-flex justify-content-center">
+      <a class="my-1 visually-hidden-focusable" href="#main-content">Skip to Main Content</a>
+    </div>
+    <div class="d-flex flex-column justify-content-between vh-100">
+      <div class="header-wrapper">
+        {% include header/desktop.html %} {% include header/mobile.html %} {% if page.show_call_to_action %} {% include
+        header/cta-banner.html %} {% endif %}
+      </div>
+      <main id="main-content">{{content}}</main>
+      <div class="footer-wrapper">{% include footer/desktop.html %} {% include footer/mobile.html %}</div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

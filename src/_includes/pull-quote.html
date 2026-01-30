@@ -1,0 +1,36 @@
+{% comment %}
+    Usage:
+        {% assign quote_color_scheme = "yellow" %}
+        {% assign quote_content = "I really appreciate Cal-ITP filling this role of keeping these things moving. It’s a type of support I’m constantly requesting in all sorts of different spaces (like implementation of regional goals, etc.). It's really helpful, particularly on these types of projects that directly improve passenger experience. <strong>At the end of the day passenger experience matters the most.</strong>" %}
+        {% assign quote_source_name = "Jerome Qiriazi" %}
+        {% assign quote_source_title = "Transit Planner, Humboldt Transit Authority" %}
+        {% include pull-quote.html color_scheme=quote_color_scheme content=quote_content source_name=quote_source_name source_title=quote_source_title %}
+
+    Parameters:
+        * content (string) - a chunk of text to be inserted into the main <p> element; supports inline HTML
+
+    Optional Parameters:
+        * color_scheme (enum)   : 'yellow' - color name to be added to a class for CSS to use for styling;
+                                             valid options: 'yellow', 'purple', 'cyan-light', 'cyan-dark'
+        * source_name  (string) : ''       - name of the person the quote can be attributed to
+        * source_title (string) : ''       - the person's job title or other useful description of them
+
+    Output:
+        Markup for a pull quote with optional attribution using the Bootstrap layout grid.
+{% endcomment %}
+
+<figure class="pull-quote pull-quote_{{ include.color_scheme | default: "yellow" }}">
+  <div class="container">
+    <blockquote class="row">
+      <p class="h4 fw-normal {% if include.source_name %}pull-quote-content_attributed col-lg-11{% else %}pull-quote-content_unattributed col-lg-9{% endif %}">{{ include.content }}</p>
+    </blockquote>
+    {% if include.source_name %}
+      <figcaption class="row">
+        <div class="col-lg-4 offset-lg-6">
+          <div class="fw-bold">{{ include.source_name }}</div>
+          {% if include.source_title %}<div>{{ include.source_title }}</div>{% endif %}
+        </div>
+      </figcaption>
+    {% endif %}
+  </div>
+</figure>

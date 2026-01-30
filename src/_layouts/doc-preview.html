@@ -1,0 +1,35 @@
+---
+layout: latest
+---
+
+{% comment %}
+  why is page.slug undefined? https://jekyllrb.com/docs/variables/#page-variables
+{% endcomment %}
+{% assign slug = page.name | remove: ".md" %}
+
+{% assign url = page.url %}
+{% assign resource = site.data.resources | where: "slug", slug | first %}
+{% assign resourceTag = resource.tags | first %}
+
+<section class="dl-hero my-4">
+  <div class="container">
+    <div class="row">
+      <div class="dl-hero-text col-12 col-lg-4 offset-lg-1">
+        <div>
+          {% for tag in resource.tags %}
+          <div class="dl-tag">{{ tag }}</div>
+          {% endfor %}
+        </div>
+        <h1 class="mt-2 mb-lg-3 text-start">{{ resource.title }}</h1>
+        <a class="dl-button my-3 my-lg-4" href="{{resource.filename}}" download>Download</a>
+        <p>{{ page.description }}</p>
+        <p class="mt-2 mt-lg-5">Last updated: {{ resource.lastUpdated | date: "%B %e, %Y" }} | Cal-ITP</p>
+      </div>
+      <div class="dl-hero-image col-12 col-lg-5 offset-lg-2">
+        <img src="{{ resource.thumbnail }}" alt="First page of the document" />
+      </div>
+    </div>
+  </div>
+</section>
+{% include downloadable-resources.html resource_tag=resourceTag heading="Related documents" current_slug=resource.slug %}
+<div class="spacer-10"></div>

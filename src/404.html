@@ -1,62 +1,24 @@
-<!doctype html>
-<html lang="en">
+---
+layout: latest
+title: Page Not Found
+---
 
-<head>
-  <meta charset="utf-8">
-  <title>Page Not Found | {{site.title}}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
-
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
-
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
-
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
-    }
-
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
-
-    @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-
-    }
-  </style>
-</head>
-
-<body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
-</body>
-
-</html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
+<div class="container-sm">
+  <div class="d-flex flex-column align-items-center wrapper-404">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3">
+      <img class="out-of-service" src="/uploads/hero_out-of-service.png" alt="" />
+      <div class="heading-404">
+        <h1 class="text-start">Out of service</h1>
+        <p class="h4 mt-4">The page you are looking for has been moved or doesn't exist.</h4>
+      </div>
+    </div>
+    <div class="mb-4">
+      <h2 class="h3">Return home or jump to our guides:</h2>
+      <nav class="global-nav" aria-label="Primary">
+        <ul class="d-flex flex-column flex-md-row gap-md-3 gap-4 my-2">
+          {% include link-repeater.html menu_items=site.navigation %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,101 +1,74 @@
 ---
-layout: default
+layout: latest
 
-title: Contact us
-description: >
-  Get in touch! If you represent a public Transit Provider based in California
-  or elsewhere in the U.S., Cal-ITP can provide materials and support to help
-  modernize your fleet. If you are a vendor, we’d love to hear about your
-  company’s products and/or services.
+title: Contact Us
+description: Get in touch and request support from our customer success team.
 ---
 
-<div class="bg-blue-lightest">
-  <div class="container">
-    <div class="row py-5 mb-3">
-      <div class="offset-lg-1 col-lg-6 col-sm-12">
-        <h1 class="mt-lg-3 pt-lg-3">Get in touch<br /><span class="text-gray">We’d love to hear from you</span></h1>
-        <p>
-          Thank you for your interest in Cal-ITP! Whether you represent a public Transit Provider based in California or elsewhere
-          in the U.S., Cal-ITP can provide materials and support to help you navigate the process to modernize your fleet. If
-          you’re a vendor, we’d love to hear about your company’s products and/or services.
-        </p>
+<div class="container mt-5">
+  <p class="text-body-xl">Established in 2021, California Mobility Marketplace makes it easy to browse and purchase statewide pre-approved contracts for new transit technologies to better serve riders.</p>
+  <p>Mobility Marketplace is a direct response to the challenges small agencies face in navigating the procurement process. The site breaks down all the necessary steps to help your agency succeed—from real-time data to establishing a contactless fare system. You can also get in touch with our Customer Success team, real people, who will support you every step of the way.</p>
+  <p>Mobility Marketplace is owned and operated by Cal-ITP through support from the <a href="https://calsta.ca.gov/">California State Transportation Agency<span aria-label="(external link)">↗</span></a> and the <a href="https://dot.ca.gov/">California Department of Transportation<span aria-label="(external link)">↗</span></a>. For more information about Cal-ITP, visit <a href="https://www.calitp.org/" aria-label="cal i t p dot org">calitp.org<span aria-label="(external link)">↗</span></a>.</p>
+</div>
 
-        <p>
-          Once you’ve completed the form below, someone from the Cal-ITP team will reach out to assist you or respond to your
-          comment or question. You can also reach out to us directly at:
-          <a href="mailto:hello@calitp.org" target="_blank">hello@calitp.org</a>
-        </p>
-      </div>
-      <div class="col-lg-4 d-none d-lg-block">
-        <img
-          alt="A bus stop and a contact letter"
-          class="img-fluid my-0 mx-auto mb-5 mb-lg-0"
-          src="/uploads/contact-hero-with-validator.png"
-        />
-      </div>
-    </div>
+{% assign quote_content = "I really appreciate Cal-ITP filling this role of keeping these things moving. It’s a type of
+support I’m constantly requesting in all sorts of different spaces (like implementation of regional goals, etc.). It's
+really helpful, particularly on these types of projects that directly improve passenger experience. <strong>At the end
+  of the day passenger experience matters the most.</strong>" %}
+{% assign quote_source_name = "Jerome Qiriazi" %}
+{% assign quote_source_title = "Transit Planner, Humboldt Transit Authority" %}
+{% include pull-quote.html content=quote_content source_name=quote_source_name source_title=quote_source_title %}
+
+<div class="container my-5">
+  <h1 class="h2">Contact</h1>
+  <p class="text-body-xl text-center">To get in touch with our Customer Success team, fill out the contact form below.</p>
+
+  <div class="contact-form-wrapper col-lg-8 mx-auto">
+    <script src="https://js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        portalId: "5519226",
+        formId: "bc98c500-50cf-4793-ad1b-1ea6f58eeb11",
+        region: "na1"
+      });
+
+      // Fix bug in HubSpot form markup
+      function waitForElement(selector) {
+        return new Promise((resolve) => {
+          const observer = new MutationObserver((mutations, observer) => {
+            const element = document.querySelector(selector);
+            if (element) {
+              observer.disconnect();
+              resolve(element);
+            }
+          });
+          observer.observe(document.body, {
+            childList: true,
+            subtree: true,
+          });
+        });
+      }
+      waitForElement('.hs_contact_type .inputs-list').then((element) => {
+        element.removeAttribute('role');
+      });
+    </script>
   </div>
 </div>
 
-<div id="contact-container" class="container container--skinny">
-  <div class="nav flex-column mt-5 pt-3 mb-4" id="contact-form-tab" role="tablist" aria-orientation="vertical">
-    <fieldset>
-      <legend><span>I am a</span><span class="required-label" aria-hidden="true">*</span></legend>
-      <div class="form-check ps-0">
-        <input
-          class="form-check-input ms-0 active"
-          id="transit-agency-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#transit-agency"
-          role="tab"
-          type="radio"
-          name="contact-form"
-          aria-controls="transit-agency"
-          aria-selected="true"
-          checked
-        />
-        <label class="fs-xs-5 form-check-label" for="transit-agency-tab"> Transit Agency</label>
-      </div>
-      <div class="form-check ps-0">
-        <input
-          class="form-check-input ms-0"
-          id="vendor-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#vendor"
-          role="tab"
-          type="radio"
-          name="contact-form"
-          aria-controls="vendor"
-          aria-selected="false"
-        />
-        <label class="fs-xs-5 form-check-label" for="vendor-tab">Vendor</label>
-      </div>
-      <div class="form-check ps-0">
-        <input
-          class="form-check-input ms-0"
-          id="other-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#other"
-          role="tab"
-          type="radio"
-          name="contact-form"
-          aria-controls="other"
-          aria-selected="false"
-        />
-        <label class="fs-xs-5 form-check-label" for="other-tab">Other</label>
-      </div>
-    </fieldset>
-  </div>
-  <div class="tab-content" id="contact-form-tabContent">
-    <div class="tab-pane fade show active" id="transit-agency" role="tabpanel" aria-labelledby="transit-agency-tab" tabindex="0">
-      <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
-      {% include forms/hubspot-form.html formId="467e7cdc-0b55-4f0d-b36f-3f6b1f3d19ab" %}
+<div class="container">
+  <h2>Related</h2>
+  <nav class="related-nav row mb-5" aria-label="Related">
+    <div class="col-md">
+      <a class="related-nav-link" href="/data-plans">
+        <span class="arrow" aria-label="(previous page)">←</span>
+        <span class="text">Upgrade your data plans today</span>
+      </a>
     </div>
-    <div class="tab-pane fade" id="vendor" role="tabpanel" aria-labelledby="vendor-tab" tabindex="0">
-      {% include forms/hubspot-form.html formId="de22d690-184f-404d-b787-6f33e993b399" %}
+    <div class="col-md">
+      <a class="related-nav-link related-nav-link_next" href="/tap-to-pay">
+        <span class="text">Explore tap to pay to bring contactless payments to your fleet</span>
+        <span class="arrow" aria-label="(next page)">→</span>
+      </a>
     </div>
-    <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab" tabindex="0">
-      {% include forms/hubspot-form.html formId="10ed070e-42c4-4451-b547-a6268123cc80" %}
-    </div>
-  </div>
+  </nav>
 </div>

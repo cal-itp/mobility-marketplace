@@ -8,3 +8,5 @@ node_modules/
 vendor/
 venv/
 **/.DS_Store
+# netlify uses mise to manage ruby, locally we use rvm
+mise.local.toml

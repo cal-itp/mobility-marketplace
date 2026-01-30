@@ -8,20 +8,6 @@ Deployed via [Netlify][netlify] [![Netlify Status](https://api.netlify.com/api/v
 
 ## Development
 
-### Cloning the repository
-
-You can run the usual `git clone` command to check out this project, but notice that this repo contains [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). To ensure you have all the files in those submodules, you can pass `--recuse-submodules` when cloning:
-
-```
-git clone --recurse-submodules https://github.com/cal-itp/mobility-marketplace.git
-```
-
-or if you've already cloned the project, you can run:
-
-```
-git submodule update --init
-```
-
 ### Running a local instance
 
 This is a [Jekyll][jekyll] static site. We include a [Devcontainer][devcontainer] configuration to help with local testing
@@ -33,7 +19,7 @@ and development.
 1. Enter or select `Rebuild and Reopen in Container` to start from scratch
 1. Enter or select `Reopen in Container` to reopen the last devcontainer used
 
-Once inside the devcontainer, you have the manually start the site:
+Once inside the devcontainer, you can manually start the site like this:
 
 1. `Ctrl/Cmd+Shift+P` to bring up the Command Palette
 1. Enter `Tasks: Run Task`
@@ -44,37 +30,9 @@ Auto rebuild/reload will be active and will watch the site files for changes.
 
 \* Try using <kbd>cmd</kbd> and clicking on the server address from the Terminal
 
-### Debugging the Transit Providers CSV file
-
-The automated process to fetch providers from the data warehouse consists of two parts. The first part is downloading the data as a CSV file from the warehouse. The second part is preparing the data with some Python.
-
-```bash
-# Download the data
-bash .github/resources/download_csv.sh
-
-# (Optional) Don't pollute your global Python install
-virtualenv .github/resources/venv
-source .github/resources/venv/bin/activate
-
-# Install Python dependencies
-pip install -r .github/resources/requirements.txt
-
-# Run the Python script with all the preparing logic
-python .github/resources/process_providers.py
-```
-
 ## Documents
 
-This site uses Google Cloud to manage static files, like the PDFs on the How To pages.
-
-Requirements: User must be authorized on Google Cloud to access the resources-calitp-org bucket.
-
-1. Go to https://cloud.google.com/
-1. Click `Console`
-1. Click `Cloud Storage`
-1. Click `resources.calitp.org`
-1. Click mobility-marketplace
-1. Click button for action needed: Upload Files, Delete or Edit on a particular file
+The downloadable resources on this site are a mix of external links and files checked directly into version control in [src/uploads/resources](./src/uploads/resources/)
 
 ## Analytics
 
