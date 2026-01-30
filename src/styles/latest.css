@@ -999,7 +999,8 @@ a:has(> img) {
 .hs-form-field > .input {
   flex-grow: 1;
 }
-.hs-input {
+.hs-fieldtype-text input,
+.hs-fieldtype-textarea textarea {
   width: 100%;
 }
 .hs_contact_type .inputs-list {
