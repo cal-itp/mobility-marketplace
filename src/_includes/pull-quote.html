@@ -22,13 +22,13 @@
 <figure class="pull-quote pull-quote_{{ include.color_scheme | default: "yellow" }}">
   <div class="container">
     <blockquote class="row">
-      <p class="pull-quote-content {% if include.source_name %}pull-quote-content_attributed offset-lg-3{% else %}pull-quote-content_unattributed offset-lg-2{% endif %} col-lg-6 col-12">{{ include.content }}</p>
+      <p class="pull-quote-content {% if include.source_name %}pull-quote-content_attributed offset-lg-3{% else %}pull-quote-content_unattributed offset-lg-2{% endif %} col-lg-6 col-12">{{ content }}</p>
     </blockquote>
-    {% if include.source_name %}
+    {% if source_name %}
       <figcaption class="row">
         <div class="col-lg-4 offset-lg-6">
-          <div class="fw-bold">{{ include.source_name }}</div>
-          {% if include.source_title %}<div>{{ include.source_title }}</div>{% endif %}
+          <div class="fw-bold">{{ source_name }}</div>
+          {% if source_title %}<div>{{ source_title }}</div>{% endif %}
         </div>
       </figcaption>
     {% endif %}

@@ -39,7 +39,8 @@ description: >
 {% assign quote_content = "The scoping process was way easier and more accessible for our small team. We’re able to prioritize GTFS-RT first and foremost before getting contactless payments." %}
 {% assign quote_source_name = "Gustavo Gomez" %}
 {% assign quote_source_title = "Senior Transportation Planner, ICTC" %}
-{% include pull-quote.html color_scheme=quote_color_scheme content=quote_content source_name=quote_source_name source_title=quote_source_title %}
+{% render "pull-quote.html" color_scheme:quote_color_scheme content:quote_content source_name:quote_source_name
+source_title:quote_source_title %}
 
 <div class="container">
   <h2>Agency guide for real-time data</h2>
@@ -298,7 +299,7 @@ description: >
     settings that not all GTFS Realtime consuming applications may be able to support.
   </p>
 </div>
-{% include downloadable-resources.html resource_tag=page.resourceTag %}
+{% render "downloadable-resources.html" resource_tag:resourceTag resources:resources %}
 <div class="spacer-10"></div>
 <div class="container">
   <h2>Related</h2>

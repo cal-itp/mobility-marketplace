@@ -23,15 +23,15 @@
 {% endcomment %}
 
 <div class="dl-card">
-  <img class="dl-card-thumbnail" src="{{ include.img }}" alt="">
+  <img class="dl-card-thumbnail" src="{{ img }}" alt="">
   <div class="dl-card-text">
-    <div class="dl-tag">{{ include.tag }}</div>
-    <h3 class="h5 mt-3 mb-1">{{ include.title }}</h3>
-    <p class="mb-3">{{ include.description | default: "" }}</p>
+    <div class="dl-tag">{{ tag }}</div>
+    <h3 class="h5 mt-3 mb-1">{{ title }}</h3>
+    <p class="mb-3">{{ description | default: "" }}</p>
     <div class="dl-card-buttons">
-      <a class="dl-button" href="{{ include.view_url }}">View <span class="visually-hidden">{{ include.title }}</span></a>
-      <a class="dl-button" href="{{ include.download_url }}" download>
-        Download <span class="visually-hidden">{{ include.title }}</span>
+      <a class="dl-button" href="{{ view_url }}">View <span class="visually-hidden">{{ title }}</span></a>
+      <a class="dl-button" href="{{ download_url }}" download>
+        Download <span class="visually-hidden">{{ title }}</span>
         <svg viewBox="0 0 8 17" xmlns="http://www.w3.org/2000/svg">
           <path d="M7.01999 16.38H-9.76026e-06V15.102H3.25799C2.55599 13.716 1.47599 12.402 -9.76026e-06 11.142V10.098C1.25999 10.692 2.23199 11.268 2.86199 11.826V-6.79493e-06H4.13999V11.844C4.76999 11.268 5.74199 10.692 7.01999 10.098V11.142C5.54399 12.402 4.46399 13.716 3.76199 15.102H7.01999V16.38Z" fill="currentcolor"/>
         </svg>

@@ -1,7 +1,4 @@
 export default async function (eleventyConfig) {
-  // otherwise we need quotes around includes
-  eleventyConfig.setLiquidOptions({ dynamicPartials: false });
-
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setLayoutsDirectory("_layouts");
 

@@ -38,7 +38,7 @@ description: >
 
 {% assign quote_color_scheme = "purple" %}
 {% assign quote_content = "Whether enabling passengers to see the live location of a bus or train on their phone or tap to pay their fare with contactless payment, transit is leveraging cellular data and connectivity to modernize and improve the rider experience." %}
-{% include pull-quote.html color_scheme=quote_color_scheme content=quote_content %}
+{% render "pull-quote.html" color_scheme:quote_color_scheme content:quote_content %}
 
 <div class="container">
   <h2>Guide to purchase or change data plans</h2>
@@ -79,7 +79,7 @@ description: >
     How much data you use depends on how many devices are on each vehicle. Typical usage for GTFS software and one fare payment
     validator is 2 GB/month.
   </p>
-  {% include usage-estimator.html %}
+  {% render "usage-estimator.html" with usage-categories as categories %}
   <h4>Funding</h4>
   <p>
     You may use funding from various sources to complete this purchase, including the

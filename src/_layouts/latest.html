@@ -6,7 +6,7 @@
     {% comment %} {% seo %} {% endcomment %}
     <link rel="manifest" href="/site.webmanifest" />
     {% if page.noindex %}
-      <meta name="robots" content="noindex" />
+    <meta name="robots" content="noindex" />
     {%- endif -%}
     <link rel="apple-touch-icon" href="/uploads/icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -42,11 +42,17 @@
     </div>
     <div class="d-flex flex-column justify-content-between vh-100">
       <div class="header-wrapper">
-        {% include header/desktop.html %} {% include header/mobile.html %} {% if page.show_call_to_action %} {% include
-        header/cta-banner.html %} {% endif %}
+        {% render "header/desktop.html" site:site %}
+        {% render "header/mobile.html" site:site %}
+        {% if page.show_call_to_action %}
+          {% render "header/cta-banner.html" %}
+        {% endif %}
       </div>
       <main id="main-content">{{content}}</main>
-      <div class="footer-wrapper">{% include footer/desktop.html %} {% include footer/mobile.html %}</div>
+      <div class="footer-wrapper">
+        {% render "footer/desktop.html" site:site %}
+        {% render "footer/mobile.html" site:site %}
+      </div>
     </div>
 
     <script

@@ -1,8 +1,8 @@
 <header class="d-none d-lg-flex align-items-center justify-content-between header mx-auto">
-  {% include site-logo.html %}
+  {% render "site-logo.html" %}
   <nav class="global-nav" aria-label="Primary">
     <ul class="d-flex justify-space-between">
-      {% include link-repeater.html menu_items:site.navigation %}
+      {% render "link-repeater.html" site:site %}
     </ul>
   </nav>
   <a class="contact font-weight-bold"

@@ -1,4 +1,4 @@
-{% for menu_item in menu_items %}
+{% for menu_item in site.navigation %}
   {% assign current_page = page.url | replace: '.html', '' %}
   <li class="{{ list_class | default: '' }}">
     <a
