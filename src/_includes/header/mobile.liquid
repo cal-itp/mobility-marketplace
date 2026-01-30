@@ -1,5 +1,5 @@
 <header class="d-lg-none d-flex justify-content-between header">
-  {% render "site-logo.html" %}
+  {% render 'site-logo' %}
 
   <nav class="navbar global-nav" aria-label="Primary">
     <button
@@ -17,14 +17,18 @@
     <div class="navbar-collapse collapse" id="siteHeaderNav">
       <ul class="navbar-nav nav-pills nav-fill w-100 align-items-end">
         <li class="pt-2">
-          <a class="contact"
-             href="/contact"
-             {% if page.url == '/contact.html' %}aria-current="page"{% endif %}>
+          <a
+            class="contact"
+            href="/contact"
+            {% if page.url == '/contact/' %}
+              aria-current="page"
+            {% endif %}
+          >
             Contact
           </a>
         </li>
         <li class="font-weight-bold text-end">Explore products and contracts</li>
-        {% render "link-repeater.html" page:page site:site %}
+        {% render 'link-repeater', page: page, site: site %}
       </ul>
     </div>
   </nav>

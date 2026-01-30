@@ -1,0 +1,11 @@
+<footer class="d-none d-lg-block container footer">
+  <div class="row column-gap-4">
+    <div class="col-2">{% render 'site-logo' %}</div>
+    <div class="col-3">
+      {% render 'footer/blurb' %}
+      {% render 'footer/socials' %}
+    </div>
+    <div class="col-2">{% render 'footer/nav-links', site: site %}</div>
+    <div class="col-2 ms-auto">{% render 'footer/privacy-links' %}</div>
+  </div>
+</footer>
