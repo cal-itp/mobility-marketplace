@@ -22,7 +22,7 @@
 <figure class="pull-quote pull-quote_{{ include.color_scheme | default: "yellow" }}">
   <div class="container">
     <blockquote class="row">
-      <p class="pull-quote-content {% if include.source_name %}pull-quote-content_attributed offset-lg-3{% else %}pull-quote-content_unattributed offset-lg-2{% endif %} col-lg-6 col-12">{{ include.content }}</p>
+      <p class="h4 fw-normal {% if include.source_name %}pull-quote-content_attributed col-lg-11{% else %}pull-quote-content_unattributed col-lg-9{% endif %}">{{ include.content }}</p>
     </blockquote>
     {% if include.source_name %}
       <figcaption class="row">
