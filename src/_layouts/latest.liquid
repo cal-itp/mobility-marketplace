@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% comment %}{% seo %}{% endcomment %}
+    {% render 'seo', seo: seo %}
     <link rel="manifest" href="/site.webmanifest">
     {% if page.noindex %}
       <meta name="robots" content="noindex">
@@ -47,7 +47,7 @@
         {% render 'header/desktop', page: page, site: site %}
         {% render 'header/mobile', page: page, site: site %}
         {% if page.show_call_to_action %}
-          {% render 'header/cta-banner.html' %}
+          {% render 'header/cta-banner' %}
         {% endif %}
       </div>
       <main id="main-content">{{ content }}</main>
