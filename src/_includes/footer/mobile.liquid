@@ -1,0 +1,10 @@
+<footer class="d-flex flex-column d-lg-none footer row-gap-3">
+  {% render 'site-logo', anchor_class: 'align-self-center' %}
+  {% render 'footer/blurb' %}
+  <div class="d-flex flex-row justify-content-between">
+    <div>{% render 'footer/nav-links', site: site %}</div>
+    <div>{% render 'footer/socials' %}</div>
+  </div>
+  <hr>
+  {% render 'footer/privacy-links' %}
+</footer>

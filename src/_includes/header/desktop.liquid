@@ -1,0 +1,17 @@
+<header class="d-none d-lg-flex align-items-center justify-content-between header mx-auto">
+  {% render 'site-logo' %}
+  <nav class="global-nav" aria-label="Primary">
+    <ul class="d-flex justify-space-between">
+      {% render 'link-repeater', page: page, site: site %}
+    </ul>
+  </nav>
+  <a
+    class="contact font-weight-bold"
+    href="/contact"
+    {% if page.url == '/contact/' %}
+      aria-current="page"
+    {% endif %}
+  >
+    Contact
+  </a>
+</header>
