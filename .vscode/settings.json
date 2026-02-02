@@ -1,16 +1,23 @@
 {
   "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.encoding": "utf8",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.html": "liquid"
+  },
   "[javascript]": {
     "editor.tabSize": 2
   },
   "[json]": {
     "editor.tabSize": 2
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
