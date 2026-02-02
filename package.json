@@ -7,6 +7,11 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "bootstrap": "^5.3.8"
+    "@11ty/eleventy": "^3.0.0",
+    "@quasibit/eleventy-plugin-sitemap": "^2.0.0"
+  },
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve"
   }
 }
