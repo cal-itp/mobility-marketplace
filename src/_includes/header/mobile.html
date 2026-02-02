@@ -1,5 +1,5 @@
 <header class="d-lg-none d-flex justify-content-between header">
-  {% include site-logo.html %}
+  {% include 'site-logo.html' %}
 
   <nav class="navbar global-nav" aria-label="Primary">
     <button
@@ -28,7 +28,7 @@
           </a>
         </li>
         <li class="font-weight-bold text-end">Explore products and contracts</li>
-        {% include link-repeater.html menu_items=site.navigation %}
+        {% include 'link-repeater.html', menu_items: site.navigation %}
       </ul>
     </div>
   </nav>
