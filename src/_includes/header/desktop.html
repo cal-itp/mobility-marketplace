@@ -5,9 +5,13 @@
       {% include link-repeater.html menu_items=site.navigation %}
     </ul>
   </nav>
-  <a class="contact font-weight-bold"
-     href="/contact"
-     {% if page.url == '/contact.html' %}aria-current="page"{% endif %}>
+  <a
+    class="contact font-weight-bold"
+    href="/contact"
+    {% if page.url == '/contact.html' %}
+      aria-current="page"
+    {% endif %}
+  >
     Contact
   </a>
 </header>

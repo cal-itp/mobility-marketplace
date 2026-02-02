@@ -4,8 +4,12 @@
     <a
       href="{{ menu_item.url }}"
       class="{{ include.anchor_class | default: '' }}"
-      {% if menu_item.target %}target="{{ menu_item.target }}"{% endif %}
-      {% if menu_item.url == current_page %}aria-current="page"{% endif %}
+      {% if menu_item.target %}
+        target="{{ menu_item.target }}"
+      {% endif %}
+      {% if menu_item.url == current_page %}
+        aria-current="page"
+      {% endif %}
     >
       {{ menu_item.name }}
     </a>

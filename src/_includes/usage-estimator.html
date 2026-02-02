@@ -3,17 +3,17 @@
     <div class="row gap-3 g-1">
       <div class="estimator col-md p-4 d-flex flex-column gap-3">
         <legend class="text-body-l"><b>Select your (per vehicle) features:</b></legend>
-        {% for category in site.data.usage-categories -%}
-        <div class="d-flex align-items-center gap-2">
-          <input
-            type="checkbox"
-            id="{{ category.id }}"
-            name="{{ category.id }}"
-            data-estimate="{{ category.estimate }}"
-            {{category.checked}}
-          />
-          <label for="{{ category.id }}">{{ category.label }}</label>
-        </div>
+        {% for category in site.data['usage-categories'] -%}
+          <div class="d-flex align-items-center gap-2">
+            <input
+              type="checkbox"
+              id="{{ category.id }}"
+              name="{{ category.id }}"
+              data-estimate="{{ category.estimate }}"
+              {{ category.checked }}
+            >
+            <label for="{{ category.id }}">{{ category.label }}</label>
+          </div>
         {% endfor %}
       </div>
       <div class="estimator estimator-2 col-md align-self-md-start p-4">
@@ -27,7 +27,7 @@
 <script>
   // sum usage estimates for active checkboxes only
   const aggregateEstimate = (form) => {
-    const checks = Array.from(form.querySelectorAll("input:checked"));
+    const checks = Array.from(form.querySelectorAll('input:checked'));
     // cast the 'data-estimate' attribute as a number (w/ fallback)
     const estimates = checks.map((input) => Number(input.dataset.estimate) || 0);
     return estimates.reduce((accumulator, currVal) => accumulator + currVal, 0);
@@ -35,15 +35,15 @@
 
   // determine the most appropriate data plan from a raw total usage estimate (in GB)
   const recommendPlan = (estimate) =>
-    estimate > 25 ? "Unlimited" : estimate > 5 ? "25 GB" : estimate === 4 ? "5 GB" : `${estimate} GB`;
+    estimate > 25 ? 'Unlimited' : estimate > 5 ? '25 GB' : estimate === 4 ? '5 GB' : `${estimate} GB`;
 
   // self executing function
   (function () {
-    const form = document.querySelector("#usage-estimator");
-    const recommendation = document.querySelector("#plan-recommendation");
+    const form = document.querySelector('#usage-estimator');
+    const recommendation = document.querySelector('#plan-recommendation');
 
     // recalculate a suggestion each time a user interacts with the form
-    form.addEventListener("change", () => {
+    form.addEventListener('change', () => {
       const sum = aggregateEstimate(form);
       recommendation.innerText = recommendPlan(sum);
     });
