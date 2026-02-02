@@ -1,0 +1,31 @@
+{% comment %}
+as outlined in https://nicolashery.com/moving-a-blog-from-jekyll-to-eleventy/#seo
+{% endcomment %}
+
+<!-- begin SEO tag -->
+<title>{{ seo.title }}</title>
+<meta name="generator" content="Eleventy">
+<meta property="og:title" content="{{ seo.pageTitle }}">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="{{ seo.description }}">
+<meta property="og:description" content="{{ seo.description }}">
+<link rel="canonical" href="{{  seo.canonicalUrl }}">
+<meta property="og:url" content="{{  seo.canonicalUrl }}">
+<meta property="og:site_name" content="{{ seo.siteTitle }}">
+<meta property="og:image" content="{{  seo.imgUrl }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="{{  seo.imgUrl }}">
+<meta property="twitter:title" content="{{  seo.pageTitle }}">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{{  seo.schemaType }}",
+    "description": "{{  seo.description }}",
+    "headline": "{{  seo.pageTitle }}",
+    "image": "{{  seo.imgUrl }}",
+    "url": "{{  seo.canonicalUrl }}",
+    "name": "{{  seo.siteTitle }}"
+  }
+</script>
+<!-- end SEO tag -->
