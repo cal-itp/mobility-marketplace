@@ -7,20 +7,22 @@
     "MISE_TRUSTED_CONFIG_PATHS": "${containerEnv:PATH}:/usr/src/mobimart"
   },
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.profiles.linux": {
-      "bash": {
-        "path": "/bin/bash"
+  "customizations": {
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash",
+      "terminal.integrated.profiles.linux": {
+        "bash": {
+          "path": "/bin/bash"
+        }
       }
-    }
-  },
-  "extensions": [
-    "bungcip.better-toml",
-    "eamodio.gitlens",
-    "esbenp.prettier-vscode",
-    "mhutchie.git-graph",
-    "redhat.vscode-xml",
-    "sissel.shopify-liquid"
-  ]
+    },
+    "extensions": [
+      "bungcip.better-toml",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "mhutchie.git-graph",
+      "redhat.vscode-xml",
+      "sissel.shopify-liquid"
+    ]
+  }
 }
