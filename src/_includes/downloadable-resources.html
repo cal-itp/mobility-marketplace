@@ -22,8 +22,13 @@
         {% assign dl_view_url = '/resources/' | append: resource.slug %}
         {% assign dl_download_url = resource.filename %}
         {%
-          include dl-card.html img=dl_img tag=dl_tag title=dl_title
-          description=dl_description view_url=dl_view_url download_url=dl_download_url
+          include dl-card.html
+          img=dl_img
+          tag=dl_tag
+          title=dl_title
+          description=dl_description
+          view_url=dl_view_url
+          download_url=dl_download_url
         %}
       {% endif %}
     {% endfor %}
