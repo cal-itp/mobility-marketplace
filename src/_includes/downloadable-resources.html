@@ -11,7 +11,7 @@
 {% endcomment %}
 
 <div class="container" style="max-width: 1200px;">
-  <h3 class="text-center m-4">{{ include.heading | default: "Downloadable resources" }}</h3>
+  <h3 class="text-center m-4">{{ include.heading | default: 'Downloadable resources' }}</h3>
   <div class="d-flex flex-md-row flex-column flex-wrap justify-content-center align-content-center gap-4">
     {% for resource in site.data.resources %}
       {% if resource.tags contains include.resource_tag and resource.slug != include.current_slug %}
@@ -19,10 +19,17 @@
         {% assign dl_tag = include.resource_tag %}
         {% assign dl_title = resource.title %}
         {% assign dl_description = resource.description %}
-        {% assign dl_view_url = "/resources/" | append: resource.slug %}
+        {% assign dl_view_url = '/resources/' | append: resource.slug %}
         {% assign dl_download_url = resource.filename %}
-        {% include dl-card.html img=dl_img tag=dl_tag title=dl_title
-          description=dl_description view_url=dl_view_url download_url=dl_download_url %}
+        {%
+          include dl-card.html
+          img=dl_img
+          tag=dl_tag
+          title=dl_title
+          description=dl_description
+          view_url=dl_view_url
+          download_url=dl_download_url
+        %}
       {% endif %}
     {% endfor %}
   </div>

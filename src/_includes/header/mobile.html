@@ -17,9 +17,13 @@
     <div class="navbar-collapse collapse" id="siteHeaderNav">
       <ul class="navbar-nav nav-pills nav-fill w-100 align-items-end">
         <li class="pt-2">
-          <a class="contact"
-             href="/contact"
-             {% if page.url == '/contact.html' %}aria-current="page"{% endif %}>
+          <a
+            class="contact"
+            href="/contact"
+            {% if page.url == '/contact.html' %}
+              aria-current="page"
+            {% endif %}
+          >
             Contact
           </a>
         </li>

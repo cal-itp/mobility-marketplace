@@ -23,7 +23,7 @@
         "esbenp.prettier-vscode",
         "mhutchie.git-graph",
         "redhat.vscode-xml",
-        "sissel.shopify-liquid"
+        "shopify.theme-check-vscode"
       ]
     }
   }
