@@ -28,11 +28,11 @@ title: Modernize Your Transit System
 <section class="logo-strip">
   <h2 class="visually-hidden">Transit providers that have worked with Cal-ITP</h2>
   <ul class="logo-strip-list">
-    {% for agency in site.data.agencies -%}
-      <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}"></li>
+    {% for agency in agencies -%}
+      <li><img src="/uploads/{{ agency.logo }}" alt="{{ agency.name }}"></li>
     {% endfor %}
-    {% for agency in site.data.agencies -%}
-      <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}" aria-hidden="true"></li>
+    {% for agency in agencies -%}
+      <li><img src="/uploads/{{ agency.logo }}" alt="{{ agency.name }}" aria-hidden="true"></li>
     {% endfor %}
   </ul>
 </section>
