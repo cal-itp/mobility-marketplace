@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include "seo.html" %}
+    {% include 'seo.html' %}
     <link rel="manifest" href="/site.webmanifest">
-    {% if page.noindex %}
+    {% if noindex %}
       <meta name="robots" content="noindex">
     {%- endif -%}
     <link rel="apple-touch-icon" href="/uploads/icon.png">
@@ -46,7 +46,7 @@
       <div class="header-wrapper">
         {% include 'header/desktop.html' %}
         {% include 'header/mobile.html' %}
-        {% if page.show_call_to_action %}
+        {% if show_call_to_action %}
           {% include 'header/cta-banner.html' %}
         {% endif %}
       </div>
