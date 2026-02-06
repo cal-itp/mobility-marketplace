@@ -10,7 +10,7 @@ Deployed via [Netlify][netlify] [![Netlify Status](https://api.netlify.com/api/v
 
 ### Running a local instance
 
-This is a [11ty][11ty] static site. We include a [Devcontainer][devcontainer] configuration to help with local testing
+This is an [11ty][11ty] static site. We include a [Devcontainer][devcontainer] configuration to help with local testing
 and development.
 
 1. Open the repository directory in VS Code
