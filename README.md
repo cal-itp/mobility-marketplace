@@ -45,7 +45,7 @@ Content (including graphics, images, video, documents, and text) in this reposit
 The source code in this repository used to format and display the content is licensed under [GPL-3.0][code-license].
 
 [devcontainer]: https://code.visualstudio.com/docs/remote/remote-overview
-[11ty]: https://11ty.dev
+[11ty]: https://www.11ty.dev
 [code-license]: ./LICENSE
 [content-license]: ./content/LICENSE
 [netlify]: https://www.netlify.com/
