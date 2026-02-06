@@ -12,6 +12,7 @@ export default async function (eleventyConfig) {
   // Keeps the same directory structure.
   eleventyConfig.addPassthroughCopy("**/*.png");
   eleventyConfig.addPassthroughCopy("**/*.svg");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
   eleventyConfig.addPassthroughCopy("src/uploads/**/*.pdf");
   eleventyConfig.addPassthroughCopy("src/uploads/resources/*.docx");
