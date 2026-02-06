@@ -2,11 +2,10 @@
 layout: latest
 title: Tap to pay
 resourceTag: Tap2Pay
-description: >
-  Learn how to roll out a tap to pay program at your transit agency to accept contactless credit and debit cards, prepaid cards, and mobile wallets.
+description: Learn how to roll out a tap to pay program at your transit agency to accept contactless credit and debit cards, prepaid cards, and mobile wallets.
 ---
 <div class="container">
-  <img class="hero-img" src="uploads/hero_tap-to-pay.png" alt="A hand taps a credit card on a fare validator.">
+  <img class="hero-img" src="/uploads/hero_tap-to-pay.png" alt="A hand taps a credit card on a fare validator.">
   <h1>Tap into the future of fare payment</h1>
   <p>
     California is making it easier for transit providers to accept contactless open loop payments, including credit, debit,
@@ -52,9 +51,11 @@ Cal-ITP’s free support helped us save the hassle and expense of running our ow
 with contactless hardware and fare-calculation and payment-processing software.' %}
 {% assign quote_source_name = 'Greg Pratt' %}
 {% assign quote_source_title = 'General Manager, Humboldt Transit Authority' %}
-{%
-  include pull-quote.html
-  color_scheme=quote_color_scheme content=quote_content source_name=quote_source_name source_title=quote_source_title
+{% include 'pull-quote.html',
+  color_scheme: quote_color_scheme,
+  content: quote_content,
+  source_name: quote_source_name,
+  source_title: quote_source_title
 %}
 
 <div class="container">
@@ -509,7 +510,7 @@ with contactless hardware and fare-calculation and payment-processing software.'
     <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">hello@calitp.org</a>.
   </h4>
 </div>
-{% include downloadable-resources.html resource_tag=page.resourceTag %}
+{% include 'downloadable-resources.html', resource_tag: resourceTag %}
 <div class="spacer-10"></div>
 <div class="container">
   <h2>Related</h2>

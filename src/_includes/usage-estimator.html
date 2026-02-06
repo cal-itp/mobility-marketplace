@@ -3,7 +3,7 @@
     <div class="row gap-3 g-1">
       <div class="estimator col-md p-4 d-flex flex-column gap-3">
         <legend class="text-body-l"><b>Select your (per vehicle) features:</b></legend>
-        {% for category in site.data['usage-categories'] -%}
+        {% for category in usageCategories -%}
           <div class="d-flex align-items-center gap-2">
             <input
               type="checkbox"

@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% seo %}
+    {% include 'seo.html' %}
     <link rel="manifest" href="/site.webmanifest">
-    {% if page.noindex %}
+    {% if noindex %}
       <meta name="robots" content="noindex">
     {%- endif -%}
     <link rel="apple-touch-icon" href="/uploads/icon.png">
@@ -44,16 +44,16 @@
     </div>
     <div class="d-flex flex-column justify-content-between vh-100">
       <div class="header-wrapper">
-        {% include header/desktop.html %}
-        {% include header/mobile.html %}
-        {% if page.show_call_to_action %}
-          {% include header/cta-banner.html %}
+        {% include 'header/desktop.html' %}
+        {% include 'header/mobile.html' %}
+        {% if show_call_to_action %}
+          {% include 'header/cta-banner.html' %}
         {% endif %}
       </div>
       <main id="main-content">{{ content }}</main>
       <div class="footer-wrapper">
-        {% include footer/desktop.html %}
-        {% include footer/mobile.html %}
+        {% include 'footer/desktop.html' %}
+        {% include 'footer/mobile.html' %}
       </div>
     </div>
 

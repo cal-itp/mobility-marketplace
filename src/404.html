@@ -1,6 +1,7 @@
 ---
 layout: latest
 title: Page Not Found
+eleventyExcludeFromCollections: true
 ---
 
 <div class="container-sm">
@@ -16,7 +17,7 @@ title: Page Not Found
       <h2 class="h3">Return home or jump to our guides:</h2>
       <nav class="global-nav" aria-label="Primary">
         <ul class="d-flex flex-column flex-md-row gap-md-3 gap-4 my-2">
-          {% include link-repeater.html menu_items=site.navigation %}
+          {% include 'link-repeater.html', menu_items:site.navigation %}
         </ul>
       </nav>
     </div>

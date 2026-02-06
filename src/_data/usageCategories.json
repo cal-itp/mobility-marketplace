@@ -1,0 +1,8 @@
+[
+  { "id": "gtfs", "label": "GTFS realtime", "estimate": "1", "checked": "checked" },
+  { "id": "fare-1", "label": "1 fare payment validator", "estimate": "1" },
+  { "id": "fare-2", "label": "2 fare payment validators", "estimate": "2" },
+  { "id": "camera", "label": "Cameras", "estimate": "80" },
+  { "id": "cad", "label": "CAD/AVL", "estimate": "10" },
+  { "id": "wifi", "label": "Passenger Wi-Fi", "estimate": "50" }
+]

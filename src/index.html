@@ -20,7 +20,7 @@ title: Modernize Your Transit System
       </p>
     </div>
     <div class="col-lg-5">
-      <img class="d-block w-100" src="uploads/hero_home.png" alt="">
+      <img class="d-block w-100" src="/uploads/hero_home.png" alt="">
     </div>
   </div>
 </section>
@@ -28,11 +28,11 @@ title: Modernize Your Transit System
 <section class="logo-strip">
   <h2 class="visually-hidden">Transit providers that have worked with Cal-ITP</h2>
   <ul class="logo-strip-list">
-    {% for agency in site.data.agencies -%}
-      <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}"></li>
+    {% for agency in agencies -%}
+      <li><img src="/uploads/{{ agency.logo }}" alt="{{ agency.name }}"></li>
     {% endfor %}
-    {% for agency in site.data.agencies -%}
-      <li><img src="uploads/{{ agency.logo }}" alt="{{ agency.name }}" aria-hidden="true"></li>
+    {% for agency in agencies -%}
+      <li><img src="/uploads/{{ agency.logo }}" alt="{{ agency.name }}" aria-hidden="true"></li>
     {% endfor %}
   </ul>
 </section>
@@ -48,7 +48,7 @@ title: Modernize Your Transit System
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img
-          src="uploads/showcase_data-plans.png"
+          src="/uploads/showcase_data-plans.png"
           class="d-block w-100"
           alt="A collage showing a speculative dashboard of fleet connectivity data, and a bus driver operates a vehicle transmitting real-time data."
         >
@@ -59,7 +59,7 @@ title: Modernize Your Transit System
       </div>
       <div class="carousel-item">
         <img
-          src="uploads/showcase_route-scheduling.png"
+          src="/uploads/showcase_route-scheduling.png"
           class="d-block w-100"
           alt="A collage showing route planning software and two transit agency employees adjusting a bus route on a computer."
         >
@@ -70,7 +70,7 @@ title: Modernize Your Transit System
       </div>
       <div class="carousel-item">
         <img
-          src="uploads/showcase_gtfs-rt.png"
+          src="/uploads/showcase_gtfs-rt.png"
           class="d-block w-100"
           alt="A collage showing a GTFS code snippet alongside a phone screen that shows a bus approaching in real time."
         >
@@ -81,7 +81,7 @@ title: Modernize Your Transit System
       </div>
       <div class="carousel-item">
         <img
-          src="uploads/showcase_tap-to-pay.png"
+          src="/uploads/showcase_tap-to-pay.png"
           class="d-block w-100"
           alt="A speculative graph showing share of different payment methods, where most transactions are mobile wallets, followed by bank cards and cash."
         >
@@ -92,7 +92,7 @@ title: Modernize Your Transit System
       </div>
       <div class="carousel-item">
         <img
-          src="uploads/showcase_benefits.png"
+          src="/uploads/showcase_benefits.png"
           class="d-block w-100"
           alt="A collage of a web page enrolling a rider in a reduced fare, and an older man with a walker using contactless payments to board a bus and get a reduced fare."
         >
@@ -130,7 +130,7 @@ title: Modernize Your Transit System
 {% assign quote_content = 'Cal-ITP has been fantastic. Their support and collaboration has been immensely helpful as well as informative. So happy they are a part of our team!' %}
 {% assign quote_source_name = 'Robin Van Valkenburgh' %}
 {% assign quote_source_title = 'Transit Services Division Manager, Nevada County Connects' %}
-{% include pull-quote.html content=quote_content source_name=quote_source_name source_title=quote_source_title %}
+{% include 'pull-quote.html', content: quote_content, source_name: quote_source_name, source_title: quote_source_title %}
 
 <section class="container-sm my-5">
   <h2 class="mb-5">Improve rider experience and your agency’s operations</h2>
@@ -138,21 +138,21 @@ title: Modernize Your Transit System
     <li class="col-md-6 col-lg-4">
       <div class="highlight">
         <h3>Grow ridership</h3>
-        <img src="uploads/highlight_grow-ridership.png" alt="A person taps their card on a fare validator when boarding a bus.">
+        <img src="/uploads/highlight_grow-ridership.png" alt="A person taps their card on a fare validator when boarding a bus.">
         <p class="text-body-xl">Tap to pay boosted London Underground ridership by 4%</p>
       </div>
     </li>
     <li class="col-md-6 col-lg-4">
       <div class="highlight">
         <h3>Build trust</h3>
-        <img src="uploads/highlight_build-trust.png" alt="A woman checks her phone on the bus.">
+        <img src="/uploads/highlight_build-trust.png" alt="A woman checks her phone on the bus.">
         <p class="text-body-xl">30% shorter perceived wait times with GTFS Realtime data in Seattle</p>
       </div>
     </li>
     <li class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
       <div class="highlight">
         <h3>Board faster</h3>
-        <img src="uploads/highlight_board-faster.png" alt="A hand taps a credit card on a fare validator.">
+        <img src="/uploads/highlight_board-faster.png" alt="A hand taps a credit card on a fare validator.">
         <p class="text-body-xl">Dwell time is 50% less when riders tap vs swipe to pay</p>
       </div>
     </li>

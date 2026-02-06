@@ -10,7 +10,7 @@ Deployed via [Netlify][netlify] [![Netlify Status](https://api.netlify.com/api/v
 
 ### Running a local instance
 
-This is a [Jekyll][jekyll] static site. We include a [Devcontainer][devcontainer] configuration to help with local testing
+This is an [11ty][11ty] static site. We include a [Devcontainer][devcontainer] configuration to help with local testing
 and development.
 
 1. Open the repository directory in VS Code
@@ -23,8 +23,8 @@ Once inside the devcontainer, you can manually start the site like this:
 
 1. `Ctrl/Cmd+Shift+P` to bring up the Command Palette
 1. Enter `Tasks: Run Task`
-1. Enter or select `Jekyll: Build Dev`
-1. Open the app on `http://127.0.0.1:4000/`\*
+1. Enter or select `11ty: Serve`
+1. Open the app on `http://127.0.0.1:8080/`\*
 
 Auto rebuild/reload will be active and will watch the site files for changes.
 
@@ -45,7 +45,7 @@ Content (including graphics, images, video, documents, and text) in this reposit
 The source code in this repository used to format and display the content is licensed under [GPL-3.0][code-license].
 
 [devcontainer]: https://code.visualstudio.com/docs/remote/remote-overview
-[jekyll]: https://jekyllrb.com
+[11ty]: https://www.11ty.dev
 [code-license]: ./LICENSE
 [content-license]: ./content/LICENSE
 [netlify]: https://www.netlify.com/
