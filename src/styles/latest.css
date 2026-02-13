@@ -1125,7 +1125,10 @@ input[type="checkbox"] {
 @media (min-width: 992px) {
   .hero-img {
     /* to avoid jitter during load */
-    height: 533px;
+    display: block;
+    margin: auto;
+    max-height: 400px;
+    width: initial;
   }
 }
 
