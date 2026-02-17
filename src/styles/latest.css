@@ -165,6 +165,7 @@ h5,
 }
 .pull-quote-content_unattributed {
   margin-bottom: 0;
+  margin-left: var(--spacing-1);
 }
 .pull-quote-content_attributed::before {
   content: "“";
