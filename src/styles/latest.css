@@ -1119,15 +1119,14 @@ input[type="checkbox"] {
 
 /* GENERIC / SHARED */
 .hero-img {
+  max-height: 400px;
+  display: block;
+  margin: auto;
   width: 100%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .hero-img {
-    /* to avoid jitter during load */
-    display: block;
-    margin: auto;
-    max-height: 400px;
     width: initial;
   }
 }
