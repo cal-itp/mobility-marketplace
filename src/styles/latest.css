@@ -1120,13 +1120,15 @@ input[type="checkbox"] {
 
 /* GENERIC / SHARED */
 .hero-img {
+  max-height: 400px;
+  display: block;
+  margin: auto;
   width: 100%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .hero-img {
-    /* to avoid jitter during load */
-    height: 533px;
+    width: initial;
   }
 }
 
@@ -1140,4 +1142,8 @@ input[type="checkbox"] {
 
 .bg-info-yellow {
   background-color: var(--dsdl-yellow-10);
+}
+
+.color-gray-30 {
+  color: var(--dsdl-gray-30);
 }
