@@ -1,0 +1,124 @@
+@import url("related-nav.css");
+@import url("pull-quotes.css");
+
+/* CONTACT PAGE */
+
+.hs-form-field {
+  gap: var(--spacing-1);
+  margin-bottom: var(--spacing-2);
+}
+.hs-form-field > label {
+  margin-bottom: var(--spacing-1);
+}
+.hs-form-booleancheckbox > label {
+  display: inline; /* overriding Bootstrap's inline-block to prevent text wrapping */
+}
+.hs-form-required {
+  display: none;
+}
+.hs-input.invalid,
+.hs-input.error {
+  border-color: var(--dsdl-red-60);
+}
+.hs-error-msgs {
+  width: 100%;
+  margin-top: var(--spacing-1);
+  color: var(--dsdl-red-60);
+}
+.hs-form-field > .input {
+  flex-grow: 1;
+}
+.hs-fieldtype-text input,
+.hs-fieldtype-textarea textarea {
+  width: 100%;
+}
+.hs_contact_type .inputs-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 8px;
+  margin-bottom: 0;
+}
+.hs-input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+.hs-input[type="radio"] + span {
+  padding: var(--spacing-05) var(--spacing-1);
+  border: 1px solid var(--dsdl-gray-50);
+  border-radius: var(--spacing-05);
+}
+.hs-input[type="radio"]:hover + span {
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
+}
+.hs-input[type="radio"]:focus + span {
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+.hs-input[type="radio"]:active + span {
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
+}
+.hs-input[type="radio"]:checked + span {
+  /* TODO: Turn into named variables and apply to current page in global nav */
+  border-color: var(--dsdl-cyan-60);
+  background-color: var(--dsdl-cyan-60);
+  color: white;
+}
+.hs-form-radio {
+  line-height: 2rem;
+}
+label[for="TICKET.content-bc98c500-50cf-4793-ad1b-1ea6f58eeb11"]::after {
+  content: " - Optional";
+  font-style: italic;
+}
+textarea[name="TICKET.content"] {
+  height: var(--spacing-20);
+  padding: 8px 12px;
+}
+textarea[name="TICKET.content"]::placeholder {
+  color: var(--dsdl-gray-40);
+  font-style: italic;
+}
+.hs-form-booleancheckbox > label {
+  display: flex;
+}
+.legal-consent-container .hs-form-booleancheckbox-display input {
+  flex-shrink: 0;
+  float: none;
+}
+.legal-consent-container .hs-form-booleancheckbox-display > span {
+  margin-left: var(--spacing-2);
+}
+
+.hbspt-form ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.hs-submit {
+  text-align: center;
+}
+.hs-button.primary {
+  background-color: white;
+  font-size: var(--text-l);
+}
+.hs-button.primary:focus {
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+.hs-button.primary:hover {
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
+}
+.hs-button.primary:active {
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
+}
+.hbspt-form .submitted-message {
+  padding: var(--spacing-5);
+  margin: var(--spacing-3) auto var(--spacing-6);
+  background-color: var(--dsdl-cyan-10);
+}

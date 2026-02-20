@@ -1,0 +1,81 @@
+/* DOWNLOAD CARDS */
+
+.dl-card {
+  display: block;
+  max-width: calc(var(--spacing-base) * 41.5); /* 20.75rem  (332px) */
+  aspect-ratio: 2 / 3;
+  padding: 40px;
+  border: 1px solid var(--dsdl-gray-50);
+  border-radius: 8px;
+  margin-bottom: var(--spacing-2);
+  position: relative;
+  background-color: var(--dsdl-cyan-10);
+}
+.dl-card-thumbnail {
+  display: block;
+  width: 100%;
+  box-shadow: 0 -2px 16px rgb(38 38 38 / 0.25); /* gray 80 at 20% opacity */
+}
+.dl-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 52%; /* Ensures three lines of description fit comfortably at default text size. */
+  padding: 24px;
+  border-top: 1px solid var(--dsdl-gray-50);
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+.dl-card-text > h3 {
+  color: var(--dsdl-cyan-60);
+  font-weight: 700;
+}
+.dl-card-text > p {
+  flex-grow: 1;
+}
+.dl-tag,
+.dl-button {
+  display: inline-block;
+  border: var(--button-border);
+  line-height: var(--line-height-tight);
+}
+.dl-tag {
+  padding: var(--spacing-05) var(--spacing-1);
+}
+.dl-button {
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  text-decoration: none;
+}
+.dl-button:hover {
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
+}
+.dl-button:focus {
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+.dl-button:active {
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
+}
+.dl-button > svg {
+  height: 1em;
+  margin-left: 0.25em;
+  position: relative;
+  top: calc(-1.5em / 18); /* adjustment for optical alignment with the text */
+}
+.dl-button + .dl-button {
+  margin-left: var(--spacing-05);
+}

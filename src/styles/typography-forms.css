@@ -1,0 +1,102 @@
+/* fix tight heading margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: var(--spacing-2);
+}
+
+h2 {
+  margin-top: var(--spacing-6);
+}
+h3,
+h4,
+h3.h4 {
+  /* extra selector to deal with Bootstrap's aggressiveness
+     and our common practice of styling H3s as H4s */
+  margin-top: var(--spacing-3);
+}
+
+/* GLOBAL / VARIABLES */
+
+a {
+  color: unset;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  text-align: center;
+}
+
+/* TYPE SCALE */
+
+/* If these adjustments prove successful, they should be relocated to the DSDL styles in calitp.org. */
+
+h3,
+.h3,
+h4,
+.h4 {
+  font-weight: 700;
+}
+h5,
+.h5 {
+  font-size: calc(18 / var(--text-base) * 1rem);
+  font-weight: 500;
+}
+.text-body-xl {
+  /* Referred to in Figma as "p2" */
+  font-size: var(--text-l);
+}
+
+@media (min-width: 992px) {
+  h1,
+  .h1 {
+    font-size: calc(48 / var(--text-base) * 1rem);
+  }
+  h2,
+  .h2 {
+    font-size: var(--text-xxxl);
+  }
+  h3,
+  .h3 {
+    font-size: var(--text-xxl);
+  }
+  h4,
+  .h4 {
+    font-size: var(--text-xl);
+  }
+  small,
+  .small,
+  .text-caption {
+    font-size: var(--text-s);
+  }
+}
+
+/* GLOBAL FORM STYLING */
+
+input,
+textarea {
+  padding: var(--spacing-05) var(--spacing-1);
+  border: 1px solid var(--dsdl-gray-50);
+  border-radius: var(--spacing-05);
+}
+input:hover,
+textarea:hover {
+  border-color: var(--dsdl-black);
+}
+input:focus,
+textarea:focus {
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+
+/* TODO: consider further customizing border-radius etc. using appearance: none; */
+input[type="checkbox"] {
+  accent-color: var(--dsdl-indigo-80);
+  height: var(--spacing-3);
+  width: var(--spacing-3);
+}

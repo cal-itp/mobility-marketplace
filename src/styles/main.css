@@ -1,0 +1,49 @@
+@import url("variables.css");
+@import url("typography-forms.css");
+@import url("buttons.css");
+@import url("header.css");
+@import url("footer.css");
+
+/* BOOTSTRAP OVERRIDES */
+
+/* top-level containers and pull quotes */
+main > .container,
+.pull-quote > .container,
+.dl-hero > .container {
+  --bs-gutter-x: var(--spacing-6); /* 24px padding override (w/o sass) */
+}
+
+main > .container,
+.pull-quote > .container {
+  max-width: calc(800px + var(--bs-gutter-x));
+}
+
+span.visually-hidden {
+  /* Deals with an issue that causes screen readers to read hidden span elements out of order:
+     https://github.com/h5bp/main.css/issues/12 */
+  margin: auto !important;
+}
+
+/* GENERIC / SHARED */
+.hero-img {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .hero-img {
+    /* to avoid jitter during load */
+    height: 533px;
+  }
+}
+
+.spacer-10 {
+  height: var(--spacing-10);
+}
+
+.table-caption {
+  color: var(--dsdl-gray-60);
+}
+
+.bg-info-yellow {
+  background-color: var(--dsdl-yellow-10);
+}

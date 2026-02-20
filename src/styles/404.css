@@ -1,0 +1,10 @@
+/* 404 PAGE */
+.wrapper-404 {
+  gap: var(--spacing-8);
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}
+
+.heading-404 {
+  max-width: calc(var(--spacing-10) * 5);
+}
