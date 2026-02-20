@@ -1,5 +1,6 @@
 @import url("variables.css");
 @import url("typography.css");
+@import url("header.css");
 @import url("footer.css");
 
 /* BOOTSTRAP OVERRIDES */
@@ -447,93 +448,6 @@ td ol {
 }
 .related-nav-link > .text {
   flex-grow: 1;
-}
-
-/* HEADER */
-.header {
-  background-color: #fff;
-  max-width: calc(var(--spacing-base) * 180); /* don't let the actual content stretch beyond 1440px */
-  padding: var(--spacing-3) var(--spacing-2);
-}
-
-.global-nav ul {
-  gap: var(--spacing-2);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width: 992px) {
-  .header {
-    padding: var(--spacing-3) var(--spacing-8);
-  }
-}
-
-.global-nav a,
-.header a.contact {
-  border: var(--button-border);
-  border-radius: 1em; /* not fully rounded like the default buttons */
-  color: var(--button-text-color);
-  display: inline-block;
-  line-height: var(--line-height-tight);
-  padding: var(--spacing-1) 12px;
-  text-decoration: none;
-}
-
-.global-nav a:focus,
-.header a.contact:focus {
-  outline: var(--button-focus-outline);
-  outline-offset: var(--button-focus-outline-offset);
-}
-
-.global-nav a:hover,
-.header a.contact:hover {
-  border-color: var(--button-hover-border-color);
-  background-color: var(--button-hover-bg-color);
-}
-
-.global-nav a:active,
-.header a.contact:active {
-  border-color: var(--button-active-border-color);
-  background-color: var(--button-active-bg-color);
-  color: var(--button-active-text-color);
-}
-
-.global-nav a[aria-current="page"],
-.header a.contact[aria-current="page"] {
-  border-color: var(--dsdl-cyan-60);
-  background-color: var(--dsdl-cyan-60);
-  color: white;
-  cursor: default;
-}
-
-.header a.contact {
-  border: none;
-}
-
-.cta-banner {
-  background-color: var(--calitp-brand-yellow);
-  height: var(--spacing-10);
-}
-
-.out-of-service {
-  width: 260px;
-}
-
-@media (min-width: 768px) {
-  .out-of-service {
-    width: 424px;
-  }
-}
-
-.site-logo {
-  width: 140px;
-}
-
-@media (min-width: 992px) {
-  .site-logo {
-    width: 160px;
-  }
 }
 
 /* 404 PAGE */
