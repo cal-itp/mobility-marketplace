@@ -84,3 +84,13 @@
     width: 160px;
   }
 }
+
+.navbar {
+  gap: var(--spacing-4);
+  justify-content: flex-end;
+  padding: 12px 0;
+}
+
+.navbar-toggler {
+  border: none;
+}
