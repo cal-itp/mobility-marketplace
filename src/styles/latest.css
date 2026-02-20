@@ -1,5 +1,6 @@
 @import url("variables.css");
 @import url("typography.css");
+@import url("buttons.css");
 @import url("header.css");
 @import url("footer.css");
 
@@ -15,36 +16,6 @@ main > .container,
 main > .container,
 .pull-quote > .container {
   max-width: calc(800px + var(--bs-gutter-x));
-}
-
-/* buttons */
-.btn.btn-outline-primary {
-  padding: var(--spacing-05) var(--spacing-1);
-  border: 1px solid var(--dsdl-gray-50);
-  color: var(--dsdl-black);
-  font-size: var(--text-l);
-}
-
-.btn.btn-outline-primary:focus,
-.btn.btn-outline-primary:hover {
-  border-color: var(--button-hover-border-color);
-  background-color: var(--button-hover-bg-color);
-}
-
-.btn.btn-outline-primary:active {
-  border-color: var(--button-active-border-color);
-  background-color: var(--button-active-bg-color);
-  color: var(--button-active-text-color);
-}
-
-.navbar {
-  gap: var(--spacing-4);
-  justify-content: flex-end;
-  padding: 12px 0;
-}
-
-.navbar-toggler {
-  border: none;
 }
 
 span.visually-hidden {
