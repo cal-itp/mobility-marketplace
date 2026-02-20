@@ -1,0 +1,43 @@
+/* DOWNLOAD HERO */
+
+.dl-hero {
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-7);
+  background-color: var(--dsdl-slate-10);
+}
+.dl-hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.dl-hero h1 {
+  color: var(--calitp-brand-blue);
+}
+.dl-hero .dl-tag {
+  padding: var(--spacing-1);
+  background-color: var(--dsdl-cyan-10);
+}
+.dl-hero .dl-button {
+  padding: var(--spacing-1) var(--spacing-3);
+  color: var(--button-large-text-color);
+  font-size: var(--button-large-font-size);
+  font-weight: var(--button-large-font-weight);
+}
+.dl-hero .dl-button:hover {
+  border-color: var(--button-large-hover-border-color);
+  background-color: var(--button-large-hover-bg-color);
+  color: var(--button-large-hover-text-color);
+}
+.dl-hero-image > img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .dl-hero {
+    padding-top: calc(var(--spacing-base) * 13); /* 6.5rem (104px) */
+    padding-bottom: calc(var(--spacing-base) * 22); /* 11rem (176px) */
+  }
+}
