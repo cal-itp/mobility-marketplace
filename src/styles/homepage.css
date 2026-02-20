@@ -45,6 +45,27 @@
   }
 }
 
+.highlights {
+  /* --bs-gutter-x: var(--spacing-1); */
+  list-style: none;
+  padding: 0;
+}
+.highlight {
+  padding: 24px 40px;
+  border: 1px solid var(--dsdl-gray-30);
+  border-radius: 40px;
+  margin-bottom: var(--spacing-2);
+}
+.highlight > h3 {
+  color: var(--calitp-brand-blue);
+  text-align: center;
+}
+.highlight > img {
+  display: block;
+  width: 100%;
+  margin: var(--spacing-4) 0;
+}
+
 .carousel {
   --bs-carousel-caption-color: var(--dsdl-black);
   max-width: 870px;
