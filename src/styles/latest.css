@@ -3,6 +3,7 @@
 @import url("buttons.css");
 @import url("header.css");
 @import url("footer.css");
+@import url("pull-quotes.css");
 
 /* BOOTSTRAP OVERRIDES */
 
@@ -22,65 +23,6 @@ span.visually-hidden {
   /* Deals with an issue that causes screen readers to read hidden span elements out of order:
      https://github.com/h5bp/main.css/issues/12 */
   margin: auto !important;
-}
-
-/* PULL QUOTE */
-
-.pull-quote {
-  padding: var(--spacing-5) 0;
-  margin: var(--spacing-7) 0;
-  background-color: var(--dsdl-gray-20);
-}
-.pull-quote-content_attributed {
-  margin-bottom: var(--spacing-3);
-}
-.pull-quote-content_unattributed {
-  margin-bottom: 0;
-  margin-left: var(--spacing-1);
-}
-.pull-quote-content_attributed::before {
-  content: "“";
-  display: block;
-  margin-bottom: -0.25em;
-  color: white;
-  font-family: var(--dsdl-heading-font-stack);
-  font-size: calc(150 / 16 * 1rem);
-  line-height: 0.75;
-  font-weight: 700;
-}
-.pull-quote_yellow {
-  background-color: var(--calitp-brand-yellow);
-  color: var(--dsdl-black);
-}
-.pull-quote_purple {
-  background-color: var(--dsdl-purple-30);
-  color: var(--dsdl-black);
-}
-.pull-quote_cyan-light {
-  background-color: var(--dsdl-cyan-10);
-  color: var(--dsdl-black);
-}
-.pull-quote_cyan-light .pull-quote-content_attributed::before {
-  color: var(--dsdl-cyan-40);
-}
-.pull-quote_cyan-dark {
-  background-color: var(--dsdl-cyan-60);
-  color: white;
-}
-.pull-quote_cyan-dark .pull-quote-content_attributed::before {
-  color: var(--dsdl-cyan-10);
-}
-
-@media (min-width: 992px) {
-  .pull-quote-content_attributed {
-    position: relative;
-    padding-left: calc(var(--spacing-base) * 13);
-  }
-  .pull-quote-content_attributed::before {
-    position: absolute;
-    top: 0.03125em;
-    left: var(--spacing-05);
-  }
 }
 
 /* STEP LIST */
@@ -309,50 +251,6 @@ td ol {
 }
 .dl-button + .dl-button {
   margin-left: var(--spacing-05);
-}
-
-/* DOWNLOAD HERO */
-
-.dl-hero {
-  padding-top: var(--spacing-4);
-  padding-bottom: var(--spacing-7);
-  background-color: var(--dsdl-slate-10);
-}
-.dl-hero-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.dl-hero h1 {
-  color: var(--calitp-brand-blue);
-}
-.dl-hero .dl-tag {
-  padding: var(--spacing-1);
-  background-color: var(--dsdl-cyan-10);
-}
-.dl-hero .dl-button {
-  padding: var(--spacing-1) var(--spacing-3);
-  color: var(--button-large-text-color);
-  font-size: var(--button-large-font-size);
-  font-weight: var(--button-large-font-weight);
-}
-.dl-hero .dl-button:hover {
-  border-color: var(--button-large-hover-border-color);
-  background-color: var(--button-large-hover-bg-color);
-  color: var(--button-large-hover-text-color);
-}
-.dl-hero-image > img {
-  display: block;
-  width: 100%;
-  border-radius: 10px;
-}
-
-@media (min-width: 992px) {
-  .dl-hero {
-    padding-top: calc(var(--spacing-base) * 13); /* 6.5rem (104px) */
-    padding-bottom: calc(var(--spacing-base) * 22); /* 11rem (176px) */
-  }
 }
 
 /* COMPARISON BLOCK */
