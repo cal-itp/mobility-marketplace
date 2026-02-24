@@ -7,7 +7,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.setLayoutsDirectory("_layouts");
 
   eleventyConfig.addPassthroughCopy("src/styles/");
-  eleventyConfig.addWatchTarget("./src/styles/");
+  eleventyConfig.addWatchTarget("src/styles/");
   eleventyConfig.addPassthroughCopy("src/_redirects");
 
   // Keeps the same directory structure.
