@@ -11,7 +11,7 @@
 {% endcomment %}
 
 <div class="container" style="max-width: 1200px;">
-  <h3 class="text-center m-4">{{ heading | default: 'Downloadable resources' }}</h3>
+  <h2 class="h3 text-center pt-4 m-4 pb-2">{{ heading | default: 'Downloadable resources' }}</h2>
   <div class="d-flex flex-md-row flex-column flex-wrap justify-content-center align-content-center gap-4">
     {% for resource in resources %}
       {% if resource.tag == resource_tag and resource.slug != current_slug %}
