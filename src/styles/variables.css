@@ -1,0 +1,26 @@
+:root {
+  --button-bg-color: white;
+  --button-border: 1px solid var(--dsdl-gray-50);
+  --button-border-radius: 2em; /* enough for the ends to be perfect semicircles */
+  --button-font-size: calc(18 / var(--text-base) * 1rem);
+  --button-font-weight: 500;
+  --button-text-color: var(--dsdl-black);
+
+  --button-hover-bg-color: var(--dsdl-cyan-10);
+  --button-hover-border-color: var(--dsdl-cyan-60);
+  --button-hover-text-color: inherit;
+
+  --button-focus-outline: 3px solid var(--calitp-brand-blue);
+  --button-focus-outline-offset: 3px;
+
+  --button-active-bg-color: var(--dsdl-cyan-80);
+  --button-active-border-color: var(--dsdl-cyan-80);
+  --button-active-text-color: white;
+
+  --button-large-font-size: var(--text-xl);
+  --button-large-font-weight: 700;
+  --button-large-text-color: var(--dsdl-cyan-60);
+  --button-large-hover-bg-color: var(--dsdl-cyan-60);
+  --button-large-hover-border-color: var(--dsdl-cyan-60);
+  --button-large-hover-text-color: white;
+}

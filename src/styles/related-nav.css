@@ -1,0 +1,33 @@
+/* RELATED NAV */
+
+.related-nav {
+  --bs-gutter-x: var(--spacing-1);
+}
+.related-nav-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  height: var(--spacing-15);
+  padding: 16px;
+  border: 1px solid var(--dsdl-gray-30); /* lighter than standard buttons */
+  border-radius: 8px; /* smaller than standard buttons */
+  margin-bottom: var(--spacing-1);
+  color: var(--button-text-color);
+  text-decoration: none;
+}
+.related-nav-link:focus {
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+.related-nav-link:hover {
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-hover-bg-color);
+}
+.related-nav-link:active {
+  border-color: var(--button-active-border-color);
+  background-color: var(--button-active-bg-color);
+  color: var(--button-active-text-color);
+}
+.related-nav-link > .text {
+  flex-grow: 1;
+}
