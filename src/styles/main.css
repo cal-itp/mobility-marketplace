@@ -49,3 +49,7 @@ span.visually-hidden {
 .bg-info-yellow {
   background-color: var(--dsdl-yellow-10);
 }
+
+.color-gray-30 {
+  color: var(--dsdl-gray-30);
+}
