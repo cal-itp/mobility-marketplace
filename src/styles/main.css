@@ -25,18 +25,6 @@ span.visually-hidden {
 }
 
 /* GENERIC / SHARED */
-.hero-img {
-  max-height: 400px;
-  display: block;
-  margin: auto;
-  width: 100%;
-}
-
-@media (min-width: 576px) {
-  .hero-img {
-    width: initial;
-  }
-}
 
 .spacer-10 {
   height: var(--spacing-10);

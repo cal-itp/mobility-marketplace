@@ -2,6 +2,21 @@
 @import url("related-nav.css");
 @import url("pull-quotes.css");
 
+/* HERO IMAGE */
+
+.hero-img {
+  max-height: 400px;
+  display: block;
+  margin: auto;
+  width: initial;
+}
+
+@media (max-width: 540px) {
+  .xs-w-100 {
+    width: 100%;
+  }
+}
+
 /* STEP LIST */
 
 .step-list {
