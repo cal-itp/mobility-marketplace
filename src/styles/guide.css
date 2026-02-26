@@ -11,8 +11,8 @@
   width: initial;
 }
 
-@media (max-width: 540px) {
-  .xs-w-100 {
+@media (max-width: 450px) {
+  .hero-img {
     width: 100%;
   }
 }
