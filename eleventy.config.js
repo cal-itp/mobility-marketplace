@@ -15,11 +15,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("**/*.svg");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
-  eleventyConfig.addPassthroughCopy("src/uploads/**/*.pdf");
-  eleventyConfig.addPassthroughCopy("src/uploads/resources/*.docx");
-  eleventyConfig.addPassthroughCopy("src/uploads/resources/*.pptx");
-  eleventyConfig.addPassthroughCopy("src/uploads/resources/*.xlsx");
-  eleventyConfig.addPassthroughCopy("src/uploads/resources/*.zip");
+  eleventyConfig.addPassthroughCopy("src/uploads/");
+  eleventyConfig.addPassthroughCopy("src/uploads/resources/");
 
   eleventyConfig.addPlugin(sitemap, { sitemap: { hostname: site.url } });
 }
