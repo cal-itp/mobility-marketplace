@@ -25,16 +25,6 @@ span.visually-hidden {
 }
 
 /* GENERIC / SHARED */
-.hero-img {
-  width: 100%;
-}
-
-@media (min-width: 992px) {
-  .hero-img {
-    /* to avoid jitter during load */
-    height: 533px;
-  }
-}
 
 .spacer-10 {
   height: var(--spacing-10);
@@ -46,4 +36,8 @@ span.visually-hidden {
 
 .bg-info-yellow {
   background-color: var(--dsdl-yellow-10);
+}
+
+.color-gray-30 {
+  color: var(--dsdl-gray-30);
 }
