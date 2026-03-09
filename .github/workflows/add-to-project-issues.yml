@@ -1,4 +1,4 @@
-# Add secret GH_PROJECT (the Project's ID) and allow org-wide secret GH_PROJECTS_TOKEN to the repo
+# assumes org-wide USB_PROJECT_URL and USB_PROJECT_TOKEN secrets are accessible to the repo.
 
 name: Add Issues to Project
 
