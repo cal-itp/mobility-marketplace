@@ -3,10 +3,20 @@
 /* HOMEPAGE */
 
 .logo-strip {
-  height: 48px;
+  padding-bottom: 48px;
   margin-bottom: var(--spacing-8);
   position: relative;
   overflow: hidden;
+}
+.logo-strip-pause-btn {
+  width: var(--spacing-4);
+  height: var(--spacing-4);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--dsdl-cyan-50);
+  border-radius: var(--button-border-radius);
+  background-color: transparent;
+  color: var(--dsdl-cyan-50);
 }
 .logo-strip-list {
   list-style: none;
@@ -25,6 +35,9 @@
 }
 .logo-strip img {
   height: 100%;
+}
+.logo-strip-list[data-paused] {
+  animation-play-state: paused;
 }
 
 @keyframes slide-to-the-left {
