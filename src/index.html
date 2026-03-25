@@ -30,21 +30,24 @@ stylesheet: homepage.css
   <div class="container-sm mb-4">
     <div class="d-flex gap-3 align-items-center justify-content-center justify-content-lg-start offset-lg-1">
       <h2 class="h4 lh-1 fw-normal mb-0">Agencies we work with</h2>
-      <button class="logo-strip-pause-btn d-flex align-items-center justify-content-center" id="logo-strip-pause-btn">
+      <button class="logo-strip-pause-btn align-items-center justify-content-center" role="switch" aria-checked="true" hidden>
         <svg class="pause-icon" width="12" height="16" viewBox="0 0 12 16" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+          <title>Pause icon</title>
           <rect width="4" height="16" rx="2" />
           <rect x="8" width="4" height="16" rx="2" />
         </svg>
         <svg
-          class="play-icon d-none"
+          class="play-icon"
           width="20"
           height="20"
           viewBox="0 0 20 20"
           fill="currentcolor"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <title>Resume icon</title>
           <path d="M18.5 9.13398C19.1667 9.51888 19.1667 10.4811 18.5 10.866L6.5 17.7942C5.83333 18.1791 5 17.698 5 16.9282L5 3.0718C5 2.302 5.83333 1.82088 6.5 2.20578L18.5 9.13398Z" />
         </svg>
+        <span class="screen-reader-text visually-hidden">Toggle animation</span>
       </button>
     </div>
   </div>
@@ -286,12 +289,35 @@ stylesheet: homepage.css
 
 <script>
   const logoStripPauseButton = document.querySelector('.logo-strip-pause-btn');
+
+  // Button is hidden unless JavaScript is enabled, so unhide it if this runs:
+  logoStripPauseButton.hidden = false;
+  logoStripPauseButton.classList.add('d-flex');
+
+  // If user has prefers-reduced-motion set, change initial state to paused
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    logoStripPauseButton.setAttribute('aria-checked', 'false');
+  }
+
   const logoStripList = document.querySelector('.logo-strip-list');
   const pauseIcon = document.querySelector('.pause-icon');
   const playIcon = document.querySelector('.play-icon');
+  const screenReaderText = document.querySelector('.screen-reader-text');
+
   logoStripPauseButton.addEventListener('click', (e) => {
-    logoStripList.toggleAttribute('data-paused');
-    pauseIcon.classList.toggle('d-none');
-    playIcon.classList.toggle('d-none');
+    // Check current state of the switch and toggle things accordingly
+    if (logoStripPauseButton.getAttribute('aria-checked') === 'true') {
+      // We have just paused
+      pauseIcon.style.setProperty('display', 'none');
+      playIcon.style.setProperty('display', 'block');
+      logoStripList.style.setProperty('--playState', 'paused');
+      logoStripPauseButton.setAttribute('aria-checked', 'false');
+    } else {
+      // We have just resumed
+      pauseIcon.style.setProperty('display', 'block');
+      playIcon.style.setProperty('display', 'none');
+      logoStripList.style.setProperty('--playState', 'running');
+      logoStripPauseButton.setAttribute('aria-checked', 'true');
+    }
   });
 </script>
