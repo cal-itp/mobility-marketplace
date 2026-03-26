@@ -3,13 +3,14 @@
 /* HOMEPAGE */
 
 .logo-strip {
-  padding-bottom: 48px;
+  padding-bottom: 48px; /* matches the height of the logo images themselves */
   margin-bottom: var(--spacing-8);
   position: relative;
 }
 .logo-strip-pause-btn {
   width: calc(var(--spacing-base) * 4.25); /* 2.125rem (34px) */
   height: calc(var(--spacing-base) * 4.25); /* 2.125rem (34px) */
+  padding: 0;
   border-width: 1px;
   border-style: solid;
   border-color: var(--dsdl-cyan-50);
