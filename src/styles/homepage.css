@@ -3,6 +3,8 @@
 /* HOMEPAGE */
 
 .logo-strip {
+  overflow: hidden; /* prevent logo strip from causing horizontal scroll */
+  padding-top: 2px; /* keep top of pause button's focus outline visible despite overflow: hidden */
   padding-bottom: 48px; /* matches the height of the logo images themselves */
   margin-bottom: var(--spacing-8);
   position: relative;
