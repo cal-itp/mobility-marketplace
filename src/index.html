@@ -61,6 +61,26 @@ stylesheet: homepage.css
   </ul>
 </section>
 
+<section class="gallery-cards container-sm mt-5">
+  <h2 class="fw-normal">Guides to plan, purchase, and launch</h2>
+  <p class="gallery-description text-center">Our guides can help you leverage pre-approved MSAs and cut your procurement time.</p>
+  <ul class="gallery-cards row">
+    {% for card in galleryCards -%}
+      <li class="col-md-6 col-lg-6">
+        <div class="gallery-card">
+          <h3 class="text-start mt-0">{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+          <a class="mt-3" href="{{ card.href }}">Read the {{ card.name }} guide</a>
+          <img
+            src="/uploads/{{ card.img }}"
+            alt="{{ card.imgAlt }}"
+          >
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
 {% assign quote_content = 'Cal-ITP has been fantastic. Their support and collaboration has been immensely helpful as well as informative. So happy they are a part of our team!' %}
 {% assign quote_source_name = 'Robin Van Valkenburgh' %}
 {% assign quote_source_title = 'Transit Services Division Manager, Nevada County Connects' %}
