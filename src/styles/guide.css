@@ -118,6 +118,20 @@ table {
   border-radius: 4px;
   border-spacing: 0;
 }
+.table-responsive table {
+  border-color: var(--dsdl-gray-40);
+  border-style: solid;
+  /* left border is applied below to cells in first column so it stays in place when scrolling horizontally */
+  border-width: 1px 1px 1px 0;
+  border-radius: 0;
+}
+.table-responsive thead th:first-child,
+.table-responsive tbody th:first-child,
+.table-responsive tbody td:first-child {
+  position: sticky;
+  left: 0;
+  border-left: 1px solid var(--dsdl-gray-40);
+}
 /* Apply a border to the right of all but the last column */
 th:not(:last-child),
 td:not(:last-child) {
@@ -153,14 +167,6 @@ td ol {
 .table-responsive {
   container-name: responsive-table-wrapper;
   container-type: inline-size;
-}
-
-/* Magic numbers decided based on current table content. */
-@container responsive-table-wrapper (max-width: calc(720rem / 16)) {
-  /* Variables can't be used here yet. */
-  .wider {
-    min-width: calc(var(--spacing-base) * 120);
-  }
 }
 
 /* COMPARISON BLOCK */
