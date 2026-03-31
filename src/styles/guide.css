@@ -164,10 +164,6 @@ td ol {
 .table_cyan th {
   background-color: var(--dsdl-cyan-10);
 }
-.table-responsive {
-  container-name: responsive-table-wrapper;
-  container-type: inline-size;
-}
 
 /* COMPARISON BLOCK */
 
