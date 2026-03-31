@@ -17,3 +17,39 @@
   background-color: var(--button-active-bg-color);
   color: var(--button-active-text-color);
 }
+
+.dl-button {
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  display: inline-block;
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: var(--line-height-tight);
+  padding: var(--spacing-1) var(--spacing-2);
+  text-decoration: none;
+}
+.dl-button:hover {
+  background-color: var(--button-hover-bg-color);
+  border-color: var(--button-hover-border-color);
+}
+.dl-button:focus {
+  outline: var(--button-focus-outline);
+  outline-offset: var(--button-focus-outline-offset);
+}
+.dl-button:active {
+  background-color: var(--button-active-bg-color);
+  border-color: var(--button-active-border-color);
+  color: var(--button-active-text-color);
+}
+.dl-button > svg {
+  height: 1em;
+  margin-left: 0.25em;
+  position: relative;
+  top: calc(-1.5em / 18); /* adjustment for optical alignment with the text */
+}
+.dl-button + .dl-button {
+  margin-left: var(--spacing-05);
+}

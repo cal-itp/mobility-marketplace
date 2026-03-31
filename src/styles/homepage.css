@@ -1,3 +1,4 @@
+@import url("buttons.css");
 @import url("pull-quotes.css");
 
 /* HOMEPAGE */
@@ -99,31 +100,7 @@
 .gallery-card > img {
   display: block;
   width: 100%;
-  margin: var(--spacing-4) 0;
-}
-.gallery-card a {
-  border: var(--button-border);
-  border-radius: 1em; /* not fully rounded like the default buttons */
-  background-color: white;
-  color: var(--button-text-color);
-  display: inline-block;
-  font-weight: bold;
-  line-height: var(--line-height-tight);
-  padding: var(--spacing-1) 12px;
-  text-decoration: none;
-}
-.gallery-card a:hover {
-  border-color: var(--button-hover-border-color);
-  background-color: var(--button-hover-bg-color);
-}
-.gallery-cards a:focus {
-  outline: var(--button-focus-outline);
-  outline-offset: var(--button-focus-outline-offset);
-}
-.gallery-cards a:active {
-  border-color: var(--button-active-border-color);
-  background-color: var(--button-active-bg-color);
-  color: var(--button-active-text-color);
+  margin-top: var(--spacing-4);
 }
 @media (min-width: 768px) {
   .gallery-cards .row li {
@@ -147,6 +124,7 @@
 }
 .highlight > h3 {
   color: var(--calitp-brand-blue);
+  margin-top: 0;
   text-align: center;
 }
 .highlight > img {
