@@ -61,9 +61,11 @@ stylesheet: homepage.css
   </ul>
 </section>
 
-<section class="gallery-cards container-sm mt-5">
-  <h2 class="fw-normal">Guides to plan, purchase, and launch</h2>
-  <p class="gallery-description text-center">Our guides can help you leverage pre-approved MSAs and cut your procurement time.</p>
+<section class="container-sm mt-5">
+  <h2>Guides to plan, purchase, and launch</h2>
+  <p class="gallery-description text-body-xl text-center">
+    Our guides can help you leverage pre-approved MSAs and cut your procurement time.
+  </p>
   <ul class="gallery-cards row">
     {% for card in galleryCards -%}
       <li class="col-md-6 col-lg-5 {% cycle 'offset-lg-1', '' %}">

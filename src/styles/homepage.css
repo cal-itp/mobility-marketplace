@@ -82,9 +82,9 @@
 .gallery-cards {
   list-style: none;
   padding: 0;
-  margin-bottom: calc(-1 * var(--spacing-7)); /* compensate for top margin of pull quote component */
+  margin-bottom: calc(-1 * var(--spacing-3)); /* compensate for top margin of pull quote component */
 }
-.gallery-cards .row li {
+.gallery-cards.row li {
   padding: 0 var(--spacing-3) var(--spacing-3);
 }
 .gallery-card {
@@ -103,7 +103,10 @@
   margin-top: var(--spacing-4);
 }
 @media (min-width: 768px) {
-  .gallery-cards .row li {
+  .gallery-cards {
+    margin-bottom: calc(-1 * var(--spacing-5));
+  }
+  .gallery-cards.row li {
     padding: 0 calc(var(--spacing-5) / 2) var(--spacing-5);
   }
   .gallery-card {
