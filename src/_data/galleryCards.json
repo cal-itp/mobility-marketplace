@@ -4,7 +4,7 @@
     "description": "Save with pre-negotiated data plans for your fleets",
     "href": "/data-plans/",
     "name": "data plans",
-    "img": "showcase_data-plans.png",
+    "img": "showcase_data-plans.jpg",
     "imgAlt": "A collage showing a speculative dashboard of fleet connectivity data, and a bus driver operates a vehicle transmitting real-time data."
   },
   {
@@ -12,7 +12,7 @@
     "description": "Plan and schedule your routes with ease with our software options",
     "href": "/route-scheduling/",
     "name": "route scheduling",
-    "img": "showcase_route-scheduling.png",
+    "img": "showcase_route-scheduling.jpg",
     "imgAlt": "A collage showing route planning software and two transit agency employees adjusting a bus route on a computer."
   },
   {
@@ -20,7 +20,7 @@
     "description": "Get tap to pay, cut boarding times, and keep riders moving fast",
     "href": "/tap-to-pay/",
     "name": "tap to pay",
-    "img": "showcase_tap-to-pay.png",
+    "img": "showcase_tap-to-pay.jpg",
     "imgAlt": "A speculative graph showing share of different payment methods, where most transactions are mobile wallets, followed by bank cards and cash."
   },
   {
@@ -28,7 +28,7 @@
     "description": "Get real-time performance insights and share arrival times with riders",
     "href": "/gtfs-realtime/",
     "name": "GTFS Realtime",
-    "img": "showcase_gtfs-rt.png",
+    "img": "showcase_gtfs-rt.jpg",
     "imgAlt": "A collage showing a GTFS code snippet alongside a phone screen that shows a bus approaching in real time."
   }
 ]
