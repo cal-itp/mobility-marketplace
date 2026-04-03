@@ -3,7 +3,7 @@ layout: main
 title: Modernize Your Transit System
 stylesheet: homepage.css
 
-# Allow the default _config.yml to set this value
+# Allow the default _data/site.json to set this value
 # description: ~
 ---
 <section class="container-sm my-5">
@@ -61,94 +61,26 @@ stylesheet: homepage.css
   </ul>
 </section>
 
-<section class="container-sm mb-5">
-  <h2 class="fw-normal">
-    <span role="text">
-      <span class="d-md-block">Plan, purchase, and launch<span class="visually-hidden">,</span></span>
-      from data plans to tap to pay benefits
-    </span>
-  </h2>
-  <div id="showcase" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="/uploads/showcase_data-plans.png"
-          class="d-block w-100"
-          alt="A collage showing a speculative dashboard of fleet connectivity data, and a bus driver operates a vehicle transmitting real-time data."
-        >
-        <div class="carousel-caption">
-          <a class="h3" href="/data-plans">Explore data plan guide</a>
-          <p class="text-body-xl mt-4">Save with pre-negotiated data plans for your fleets</p>
+<section class="container-sm mt-5">
+  <h2>Guides to plan, purchase, and launch</h2>
+  <p class="gallery-description text-body-xl text-center">
+    Our guides can help you leverage pre-approved MSAs and cut your procurement time.
+  </p>
+  <ul class="gallery-cards row">
+    {% for card in galleryCards -%}
+      <li class="col-md-6 col-lg-5 {% cycle 'offset-lg-1', '' %}">
+        <div class="gallery-card">
+          <h3 class="text-start mt-0">{{ card.title }}</h3>
+          <p class="text-body-xl">{{ card.description }}</p>
+          <a class="dl-button mt-3" href="{{ card.href }}">Read the {{ card.name }} guide</a>
+          <img
+            src="/uploads/{{ card.img }}"
+            alt="{{ card.imgAlt }}"
+          >
         </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="/uploads/showcase_route-scheduling.png"
-          class="d-block w-100"
-          alt="A collage showing route planning software and two transit agency employees adjusting a bus route on a computer."
-        >
-        <div class="carousel-caption">
-          <a class="h3" href="/route-scheduling">Explore route scheduling guide</a>
-          <p class="text-body-xl mt-4">Plan and schedule your routes with ease</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="/uploads/showcase_gtfs-rt.png"
-          class="d-block w-100"
-          alt="A collage showing a GTFS code snippet alongside a phone screen that shows a bus approaching in real time."
-        >
-        <div class="carousel-caption">
-          <a class="h3" href="/gtfs-realtime">Explore GTFS Realtime guide</a>
-          <p class="text-body-xl mt-4">Get real-time performance insights and share arrival times with riders</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="/uploads/showcase_tap-to-pay.png"
-          class="d-block w-100"
-          alt="A speculative graph showing share of different payment methods, where most transactions are mobile wallets, followed by bank cards and cash."
-        >
-        <div class="carousel-caption">
-          <a class="h3" href="/tap-to-pay">Explore tap to pay guide</a>
-          <p class="text-body-xl mt-4">Get tap to pay, cut boarding times, and keep riders moving fast</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="/uploads/showcase_benefits.png"
-          class="d-block w-100"
-          alt="A collage of a web page enrolling a rider in a reduced fare, and an older man with a walker using contactless payments to board a bus and get a reduced fare."
-        >
-        <div class="carousel-caption">
-          {% comment %} <a class="h3" href="/rider-benefits">Explore rider benefits guide</a> {% endcomment %}
-          <div class="h3">Rider benefits</div>
-          <p class="text-body-xl mt-4">Offer tap to pay rider benefits from older adults to veterans to CalFresh and more</p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-indicators d-none d-lg-flex w-100">
-      <button type="button" data-bs-target="#showcase" data-bs-slide-to="0" class="active" aria-current="true">Data plans</button>
-      <button type="button" data-bs-target="#showcase" data-bs-slide-to="1">Route scheduling</button>
-      <button type="button" data-bs-target="#showcase" data-bs-slide-to="2">GTFS Realtime</button>
-      <button type="button" data-bs-target="#showcase" data-bs-slide-to="3">Tap to pay</button>
-      <button type="button" data-bs-target="#showcase" data-bs-slide-to="4">Rider benefits</button>
-    </div>
-    <div class="carousel-controls d-flex justify-content-center gap-3 d-lg-none">
-      <button class="carousel-control-prev" type="button" data-bs-target="#showcase" data-bs-slide="prev">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
-          <path fill="#828282" d="M.278 5.981a.95.95 0 0 0 0 1.345l5.7 5.7a.951.951 0 0 0 1.345-1.345L2.294 6.652 7.32 1.623A.951.951 0 0 0 5.975.278l-5.7 5.7z"/>
-        </svg>
-        Previous
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#showcase" data-bs-slide="next">
-        Next
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
-          <path fill="#828282" d="M7.323 5.981a.95.95 0 0 1 0 1.345l-5.7 5.7a.951.951 0 0 1-1.345-1.345l5.03-5.029L.28 1.623A.951.951 0 0 1 1.626.278l5.7 5.7z"/>
-        </svg>
-      </button>
-    </div>
-  </div>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
 
 {% assign quote_content = 'Cal-ITP has been fantastic. Their support and collaboration has been immensely helpful as well as informative. So happy they are a part of our team!' %}
@@ -181,56 +113,6 @@ stylesheet: homepage.css
       </div>
     </li>
   </ul>
-</section>
-
-<section class="guide-cards">
-  <div class="container-sm">
-    <h2 class="text-start">
-      <span role="text">
-        Cut your procurement times with <span class="text-nowrap">pre-approved</span> MSAs. Start with our guides.
-      </span>
-    </h2>
-    <ul class="row">
-      <li class="col-md-4 col-lg">
-        <a class="guide-card data-plans" href="/data-plans">
-          <h3 class="h4">Data plans<span class="visually-hidden">:</span></h3>
-          <p>Increase your fleet's plan or save with pre-negotiated rates</p>
-        </a>
-      </li>
-      <li class="col-md-4 col-lg">
-        <a class="guide-card route-scheduling" href="/route-scheduling">
-          <h3 class="h4">Route scheduling<span class="visually-hidden">:</span></h3>
-          <p>Plan and schedule your routes with ease</p>
-        </a>
-      </li>
-      <li class="col-md-4 col-lg">
-        <a class="guide-card gtfs-rt" href="/gtfs-realtime">
-          <h3 class="h4">GTFS Realtime<span class="visually-hidden">:</span></h3>
-          <p>Get real-time performance insights and share arrival times with riders</p>
-        </a>
-      </li>
-      <li class="col-md-4 col-lg">
-        <a class="guide-card tap-to-pay" href="/tap-to-pay">
-          <h3 class="h4">Tap to pay<span class="visually-hidden">:</span></h3>
-          <p>Cut boarding times and keep riders moving fast</p>
-        </a>
-      </li>
-      {% comment %}
-        <li class="col-md-4 col-lg">
-          <a class="guide-card rider-benefits" href="/rider-benefits">
-            <h3 class="h4">Rider benefits<span class="visually-hidden">:</span></h3>
-            <p>Offer tap-to-pay-discounts for older adults, veterans, CalFresh, and more</p>
-          </a>
-        </li>
-      {% endcomment %}
-    </ul>
-    <a
-      class="contact-cs"
-      href="mailto:hello@calitp.org"
-      aria-label="Questions? Contact Customer success by emailing hello at cal i t p dot org"
-      >Questions? Contact Customer Success →</a
-    >
-  </div>
 </section>
 
 <section class="container my-5">
