@@ -9,6 +9,7 @@ export default {
     { name: "Route scheduling", url: "/route-scheduling/" },
     { name: "GTFS Realtime", url: "/gtfs-realtime/" },
     { name: "Tap to pay", url: "/tap-to-pay/" },
+    { name: "Rider benefits", url: "/rider-benefits/" },
   ],
   theme_color: "#ffffff",
   theme_color_background: "#ffffff",
