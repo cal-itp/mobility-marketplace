@@ -37,3 +37,16 @@ description:
     </li>
   </ol>
 </div>
+
+{% assign quote_color_scheme = 'green' %}
+{% assign quote_content = 'We transport folks from all over the country year-round, and now visitors 65+ who
+    travel here from anywhere in the U.S. can capitalize on MST’s world-class transit by verifying their eligibility
+    discount and tapping to ride MST buses for half-price while they’re in town.' %}
+{% assign quote_source_name = 'Carl Sedoryk' %}
+{% assign quote_source_title = 'GM/CEO, Monterey-Salinas Transit' %}
+{% include 'pull-quote.html',
+  color_scheme: quote_color_scheme,
+  content: quote_content,
+  source_name: quote_source_name,
+  source_title: quote_source_title
+%}
