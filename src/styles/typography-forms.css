@@ -45,7 +45,7 @@ h4,
 h5,
 .h5 {
   font-size: calc(18 / var(--text-base) * 1rem);
-  font-weight: 500;
+  font-weight: 700;
 }
 .text-body-xl {
   /* Referred to in Figma as "p2" */
