@@ -30,6 +30,12 @@
   background-color: var(--dsdl-purple-30);
   color: var(--dsdl-black);
 }
+.pull-quote_green {
+  background-color: var(--dsdl-green-20);
+}
+.pull-quote_green .pull-quote-content_attributed::before {
+  color: var(--dsdl-green-70);
+}
 .pull-quote_cyan-light {
   background-color: var(--dsdl-cyan-10);
   color: var(--dsdl-black);
