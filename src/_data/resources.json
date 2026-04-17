@@ -2,7 +2,7 @@
   {
     "title": "Sample User Agreement",
     "slug": "user-agreement-gtfs",
-    "tag": "GTFS-RT",
+    "tags": ["GTFS-RT"],
     "thumbnail": "/uploads/resources/thumbnails/sample-user-agreement.png",
     "description": "To enter into contract with your selected vendor",
     "filename": "/uploads/resources/Cal.ITP.User-Agreement-Contract-Form-MSA-5-21-70-28.docx",
@@ -12,7 +12,7 @@
   {
     "title": "Scope of work template",
     "slug": "sow-gtfs",
-    "tag": "GTFS-RT",
+    "tags": ["GTFS-RT"],
     "thumbnail": "/uploads/resources/thumbnails/scope-of-work.png",
     "description": "Document your project needs and goals to send to vendors",
     "filename": "/uploads/resources/Cal-ITP.GTFS.RT.MSA.SOW.Template.and.Guidance.docx",
@@ -22,7 +22,7 @@
   {
     "title": "Email template",
     "slug": "email-template-gtfs",
-    "tag": "GTFS-RT",
+    "tags": ["GTFS-RT"],
     "thumbnail": "/uploads/resources/thumbnails/email-template.png",
     "description": "To facilitate vendor outreach",
     "filename": "/uploads/resources/Cal.ITP.GTFS.RT.MSA.Vendor.Contact.Email.Template.docx",
@@ -32,7 +32,7 @@
   {
     "title": "Sample User Agreements",
     "slug": "user-agreement-tap-to-pay",
-    "tag": "Tap2Pay",
+    "tags": ["Tap2Pay"],
     "thumbnail": "/uploads/resources/thumbnails/sample-user-agreement.png",
     "description": "To enter into contract with your selected vendor",
     "filename": "/uploads/resources/Cal.ITP.Contactless.User-Agreements.zip",
@@ -42,7 +42,7 @@
   {
     "title": "Scope of work template",
     "slug": "sow-tap-to-pay",
-    "tag": "Tap2Pay",
+    "tags": ["Tap2Pay"],
     "thumbnail": "/uploads/resources/thumbnails/scope-of-work.png",
     "description": "Document your project needs and goals to send to vendors",
     "filename": "/uploads/resources/Cal-ITP.Contactless.MSA.SOW.Template.and.Guidance.docx",
@@ -51,7 +51,7 @@
   {
     "title": "Email templates",
     "slug": "email-template-tap-to-pay",
-    "tag": "Tap2Pay",
+    "tags": ["Tap2Pay"],
     "thumbnail": "/uploads/resources/thumbnails/email-template.png",
     "description": "To facilitate vendor outreach",
     "filename": "/uploads/resources/Cal.ITP.Contactless.MSA.Vendor.Contact.Email.Template.docx",
@@ -61,7 +61,7 @@
   {
     "title": "Statewide Fare Guidelines Toolkit",
     "slug": "statewide-fare-guidelines-toolkit",
-    "tag": "Tap2Pay",
+    "tags": ["Tap2Pay"],
     "thumbnail": "/uploads/resources/thumbnails/statewide-fare-guidelines-toolkit.png",
     "description": "",
     "filename": "/uploads/resources/Cal-ITP.Statewide.Fare.Guidelines.Toolkit.pdf",
@@ -71,7 +71,7 @@
   {
     "title": "Contactless Payments Introduction",
     "slug": "contactless-payments-introduction",
-    "tag": "Tap2Pay",
+    "tags": ["Tap2Pay"],
     "thumbnail": "/uploads/resources/thumbnails/contactless-payments-introduction.png",
     "description": "To enter into contract with your selected vendor",
     "filename": "/uploads/resources/Cal-ITP.Contactless.Payments.Introduction.pdf",
@@ -81,7 +81,7 @@
   {
     "title": "MSA Cost Estimation Tool",
     "slug": "msa-cost-estimation-tool",
-    "tag": "Tap2Pay",
+    "tags": ["Tap2Pay"],
     "thumbnail": "/uploads/resources/thumbnails/msa-cost-estimation-tool.png",
     "description": "To enter into contract with your selected vendor",
     "filename": "/uploads/resources/Cal-ITP.MSA-Cost-Estimation-Tool.xlsx",
@@ -91,7 +91,7 @@
   {
     "title": "Marketing materials",
     "slug": "marketing-materials",
-    "tag": "Tap2Pay",
+    "tags": ["Rider benefits", "Tap2Pay"],
     "thumbnail": "/uploads/resources/thumbnails/marketing-materials.png",
     "description": "To facilitate customer communications and marketing",
     "filename": "/uploads/resources/Cal-ITP.Marketing.Materials.zip",

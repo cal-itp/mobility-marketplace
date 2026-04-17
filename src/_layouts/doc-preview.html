@@ -8,14 +8,16 @@ stylesheet: doc-preview.css
 
 {% assign url = page.url %}
 {% assign resource = resources | where: 'slug', page.fileSlug | first %}
-{% assign resourceTag = resource.tag %}
+{% assign resourceTags = resource.tags %}
 
 <section class="dl-hero my-4">
   <div class="container">
     <div class="row">
       <div class="dl-hero-text col-12 col-lg-4 offset-lg-1">
         <div>
-          <div class="dl-tag">{{ resource.tag }}</div>
+          {% for tag in resourceTags %}
+            <div class="dl-tag">{{ tag }}</div>
+          {% endfor %}
         </div>
         <h1 class="mt-2 mb-lg-3 text-start">{{ resource.title }}</h1>
         <a class="dl-button my-3 my-lg-4" href="{{resource.filename}}" download>Download</a>
@@ -28,5 +30,9 @@ stylesheet: doc-preview.css
     </div>
   </div>
 </section>
-{% include 'downloadable-resources.html', resource_tag: resourceTag, heading: 'Related documents', current_slug: resource.slug %}
+{% include 'downloadable-resources.html',
+  resource_tags: resourceTags,
+  heading: 'Related documents',
+  current_slug: resource.slug
+%}
 <div class="spacer-10"></div>

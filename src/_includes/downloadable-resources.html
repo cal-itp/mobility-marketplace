@@ -2,7 +2,7 @@
   Usage:
     {% include 'related-documents.html' resource_tag:'Tap2Pay' %}
   Parameters:
-    * resource_tag (string) - the name of a tag to filter on
+    * resource_tags (Array of strings) - the names of a tags to filter on
   Optional Parameters:
     * heading (string) : 'Downloadable resources' - the heading to display above the cards
     * current_slug (string) : to avoid displaying a card for the resource currently being previewed
@@ -14,22 +14,24 @@
   <h2 class="h3 text-center pt-4 m-4 pb-2">{{ heading | default: 'Downloadable resources' }}</h2>
   <div class="d-flex flex-md-row flex-column flex-wrap justify-content-center align-content-center gap-4">
     {% for resource in resources %}
-      {% if resource.tag == resource_tag and resource.slug != current_slug %}
-        {% assign dl_img = resource.thumbnail %}
-        {% assign dl_tag = resource_tag %}
-        {% assign dl_title = resource.title %}
-        {% assign dl_description = resource.description %}
-        {% assign dl_view_url = '/resources/' | append: resource.slug %}
-        {% assign dl_download_url = resource.filename %}
-        {% include 'dl-card.html',
-          img: dl_img,
-          tag: dl_tag,
-          title: dl_title,
-          description: dl_description,
-          view_url: dl_view_url,
-          download_url: dl_download_url
-        %}
-      {% endif %}
+      {% for tag in resource_tags %}
+        {% if resource.tags contains tag and resource.slug != current_slug %}
+          {% assign dl_img = resource.thumbnail %}
+          {% assign dl_tags = resource.tags %}
+          {% assign dl_title = resource.title %}
+          {% assign dl_description = resource.description %}
+          {% assign dl_view_url = '/resources/' | append: resource.slug %}
+          {% assign dl_download_url = resource.filename %}
+          {% include 'dl-card.html',
+            img: dl_img,
+            tags: dl_tags,
+            title: dl_title,
+            description: dl_description,
+            view_url: dl_view_url,
+            download_url: dl_download_url
+          %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
 </div>
