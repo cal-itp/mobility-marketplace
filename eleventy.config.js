@@ -3,7 +3,8 @@ import sitemap from "@quasibit/eleventy-plugin-sitemap";
 
 import site from "./src/_data/site.js";
 
-const md = markdownIt();
+// this matches 11ty's default markdown settings
+const md = markdownIt({ html: true });
 
 export default async function (eleventyConfig) {
   // Add markdown filter for rendering description content
