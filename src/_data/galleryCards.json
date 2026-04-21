@@ -30,5 +30,13 @@
     "name": "GTFS Realtime",
     "img": "showcase_gtfs-rt.jpg",
     "imgAlt": "A collage showing a GTFS code snippet alongside a phone screen that shows a bus approaching in real time."
+  },
+  {
+    "title": "Tap for rider benefits",
+    "description": "Offer tap to pay reduced fares for older adults, veterans, CalFresh recipients, and more",
+    "href": "/rider-benefits/",
+    "name": "rider benefits",
+    "img": "showcase_rider-benefits.jpg",
+    "imgAlt": "A collage of a web page enrolling a rider in a reduced fare, and an older man with a walker using contactless payments to board a bus and get a reduced fare."
   }
 ]
