@@ -1,6 +1,6 @@
 ---
 layout: doc-preview
-description: >
+description: |
   This document is both a guide and fillable template for purchasing services to help your agency implement GTFS Realtime across your fleet. It will walk you through how to turn your project needs and goals into a Scope of Work (SOW) to send to vendors in order to purchase tap to pay hardware and software via the Master Service Agreement (MSA).
 ---
 

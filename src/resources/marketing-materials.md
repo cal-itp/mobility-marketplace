@@ -1,6 +1,6 @@
 ---
 layout: doc-preview
-description: >
+description: |
   Cal-ITP has developed a general Tap2Ride logo and marketing templates (in English and Spanish) for any CA agency to use/adapt with their own colors and agency logo. Options exist for various scenarios, including discounts and fare capping.
   <br>
   <br>
