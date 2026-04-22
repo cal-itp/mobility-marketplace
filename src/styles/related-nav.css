@@ -15,18 +15,22 @@
   color: var(--button-text-color);
   text-decoration: none;
 }
+.related-nav-link:active,
+.related-nav-link:focus,
+.related-nav-link:hover {
+  color: var(--button-active-text-color);
+}
+.related-nav-link:focus,
+.related-nav-link:hover {
+  background-color: var(--dsdl-cyan-60);
+}
 .related-nav-link:focus {
   outline: var(--button-focus-outline);
   outline-offset: var(--button-focus-outline-offset);
 }
-.related-nav-link:hover {
-  border-color: var(--button-hover-border-color);
-  background-color: var(--button-hover-bg-color);
-}
 .related-nav-link:active {
   border-color: var(--button-active-border-color);
   background-color: var(--button-active-bg-color);
-  color: var(--button-active-text-color);
 }
 .related-nav-link > .text {
   flex-grow: 1;
