@@ -20,8 +20,8 @@
   outline-offset: var(--button-focus-outline-offset);
 }
 .related-nav-link:hover {
-  border-color: var(--button-hover-border-color);
-  background-color: var(--button-hover-bg-color);
+  background-color: var(--dsdl-cyan-60);
+  color: white;
 }
 .related-nav-link:active {
   border-color: var(--button-active-border-color);
