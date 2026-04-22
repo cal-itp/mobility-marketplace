@@ -16,8 +16,10 @@
   text-decoration: none;
 }
 .related-nav-link:focus {
+  background-color: var(--dsdl-cyan-60);
   outline: var(--button-focus-outline);
   outline-offset: var(--button-focus-outline-offset);
+  color: white;
 }
 .related-nav-link:hover {
   background-color: var(--dsdl-cyan-60);
