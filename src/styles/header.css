@@ -94,3 +94,7 @@
 .navbar-toggler {
   border: none;
 }
+
+.navbar-nav > li {
+  margin-bottom: 0;
+}

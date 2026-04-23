@@ -2,6 +2,15 @@
 @import url("related-nav.css");
 @import url("pull-quotes.css");
 
+/* unordered lists */
+
+ul > li {
+  margin-bottom: var(--spacing-1);
+}
+ul > li:last-child {
+  margin-bottom: 0;
+}
+
 /* HERO IMAGE */
 
 .hero-img {
