@@ -93,6 +93,14 @@
   background-color: var(--dsdl-purple-80);
   color: white;
 }
+.step-list_green {
+  border-left-color: var(--dsdl-green-70);
+}
+.step-list_green li::before,
+.numbered_green::before {
+  background-color: var(--dsdl-green-70);
+  color: white
+}
 .step-list_cyan-light {
   border-left-color: var(--dsdl-cyan-10);
 }
