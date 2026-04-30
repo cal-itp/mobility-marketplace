@@ -108,7 +108,7 @@ ul > li:last-child {
 .step-list_green li::before,
 .numbered_green::before {
   background-color: var(--dsdl-green-70);
-  color: white
+  color: white;
 }
 .step-list_cyan-light {
   border-left-color: var(--dsdl-cyan-10);
