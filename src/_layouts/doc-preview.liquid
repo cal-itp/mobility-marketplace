@@ -30,9 +30,5 @@ stylesheet: doc-preview.css
     </div>
   </div>
 </section>
-{% include 'downloadable-resources.html',
-  resource_tags: resourceTags,
-  heading: 'Related documents',
-  current_slug: resource.slug
-%}
+{% include 'downloadable-resources', resource_tags: resourceTags, heading: 'Related documents', current_slug: resource.slug %}
 <div class="spacer-10"></div>

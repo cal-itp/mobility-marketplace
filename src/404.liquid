@@ -5,21 +5,20 @@ stylesheet: 404.css
 eleventyExcludeFromCollections: true
 permalink: 404.html
 ---
-
 <div class="container-sm">
   <div class="d-flex flex-column align-items-center wrapper-404">
     <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3">
-      <img class="out-of-service" src="/uploads/hero_out-of-service.png" alt="" />
+      <img class="out-of-service" src="/uploads/hero_out-of-service.png" alt="">
       <div class="heading-404">
         <h1 class="text-start">Out of service</h1>
-        <p class="h4 mt-4">The page you are looking for has been moved or doesn't exist.</h4>
+        <p class="h4 mt-4">The page you are looking for has been moved or doesn't exist.</p>
       </div>
     </div>
     <div class="mb-4">
       <h2 class="h3">Return home or jump to our guides:</h2>
       <nav class="global-nav" aria-label="Primary">
         <ul class="d-flex flex-column flex-md-row gap-md-3 gap-4 my-2">
-          {% include 'link-repeater.html', menu_items:site.navigation %}
+          {% include 'link-repeater', menu_items: site.navigation %}
         </ul>
       </nav>
     </div>
