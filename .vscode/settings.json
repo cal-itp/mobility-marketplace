@@ -7,17 +7,12 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "files.associations": {
-    "*.html": "liquid"
-  },
-  "[javascript]": {
-    "editor.tabSize": 2
+  // the declarations below take precedence over file specific formatters specified in *user* settings
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.tabSize": 2
-  },
-  "[liquid]": {
-    "editor.defaultFormatter": "Shopify.theme-check-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
