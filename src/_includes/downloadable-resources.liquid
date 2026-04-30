@@ -22,7 +22,7 @@
           {% assign dl_description = resource.description %}
           {% assign dl_view_url = '/resources/' | append: resource.slug %}
           {% assign dl_download_url = resource.filename %}
-          {% include 'dl-card.html',
+          {% include 'dl-card',
             img: dl_img,
             tags: dl_tags,
             title: dl_title,
