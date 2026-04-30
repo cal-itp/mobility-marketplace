@@ -23,3 +23,13 @@ repos:
       - id: check-yaml
         args: ["--unsafe"]
       - id: check-added-large-files
+
+  # uses the version of node targeted in .node-version file
+  - repo: https://github.com/JoC0de/pre-commit-prettier
+    rev: v3.8.3
+    hooks:
+      - id: prettier
+        additional_dependencies:
+          - prettier@3.8.3
+          - "@shopify/prettier-plugin-liquid@1.10.2"
+        types_or: [css, html, javascript, json, liquid, markdown, yaml]
