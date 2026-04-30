@@ -36,16 +36,11 @@ stylesheet: homepage.css
           <rect width="4" height="16" rx="2" />
           <rect x="8" width="4" height="16" rx="2" />
         </svg>
-        <svg
-          class="play-icon"
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="currentcolor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg class="play-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
           <title>Resume icon</title>
-          <path d="M18.5 9.13398C19.1667 9.51888 19.1667 10.4811 18.5 10.866L6.5 17.7942C5.83333 18.1791 5 17.698 5 16.9282L5 3.0718C5 2.302 5.83333 1.82088 6.5 2.20578L18.5 9.13398Z" />
+          <path
+            d="M18.5 9.13398C19.1667 9.51888 19.1667 10.4811 18.5 10.866L6.5 17.7942C5.83333 18.1791 5 17.698 5 16.9282L5 3.0718C5 2.302 5.83333 1.82088 6.5 2.20578L18.5 9.13398Z"
+          />
         </svg>
         <span class="screen-reader-text visually-hidden">Toggle animation</span>
       </button>
@@ -73,20 +68,18 @@ stylesheet: homepage.css
           <h3 class="text-start mt-0">{{ card.title }}</h3>
           <p class="text-body-xl">{{ card.description }}</p>
           <a class="dl-button mt-3" href="{{ card.href }}">Read the {{ card.name }} guide</a>
-          <img
-            src="/uploads/{{ card.img }}"
-            alt="{{ card.imgAlt }}"
-          >
+          <img src="/uploads/{{ card.img }}" alt="{{ card.imgAlt }}">
         </div>
       </li>
     {% endfor %}
   </ul>
 </section>
 
-{% assign quote_content = 'Cal-ITP has been fantastic. Their support and collaboration has been immensely helpful as well as informative. So happy they are a part of our team!' %}
+{% assign quote_content = 'Cal-ITP has been fantastic. Their support and collaboration has been immensely helpful as well as
+informative. So happy they are a part of our team!' %}
 {% assign quote_source_name = 'Robin Van Valkenburgh' %}
 {% assign quote_source_title = 'Transit Services Division Manager, Nevada County Connects' %}
-{% include 'pull-quote.html', content: quote_content, source_name: quote_source_name, source_title: quote_source_title %}
+{% include 'pull-quote', content: quote_content, source_name: quote_source_name, source_title: quote_source_title %}
 
 <section class="container-sm my-5">
   <h2 class="mb-5">Improve rider experience and your agency’s operations</h2>
@@ -94,7 +87,10 @@ stylesheet: homepage.css
     <li class="col-md-6 col-lg-4">
       <div class="highlight">
         <h3>Grow ridership</h3>
-        <img src="/uploads/highlight_grow-ridership.png" alt="A person taps their card on a fare validator when boarding a bus.">
+        <img
+          src="/uploads/highlight_grow-ridership.png"
+          alt="A person taps their card on a fare validator when boarding a bus."
+        >
         <p class="text-body-xl">Tap to pay boosted London Underground ridership by 4%</p>
       </div>
     </li>
