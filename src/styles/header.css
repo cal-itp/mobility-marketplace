@@ -105,3 +105,19 @@
 .header:has(.navbar-toggler[aria-expanded="true"]) {
   border-bottom: 1px solid var(--dsdl-gray-30);
 }
+
+.navbar-border-top:has(+ .navbar .navbar-toggler.collapsed)::before {
+  display: none;
+}
+
+.navbar-border-top::before {
+  content: "";
+  position: absolute;
+
+  background-color: var(--dsdl-gray-30);
+  height: 1px;
+  /* Find the center of this child, then pull back to the screen's left edge */
+  left: calc(50% - 50vw);
+  top: 108px;
+  width: 100vw;
+}
