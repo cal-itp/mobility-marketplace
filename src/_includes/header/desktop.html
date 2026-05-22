@@ -1,4 +1,14 @@
-<header class="d-none d-lg-flex flex-column header mx-auto">
+<header class="d-none d-lg-flex flex-column-reverse header mx-auto">
+  <div class="d-flex justify-content-between align-items-center gap-3">
+    {% include 'site-logo.html' %}
+    <div class="d-flex flex-column align-items-end gap-3">
+      <nav class="global-nav" aria-label="Primary">
+        <ul class="d-flex justify-space-between">
+          {% include 'link-repeater.html', menu_items: site.navigation, list_class: 'mb-0' %}
+        </ul>
+      </nav>
+    </div>
+  </div>
   <div class="d-flex flex-column align-items-end gap-3">
     <nav class="d-flex gap-3">
       <a
@@ -20,15 +30,5 @@
         Contact
       </a>
     </nav>
-  </div>
-  <div class="d-flex justify-content-between align-items-center gap-3">
-    {% include 'site-logo.html' %}
-    <div class="d-flex flex-column align-items-end gap-3">
-      <nav class="global-nav" aria-label="Primary">
-        <ul class="d-flex justify-space-between">
-          {% include 'link-repeater.html', menu_items: site.navigation, list_class: 'mb-0' %}
-        </ul>
-      </nav>
-    </div>
   </div>
 </header>
