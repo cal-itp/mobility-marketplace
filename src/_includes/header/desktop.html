@@ -1,17 +1,34 @@
-<header class="d-none d-lg-flex align-items-center justify-content-between header mx-auto">
-  {% include 'site-logo.html' %}
-  <nav class="global-nav" aria-label="Primary">
-    <ul class="d-flex justify-space-between">
-      {% include 'link-repeater.html', menu_items: site.navigation list_class: 'mb-0' %}
-    </ul>
-  </nav>
-  <a
-    class="contact font-weight-bold"
-    href="/contact"
-    {% if page.url == '/contact.html' %}
-      aria-current="page"
-    {% endif %}
-  >
-    Contact
-  </a>
+<header class="d-none d-lg-flex flex-column header mx-auto">
+  <div class="d-flex flex-column align-items-end gap-3">
+    <nav class="d-flex gap-3">
+      <a
+        class="contact"
+        href="/about/"
+        {% if page.url == '/about/' %}
+          aria-current="page"
+        {% endif %}
+      >
+        About
+      </a>
+      <a
+        class="contact"
+        href="/contact/"
+        {% if page.url == '/contact/' %}
+          aria-current="page"
+        {% endif %}
+      >
+        Contact
+      </a>
+    </nav>
+  </div>
+  <div class="d-flex justify-content-between align-items-center gap-3">
+    {% include 'site-logo.html' %}
+    <div class="d-flex flex-column align-items-end gap-3">
+      <nav class="global-nav" aria-label="Primary">
+        <ul class="d-flex justify-space-between">
+          {% include 'link-repeater.html', menu_items: site.navigation, list_class: 'mb-0' %}
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>
