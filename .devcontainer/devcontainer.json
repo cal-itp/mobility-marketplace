@@ -18,12 +18,12 @@
         }
       },
       "extensions": [
-        "bungcip.better-toml",
         "eamodio.gitlens",
         "esbenp.prettier-vscode",
         "mhutchie.git-graph",
         "redhat.vscode-xml",
-        "shopify.theme-check-vscode"
+        "shopify.theme-check-vscode",
+        "tombi-toml.tombi"
       ]
     }
   }
