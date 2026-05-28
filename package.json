@@ -9,10 +9,14 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
     "@quasibit/eleventy-plugin-sitemap": "^2.0.0",
-    "markdown-it": "^14.1.1"
+    "@shopify/prettier-plugin-liquid": "^1.10.2",
+    "markdown-it": "^14.1.1",
+    "prettier": "^3.8.3"
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve"
+    "start": "npx @11ty/eleventy --serve",
+    "lint:check": "npx prettier --check .",
+    "lint:fix": "npx prettier --write ."
   }
 }
