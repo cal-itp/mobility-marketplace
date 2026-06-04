@@ -5,4 +5,4 @@ services:
       dockerfile: .devcontainer/Dockerfile
     command: sleep infinity
     volumes:
-      - ..:/usr/src/mobimart
+      - ..:/home/mobimart/site
