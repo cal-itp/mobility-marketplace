@@ -76,6 +76,45 @@ ul > li:last-child {
   left: calc(-1 * var(--spacing-6));
   line-height: calc(2rem + (1rem / 16));
 }
+
+.vo-friendly::before {
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  content: attr(data-number);
+  color: var(--dsdl-black);
+  text-align: center;
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xxl);
+  font-weight: bold;
+  width: 1.75em;
+  height: 1.75em;
+  line-height: 1.75em;
+  background-color: var(--calitp-brand-yellow);
+}
+
+.vo-friendly.purple::before {
+  background-color: var(--dsdl-purple-80);
+  color: white;
+}
+
+.vo-friendly.cyan-light::before {
+  background-color: var(--dsdl-cyan-10);
+}
+
+.vo-friendly.cyan-dark::before {
+  background-color: var(--dsdl-cyan-60);
+  color: white;
+}
+
+.vo-friendly h3 {
+  position: relative;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  padding-left: 2.5em;
+  margin-top: var(--spacing-5);
+}
+
 .numbered::before {
   content: attr(data-number);
   width: 1.75em;
