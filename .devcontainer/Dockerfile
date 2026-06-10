@@ -20,11 +20,11 @@ RUN curl https://mise.run | sh
 
 RUN apt-get update
 
-RUN git config --global --add safe.directory $HOME
-
 # Install Python dependencies
 COPY .devcontainer/requirements.txt .devcontainer/requirements.txt
 RUN python -m pip install --upgrade pip
 RUN pip install --no-cache-dir -r .devcontainer/requirements.txt
 
 USER $USER
+
+RUN git config --global --add safe.directory $HOME
