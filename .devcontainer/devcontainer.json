@@ -2,9 +2,9 @@
   "name": "cal-itp/mobility-marketplace",
   "dockerComposeFile": "compose.yml",
   "service": "site",
-  "workspaceFolder": "/usr/src/mobimart",
+  "workspaceFolder": "/home/mobimart/site",
   "remoteEnv": {
-    "MISE_TRUSTED_CONFIG_PATHS": "${containerEnv:PATH}:/usr/src/mobimart"
+    "MISE_TRUSTED_CONFIG_PATHS": "${containerEnv:PATH}:/home/mobimart/site"
   },
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "customizations": {
