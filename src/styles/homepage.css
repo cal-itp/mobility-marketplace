@@ -16,10 +16,10 @@
   padding: 0;
   border-width: 1px;
   border-style: solid;
-  border-color: var(--dsdl-cyan-50);
+  border-color: var(--dsdl-cyan-60);
   border-radius: var(--button-border-radius);
   background-color: transparent;
-  color: var(--dsdl-cyan-50);
+  color: var(--dsdl-cyan-60);
 }
 .pause-icon {
   display: none;
