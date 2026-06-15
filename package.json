@@ -9,7 +9,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
     "@quasibit/eleventy-plugin-sitemap": "^2.0.0",
-    "@shopify/prettier-plugin-liquid": "^1.10.2",
+    "@shopify/prettier-plugin-liquid": "^1.10.3",
     "markdown-it": "^14.2.0",
     "prettier": "^3.8.4"
   },
