@@ -49,209 +49,223 @@ for our small team. We’re able to prioritize GTFS-RT first and foremost before
 
 <div class="container">
   <h2>Agency guide for real-time data</h2>
-  <h3 class="numbered numbered_cyan-light" data-number="1">Assemble your basics</h3>
-  <p>Confirm your current GTFS Schedule feed is correct and up-to-date.</p>
-  <ul>
+  <ol class="numbered-list numbered-list_cyan-light">
     <li>
-      If you do not have a GTFS Schedule feed, please
-      <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">reach out</a> to discuss your options. If you need
-      educational information to share with your staff or board of directors, please review the
-      <a href="/gtfs-intro">Introduction to GTFS</a>
+      <h3>Assemble your basics</h3>
+      <p>Confirm your current GTFS Schedule feed is correct and up-to-date.</p>
+      <ul>
+        <li>
+          If you do not have a GTFS Schedule feed, please
+          <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">reach out</a> to discuss your options. If you
+          need educational information to share with your staff or board of directors, please review the
+          <a href="/gtfs-intro">Introduction to GTFS</a>
+        </li>
+        <li>If you have a Schedule feed, Cal-ITP provides monthly data quality reports.</li>
+      </ul>
+      <p>
+        Check your fleet’s internet connectivity; a data connection is required, and you may need to upgrade existing data plans.
+      </p>
+      <ul>
+        <li>
+          Check out the <a href="/data-plans">pre-negotiated data plans</a> your agency may be eligible to upgrade and save on
+          monthly costs.
+        </li>
+      </ul>
+      <p>Check with your funding agencies.</p>
+      <ul>
+        <li>
+          Projects from these MSAs may be funded through grants from the
+          <a href="https://www.transit.dot.gov/funding/grants/grant-programs">FTA<span aria-label="(external link)">↗</span></a
+          >, <a href="https://dot.ca.gov/">Caltrans<span aria-label="(external link)">↗</span></a
+          >, and other sources of local and state public funding.
+        </li>
+      </ul>
+      <p>
+        <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">Connect</a> with an Cal-ITP Account Manager for
+        guided GTFS Realtime support
+      </p>
     </li>
-    <li>If you have a Schedule feed, Cal-ITP provides monthly data quality reports.</li>
-  </ul>
-  <p>Check your fleet’s internet connectivity; a data connection is required, and you may need to upgrade existing data plans.</p>
-  <ul>
     <li>
-      Check out the <a href="/data-plans">pre-negotiated data plans</a> your agency may be eligible to upgrade and save on monthly
-      costs.
+      <h3>Understand purchase options</h3>
+      <h4 class="mt-3">How to buy off the pre-procured bench</h4>
+      <p>
+        California offers 3 MSAs (Master Service Agreements) that make it easy to purchase GTFS Realtime software (and optional
+        hardware) without doing your own procurement. You can purchase through these agreements and negotiate the best prices for
+        your agency.
+      </p>
+      <p>All contracts include:</p>
+      <ul>
+        <li>Creation of GTFS Realtime feeds</li>
+        <li>Integration into up to 3 journey planning apps (i.e. Google Maps, Transit App, Apple Maps, etc.)</li>
+        <li>Optional hardware for purchase*</li>
+      </ul>
+      <p>
+        *Hardware is necessary to enable software services, however transit providers may choose to either use their own hardware
+        or purchase devices through the MSA
+      </p>
+      <h4 id="contracts" class="mt-3">GTFS Realtime MSAs</h4>
+      <p class="table-caption">Click on each MSA for terms and conditions.</p>
+      <div class="table-responsive my-3">
+        <table class="table_cyan mb-2">
+          <thead>
+            <tr>
+              <th scope="col">MSA vendors</th>
+              <th scope="col">MSAs</th>
+              <th scope="col">Pricing structure</th>
+              <th scope="col">Hardware options**</th>
+              <th scope="col">Eligible networks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Connexionz Ltd</th>
+              <td>
+                <a
+                  href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-01&SETID=STATE&VERSION_NBR=3"
+                  >5-24-70-42-01</a
+                >
+              </td>
+              <td>Base fee + variable fees based on EITHER vehicles or routes</td>
+              <td>Cellular routing kit (with Pepwave MAX BR1 Mini)</td>
+              <td>
+                <ul>
+                  <li>WiFi</li>
+                  <li>AT&T</li>
+                  <li class="text-nowrap">T-Mobile</li>
+                  <li>Verizon</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Passio Technologies LLC</th>
+              <td>
+                <a
+                  href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-24-70-42-02"
+                  >5-24-70-42-02</a
+                >
+              </td>
+              <td>Base fee + variable fees based on EITHER vehicles or routes</td>
+              <td>
+                <ul>
+                  <li>Calamp LMU-3641</li>
+                  <li>Lilliput RT-V7000 Pro</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>WiFi</li>
+                  <li>AT&T</li>
+                  <li class="text-nowrap">T-Mobile</li>
+                  <li>Verizon</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2" style="border-bottom: none">Swiftly Inc</th>
+              <td rowspan="2" style="border-bottom: none">
+                <a
+                  href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-03&SETID=STATE&VERSION_NBR=2"
+                  >5-24-70-42-03</a
+                >
+              </td>
+              <td rowspan="2" style="border-bottom: none">Variable fees based on number of vehicles</td>
+              <td>Samsara VG55</td>
+              <td>
+                <ul>
+                  <li>WiFi</li>
+                  <li>AT&T</li>
+                  <li>FirstNet</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              {% comment %} part of above Swiftly row; classes compensate for sticky first cell styling {% endcomment %}
+              <td class="position-static border-start-0">
+                <ul>
+                  <li>Samsung Tab Active 5</li>
+                  <li>Cradlepoint R1900</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>WiFi</li>
+                  <li>AT&T</li>
+                  <li>FirstNet</li>
+                  <li>T-Mobile</li>
+                  <li>Verizon</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-caption">
+        **You can always bring your own hardware. These are simply the options you could purchase through each vendor. Purchase
+        through a vendor includes a 5-year device warranty.
+      </p>
+      <h4 class="mt-3">Draft a Scope of Work (SOW)</h4>
+      <p>
+        Creating a clear, focused SOW will ensure vendors understand your needs. Download and fill in our
+        <a href="/resources/sow-gtfs">SOW template</a>. Be sure to specify your operating goals, technical environment, and any
+        must-have features or services. Your Cal-ITP Account Manager can offer guidance and review your SOW before sending it to
+        vendors.
+      </p>
     </li>
-  </ul>
-  <p>Check with your funding agencies.</p>
-  <ul>
     <li>
-      Projects from these MSAs may be funded through grants from the
-      <a href="https://www.transit.dot.gov/funding/grants/grant-programs">FTA<span aria-label="(external link)">↗</span></a
-      >, <a href="https://dot.ca.gov/">Caltrans<span aria-label="(external link)">↗</span></a
-      >, and other sources of local and state public funding.
+      <h3>Engage vendors</h3>
+      <p>
+        Send your SOW to vendors. We recommend sending the SOW to all MSA-awarded vendors using our
+        <a href="/resources/email-template-gtfs">email template</a>. Their up-to-date contact information can be found in the MSA
+        User Instructions document (vendor links:
+        <a
+          href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-24-70-42-01"
+          >Connexionz Ltd<span aria-label="(external link)">↗</span></a
+        >,
+        <a
+          href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-02&SETID=STATE&VERSION_NBR=2"
+          >Passio Technologies LLC<span aria-label="(external link)">↗</span></a
+        >,
+        <a
+          href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-03&SETID=STATE&VERSION_NBR=3"
+          >Swiftly Inc<span aria-label="(external link)">↗</span></a
+        >)
+      </p>
+      <p>Assess proposals and negotiate as needed; don’t be afraid to ask questions or request changes.</p>
     </li>
-  </ul>
-  <p>
-    <a href="mailto:hello@calitp.org" aria-label="hello at cal i t p dot org">Connect</a> with an Cal-ITP Account Manager for
-    guided GTFS Realtime support
-  </p>
-  <h3 class="numbered numbered_cyan-light" data-number="2">Understand purchase options</h3>
-  <h4 class="mt-3">How to buy off the pre-procured bench</h4>
-  <p>
-    California offers 3 MSAs (Master Service Agreements) that make it easy to purchase GTFS Realtime software (and optional
-    hardware) without doing your own procurement. You can purchase through these agreements and negotiate the best prices for your
-    agency.
-  </p>
-  <p>All contracts include:</p>
-  <ul>
-    <li>Creation of GTFS Realtime feeds</li>
-    <li>Integration into up to 3 journey planning apps (i.e. Google Maps, Transit App, Apple Maps, etc.)</li>
-    <li>Optional hardware for purchase*</li>
-  </ul>
-  <p>
-    *Hardware is necessary to enable software services, however transit providers may choose to either use their own hardware or
-    purchase devices through the MSA
-  </p>
-  <h4 id="contracts" class="mt-3">GTFS Realtime MSAs</h4>
-  <p class="table-caption">Click on each MSA for terms and conditions.</p>
-  <div class="table-responsive my-3">
-    <table class="table_cyan mb-2">
-      <thead>
-        <tr>
-          <th scope="col">MSA vendors</th>
-          <th scope="col">MSAs</th>
-          <th scope="col">Pricing structure</th>
-          <th scope="col">Hardware options**</th>
-          <th scope="col">Eligible networks</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>Connexionz Ltd</th>
-          <td>
-            <a
-              href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-01&SETID=STATE&VERSION_NBR=3"
-              >5-24-70-42-01</a
-            >
-          </td>
-          <td>Base fee + variable fees based on EITHER vehicles or routes</td>
-          <td>Cellular routing kit (with Pepwave MAX BR1 Mini)</td>
-          <td>
-            <ul>
-              <li>WiFi</li>
-              <li>AT&T</li>
-              <li class="text-nowrap">T-Mobile</li>
-              <li>Verizon</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <th>Passio Technologies LLC</th>
-          <td>
-            <a
-              href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-24-70-42-02"
-              >5-24-70-42-02</a
-            >
-          </td>
-          <td>Base fee + variable fees based on EITHER vehicles or routes</td>
-          <td>
-            <ul>
-              <li>Calamp LMU-3641</li>
-              <li>Lilliput RT-V7000 Pro</li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li>WiFi</li>
-              <li>AT&T</li>
-              <li class="text-nowrap">T-Mobile</li>
-              <li>Verizon</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <th rowspan="2" style="border-bottom: none">Swiftly Inc</th>
-          <td rowspan="2" style="border-bottom: none">
-            <a
-              href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-03&SETID=STATE&VERSION_NBR=2"
-              >5-24-70-42-03</a
-            >
-          </td>
-          <td rowspan="2" style="border-bottom: none">Variable fees based on number of vehicles</td>
-          <td>Samsara VG55</td>
-          <td>
-            <ul>
-              <li>WiFi</li>
-              <li>AT&T</li>
-              <li>FirstNet</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          {% comment %} part of above Swiftly row; classes compensate for sticky first cell styling {% endcomment %}
-          <td class="position-static border-start-0">
-            <ul>
-              <li>Samsung Tab Active 5</li>
-              <li>Cradlepoint R1900</li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li>WiFi</li>
-              <li>AT&T</li>
-              <li>FirstNet</li>
-              <li>T-Mobile</li>
-              <li>Verizon</li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="table-caption">
-    **You can always bring your own hardware. These are simply the options you could purchase through each vendor. Purchase
-    through a vendor includes a 5-year device warranty.
-  </p>
-  <h4 class="mt-3">Draft a Scope of Work (SOW)</h4>
-  <p>
-    Creating a clear, focused SOW will ensure vendors understand your needs. Download and fill in our
-    <a href="/resources/sow-gtfs">SOW template</a>. Be sure to specify your operating goals, technical environment, and any
-    must-have features or services. Your Cal-ITP Account Manager can offer guidance and review your SOW before sending it to
-    vendors.
-  </p>
-  <h3 class="numbered numbered_cyan-light" data-number="3">Engage vendors</h3>
-  <p>
-    Send your SOW to vendors. We recommend sending the SOW to all MSA-awarded vendors using our
-    <a href="/resources/email-template-gtfs">email template</a>. Their up-to-date contact information can be found in the MSA User
-    Instructions document (vendor links:
-    <a
-      href="https://caleprocure.ca.gov/PSRelay/ZZ_PO.ZZ_CTR_SUP_CMP.GBL?Page=ZZ_CTR_SUP_PG&Action=U&SETID=STATE&CNTRCT_ID=5-24-70-42-01"
-      >Connexionz Ltd<span aria-label="(external link)">↗</span></a
-    >,
-    <a
-      href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-02&SETID=STATE&VERSION_NBR=2"
-      >Passio Technologies LLC<span aria-label="(external link)">↗</span></a
-    >,
-    <a
-      href="https://caleprocure.ca.gov/pages/LPASearch/lpa-details.aspx?Page=ZZ_CTR_SUP_PG&Action=U&ForceSearch=Y&CNTRCT_ID=5-24-70-42-03&SETID=STATE&VERSION_NBR=3"
-      >Swiftly Inc<span aria-label="(external link)">↗</span></a
-    >)
-  </p>
-  <p>Assess proposals and negotiate as needed; don’t be afraid to ask questions or request changes.</p>
-  <h3 class="numbered numbered_cyan-light" data-number="4">Sign your user agreement</h3>
-  <p>
-    Once you’ve selected the winning proposal, you and the MSA vendor must execute a User Agreement including the SOW, agreed
-    pricing, and referencing the MSA terms. You can use a Standard Agreement such as
-    <a
-      href="https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1"
-      >STD 213 for DGS<span aria-label="(external link)">↗</span></a
-    >
-    or <a href="/resources/user-agreement-gtfs">Sample User Agreement</a>.
-  </p>
-  <p>
-    The User Agreement references the terms of the MSA and allows items to be specified, for example, you can modify the default
-    SLAs/KPIs. The term of the MSAs is for 3 years, with the option to extend for 2-year periods twice.
-  </p>
-  <h3 class="numbered numbered_cyan-light" data-number="5">Get ready to launch</h3>
-  <p>
-    Work closely with your vendor to implement and begin generating real-time data. If technical or practical issues arise,
-    dedicated support channels are available for ongoing troubleshooting.
-  </p>
-  <p>
-    Your User Agreement will contain SLAs/KPIs. If the vendor is unable to meet the SLAs/KPIs or the completion of Project
-    Implementation Plans is late, it may trigger service credits for you.
-  </p>
-  <h4 class="mt-3">Tell your riders</h4>
-  <p>
-    Share the exciting news with your riders and community. Consider reaching out to local press or
-    <a href="https://cal.streetsblog.org/">Streetsblog<span aria-label="(external link)">↗</span></a
-    >. Take a moment to celebrate the hard work of launching GTFS Realtime!
-  </p>
+    <li>
+      <h3>Sign your user agreement</h3>
+      <p>
+        Once you’ve selected the winning proposal, you and the MSA vendor must execute a User Agreement including the SOW, agreed
+        pricing, and referencing the MSA terms. You can use a Standard Agreement such as
+        <a
+          href="https://www.dgs.ca.gov/ols/Forms?search=213&topicCategoryFilters=&audienceCategoryFilters=9048d318e266493abfd2361dc40d1f45&sort=relevance&activeFilters=audience%7C&page=1"
+          >STD 213 for DGS<span aria-label="(external link)">↗</span></a
+        >
+        or <a href="/resources/user-agreement-gtfs">Sample User Agreement</a>.
+      </p>
+      <p>
+        The User Agreement references the terms of the MSA and allows items to be specified, for example, you can modify the
+        default SLAs/KPIs. The term of the MSAs is for 3 years, with the option to extend for 2-year periods twice.
+      </p>
+    </li>
+    <li>
+      <h3>Get ready to launch</h3>
+      <p>
+        Work closely with your vendor to implement and begin generating real-time data. If technical or practical issues arise,
+        dedicated support channels are available for ongoing troubleshooting.
+      </p>
+      <p>
+        Your User Agreement will contain SLAs/KPIs. If the vendor is unable to meet the SLAs/KPIs or the completion of Project
+        Implementation Plans is late, it may trigger service credits for you.
+      </p>
+      <h4 class="mt-3">Tell your riders</h4>
+      <p>
+        Share the exciting news with your riders and community. Consider reaching out to local press or
+        <a href="https://cal.streetsblog.org/">Streetsblog<span aria-label="(external link)">↗</span></a
+        >. Take a moment to celebrate the hard work of launching GTFS Realtime!
+      </p>
+    </li>
+  </ol>
   <h2 class="pt-5 mt-2 mt-md-3">Additional info</h2>
   <h3 class="mt-0">Commonly asked questions</h3>
   <h4 class="mt-0">Do I need any special hardware?</h4>
