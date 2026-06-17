@@ -26,8 +26,23 @@ ul > li:last-child {
   }
 }
 
-/* STEP LIST */
+/* STEP LIST and NUMBERED LIST */
 
+.numbered-list,
+.step-list {
+  counter-reset: li;
+  list-style: none;
+  padding-inline-start: unset;
+}
+/* override bootstrap defaults for nested lists */
+.numbered-list ul {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+.numbered-list h3 {
+  padding-bottom: var(--spacing-1);
+  padding-left: var(--spacing-10);
+}
 .step-list {
   /* This dance of padding/border/margin is needed to
      align the left border with the center of the markers
@@ -39,28 +54,29 @@ ul > li:last-child {
   /* Bottom padding ensures the vertical line extends below the last item. */
   padding-bottom: var(--spacing-3);
   font-size: var(--text-l);
-  list-style: none;
-  counter-reset: step-list;
 }
-.numbered {
+.numbered-list > li,
+.step-list li {
   position: relative;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
-  padding-left: 2.5em;
-  margin-top: var(--spacing-5);
+}
+.numbered-list > li {
+  margin-bottom: 1em;
+  margin-top: calc(var(--spacing-5) + 8px);
 }
 .step-list li {
   margin-bottom: var(--spacing-3);
-  position: relative;
-  counter-increment: step-list;
 }
 .step-list li:last-child {
   margin-bottom: 0;
 }
-.step-list li::before,
-.numbered::before {
+.step-list li::before {
   display: block;
+}
+.numbered-list > li::before,
+.step-list li::before {
   border-radius: 100%;
+  content: counter(li);
+  counter-increment: li;
   position: absolute;
   background-color: var(--dsdl-gray-20);
   color: var(--dsdl-black);
@@ -70,58 +86,55 @@ ul > li:last-child {
   text-align: center;
 }
 .step-list li::before {
-  content: counter(step-list);
   width: var(--spacing-4);
   height: var(--spacing-4);
   left: calc(-1 * var(--spacing-6));
   line-height: calc(2rem + (1rem / 16));
 }
-.numbered::before {
-  content: attr(data-number);
-  width: 1.75em;
+.numbered-list > li::before {
+  font-size: 2em;
   height: 1.75em;
   left: 0;
-  top: 0;
-  font-size: 1em;
   line-height: 1.75em;
+  top: -8px;
+  width: 1.75em;
 }
-
 .step-list_yellow {
   border-left-color: var(--calitp-brand-yellow);
 }
-.step-list_yellow li::before,
-.numbered_yellow::before {
+.numbered-list_yellow > li::before,
+.step-list_yellow li::before {
   background-color: var(--calitp-brand-yellow);
   color: var(--dsdl-black);
 }
 .step-list_purple {
   border-left-color: var(--dsdl-purple-80);
 }
-.step-list_purple li::before,
-.numbered_purple::before {
+.numbered-list_purple > li::before,
+.step-list_purple li::before {
   background-color: var(--dsdl-purple-80);
   color: white;
 }
 .step-list_green {
   border-left-color: var(--dsdl-green-70);
 }
-.step-list_green li::before,
-.numbered_green::before {
+.numbered-list_green > li::before,
+.step-list_green li::before {
   background-color: var(--dsdl-green-70);
   color: white;
 }
 .step-list_cyan-light {
   border-left-color: var(--dsdl-cyan-10);
 }
-.step-list_cyan-light li::before,
-.numbered_cyan-light::before {
+.numbered-list_cyan-light > li::before,
+.step-list_cyan-light li::before {
   background-color: var(--dsdl-cyan-10);
 }
 .step-list_cyan-dark {
   border-left-color: var(--dsdl-cyan-60);
 }
-.step-list_cyan-dark li::before,
-.numbered_cyan-dark::before {
+.numbered-list_cyan-dark > li::before,
+.step-list_cyan-dark li::before {
   background-color: var(--dsdl-cyan-60);
   color: white;
 }

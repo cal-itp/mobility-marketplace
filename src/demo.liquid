@@ -1,13 +1,13 @@
 ---
 layout: main
 stylesheet: guide.css
-
 title: Component demo
-description: >
-  A page to view individual layout components as they are completed
+description: A page to view individual layout components as they are completed
 dummyTags: ["GTFS-RT"]
 noindex: true
 show_call_to_action: true
+colorSchemes: ['yellow','purple','green','cyan-light','cyan-dark']
+
 ---
 <div class="container">
   <h1>DSDL component demo</h1>
@@ -77,74 +77,45 @@ for our small team. We’re able to prioritize GTFS-RT first and foremost before
 
 <div class="container">
   <h2>Step list</h2>
-  <div class="row">
-    <h3>Color scheme: yellow</h3>
-    <div class="offset-lg-2 col-lg-7 col-12">
-      <ol class="step-list step-list_yellow my-4">
-        <li><b>Choose a data-only provider</b> and plan that fits your agency’s needs</li>
-        <li>
-          <b>Review purchase options:</b> You can access data plans in the commercial marketplace or at discounted rates on
-          <a href="#">CALNET</a> or on <a href="#">NASPO</a>
-        </li>
-        <li><b>Engage the vendor</b> you’d like to purchase from</li>
-        <li><b>Sign the agreement</b></li>
-        <li><b>Implement and launch,</b> be sure to coordinate with your hardware providers to align on who will install SIMs</li>
-      </ol>
+  {% for color in colorSchemes %}
+    <div class="row">
+      <h3>
+        Color scheme: <code>{{ color }}</code>
+      </h3>
+      <div class="offset-lg-2 col-lg-7 col-12">
+        <ol class="step-list step-list_{{color}} my-4">
+          <li><b>Choose a data-only provider</b> and plan that fits your agency’s needs</li>
+          <li>
+            <b>Review purchase options:</b> You can access data plans in the commercial marketplace or at discounted rates on
+            <a href="#">CALNET</a> or on <a href="#">NASPO</a>
+          </li>
+          <li><b>Engage the vendor</b> you’d like to purchase from</li>
+          <li><b>Sign the agreement</b></li>
+          <li>
+            <b>Implement and launch,</b> be sure to coordinate with your hardware providers to align on who will install SIMs
+          </li>
+        </ol>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <h3>Color scheme: purple</h3>
-    <div class="offset-lg-2 col-lg-7 col-12">
-      <ol class="step-list step-list_purple my-4">
-        <li><b>Choose a data-only provider</b> and plan that fits your agency’s needs</li>
-        <li>
-          <b>Review purchase options:</b> You can access data plans in the commercial marketplace or at discounted rates on
-          <a href="#">CALNET</a> or on <a href="#">NASPO</a>
-        </li>
-        <li><b>Engage the vendor</b> you’d like to purchase from</li>
-        <li><b>Sign the agreement</b></li>
-        <li><b>Implement and launch,</b> be sure to coordinate with your hardware providers to align on who will install SIMs</li>
-      </ol>
-    </div>
-  </div>
-  <div class="row">
-    <h3>Color scheme: cyan-light</h3>
-    <div class="offset-lg-2 col-lg-7 col-12">
-      <ol class="step-list step-list_cyan-light my-4">
-        <li><b>Choose a data-only provider</b> and plan that fits your agency’s needs</li>
-        <li>
-          <b>Review purchase options:</b> You can access data plans in the commercial marketplace or at discounted rates on
-          <a href="#">CALNET</a> or on <a href="#">NASPO</a>
-        </li>
-        <li><b>Engage the vendor</b> you’d like to purchase from</li>
-        <li><b>Sign the agreement</b></li>
-        <li><b>Implement and launch,</b> be sure to coordinate with your hardware providers to align on who will install SIMs</li>
-      </ol>
-    </div>
-  </div>
-  <div class="row">
-    <h3>Color scheme: cyan-dark</h3>
-    <div class="offset-lg-2 col-lg-7 col-12">
-      <ol class="step-list step-list_cyan-dark my-4">
-        <li><b>Choose a data-only provider</b> and plan that fits your agency’s needs</li>
-        <li>
-          <b>Review purchase options:</b> You can access data plans in the commercial marketplace or at discounted rates on
-          <a href="#">CALNET</a> or on <a href="#">NASPO</a>
-        </li>
-        <li><b>Engage the vendor</b> you’d like to purchase from</li>
-        <li><b>Sign the agreement</b></li>
-        <li><b>Implement and launch,</b> be sure to coordinate with your hardware providers to align on who will install SIMs</li>
-      </ol>
-    </div>
-  </div>
+  {% endfor %}
 
   <div class="row">
-    <h2>Numbered headings</h2>
+    <h2 id="numbered-headings">Numbered headings</h2>
     <div class="offset-lg-2 col-lg-7 col-12">
-      <h3 class="numbered numbered_yellow" data-number="1">Choose a data plan</h3>
-      <h3 class="numbered numbered_purple" data-number="2">Review purchase options</h3>
-      <h3 class="numbered numbered_cyan-light" data-number="3">Reach out to your vendor</h3>
-      <h3 class="numbered numbered_cyan-dark" data-number="4">Sign agreement</h3>
+      <ol class="numbered-list numbered-list_yellow">
+        <li>
+          <h3>Choose a data plan</h3>
+        </li>
+        <li>
+          <h3>Review purchase options</h3>
+        </li>
+        <li>
+          <h3>Reach out to your vendor</h3>
+        </li>
+        <li>
+          <h3>Sign agreement</h3>
+        </li>
+      </ol>
     </div>
   </div>
 
