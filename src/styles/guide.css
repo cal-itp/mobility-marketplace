@@ -26,22 +26,23 @@ ul > li:last-child {
   }
 }
 
-/* STEP LIST and NUMBERED LIST */
+/* STEP LIST and NUMBERED LIST (better naming would be welcomed :) ) */
 
 .numbered-list,
 .step-list {
   counter-reset: li;
   list-style: none;
-  padding-inline-start: unset;
+  padding-left: 0;
 }
 /* override bootstrap defaults for nested lists */
-.numbered-list ul {
+.numbered-list > ul {
   list-style-type: disc;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-2);
 }
 .numbered-list h3 {
-  padding-bottom: var(--spacing-1);
-  padding-left: var(--spacing-10);
+  padding-bottom: 0.25em;
+  padding-left: 2.5em;
+  padding-top: 0.25em;
 }
 .step-list {
   /* This dance of padding/border/margin is needed to
@@ -55,13 +56,13 @@ ul > li:last-child {
   padding-bottom: var(--spacing-3);
   font-size: var(--text-l);
 }
+/* we target only the direct child in numbered-list because the component allows for additional nested content */
 .numbered-list > li,
 .step-list li {
   position: relative;
 }
 .numbered-list > li {
-  margin-bottom: 1em;
-  margin-top: calc(var(--spacing-5) + 8px);
+  margin-top: var(--spacing-5);
 }
 .step-list li {
   margin-bottom: var(--spacing-3);
@@ -92,12 +93,17 @@ ul > li:last-child {
   line-height: calc(2rem + (1rem / 16));
 }
 .numbered-list > li::before {
-  font-size: 2em;
+  font-size: var(--text-xl);
   height: 1.75em;
   left: 0;
   line-height: 1.75em;
-  top: -8px;
+  top: 0;
   width: 1.75em;
+}
+@media (min-width: 992px) {
+  .numbered-list > li::before {
+    font-size: var(--text-xxl);
+  }
 }
 .step-list_yellow {
   border-left-color: var(--calitp-brand-yellow);
