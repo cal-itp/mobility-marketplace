@@ -1,0 +1,61 @@
+{
+  "caseSensitive": true,
+  "dictionaries": ["mobility-marketplace", "dev"],
+  "dictionaryDefinitions": [
+    {
+      "name": "mobility-marketplace",
+      "path": "./.cspell/mobility-marketplace-dictionary.txt",
+      "addWords": true
+    },
+    {
+      "name": "dev",
+      "path": "./.cspell/dev-dictionary.txt",
+      "addWords": true
+    }
+  ],
+  "flagWords": [
+    "CalITP->Cal-ITP",
+    "cal-itp.org->calitp.org",
+    "ITP", // Looking for 'Cal ITP' (without hyphen)
+    "LittlePay->Littlepay"
+  ],
+  "ignorePaths": ["cspell.json"],
+  "ignoreRegExpList": [
+    "/[\\-/]cal-itp/",
+    "/cal-itp[\\-/]/",
+    "/Cal-ITP/",
+    "/github.com\\/cal-itp/",
+    "/cal-itp\\/calitp.org/",
+    "/\/usr\/src\/calitp/",
+    "/github[/_\\.\\-]/i"
+  ],
+  "languageSettings": [
+    {
+      "languageId": "liquid",
+      "ignoreRegExpList": [
+        "liquid-tags", // Defined below in patterns
+        "HTML-id",
+        "HTML-src",
+        "HTML-class",
+        "HTML-IDREF-aria-activedescendant",
+        "HTML-IDREF-aria-controls",
+        "HTML-IDREF-aria-describedby",
+        "HTML-IDREF-aria-details",
+        "HTML-IDREF-aria-errormessage",
+        "HTML-IDREF-aria-flowto",
+        "HTML-IDREF-aria-labelledby",
+        "HTML-IDREF-aria-owns",
+        "HTML-IDREF-for"
+      ],
+      "dictionaries": ["html"]
+    }
+  ],
+  "minWordLength": 3,
+  "patterns": [
+    {
+      "name": "liquid-tags",
+      "description": "Matches everything in a Liquid template tag until the first string",
+      "pattern": "/{%[^\"']+/g"
+    }
+  ]
+}

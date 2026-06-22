@@ -1,0 +1,13 @@
+# Words pertaining to Cal-ITP's Mobility Marketplace
+
+ATO
+AVL
+CALNET
+Caltrans
+DGS
+FTA
+MSA
+multicarriers
+NASPO
+NESPA
+XYZ
