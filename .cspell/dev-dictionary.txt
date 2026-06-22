@@ -1,13 +1,18 @@
 # Words pertaining to development of this site
 
 aria
+booleancheckbox
+browserconfig
 btn
 calitp-
 cli
 Consolas
+cta
+currentcolor
 dsdl
 DSDL
 eamodio
+eleventy
 endcomment
 endfor
 endif
@@ -15,17 +20,22 @@ env
 eol
 esbenp
 eux
+fieldtype
 gha
 github
 gpg
 gtag
 gtfs
+hbspt
+homescreen
 hubspot
+img
 jekyll
 linkify
 liquidjs
 Menlo
 mhutchie
+msapplication
 msg
 pipefail
 quasibit
@@ -37,9 +47,12 @@ shopify
 stylesheet
 toc
 tombi
+unhide
 usr
 utf-8
+utm
 vnd
+wifi
 xxl
-xxxl
 xxs
+xxxl
