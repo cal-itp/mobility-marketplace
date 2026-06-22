@@ -42,10 +42,17 @@
   outline-offset: var(--button-focus-outline-offset);
 }
 
-.global-nav a:hover,
-.header a.contact:hover {
-  border-color: var(--button-hover-border-color);
-  background-color: var(--button-hover-bg-color);
+/*
+this media query ensures that the user device has access to at least one input method that supports hover
+but the real reason for it is to side-step the propensity of some browsers to blend/persist
+:hover and :focus during history navigation and reapply the :hover style when "Back" is clicked
+*/
+@media (any-hover: hover) {
+  .global-nav a:hover,
+  .header a.contact:hover {
+    border-color: var(--button-hover-border-color);
+    background-color: var(--button-hover-bg-color);
+  }
 }
 
 .global-nav a:active,
