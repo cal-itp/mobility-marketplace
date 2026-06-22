@@ -35,9 +35,12 @@ ul > li:last-child {
   padding-left: 0;
 }
 /* override bootstrap defaults for nested lists */
-.numbered-list > ul {
-  list-style-type: disc;
+.numbered-list > li > ol,
+.numbered-list > li > ul {
   margin-bottom: var(--spacing-2);
+}
+.numbered-list > li > ul {
+  list-style-type: disc;
 }
 .numbered-list h3 {
   padding-bottom: 0.25em;
