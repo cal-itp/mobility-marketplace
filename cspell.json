@@ -70,5 +70,11 @@
       "description": "Ignores Google Analytics IDs",
       "pattern": "/\\bG-[A-Z0-9]+\\b/"
     }
+  ],
+  "overrides": [
+    {
+      "filename": "**/*.liquid",
+      "languageId": "html"
+    }
   ]
 }
