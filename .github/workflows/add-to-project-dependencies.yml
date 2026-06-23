@@ -1,4 +1,4 @@
-name: "Project triage: Depedencies"
+name: "Project triage: Dependencies"
 
 on:
   pull_request:

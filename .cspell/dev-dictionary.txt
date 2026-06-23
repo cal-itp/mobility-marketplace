@@ -51,6 +51,7 @@ unhide
 usr
 utf-8
 utm
+venv
 vnd
 wifi
 xxl
