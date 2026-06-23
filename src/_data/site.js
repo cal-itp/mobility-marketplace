@@ -14,5 +14,5 @@ export default {
   theme_color: "#ffffff",
   theme_color_background: "#ffffff",
   title: "California Mobility Marketplace",
-  url: "https://www.camobilitymarketplace.org",
+  domain: process.env.DEPLOY_PRIME_URL || "http://localhost:8080",
 };
