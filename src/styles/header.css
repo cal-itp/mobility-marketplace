@@ -44,8 +44,8 @@
 
 /*
 this media query ensures that the user device has access to at least one input method that supports hover
-but the real reason for it is to side-step the propensity of some browsers to blend/persist
-:hover and :focus during history navigation and reapply the :hover style when "Back" is clicked
+the main reason for it is to ensure that mobile devices don't end up with a stuck :hover style on an element
+after the "Back" button is used for navigation
 */
 @media (any-hover: hover) {
   .global-nav a:hover,

@@ -27,10 +27,12 @@
   font-size: var(--button-large-font-size);
   font-weight: var(--button-large-font-weight);
 }
-.dl-hero .dl-button:hover {
-  border-color: var(--button-large-hover-border-color);
-  background-color: var(--button-large-hover-bg-color);
-  color: var(--button-large-hover-text-color);
+@media (any-hover: hover) {
+  .dl-hero .dl-button:hover {
+    border-color: var(--button-large-hover-border-color);
+    background-color: var(--button-large-hover-bg-color);
+    color: var(--button-large-hover-text-color);
+  }
 }
 .dl-hero-image > img {
   display: block;
