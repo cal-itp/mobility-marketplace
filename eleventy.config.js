@@ -26,4 +26,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/uploads/resources/");
 
   eleventyConfig.addPlugin(sitemap, { sitemap: { hostname: site.url } });
+
+  eleventyConfig.addGlobalData("siteDomain", process.env.DEPLOY_PRIME_URL || "http://localhost:8080");
 }
