@@ -12,8 +12,8 @@ export const seo = {
   pageTitle: (data) => data.title || data.site.title,
   siteTitle: (data) => data.site.title,
 
-  canonicalUrl: (data) => data.site.url + data.page.url,
-  imgUrl: (data) => data.site.url + data.site.image,
+  canonicalUrl: (data) => data.site.domain + data.page.url,
+  imgUrl: (data) => data.site.domain + (data.image || data.site.image),
 
   schemaType: (data) => (data.page.url === "/" ? "WebSite" : "WebPage"),
 };

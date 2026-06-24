@@ -25,5 +25,5 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/uploads/resources/");
 
-  eleventyConfig.addPlugin(sitemap, { sitemap: { hostname: site.url } });
+  eleventyConfig.addPlugin(sitemap, { sitemap: { hostname: site.domain } });
 }
