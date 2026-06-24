@@ -41,11 +41,11 @@
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
-
-.footer a:hover {
-  color: var(--calitp-brand-yellow);
+@media (any-hover: hover) {
+  .footer a:hover {
+    color: var(--calitp-brand-yellow);
+  }
 }
-
 .footer nav a,
 a:has(> img) {
   text-decoration: none;
