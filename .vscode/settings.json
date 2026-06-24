@@ -1,4 +1,7 @@
 {
+  "cSpell.diagnosticLevel": "Hint",
+  "cSpell.diagnosticLevelFlaggedWords": "Error",
+  "cSpell.suggestionMenuType": "quickFix",
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
