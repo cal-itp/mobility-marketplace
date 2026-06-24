@@ -3,9 +3,6 @@
   "dockerComposeFile": "compose.yml",
   "service": "site",
   "workspaceFolder": "/home/mobimart/site",
-  "remoteEnv": {
-    "MISE_TRUSTED_CONFIG_PATHS": "${containerEnv:PATH}:/home/mobimart/site"
-  },
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "customizations": {
     "vscode": {
