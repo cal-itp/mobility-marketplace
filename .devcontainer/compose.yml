@@ -6,3 +6,4 @@ services:
     command: sleep infinity
     volumes:
       - ..:/home/mobimart/site
+      - /home/mobimart/site/node_modules
