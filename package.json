@@ -11,7 +11,7 @@
     "@quasibit/eleventy-plugin-sitemap": "^2.0.0",
     "@shopify/prettier-plugin-liquid": "^1.10.3",
     "markdown-it": "^14.2.0",
-    "prettier": "^3.8.4"
+    "prettier": "^3.9.3"
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
