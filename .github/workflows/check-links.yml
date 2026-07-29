@@ -1,0 +1,47 @@
+name: Check links
+
+on:
+  pull_request:
+    paths:
+      - "eleventy.config.js"
+      - "linkcheckerrc"
+      - "src/**"
+
+jobs:
+  linkchecker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5 # prevent background server step from running forever if something else goes wrong
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # 7.0.1
+        with:
+          persist-credentials: false # since the next step does not need it
+
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # 7.0.0
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run 11ty dev server
+        id: server
+        run: npm start
+        background: true
+
+      - parallel:
+          - name: Wait for server to be ready
+            run: npx -y wait-on http://localhost:8080
+
+          - name: Install linkchecker
+            run: pip install linkchecker
+
+      - name: Run linkchecker
+        id: linkchecker
+        run: linkchecker --config=linkcheckerrc --check-extern --verbose http://localhost:8080
+
+      - name: Stop 11ty
+        cancel: server
