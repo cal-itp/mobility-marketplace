@@ -1,6 +1,7 @@
 # Words pertaining to development of this site
 
 aria
+beautifulsoup
 booleancheckbox
 browserconfig
 btn
