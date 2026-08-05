@@ -15,7 +15,9 @@ export default {
   theme_color_background: "#ffffff",
   title: "California Mobility Marketplace",
   domain:
-    process.env.ELEVENTY_RUN_MODE === "build"
-      ? process.env.DEPLOY_PRIME_URL || "https://www.camobilitymarketplace.org"
-      : "http://localhost:8080",
+    process.env.ELEVENTY_RUN_MODE === "build" // if 11ty is building
+      ? process.env.BRANCH === "main" // and the branch is main
+        ? "https://www.camobilitymarketplace.org" // use the production domain
+        : process.env.DEPLOY_PRIME_URL // otherwise use Netlify's deploy domain
+      : "http://localhost:8080", // but if 11ty is serving, assume localhost
 };
