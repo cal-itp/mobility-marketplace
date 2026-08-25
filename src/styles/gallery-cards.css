@@ -1,0 +1,34 @@
+.gallery-cards {
+  list-style: none;
+  padding: 0;
+  margin-bottom: calc(-1 * var(--spacing-3)); /* compensate for top margin of pull quote component */
+}
+.gallery-cards.row li {
+  padding: 0 var(--spacing-3) var(--spacing-3);
+}
+.gallery-card {
+  border: 1px solid var(--dsdl-gray-30);
+  border-radius: 40px;
+  height: 100%;
+  padding: var(--spacing-3);
+}
+.gallery-card > h3 {
+  color: var(--calitp-brand-blue);
+  text-align: center;
+}
+.gallery-card > img {
+  display: block;
+  width: 100%;
+  margin-top: var(--spacing-4);
+}
+@media (min-width: 768px) {
+  .gallery-cards {
+    margin-bottom: calc(-1 * var(--spacing-5));
+  }
+  .gallery-cards.row li {
+    padding: 0 calc(var(--spacing-5) / 2) var(--spacing-5);
+  }
+  .gallery-card {
+    padding: var(--spacing-5);
+  }
+}
