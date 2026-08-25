@@ -6,6 +6,10 @@
 
 /* BOOTSTRAP OVERRIDES */
 
+hr {
+  margin: var(--spacing-5) 0;
+}
+
 /* top-level containers and pull quotes */
 main > .container,
 .pull-quote > .container,
@@ -25,6 +29,10 @@ span.visually-hidden {
 }
 
 /* GENERIC / SHARED */
+
+.spacer-5 {
+  height: var(--spacing-5);
+}
 
 .spacer-10 {
   height: var(--spacing-10);

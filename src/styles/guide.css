@@ -15,6 +15,7 @@
 @media (max-width: 450px) {
   .hero-img {
     width: 100%;
+    margin: var(--spacing-2) 0;
   }
 }
 

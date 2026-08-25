@@ -1,0 +1,82 @@
+---
+layout: main
+
+title: Get support
+stylesheet: contact.css
+description: Get in touch and request support for Cal-ITP products
+---
+<div class="container my-5">
+  <h1 class="h2 my-4">Get support</h1>
+  <p class="text-body-xl">
+    When transit agencies choose Cal-ITP for modern solutions like rider benefits and tap to pay, they don’t do it alone.
+  </p>
+  <p class="text-body-xl">
+    Cal-ITP develops relationships with local transit providers, supports them through the product adoption process, and connects
+    them with technical assistance.
+  </p>
+  <hr>
+  <h3>Common issues we assist with</h3>
+  <p>Reach out to our team to:</p>
+  <ul>
+    <li>Ask about existing agreements with vendors and products</li>
+    <li>Check software license availability</li>
+    <li>Get connected with resources and templates</li>
+    <li>Receive advice on GTFS data quality and best practices</li>
+  </ul>
+  <a class="dl-button my-2" href="#contact">Contact the team</a>
+  <h3 class="my-4">Ways we support agencies</h3>
+  <ul class="gallery-cards row mb-5" style="--bs-gutter-x: unset;">
+    {% for card in supportCards -%}
+      <li class="mb-0 pb-4">
+        <div class="gallery-card p-4">
+          <h3 class="h5 text-start">{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% assign quote_color_scheme = 'cyan-light' %}
+{% assign quote_content = 'I am so glad to have engaged with Cal-ITP, as it opened a lot of doors for our agency to implement new technologies with their support and guidance.' %}
+{% assign quote_source_name = 'Brody Wilbourn' %}
+{% assign quote_source_title = 'Transit Operations Program Manager, Redding Area Bus Authority' %}
+{% include 'pull-quote',
+  color_scheme: quote_color_scheme,
+  content: quote_content,
+  source_name: quote_source_name,
+  source_title: quote_source_title
+%}
+<div class="container my-5">
+  <h2 id="contact">Contact us</h2>
+  <div class="contact-form-wrapper col-lg-8 mx-auto">
+    <script src="https://js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        portalId: '5519226',
+        formId: 'bc98c500-50cf-4793-ad1b-1ea6f58eeb11',
+        region: 'na1',
+      });
+
+      // Fix bug in HubSpot form markup
+      function waitForElement(selector) {
+        return new Promise((resolve) => {
+          const observer = new MutationObserver((mutations, observer) => {
+            const element = document.querySelector(selector);
+            if (element) {
+              observer.disconnect();
+              resolve(element);
+            }
+          });
+          observer.observe(document.body, {
+            childList: true,
+            subtree: true,
+          });
+        });
+      }
+      waitForElement('.hs_contact_type .inputs-list').then((element) => {
+        element.removeAttribute('role');
+      });
+    </script>
+  </div>
+  <div class="spacer-5"></div>
+</div>
