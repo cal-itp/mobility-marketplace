@@ -23,4 +23,6 @@
   --button-large-hover-bg-color: var(--dsdl-cyan-60);
   --button-large-hover-border-color: var(--dsdl-cyan-60);
   --button-large-hover-text-color: white;
+
+  --gallery-card-border-radius: 40px;
 }

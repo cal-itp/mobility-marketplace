@@ -4,7 +4,16 @@
 @import url("header.css");
 @import url("footer.css");
 
+/* don't animate anchor tag link transitions */
+:root {
+  scroll-behavior: auto;
+}
+
 /* BOOTSTRAP OVERRIDES */
+
+hr {
+  margin: var(--spacing-5) 0;
+}
 
 /* top-level containers and pull quotes */
 main > .container,
@@ -25,6 +34,10 @@ span.visually-hidden {
 }
 
 /* GENERIC / SHARED */
+
+.spacer-5 {
+  height: var(--spacing-5);
+}
 
 .spacer-10 {
   height: var(--spacing-10);
