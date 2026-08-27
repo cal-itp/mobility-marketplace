@@ -4,6 +4,11 @@
 @import url("header.css");
 @import url("footer.css");
 
+/* don't animate anchor tag link transitions */
+:root {
+  scroll-behavior: auto;
+}
+
 /* BOOTSTRAP OVERRIDES */
 
 hr {
