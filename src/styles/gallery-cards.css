@@ -8,7 +8,7 @@
 }
 .gallery-card {
   border: 1px solid var(--dsdl-gray-30);
-  border-radius: 40px;
+  border-radius: var(--gallery-card-border-radius);
   height: 100%;
   padding: var(--spacing-3);
 }

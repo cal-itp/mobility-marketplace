@@ -3,6 +3,10 @@
 @import url("lists.css");
 @import url("pull-quotes.css");
 
+:root {
+  --gallery-card-border-radius: 20px;
+}
+
 /* CONTACT PAGE */
 
 .hs-form-field {
