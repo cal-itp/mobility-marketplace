@@ -30,8 +30,8 @@ repos:
     hooks:
       - id: prettier
         additional_dependencies:
-          - prettier@3.9.4
-          - "@shopify/prettier-plugin-liquid@1.10.3"
+          - prettier@3.9.6
+          - "@shopify/prettier-plugin-liquid@1.11.0"
         types_or: [css, html, javascript, json, liquid, markdown, yaml]
 
   - repo: https://github.com/streetsidesoftware/cspell-cli
