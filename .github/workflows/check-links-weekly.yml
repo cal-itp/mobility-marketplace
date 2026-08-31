@@ -2,7 +2,8 @@ name: Weekly Broken Link Check
 
 on:
   schedule:
-    - cron: "0 9 * * MON"
+    - cron: "0 2 * * MON"
+      timezone: "America/Los_Angeles"
 
 jobs:
   linkchecker:
