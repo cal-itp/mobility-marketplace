@@ -35,7 +35,7 @@ repos:
         types_or: [css, html, javascript, json, liquid, markdown, yaml]
 
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v10.0.1
+    rev: v10.1.0
     hooks:
       - id: cspell
         name: check spelling of commit message and staged files
