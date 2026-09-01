@@ -1,0 +1,57 @@
+name: Weekly Broken Link Check
+
+on:
+  schedule:
+    - cron: "0 2 * * MON"
+      timezone: "America/Los_Angeles"
+
+jobs:
+  linkchecker:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      issues: write
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # 7.0.1
+        with:
+          persist-credentials: false # since the next step does not need it
+
+      - name: Install dependencies
+        run: pip install linkchecker beautifulsoup4
+
+      - name: Run linkchecker
+        id: linkchecker
+        run: linkchecker --config=linkcheckerrc --check-extern --file-output=html/utf-8/results.html https://www.camobilitymarketplace.org
+
+      - name: Strip all but body contents
+        id: extract-report-body
+        if: ${{ failure() }}
+        run: python3 -c 'from bs4 import BeautifulSoup; print(BeautifulSoup(open("results.html").read(), "html.parser").body.decode_contents())' > report_body.html
+
+      - name: Check for an open linkchecker issue
+        id: open-issue-check
+        if: ${{ failure() }}
+        run: echo "OPEN_ISSUE_ID=`gh issue list --label linkchecker --json number --jq '.[0].number'`" >> "$GITHUB_OUTPUT"
+
+      - name: Add content to existing issue
+        if: ${{ failure() && steps.open-issue-check.outputs.OPEN_ISSUE_ID != '' }}
+        run: |
+          echo -e "## Updated broken link report\n\nFrom weekly run: https://github.com/cal-itp/mobility-marketplace/actions/runs/${{ github.run_id }}\n\n<details>\n" > comment.md
+          cat report_body.html >> comment.md
+          echo -e "\n</details>" >> comment.md
+          gh issue comment ${{ steps.open-issue-check.outputs.OPEN_ISSUE_ID }} \
+            --body-file comment.md
+
+      - name: Create new issue
+        if: ${{ failure() && steps.open-issue-check.outputs.OPEN_ISSUE_ID == '' }}
+        run: |
+          echo -e "## Broken link report\n\nDiscovered during weekly run: https://github.com/cal-itp/mobility-marketplace/actions/runs/${{ github.run_id }}\n\n<details>\n" > comment.md
+          cat report_body.html >> comment.md
+          echo -e "\n</details>" >> comment.md
+          gh issue create \
+            --title "Broken links found" \
+            --body-file comment.md \
+            --label "content,bug,linkchecker"

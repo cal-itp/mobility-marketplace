@@ -1,10 +1,13 @@
 # Words pertaining to development of this site
 
 aria
+beautifulsoup
 booleancheckbox
 browserconfig
 btn
 calitp-
+cdn
+cgi
 cli
 Consolas
 cta
@@ -29,8 +32,11 @@ gtfs
 hbspt
 homescreen
 hubspot
+ignorewarnings
 img
 jekyll
+linkchecker
+linkcheckerrc
 linkify
 liquidjs
 Menlo

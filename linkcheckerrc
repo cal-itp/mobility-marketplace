@@ -1,0 +1,6 @@
+[filtering]
+ignore=
+  /cdn-cgi/l/email-protection
+ignorewarnings=http-redirected
+
+[AnchorCheck]
