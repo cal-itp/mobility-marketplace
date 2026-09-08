@@ -1,6 +1,8 @@
 [filtering]
 ignore=
+  # These are regexes. Forward slashes need not be escaped.
   /cdn-cgi/l/email-protection
+  googletagmanager
 ignorewarnings=http-redirected
 
 [AnchorCheck]
