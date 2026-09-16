@@ -1,0 +1,107 @@
+name: Publish docs
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/mkdocs.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/mkdocs.yml"
+
+env:
+  SANITIZED_REPO_NAME: "calitp-website"
+
+jobs:
+  docs-preview:
+    name: Publish docs preview
+    runs-on: ubuntu-latest
+    # only pull requests should generate a preview
+    if: github.event.pull_request
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: "refs/pull/${{ github.event.number }}/merge"
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version-file: .node-version
+      - run: npm ci
+
+      - name: Setup Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version-file: .github/workflows/.python-version
+          cache: pip
+          cache-dependency-path: "docs/requirements.txt"
+
+      - name: Build MkDocs website
+        run: |
+          pip install -r docs/requirements.txt
+          mkdocs build
+
+      - name: Deploy Preview to Netlify
+        run: |
+          npx netlify deploy \
+            --alias="${SANITIZED_REPO_NAME}-${{ github.event.number }}" \
+            --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} \
+            --dir="site" \
+            --site=${{ secrets.NETLIFY_PREVIEW_APP_SITE_ID }} \
+            --no-build \
+
+      - name: Find existing comment
+        uses: peter-evans/find-comment@v4
+        id: find-comment
+        with:
+          issue-number: ${{ github.event.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: "Preview url: https://"
+
+      - name: Add Netlify link PR comment
+        uses: actions/github-script@v9
+        if: steps.find-comment.outputs.comment-id == ''
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const hostnamePrefix = process.env.SANITIZED_REPO_NAME
+            const hostnameSuffix = "cal-itp-previews.netlify.app"
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Preview url: https://${hostnamePrefix}-${{ github.event.number }}--${hostnameSuffix}`,
+            })
+
+  docs-publish:
+    runs-on: ubuntu-latest
+    # don't publish for pull requests
+    if: github.event.pull_request == null
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version-file: .github/workflows/.python-version
+          cache: pip
+          cache-dependency-path: "docs/requirements.txt"
+
+      - name: Install MkDocs requirements
+        run: |
+          pip install -r docs/requirements.txt
+
+      - name: Deploy MkDocs website
+        run: |
+          mkdocs gh-deploy --force
