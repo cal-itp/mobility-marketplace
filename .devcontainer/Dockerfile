@@ -25,8 +25,10 @@ RUN curl https://mise.run | sh
 
 # Install Python dependencies
 COPY .devcontainer/requirements.txt .devcontainer/requirements.txt
+COPY docs/requirements.txt docs/requirements.txt
 RUN python -m pip install --upgrade pip
 RUN pip install --no-cache-dir -r .devcontainer/requirements.txt
+RUN pip install --no-cache-dir -r docs/requirements.txt
 
 USER $USER
 

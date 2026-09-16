@@ -38,6 +38,12 @@ The downloadable resources on this site are a mix of external links and files ch
 
 Site analytics is tracked by Google Analytics, version 4. Ask an administrator to grant you access.
 
+## Docs
+
+The devcontainer serves the Cal-ITP websites docs site automatically at: http://localhost:8001
+
+The [`mkdocs.yml`](mkdocs.yml) file in the repository root configures the build process, including the available plugins.
+
 ## License
 
 Content (including graphics, images, video, documents, and text) in this repository is licensed under [CC-BY 4.0][content-license].
