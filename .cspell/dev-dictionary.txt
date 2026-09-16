@@ -52,6 +52,7 @@ rgb
 rvm
 seo
 shopify
+smallcaps
 stylesheet
 toc
 tombi
@@ -61,7 +62,9 @@ utf-8
 utm
 venv
 vnd
+webfonts
 wifi
 xxl
 xxs
 xxxl
+xxxxl
