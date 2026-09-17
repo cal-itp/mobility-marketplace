@@ -53,6 +53,7 @@ rvm
 seo
 shopify
 smallcaps
+softprops
 stylesheet
 toc
 tombi
