@@ -1,0 +1,27 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      # release tags
+      - "202[3-9].[0-9][0-9].[0-9]+"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      # https://github.com/softprops/action-gh-release#permissions
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Release
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
+        with:
+          prerelease: false
+          generate_release_notes: true
