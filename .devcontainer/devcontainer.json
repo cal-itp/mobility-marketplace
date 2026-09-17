@@ -2,6 +2,7 @@
   "name": "cal-itp/mobility-marketplace",
   "dockerComposeFile": "compose.yml",
   "service": "site",
+  "runServices": ["site", "docs"],
   "workspaceFolder": "/home/mobimart/site",
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "customizations": {

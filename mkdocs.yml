@@ -1,0 +1,60 @@
+site_name: "Cal-ITP websites documentation"
+repo_url: https://github.com/cal-itp/mobility-marketplace
+edit_uri: edit/dev/docs
+site_url: https://docs.calitp.org/calitp.org
+exclude_docs: |
+  **/inc/*.md
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - navigation.expand
+    - navigation.tabs
+    - toc.integrate
+  palette:
+    scheme: default
+  custom_dir: docs/overrides
+
+# extra:
+#   analytics:
+#   provider: google
+#   property: G-SZB... cspell:disable-line
+
+plugins:
+  - search
+  - awesome-pages
+  - markdownextradata:
+      data: src/_data
+
+extra_css:
+  - styles/theme.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite:
+      linenums: true
+  - mdx_truly_sane_lists
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      # Relative to the current Markdown file
+      base_path: !relative
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.smartsymbols
+  - meta
+  - toc:
+      # insert a blank space before the character
+      permalink: " ¶"
+  - smarty
