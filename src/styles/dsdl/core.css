@@ -1,0 +1,161 @@
+/*
+ * Cal-ITP Digital Services Design Language
+ * Core Styles
+ */
+
+body {
+  color: var(--dsdl-body-color);
+  font-family: var(--dsdl-body-font-stack);
+  line-height: var(--line-height-normal);
+}
+
+.text-body-s {
+  font-size: var(--text-xs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+.text-body-m {
+  font-size: var(--text-s);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+.text-body-l {
+  font-size: var(--text-m);
+  line-height: var(--line-height-normal);
+  font-weight: 400;
+}
+
+h6,
+.h6,
+.text-subtitle-s {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-m);
+  line-height: var(--line-height-normal);
+  font-weight: 500;
+}
+h4,
+.h4,
+.text-subtitle-m {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-l);
+  line-height: var(--line-height-normal);
+  font-weight: 500;
+}
+.text-subtitle-l {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xl);
+  line-height: var(--line-height-tight);
+  font-weight: 500;
+}
+
+h5,
+.h5,
+.text-title-s {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-m);
+  line-height: var(--line-height-normal);
+  font-weight: 600;
+}
+h3,
+.h3,
+.text-title-m {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xl);
+  line-height: var(--line-height-tight);
+  font-weight: 600;
+}
+.text-title-l {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xxl);
+  line-height: var(--line-height-tight);
+  font-weight: 600;
+}
+
+.text-headline-s {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xl);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+}
+h2,
+.h2,
+.text-headline-m {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xxl);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+}
+h1,
+.h1,
+.text-headline-l {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xxxl);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  h1,
+  .h1 {
+    font-size: var(--text-xxxxl);
+  }
+  h2,
+  .h2 {
+    font-size: var(--text-xxxl);
+  }
+  h3,
+  .h3 {
+    font-size: var(--text-xxl);
+  }
+  h4,
+  .h4 {
+    font-size: var(--text-xl);
+  }
+}
+
+.text-display {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-display);
+  line-height: var(--line-height-extra-tight);
+  font-weight: 600;
+}
+.text-small-caps {
+  /* TODO: Consider eliminating this as its own core style, making it more of a utility,
+     because sometimes we want to apply smallcaps to other styles,
+     e.g.: calitp.org homepage initiatives Recent News and Resources h4 elements. */
+  font-size: var(--text-xs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+small,
+.small,
+.text-caption {
+  font-size: var(--text-xs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+.text-footnote {
+  font-size: var(--text-xxs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+.text-code {
+  font-family: var(--dsdl-monospace-font-stack);
+  font-size: var(--text-m);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+
+a {
+  color: var(--dsdl-blue-70);
+}
+a:hover,
+a:focus {
+  color: var(--dsdl-blue-80);
+}
+
+code,
+pre {
+  font-family: var(--dsdl-monospace-font-stack);
+}

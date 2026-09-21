@@ -1,0 +1,92 @@
+/* DSDL demo page */
+::root {
+  --bs-gutter-x: 1.5rem;
+}
+
+.dsdl-demo {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1320px;
+  padding: 0 calc(var(--bs-gutter-x) * 0.5) var(--spacing-10);
+}
+
+.dsdl-demo h2,
+.dsdl-demo h3,
+.dsdl-demo h4,
+.dsdl-demo h5 {
+  margin-top: var(--spacing-4);
+  margin-bottom: var(--spacing-2);
+}
+.brand-colors h4 {
+  margin-top: 0;
+}
+
+.brand-colors,
+.dsdl-colors {
+  display: flex;
+}
+.brand-colors,
+.dsdl-colors ol {
+  list-style: none;
+  padding: 0;
+}
+.brand-colors li,
+.dsdl-colors ol {
+  margin: 0 var(--spacing-1) 0 0;
+  flex: 1 1 auto;
+}
+.brand-colors li:last-child,
+.dsdl-colors ol:last-child {
+  margin-right: 0;
+}
+.brand-colors li {
+  padding: var(--spacing-4);
+  text-align: center;
+}
+.dsdl-colors li {
+  padding: var(--spacing-2);
+  text-align: center;
+}
+
+.dsdl-demo table {
+  margin: var(--spacing-2) 0;
+}
+.dsdl-demo table th,
+.dsdl-demo table td {
+  padding: var(--spacing-1);
+  border: 1px solid var(--dsdl-gray-20);
+}
+.dsdl-demo table th {
+  background: var(--calitp-brand-blue);
+  color: white;
+}
+.dsdl-demo table thead th {
+  text-align: center;
+}
+.dsdl-core-type-matrix td {
+  vertical-align: top;
+}
+
+.dsdl-type-specs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  font-family: var(--dsdl-monospace-font-stack);
+}
+.dsdl-type-specs dt {
+  font-weight: 400;
+}
+.dsdl-type-specs dd {
+  margin: 0 0 0 var(--spacing-1);
+}
+.dsdl-extra-type-styles {
+  list-style: none;
+  padding: 0;
+}
+
+.spacing-demo td {
+  font-family: var(--dsdl-monospace-font-stack);
+}
+.spacing-sample {
+  background: var(--calitp-brand-cyan);
+  width: var(--spacing-20);
+}

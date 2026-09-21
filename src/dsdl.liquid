@@ -1,0 +1,488 @@
+---
+title: DSDL demo
+layout: main
+stylesheet: dsdl-demo.css
+eleventyExcludeFromCollections: true
+---
+<div class="dsdl-demo">
+  <h1 class="mt-5">Digital Services Design Language</h1>
+  <p class="font-size-xl">This page demos the DSDL elements that are currently implemented.</p>
+
+  <h2 class="mt-5">Color palette</h2>
+  <h3>Brand colors</h3>
+  <p>These colors are canonized as CSS variables. Example: <code>--calitp-brand-blue</code></p>
+  <ul class="brand-colors">
+    <li style="background: var(--calitp-brand-blue); color: #fff">
+      <h4>Cal-ITP Blue</h4>
+      <div>(blue-70)</div>
+    </li>
+    <li style="background: var(--calitp-brand-cyan); color: #000">
+      <h4>Cal-ITP Cyan</h4>
+      <div>(cyan-40)</div>
+    </li>
+    <li style="background: var(--calitp-brand-yellow); color: #000">
+      <h4>Cal-ITP Yellow</h4>
+      <div>(yellow-30)</div>
+    </li>
+  </ul>
+
+  <h3>Full range</h3>
+  <p>These CSS variables take the form <code>--dsdl-{color}-{number}</code>. Example: <code>--dsdl-red-40</code></p>
+  <div class="dsdl-colors">
+    {% comment %} Start the first color group's list, storing its group name in current_group {% endcomment %}
+    {% assign current_group = dsdlColors[0].group %}
+    <ol>
+      {% for color in dsdlColors %}
+        {% comment %} Loop through every color in _data/dsdlColors.json {% endcomment %}
+        {% if color.group != current_group %}
+          {% comment %} If we have changed groups, start a new list {% endcomment %}
+          </ol>
+          <ol>
+        {% endif %}
+        {% assign current_group = color.group %}
+        {% comment %} Output the individual color swatch {% endcomment %}
+        <li
+          style="
+            background: {{ color.hex }};
+            color: {% if color.level <= 50 %}#000{% else %}#fff{% endif %}
+          "
+        >
+          {{ color.group }}-{{ color.level }}
+          {% if color.level == 100 and color.group == 'slate' %}(black){% endif %}
+        </li>
+      {% endfor %}
+      {% comment %} Close the last color group's list {% endcomment %}
+    </ol>
+  </div>
+
+  <h2>Typography</h2>
+
+  <h3>Fonts</h3>
+
+  <h4>Space Grotesk</h4>
+
+  <p class="font-heading">
+    Space Grotesk is a proportional sans-serif typeface with modern feeling and strong readability. It has a sense of urbanity and
+    trustworthiness, with strong, clean lines. It is used for headings and display text on Cal-ITP websites.
+  </p>
+
+  <a class="font-heading" href="https://fonts.google.com/specimen/Space+Grotesk">See it on Google Fonts</a>
+
+  <h4 class="font-body">Noto Sans</h4>
+
+  <p>
+    Noto is designed specifically for accessibility and global communication, offering high-quality fonts with various weights and
+    widths in sans, serif, mono, and other styles. This font family supports over 1,000 languages and 150 scripts. It’s a
+    contemporary, aesthetic font with high legibility. It supports scripts of California’s main languages: English, Spanish,
+    Mandarin + Cantonese, Tagalog, Vietnamese, Korean, Armenian, Arabic, Russian, Farsi, Hindi, and Japanese. It is used for body
+    copy on Cal-ITP websites.
+  </p>
+
+  <a href="https://fonts.google.com/noto/specimen/Noto+Sans">See it on Google Fonts</a>
+
+  <h4 class="text-code">Source Code Pro</h4>
+
+  <p class="text-code">
+    Source Code Pro is an open-source monospace typeface designed to work well in user interface and coding environments. It is
+    used on Cal-ITP websites when fixed-width type is appropriate, such as displaying code.
+  </p>
+
+  <a class="text-code" href="https://fonts.google.com/specimen/Source+Code+Pro">See it on Google Fonts</a>
+
+  <h3>Core styles</h3>
+
+  <table class="dsdl-core-type-matrix">
+    <thead>
+      <tr>
+        <td></td>
+        <th>Headline</th>
+        <th>Title</th>
+        <th>Subtitle</th>
+        <th>Body</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Large</th>
+        <td>
+          <!-- Headline L -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>40px</dd>
+            <dt>font-weight:</dt>
+            <dd>700</dd>
+            <dt>line-height:</dt>
+            <dd>1.25</dd>
+          </dl>
+          <div class="text-headline-l">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+        <td>
+          <!-- Title L -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>32px</dd>
+            <dt>font-weight:</dt>
+            <dd>600</dd>
+            <dt>line-height:</dt>
+            <dd>1.25</dd>
+          </dl>
+          <div class="text-title-l">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+        <td>
+          <!-- Subtitle L -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>24px</dd>
+            <dt>font-weight:</dt>
+            <dd>500</dd>
+            <dt>line-height:</dt>
+            <dd>1.25</dd>
+          </dl>
+          <div class="text-subtitle-l">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+        <td>
+          <!-- Body L -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>16px</dd>
+            <dt>font-weight:</dt>
+            <dd>400</dd>
+            <dt>line-height:</dt>
+            <dd>1.5</dd>
+          </dl>
+          <div class="text-body-l">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Medium</th>
+        <td>
+          <!-- Headline M -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>32px</dd>
+            <dt>font-weight:</dt>
+            <dd>700</dd>
+            <dt>line-height:</dt>
+            <dd>1.25</dd>
+          </dl>
+          <div class="text-headline-m">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+        <td>
+          <!-- Title M -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>24px</dd>
+            <dt>font-weight:</dt>
+            <dd>600</dd>
+            <dt>line-height:</dt>
+            <dd>1.25</dd>
+          </dl>
+          <div class="text-title-m">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+        <td>
+          <!-- Subtitle M -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>20px</dd>
+            <dt>font-weight:</dt>
+            <dd>500</dd>
+            <dt>line-height:</dt>
+            <dd>1.5</dd>
+          </dl>
+          <div class="text-subtitle-m">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+        <td>
+          <!-- Body M -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>14px</dd>
+            <dt>font-weight:</dt>
+            <dd>400</dd>
+            <dt>line-height:</dt>
+            <dd>1.625</dd>
+          </dl>
+          <div class="text-body-m">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Small</th>
+        <td>
+          <!-- Headline S -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>24px</dd>
+            <dt>font-weight:</dt>
+            <dd>700</dd>
+            <dt>line-height:</dt>
+            <dd>1.25</dd>
+          </dl>
+          <div class="text-headline-s">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+        <td>
+          <!-- Title S -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>16px</dd>
+            <dt>font-weight:</dt>
+            <dd>600</dd>
+            <dt>line-height:</dt>
+            <dd>1.5</dd>
+          </dl>
+          <div class="text-title-s">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+        <td>
+          <!-- Subtitle S -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>16px</dd>
+            <dt>font-weight:</dt>
+            <dd>500</dd>
+            <dt>line-height:</dt>
+            <dd>1.5</dd>
+          </dl>
+          <div class="text-subtitle-s">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+        <td>
+          <!-- Body S -->
+          <dl class="dsdl-type-specs">
+            <dt>font-size:</dt>
+            <dd>12px</dd>
+            <dt>font-weight:</dt>
+            <dd>400</dd>
+            <dt>line-height:</dt>
+            <dd>1.625</dd>
+          </dl>
+          <div class="text-body-s">Amazingly few discotheques provide jukeboxes.</div>
+        </td>
+      </tr>
+    </tbody>
+    <caption class="visually-hidden">
+      Core font style matrix
+    </caption>
+  </table>
+
+  <ul class="dsdl-extra-type-styles">
+    <li>
+      <h4>Display</h4>
+      <dl class="dsdl-type-specs">
+        <dt>font-size:</dt>
+        <dd>64px</dd>
+        <dt>font-weight:</dt>
+        <dd>600</dd>
+        <dt>line-height:</dt>
+        <dd>1.125</dd>
+      </dl>
+      <div class="text-display">Amazingly few discotheques provide jukeboxes.</div>
+    </li>
+    <li>
+      <h4>Small caps</h4>
+      <dl class="dsdl-type-specs">
+        <dt>font-size:</dt>
+        <dd>12px</dd>
+        <dt>font-weight:</dt>
+        <dd>400</dd>
+        <dt>line-height:</dt>
+        <dd>1.625</dd>
+        <dt>text-transform:</dt>
+        <dd>uppercase</dd>
+      </dl>
+      <div class="text-small-caps">Amazingly few discotheques provide jukeboxes.</div>
+    </li>
+    <li>
+      <h4>Caption</h4>
+      <dl class="dsdl-type-specs">
+        <dt>font-size:</dt>
+        <dd>12px</dd>
+        <dt>font-weight:</dt>
+        <dd>400</dd>
+        <dt>line-height:</dt>
+        <dd>1.625</dd>
+      </dl>
+      <div class="text-caption">Amazingly few discotheques provide jukeboxes.</div>
+    </li>
+    <li>
+      <h4>Footnote</h4>
+      <dl class="dsdl-type-specs">
+        <dt>font-size:</dt>
+        <dd>10px</dd>
+        <dt>font-weight:</dt>
+        <dd>400</dd>
+        <dt>line-height:</dt>
+        <dd>1.625</dd>
+      </dl>
+      <div class="text-footnote">Amazingly few discotheques provide jukeboxes.</div>
+    </li>
+    <li>
+      <h4>Code</h4>
+      <dl class="dsdl-type-specs">
+        <dt>font-size:</dt>
+        <dd>16px</dd>
+        <dt>font-weight:</dt>
+        <dd>400</dd>
+        <dt>line-height:</dt>
+        <dd>1.625</dd>
+      </dl>
+      <div class="text-code">Amazingly few discotheques provide jukeboxes.</div>
+    </li>
+  </ul>
+
+  <h2>Spacing</h2>
+
+  <table class="spacing-demo">
+    <thead>
+      <tr>
+        <th>Sample</th>
+        <th>Variable</th>
+        <th>px</th>
+        <th>rem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-05)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 05 (half)</span>
+          </div>
+        </td>
+        <td>--spacing-05</td>
+        <td>4px</td>
+        <td>0.25rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-1)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 1</span>
+          </div>
+        </td>
+        <td>--spacing-1</td>
+        <td>8px</td>
+        <td>0.5rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-2)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 2</span>
+          </div>
+        </td>
+        <td>--spacing-2</td>
+        <td>16px</td>
+        <td>1rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-2-05)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 2-05 (two and a half)</span>
+          </div>
+        </td>
+        <td>--spacing-2-05</td>
+        <td>20px</td>
+        <td>1.25rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-3)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 3</span>
+          </div>
+        </td>
+        <td>--spacing-3</td>
+        <td>24px</td>
+        <td>1.5rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-4)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 4</span>
+          </div>
+        </td>
+        <td>--spacing-4</td>
+        <td>32px</td>
+        <td>2rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-5)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 5</span>
+          </div>
+        </td>
+        <td>--spacing-5</td>
+        <td>40px</td>
+        <td>2.5rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-6)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 6</span>
+          </div>
+        </td>
+        <td>--spacing-6</td>
+        <td>48px</td>
+        <td>3rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-7)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 7</span>
+          </div>
+        </td>
+        <td>--spacing-7</td>
+        <td>56px</td>
+        <td>3.5rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-8)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 8</span>
+          </div>
+        </td>
+        <td>--spacing-8</td>
+        <td>64px</td>
+        <td>4rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-9)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 9</span>
+          </div>
+        </td>
+        <td>--spacing-9</td>
+        <td>72px</td>
+        <td>4.5rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-10)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 10</span>
+          </div>
+        </td>
+        <td>--spacing-10</td>
+        <td>80px</td>
+        <td>5rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-15)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 15</span>
+          </div>
+        </td>
+        <td>--spacing-15</td>
+        <td>120px</td>
+        <td>7.5rem</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="spacing-sample" style="height: var(--spacing-20)">
+            <span class="visually-hidden">A box illustrating the size of something using spacing 20</span>
+          </div>
+        </td>
+        <td>--spacing-20</td>
+        <td>160px</td>
+        <td>10rem</td>
+      </tr>
+    </tbody>
+    <caption class="visually-hidden">
+      Chart of our spacing variables with visual reference
+    </caption>
+  </table>
+
+  <p>Note: For lines we want to be exactly 1 logical pixel without scaling, we use a <code>1px</code> value directly.</p>
+</div>

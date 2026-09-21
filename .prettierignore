@@ -1,2 +1,4 @@
+# these file have custom formatting we don't want prettier to revert
 src/site.webmanifest.liquid
 src/_redirects
+src/styles/dsdl/tokens.css.liquid
