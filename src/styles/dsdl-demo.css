@@ -90,21 +90,3 @@
   background: var(--calitp-brand-cyan);
   width: var(--spacing-20);
 }
-
-.background-calitp-blue {
-  background-color: var(--calitp-brand-blue);
-}
-
-.clipped-header {
-  -webkit-clip-path: none;
-  clip-path: none;
-  border-radius: 1.25rem;
-}
-
-@media (min-width: 992px) {
-  .clipped-header {
-    -webkit-clip-path: url(#path-header);
-    border-radius: 0;
-    clip-path: url(#path-header);
-  }
-}
