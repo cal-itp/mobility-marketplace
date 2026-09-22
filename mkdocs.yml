@@ -1,7 +1,7 @@
 site_name: "Cal-ITP websites documentation"
 repo_url: https://github.com/cal-itp/mobility-marketplace
 edit_uri: edit/dev/docs
-site_url: https://docs.calitp.org/calitp.org
+site_url: https://docs.calitp.org/mobility-marketplace
 exclude_docs: |
   **/inc/*.md
 

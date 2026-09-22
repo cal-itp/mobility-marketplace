@@ -15,9 +15,6 @@ on:
       - "mkdocs.yml"
       - ".github/workflows/mkdocs.yml"
 
-env:
-  SANITIZED_REPO_NAME: "calitp-website"
-
 jobs:
   docs-preview:
     name: Publish docs preview
@@ -53,7 +50,7 @@ jobs:
       - name: Deploy Preview to Netlify
         run: |
           npx netlify deploy \
-            --alias="${SANITIZED_REPO_NAME}-${{ github.event.number }}" \
+            --alias="${{ github.event.repository.name }}-${{ github.event.number }}" \
             --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} \
             --dir="site" \
             --site=${{ secrets.NETLIFY_PREVIEW_APP_SITE_ID }} \
@@ -73,14 +70,11 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const hostnamePrefix = process.env.SANITIZED_REPO_NAME
-            const hostnameSuffix = "cal-itp-previews.netlify.app"
-
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `Preview url: https://${hostnamePrefix}-${{ github.event.number }}--${hostnameSuffix}`,
+              body: `Preview url: https://${{ github.event.repository.name }}-${{ github.event.number }}--cal-itp-previews.netlify.app`,
             })
 
   docs-publish:
