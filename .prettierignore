@@ -1,3 +1,6 @@
+# this directory has files with custom formatting we don't want prettier to revert
+docs/
+
 # these file have custom formatting we don't want prettier to revert
 src/site.webmanifest.liquid
 src/_redirects

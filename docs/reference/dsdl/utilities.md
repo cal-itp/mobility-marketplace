@@ -1,0 +1,53 @@
+# Digital Services Design Language utility class reference
+
+Like many design systems and frameworks, the DSDL offers some utility classes
+that can be applied when you want to ensure a specific value in a certain situation
+(enforced with the use of `!important`).
+
+
+## Font families
+
+```css
+.font-heading { font-family: var(--dsdl-heading-font-stack) !important; }
+.font-body { font-family: var(--dsdl-body-font-stack) !important; }
+.font-monospace { font-family: var(--dsdl-monospace-font-stack) !important; }
+```
+
+## Font sizes
+
+```css
+.font-size-xxs { font-size: var(--text-xxs) !important; }
+.font-size-xs { font-size: var(--text-xs) !important; }
+.font-size-s { font-size: var(--text-s) !important; }
+.font-size-m { font-size: var(--text-m) !important; }
+.font-size-l { font-size: var(--text-l) !important; }
+.font-size-xl { font-size: var(--text-xl) !important; }
+.font-size-xxl { font-size: var(--text-xxl) !important; }
+.font-size-xxxl { font-size: var(--text-xxxl) !important; }
+.font-size-xxxxl { font-size: var(--text-xxxxl) !important; }
+.font-size-display { font-size: var(--text-display) !important; }
+```
+
+## Line heights
+
+```css
+.line-height-extra-tight { line-height: var(--line-height-extra-tight) !important; }
+.line-height-tight { line-height: var(--line-height-tight) !important; }
+.line-height-normal { line-height: var(--line-height-normal) !important; }
+.line-height-loose { line-height: var(--line-height-loose) !important; }
+```
+
+## Font weights
+
+```css
+.font-weight-normal { font-weight: 400 !important; }
+.font-weight-semi-bold { font-weight: 500 !important; }
+.font-weight-bold { font-weight: 600 !important; }
+.font-weight-extra-bold { font-weight: 700 !important; }
+```
+
+## Text colors
+
+```css
+.text-brand-blue { color: var(--calitp-brand-blue) !important; }
+```
