@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://docs.calitp.org/mobility-marketplace/</loc>
+         <lastmod>2026-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.calitp.org/mobility-marketplace/explanation/dsdl/</loc>
+         <lastmod>2026-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.calitp.org/mobility-marketplace/guides/dsdl/release/</loc>
+         <lastmod>2026-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.calitp.org/mobility-marketplace/reference/components/</loc>
+         <lastmod>2026-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.calitp.org/mobility-marketplace/reference/dsdl/colors/</loc>
+         <lastmod>2026-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.calitp.org/mobility-marketplace/reference/dsdl/spacing/</loc>
+         <lastmod>2026-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.calitp.org/mobility-marketplace/reference/dsdl/typography/</loc>
+         <lastmod>2026-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.calitp.org/mobility-marketplace/reference/dsdl/utilities/</loc>
+         <lastmod>2026-09-23</lastmod>
+    </url>
+</urlset>
