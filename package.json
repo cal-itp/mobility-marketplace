@@ -12,7 +12,7 @@
     "@shopify/prettier-plugin-liquid": "^1.11.0",
     "markdown-it": "^14.3.2",
     "netlify-cli": "^27.8.0",
-    "prettier": "^3.9.8"
+    "prettier": "^3.9.9"
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
