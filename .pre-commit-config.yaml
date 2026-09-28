@@ -26,12 +26,12 @@ repos:
 
   # uses the version of node targeted in .node-version file
   - repo: https://github.com/JoC0de/pre-commit-prettier
-    rev: v3.9.8
+    rev: v3.9.9
     hooks:
       - id: prettier
         additional_dependencies:
-          - prettier@3.9.8
-          - "@shopify/prettier-plugin-liquid@1.11.0"
+          - prettier@3.9.9
+          - "@shopify/prettier-plugin-liquid@1.11.1"
         types_or: [css, html, javascript, json, liquid, markdown, yaml]
 
   - repo: https://github.com/streetsidesoftware/cspell-cli
