@@ -10,7 +10,7 @@
     "@11ty/eleventy": "^3.1.6",
     "@quasibit/eleventy-plugin-sitemap": "^2.0.0",
     "@shopify/prettier-plugin-liquid": "^1.11.1",
-    "markdown-it": "^14.3.2",
+    "markdown-it": "^14.3.3",
     "netlify-cli": "^27.10.2",
     "prettier": "^3.9.10"
   },
