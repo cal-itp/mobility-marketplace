@@ -1,0 +1,333 @@
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #045b86;
+  --md-accent-fg-color: #044869;
+  --md-primary-fg-color--dark: #045b86;
+  --md-footer-fg-color: hsla(0, 0%, 100%, 1);
+  --md-footer-fg-color--light: hsla(0, 0%, 100%, 1);
+  --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 1);
+  --md-footer-bg-color: hsla(0, 0%, 0%, 1);
+  --md-footer-bg-color--dark: hsla(0, 0%, 0%, 1);
+  --md-code-hl-string-color: #b8361f;
+  --md-code-hl-comment-color: #1c7d4d;
+  --md-mermaid-label-fg-color: #000000;
+}
+
+a {
+  text-decoration: underline dotted currentColor auto;
+}
+
+a.headerlink,
+a.md-nav__link,
+a.md-source,
+a.md-tabs__link {
+  text-decoration-line: none;
+}
+
+.md-tabs__link {
+  opacity: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+.list-style-none {
+  list-style-type: none !important;
+  margin-left: 0 !important;
+}
+
+.vertical-align-baseline {
+  vertical-align: baseline !important;
+}
+
+
+/* Material for MkDocs overrides */
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  padding: .9375rem 1.25rem;  /* Original ems caused problems for table of type styles. */
+}
+
+.md-code__button {
+  color: rgb(0 0 0 / 0.4);
+}
+
+/* Absolute sizes to deal with MkDoc's font-size shenanigans */
+:root {
+  --text-xxs:     10px;
+  --text-xs:      12px;
+  --text-s:       14px;
+  --text-m:       16px;
+  --text-l:       20px;
+  --text-xl:      24px;
+  --text-xxl:     32px;
+  --text-xxxl:    40px;
+  --text-xxxxl:   48px;
+  --text-display: 64px;
+}
+
+
+/* TEMPORARY COPY OF typography.css UNTIL THAT'S ON PRODUCTION */
+
+/*
+ * Cal-ITP Digital Services Design Language
+ * Core Typography Styles
+ */
+
+
+.text-body-s {
+  font-size: var(--text-xs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+.text-body-m {
+  font-size: var(--text-s);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+.text-body-l {
+  font-size: var(--text-m);
+  line-height: var(--line-height-normal);
+  font-weight: 400;
+}
+
+.text-subtitle-s {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-m);
+  line-height: var(--line-height-normal);
+  font-weight: 500;
+}
+.text-subtitle-m {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-l);
+  line-height: var(--line-height-normal);
+  font-weight: 500;
+}
+.text-subtitle-l {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xl);
+  line-height: var(--line-height-tight);
+  font-weight: 500;
+}
+
+.text-title-s {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-m);
+  line-height: var(--line-height-normal);
+  font-weight: 600;
+}
+.text-title-m {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xl);
+  line-height: var(--line-height-tight);
+  font-weight: 600;
+}
+.text-title-l {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xxl);
+  line-height: var(--line-height-tight);
+  font-weight: 600;
+}
+
+.text-headline-s {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xl);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+}
+.text-headline-m {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xxl);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+}
+.text-headline-l {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xxxl);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+}
+
+.text-display {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-display);
+  line-height: var(--line-height-extra-tight);
+  font-weight: 600;
+}
+.text-small-caps {
+  /* TODO: Consider eliminating this as its own core style, making it more of a utility,
+     because sometimes we want to apply smallcaps to other styles,
+     e.g.: calitp.org homepage initiatives Recent News and Resources h4 elements. */
+  font-size: var(--text-xs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.small,
+.text-caption {
+  font-size: var(--text-xs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+.text-footnote {
+  font-size: var(--text-xxs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+.text-code {
+  font-family: var(--dsdl-monospace-font-stack);
+  font-size: var(--text-m);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+
+
+/* COPY OF PARTS OF dsdl-demo.css TO OVERRIDE MATERIAL STYLES */
+
+.brand-colors h3 /* Reference */,
+.brand-colors h4 /* Explanation */ {
+  margin-top: 0;
+}
+ul.brand-colors,
+.dsdl-colors {
+  display: flex !important;
+}
+ul.brand-colors,
+.dsdl-colors ol {
+  list-style: none;
+  margin: 0.625em 0 !important;
+}
+.brand-colors li,
+.dsdl-colors ol {
+  margin: 0 var(--spacing-1) 0 0 !important;
+  flex: 1 1 auto;
+}
+.dsdl-colors li {
+  margin: 0 !important;
+}
+.brand-colors li {
+  padding: var(--spacing-3);
+  text-align: center;
+}
+.dsdl-colors li {
+  padding: var(--spacing-1);
+  text-align: center;
+}
+
+.brand-colors pre {
+  margin-bottom: 0;
+  text-align: left;
+}
+.brand-colors pre > code {
+  padding-left: var(--spacing-1);
+  background: rgb(255 255 255 / 0.75);
+  color: var(--dsdl-black);
+  font-size: 0.825em;
+}
+
+.color-reference tr:hover {
+  background-color: transparent !important;
+}
+.color-reference td {
+  font-size: 0.8rem !important;
+  vertical-align: middle !important;
+}
+.color-reference .swatch,
+.color-reference .name {
+  width: var(--spacing-15);
+}
+.color-reference .hex {
+  width: calc(var(--spacing-base) * 16);
+}
+.color-reference .rgb {
+  width: var(--spacing-20);
+}
+.color-reference .css {
+  width: calc(var(--spacing-base) * 28);
+}
+.color-reference .css pre {
+  margin: 0;
+}
+
+.dsdl-core-type-matrix,
+.dsdl-spacing-reference {
+margin: var(--spacing-2) 0;
+  border-collapse: collapse;
+}
+.dsdl-core-type-matrix th,
+.dsdl-core-type-matrix td,
+.dsdl-spacing-reference th,
+.dsdl-spacing-reference td {
+  border: 1px solid var(--dsdl-gray-50);
+}
+.dsdl-core-type-matrix th,
+.dsdl-spacing-reference th {
+  padding: var(--spacing-1);
+  background: var(--dsdl-cyan-20);
+  font-weight: bold;
+}
+.dsdl-core-type-matrix thead th {
+  text-align: center;
+}
+.dsdl-core-type-matrix tbody th {
+  text-align: center !important;
+  writing-mode: sideways-lr;
+}
+.dsdl-core-type-matrix td {
+  vertical-align: top;
+  padding: var(--spacing-2);
+}
+
+.dsdl-core-type-matrix pre {
+  margin-top: 0;
+}
+.dsdl-core-type-matrix .dsdl-type-specs,
+.dsdl-extra-type-styles .dsdl-type-specs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 0;
+  font-family: var(--dsdl-monospace-font-stack);
+}
+.dsdl-core-type-matrix .dsdl-type-specs dt,
+.dsdl-extra-type-styles .dsdl-type-specs dt {
+  font-weight: 400;
+}
+.dsdl-core-type-matrix .dsdl-type-specs dd,
+.dsdl-extra-type-styles .dsdl-type-specs dd {
+  margin: 0 0 0 var(--spacing-1);
+}
+.dsdl-extra-type-styles {
+  list-style: none !important;
+  padding: 0;
+  margin-left: 0 !important;
+}
+.dsdl-extra-type-styles li {
+  margin-top: 2em;
+  margin-left: 0 !important;
+}
+
+.dsdl-spacing-reference td {
+  padding: var(--spacing-2);
+  font-family: var(--dsdl-monospace-font-stack);
+  vertical-align: middle;
+}
+.spacing-sample {
+  background: var(--calitp-brand-cyan);
+  width: var(--spacing-20);
+}
+.dsdl-spacing-reference pre > code {
+  padding-right: 2.5em;
+}
+
+/* Copied from Bootstrap */
+.visually-hidden {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  margin: -1px !important;
+  position: absolute;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+}
