@@ -30,7 +30,7 @@ repos:
     hooks:
       - id: prettier
         additional_dependencies:
-          - prettier@3.9.10
+          - prettier@3.10.1
           - "@shopify/prettier-plugin-liquid@1.11.3"
         types_or: [css, html, javascript, json, liquid, markdown, yaml]
 
