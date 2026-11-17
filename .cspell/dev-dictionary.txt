@@ -39,6 +39,7 @@ headerlink
 homescreen
 hubspot
 ignorewarnings
+ImageOptim
 img
 inlinehilite
 jekyll
